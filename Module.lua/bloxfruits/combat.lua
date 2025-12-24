@@ -1,6 +1,9 @@
 --[[
-    Combat Module - Combat System, Skills, Skill Aimbot
+    Combat Module - Combat System, Skills, Attack Functions
     Blox Fruits Script by Zlex Hub (Modularized)
+    
+    FIXED: Now uses VirtualUser for attacks like original working scripts
+    This properly triggers the game's combat framework
 ]]
 
 local Combat = {}
@@ -13,6 +16,7 @@ end
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local VirtualUser = game:GetService("VirtualUser")
 local VirtualInputManager = game:GetService("VirtualInputManager")
 local RunService = game:GetService("RunService")
 
@@ -20,18 +24,28 @@ local Player = Players.LocalPlayer
 
 Combat.Skillaimbot = false
 Combat.AimBotSkillPosition = Vector3.new(0, 0, 0)
-Combat.SkillCooldowns = {}
+
+function Combat.Click()
+    pcall(function()
+        VirtualUser:CaptureController()
+        VirtualUser:Button1Down(Vector2.new(1280, 672))
+    end)
+end
 
 function Combat.Attack()
-    VirtualInputManager:SendMouseButtonEvent(0, 0, 0, true, game, 0)
-    task.wait()
-    VirtualInputManager:SendMouseButtonEvent(0, 0, 0, false, game, 0)
+    Combat.Click()
+end
+
+function Combat.NormalAttack()
+    Combat.Click()
 end
 
 function Combat.UseSkill(key)
-    VirtualInputManager:SendKeyEvent(true, key, false, game)
-    task.wait()
-    VirtualInputManager:SendKeyEvent(false, key, false, game)
+    pcall(function()
+        VirtualInputManager:SendKeyEvent(true, key, false, game)
+        task.wait(0.05)
+        VirtualInputManager:SendKeyEvent(false, key, false, game)
+    end)
 end
 
 function Combat.UseAllSkills()
@@ -50,10 +64,10 @@ function Combat.UseFruitSkills()
     Utils.EquipWeapon("Blox Fruit")
     task.wait(0.1)
     
-    if _G.Settings.Setting["Fruit Mastery Skill Z"] then Combat.UseSkill("Z") end
-    if _G.Settings.Setting["Fruit Mastery Skill X"] then Combat.UseSkill("X") end
-    if _G.Settings.Setting["Fruit Mastery Skill C"] then Combat.UseSkill("C") end
-    if _G.Settings.Setting["Fruit Mastery Skill V"] then Combat.UseSkill("V") end
+    if _G.Settings.Setting["Fruit Mastery Skill Z"] then Combat.UseSkill("Z"); task.wait(0.1) end
+    if _G.Settings.Setting["Fruit Mastery Skill X"] then Combat.UseSkill("X"); task.wait(0.1) end
+    if _G.Settings.Setting["Fruit Mastery Skill C"] then Combat.UseSkill("C"); task.wait(0.1) end
+    if _G.Settings.Setting["Fruit Mastery Skill V"] then Combat.UseSkill("V"); task.wait(0.1) end
     if _G.Settings.Setting["Fruit Mastery Skill F"] then Combat.UseSkill("F") end
 end
 
@@ -61,6 +75,7 @@ function Combat.UseSwordSkills()
     Utils.EquipWeapon("Sword")
     task.wait(0.1)
     Combat.UseSkill("Z")
+    task.wait(0.1)
     Combat.UseSkill("X")
 end
 
@@ -68,8 +83,11 @@ function Combat.UseMeleeSkills()
     Utils.EquipWeapon("Melee")
     task.wait(0.1)
     Combat.UseSkill("Z")
+    task.wait(0.1)
     Combat.UseSkill("X")
+    task.wait(0.1)
     Combat.UseSkill("C")
+    task.wait(0.1)
     Combat.UseSkill("V")
 end
 
@@ -88,7 +106,13 @@ function Combat.UseGunSkills()
 end
 
 function Combat.AutoHaki()
-    Utils.AutoHaki()
+    pcall(function()
+        if _G.Settings.Setting["Auto Haki"] then
+            if not Player.Character:FindFirstChild("HasBuso") then
+                ReplicatedStorage.Remotes.CommF_:InvokeServer("Buso")
+            end
+        end
+    end)
 end
 
 function Combat.SetSkillAimbot(enabled, position)
@@ -137,9 +161,11 @@ function Combat.AttackEnemy(enemy)
         local playerHRP = Utils.GetHumanoidRootPart()
         if playerHRP then
             hrp.CFrame = playerHRP.CFrame * CFrame.new(0, 0, 3)
+            hrp.Size = Vector3.new(1, 1, 1)
+            humanoid.WalkSpeed = 0
         end
     else
-        Utils.TweenPlayer(hrp.CFrame * CFrame.new(0, 15, 0))
+        Utils.TweenPlayer(hrp.CFrame * CFrame.new(0, _G.Settings.Setting["Farm Distance"], 0))
     end
     
     Combat.Attack()
@@ -152,37 +178,48 @@ function Combat.AutoAttackLoop()
     end
 end
 
-function Combat.SkillAimbotMetatable()
-    local gg = getrawmetatable(game)
-    local old = gg.__namecall
+Combat.AttackAuraEnabled = false
+Combat.AttackAuraConnection = nil
+
+function Combat.StartAttackAura()
+    if Combat.AttackAuraConnection then return end
     
-    setreadonly(gg, false)
-    
-    gg.__namecall = newcclosure(function(...)
-        local method = getnamecallmethod()
-        local args = {...}
-        
-        if tostring(method) == "FireServer" then
-            if tostring(args[1]) == "RemoteEvent" then
-                if tostring(args[2]) ~= "true" and tostring(args[2]) ~= "false" then
-                    if Combat.Skillaimbot then
-                        args[2] = Combat.AimBotSkillPosition
-                        return old(unpack(args))
-                    end
-                end
+    Combat.AttackAuraConnection = RunService.RenderStepped:Connect(function()
+        if _G.Settings.Setting["Attack Aura"] then
+            if not _G.Settings.Main["Auto Farm Fruit Mastery"] and 
+               not _G.Settings.Main["Auto Farm Gun Mastery"] then
+                pcall(function()
+                    Combat.Attack()
+                end)
             end
         end
-        
-        return old(...)
     end)
+    
+    print("[Combat] Attack Aura started")
 end
 
-function Combat.SetupSkillAimbot()
-    pcall(Combat.SkillAimbotMetatable)
+function Combat.StopAttackAura()
+    if Combat.AttackAuraConnection then
+        Combat.AttackAuraConnection:Disconnect()
+        Combat.AttackAuraConnection = nil
+        print("[Combat] Attack Aura stopped")
+    end
+end
+
+function Combat.ToggleAttackAura(enabled)
+    _G.Settings.Setting["Attack Aura"] = enabled
+    if enabled then
+        Combat.StartAttackAura()
+    else
+        Combat.StopAttackAura()
+    end
 end
 
 function Combat.Start()
-    Combat.SetupSkillAimbot()
+    if _G.Settings.Setting["Attack Aura"] then
+        Combat.StartAttackAura()
+    end
+    print("[Combat] Combat module initialized with VirtualUser attacks")
 end
 
 return Combat
