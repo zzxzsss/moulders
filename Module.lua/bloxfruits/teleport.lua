@@ -99,12 +99,7 @@ end
 function Teleport.TeleportToIsland(islandName)
     local cframe = Teleport.GetIslandCFrame(islandName)
     if cframe then
-        local dist = Utils.DistanceTo(cframe.Position)
-        if dist > 2000 then
-            Utils.BTP(cframe)
-        else
-            Utils.TweenPlayer(cframe)
-        end
+        Utils.TweenPlayer(cframe)
     end
 end
 
@@ -117,9 +112,9 @@ end
 
 function Teleport.TeleportToPosition(position)
     if typeof(position) == "Vector3" then
-        Utils.BTP(CFrame.new(position))
+        Utils.TweenPlayer(CFrame.new(position))
     elseif typeof(position) == "CFrame" then
-        Utils.BTP(position)
+        Utils.TweenPlayer(position)
     end
 end
 
@@ -128,7 +123,7 @@ function Teleport.TeleportToPlayer(playerName)
     if targetPlayer and targetPlayer.Character then
         local hrp = targetPlayer.Character:FindFirstChild("HumanoidRootPart")
         if hrp then
-            Utils.BTP(hrp.CFrame * CFrame.new(0, 5, 0))
+            Utils.TweenPlayer(hrp.CFrame * CFrame.new(0, 5, 0))
         end
     end
 end
