@@ -1,3 +1,4 @@
+
 local BASE_URL = "https://raw.githubusercontent.com/zzxzsss/moulders/main/Module.lua/bloxfruits/"
 local HttpService = game:GetService("HttpService")
 
@@ -57,7 +58,8 @@ local moduleList = {
     "misc",
     "fast-attack",
     "anti-cheat",
-    "task-manager"
+    "task-manager",
+    "get-weapons"
 }
 
 print("[Zlex Hub] Loading modules...")
@@ -99,6 +101,10 @@ if Utils then
     if Modules["task-manager"] then 
         Modules["task-manager"].Init(Utils) 
         _G.TaskManager = Modules["task-manager"]
+    end
+    if Modules["get-weapons"] then 
+        Modules["get-weapons"].Init({Utils = Utils, Config = Modules["config"]}) 
+        _G.GetWeapons = Modules["get-weapons"]
     end
 end
 
