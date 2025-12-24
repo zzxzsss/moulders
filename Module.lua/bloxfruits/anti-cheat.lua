@@ -1,4 +1,4 @@
----fixed ???
+
 
 local AntiCheat = {}
 
@@ -279,51 +279,7 @@ function AntiCheat.SetSkillAimbot(enabled, position)
 end
 
 function AntiCheat.SetupHookMethod()
-    if AntiCheat.HookMethodActive then return end
-    
-    local success = pcall(function()
-        if not hookmetamethod then 
-            warn("[AntiCheat] hookmetamethod not available")
-            return 
-        end
-        
-        local char = Player.Character or Player.CharacterAdded:Wait()
-        local root = char:WaitForChild("HumanoidRootPart", 5)
-        if not root then return end
-        
-        AntiCheat.FakePosition = root.CFrame
-        AntiCheat.HookTarget = root
-        
-        local inHook = false
-        
-        local oldIndex = hookmetamethod(game, "__index", function(self, key)
-            if inHook then
-                return oldIndex(self, key)
-            end
-            
-            if AntiCheat.PositionSpoof and AntiCheat.FakePosition then
-                if self == AntiCheat.HookTarget then
-                    if key == "CFrame" then
-                        return AntiCheat.FakePosition
-                    elseif key == "Position" then
-                        return AntiCheat.FakePosition.Position
-                    end
-                end
-            end
-            
-            inHook = true
-            local result = oldIndex(self, key)
-            inHook = false
-            return result
-        end)
-        
-        AntiCheat.HookedMethods.Index = oldIndex
-        AntiCheat.HookMethodActive = true
-    end)
-    
-    if not success then
-        AntiCheat.HookMethodActive = false
-    end
+    AntiCheat.HookMethodActive = false
 end
 
 function AntiCheat.StartPositionSpoof()
