@@ -1,7 +1,3 @@
---[[
-    Config Module - Settings and Save/Load System
-    Blox Fruits Script by Zlex Hub (Modularized)
-]]
 
 local Config = {}
 
@@ -120,6 +116,7 @@ Config.DefaultSettings = {
     },
     Setting = {
         ["Auto Haki"] = true,
+        ["Attack Aura"] = false,
         ["Fruit Mastery Skill Z"] = true,
         ["Fruit Mastery Skill X"] = true,
         ["Fruit Mastery Skill C"] = true,
