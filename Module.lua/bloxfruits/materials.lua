@@ -89,12 +89,7 @@ function Materials.FarmMaterial(materialName)
             Utils.Attack()
         end
     else
-        local dist = Utils.DistanceTo(matData.CFrame.Position)
-        if dist > 2000 then
-            Utils.BTP(matData.CFrame)
-        else
-            Utils.TweenPlayer(matData.CFrame)
-        end
+        Utils.TweenPlayer(matData.CFrame)
     end
 end
 
