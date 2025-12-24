@@ -198,11 +198,7 @@ function AutoFarm.MainLoop()
             if AutoFarm.QuestCFrame then
                 local dist = Utils.DistanceTo(AutoFarm.QuestCFrame.Position)
                 if dist > 50 then
-                    if dist > 2000 then
-                        Utils.BTP(AutoFarm.QuestCFrame)
-                    else
-                        Utils.TweenPlayer(AutoFarm.QuestCFrame)
-                    end
+                    Utils.TweenPlayer(AutoFarm.QuestCFrame)
                 else
                     AutoFarm.AcceptQuest()
                 end
