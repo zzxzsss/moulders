@@ -8,6 +8,7 @@ local Utils = {}
 local TweenService = game:GetService("TweenService")
 local Players = game:GetService("Players")
 local VirtualInputManager = game:GetService("VirtualInputManager")
+local VirtualUser = game:GetService("VirtualUser")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 
@@ -61,6 +62,85 @@ function Utils.BTP(targetCFrame)
     end
 end
 
+function Utils.SafeTeleport(targetCFrame, speed)
+    speed = speed or _G.Settings.Setting["Tween Speed"] or 500
+    local hrp = Utils.GetHumanoidRootPart()
+    if not hrp then return false end
+    
+    local humanoid = Utils.GetHumanoid()
+    local distance = (hrp.Position - targetCFrame.Position).Magnitude
+    
+    if distance < 50 then
+        hrp.CFrame = targetCFrame
+        return true
+    end
+    
+    local maxStepDistance = 400
+    local steps = math.ceil(distance / maxStepDistance)
+    
+    if steps <= 1 then
+        local tweenTime = distance / speed
+        local tweenInfo = TweenInfo.new(tweenTime, Enum.EasingStyle.Linear)
+        
+        if humanoid then
+            humanoid:ChangeState(Enum.HumanoidStateType.Physics)
+        end
+        
+        if Utils.CurrentTween then
+            Utils.CurrentTween:Cancel()
+        end
+        
+        Utils.CurrentTween = TweenService:Create(hrp, tweenInfo, {CFrame = targetCFrame})
+        Utils.CurrentTween:Play()
+        Utils.CurrentTween.Completed:Wait()
+        
+        if humanoid then
+            humanoid:ChangeState(Enum.HumanoidStateType.GettingUp)
+        end
+        return true
+    end
+    
+    local startPos = hrp.Position
+    local endPos = targetCFrame.Position
+    local direction = (endPos - startPos).Unit
+    local stepSize = distance / steps
+    
+    if humanoid then
+        humanoid:ChangeState(Enum.HumanoidStateType.Physics)
+    end
+    
+    for i = 1, steps do
+        if not hrp or not hrp.Parent then break end
+        
+        local stepTarget
+        if i == steps then
+            stepTarget = targetCFrame
+        else
+            local stepPos = startPos + (direction * stepSize * i)
+            stepTarget = CFrame.new(stepPos) * (targetCFrame - targetCFrame.Position)
+        end
+        
+        local stepTweenTime = stepSize / speed
+        local tweenInfo = TweenInfo.new(stepTweenTime, Enum.EasingStyle.Linear)
+        
+        if Utils.CurrentTween then
+            Utils.CurrentTween:Cancel()
+        end
+        
+        Utils.CurrentTween = TweenService:Create(hrp, tweenInfo, {CFrame = stepTarget})
+        Utils.CurrentTween:Play()
+        Utils.CurrentTween.Completed:Wait()
+        
+        task.wait(0.02)
+    end
+    
+    if humanoid then
+        humanoid:ChangeState(Enum.HumanoidStateType.GettingUp)
+    end
+    
+    return true
+end
+
 function Utils.StopTween(condition)
     if not condition and Utils.CurrentTween then
         Utils.CurrentTween:Cancel()
@@ -101,20 +181,26 @@ function Utils.AutoHaki()
     local char = Utils.GetCharacter()
     if not char then return end
     
-    local hasBuso = char:FindFirstChild("HasBuso")
-    if hasBuso and hasBuso.Value == false then
-        local CommE = ReplicatedStorage:FindFirstChild("Remotes") and 
-                      ReplicatedStorage.Remotes:FindFirstChild("CommE")
-        if CommE then
-            CommE:FireServer("Buso")
+    if not char:FindFirstChild("HasBuso") then
+        local CommF = ReplicatedStorage:FindFirstChild("Remotes") and 
+                      ReplicatedStorage.Remotes:FindFirstChild("CommF_")
+        if CommF then
+            pcall(function()
+                CommF:InvokeServer("Buso")
+            end)
         end
     end
 end
 
+function Utils.Click()
+    pcall(function()
+        VirtualUser:CaptureController()
+        VirtualUser:Button1Down(Vector2.new(1280, 672))
+    end)
+end
+
 function Utils.Attack()
-    VirtualInputManager:SendMouseButtonEvent(0, 0, 0, true, game, 0)
-    task.wait()
-    VirtualInputManager:SendMouseButtonEvent(0, 0, 0, false, game, 0)
+    Utils.Click()
 end
 
 function Utils.PressKey(key)
