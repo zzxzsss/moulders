@@ -1,7 +1,3 @@
---[[
-    Auto Farm Module - Farming Logic for All Worlds
-    Blox Fruits Script by Zlex Hub (Modularized)
-]]
 
 local AutoFarm = {}
 
@@ -38,7 +34,7 @@ function AutoFarm.UpdateQuestInfo()
     local quest = AutoFarm.GetCurrentQuest()
     if quest then
         AutoFarm.MonFarm = quest.Monster
-        AutoFarm.MonLevel = quest.Level
+        AutoFarm.MonLevel = quest.LevelQuest
         AutoFarm.QuestCFrame = quest.CFrame
         AutoFarm.QuestName = quest.QuestId
     end
