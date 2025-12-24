@@ -1,8 +1,3 @@
---[[
-    Sea Events Module - Sea Events, Boats, Sharks, Sea Beasts
-    Blox Fruits Script by Zlex Hub (Modularized)
-]]
-
 local SeaEvents = {}
 
 local Utils = nil
@@ -259,9 +254,7 @@ function SeaEvents.MainLoop()
     
     if not boat then
         local dist = Utils.DistanceTo(SeaEvents.BuyBoatCFrame.Position)
-        if dist > 2000 then
-            Utils.BTP(SeaEvents.BuyBoatCFrame)
-        elseif dist > 10 then
+        if dist > 10 then
             Utils.TweenPlayer(SeaEvents.BuyBoatCFrame)
         else
             SeaEvents.BuyBoat()
