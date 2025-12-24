@@ -1,4 +1,4 @@
-
+---fixed ???
 
 local AntiCheat = {}
 
@@ -292,21 +292,29 @@ function AntiCheat.SetupHookMethod()
         if not root then return end
         
         AntiCheat.FakePosition = root.CFrame
+        AntiCheat.HookTarget = root
+        
+        local inHook = false
         
         local oldIndex = hookmetamethod(game, "__index", function(self, key)
-            if AntiCheat.PositionSpoof then
-                if self == root or (self.Parent and self.Parent == char) then
-                    if key == "CFrame" or key == "Position" then
-                        if AntiCheat.FakePosition then
-                            if key == "Position" then
-                                return AntiCheat.FakePosition.Position
-                            end
-                            return AntiCheat.FakePosition
-                        end
+            if inHook then
+                return oldIndex(self, key)
+            end
+            
+            if AntiCheat.PositionSpoof and AntiCheat.FakePosition then
+                if self == AntiCheat.HookTarget then
+                    if key == "CFrame" then
+                        return AntiCheat.FakePosition
+                    elseif key == "Position" then
+                        return AntiCheat.FakePosition.Position
                     end
                 end
             end
-            return oldIndex(self, key)
+            
+            inHook = true
+            local result = oldIndex(self, key)
+            inHook = false
+            return result
         end)
         
         AntiCheat.HookedMethods.Index = oldIndex
@@ -314,18 +322,7 @@ function AntiCheat.SetupHookMethod()
     end)
     
     if not success then
-        pcall(function()
-            if not hookfunction then return end
-            
-            local char = Player.Character
-            if not char then return end
-            
-            local root = char:FindFirstChild("HumanoidRootPart")
-            if not root then return end
-            
-            AntiCheat.FakePosition = root.CFrame
-            AntiCheat.HookMethodActive = true
-        end)
+        AntiCheat.HookMethodActive = false
     end
 end
 
@@ -336,6 +333,7 @@ function AntiCheat.StartPositionSpoof()
         local root = char:FindFirstChild("HumanoidRootPart")
         if root then
             AntiCheat.FakePosition = root.CFrame
+            AntiCheat.HookTarget = root
         end
     end
 end
