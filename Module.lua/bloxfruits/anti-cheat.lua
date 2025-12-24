@@ -1,4 +1,5 @@
--- updated
+
+
 local AntiCheat = {}
 
 local Utils = nil
@@ -18,13 +19,17 @@ local Player = Players.LocalPlayer
 AntiCheat.Skillaimbot = false
 AntiCheat.AimBotSkillPosition = Vector3.new(0, 0, 0)
 AntiCheat.MetatableHooked = false
+AntiCheat.HookMethodActive = false
 AntiCheat.OldNamecall = nil
 AntiCheat.BypassTP = true
 AntiCheat.LastTeleportTime = 0
 AntiCheat.TeleportCooldown = 0.1
+AntiCheat.FakePosition = nil
+AntiCheat.PositionSpoof = false
 
 AntiCheat.CommE = nil
 AntiCheat.CommF = nil
+AntiCheat.HookedMethods = {}
 
 function AntiCheat.FindRemotes()
     pcall(function()
@@ -50,78 +55,75 @@ function AntiCheat.TweenTeleport(targetCFrame, speed, callback)
     end
     
     local humanoid = char:FindFirstChild("Humanoid")
+    speed = speed or 500
     
     local startPos = root.Position
     local endPos = targetCFrame.Position
-    local distance = (endPos - startPos).Magnitude
+    local minHeight = 50
     
-    local maxStepDistance = 450
-    local steps = math.ceil(distance / maxStepDistance)
+    local travelHeight = math.max(startPos.Y, endPos.Y, minHeight) + 30
     
-    if steps <= 1 then
-        local tweenInfo = TweenInfo.new(
-            distance / (speed or 500),
-            Enum.EasingStyle.Linear,
-            Enum.EasingDirection.Out
-        )
-        
-        if humanoid then
-            humanoid:ChangeState(Enum.HumanoidStateType.Physics)
-        end
-        
-        local tween = TweenService:Create(root, tweenInfo, {CFrame = targetCFrame})
-        tween:Play()
-        tween.Completed:Connect(function()
-            if humanoid then
-                humanoid:ChangeState(Enum.HumanoidStateType.GettingUp)
-            end
-            if callback then callback(true) end
-        end)
-        return true
+    if humanoid then
+        humanoid:ChangeState(Enum.HumanoidStateType.Physics)
     end
     
-    local direction = (endPos - startPos).Unit
-    local stepSize = distance / steps
+    local elevatedStart = CFrame.new(startPos.X, travelHeight, startPos.Z)
+    local elevatedEnd = CFrame.new(endPos.X, travelHeight, endPos.Z)
     
-    local function doStep(stepIndex)
-        if stepIndex > steps then
-            if humanoid then
-                humanoid:ChangeState(Enum.HumanoidStateType.GettingUp)
-            end
-            if callback then callback(true) end
+    local function tweenTo(targetCF, onComplete)
+        local currentPos = root.Position
+        local dist = (currentPos - targetCF.Position).Magnitude
+        if dist < 1 then
+            if onComplete then onComplete() end
             return
         end
         
-        local stepTarget
-        if stepIndex == steps then
-            stepTarget = targetCFrame
-        else
-            local stepPos = startPos + (direction * stepSize * stepIndex)
-            stepTarget = CFrame.new(stepPos) * (targetCFrame - targetCFrame.Position)
-        end
-        
-        local stepDist = stepSize
-        local tweenTime = stepDist / (speed or 500)
-        
-        local tweenInfo = TweenInfo.new(
-            tweenTime,
-            Enum.EasingStyle.Linear,
-            Enum.EasingDirection.Out
-        )
-        
-        if humanoid and stepIndex == 1 then
-            humanoid:ChangeState(Enum.HumanoidStateType.Physics)
-        end
-        
-        local tween = TweenService:Create(root, tweenInfo, {CFrame = stepTarget})
+        local tweenTime = math.max(dist / speed, 0.1)
+        local tweenInfo = TweenInfo.new(tweenTime, Enum.EasingStyle.Linear)
+        local tween = TweenService:Create(root, tweenInfo, {CFrame = targetCF})
         tween:Play()
         tween.Completed:Connect(function()
-            task.wait(0.02)
-            doStep(stepIndex + 1)
+            if onComplete then onComplete() end
         end)
     end
     
-    doStep(1)
+    tweenTo(elevatedStart, function()
+        local horizontalDist = (Vector3.new(startPos.X, 0, startPos.Z) - Vector3.new(endPos.X, 0, endPos.Z)).Magnitude
+        local maxStepDistance = 450
+        local steps = math.max(math.ceil(horizontalDist / maxStepDistance), 1)
+        
+        local direction = (Vector3.new(endPos.X, travelHeight, endPos.Z) - Vector3.new(startPos.X, travelHeight, startPos.Z))
+        if direction.Magnitude > 0 then direction = direction.Unit end
+        local stepSize = horizontalDist / steps
+        
+        local function doStep(stepIndex)
+            if stepIndex > steps then
+                tweenTo(targetCFrame, function()
+                    if humanoid then
+                        humanoid:ChangeState(Enum.HumanoidStateType.GettingUp)
+                    end
+                    if callback then callback(true) end
+                end)
+                return
+            end
+            
+            local stepTarget
+            if stepIndex == steps then
+                stepTarget = elevatedEnd
+            else
+                local stepPos = Vector3.new(startPos.X, travelHeight, startPos.Z) + (direction * stepSize * stepIndex)
+                stepTarget = CFrame.new(stepPos)
+            end
+            
+            tweenTo(stepTarget, function()
+                task.wait(0.02)
+                doStep(stepIndex + 1)
+            end)
+        end
+        
+        doStep(1)
+    end)
+    
     return true
 end
 
@@ -276,17 +278,163 @@ function AntiCheat.SetSkillAimbot(enabled, position)
     end
 end
 
+function AntiCheat.SetupHookMethod()
+    if AntiCheat.HookMethodActive then return end
+    
+    local success = pcall(function()
+        if not hookmetamethod then 
+            warn("[AntiCheat] hookmetamethod not available")
+            return 
+        end
+        
+        local char = Player.Character or Player.CharacterAdded:Wait()
+        local root = char:WaitForChild("HumanoidRootPart", 5)
+        if not root then return end
+        
+        AntiCheat.FakePosition = root.CFrame
+        
+        local oldIndex = hookmetamethod(game, "__index", function(self, key)
+            if AntiCheat.PositionSpoof then
+                if self == root or (self.Parent and self.Parent == char) then
+                    if key == "CFrame" or key == "Position" then
+                        if AntiCheat.FakePosition then
+                            if key == "Position" then
+                                return AntiCheat.FakePosition.Position
+                            end
+                            return AntiCheat.FakePosition
+                        end
+                    end
+                end
+            end
+            return oldIndex(self, key)
+        end)
+        
+        AntiCheat.HookedMethods.Index = oldIndex
+        AntiCheat.HookMethodActive = true
+    end)
+    
+    if not success then
+        pcall(function()
+            if not hookfunction then return end
+            
+            local char = Player.Character
+            if not char then return end
+            
+            local root = char:FindFirstChild("HumanoidRootPart")
+            if not root then return end
+            
+            AntiCheat.FakePosition = root.CFrame
+            AntiCheat.HookMethodActive = true
+        end)
+    end
+end
+
+function AntiCheat.StartPositionSpoof()
+    AntiCheat.PositionSpoof = true
+    local char = Player.Character
+    if char then
+        local root = char:FindFirstChild("HumanoidRootPart")
+        if root then
+            AntiCheat.FakePosition = root.CFrame
+        end
+    end
+end
+
+function AntiCheat.StopPositionSpoof()
+    AntiCheat.PositionSpoof = false
+end
+
+function AntiCheat.UpdateFakePosition(cframe)
+    AntiCheat.FakePosition = cframe
+end
+
+function AntiCheat.TweenWithSpoof(targetCFrame, speed, callback)
+    local char = Player.Character
+    if not char then 
+        if callback then callback(false) end
+        return false 
+    end
+    
+    local root = char:FindFirstChild("HumanoidRootPart")
+    if not root then 
+        if callback then callback(false) end
+        return false 
+    end
+    
+    AntiCheat.FakePosition = root.CFrame
+    AntiCheat.PositionSpoof = true
+    
+    local result = AntiCheat.TweenTeleport(targetCFrame, speed, function(success)
+        task.wait(0.5)
+        AntiCheat.PositionSpoof = false
+        AntiCheat.FakePosition = nil
+        if callback then callback(success) end
+    end)
+    
+    return result
+end
+
+function AntiCheat.NoClip(enabled)
+    if enabled then
+        if AntiCheat.NoClipConnection then return end
+        
+        AntiCheat.NoClipConnection = RunService.Stepped:Connect(function()
+            pcall(function()
+                local char = Player.Character
+                if not char then return end
+                
+                for _, part in pairs(char:GetDescendants()) do
+                    if part:IsA("BasePart") then
+                        part.CanCollide = false
+                    end
+                end
+            end)
+        end)
+    else
+        if AntiCheat.NoClipConnection then
+            AntiCheat.NoClipConnection:Disconnect()
+            AntiCheat.NoClipConnection = nil
+        end
+    end
+end
+
+function AntiCheat.InfiniteJump(enabled)
+    if enabled then
+        if AntiCheat.InfJumpConnection then return end
+        
+        local UserInputService = game:GetService("UserInputService")
+        AntiCheat.InfJumpConnection = UserInputService.JumpRequest:Connect(function()
+            pcall(function()
+                local humanoid = Player.Character and Player.Character:FindFirstChild("Humanoid")
+                if humanoid then
+                    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+                end
+            end)
+        end)
+    else
+        if AntiCheat.InfJumpConnection then
+            AntiCheat.InfJumpConnection:Disconnect()
+            AntiCheat.InfJumpConnection = nil
+        end
+    end
+end
+
 function AntiCheat.Start()
     AntiCheat.FindRemotes()
     AntiCheat.SetupMetatableHook()
+    AntiCheat.SetupHookMethod()
     AntiCheat.DisableAntiTeleport()
     AntiCheat.ProtectVelocity()
     AntiCheat.AntiKick()
+    AntiCheat.NoClip(true)
+    AntiCheat.InfiniteJump(true)
     
     Player.CharacterAdded:Connect(function(char)
         task.wait(1)
+        AntiCheat.SetupHookMethod()
         AntiCheat.DisableAntiTeleport()
         AntiCheat.ProtectVelocity()
+        AntiCheat.NoClip(true)
     end)
     
     spawn(function()
@@ -298,9 +446,12 @@ function AntiCheat.Start()
     
     print("[AntiCheat] Safe bypass systems initialized")
     print("[AntiCheat] Metatable hook: " .. (AntiCheat.MetatableHooked and "Active" or "N/A"))
+    print("[AntiCheat] HookMethod: " .. (AntiCheat.HookMethodActive and "Active" or "N/A"))
+    print("[AntiCheat] Position Spoof: Ready")
+    print("[AntiCheat] NoClip: Active")
+    print("[AntiCheat] Infinite Jump: Active")
     print("[AntiCheat] Velocity protection: Active")
-    print("[AntiCheat] Tweened teleports: Active")
-    print("[AntiCheat] Quest/Combat: NOT BLOCKED (safe mode)")
+    print("[AntiCheat] Tweened teleports: Active (Elevated)")
 end
 
 return AntiCheat
