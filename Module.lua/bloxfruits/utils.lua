@@ -16,6 +16,17 @@ local Player = Players.LocalPlayer
 
 Utils.CurrentTween = nil
 Utils.Pos = CFrame.new(0, 15, 0)
+Utils.MinTweenHeight = 50
+Utils.ElevatedTween = true
+
+function Utils.GetElevatedCFrame(targetCFrame)
+    local minHeight = Utils.MinTweenHeight
+    local pos = targetCFrame.Position
+    if pos.Y < minHeight then
+        return CFrame.new(pos.X, minHeight, pos.Z) * (targetCFrame - targetCFrame.Position)
+    end
+    return targetCFrame
+end
 
 function Utils.GetCharacter()
     return Player.Character or Player.CharacterAdded:Wait()
@@ -36,21 +47,56 @@ function Utils.IsAlive()
     return humanoid and humanoid.Health > 0
 end
 
-function Utils.TweenPlayer(targetCFrame, speed)
+function Utils.TweenPlayer(targetCFrame, speed, stayElevated)
     speed = speed or _G.Settings.Setting["Tween Speed"] or 200
     local hrp = Utils.GetHumanoidRootPart()
     if not hrp then return nil end
-    
-    local distance = (hrp.Position - targetCFrame.Position).Magnitude
-    local tweenTime = distance / speed
     
     if Utils.CurrentTween then
         Utils.CurrentTween:Cancel()
     end
     
-    local tweenInfo = TweenInfo.new(tweenTime, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-    Utils.CurrentTween = TweenService:Create(hrp, tweenInfo, {CFrame = targetCFrame})
+    local humanoid = Utils.GetHumanoid()
+    if humanoid then
+        humanoid:ChangeState(Enum.HumanoidStateType.Physics)
+    end
+    
+    local startPos = hrp.Position
+    local endPos = targetCFrame.Position
+    local minHeight = Utils.MinTweenHeight
+    
+    local elevatedStartY = math.max(startPos.Y, minHeight)
+    local elevatedEndY = math.max(endPos.Y, minHeight)
+    local travelHeight = math.max(elevatedStartY, elevatedEndY) + 20
+    
+    local elevatedStart = CFrame.new(startPos.X, travelHeight, startPos.Z)
+    local elevatedEnd = CFrame.new(endPos.X, travelHeight, endPos.Z)
+    
+    local dist1 = (hrp.Position - elevatedStart.Position).Magnitude
+    local dist2 = (elevatedStart.Position - elevatedEnd.Position).Magnitude
+    local dist3 = stayElevated and 0 or (elevatedEnd.Position - targetCFrame.Position).Magnitude
+    
+    local time1 = dist1 / speed
+    local time2 = dist2 / speed
+    local time3 = dist3 / speed
+    
+    local tweenInfo1 = TweenInfo.new(math.max(time1, 0.1), Enum.EasingStyle.Linear)
+    Utils.CurrentTween = TweenService:Create(hrp, tweenInfo1, {CFrame = elevatedStart})
     Utils.CurrentTween:Play()
+    Utils.CurrentTween.Completed:Wait()
+    
+    if dist2 > 1 then
+        local tweenInfo2 = TweenInfo.new(math.max(time2, 0.1), Enum.EasingStyle.Linear)
+        Utils.CurrentTween = TweenService:Create(hrp, tweenInfo2, {CFrame = elevatedEnd})
+        Utils.CurrentTween:Play()
+        Utils.CurrentTween.Completed:Wait()
+    end
+    
+    if not stayElevated and dist3 > 1 then
+        local tweenInfo3 = TweenInfo.new(math.max(time3, 0.1), Enum.EasingStyle.Linear)
+        Utils.CurrentTween = TweenService:Create(hrp, tweenInfo3, {CFrame = targetCFrame})
+        Utils.CurrentTween:Play()
+    end
     
     return Utils.CurrentTween
 end
@@ -68,70 +114,70 @@ function Utils.SafeTeleport(targetCFrame, speed)
     if not hrp then return false end
     
     local humanoid = Utils.GetHumanoid()
-    local distance = (hrp.Position - targetCFrame.Position).Magnitude
-    
-    if distance < 50 then
-        hrp.CFrame = targetCFrame
-        return true
-    end
-    
-    local maxStepDistance = 400
-    local steps = math.ceil(distance / maxStepDistance)
-    
-    if steps <= 1 then
-        local tweenTime = distance / speed
-        local tweenInfo = TweenInfo.new(tweenTime, Enum.EasingStyle.Linear)
-        
-        if humanoid then
-            humanoid:ChangeState(Enum.HumanoidStateType.Physics)
-        end
-        
-        if Utils.CurrentTween then
-            Utils.CurrentTween:Cancel()
-        end
-        
-        Utils.CurrentTween = TweenService:Create(hrp, tweenInfo, {CFrame = targetCFrame})
-        Utils.CurrentTween:Play()
-        Utils.CurrentTween.Completed:Wait()
-        
-        if humanoid then
-            humanoid:ChangeState(Enum.HumanoidStateType.GettingUp)
-        end
-        return true
-    end
-    
     local startPos = hrp.Position
     local endPos = targetCFrame.Position
-    local direction = (endPos - startPos).Unit
-    local stepSize = distance / steps
+    local minHeight = Utils.MinTweenHeight
+    
+    local travelHeight = math.max(startPos.Y, endPos.Y, minHeight) + 30
     
     if humanoid then
         humanoid:ChangeState(Enum.HumanoidStateType.Physics)
     end
+    
+    local elevatedStart = CFrame.new(startPos.X, travelHeight, startPos.Z)
+    local dist1 = (startPos - elevatedStart.Position).Magnitude
+    if dist1 > 1 then
+        local time1 = dist1 / speed
+        local tweenInfo1 = TweenInfo.new(math.max(time1, 0.1), Enum.EasingStyle.Linear)
+        if Utils.CurrentTween then Utils.CurrentTween:Cancel() end
+        Utils.CurrentTween = TweenService:Create(hrp, tweenInfo1, {CFrame = elevatedStart})
+        Utils.CurrentTween:Play()
+        Utils.CurrentTween.Completed:Wait()
+    end
+    
+    local elevatedEnd = CFrame.new(endPos.X, travelHeight, endPos.Z)
+    local horizontalDist = (Vector3.new(startPos.X, 0, startPos.Z) - Vector3.new(endPos.X, 0, endPos.Z)).Magnitude
+    
+    local maxStepDistance = 400
+    local steps = math.ceil(horizontalDist / maxStepDistance)
+    steps = math.max(steps, 1)
+    
+    local direction = (Vector3.new(endPos.X, travelHeight, endPos.Z) - Vector3.new(startPos.X, travelHeight, startPos.Z))
+    if direction.Magnitude > 0 then
+        direction = direction.Unit
+    end
+    local stepSize = horizontalDist / steps
     
     for i = 1, steps do
         if not hrp or not hrp.Parent then break end
         
         local stepTarget
         if i == steps then
-            stepTarget = targetCFrame
+            stepTarget = elevatedEnd
         else
-            local stepPos = startPos + (direction * stepSize * i)
-            stepTarget = CFrame.new(stepPos) * (targetCFrame - targetCFrame.Position)
+            local stepPos = Vector3.new(startPos.X, travelHeight, startPos.Z) + (direction * stepSize * i)
+            stepTarget = CFrame.new(stepPos)
         end
         
         local stepTweenTime = stepSize / speed
-        local tweenInfo = TweenInfo.new(stepTweenTime, Enum.EasingStyle.Linear)
+        local tweenInfo = TweenInfo.new(math.max(stepTweenTime, 0.1), Enum.EasingStyle.Linear)
         
-        if Utils.CurrentTween then
-            Utils.CurrentTween:Cancel()
-        end
-        
+        if Utils.CurrentTween then Utils.CurrentTween:Cancel() end
         Utils.CurrentTween = TweenService:Create(hrp, tweenInfo, {CFrame = stepTarget})
         Utils.CurrentTween:Play()
         Utils.CurrentTween.Completed:Wait()
         
         task.wait(0.02)
+    end
+    
+    local dist3 = (elevatedEnd.Position - targetCFrame.Position).Magnitude
+    if dist3 > 1 then
+        local time3 = dist3 / speed
+        local tweenInfo3 = TweenInfo.new(math.max(time3, 0.1), Enum.EasingStyle.Linear)
+        if Utils.CurrentTween then Utils.CurrentTween:Cancel() end
+        Utils.CurrentTween = TweenService:Create(hrp, tweenInfo3, {CFrame = targetCFrame})
+        Utils.CurrentTween:Play()
+        Utils.CurrentTween.Completed:Wait()
     end
     
     if humanoid then
