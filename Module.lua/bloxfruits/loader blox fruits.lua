@@ -1,8 +1,3 @@
---[[
-    Zlex Hub - Blox Fruits Script Loader
-    Paste this into your executor to load the script
-]]
-
 local BASE_URL = "https://raw.githubusercontent.com/zzxzsss/moulders/main/Module.lua/bloxfruits/"
 local HttpService = game:GetService("HttpService")
 
@@ -61,7 +56,8 @@ local moduleList = {
     "combat",
     "misc",
     "fast-attack",
-    "anti-cheat"
+    "anti-cheat",
+    "task-manager"
 }
 
 print("[Zlex Hub] Loading modules...")
@@ -96,7 +92,14 @@ if Utils then
     if Modules["combat"] then Modules["combat"].Init(Utils) end
     if Modules["misc"] then Modules["misc"].Init(Utils) end
     if Modules["fast-attack"] then Modules["fast-attack"].Init(Utils) end
-    if Modules["anti-cheat"] then Modules["anti-cheat"].Init(Utils) end
+    if Modules["anti-cheat"] then 
+        Modules["anti-cheat"].Init(Utils) 
+        _G.AntiCheat = Modules["anti-cheat"]
+    end
+    if Modules["task-manager"] then 
+        Modules["task-manager"].Init(Utils) 
+        _G.TaskManager = Modules["task-manager"]
+    end
 end
 
 print("[Zlex Hub] Starting modules...")
