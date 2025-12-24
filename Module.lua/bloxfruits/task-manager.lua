@@ -1,3 +1,9 @@
+--[[
+    Task Manager Module - Priority Queue System
+    Ensures only one main action runs at a time
+    Blox Fruits Script by Zlex Hub
+]]
+
 local TaskManager = {}
 
 local Utils = nil
