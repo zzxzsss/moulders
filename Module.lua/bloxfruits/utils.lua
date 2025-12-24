@@ -65,6 +65,10 @@ function Utils.TweenPlayer(targetCFrame, speed, stayElevated)
     local endPos = targetCFrame.Position
     local minHeight = Utils.MinTweenHeight
     
+    if _G.AntiCheat and _G.AntiCheat.StartPositionSpoof then
+        _G.AntiCheat.StartPositionSpoof()
+    end
+    
     local elevatedStartY = math.max(startPos.Y, minHeight)
     local elevatedEndY = math.max(endPos.Y, minHeight)
     local travelHeight = math.max(elevatedStartY, elevatedEndY) + 20
@@ -96,6 +100,13 @@ function Utils.TweenPlayer(targetCFrame, speed, stayElevated)
         local tweenInfo3 = TweenInfo.new(math.max(time3, 0.1), Enum.EasingStyle.Linear)
         Utils.CurrentTween = TweenService:Create(hrp, tweenInfo3, {CFrame = targetCFrame})
         Utils.CurrentTween:Play()
+        Utils.CurrentTween.Completed:Wait()
+    end
+    
+    if _G.AntiCheat and _G.AntiCheat.StopPositionSpoof then
+        task.delay(0.3, function()
+            _G.AntiCheat.StopPositionSpoof()
+        end)
     end
     
     return Utils.CurrentTween
@@ -119,6 +130,10 @@ function Utils.SafeTeleport(targetCFrame, speed)
     local minHeight = Utils.MinTweenHeight
     
     local travelHeight = math.max(startPos.Y, endPos.Y, minHeight) + 30
+    
+    if _G.AntiCheat and _G.AntiCheat.StartPositionSpoof then
+        _G.AntiCheat.StartPositionSpoof()
+    end
     
     if humanoid then
         humanoid:ChangeState(Enum.HumanoidStateType.Physics)
@@ -182,6 +197,12 @@ function Utils.SafeTeleport(targetCFrame, speed)
     
     if humanoid then
         humanoid:ChangeState(Enum.HumanoidStateType.GettingUp)
+    end
+    
+    if _G.AntiCheat and _G.AntiCheat.StopPositionSpoof then
+        task.delay(0.3, function()
+            _G.AntiCheat.StopPositionSpoof()
+        end)
     end
     
     return true
