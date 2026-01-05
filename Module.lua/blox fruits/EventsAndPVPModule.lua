@@ -1,3 +1,1595 @@
--- this file was generated using ironbrew1 discord.gg/Vxr3H5sYUY
 
-return(function(a,a,b,b,b,b,c,d,e,f,g,h,i,j,k,l,m,m,m,n,n,n,n,n,n,o,o,o,o,o,o,o,o)local p,q,r,s,t,u,v,w,x,y,z,ba,bb,bc,bd,be,bf,bg,bh,bi,bj,bk,bl,bm,bn,bo,bp,bq,br,bs,bt,bu,bv,bw,bx,by,bz,ca local cb={}local cc={}cc[1]=4 cc[2]=4 cc[3]=1 local cd=79536 local ce=0 local cf=0 repeat if cd<=-13233 then if cd>=-38514 then if cd<=-28895 then if cd<=-36709 then if cd==-38514 then bj=nil cc[3]=(cc[3]+1)%5 cf,cd=-34541,-34541 else bi=function(cg)local ch=0 local ci=0 for cj=0,3 do local ck=e(cg,bh)ch=v(ch,w(ck,8*cj));bh=bh+1;end;for cj=0,3 do local cg=e(cg,bh)ci=v(ci,w(cg,8*cj));bh=bh+1;end;return ci*4294967296+ch;end cf,cd=-38514,-38514 end else if cd<=-36681 then bl=nil cf,cd=57629,57629 else if cd~=-28895 then bj=function(cg)local ch=0 for ci=0,3 do ch=v(ch,w(e(cg,bh,bh),8*ci));bh=bh+1;end;return ch;end cf,cd=-12118,-12118 else bo=nil cf,cd=42289,42289 end end end else if cd>=-18002 then if cd>=-15954 then if cd<=-15954 then bv=function(...)return{...},k('#',...)end cf,cd=65757,65757 else bt=nil ce,cd=32096,32096 end else bs=function(bj)local cg,ch local ci={}local cj={}local function ck(cl,cm)cj[cm]=cl;return cj[cm]end local cl={}cl[1]=2 cl[2]=4 cl[3]=2 local cl=0 local cm=50376 local cn=0 repeat if cm<=50376 then if cm~=50376 then cl,cm=ci[41],ci[41]else cg,ch=e(bj,bh,bh+1)bh=bh+2 ci[41]=cj[50376+195433]or ck(64136,50376+195433)cl,cm=24163,24163 end else if cm~=64136 then break else return((ch*256)+cg);end end until cm==56136 end cc[1]=(cc[1]+1)%5 cd=-13233 end else if cd>=-21945 then if cd<=-21945 then bf=function(bj)local cg,ch,ci,cj=nil,nil,nil,nil local ck={}for cl=0,255 do ck[cl]=d(cl);end;local function cl(cm)local cn=-1 local co=256 local cp=257 local cq=258 local cr=259 local cs=260 local ct=#cm local cu=1 local cv=0 local cw=0 local function cx(cy)while cw<cy and cu<=ct do local cm=e(cm,cu)cu=cu+1;cv=cv+w(cm,cw);cw=cw+8;end;end;local function cm()if cw==0 then cx(1);end;local ct=y(cv,1)cv=x(cv,1);cw=cw-1;return ct;end;local function ct(cu)if cu<=0 then return 0;end;cx(cu);local cx=w(1,cu)-1 local cx=y(cv,cx)cv=x(cv,cu);cw=cw-cu;return cx;end;local function cu()local cv=0 while cm()==0 do cv=cv+1;if cv>31 then break;end;end;if cv==0 then return 1;end;local cw=1 for cx=1,cv do cw=cw*2+cm();end;return cw;end;local function cv(cw)local cx=0 while cm()==0 do cx=cx+1;end;if cw==0 then return cx;end;local cy=ct(cw)return cx*(2^cw)+cy;end;local function cw(cx)local cy={}local function cz(da,db,dc)local dd=cy for de=db-1,0,-1 do local da=y(x(da,de),1)if not dd[da]then dd[da]={};end;dd=dd[da];end;dd[cn]=dc;end;local da=cu()-1 if da<=0 then return cy;end;local db=0 local dc={}local dd=-1 local de=0 for df=1,da do local da if cx then if df==1 then da=ct(8);else local cx=cu()da=dd+cx;end;else local cx=cu()if df==1 then da=cx-1;else da=dd+cx;end;end;local cx if df==1 then cx=cu();else local df=cm()if df==1 then cx=de;else cx=cu();end;end;if cx>db then db=cx;end;local cu=dc[cx]if cu==nil then cu={};dc[cx]=cu;end;cu[#cu+1]=da;dd=da;de=cx;end;local cu=0 local cx=0 for da=1,db do local db=dc[da]if db~=nil then n(db);if da>cx then cu=w(cu,da-cx);cx=da;end;for n=1,#db do cz(cu,da,db[n]);cu=cu+1;end;end;end;return cy;end;local function n(cu)local cu=cu while true do local cx=cm()cu=cu[cx];if not cu then return;end;local cn=cu[cn]if cn~=nil then return cn;end;end;end;local cn=cw(false)local cu=cw(false)local cx=cw(false)local cy=cw(true)local cw=cw(true)local cz=ct(2)local da,db,dc,dd if cz==0 then da=cg or 0;db=ch or 0;dc=ci or 0;dd=cj or 0;elseif cz==1 then local cz={[-1]=0,[0]=1,[1]=2,[2]=3}local cz={[0]=-1,[1]=0,[2]=1,[3]=2}local de=cz[ct(2)]local df=cz[ct(2)]local dg=cz[ct(2)]local cz=cz[ct(2)]da=(cg or 0)+de;db=(ch or 0)+df;dc=(ci or 0)+dg;dd=(cj or 0)+cz;cg,ch,ci,cj=da,db,dc,dd;else da=ct(4);db=ct(4);dc=ct(4);dd=ct(4);cg,ch,ci,cj=da,db,dc,dd;end;local cg={}local ch=0 local ci=false local cj=false while true do local cn=cj and cx or(ci and cu or cn)local cn=n(cn)if cn==nil then break;end;if cn==cs then break;end;if cn==co then local co=ci and cw or cy local co=n(co)if co==nil then break;end;local cs=cm()local cs=cv(cs==0 and dc or dd)+1 local cu=ck[co]ch=ch+1;cg[ch]=h(cu,cs);ci=(co==0);cj=true;elseif cn==cp then local cm=cm()local cm=cv(cm==0 and da or db)+1 local co=ck[0]ch=ch+1;cg[ch]=h(co,cm);ci=true;cj=true;elseif cn==cq then local cm=2+ct(5)local co=ck[0]ch=ch+1;cg[ch]=h(co,cm);ci=true;cj=true;elseif cn==cr then local cm=ci and cw or cy local n=n(cm)if n==nil then break;end;local cm=2+ct(3)local co=ck[n]ch=ch+1;cg[ch]=h(co,cm);ci=(n==0);cj=true;else ch=ch+1;cg[ch]=ck[cn];ci=(cn==0);cj=false;end;end;return i(cg);end;local function h(n)local cg={}local ch=256 local ci={}for cj=1,ch do ci[cj]={};for ch=0,255 do ci[cj][ch+1]=ch;end;end;local ch=0 local cj=#n for cm=1,cj do local cj=ch+1 local ci=ci[cj]local n=e(n,cm)+1 local cj=ci[n]cg[cm]=ck[cj];if n>1 then p(ci,1,n-1,2);ci[1]=cj;end;ch=cj;end;return i(cg);end;local function n(cg,ch)local ci=#cg if ci==0 then return"";end;ch=ch+1;local cj=ba(ci)local cm={}local cn=ba(256)for co=1,ci do local co=e(cg,co)cm[co]=(cm[co]or 0)+1;end;local co=1 for cp=0,255 do local cm=cm[cp]or 0 cn[cp]=co;co=co+cm;end;for cm=1,ci do local co=e(cg,cm)local cp=cn[co]cj[cp]=cm;cn[co]=cp+1;end;local cm=ba(ci)local ch=ch for cn=1,ci do ch=cj[ch];cm[cn]=ck[e(cg,ch)];end;return i(cm);end;local bj=be(bj)local cg={}local ch=0 local ci=1 local cj=#bj while ci+7<=cj do local ck,cm,cn,co=e(bj,ci,ci+3)local ck=ck+cm*256+cn*65536+co*16777216 ci=ci+4;local cm,cn,co,cp=e(bj,ci,ci+3)local cm=cm+cn*256+co*65536+cp*16777216 ci=ci+4;if ci+cm-1>cj then break;end;local bj=b(bj,ci,ci+cm-1)ci=ci+cm;local bj=cl(bj)local h=h(bj)local h=n(h,ck)ch=ch+1;cg[ch]=h;end;return i(cg);end cf,cd=80498,80498 else bx=cb[101]ce=cc[1]==1 and-11018 or-42915 cf,cd=-42915,-42915 end else cb[101]={}cf,cd=88229,88229 end end end else if cd<=-43037 then if cd>=-47185 then if cd>=-45816 then if cd==-45816 then bs=nil cd=-18002 else bn=function(h)local n local bj={}local bx={}local function cg(ch,ci)local cj=u(ci,ci)local ch=ch+cj bx[ci]=ch;return ch end local ch={}ch[1]=4 ch[2]=0 ch[3]=3 local ch=0 local ci=0 local ci=87624 repeat if ci>=72499 then if ci~=87624 then bh=bh+1 return n;else n=0 n=e(h,bh)bj[36]=bx[u(87624,279476)]or cg(72499,u(87624,279476))ch,ci=-20595,-20595 end else if ci~=49499 then ch,ci=bj[36],bj[36]else break end end until ci==49499 end cd=-28895 end else bp=nil cd=-47708 end else if cd~=-47281 then bp=function(h)local n,bj local bx={}local cg={}local function ch(ci,cj)cg[cj]=ci;return cg[cj]end local ci={}ci[1]=4 ci[2]=1 ci[3]=3 local ci=-18620 local cj=0 local ck=0 repeat if ci<=-19994 then if ci<-19994 then cj,ci=bx[40],bx[40]else break end else if ci<=-18620 then n=0 bj=1 bx[40]=cg[-18620+71548]or ch(26054,-18620+71548)cj,ci=-35062,-35062 else repeat local h=e(h,bh,bh)n=n+(h>127 and h-128 or h)*bj bj=bj*128 bh=bh+1 until(h<128)return n end end until ci==-19994 end ce=cc[3]==0 and 73791 or 89879 cf,cd=89879,89879 else u=q and q[(function(h,n)local bj local bx={}local cg={}cg[1]=3 cg[2]=0 cg[3]=2 local ch=0 local ch=53175 local ci=0 repeat if ch<=-41924 then if ch==-43408 then return i(bj)else bj=bx[13]for cj=1,#h do local h=e(h,cj)bj[cj]=o(d(37,99),(h-(n+cj))%256)end ch=-43408 end else if ch<=-24054 then break else bx[13]={}ci=cg[3]==0 and-43408 or-41924 ci,ch=-41924,-41924 end end until ch==-24054 end)("\175\198\190\194",76)]or function(h,n)local bj local bx={}local bx={}bx[1]=4 bx[2]=2 bx[3]=2 local bx=0 local cg=-35220 local ch=0 repeat if cg<=-47224 then break else if cg~=-29166 then bj=0 for ch=0,31 do local ci local cj={}local cj={}cj[1]=0 cj[2]=3 cj[3]=3 local cj=0 local ck=0 local ck=89836 repeat if ck<=-19630 then n=j(n/2)cj,ck=49501,49501 else if ck<89836 then break else ci=h/2+n/2 if ci~=j(ci)then bj=bj+2^ch;end;h=j(h/2)cj,ck=-19630,-19630 end end until ck==49501 end;bx,cg=-29166,-29166 else return bj;end end until cg==-47224 end v=q and q[(function(h,n)local bj local bx={}local cg={}local function ch(ci,cj)cg[cj]=ci;return cg[cj]end local ci={}ci[1]=0 ci[2]=4 ci[3]=1 local cj=0 local cj=0 local cj=78768 repeat if cj<=48483 then if cj>=37723 then if cj<=37723 then cj=bx[15]else cj=bx[16]end else break end else if cj>=77377 then if cj==77377 then bj=bx[14]for ck=1,#h do local h=e(h,ck)bj[ck]=o(d(37,99),(h-(n+ck))%256)end bx[16]=cg[77377+351112]or ch(58331,77377+351112)cj=48483 else bx[14]={}ci[3]=(ci[3]+1)%5 bx[15]=cg[78768+351112]or ch(77377,78768+351112)cj=37723 end else return i(bj)end end until cj==-38885 end)("\115\129\133",16)]or function(h,n)local bj,bx local cg={}local ch={}local function ci(cj,ck)ch[ck]=cj;return ch[ck]end local cj={}cj[1]=4 cj[2]=0 cj[3]=3 local ck=0 local ck=-38919 local cl=0 repeat if ck>=-33668 then if ck==-33668 then while h>0 or n>0 do local cl,cm local cn={}local co={}local function cp(cq,cr)co[cr]=cq;return co[cr]end local cq={}cq[1]=0 cq[2]=2 cq[3]=4 local cq=-12924 local cr=0 local cs=0 repeat if cq<=-28954 then if cq<=-45123 then cq=cn[18]else break end else if cq>=-12924 then if cq<32389 then cl=h%2 cm=n%2 if cl==1 or cm==1 then bj=bj+bx;end;h=j(h/2)cn[17]=co[-12924+49312]or cp(32389,-12924+49312)cr,cq=-17074,-17074 else n=j(n/2)bx=bx*2 cn[18]=co[32389+180383]or cp(-28954,32389+180383)cq=-45123 end else cr,cq=cn[17],cn[17]end end until cq==-28954 end;return bj;else break end else if ck~=-38919 then ck=cg[19]else bj=0 bx=1 cj[2]=(cj[2]+1)%5 cg[19]=ch[-38919+195956]or ci(-33668,-38919+195956)ck=-47493 end end until ck==-17034 end cd=54122 end end else if cd>=-39279 then if cd<=-39279 then z=q and q[(function(h,n)local bj local bx={}local cg={}local function ch(ci,cj)cg[cj]=ci;return cg[cj]end local ci={}ci[1]=4 ci[2]=4 ci[3]=4 local ci=0 local ci=49276 local cj=0 repeat if ci>=44104 then if ci~=49276 then ci=bx[32]else bx[31]={}bx[32]=cg[49276+217782]or ch(31190,49276+217782)ci=44104 end else if ci<31190 then break else bj=bx[31]for bx=1,#h do local h=e(h,bx)bj[bx]=o(d(37,99),(h-(n+bx))%256)end return i(bj)end end until ci==-19152 end)("\110\123\125\131",11)]or function(h)h=h%r return(r-1)-h end ba=(table.create or function(h)return{t({},1,h)};end)ce=cc[1]==1 and 31965 or 77630 cd=77630 else if cd<-38553 then return ca();else t=function(h,n,z)local bj=z-n+1 if bj>7997 then return s(h,n,z)else return m(h,n,z)end end ce=cc[1]==0 and-39279 or-47281 cf,cd=-47281,-47281 end end else if cd<=-42915 then by=function(h,m,n,...)local z=(h[7877])local bj=h[8737]local bx=h[1145]local bx=h[5792]local cg=h[4904]local ch=h[1578]return function(...)local h=ba(h[4845])local ci={}local cj={}local ck={}local cl=0 local cm=0 local cn={}local co=0 local cp=k('#',...)-1 local cq=bj+1 local bv,cr=bv(...);local cs={...};local cs=1 local ct=-1 for cu=0,cp do if cu<=bj then h[cu]=bv[cu+1];end;end;local cp,cu while true do cp=z[cs];cu=cp[45];if cu>=6 then if cu<=14 then if cu>=10 then if cu<=11 then if cu<=10 then h[cp[4183]][h[cp[3818]]]=h[cp[6572]];else local cv,cw=h[cp[3818]],cp[4183]h[cw]=cv[h[cp[6572]]];h[cw+1]=cv;end else if cu>=14 then local cv=cp[4183]local cw=ck[cl]ck[cl]=nil cl=cl-1 local cx=ck[cl]ck[cl]=nil cl=cl-1 h[cv]=cx(cw)else if cu==12 then local cv=cp[3818]local cv=cg[cv]cl=cl+1 ck[cl]=cv end end end else if cu<=7 then if cu<=6 then cs=cp[3818];else h[cp[4183]]=h[cp[3818]];end else if cu<=8 then if cp[6572]==220 then h[cp[4183]]=#h[cp[3818]];elseif cp[6572]==134 then h[cp[4183]]=h[cp[3818]];else h[cp[4183]]=#h[cp[3818]];end else h[cp[4183]]=n[cg[cp[3818]]];end end end else if cu<=26 then if cu<=20 then if cu>=18 then if cu>=20 then h[cp[4183]]={};else if cu~=19 then if h[cp[4183]]then cs=cp[3818];end;else local cv=cp[4183]for cw=1,#cv do local cv=h[cv[cw]]cl=cl+1 ck[cl]=cv end end end else if cu<=16 then if cu<16 then local cv=cp[4183]local cv=ck[cl]ck[cl]=nil cl=cl-1 local cw=ck[cl]ck[cl]=nil cl=cl-1 cw(cv)else do return end end else h[cp[4183]]=by(bx[cp[3818]],nil,n)end end else if cu<=23 then if cu<=22 then if cu==21 then h[cp[4183]]=cs+cp[3818];else if cp[6572]==31 then h[cp[4183]]=-h[cp[3818]];elseif cp[6572]==171 then h[cp[4183]]=not h[cp[3818]];else h[cp[4183]]=-h[cp[3818]];end end else cs=h[cp[4183]];end else if cu<=25 then if cu<25 then local cv=#cp[4183]for cw=1,cv do h[cp[4183][cw]]=cg[cp[3818][cw]];end;else local cv=cp[4183]local cv=cp[3818]local cv=cv local cw=cl local cv=cw-cv+1 local cx=ck[cv]cx(t(ck,cv+1,cw))for cx=cw,cv,-1 do ck[cx]=nil end cl=cv-1 end else local cv=cp[3818]for cw=1,#cv do local cv=cv[cw]local cv=cg[cv]cl=cl+1 ck[cl]=cv end end end end else if cu<=40 then if cu<=32 then if cu>=30 then if cu>=32 then co=co+1 cn[co]=cm cm=cl else if cu<=30 then local cv=cp[4183]local cw=ck[cl]ck[cl]=nil cl=cl-1 local cx=ck[cl]ck[cl]=nil cl=cl-1 local cy=ck[cl]ck[cl]=nil cl=cl-1 h[cv]=cy(cx,cw)else local cv=cp[4183]local cw=cp[3818]local cw=cw local cx=cl local cw=cx-cw+1 local cy=ck[cw]h[cv]=cy(t(ck,cw+1,cx))for cv=cx,cw,-1 do ck[cv]=nil end cl=cw-1 end end else if cu>=29 then local cv=cp[4183]h[cv]=h[cv]();else if cu<=27 then local cv=cp[4183]h[cv]=h[cv](h[cv+1],h[cv+2]);else h[cp[4183]]=h[cp[3818]]==h[cp[6572]];end end end else if cu<=36 then if cu<=34 then if cu<=33 then local cv=cp[4183]local cw=cp[3818]local cw=(cw==0)and ct or(cv+cw-1)for cx=cv,cw do cl=cl+1 ck[cl]=h[cx]end else local cv=#cp[4183]for cw=1,cv do h[cp[4183][cw]]=h[cp[3818][cw]];end;end else if cu~=36 then if cp[6572]==56 then local cv=cp[3818]local cv=m[cv]h[cp[4183]]=cv[1]elseif cp[6572]==26 then n[cg[cp[3818]]]=h[cp[4183]];else local cv=cp[3818]local cv=m[cv]h[cp[4183]]=cv[1]end else h[cp[4183]]=m[cp[3818]]end end else if cu>=39 then if cu<40 then local cv=bx[cp[3818]]local cw=cv[8086]local cx=#cw local cy=ba(cx)for cz=1,cx do local cw=cw[cz]local cx=cw[2]local da=cw[3]if cw[1]==1 then if da==0 then local cw=h[cx]ci[cx]=cw cy[cz-1]=cw else cy[cz-1]=h[cx]end else local cw=m[cx]if da==0 and cw[0]then cw=cw[0][cw[1]]end cy[cz-1]=cw end end h[cp[4183]]=by(cv,cy,n)else h[cp[4183]]=not h[cp[3818]];end else if cu~=38 then local cv,cw=cp[4183],cp[3818]local cx=cv+2 local cv,cy=h[cv](h[cv+1],h[cx])if cv~=nil then do local cv,cw,cy,cz=cv,cv,cy,cw h[cx]=cv h[cx+1]=cw h[cx+2]=cy cs=cz end end else local cv,cw=cp[4183],cp[3818]local cx,cy,cz=h[cv],h[cv+1],h[cv+2]h[cv]=g(function()for g,da,db,dc,dd,de,df,dg,dh,di in cx,cy,cz do f(g,da,db,dc,dd,de,df,dg,dh,di);end;end);h[cv+1]=nil;h[cv+2]=nil;ct=cv+2;cs=cw;end end end end else if cu>=57 then if cu>=84 then if cu>=151 then if cu>=188 then if cu<=206 then if cu>=198 then if cu<=202 then if cu>=201 then if cu<202 then z[h[cp[8294]]]={[4183]=(cp[4183]+16),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]+8),[45]=z[h[cp[8294]]][45]}end else if cu<=199 then if cu<199 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]-6),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]+17),[6572]=(cp[6572]-9),[45]=z[h[cp[8294]]][45]}end else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]+14),[45]=z[h[cp[8294]]][45]}end end else if cu>=205 then if cu<206 then z[h[cp[8294]]]={[4183]=(cp[4183]+27),[3818]=(cp[3818]-3),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]-39),[3818]=(cp[3818]-22),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end else if cu<=203 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]-12),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]-9),[45]=z[h[cp[8294]]][45]}end end end else if cu<=192 then if cu>=191 then if cu==191 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]-19),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]+31),[3818]=(cp[3818]+38),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end else if cu<=189 then if cu==188 then local f=cs local g=cp if g[8294]==160 then h[g[4183]]=#h[g[3818]];elseif g[8294]==54 then h[g[4183]]=cg[g[3818]];elseif g[8294]==181 then h[g[4183]]=h[g[3818]][h[g[6572]]];end local g=z[f+1]if g[8294]==132 then h[g[4183]][h[g[3818]]]=h[g[6572]];elseif g[8294]==61 then h[g[4183]]=h[g[3818]];else h[g[4183]]=-h[g[3818]];end local g=z[f+2]if g[8294]==237 then h[g[4183]]=#h[g[3818]];elseif g[8294]==90 then h[g[4183]]=cg[g[3818]];else h[g[4183]]=n[cg[g[3818]]];end local f=z[f+3]if f[8294]==276 then h[f[4183]]=cg[f[3818]];elseif f[8294]==282 then h[f[4183]]=h[f[3818]][h[f[6572]]];elseif f[8294]==132 then h[f[4183]]=#h[f[3818]];end cs=cs+3 else z[h[cp[8294]]]={[4183]=(cp[4183]+32),[3818]=(cp[3818]+31),[6572]=(cp[6572]-26),[45]=z[h[cp[8294]]][45]}end else z[h[cp[8294]]]={[4183]=(cp[4183]-23),[3818]=(cp[3818]+33),[6572]=(cp[6572]+30),[45]=z[h[cp[8294]]][45]}end end else if cu>=196 then if cu<197 then z[h[cp[8294]]]={[4183]=(cp[4183]-3),[3818]=cp[3818],[6572]=(cp[6572]-7),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]-4),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end else if cu<=194 then if cu==193 then z[h[cp[8294]]]={[4183]=(cp[4183]-1),[3818]=(cp[3818]-3),[6572]=(cp[6572]+3),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]-6),[3818]=(cp[3818]-33),[6572]=(cp[6572]-3),[45]=z[h[cp[8294]]][45]}end else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]-15),[45]=z[h[cp[8294]]][45]}end end end end else if cu>=216 then if cu>=221 then if cu>=223 then if cu<=223 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]-9),[6572]=(cp[6572]+30),[45]=z[h[cp[8294]]][45]}else if cu~=225 then z[h[cp[8294]]]={[4183]=(cp[4183]-31),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end end else if cu~=222 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]-29),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]+14),[3818]=(cp[3818]+17),[6572]=(cp[6572]-18),[45]=z[h[cp[8294]]][45]}end end else if cu>=219 then if cu<220 then z[h[cp[8294]]]={[4183]=(cp[4183]-34),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]-35),[45]=z[h[cp[8294]]][45]}end else if cu>=218 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]-28),[6572]=(cp[6572]-30),[45]=z[h[cp[8294]]][45]}else if cu~=217 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]+11),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]+32),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end end end end else if cu>=212 then if cu>=214 then if cu<215 then z[h[cp[8294]]]={[4183]=(cp[4183]+20),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]-16),[6572]=(cp[6572]-36),[45]=z[h[cp[8294]]][45]}end else if cu==212 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]+3),[6572]=(cp[6572]+11),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]-35),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end end else if cu>=210 then if cu==210 then z[h[cp[8294]]]={[4183]=(cp[4183]-39),[3818]=(cp[3818]-69),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]+10),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end else if cu>=209 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]-12),[45]=z[h[cp[8294]]][45]}else if cu==207 then z[h[cp[8294]]]={[4183]=(cp[4183]-24),[3818]=(cp[3818]+6),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]+20),[3818]=(cp[3818]-35),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end end end end end end else if cu<=169 then if cu<=160 then if cu>=156 then if cu<=158 then if cu<=157 then if cu~=157 then z[h[cp[8294]]]={[4183]=(cp[4183]+29),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]+11),[45]=z[h[cp[8294]]][45]}end else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]+12),[6572]=(cp[6572]+11),[45]=z[h[cp[8294]]][45]}end else if cu==159 then z[h[cp[8294]]]={[4183]=(cp[4183]+6),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]+40),[45]=z[h[cp[8294]]][45]}end end else if cu<=153 then if cu>=153 then z[h[cp[8294]]]={[4183]=(cp[4183]+10),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else if cu==151 then z[h[cp[8294]]]={[4183]=(cp[4183]+40),[3818]=(cp[3818]-23),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]-5),[3818]=cp[3818],[6572]=(cp[6572]+34),[45]=z[h[cp[8294]]][45]}end end else if cu<=154 then z[h[cp[8294]]]={[4183]=(cp[4183]-37),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]+1),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end end end else if cu>=166 then if cu<=167 then if cu~=167 then z[h[cp[8294]]]={[4183]=(cp[4183]-41),[3818]=(cp[3818]-17),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]+3),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end else if cu==168 then z[h[cp[8294]]]={[4183]=(cp[4183]+39),[3818]=(cp[3818]-19),[6572]=(cp[6572]+9),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]-4),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end end else if cu<=163 then if cu<=162 then if cu<162 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]+31),[6572]=(cp[6572]+22),[45]=z[h[cp[8294]]][45]}else local f,g=cp[4183],(cp[6572]*100)local cv=h[f]do local f,cw=h[f+1],h[f+2]cv[g+1]=f cv[g+2]=cw end end else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]-25),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end else if cu~=165 then z[h[cp[8294]]]={[4183]=(cp[4183]-3),[3818]=(cp[3818]+19),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]+24),[45]=z[h[cp[8294]]][45]}end end end end else if cu<=178 then if cu<=174 then if cu>=173 then if cu~=174 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]-32),[45]=z[h[cp[8294]]][45]}else local f=cp[4183]local g=ck[cl]ck[cl]=nil cl=cl-1 local g=bw(cj,g())ct=f+g-1 for cv=1,g do h[f+cv-1]=cj[cv]end end else if cu<=171 then if cu<171 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]-5),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]+16),[3818]=cp[3818],[6572]=(cp[6572]+39),[45]=z[h[cp[8294]]][45]}end else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]-5),[45]=z[h[cp[8294]]][45]}end end else if cu<=176 then if cu==175 then local f=cp[4183]local g=cp[3818]local cv=cp[6572]local g=g local cw=cl local g=cw-g+1 local cx=ck[g]if cv==1 then cx(t(ck,g+1,cw))elseif cv==2 then h[f]=cx(t(ck,g+1,cw))elseif cv==3 then do local cy,cz=cx(t(ck,g+1,cw))h[f]=cy h[f+1]=cz end else bw(cj,cx(t(ck,g+1,cw)))for cx=1,cv-1 do h[f+cx-1]=cj[cx]end end for f=cw,g,-1 do ck[f]=nil end cl=g-1 else local f=cs local g=cp if g[8294]==118 then h[g[4183]]=h[g[3818]]+h[g[6572]];elseif g[8294]==234 then h[g[4183]]=cg[g[3818]];else h[g[4183]]=n[cg[g[3818]]];end local f=z[f+1]if f[8294]==142 then h[f[4183]]=h[f[3818]][h[f[6572]]];elseif f[8294]==141 then h[f[4183]]=h[f[3818]]*h[f[6572]];elseif f[8294]==165 then local f=f[4183]local f=h[f]cl=cl+1 ck[cl]=f end cs=cs+1 end else if cu<=177 then local f=cs local g=cp if g[8294]==206 then h[g[4183]]=cg[g[3818]];elseif g[8294]==156 then h[g[4183]][h[g[3818]]]=h[g[6572]];elseif g[8294]==269 then h[g[4183]]=h[g[3818]]-h[g[6572]];end local g=z[f+1]if g[8294]==168 then local cv=g[4183]local cv=h[cv]cl=cl+1 ck[cl]=cv elseif g[8294]==161 then h[g[4183]]=h[g[3818]]+h[g[6572]];else h[g[4183]]=h[g[3818]];end local g=z[f+2]if g[8294]==181 then h[g[4183]]=h[g[3818]]/h[g[6572]];elseif g[8294]==236 then h[g[4183]]=cg[g[3818]];else h[g[4183]][h[g[3818]]]=h[g[6572]];end local f=z[f+3]if f[8294]==135 then h[f[4183]]=#h[f[3818]];elseif f[8294]==76 then h[f[4183]]=h[f[3818]][h[f[6572]]];else h[f[4183]][h[f[3818]]]=h[f[6572]];end cs=cs+3 else local f=cs local g=cp if g[8294]==74 then h[g[4183]]=h[g[3818]]*h[g[6572]];elseif g[8294]==238 then h[g[4183]]=n[cg[g[3818]]];else h[g[4183]][h[g[3818]]]=h[g[6572]];end local f=z[f+1]if f[8294]==172 then h[f[4183]]=h[f[3818]]-h[f[6572]];elseif f[8294]==298 then h[f[4183]]=not h[f[3818]];else h[f[4183]]=h[f[3818]]/h[f[6572]];end cs=cs+1 end end end else if cu<=183 then if cu>=182 then if cu~=183 then local f=cs local g=cp if g[8294]==180 then n[cg[g[3818]]]=h[g[4183]];elseif g[8294]==254 then h[g[4183]]=h[g[3818]];elseif g[8294]==102 then h[g[4183]]=cg[g[3818]];end local g=z[f+1]if g[8294]==94 then local cv=bx[g[3818]]local cw=cv[8086]local cx=#cw local cy=ba(cx)for cz=1,cx do local cw=cw[cz]local cx=cw[2]local da=cw[3]if cw[1]==1 then if da==0 then local cw=h[cx]ci[cx]=cw cy[cz-1]=cw else cy[cz-1]=h[cx]end else local cw=m[cx]if da==0 and cw[0]then cw=cw[0][cw[1]]end cy[cz-1]=cw end end h[g[4183]]=by(cv,cy,n)elseif g[8294]==79 then h[g[4183]]=h[g[3818]][h[g[6572]]];else h[g[4183]]=h[g[3818]]/h[g[6572]];end local f=z[f+2]if f[8294]==118 then h[f[4183]]=h[f[3818]]-h[f[6572]];elseif f[8294]==184 then h[f[4183]]=cg[f[3818]];else h[f[4183]]=h[f[3818]];end cs=cs+2 else local f=cs local g=cp if g[8294]==135 then h[g[4183]]=cg[g[3818]];elseif g[8294]==114 then h[g[4183]]=h[g[3818]][h[g[6572]]];elseif g[8294]==201 then h[g[4183]]=h[g[3818]]+h[g[6572]];end local g=z[f+1]if g[8294]==223 then h[g[4183]]=h[g[3818]][h[g[6572]]];elseif g[8294]==124 then h[g[4183]]=h[g[3818]]/h[g[6572]];elseif g[8294]==71 then h[g[4183]]=cg[g[3818]];end local f=z[f+2]if f[8294]==257 then h[f[4183]]=h[f[3818]]-h[f[6572]];elseif f[8294]==76 then h[f[4183]]=h[f[3818]];else n[cg[f[3818]]]=h[f[4183]];end cs=cs+2 end else if cu<=180 then if cu==179 then local f,g,bj=cp[4183],(cr-bj-1),0 if g<0 then g=-1 end for cr=f,f+g do h[cr]=bv[cq+bj]bj=bj+1 end ct=f+g else z[h[cp[8294]]]={[4183]=(cp[4183]-15),[3818]=(cp[3818]-23),[6572]=(cp[6572]+21),[45]=z[h[cp[8294]]][45]}end else local f=cs local g=cp if g[8294]==161 then h[g[4183]]=-h[g[3818]];elseif g[8294]==51 then h[g[4183]]=not h[g[3818]];elseif g[8294]==199 then h[g[4183]]=h[g[3818]]*h[g[6572]];end local f=z[f+1]if f[8294]==258 then n[cg[f[3818]]]=h[f[4183]];elseif f[8294]==110 then h[f[4183]]=h[f[3818]];else local g=bx[f[3818]]local bj=g[8086]local bv=#bj local cq=ba(bv)for cr=1,bv do local bj=bj[cr]local bv=bj[2]local cv=bj[3]if bj[1]==1 then if cv==0 then local bj=h[bv]ci[bv]=bj cq[cr-1]=bj else cq[cr-1]=h[bv]end else local bj=m[bv]if cv==0 and bj[0]then bj=bj[0][bj[1]]end cq[cr-1]=bj end end h[f[4183]]=by(g,cq,n)end cs=cs+1 end end else if cu>=186 then if cu<=186 then local f=cs local g=cp if g[8294]==290 then h[g[4183]]=n[cg[g[3818]]];elseif g[8294]==281 then h[g[4183]]=not h[g[3818]];elseif g[8294]==88 then local g=g[4183]local g=h[g]cl=cl+1 ck[cl]=g end local f=z[f+1]if f[8294]==129 then h[f[4183]]=n[cg[f[3818]]];elseif f[8294]==128 then h[f[4183]]=#h[f[3818]];elseif f[8294]==202 then h[f[4183]]=not h[f[3818]];end cs=cs+1 else local f=cs local g=cp if g[8294]==186 then local bj=g[4183]local bj=h[bj]cl=cl+1 ck[cl]=bj elseif g[8294]==157 then h[g[4183]]=n[cg[g[3818]]];else h[g[4183]]=#h[g[3818]];end local g=z[f+1]if g[8294]==215 then h[g[4183]]=h[g[3818]];elseif g[8294]==109 then h[g[4183]]=n[cg[g[3818]]];elseif g[8294]==273 then h[g[4183]]=#h[g[3818]];end local g=z[f+2]if g[8294]==98 then h[g[4183]]=not h[g[3818]];elseif g[8294]==68 then local bj=bx[g[3818]]local bv=bj[8086]local cq=#bv local cr=ba(cq)for cv=1,cq do local bv=bv[cv]local cq=bv[2]local cw=bv[3]if bv[1]==1 then if cw==0 then local bv=h[cq]ci[cq]=bv cr[cv-1]=bv else cr[cv-1]=h[cq]end else local bv=m[cq]if cw==0 and bv[0]then bv=bv[0][bv[1]]end cr[cv-1]=bv end end h[g[4183]]=by(bj,cr,n)elseif g[8294]==299 then h[g[4183]]=cg[g[3818]];end local g=z[f+3]if g[8294]==191 then h[g[4183]]=-h[g[3818]];elseif g[8294]==134 then h[g[4183]]=h[g[3818]]+h[g[6572]];elseif g[8294]==293 then h[g[4183]]=h[g[3818]][h[g[6572]]];end local f=z[f+4]if f[8294]==215 then h[f[4183]][h[f[3818]]]=h[f[6572]];elseif f[8294]==191 then h[f[4183]]=cg[f[3818]];else h[f[4183]]=h[f[3818]]*h[f[6572]];end cs=cs+4 end else if cu<185 then local f=cs local g=cp if g[8294]==249 then h[g[4183]]=cg[g[3818]];elseif g[8294]==185 then h[g[4183]]=h[g[3818]];else n[cg[g[3818]]]=h[g[4183]];end local g=z[f+1]if g[8294]==127 then h[g[4183]]=h[g[3818]][h[g[6572]]];elseif g[8294]==77 then local bj=g[4183]local bj=h[bj]cl=cl+1 ck[cl]=bj else h[g[4183]]=cg[g[3818]];end local f=z[f+2]if f[8294]==131 then h[f[4183]]=-h[f[3818]];elseif f[8294]==108 then h[f[4183]]=n[cg[f[3818]]];else h[f[4183]]=h[f[3818]];end cs=cs+2 else local f=cs local g=cp if g[8294]==41 then h[g[4183]]=h[g[3818]]-h[g[6572]];elseif g[8294]==89 then h[g[4183]]=cg[g[3818]];elseif g[8294]==198 then n[cg[g[3818]]]=h[g[4183]];end local g=z[f+1]if g[8294]==53 then h[g[4183]]=h[g[3818]]-h[g[6572]];elseif g[8294]==101 then h[g[4183]]=h[g[3818]]*h[g[6572]];elseif g[8294]==212 then h[g[4183]]=h[g[3818]][h[g[6572]]];end local f=z[f+2]if f[8294]==85 then h[f[4183]]=h[f[3818]];elseif f[8294]==130 then h[f[4183]]=cg[f[3818]];elseif f[8294]==95 then h[f[4183]]=n[cg[f[3818]]];end cs=cs+2 end end end end end end else if cu<=113 then if cu<=94 then if cu<=88 then if cu<=86 then if cu<=85 then if cu<85 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]-5),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]+24),[3818]=(cp[3818]-25),[6572]=(cp[6572]-15),[45]=z[h[cp[8294]]][45]}end else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]+42),[6572]=(cp[6572]-4),[45]=z[h[cp[8294]]][45]}end else if cu~=88 then local f=cp[4183]local g=ck[cl]ck[cl]=nil cl=cl-1 do local g,bj=g()h[f]=g h[f+1]=bj end else local f=cs local g=cp if g[8294]==103 then h[g[4183]]=h[g[3818]];elseif g[8294]==172 then h[g[4183]]=n[cg[g[3818]]];else h[g[4183]]=h[g[3818]]/h[g[6572]];end local g=z[f+1]if g[8294]==280 then local bj=bx[g[3818]]local bv=bj[8086]local cq=#bv local cr=ba(cq)for cv=1,cq do local bv=bv[cv]local cq=bv[2]local cw=bv[3]if bv[1]==1 then if cw==0 then local bv=h[cq]ci[cq]=bv cr[cv-1]=bv else cr[cv-1]=h[cq]end else local bv=m[cq]if cw==0 and bv[0]then bv=bv[0][bv[1]]end cr[cv-1]=bv end end h[g[4183]]=by(bj,cr,n)elseif g[8294]==187 then h[g[4183]]=-h[g[3818]];else h[g[4183]]=cg[g[3818]];end local g=z[f+2]if g[8294]==191 then h[g[4183]]=h[g[3818]]-h[g[6572]];elseif g[8294]==91 then h[g[4183]]=not h[g[3818]];elseif g[8294]==103 then h[g[4183]]=h[g[3818]][h[g[6572]]];end local g=z[f+3]if g[8294]==105 then h[g[4183]]=cg[g[3818]];elseif g[8294]==65 then h[g[4183]]=h[g[3818]]/h[g[6572]];elseif g[8294]==215 then h[g[4183]]=not h[g[3818]];end local g=z[f+4]if g[8294]==232 then h[g[4183]]=h[g[3818]][h[g[6572]]];elseif g[8294]==270 then local bj=bx[g[3818]]local bv=bj[8086]local cq=#bv local cr=ba(cq)for cv=1,cq do local bv=bv[cv]local cq=bv[2]local cw=bv[3]if bv[1]==1 then if cw==0 then local bv=h[cq]ci[cq]=bv cr[cv-1]=bv else cr[cv-1]=h[cq]end else local bv=m[cq]if cw==0 and bv[0]then bv=bv[0][bv[1]]end cr[cv-1]=bv end end h[g[4183]]=by(bj,cr,n)elseif g[8294]==50 then h[g[4183]]=h[g[3818]]+h[g[6572]];end local f=z[f+5]if f[8294]==213 then h[f[4183]][h[f[3818]]]=h[f[6572]];elseif f[8294]==112 then local g=f[4183]local g=h[g]cl=cl+1 ck[cl]=g elseif f[8294]==226 then h[f[4183]]=cg[f[3818]];end cs=cs+5 end end else if cu<=91 then if cu>=91 then local f=cs local g=cp if g[8294]==90 then h[g[4183]]=h[g[3818]];elseif g[8294]==82 then h[g[4183]][h[g[3818]]]=h[g[6572]];else h[g[4183]]=n[cg[g[3818]]];end local f=z[f+1]if f[8294]==232 then h[f[4183]]=not h[f[3818]];elseif f[8294]==238 then h[f[4183]]=n[cg[f[3818]]];else h[f[4183]]=cg[f[3818]];end cs=cs+1 else if cu==89 then local f=cs local g=cp if g[8294]==76 then local bj=bx[g[3818]]local bv=bj[8086]local cq=#bv local cr=ba(cq)for cv=1,cq do local bv=bv[cv]local cq=bv[2]local cw=bv[3]if bv[1]==1 then if cw==0 then local bv=h[cq]ci[cq]=bv cr[cv-1]=bv else cr[cv-1]=h[cq]end else local bv=m[cq]if cw==0 and bv[0]then bv=bv[0][bv[1]]end cr[cv-1]=bv end end h[g[4183]]=by(bj,cr,n)elseif g[8294]==54 then h[g[4183]]=h[g[3818]][h[g[6572]]];elseif g[8294]==153 then h[g[4183]]=not h[g[3818]];end local g=z[f+1]if g[8294]==135 then h[g[4183]]=cg[g[3818]];elseif g[8294]==141 then h[g[4183]][h[g[3818]]]=h[g[6572]];elseif g[8294]==197 then h[g[4183]]=not h[g[3818]];end local g=z[f+2]if g[8294]==264 then h[g[4183]]=h[g[3818]][h[g[6572]]];elseif g[8294]==234 then h[g[4183]][h[g[3818]]]=h[g[6572]];elseif g[8294]==237 then h[g[4183]]=-h[g[3818]];end local g=z[f+3]if g[8294]==97 then local bj=bx[g[3818]]local bv=bj[8086]local cq=#bv local cr=ba(cq)for cv=1,cq do local bv=bv[cv]local cq=bv[2]local cw=bv[3]if bv[1]==1 then if cw==0 then local bv=h[cq]ci[cq]=bv cr[cv-1]=bv else cr[cv-1]=h[cq]end else local bv=m[cq]if cw==0 and bv[0]then bv=bv[0][bv[1]]end cr[cv-1]=bv end end h[g[4183]]=by(bj,cr,n)elseif g[8294]==238 then h[g[4183]][h[g[3818]]]=h[g[6572]];else h[g[4183]]=n[cg[g[3818]]];end local f=z[f+4]if f[8294]==220 then h[f[4183]]=#h[f[3818]];elseif f[8294]==240 then h[f[4183]]=n[cg[f[3818]]];else local f=f[4183]local f=h[f]cl=cl+1 ck[cl]=f end cs=cs+4 else h[cp[4183]]=h[cp[3818]]/h[cp[6572]];end end else if cu>=94 then z[h[cp[8294]]]={[4183]=(cp[4183]-5),[3818]=cp[3818],[6572]=(cp[6572]-20),[45]=z[h[cp[8294]]][45]}else if cu~=93 then z[h[cp[8294]]]={[4183]=(cp[4183]+37),[3818]=cp[3818],[6572]=(cp[6572]+3),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]+12),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end end end end else if cu>=105 then if cu<=109 then if cu<=107 then if cu<=106 then if cu<106 then z[h[cp[8294]]]={[4183]=(cp[4183]-29),[3818]=cp[3818],[6572]=(cp[6572]-12),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]-21),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end else z[h[cp[8294]]]={[4183]=(cp[4183]+39),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end else if cu<=108 then z[h[cp[8294]]]={[4183]=(cp[4183]-27),[3818]=cp[3818],[6572]=(cp[6572]+19),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]-12),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end end else if cu<=111 then if cu<111 then z[h[cp[8294]]]={[4183]=(cp[4183]+30),[3818]=cp[3818],[6572]=(cp[6572]-9),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]+30),[3818]=(cp[3818]+26),[6572]=(cp[6572]-26),[45]=z[h[cp[8294]]][45]}end else if cu<113 then z[h[cp[8294]]]={[4183]=(cp[4183]+8),[3818]=cp[3818],[6572]=(cp[6572]-35),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]-20),[3818]=(cp[3818]+22),[6572]=(cp[6572]+31),[45]=z[h[cp[8294]]][45]}end end end else if cu<=99 then if cu<=97 then if cu>=97 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]-6),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else if cu<=95 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]-35),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]-7),[45]=z[h[cp[8294]]][45]}end end else if cu<=98 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]-30),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]+25),[6572]=(cp[6572]-7),[45]=z[h[cp[8294]]][45]}end end else if cu<=102 then if cu>=102 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]+40),[45]=z[h[cp[8294]]][45]}else if cu==100 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]+29),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]-16),[6572]=(cp[6572]-12),[45]=z[h[cp[8294]]][45]}end end else if cu==103 then z[h[cp[8294]]]={[4183]=(cp[4183]-35),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]-2),[3818]=(cp[3818]+6),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end end end end end else if cu>=133 then if cu>=142 then if cu>=147 then if cu<=148 then if cu<148 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]-17),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]-39),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end else if cu~=150 then z[h[cp[8294]]]={[4183]=(cp[4183]-39),[3818]=(cp[3818]-29),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]-8),[3818]=(cp[3818]-3),[6572]=(cp[6572]-14),[45]=z[h[cp[8294]]][45]}end end else if cu<=144 then if cu<=143 then if cu<=142 then local f=cp[3818]h[f]=h[f]();else local f=cp[3818]local f=h[f]cl=cl+1 ck[cl]=f end else local f=cp[3818]local f=h[f]cl=cl+1 ck[cl]=f end else if cu==145 then local f=cp[3818]local g=cp[4183]local f=h[f]if not f then cs=g;end;else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]+35),[45]=z[h[cp[8294]]][45]}end end end else if cu>=138 then if cu<=139 then if cu<139 then h[cp[3818]]=h[cp[4183]][h[cp[6572]]];else h[cp[3818]]=h[cp[4183]][h[cp[6572]]];end else if cu<141 then h[cp[3818]]=h[cp[4183]][h[cp[6572]]];else local f=cp[3818]local f=h[f]cl=cl+1 ck[cl]=f end end else if cu<=135 then if cu<=134 then if cu<134 then cs=cp[4183];else local f=cp[3818]local g=cl local bj=cm local bv=bj+1 local cq=ck[bv]do local cq,cr,cv=cq(t(ck,bv+1,g))h[f]=cq h[f+1]=cr h[f+2]=cv end for f=g,bv,-1 do ck[f]=nil end cl=bj local f=cn[co]cn[co]=nil co=co-1 cm=f or 0 end else h[cp[3818]]=h[cp[4183]][h[cp[6572]]];end else if cu<137 then local f=cp[3818]local g=cp[4183]local f=h[f]if not f then cs=g;end;else local f,g=h[cp[4183]],cp[3818]h[g]=f[h[cp[6572]]];h[g+1]=f;end end end end else if cu<=123 then if cu<=118 then if cu>=117 then if cu<118 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]-14),[6572]=(cp[6572]-29),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]-32),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end else if cu<=115 then if cu<=114 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]+6),[6572]=(cp[6572]+14),[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]-24),[3818]=cp[3818],[6572]=(cp[6572]-14),[45]=z[h[cp[8294]]][45]}end else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]-29),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end end else if cu<=121 then if cu<=120 then if cu~=120 then z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]+26),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]-17),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=(cp[3818]+4),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end else if cu~=123 then z[h[cp[8294]]]={[4183]=(cp[4183]+64),[3818]=(cp[3818]+1),[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}else z[h[cp[8294]]]={[4183]=(cp[4183]+6),[3818]=cp[3818],[6572]=cp[6572],[45]=z[h[cp[8294]]][45]}end end end else if cu<=128 then if cu>=127 then if cu<=127 then h[cp[3818]][h[cp[4183]]]=h[cp[6572]];else cs=cp[4183];end else if cu<=125 then if cu<=124 then local f=cp[4183]local g=h[f]+h[f+2]h[f]=g if g<=h[f+1]then h[cp[6572]],cs=g,cp[3818]end else local f=cp[4183]local g=h[f]local bj=h[f+2]h[f]=g-bj;cs=cp[3818];end else h[cp[4183]]=#h[cp[3818]];end end else if cu<=130 then if cu==129 then local f=cp[3818]local g=cp[4183]local f=h[f]if not f then cs=g;end;else h[cp[3818]]=h[cp[4183]][h[cp[6572]]];end else if cu<132 then h[cp[3818]]=h[cp[4183]][h[cp[6572]]];else h[cp[3818]]=h[cp[4183]][h[cp[6572]]];end end end end end end end else if cu<=63 then if cu<=60 then if cu<=58 then if cu==57 then h[cp[4183]]=-h[cp[3818]];else local f=cp[4183]local g=ck[cl]ck[cl]=nil cl=cl-1 local bj=ck[cl]ck[cl]=nil cl=cl-1 local g,bj=bj(g)do local g,bj=g,bj h[f]=g h[f+1]=bj end end else if cu==59 then local f=cp[4183]h[f]=h[f](t(h,f+1,cp[3818]));else local f,g=cp[4183],cp[3818]local g=ch[g]local bj={}for bv=1,#g do bj[bv]=cg[g[bv]]end h[f]=bj end end else if cu>=63 then h[cp[4183]]=h[cp[3818]]+h[cp[6572]];else if cu==61 then local f=cs local g=cp if g[8294]==151 then h[g[4183]][h[g[3818]]]=h[g[6572]];elseif g[8294]==69 then h[g[4183]]=cg[g[3818]];elseif g[8294]==136 then h[g[4183]]=h[g[3818]][h[g[6572]]];end local g=z[f+1]if g[8294]==82 then h[g[4183]]=cg[g[3818]];elseif g[8294]==136 then h[g[4183]][h[g[3818]]]=h[g[6572]];else h[g[4183]]=n[cg[g[3818]]];end local g=z[f+2]if g[8294]==231 then h[g[4183]]=h[g[3818]][h[g[6572]]];elseif g[8294]==241 then local bj=g[4183]h[bj]=h[bj]();else h[g[4183]]=h[g[3818]];end local g=z[f+3]if g[8294]==95 then local bj=bx[g[3818]]local bv=bj[8086]local cq=#bv local cr=ba(cq)for cv=1,cq do local bv=bv[cv]local cq=bv[2]local cw=bv[3]if bv[1]==1 then if cw==0 then local bv=h[cq]ci[cq]=bv cr[cv-1]=bv else cr[cv-1]=h[cq]end else local bv=m[cq]if cw==0 and bv[0]then bv=bv[0][bv[1]]end cr[cv-1]=bv end end h[g[4183]]=by(bj,cr,n)elseif g[8294]==98 then h[g[4183]][h[g[3818]]]=h[g[6572]];else h[g[4183]]=cg[g[3818]];end local g=z[f+4]if g[8294]==107 then h[g[4183]]=cg[g[3818]];elseif g[8294]==233 then h[g[4183]]=h[g[3818]];else h[g[4183]]=n[cg[g[3818]]];end local g=z[f+5]if g[8294]==205 then local bj=bx[g[3818]]local bv=bj[8086]local cq=#bv local cr=ba(cq)for cv=1,cq do local bv=bv[cv]local cq=bv[2]local cw=bv[3]if bv[1]==1 then if cw==0 then local bv=h[cq]ci[cq]=bv cr[cv-1]=bv else cr[cv-1]=h[cq]end else local bv=m[cq]if cw==0 and bv[0]then bv=bv[0][bv[1]]end cr[cv-1]=bv end end h[g[4183]]=by(bj,cr,n)elseif g[8294]==282 then h[g[4183]]=cg[g[3818]];else h[g[4183]][h[g[3818]]]=h[g[6572]];end local f=z[f+6]if f[8294]==242 then h[f[4183]]=h[f[3818]];elseif f[8294]==292 then h[f[4183]]=by(bx[f[3818]],nil,n)else h[f[4183]]=n[cg[f[3818]]];end cs=cs+6 else h[cp[4183]]=h[cp[3818]]>h[cp[6572]];end end end else if cu<=70 then if cu<=66 then if cu<=65 then if cu<=64 then do return t(h,cp[4183],ct)end else local f=cs local g=cp if g[8294]==226 then n[cg[g[3818]]]=h[g[4183]];elseif g[8294]==215 then h[g[4183]]=n[cg[g[3818]]];elseif g[8294]==221 then h[g[4183]]=-h[g[3818]];end local g=z[f+1]if g[8294]==233 then h[g[4183]]=cg[g[3818]];elseif g[8294]==81 then h[g[4183]]=n[cg[g[3818]]];elseif g[8294]==200 then h[g[4183]]=by(bx[g[3818]],nil,n)end local f=z[f+2]if f[8294]==279 then h[f[4183]]=cg[f[3818]];elseif f[8294]==56 then n[cg[f[3818]]]=h[f[4183]];elseif f[8294]==168 then h[f[4183]]=h[f[3818]][h[f[6572]]];end cs=cs+2 end else local f=cp[4183]local g=ck[cl]ck[cl]=nil cl=cl-1 local bj=ck[cl]ck[cl]=nil cl=cl-1 do local g,bj,bv=bj(g)h[f]=g h[f+1]=bj h[f+2]=bv end end else if cu>=69 then if cu==69 then local f=cp[4183]local g=ck[cl]ck[cl]=nil cl=cl-1 local bj=ck[cl]ck[cl]=nil cl=cl-1 local g=bw(cj,bj(g))ct=f+g-1 for bj=1,g do h[f+bj-1]=cj[bj]end else local f=cs local g=cp if g[8294]==275 then h[g[4183]]=h[g[3818]][h[g[6572]]];elseif g[8294]==165 then h[g[4183]]=h[g[3818]]*h[g[6572]];elseif g[8294]==174 then h[g[4183]]=n[cg[g[3818]]];end local f=z[f+1]if f[8294]==185 then h[f[4183]]=h[f[3818]][h[f[6572]]];elseif f[8294]==87 then h[f[4183]]=h[f[3818]];else h[f[4183]]=cg[f[3818]];end cs=cs+1 end else if cu<=67 then local f,g=cp[4183],cp[3818]local g=ch[g]local bj={}for bv=1,#g,2 do bj[cg[g[bv]]]=cg[g[bv+1]]end h[f]=bj else n[cg[cp[3818]]]=h[cp[4183]];end end end else if cu>=76 then if cu>=80 then if cu<=81 then if cu<81 then local f=cp[3818]local f=h[f]cl=cl+1 ck[cl]=f else local f,g=h[cp[4183]],cp[3818]h[g]=f[h[cp[6572]]];h[g+1]=f;end else if cu<=82 then h[cp[3818]]=h[cp[4183]][h[cp[6572]]];else z[h[cp[8294]]]={[4183]=cp[4183],[3818]=cp[3818],[6572]=(cp[6572]+5),[45]=z[h[cp[8294]]][45]}end end else if cu<=77 then if cu==76 then local f=cp[4183]local g=bw(cj,h[f](t(h,f+1,cp[3818])))ct=f+g-1;for bj=1,g do h[f+bj-1]=cj[bj];end;else local f=cp[4183]local g=cl local bj=cm local bv=bj+1 local ch=ck[bv]h[f]=ch(t(ck,bv+1,g))for f=g,bv,-1 do ck[f]=nil end cl=bj local f=cn[co]cn[co]=nil co=co-1 cm=f or 0 end else if cu<=78 then local f=cp[3818]h[f]=h[f](h[f+1],h[f+2]);else h[cp[3818]][h[cp[4183]]]=h[cp[6572]];end end end else if cu<=73 then if cu<=72 then if cu==71 then local f=cp[4183]h[f]=h[f](h[f+1]);else local f=cp[4183]local g=ck[cl]ck[cl]=nil cl=cl-1 h[f]=g()end else local f=cs local g=cp if g[8294]==249 then h[g[4183]][h[g[3818]]]=h[g[6572]];elseif g[8294]==51 then h[g[4183]]=h[g[3818]];else h[g[4183]]=n[cg[g[3818]]];end local g=z[f+1]if g[8294]==86 then h[g[4183]]=by(bx[g[3818]],nil,n)elseif g[8294]==165 then local bj=bx[g[3818]]local bv=bj[8086]local ch=#bv local cq=ba(ch)for cr=1,ch do local bv=bv[cr]local ch=bv[2]local cv=bv[3]if bv[1]==1 then if cv==0 then local bv=h[ch]ci[ch]=bv cq[cr-1]=bv else cq[cr-1]=h[ch]end else local bv=m[ch]if cv==0 and bv[0]then bv=bv[0][bv[1]]end cq[cr-1]=bv end end h[g[4183]]=by(bj,cq,n)else h[g[4183]]=cg[g[3818]];end local g=z[f+2]if g[8294]==107 then h[g[4183]]=by(bx[g[3818]],nil,n)elseif g[8294]==283 then n[cg[g[3818]]]=h[g[4183]];else h[g[4183]]=h[g[3818]]-h[g[6572]];end local g=z[f+3]if g[8294]==60 then h[g[4183]]=by(bx[g[3818]],nil,n)elseif g[8294]==294 then h[g[4183]]=-h[g[3818]];elseif g[8294]==57 then h[g[4183]][h[g[3818]]]=h[g[6572]];end local g=z[f+4]if g[8294]==128 then h[g[4183]]=h[g[3818]]*h[g[6572]];elseif g[8294]==182 then h[g[4183]]=n[cg[g[3818]]];elseif g[8294]==42 then n[cg[g[3818]]]=h[g[4183]];end local g=z[f+5]if g[8294]==165 then h[g[4183]]=by(bx[g[3818]],nil,n)elseif g[8294]==290 then h[g[4183]]=cg[g[3818]];else h[g[4183]][h[g[3818]]]=h[g[6572]];end local f=z[f+6]if f[8294]==260 then n[cg[f[3818]]]=h[f[4183]];elseif f[8294]==113 then h[f[4183]]=-h[f[3818]];elseif f[8294]==276 then h[f[4183]]=n[cg[f[3818]]];end cs=cs+6 end else if cu~=75 then local f=cs local g=cp if g[8294]==80 then h[g[4183]]=h[g[3818]]*h[g[6572]];elseif g[8294]==246 then local bj=bx[g[3818]]local bv=bj[8086]local ch=#bv local cq=ba(ch)for cr=1,ch do local bv=bv[cr]local ch=bv[2]local cv=bv[3]if bv[1]==1 then if cv==0 then local bv=h[ch]ci[ch]=bv cq[cr-1]=bv else cq[cr-1]=h[ch]end else local bv=m[ch]if cv==0 and bv[0]then bv=bv[0][bv[1]]end cq[cr-1]=bv end end h[g[4183]]=by(bj,cq,n)elseif g[8294]==209 then h[g[4183]]=by(bx[g[3818]],nil,n)end local g=z[f+1]if g[8294]==243 then n[cg[g[3818]]]=h[g[4183]];elseif g[8294]==74 then h[g[4183]][h[g[3818]]]=h[g[6572]];elseif g[8294]==189 then h[g[4183]]=h[g[3818]]*h[g[6572]];end local g=z[f+2]if g[8294]==235 then h[g[4183]]=by(bx[g[3818]],nil,n)elseif g[8294]==266 then h[g[4183]]=n[cg[g[3818]]];elseif g[8294]==77 then local bj=bx[g[3818]]local bv=bj[8086]local bx=#bv local ba=ba(bx)for ch=1,bx do local bv=bv[ch]local bx=bv[2]local cq=bv[3]if bv[1]==1 then if cq==0 then local bv=h[bx]ci[bx]=bv ba[ch-1]=bv else ba[ch-1]=h[bx]end else local bv=m[bx]if cq==0 and bv[0]then bv=bv[0][bv[1]]end ba[ch-1]=bv end end h[g[4183]]=by(bj,ba,n)end local f=z[f+3]if f[8294]==62 then h[f[4183]]=cg[f[3818]];elseif f[8294]==66 then h[f[4183]]=h[f[3818]]*h[f[6572]];elseif f[8294]==276 then n[cg[f[3818]]]=h[f[4183]];end cs=cs+3 else local f=cs local g=cp if g[8294]==277 then h[g[4183]]=h[g[3818]];elseif g[8294]==236 then h[g[4183]]=cg[g[3818]];elseif g[8294]==168 then h[g[4183]][h[g[3818]]]=h[g[6572]];end local g=z[f+1]if g[8294]==228 then h[g[4183]]=cg[g[3818]];elseif g[8294]==209 then h[g[4183]]=h[g[3818]][h[g[6572]]];elseif g[8294]==151 then h[g[4183]]=h[g[3818]];end local f=z[f+2]if f[8294]==192 then h[f[4183]]=cg[f[3818]];elseif f[8294]==43 then h[f[4183]]=h[f[3818]][h[f[6572]]];else h[f[4183]]=h[f[3818]];end cs=cs+2 end end end end end end else if cu<=47 then if cu>=45 then if cu>=47 then local f=cp[4183]local f=cl local g=cm local z=g+1 local ba=ck[z]ba(t(ck,z+1,f))for ba=f,z,-1 do ck[ba]=nil end cl=g local f=cn[co]cn[co]=nil co=co-1 cm=f or 0 else if cu<=45 then local f=cp[4183]local g=bw(cj,h[f](t(h,f+1,cp[3818])))ct=f+g-1;for z=1,g do h[f+z-1]=cj[z];end;else local f=cp[4183]local g=cp[3818]local g=g local z=cl local g=z-g+1 local ba=ck[g]local ba=bw(cj,ba(t(ck,g+1,z)))ct=f+ba-1 for bj=1,ba do h[f+bj-1]=cj[bj]end for f=z,g,-1 do ck[f]=nil end cl=g-1 end end else if cu<=42 then if cu~=42 then local f=cp[4183]local f=ck[cl]ck[cl]=nil cl=cl-1 f()else local f=cp[4183]local g=cl local z=cm local ba=z+1 local bj=ck[ba]do local t,bj,bv=bj(t(ck,ba+1,g))h[f]=t h[f+1]=bj h[f+2]=bv end for f=g,ba,-1 do ck[f]=nil end cl=z local f=cn[co]cn[co]=nil co=co-1 cm=f or 0 end else if cu~=44 then h[cp[4183]]=h[cp[3818]]<=h[cp[6572]];else h[cp[4183]][1]=h[cp[3818]]end end end else if cu<=51 then if cu>=50 then if cu==50 then h[cp[4183]]=h[cp[3818]]>=h[cp[6572]];else h[cp[4183]]=h[cp[3818]]*h[cp[6572]];end else if cu==48 then do for f,g in a,ci do if g[1]==h and f>=0 then g[1]={h[f]}g[2]=1 ci[f]=nil end end end local f=ck[cl]ck[cl]=nil cl=cl-1 do return f end else h[cp[4183]]=h[cp[3818]]..h[cp[6572]];end end else if cu>=55 then if cu==55 then h[cp[4183]]=h[cp[3818]]-h[cp[6572]];else do for f,g in a,ci do if g[1]==h and f>=0 then g[1]={h[f]}g[2]=1 ci[f]=nil end end end local a=ck[cl]ck[cl]=nil cl=cl-1 local f=ck[cl]ck[cl]=nil cl=cl-1 do return f,a end end else if cu<=53 then if cu==52 then local a=cp[4183]h[a]={h[a]}else h[cp[4183]]=h[cp[3818]]<h[cp[6572]];end else h[cp[4183]]=h[cp[3818]]~=h[cp[6572]];end end end end end end end end else if cu<=2 then if cu>=2 then h[cp[4183]]=cg[cp[3818]];else if cu~=1 then h[cp[4183]]=h[cp[3818]][h[cp[6572]]];else if cp[6572]==108 then h[cp[4183]]=cg[cp[3818]];elseif cp[6572]==231 then m[cp[3818]][1]=h[cp[4183]]else h[cp[4183]]=cg[cp[3818]];end end end else if cu>=5 then local a=cp[4183]local f=cp[3818]local a=h[a]if not a then cs=f;end;else if cu~=4 then local a=cp[4183]local a=h[a]cl=cl+1 ck[cl]=a else if cp[6572]==148 then h[cp[4183]]=nil;elseif cp[6572]==106 then h[cp[4183]]=n[cg[cp[3818]]];else h[cp[4183]]=nil;end end end end end cs=cs+1;end;end;end ce,cd=-11018,-11018 else if cd<-39626 then bn=nil ce,cd=-43037,-43037 else bq=function(a)local a=bp(a)local f=j(a/2)if(a%2)==0 then return f;end;return-f-1;end ce,cd=45700,45700 end end end end end else if cd>=57629 then if cd<=73791 then if cd>=64142 then if cd<=64142 then x=q and q[(function(a,f)local g local h={}local m={}local function n(t,z)m[z]=t;return m[z]end local t={}t[1]=2 t[2]=2 t[3]=1 local t=0 local t=-47528 local z=0 repeat if t>=-20305 then if t~=30894 then break else z,t=h[24],h[24]end else if t<-24561 then h[23]={}h[24]=m[-47528+227873]or n(-24561,-47528+227873)z,t=30894,30894 else g=h[23]for h=1,#a do local a=e(a,h)g[h]=o(d(37,99),(a-(f+h))%256)end return i(g)end end until t==-20305 end)("\165\167\157\159\157\172",50)]or function(a,f)if f<0 then return w(a,-f)end return j(a%r/2^f)end y=q and q[(function(a,f)local g local h={}local m={}local function n(t,z)m[z]=t;return m[z]end local t={}t[1]=3 t[2]=2 t[3]=3 local z=0 local ba=0 local ba=-14760 repeat if ba<=-14760 then if ba<=-46883 then return i(g)else if ba<-14760 then z,ba=h[26],h[26]else h[25]={}h[26]=m[-14760+289150]or n(57723,-14760+289150)z,ba=-34749,-34749 end end else if ba>=62919 then if ba~=72366 then break else ba=h[27]end else g=h[25]for z=1,#a do local a=e(a,z)g[z]=o(d(37,99),(a-(f+z))%256)end t[2]=(t[2]+1)%5 h[27]=m[57723+27008]or n(-46883,57723+27008)ba=72366 end end until ba==62919 end)("\205\205\219\210",106)]or function(a,f)local g,h local m={}local n={}local function t(z,ba)n[ba]=z;return n[ba]end local z={}z[1]=1 z[2]=3 z[3]=2 local ba=0 local ba=-42112 local bj=0 repeat if ba>=-34313 then if ba<20098 then break else ba=m[30]end else if ba<=-48695 then return g;else g=0 h=1 while a>0 and f>0 do local bj,bv local bx={}local cg={}local function ch(ci,cj)cg[cj]=ci;return cg[cj]end local ci={}ci[1]=3 ci[2]=4 ci[3]=1 local cj=85060 local ck=0 local cl=0 repeat if cj>=74324 then if cj<=74324 then break else if cj<85060 then cj=bx[29]else bj=a%2 bv=f%2 if bj==1 and bv==1 then g=g+h;end;bx[28]=cg[85060+31804]or ch(56445,85060+31804)ck,cj=-14007,-14007 end end else if cj==-14007 then ck,cj=bx[28],bx[28]else a=j(a/2)f=j(f/2)h=h*2 ci[2]=(ci[2]+1)%5 bx[29]=cg[56445+162875]or ch(74324,56445+162875)cj=77431 end end until cj==74324 end;z[2]=(z[2]+1)%5 m[30]=n[-42112+195235]or t(-48695,-42112+195235)ba=20098 end end until ba==-34313 end cf,cd=-39279,-39279 else if cd~=73791 then bw=function(a,...)local f,g local h={}local m={}local function n(t,z)m[z]=t;return m[z]end local t={}t[1]=1 t[2]=4 t[3]=2 local t=-24544 local z=0 local z=0 repeat if t<=-24544 then if t~=-24544 then break else f=k('#',...)for ba=1,f do a[ba]=k(ba,...);end;h[98]=a[0]or 0 h[99]=m[-24544+92502]or n(-10088,-24544+92502)z,t=60618,60618 end else if t~=60618 then g=h[98]if g>f then for k=f+1,g do a[k]=nil;end;end;a[0]=f return f;else z,t=h[99],h[99]end end until t==-48274 end cf,cd=-21567,-21567 else br=function(a)local a,f,g,h=e(a,bh,bh+3)bh=bh+4;return((h*16777216)+(g*65536)+(f*256)+a);end cd=-45816 end end else if cd<=57629 then bl=function(a)local f local g={}local h={}local function k(m,n)h[n]=m;return h[n]end local m={}m[1]=2 m[2]=3 m[3]=1 local m=-45061 local n=0 local n=0 repeat if m>=57522 then if m<=57522 then return f;else break end else if m==-45061 then f=0 for n=0,1 do f=v(f,w(e(a,bh,bh),8*n));bh=bh+1;end;g[34]=h[-45061+99844]or k(57522,-45061+99844)m=20852 else m=g[34]end end until m==58844 end cd=23028 else bm=function(a)local f local g={}local h={}local function k(m,n)local t=u(n,n)local m=m+t h[n]=m;return m end local m={}m[1]=1 m[2]=4 m[3]=2 local m=0 local n=29525 local t=0 repeat if n>=77182 then if n==77182 then return f;else break end else if n<29525 then m,n=g[35],g[35]else f=0 f=v(f,w(e(a,bh,bh),8))bh=bh+1 g[35]=h[u(29525,209663)]or k(77182,u(29525,209663))m,n=-11396,-11396 end end until n==80336 end ce,cd=-39828,-39828 end end else if cd<=80498 then if cd>=79536 then if cd<80498 then cb[100]={}ce,cd=-23799,-23799 else bg=bf([==[BPRSJWNH4$!'r,*NZS(Ys8O8As8P=ELBnbAjT#8[s8W+KW"0aqjInbJW'_Wks8NTIl44a^A>kTF$5k=(W0!]>rh2Y"l44mboO0q*Qk(2ao`'E>6iWkZrsp.8cl_O?L\fAQ$@Sl"Taq$p66@]LLC4"[LC,'ert#'`3Gb)0LC#!`Y[PD'3Gb)#L,j(;Y[J"Xk5Rf(3HV220u3n)cB7=qO8gC&s,d9\J#G_h$MgA*)*2<,5NJM*IHX&sTau;0%i%.TTgOMDoq=a,%M_$(R*^Tq'C%q,l44p#5BNjNLC,'e6\d^5W"0p66[uVm@DX)Jcs]/_+)\oL#otqJ+"g7N_h8J?fJ$aO*%oHj$hIdoLC"n\m"bD@Tu2Qn(H0KG_hC*ekV/^JKK[Of&+cL4KFW?r_\je+R)=Xd)_S5M_M/F?m]_9VXPgsM$QC^W@)Icq6cT4E8]m0jZ2aU(&B@"'a:NjB&H<h%7*&1J6AGg]10!J!+[QP$OG=;`.cd9iLC>KMclVK!+V4Mp6QQ#"lQ7m(Llcq=:`;B*W/ucE)9P=$%XG#"+[^nm--/oV=*7F8:n\C7;UE.Xm\)rTap"oZWZX[t)G1/^BL.=^o`WuFFD+b*<F(mF;#6l\nJFe!Hu'o=LCak$l4i8mCg%]K0U<\UW3@(q`!C*O8/),;'T;MA!_2,k"J$eC!eCsc'f?&fL*213JADE)&5(Gss!T>^ihE9'bq9>7?VUoe<"abF=h*%d9uh@pVT%/XfsuK9n*XEcZttT>bdgmi\LK#<Fk8Xu.I4$Ca06YKPi.pc-o$Q&d3o&sUEG/O&-@*!fu`LHl;b8\#+AdRUNFUe6(&%lJ'G!P]2mH@h7Qj%jq\@t-3,@*c%ggrlI.&:^i`;/!m!IRhclU#^\ODY/Z4@mK.$GU0'E2^(RlrH+@qnm6TG,Y-u%hf6rR.T]Q2he9t<>k^]>HIB,/PIp=e[,b2.42<F+Y@7K:o):,E2lg5TmT@^/Le_)'2*-3k56e&L'BSenn$S%J[t"%?rOTZjS)nHIsX\b"V%RlC+ZZ3q0JZRDTkLeMA0R\T1EDX?)cgN?Djfc"&)p!V;m]:+-6^m(+t-D"GIf]7.sNH0gd9(9]`7;ILEq.cPRfsbbkV/sZfpNN#YP3<YaAT22<N:fL8G/j$CANSHo4`AKOWRnG_PPhX_-E3C?:m;?OjQ;16!(Rj\\7B>kqN]Yb4YgrtBmU=2)DH$aH'O;t6r5MoPODU:V0h1<h.r$(AcJ1a(03*!oVsJfb7=+.SDkH6a)(.$5u[iEL317>J*6Ta9j>rYGlLq4:>@sQCWK3M$$8c@8ht=^iheSGXkR?o@XfRXPt:&f3>X9oaVUOo0NL^17Q5khZtYM"Val<SJM-fQnI9,9HHe_hiY3[]'3WB6d-.jd.0:XI^$]ar;mJYV"KkRMk1G5mO[s`<`1<&>UAuJB.Iq_&5rj-rFS]DQ!CB9%CQ1gL85/H?feKpIr;=H*>jc/!c=q:MPlh87?TPf5IF1+C"qtT(;(I_%>j,c>C^aTrn^W!;+*YiNp5dEYNCcE(>a)@3\Q.h:]9!Q"f?8#KVlj7j*[HDkX,i#2:,Q^#k,m?ZNh"pZ"'\is\S/u[gA(S'VdHj%UqSj/2pFMI66[@S4@+"G[r"1^3]gt+=fTiRk9+VUL`nYh#Psmi9m4LI(d%rcGUfIVZUL-9:Z3o<TZpXfgQZe/1'gqnZ67Nj;?3c@-Bdtk+q]kHDj\'pCE)`1gQh3rX\&4]AS23CZPL%Eqjc0J\*TWiJ*DnCSskT9;7R\m*8>gd2P)7e)B`'980c8,JqTMr/dlq:40oe?)KRD$1pI?_UGAUIRDmjlEM1B?9VeO5<VfB$o)l>S`,&ch<aDQTM4gSgM[=$tk+N=l!N8EZ<0gKWC^-=VO3WL!cud3^RFi@5W(oCM#*CEAcsOLM;o#2leYC`-"r;@?V#s55QB79s*"_Ku@9ngmIcH0P9Ybh4-M]MK'nRWnZ6CSWGm]0H.ZqfJGo_S_jb-;O\gJefg*.h8A.i6@R^@cBW^FoEUoYd%K9QoK67+"L!;JgZ8NJ&lG>_J_Uue$GYU#l4\KGI:!/(>H"@XF7Lfd_VF.qcm-_rTqN9D2E'1BY%>Zs)%0dA1>lMPqh*&NCE374Ht"DGZrU,BskBI]q7Ui7JD."ic[!gT2d#XJ_m"G$P-M<$9,8dOeG'Hj3AORa>FP>n9q<&cI%!-CeDX5kbX_,dbd47c&fE2Zl#70#`PnfT&5.>kp';[?727*7UOZ+lPb!b`o,6(j(c.L_X\$prG.FTAM@\4#Gr&M^5+BMo`Lk)q0:V?6@>cqTW^C'lD>WX`J*UXltqMI`,h;Y8OT-@d>K_7imtHT#tXh5'+u,o@LhCabsX`$,2?ihkSfU=prEg(U5j5SKFk].&gE.FgUR:k_5uLY+mYkO]URN2C>K"%%O$;MdlJP]\Bu4-1@Llc]DH74*5DZ&tu$XpI8DGVrC=823X:0FdZ4EM2;8Sd7("\-WY49J0rF6m2FbVJ-/LgVC$+><EIYKRrG=a[GW/9&7^c"s#XES%R0N;b/3'GK)I_1Lm@9T'24J9rg+#'silZ^:L28qERU4Kp$b3;Y?.D%J6+->$EI=b8]U!/7[mV1p3`d`[h8U:jj@L=(3(OX))"=\oZB6OCcAL&1(K<JX3k_"]=&M8W(G\8h%sr=jg_Y6;8>+Yi3E+_3menAnf=LB4.u(ETWr-,W2<8Y('Ja8o4k<bnElid@qK&C*!FdUg%;?7ElQBm^"72Te;NXDNKIHZug;pKOV)`M&^N!eUu(VBo")RV49N?Jj:.[Nu/!S#19Ig\p?6tO^leCLRfl35.`=9k-AZ\W1KBHjr.,I0L^Ta,VoFQS5b5J;V''Dd+e^LPU-^:$AEB;?nPDhR$F,%T&ppqP`S.5"0,XpP:3,/PQJ];MC&uq&p.&6-4-@OoSbrW=]cu4RmEN\6BT2hGVZtA`B;']#?\9N78fE4'PMMCat6"/dB-&r"9QjQRj/fE\b2>#Q7.`<].fE_qcQfLGDkl7UGAa?X<r-IfLX1k#bZNRXN_m)k[$DPL63bJajW:#+_!j6/D",n&U@c]1oEqk=/QYLCe>8&jH6*eW_UL2P\qt7Jk.>Wgmg.A#qRmKSBum%.&MYgAmca@/2`NB7S%D`aTtA()'K+a6AR'F!X2,!_$#E<Lf0*s=,GWRKFh%ug;,\!2iGA,eL7[26C@sC3*S8Z#dAD[1_*#tR]oZu*,S7^PtNHS19#(XR>@@=N0HqX93ehJ=qEr(!";daDHql7!G(F-/QjtmO6]kdHu-o6XjZc?]NN%pWHsmL/sh2p8<caQ+feXGTI:DlG'&RE@3IF*aWjkY_bZb%k"fg6[bOs9.6/<7F=l@[=EnM!QFMK@ToVWPAh&!9FGF)&#sb!5AnUf%%92=2R*9S,,63bI&dg<)!5"'fk*DL1#XUdM!cVqLnf'M?#X]*;C9f\C-%Vmn&-1:Z&:d4s]dG"$\I,TFlstAsKejte?un1+:ok@@K)cT7G=bDLQ]PGVeu_@X8;SJN]3d&NgAD"1AV#Vgk6,0<5T6+;,/I$X(K?5R88"EW9bQ@kJk].O6rK2:b,#*4;F8Oe!Z)I,m3CsoJWt8F!$qr%&==-n"HAZ'-53%1NX>g\b,DW%[k'7LY'#qb%DkZ2YTsO+j\hiD7TIVuWkR2SKHdWCj\"iUPm"IU1D)PG(0X-eP_!^]c9ME7E2d@l0qCg2E(c7W:]t48:'M+nS:W)QWZV9LTiA0?WH>,V>fKG=3*m3P)H/*sJ.Nh+)?C[$c!=dHF=3_4Ttio);Bfb;`k[aDY*,%I@kIbI"C2)I'P0N8^^1;g+sj=R\HH/',3^<P'U^jGXeCOR$o3A[&N7V]R8JO"Lk8iCXe-u.HhiXWXZ8O^X2`hFJQ*6r*)O+!D2HIE8O8LFkJp^t6jS*g6f;d)<6<oiAkH`5-Ml*#_D7f'-<3m97F/lIjg'F(R@LA2l<IJuU"E?QJ=,$>)(ofoTci^l)6,3'h70RiRkPHl\[J\;:o;+BWY.IVH(`VC,",E79#bOA!9FE)B3IcGj"u`d8^k-"<&Q%V,WDJ!XbR+-H3MYSRS,rq@^d%J;C"u)&c'!J6!IJn@XT$JX8t\a_+6ms1`(6I"$o7t1Jf3^N1^O;/d_-;lP_S`\]m%`=#rTB'kNW^4'n!'e0?)%oqiZ"V!42eAMhD8\t!Y(M1U#q,XX!tNPlmK4";Lfk/OeDYB2SB[(.cW#9eYCA/($rPX_LP"N;o0:gdXcBmVqO'!mD9$-gHAhBF[2V+`V2=#*&S2;'h;bgAe-V9tD.!4OWjfV"nM9IJthX<2tn"\lYE-3,Df1XptM)mU%,1e%[XK+1PDcR7NuEEu6YBo$Io."dma.b1MU3^u3`ULk[+dUm.Wf;.`2UL1FYfFc&-.&#miP<%F#8PT]:I+!<$V5f-G6BfE9gI^U)E.#1M0a%MK@h;@mLBG+qE'VC)[[@LHBEK$K:8&UQ."cR,O=_7&5tU\LKB?eTqP)oePj+'B1W]a1Q0@/MN[^`d\]KgE4TQ;Rb`iE#foVV(H(uo:*)$Vd8XL3>fV5mb_%>ZJ6#n8(1q1uYUEjo#H8Gh!4PF1:8K*3(N=#mG;pj)*!A5T9kXe+%L7ZaCRYfG9o551N1e.RY\bd)`.)r,tJn@n7#s+?/,1bia+]tNh8W5(cX:]+Q`gB5Z-&0hGN(dptJlrY8[uVnNQ5Gr]jc:NYl9aDb-88(lqP)gXL]Mar_c!"@1a[ScNN(o8CsRq1^(`;#%&)K%-8/VSZ'PIT<Z.e@1*`Us@[r;)+u;Vr@mr@73#GoeZpY&4ShQ[*Jouk\,)D'-OT7<H?u.2CPe;t6!:`W^8KsBI/!1)\6m@9q&HWPQO8@*H"D&8Nm(0'p-*rg[U(E/P^7f8X3bbjt).Me4^`ZRTAttl\W\F'KNs),TdZ>WJ]Y,)5#r#Hm^j,rW;cTR=V#+VVgjg68`,V3(P\;=nKiTn]UhSWn16S+p<0K!`PFAUFW57^2!)8([K,"3o3gDE<`o.KOW>RK_$"^+LMpOJ%7[:?!*F4R0bbPjd]nB-0.aS_;'S&ZqjCU\Y:dBkfPR*HQ`8"TAmXuF:!Y@[*2h<:V.#AMXQ%hOSPmbN(Ad%#F_$1WFRAUs^N$p`X18a:=22D)#JjCI#e1MsGN/[$WB5N;iM)>@M#U<>QTit<L6>r-bZ9X!SfrF:`4=Hm'7`Q&B,0C21'P6'bR,g.mP^um-;J,Sf(CfO@RS,J-&;JP-:iE+2&4ApZVae3Q(QAWfkCbQL>ma=T@9HU'bDfD='3uam&N<0GBVoGu&J9UCP)6_4-Hp(=3b]@(:ag,o9[$1h<JjYta.!bO">C0r[TT[NPXY=;2eRlEJ0HsR2jkYB!hcZtKO@Jo]YWAs`#on>^([MUrI')L/>P:H1N@CY_.QHo58XI@\r95f/?485*YAM*jsugM:r`LQLs_KUWXqXf-j:oMAKm@$8@4<i-M0]\;\GO(Ca^[tR[^4<>XF79#YEhXALbnm>_rh_.%j3i'?uf2.g2W'+>P3?AfbJ0R[HL($&n:IH^eq=KL2"o7@BoBJTtW:iX@Zj9QUjjdHSjl'ekFH$3R&<:72JV0WW=B/;e%m635"q?n_p2:+%G]N&6D=Ph[MtW&Y8@Ypb/1/eWaE/Js12*1E;B,bS%lL,)D9/iT2g18Q=c&K6@g[toj&6Fhr?b`#r*Lf5qdNo%&f!_1`m(is1XpR+UiViJ>+Q'r<&-ih@K5U`$HC1=@Sn4JLfEqddK'LWXdEXJ"'OeOj:MRghsN/BA.NR=TDB.c\#&0a,g5nlSP.:u&*Kg6JL7M1k=OaTliA-eq1JmMI%Jrshi775"(#o,gj"Z$<RK&h#RkL<E<L'iJa1Q!Mg66nAh73%a113mi3#eZ=W;C(HLMiqI)2^K)BL^4S)!A-8WR7M`e!ME(fdLfpg6o&5;\1EgHPe/=f!d#<"ZQKX=0JUc[(*s0B!\ae=7[M=:#n."N.%lNd3?k+ISY-D9A:bDe9U65-Krl4<P=UdS%%XidTIV3C=8C+b>a.i-#_l$866jiOJEMPV1mq<>0Y_Vbps"@:1IB6,Ed&_kKTQ8=Rh7o&#a,<sD.c.b7\CF+8X#TV;A'"N/.eKt,+)$"'*5`q!O*.ABG(C9UkI-k(9%iZ(?_;1jZt4L"GdcP$CWu7<]'r<n;M!=R[GSu+LqkL(D75^)/+Vh5U7+nE]Jb_!Y>Ds<QrtO'*g[V;Q2?B![WRHGbg/AFWE6hAEHpgFL,NKE[R']%@R,4P5klVoL;qs*J-u]1?P$9^6OQP#Kg'S,(QG`,6ADg!?rWlV%PLHA&J?cJYj&h&rML$"HAfU1mLTuM9&XKaU"PM-AYMc\L'JK<9?ZH64fD<UbYQjUp8#%k`AC&0WA$*!M[\e\%3qI-C#W-R?UGHKTp/(P['@O'EJK-j<t'AU.NbL#j/sV;$[1R"%4FE;PlriPPua38Vds&U.I\58Y2#8VFUuc&fCk+&-8M'6VO1LOsgr:PPD\fA54I?SWl\Kc-.GsKZ9\aUpj8\8\k]u#crFJN?Dg7+S,p!JiJ`\VFb3?-:<VbUKDf"KI-]A8gmRm-^/p'U65rf.@Wlm+HsAJ+9Whf+i)6iOE(B<9",A9o%e;LN5.`Y]HRK@LdV525R7o&KTmmI;MuY#6pq:]+9Wia"H#m!6HX455Y,T4,3=E,,39IM!@UMf;EDmp5,:RXKM5!)5_o[rDaMSr,:J/*nj:K;+_?Cm'1hpNV#2!+500NF![9nN,T4ZK;+UL+P>$Lk%EKe,#U(;rU.GP#&2Ir-5tEFJKTn+dDBg<9qP>U?]KdeiJWpg=q(7\K6:qEC8QSHN+lrq7!$RP2Z8WpQ"#<FkHNPE&;J*uq3Cp\'+9W6H=b-PY!=/fY`DS`&#Uq,(J<gaCUm-s4iU"UDY^X`J-hlM?OmR0`hC],MS4o(S;q[^8@KHR`9I9dNZC7+bjV=3%,q,d(_rHSs8s:MR\L(I,a]6',JG1+tIcI$@Kh]P6UD1LdId!ff']>gg,lj5Z$#jT`E(-LA4`hfSd%n*CPJ1;1n5a0]\!!PFo'U8-pEXVl`QFY],")uoPSsQ(&]./H&.'l+&-,$BU=+[Z[h&jSj\8!.b&>-K1)'jAhcYV'7#2tA!$Yubnn2bO0+gNC";(Z$6qW/dJ<aRm*Me?"&4/puZSt3C";)dYL]E!k2ai>';@J5C$'cDp#ZfeaGpBOk9H]-Z5ZB?=,(pM*hX!sm#a'p2&0\-&Vbj@uAdF&$Lkpim_91NT>6G3t=D8P5nf&0+KW%kKj:FU(<=u=F#m^N^L]Bb6Pe@Yq+<hG!MQPC5-5%a>U:d:"R7%#e5tV<^'LO,i&L)glmi3N$-NkQfr$F`5+f0l(;H=ADJuGc4;F;cgZaU3+6j-r[a4_XIM3Qm!.1qY58I.Wg.2sHXLm:^<+f3H?63n/+=Et9''*'Hp"<g#95R7Y3Min2k8BJ1+&>V]h8g[+p#U+ea&0XFC,$'R-!0N'C&HVtE+p&;fUF62+&.jMnKKoN(6kBDB!g+$\#a%B.#QQ$(&-4;"JUe"m,ToKWGp@j)\!8l`+sK?!"9]<m7)[4e&4D*m'#I8G+;,kA"MAUV8jl'4\2tTW&J7p@_\*Oq+bUC5.rRg"UcT-E5Tg=5#`8n@+<V:?KH3e#WjfICnt\G?qkhW/IdH:V1#^6,7jkHEd$sY:FX9P)Y1f*.\KOk8&;1UN#Qc0&J-[;(!\;5X";-b%&V>NE&HiA+&-se)+sI/A#U+jd,ZlKBL_*TjpJ"$e+<gl]&toq(!(%6R!-YH5rCd$/EdiIX0[NlJCBrV'=?Ye-2eitbE7\WZ=V!!U8."%GY,,".iFioW/QBZs#6D+@0F;=-]1poaA\4$KK#k=;<$o->i5)0IaXfZ(*=]fkl5D1<L_36e+Hoc?C!mXr>d`C22$QgtK;mYhF/KQl8,s2E6HGrK"<\>>!'s-fNC!VBkn"C/=SY]8,(oq.U9[)-$)DAKOYS,cneQlY&-<FU&L(94!$Po?6jNfDDZh89&;2/M#f8[+]&na"(LI<0=jRU_XsJjgm,t2i2ZtSFAJ&6_?$#@_9`54Fc'8C_J<)Ms-KEL[lEOGbK\#KZ2Hj4sm-8^4QCP7&e$;\Pp[,RR9k1S[e;kX#@4Q4hXuUri^AeQ0dZLT2][kq^iR-sXR!WpJip9q+#VgSl7RSLE3Z>rNlV1MSZQn.RqCag+,ZX;*];hI#qbX!Sc-UU/XfIKFeKWYqiH9FYmc`&-YWZ%SDBu*-4bjO^//.N3jT4</d=[\iShl\h?W3G\%WAr0)5cel^ZVI2$k+lt@-(,4*B*"?3s[Z_ot'Gbm2V]qX=qY*&OrQq%<E#6P;e2spUYdi*IBlW>hsOIq;+J?T=F#S`MOa4GE*^$(qO1=Ye=+_;>Uk,,iXFld_X=Ss&&)9ct;^fO*/sM*nYu96!cP)E'-j+q/K>(3rL>9@1sG4]Pu,Ep!mVXiaqcragDAW]uHe6Rh[Qkgg,StO^#`_K&BorqV7Ta2(:ChU4*Z(\3rU'Ub?7Vp@1NN:[)?*lfg8so-;]V[2\$*H^_5&R.KmkGVgr$ffca<D6XqfWWKu_R9.)(Na-FrjZV,Tqr7OKo=D-4i@FUKBk4:pgP:Jar5P4@8"2Yu-^es"FB$Ri?9&RuPV-JZOj3j,o^j@s?K<krAS)aZm[1*%D(nXgID&fcWI;/V\8_RG&m-U1)[;JChIErM$T2c4]lW!pA(\DSL+,W^_q!I`#AVCc#:k'WQDu-mOuOSS?X"+O!$t[7JWLKgYiBRa[Uh8->WI8mpka'qf!7)lKr!@J1eILFaN^i,kh,CD7h&[OmBoG?=k,(S/Z,e@"o.S,':j+"fnXh/d[G=2Nq'0R&"tYeq:JPsVg%Ug<_A4kFgj2A5&kCO)UGqeBXhUCZ=MjH8&Ic?k^#E*@]H\]7h8Y#ou$\(cdsman'R/?1BS^..h>g$SMao>=(=F=RPilcloJHEX4t(_Q`ZjPlVLH%ekOrJ4P6Le3)L'/kB7q1d`MW,a/Z1U2ml*ne#mRXR)Y[D6C;t2?d#m`k2a)jI&Q2nNcn`mGFb-AhOjMTD3tIa?;k$LSDY,f=5C),]6`g7<o%?l30K3f.OClYP9CZ!lfVKL)Zm?J,'DG:*N9&pFQci^\E342H41fTZM2@X;]JSo<]`g7j;gmS`GhVm6_tQh&PN=PF!La%B$@91NpkX_]_'G6PPOMs;lMC'__o%S1Tr-pp9r^>HH[<cju%"fafY1YJLcq;B56`B+0IJDil!]EO5re\esRi4nj>Hao,aGE/O)Z=-nBGD4&*2.Udrnj)\3tV:U2Zf8PuI/ZFrauY>HhHERgk$e]A%#G3fN/78+43NF'U0Dj#i*.a^SaKL=!?"8&tO3kG'[]mZ1%A"0NQ)Ti!Bm`Yspkh;&WBufp.f4P;J-9Dq)*o;8>aZH]Td2W"\:f!VkMs]qc"E?+YFmHE8;qN4ooa,TD<2/-2T"NEH'WsO`86.a)<hd%B%2YH5:7N*GhBttV;)?"1Q_jo$3cXaJ(emE6/1%2@'/HZ0+s\)k%FpK!]PG9p>kcj>;Kb/0m!:kF85pdi3k8i(Cj0u%qC=JuVF]X.+KQWJb.hFq1(aS'4^;.3.9oJ;FZ]rT'E[')_?;=>7iE^^/Z@I=pi6E[Q0Qqhas:j6#/C<G81E`e?G6p[90akFM:7GE;)f?p1a34.:BcVpOp_D(-9t,d+Frg!!KIdX8KnEF];g,`lq7=o6o%Vio+u%k,-Zh&E'sbr8[.ai\BR[Tg0E?EWIWuUeL1\HV4+)TJ2TIr-itfRQinP-6j!LT`5<#j#)X#o&-<u-O>:64Js6WE6j0<m=!ai!,%UknNFn=sKTL5jl(UCE@E]2=8?NRc1C>c]"AK.'+TNZ3!XKAMJ5$)6!%Zr0&>G=R&4/pU+Fk#R]87+&;EdX^O:V[H*MdK_<k_c\LrosbLe>E6;*n6r=VH;s!(G%t]jX[Y,Z6N3,(Lj;77mdrJ.RP58bk&sPRJ`\e#?6%PRRpJ(SmiL;Rmo]bC1uN+V7]2!\)YP=",F-+q]@0;E>:"&H[agMNh3S#XVL6#U2Qj8t,F56coQEJKRhsZgUrgSHDF)+D$1i1C/l&(IUf47HG13.g.B[/OWQ)86N:f+Ga"jloU&[-=osb'G2c7AC<C5Z1R8l1l4jLPKp33$j=(4RM9UjO@^'2R?WG">!k\)4TPgTnF5cZKh=HdS6!UtE'ff/S!)NnLdV@oL^8eZKFea_a;',$o<(F<_#>[SN!N:K&>3U3e7N;EO*8<dGn4n;(gRJ@-+.b2E,2@^)$^:PjF0,.\?*SWoJ7s*%)`eeUP9\V0E\I5TL(@,/SG>B6qM!",YeV"Eiqa%T[TS7MNhh7:'mb9Tr!F:-t9=l!t*2AnA1R;#o^(l7A'e+,TnQU&oX6$AuX-KBb:UO)Ps)^#%`U+dMt%,NWEfKM'.TdR0\od&Xj,)U(J88&5bgu7"e*aQm<n'M)*0eL_1a@PR2ja+qP=ectG6l,;'!."6)'rL`caA1nfjT1BC%pCU?><PnP&'$:]S;7&35LCdH1eg]V;F7OXPNX`P20\=c*d6ujJ1#:2X!8d$T,bHUQ7M)^$K!2U;OJ0G8m<(70kl(H6G",Hsh!Jj>n7"Q$c!T6G28TIB6":tT%,n_pVTudF&(Kbqb+[eSZ8J!%7,bP_L/+5lHPq=9LPY-[&-plHCjoSh_or;OX5YO!jcj`C99F*(K+on'fj9_9uXH]k1K5qP?!0$t,Va(AoAtTDp,Gl*a#pfm7)FXs!bTp5hS15+_E^L.q8I2.*&PP"m&X<\(X>GQ!6r3q]:6R)k#Z6,8,U+Be64"e8U,#:Q73Ec[!9&2Z!!Ao_$.,5\L)<>j&JH:?1)W\1$3EgB&s4<Q4A[5^:,a%F"#PRbLkq.#-3,5'L_(_M_I.sNas9dd9nX?0P=/879L8k4Dhs3;9G/%*;3DM'QTufmPY$B\M%H,f9GAe)QmB3k"<nYA$KcGS-jVXS.%YR<-8uO3'LF-&GIQ)_1<E4S#Z>[g-Sc>IKHMH?&;aP!KL%FkU4fIm#bVHrRCT&G?nQYT%M>CsdQmkj!76Z3"=b6cM.@7A,W?C]U'\sk&>t&!1Wi)gRK2=[1""3UU<0+N.H6M[BIG[1R6\l)OpM.-&Ojo<`*B%`jR,diBPqiI,*XdJg`5.pBVe'm64ok9X;"5k6jXt[63otI#QY3n5Qi24&Kl`<:dfnu#\'gT-sHF7!($[s6D2F/3`,D*L?9-1KZMA75b&H1TL92tP.Q['-:16[RV3$T#snn3asAtXJqu[[-ppB.,(U"c#Q\Aq9`Q=B!?n:l&0_1/8;%6m!C]g_=Kh.=f;5DAU%tYiG.WH4<l"Z]<kIpiE9H>h9k>fu]a2/7prN$+h7V75Rqg6s7lJg*(ilpTZ6>=a;Hi<1_V5Ht7$skK$9iRd`Ac;e/fL\;BV\%!1D'nTE6HC]G]nNO[l'--$SbUKWIKM-*Ps1uYUpT&'`qX+eRa\ab1*@`ot'(@D5Vt<\W@h@;_KS'#>HZ!*AIRs&A4A,9UVHDp$n&*h4]L]-j@27P"U=`/kK$jO;=$_!_CjT-!i?X1aLd,/pp<pbQOM29`T%K5a`*P_;%RoO::Ig:7i7(:8btEX/iY$K3"^.$(+4!$_p.ALkR*tGL7]=RNM\"h/^]8[O3M;^gfHh9bd\(\o(KiRsJbP/)?X#G]A3o^M8Tr_[Nci"E&+6RhhW>Fs:2"ga0dP;Rqr9J-/J(;RgY1#s?VfH-FQ?<VS>dN%6=W-;pigk9i#b9OOPX$G7\dgP!0GEIC/0)/tOr6qAX,'*5VL0+ae2elTi>("60q8*T+Eh_^Ms1R\V?FEQeOI)5HTZSY7)M'?I27H)HV)DrljOJGIG"SXf9\%7j.EJ#g197UoKe4c[^&HsjZ!0'[p-5/*X5S;r1'`f#",H#=<$ukG`$0G(d]'UQAh%IAB_eoK7Y'+fdpY<T#?'F,^<KegFh%uMSg,:j-%Y\a+Q]Rjl!\biFKig$'b,\s>WFb4UCnajs`2b5KgnVr39k(D$RcFX?<-C#GhF7MaR>a`aRAA4W.euSIm9Z>*W7oP,M9YXXDFnHL30rVEj@p/AOoD413o=OcfM;$</`/;Gi5/1SB=h!s=r3\j>O=H:$JrPU^u?p\^P1A5-l/9D4=.fu$#n5;-<msWYEFjNV8P@I=ZL>.\@Q[rV-M1iZf2--VTe6"f(Im`c9=h4Fl->BC-g3[[<DOS4uojP4]q&1R>poRk#W#W(@U<tje@t5/\S]=E-K4&S)/W^1Y^eIG<miN$fckJqQ7>Pk-e,NFjfoi2iQ?ucPUe>=%D,l52B7HYK4b-F.bO_dn:JNp@1iFYmY5L<^h$*i/Gh@M[usn2qD/Vg4ma!@uE=G5s)AhqOUWC.6$jEj-lRLoVSnHLUM$*m*_l^%h<L/Jn`K'lF+%F]Qi=r;\s1OCMHP\nJeW:GLH"+='jrKJ+Vf`o\0hmNOWg8f<c?"GkN3M[>RdC3d#MVXEsN7M>]rilPpFnMKWitn(OHYm^Zock$+1CcHY+0:%-e_g!.ZQ4bqA;'R\m$1WRe3IFb]l1KNc&B(&Ji/Bh^Mlrp^%'a)M=-bI^'SX8tFq[^Z>q(#5*nc^P1\apRQHt7'PR(A=FfQeec[GCMd95B=HbKoQkm-L$=DIr9f)uR@no>]6pY25lFeVtqn)NRN,m,5V'_]:On.i[EsNB22XP+NeR4b!2YfhJM"l=2sd@@Y=4Vmg^*lAJStnYiTSCV/gTECX"R.l-DFMO&O!XZ)/qj2pgCa%s;G5V;8a?(&2R'c.XhmosdRi/52U)nXeUd9*fe^0mr-43_\XRtYg!lZ?DgTUEB-;a0lo5sMW3U&2,qgldA,.Q<q9FRL<`G\4i'&"Ual$i7c0CYkJ??bDlA$hhe*F?Y,#lH#ZY)rEBS7^GjZEjfO<[&][rea<e5)t$bYRSA>P%bDL:T9rfA4CdPDcA.uF[5C$`*fjrT/mN@lNGZ`q0ZPP:%b2WoT3+mCIZDOQX.Faq'g"cof/7@<e$/SrAoc$H?$&`lY`o'HX42@2'jJ'0Gh@A6<aY^KAJ[e=Nf6Z&I:D4Z_sgfDqtQUaDn9fsoBN4Ndc3j+mpban^44/5B?fuBU"[%hairer@VUSmN_]"\V(h!c8SJYF$elBsV+q%7peWH.!8,@Y2#4F1bfTQ<Hr_"rP?e?T7%j`OV9?TZO>8&TaiK\ER+,*^A5smCPN3mN_N;'95K41aBMpY`0hr5`9kIF?!8a+Md[,lX)KVP,hDA9$2J_`TABh]5h1h+hg9L(ie'>_lb5BWZc(qn4]8T+dhI]f_%hSe'6$UHSE$CX^K>[(La3WpP0##V`Z"J:HL>H]tAp(34\ncP"pYMq]X,G$+rEsg)M&84;>n_,34u[dXSC_2bF1@0uCd[]4N?C!YQN^YhXcgI_a][BMS@X-l_78OR.FV?Wem=VHTZlrMqR*:<&mQ$&kN>WGBc!?aj1PTY>c6/$HWNpd]K;#&k*&>\g]S+$03;soF&%%<gPnqd;?D)OjZA)S1<"q&K>$k3Z#@4lp;Q2@MfeO4L;?^gpZuAu`m%eqNQ&&+Mmbr3Z%n6i&TYki$dPeJ4$5$_G9r;-0!S>-Zo+2tq*Yol*"V'DY#e=%37Zk3oj'j#$!_d&!T9KdIN,q2aGd0pec`gqrXK:nT'bk/a]@)o([PoBD/A[IVU+cgD9je.c8"ZEiFLR]cWM7=n#?.$I+T:?)^GKtji6u8RE#euSgH2PTT!Xl\'@.uXOBtVNN4IN#FA]'470SC1p.A%Gk6l;@W5.)YNr!:/fsImBBtS"X_c7fAJ\K<=5A6C!P;E/m0baF5ME/7OHE"$c1Z*c@?s[T>A.YTX9IRoM5IH>@>jBubMuR6jYi_(U329IY"ND4;f#',n*`7lOiFc`UP>aIVcK:q\'gXE]r4V#A.?WolgTV[,7[%`>UeV]4071Maco7umb*oKrM`b0dfb?n<2!><?m&J^J<3?;qbp4DC.k/;c4E=rQOI.gb4J4s9;mT)&]7U/6o:,VEQuE1;$X[EB,"XOS&J*"/$6.R/RNhQ>jdaAjHKJEh9:<8*8nn[)&p9@GJp&!Ao^qMEQI.(_qXnuhPTO:+#;@6)Nks?`>o*^`Fc"kPUHROHbE`:PQ=TiG'&V4O9O#e&`HoO@B-%>%Ru9k3k<pt]/%[b%.hpX`'CKg%3;q)\@3+$gh(`p5#/C!9'lb.1ZuZXgr)dI>Xc6P,HV]\G,YR@J<`&>MkZSQ(T"QkEk:IgRAarBZJ`7gb`tV$bKfBT'mBBkjd5Dpk%!^0+5gZ)8S`83i6c):J*Ym2e+t]BD-g?_4K#);n*'7p4j:(SGI<f-PO$QNREe[9]hp#\cPaIi$Ef;R2H.VC7C_skRF\J+4.RA*HsF:$@dB8MbErghrNantft&T<Yct[lN#U&ugPu]G?TL5-d*m,NgRd*QQCVP:B!b@IWllqMH<8,F1%c'\?*J1lM@92q2e21\j6i9gL6)_/-S!N=d;35F"$/09`-!DW(_L0;3sqDJKp3$EEWh1F9iIsGatH<d/)ML<<2,78M5\o0&-4;"&.nrEI$Yt>9G(.D+d:PFJG7<+G'_\d_lD*,EIWJG9Afp8h.da4/&Pe.^r(<R&TYDGniXGY--US_gk64TT"M%7h8D*RS/=acjTZDb`M6K"5eE7dZ>mk7MHR]1LeDPS?gc'bhQ;n@?Ea/BP4,B1SQ6$dZ)E@<'<+]nlD^r7d2<tf*1)T^[oV;6<94P#c"r<`3p2[oPL!W?k,h5oQ5SGIgTmMkSHU"+h.Ra.['$pmY"Gh&bPfY=l,>4&oYsoX3@W&W><8ZdZ`JL`VqLEhl$7Fa:M,qqi`oPh3UW2'M):BqbR"L\Fj(!A&iL9,+nrK(SJ@BDNqMO=Xr>PQ.nh-6KQD!-@>]B9>b+\#F3*J6Uuen@`grgUa5\ub@51*8f$l<i-fr%oS`CLmUa"8uD=N%V,Jan7?ds4$ljT5`[j@q27aCJW]2glb+$Q`f-HG]>KkVjdFk-`/ah!b=le0kN/g"AHk"q,a,4_jJB3s&p`:HV^?hI'M.9"6/6bKXOm=`pD2.&0lhDVi$mtT5MOO9AS,e.V9)&o!QKfeR@Y;YunR+2[Q5NhU&:A<MUcaJjN^K@Ko2.[4%ZS%.`=VAVp'>"1aMQ>l@3SKlW?a>?5-Oj+>OgF2BR]Z"gHKlsV_Yeu\LV!?s&fi9%1d`;SlM?g4YGg'OmRk3sRU!GCFiKHb1*'58bIVBBX^]tkZrGG^P"Z+>=3ibep+t.YQCP.;UqVuX4R68,Z`Uc2ZU9p$PsCs!NTj8!]]1toXHloLp$0arAi/&JCbVhni9kd2b%W*7ZA2BDZXhCtC#)k?!cK:T9?a]p]'WD;bd?HHm]1t<p2&qp`H/D?*ooBN!p[41id+`Pm%b)*qPgg-^4lYOP*>b\GaNH!e-34=U.55-,pFc[&?1'1G8*qA8?#`'<,0V[YjquKhkBDWW_Q/7;BcBsQ1&U_7\c+1eYFRoUlg0?Z]eQJSLH2[&tP&A&F:^_<ar",JW^_:1)*/FCu0%OQgq`bXEn-<G7L4N4QJFVFS))?n(`@@n)?AmG*?JX,Mnu%$SCZQf,P]5>g,5gc>C1RERX^j4*bPq/1#Q<c)lgCduFm@g9tSVQD(C(lU<01'7>,'P)8Js8[`R^:WD1f;s/jR\0inNkGHq'nuFi&Vd?#pqA->S=]Zhoi&.6Vfs]$bP4N;23'NjmT0@\GWF=nQ2SI]!0q*5:kX_SY``<RLNm8LZ^Q$-h[k?o/G+dJ$GfUZS)-YTqgZdCM1N'dW$THA7<&]er?#Z:YR!I9Uo@L>(53n.a>e;<Ilj:-%f$C`CqK0pI*Oi-[;$XZhIs,VLi!p\hEmtatS[Go?OZPJFOKBU!4C16,5&h#ZXrWmNfk&bDO0-s#?<uBEjW#P7X?r&Lr"_q;4./rR0k)3Q&>W\^6Q%UHVAi>gL^5.,!WiBWUT!QYO%!%T]Y6+F,red/2JJ%VHlL&od$[`s_!VX7GahDe-pnjoBb5)+H/UQjcu0r<CbFF<-7B\i'&U9L8SY,<2b6,ohm/ip&O)E2=VjQ6)\sOMkBgpO-CjME:(F2*%SDnB_oRGt)p]L4<o^K0m&Tqc!p#4nlb7gZZZ>kdCg,Q-3+'Fs1!IG(3d/]^epV0Qls/qCr9,SXbHB:<ll.s7oJG<N2!^0"\g`<s/T09Gfs,,K2Ir;1R+TkY8gJu9Ua;h"$;60]-#(dgqsIZZM'.>iq[l.lJ5\pVN=7m)3M3gSoB$'rXM3eBgS_Q[g2B\=;EMMVpdnVE(W>0AEA1^b#>JJ`R+Jk"*Vqcp.sA174F;dCEUBT=`jkZlcJ9fg;gN9[6/.[9+u9bM_k&^EOqRr1?e2l'Gnu&OYBo>CE+N,J[PP*A.8*U;7*b:SoTb'Wr:)Z9Oqj]qfQ?iGM:QgkSG(V-rqY6P^$2gqo4Z1';`g/./*4hYXhO;kb6sH/Ofd_Xp!0-DhJrB$F*c-!^W]LJEBe+m%NXdq5TfZYbIG63]d`>2^0ogF?*b;i*Ot1YlY"GAhg/o-`3^27-?\':#an)9C"KZGGgUtGcq'A26Mr;>JEu$l>iH6K9aA6gT/8AXd8j/FC'F]78Sk$UmN+)'^A].XpW>TX?njA$49iDO+a>'sD=-][H=82X0iq[dWO!K?GgXe<ecp6Fnl&i=Oo0;;Am-JMNYTBaBR.(e7[=I_9.%o`_f_-mY:UM3Rq^0;/tBqd(]dB2>e6cKgS_]DdNhEtZ"&r-KTo.58h(E&/I4dq,)D1G!_>X*-BN6hP013SKqg8Fe=6RNGIdd5A9X4f.<t2GWC0&AQAb_>lR8DH*]3AR$P;ijMj%<.87ml-4QSY9g_J/Jnkf;?9D>VOM8UnS-jG7W,i!W>Z:kJd?0nSmM+mJ^PMrc(c,;\q<3QpPj$jBKLe,(:AX$^FM?:;h[o0cqP[$ad[u'5?G@#cFZ+8IT426R;1P*94ll^O2&T/jJS"eaK-3b:S_`K:\PsqHCM0;$$?8J%G5_G*!WR4Zt=.)kkZgSf`TI:[Sgc:YmrS;Vh[VV,b6KL+Z,6s-2L/\>B8M4h%gV=N47T,ds?tM-9i@2F3.so4V[%Sd;AY`h7n*%QGiN@m8GOj+gh)E((&EdG2hL^qd]CNscj9..)m`eIRp@:R4p2P2tWE4fH=*1$sD=5&QGP>tHSTEu^ls@4!k%)KbanEp&/kgM\'+<?rQoHs=MHf?m1RB@3VXg4A@Sd1R;5ASgURcO3-$mn[q4W)1gPs[Y+gT_-mGM^UYLE'3_o3i&7l\SHq=qlT54_Mg?!(\1F-drL40.;-T[RgNCU_rUF,Q,Um4RBY)_Hu^U9<54&8"SJF7dt?YFD.Y;1;iScs*,FYt=7n_YoXFc;d_C%Cg<4D^WjP3CCjAI`6$kg^qeJT1-O7Ag^>Rr7Gk]ZV9i;#'3_QL(=e?X%.DM*cG36D@W&Z]mAqEMYkp?cSQ.k+%W@=lg`,P%C\:MicPK?Hr`1Fhu_`?\mtV.kK.NHQ=5T[/.s,EJuM]^U=)?M<"T,Mi2blUF8"<^/.]\31Y]-_lIm-@I`FM:g`^%RFfMFbo3.cm1kR_iQZ0[9nf-]#5>dMCfIG3agqrD<Oeca#rN+"13drbfZFb.nH&A7**[AJVV^E9diU4G!h/]PpmEUBX.3u6C>fL*@hoQF2p.Kp;::I6+C5\iAH?O=?8k#Qa!jOJZHsb/&\1J\<&[4`L@)_f9EWlIb+D8:t07mU'W4FF&[4.tjH#cN4Q#3KP!/hjjj0nRAg(nIrJ"->4ZnlO]i'?D2.J#27cO@;YOr,i$P5]QJZo?t*<jL-R.d<9*&-<-jQ77_YaXFGLF-S_1%$oDSPmVIBYOif,R%<VnOp%#f#JrbFj/#UpS.(l#6eCRj!LV`329o\opeD?Vq4L@lUIZ7c#Z,8-AW&[^+J`f,'c5r?&[&9A+&:&I=LR<<;ipoRbiAc:lJ(+Pg0Am'CV+NJC%!EcRORoMi<$AlZSd[\(Z1Tb2fmgA_fenC?b^+)\^N1eXb"dC(!7j=R$PB:[%ej%B<F8+H!o?rRkJutBdKsR^M(n!?JTrdmk.A+_t>$3Y3k:E*SiX_L1JQk9@^PJC6OrR:80)@T\_hO7,eirj$DTe!l4103AhC$OtIh&Vn#PnkAeO31O.EQg.@"+6To)5#.rV&V\O#\m]mI>eZ($3>Mm4m<+k%:^[dJc1E>gh'<V_ogT%%i<ut`8NMV9a3A'iV2LXOT*T<`)pL(0eH?"m]b#P`X[s1EDIRQBmc>''Rmc:1Mf-oC#e[f9:d3::O-jOOY^_B[@;gRSV=bt=1W*j'dQNRKtNtHp:h6?i?$.!oq1F7IOCC"7oX=AAa6"tFiFWqFQEk2Y)GdjHJEZ8_mN*;ZekcMh'Zd_S]!8O'#HWKj1j5OGo#H)Ua":`Q]O1R[7P6os.d:ifprIhZ*k$(VU&(f$UD2F7l6n1<>rb^*&Bpa;TY>)RKcFIcGV0qR^^2l5nU';J?LG+q8G]Y>MJ/`mhV.NftOX;Q9.p')29BNde4EL8)>'KR4*=J`LGpYUe9^-P/htXuK1iX&>>a5=2k/#FrgFR<.QI&W(#ol$nVbc/INHWV(o*MeY9ZMCERB?$K>&_K(Vd?WYMt3j3grdAdhuJuD_^m)`iJROof&B6(Q`D2EZ5gDO;l8Djl1jcnS$LkWSq3lLWj-P@n,05rD=5'+B3sVdJC+Kkk,/XGqGl-SH^'GrGpEjJI8;FOF5VJj<2-FY_8V`kc%A7j`s^V,OgPM+e<6<-UG;iG413)ZqFk3eHt`HnG-UD"rCK,lVeitmFCa?m\J'*YMbpu0=c"AW@u7a@:E`!H2l?_%_m\moe5WHuD&8ZW*E\^%YMV5N]4W[/0:<W:V#-p(cn-jSA$T"Wk2O[-g54)trTUl;GhnbE4BS$7'ja,3HaZn&dh;a-i'#o*'&H44neJ3[p)[C^Z)^R*/moNkT>LR"W_o'dfqe1%/oe3#^mQtfi9ok..ecj^.Ua<4gC,F621JR%`*f-qSu0JjFD]">,T>/L=fGlR`b\6sed9-*ALg1]!1K1U(E(1(+bU,R^mlN&RDA7A/YX=.BcH/c==I%8Pq!tX'EXN%iSAi=H.5t@*Yd\t!bEq72MSQ`bJLu,+VBN]&<cao<MnU8EiC_W:AkkghkS?[]cibN;+[MkJ6R=$<N=\hbh";d.,YD0[Y1Lr<TZ7cgfjJ%R9/b_;R4=Y%5!t(X^D?;k)%6ii%!WinP\g`i[$0F<738G'@s8IVK^lNCo,lFi,Y)4NpPoRIT*4\Em*YU1][f%;Sn5$!H;>5BFFtH5YGYgRQretgdK:1KW%;lS!&;=M?7Ht;i,#tJ53YS6nT,Qbp]Sk/hO%n5_thYO@if/EhfEciS.BZ_$h_NSN<]I3<<fjZe?n\Z,?fZ7K>9o&-YlW!ULL'SbUHH.oA_`M%G3!/u_5PK,"H,eBIf6Oto?,N)Hau>\,*o>82mmA<9^"#q/9@%*EWhU+f/p#q-HLhPK0cJ]8fH"4sFOJA+)NR-5_pVP[;=$#jTt$&S^M""fYN5Yu>"bu.D($?r3@5\<EW>nBDlJ2Y(]ge7]B&s-'Y-.>I&T8F8s&Bk8^8=*peqp&J&]jhj-dtQX73s9CK<S<GAh8:-4^ap<f$%0*U!k<Ha24+ULR]5*:6itpc&E3=NAQglfns08XQiJ>?MZ>H+TuqMSK.RF\dEr(R#b[.9`pKR$+se`F#iQep!h_qh86t/<Mh&*rH)(H(8?&b7RYXT.1auQEh5j9XOoQsK!MG:bjof=rEjZ%+bZ(U(`13PojV#^0)_)%G$#!0gkbN%\XthItJ3bYdL]pYTA;7%)Kh6gD7S7bm:6RpjAIAf`Uh*GlHHF#j-/*6V8R\GF#VZl6"O*E%e]hh]>SY5@^lAO7<maknMu\e>^e"U]'FLR43<AoZ6r_1nDGm>kQ]rPT<$le>"M,1qM#_TgjbbT[!,G?PPm@p&&0_/m#i$1AJ;0?q+;1o@$C<(Q8PR#(bhOk>P*l;%\k2+:!-+[$kb:)+%n]))0IIW5600V.&nk$.">DhJ#[K]sHq8o55X_mh-pZYO!t^XrO37i''#4JJ7Hal5-6p=N:3__^a@R.<GmBS86kFkOWD(ta+[e^(.<5($>7sYFT$:9pMG01!++EJA8FqhmhgFNcOZ-Y!)n3R2pk^*+oFq#eV`t!`"@)VV)pa$/c(@2jJbOQ_bqD9X`V-terPZm4(0gjHnDcJ#K1Gt2ZTk_l5P58rqrV[?71LUD<lH\VGCTBt++N@r+K9ae9Q*o!HgllYbXB[I^A!Za%t;GMr)EI5%m9^1#G1nVGCK06nr]OOJ02;uHTumVRD9U[^>j?'`9E%`,t*:PH2$Vk"R$qR)1p-MTD7D%GJ*(D5Bu2P=2b]!qP?+[i7q9"^\d-E$/YI8-bo5X^"r5ST=uWQ[e-.%^EJ't%=R`;+8kcmn7M7,:O`06bh$2.5CN"dnbrCaQRq@o=5QB[kP+bNf3\n-J,P-UIK/Eeiqqg7SN"=[b+5_bqu,u18KkKc^M.DE4T)M(Vr$8"1?7ODq&9q'pR97U4qf`;s*AqTm?ZXYhn.eG#Os$GQ9Q@-J);?Q'L2&th>YdtV&FhXfc=U$o(<5or;If<id22!r7_2/a8(+mO8d>CJ,%K]*rCUsbO$&8l@X#g?N9Z,r(m<NqXu:#q[/b`*51j<:[5npJ)[a%Id?a#r/i&tki6T/kCGkrbaVu7faE#:r2ZIIHUl&$*AJZ>=SY]Xb*9TA]HJJ.jXk!UbL*)'Ia/+%r:WLA0AcA]9K!b2cOZVtSURcTpLF4o-N!@<=8C"W"O%&-Drh,9ki.B>,[-Cc!3D>3$Li76PELVFr_HS>6?4!=^Gj7=s+XA>.gb/biN[(kW=LbNgG_ePqCa;`g0I#+HHe=(qHrMS"G_ROI.+CKV+NlJMS:U1*-d*e.]!E$YE@6sf@8m*2bC!$9F;k"Bi5a&8Om=>)H'n(&rVtg;F6L;?@&'))JP?BAC;GqG*12g#m'`2:_OiU74';_%0u,i7=@Cf,_pmKZY(?Ub.%E&9<Z']hgJM/qXhB`ofp4`2uiZjQ[T"NrDK*^pruq'oZD6ipL\>QAKoY8msk-J"b,VJ^]/Uhr:HJPa5U0lHLg=4hY>;8n,&kEGl5Zb"R>Y=q0MhtJ,eF:]DYYm]^lBsI^\F%QX:=mHM+D,hYR+$5G=_Q5\OMPo<\Joc0W(BnRK6`6OA9mrDo?Cr7:hM81G^5++Hr!YD+.4qi1;:ad;e6\`2r;TD\VX07W'AfDakjTDe;@oX5D-*V">[HfLHbI.g(Kge@kFnaF0\i^[ARme>V'"Fg1>[i@V\q]#!R<MCA[%muLCnFbE)jM*qQdVD/Pn5!Dp1gbe6qD[kh;df<fmX;uL:V?1["H`6b!W?TCp,SJ_55U,-I*6ODJG,`soZBfmYN\O[e,-oO'7\uCihsc=:@oIL@edg0b[35WlQ<n9UK<)1fCe(fjFuZs2u&a1]QjG+f?M&"]_')`J+uOkIJNR640QfoDr0!5597>qNI0m_05lUFIf&9b?@GgsdJgoTrl<XI#X<]("Tu`*n?2o/O]2iToTC&K\&>(MO9dOPO[.SmY7$.7Jh_\3!oWec;>.SQl*Wnj`o$p5p.BuZ,2KpV(Of/23&/N#PBT4jL8?Ods,jdD.1/oNg8ehNf>N1:E>"H0VE')riI*B!QP:jc+JriGZfgb$iJXn=]J%"HOW45BVk1'kJ\L'7f%I7>pi?8'g.sp.?fB:Kh=^8UheH0jnGXf-qkGh%q/kYW-O0%Os7\bNYn&A^W8@8=O59=rHK#Gs0"Bq_O8R9*G<YW[O1k&@h&jDl$_RHOVnRK'K-.f*kpN,!i.jPjgdg9%Yt)NuJ+f!8II^m/I,`1Rr6RsJo;Tboo&>"fqP-./p[jX[4n[f5ci([m5()O?^\%&W^-1t^LFVi!j<JT(r70C@J*8E^iK(s=I?lN4TD+E:Q+:7HGPM+5T)HkR+8Y>&IsD!7GMd:cmA]84o$F;+rr%0bJ*MH+55q.7Idg:FJ*u9B+8an8cfq],I'iIc]c[(.++=.)5C3),IlR+LpOD=KIJ\`Ehf\,&TDSJuJ+/,@qb)u6G5pBTi;\8D9""MupO/]jGC8s&4j'*tH7Ja-(S;(BIISoL[pFRXM*f#HMk.lZpY(Be^s>4Enq59&DSRp<p6F72F?fZL#@A,]^37QqhgO]E5CC^^rq7;qLL3^Be#V`(cT_-\YC>k=!C$NU1\/!gi($!-B)U9Fh1,4*^e]F@-XV>Aq#6lkIcr0=HXE$MnDj7chZ*=WGjNhF54R.sT76@q+2&Q2cb6+e<A3TjQNVd6LG.J!!8eW3IdeZ$0E"_?$/i6FIp_^Dhq*KIjn0.<n,37$H.N;9F8Lkk4S%<pPOJLegOV#*k"Y0Po8]0/\bge.I/NeYnCo%rlh`>_.cudTqagG2&)R?)m4Z-Mg_V&]lc#2si,=&7bPoqRGQ%0E+2":f^MP:ndi4p(bIIQ]!IWSXe.4chQOdil[>3Y`C>bO)2YE?]I[WM"nb59HdJ&+h,N&GA:]JNYJ)L;*pV"=hpd<B^UEB?j9?kf\hhOP=6ash4FFM!jXli&LW)T]-?:bQTnAYisL!\Be?gk_tY30m)n#&ACWW2SRLVET"VuPX-mX4KpGQ%%00>*^YBgk\PGr3_$<keO=nC?-S9'`DF)\5)Qs-FhQp$<\0I-o>9^\mfJDggc9:SscZk1AY&j&bkhjV&/;SIT#8a$96b:I"A=a(PG(:HS"@=k?H?8Z_sAE7(^N,N!rCn7Q[Y_&'iX_;a>4_7-$3n<[k=fDR;/oZ9&ZeZZ]ThtPY[)JX`hfk9.s/CQ9-rR6iudu:b>D414G4?WPlD`jk,b"jVVGd[DRc[Osb^]-fBeU'f":5bjU;<)R'5Q7Lg55ds6AGl:.-L(@'hV7S^`uhIsnuKgJNun&!4SYhX4o!0dmebd&T7-(Vpsd4W2j:FWTD4b.pga?ph7rs)"(-tiI4*nCRA]J$pfig3UEBBbf=q7>j%k'lMm(-lYm3=J00f/aBE.2pmY8L(qWTBbs7>!;r6k34='k:gJ,e4shg6l64Sth%IGeI]s+/sUGoCNdKSWYd.S,.R>u1OlK26sTiQ!&>e0j*:pljk_I.l#2J*8-O=21IW55UU,mWm^&],u<Fj,6+rO`*AUid3lC\GHA(IJW!]\c&,/HX?aIfCdLgJ+DiZ*kD$emlg]hQQQ"Da4,J1kgs960]IV$8D)7<r8QHmb<,ahJOfadn%SPXO;mm+Cq%48!QrQnB]=\XJ,QC_n(o&f31LB7[u*+*W]p'?4+Ha*pQqM%4acd`c[P!i?[p';I*M#gO+-Ge07Ml4G45AOGVN-sD`mrg&)@0>m9b,;r_J:Dq"(-?D`jAphB+uXl&XY)q9HZ\XGSY@pBlEMmea*ZfF.)^^+VUtrV0;uHM/#u^[Qr4hKHR2g!>'A[25G6n5n)bIHJG.If&Q*5Pk5;^@h!]Klt%2W1QsT6$I_:Bq+[EQebIJ<#>,#cT_*"Y<;LA*C%=%M=e^bg_5agB0Pk@*FHH(qu#cpp_gg8Oe4l/o4NQMn,D>LXhe&ZX0;EdeI40SJ$Y^R@T4JKDu@f[fT\O_^8Btn>_4X->[V*is4TCnRf90q_%QP.>=p2q&C"t9I]9jU2&SAM[Cc@EoZP?X4.gt)cD%GM'[-aYkj+eS:oXHhLA6+u8`*V,<;C]m.=_?Z]T7I.TfZV+s2R?tr-b45`fJUDV0bQ&@(>O=DgpU4r:6%YII<R8grhnfc#5i;B__'u5Pk/%hd1P[^\Q]He/nYha/Vqlp#KEO7_SPQ&,l#7mX=VX++E-hs6jIqfJfiEIeVHcH)g_9ci!;.-U7;%T=k'Hs6&EdghUhVim$q@k(3$!Q[I5L"`$$&a7*<:(Lmd3o3Y)'PNp9QhKn7Z=KSGamAJk<kUZ0.5Q7CbmX4]\:GVgh)kVR(oiS*K^Su75,/B:J@3tR,M_Dg\535]8LY:FRhpYXkqtN[R]=7X%HiN`+YC?DOkGmsu<6JbMo=#B5knm7Kc[Ws,][7&gJ,G0FapX^<9"<p'LYe9j#($P]:IeY@H=hoUR&=N\s4qUBre>n#VXT@*Ir"6ae=W[]jjVO<r:-t?qnlcij>.<rrJmctqFGZ$m1"R@oh+.8l0BAX0F7s3qr3B;GcGLV7??7(Rc*Cr#tOB`s7d+3H1^,IhYfHMV@T3nl-DKgjYpr'T7#RF590SfrMNdJN(#(R7>3[LU8H\o:N`r:+esPPjihF4C>[YAIJ`&k1BVgW;WGB-p>q#ZJ,P[@kKQ'\r$QqCnB^"leP:\54rAbHp;QgbB:aLan'Tb)6]Z\mnWh\g^1@/cKDo?YNkD^`ilg"N/'kmPIcAZ)5*g]o_/K<>g!@M?^A@ZoIfJG8]`#,4^R+liVsf#fPII-2i/tJm*&G&_+8O^J:Yt't7,NAZr29;(WP<oGM/)t8_p+_/GXM6Rr6kJ35Is'"%%hh*am\Edp$X7%?c`4*"Ff`\@1][?MLXf%[A&1iRXQDf-c''G:mO"hoF`O$E;S*U-A*X5Mj$C)cGOI!$FBS)rO)LBIdiUE]I!R:Nn<nZrT()V2g_[1C]<-11J-j\^K8\H=0`I@gen*jgOV<@aHL<46g3Na+#bVY3Ucs8ajFcTf(>hr1/LqMB]Lh`f;V?p^Q-j2h=F#dV59DE*rLhQEg_C5'\qK;M)Xd\5S6&>!!Z!p,''.gh;#)k&,1.FPLnR@*LaD78@0!^T<:UMOe/d!o"[s_3'mV&Mja_HK,^X7:[=J(:aSG\s/D^_KqpII&L&DC,!b?M.GK#6ED:@rkl(e$;>i?E8GKmDRr98cR+W>/2`ddNg<A^;oYKM#,hYB41#O-KfTnsc=8[-oNqA8[m-9us^A[8'd2k9XYHZh]hDUni]Bj4_bm0Hil(0lioPeSQ`*Z874^9!#O!R]8@e=VH]r3;Y?SL?'^LQGdDUZ50L1^o8lg7>bq2$=dH`jIZ-[oF$ap(?HokL;Up4^!JfRu;o"\Tbh%cgJWa*[Euh)l(]HB7U%m[?/t)ETq=RU5^a4[%NVqW)ckW4o^mmLVp`I!JE"oA8WAp5)j3Os".\>_#kF2a5m`e.b+ghr^j8G._j47FrOf6m$G.b_PQ3*pT2FCO7<hgXV]\4QH>9$jTZ>PC.eAc9,:*j_n4j[7TPt2:Yb#_u"<-OjpLGs0YRZfC%s;b3agYjkg"JSd*cJI)"n,0;=e,]np3d2t$,G!9_J"U_<_Oi(2\f.aag#H=?HXO77k;mK[Dimad+ghV25f*HIe%XEB"cAO9C^$PDX,IeN$0I-3l#(2s.LF]!I4<7(Ml3oqaHD=4PF;[m^c-pIRP^IeJ'YQ*e_^\t!qTB`d]T'0,JA=ij;?E"E&/+Hj"\V]3Y&pU=hqH@alJ,IZ.,2Fa)<jsF#mpKk+9;Wg/LOZcc""5Zup9-?-]`]IR>l@'?V2de>b'i1E>\EcF^\+SK-TVZJ<;FeM2!Onoqd(pT.`B`4s6D1Bca:>\VD?C/!.)&`OQB8O^mtS?_cu\P*Ju?(-cr1Q6kTo%r0dO8%9B2^o*tfiq!B/V25J2Mg,>qcs#YpB]0H1NlLUG&_d*>25C7=,s7H,:q=5J#^Nat\&&sA(jiN#MO8o4TLVD.2UUC7<=]s4B:6iLNb&+7e*!j1<E#G'S6e@qprkIIe?`ZE`TEP#fgM:;fPYGN``"2DHj/9V\L&7f?hrTq!gUm?HY%6ggp\sEd=uA%ZdcWZ_Gl7B3en+#e#f(UfAV-0B2GV!aP93!?W;asV5PaZdm^p6U>ub$qK(.Wob$+[$^[e#jo7m(-^XlN">Ipbr1_Q)?iJ,?G,t]h?D<O'RQ:a:R,.$fccfb*'ifah@HY6=YH_jW;;dq%<gX/]r9Q,'PK^\].)nkZ?g@UY+h1![7h`gnD%6eeK<C2`H>lHtf0`1!RIBc;4CC<$l=oC"gpVGir=[$aR+^n;rc4Bne0Wt:J/Z='-pjW4o+8sp?RnlSOS,:F%J,a#ds8)$$_m^]T',VtplbS@'opbhBqgA0173roOoH,1Squ])X4o:LqHbT#<94cnWI'2ecDL!Y`K"]\dY7'jkh/rgm`$5-@2o:2c&cdBi.\NeKWqATBREBX07mF%s551TQ5PhpaG\0doVM9QqGQ6]S-PS%0WBSpop;?1.0@Eh&Q#<@f9NVqcMO4@pZYA#IGCB*IbuM(fIeNC-J*3pu[7_Q`j%ho1lrP,/Yjoks-"&l8AUL6j^A=i/pk9S$\\S#Rro26u!8Od?G@\LY+,_e$[\Hun7KKk<'`\#`#9(@kLB*_@m(Q!eJ+2Z`J:BZO`d``*T7-("[nklU1D;lAkQ.j`kQ=1)5rNn8;B#p-s-o*7o%af;c]XoCc=7-qS,ds.^L-oC4&4Y[(?"D#n!B=VaY06^Bi3`Vhk.Y`W5bYKk9C+A@@]`7[;27j=hf@?Zu>rr:8r2*mOVW$Tus!V,%uZ<][7t<Ic&a6FOsU/pO=:!YGY"/nNZo?#JTu@YJ4.grPG=AlnO't/JJ&/[f5EO?iPWLB.ZXBq>BQ.p?K+ophJuE*VQDi[26Q(HRC9-[>4a"*;K/uI/gpmJ+WB(iCil2n!Cb`E5NV*E8[>&s79$7lc&"NfgBjdotpIkqc\CH4.lLarq"1c7.:#tM`/&lrH\G)B:j)mT(5oq1`u\*5QATA;`a_9dsgq[gAehO#Bb0;lUsIBNV$B+0KnHMkM310d+.`L`0iediKk(!gQ2.HSR8JO>^O;G/&1'_7iq]3*I?bLdP$%BjaVK:^2JD$q!.nUe%`DfhnK$!#G:l"J,AX=rp27cr[W26a%Ke;?;d>]ddFY-FPF7E@`l0/inJT%;;do<R:cb3C>;('<c;d5,Bs+2[t!'/gL!*Ms6RKbrS_p,q^]c15Q"(0&*qQVQqlu7I/Y@>mX$M`k/6rjh`XG%^@ZgmrkC#HhZ)\-s.nYr6U1E82hO/(5Lc;hn:e&6^&DL.Im*/lXlj&=XXg8d$K5[m?U$[dTA[JtpM6nn6[,uRIn/)MoBuOq*Huk(l-K>+s*aIiGL6BT>F'Dlq3O</>5-41mi?5\gfV^Y0#X6%R/o,RQp<*6f4SQ]f7*V1Q4sJB`*>ULRkIaUrE!FFMl"&]9`aakYIfF!5\hg+<4e&QCG/E)rGnNG77YohnD)C'n(nYfbY%ZV-m#C2Hf=_;Z-"jElZhKI0+T#)NIr.Nh*(>_@%9DOrCPo08<6!m'!>q2g@5<Bh*$(jQ`U16f<:foRP;q!3:t2Pr;1%AG5T#Gc$'&da^I@3\`^_Ha('KkT54("q&d5E`fIi]cQbZW4k,UB5OVjfB%;t]C$G<p9tF+GKX)(RUe0<.0l;Z.Vp;g#'?4,u2\:P@$GG^#"atM?j3[n4bXB,AU=j'^$:>KPA\W^*i(*_5#:ger?2Uq*U&4<#*hW^$:;VFZ53NO2!u1a.7BtJC!Qens7McAs>DFB/TfY[e+T^D''FY6R:=EJX1\.fBqhEY_/UFaJEbtUMI>t'Da\ujGo?`'iPtV[8[NPWff!+Xt=Ynh$s([lS4`NDN5Mr6u_qeUBo'<u30DR+c5ncW=9:\XCTYdL=3a4S,'k-+\\$F?8j2L[%9(p4cgYsTqGkX?H'<Su,deN\;ilc8ghI6a9WQ:Pa2e$TF,*Eg%d%-mal5>Na/b9_Yn<':a2pH,0qG2$*`4P;&G`/Fr9&H-VR(1N6`6EfSlm[\T\U,UG&=@,A(FeNH:/j,qGp%nLbScsA]-qk0C_=67j:W1p6WE$=FBH1;];Fn:eT3>q/6>MtVU>p<Pput/jKj`[_6+&R8B_C3c37L463Io0"$bCYH#O!F0D!MJWS\=3.c3<jM?<R<1%R2IU2>5(4h+&b`Yfg;EJ9$FS+kQZ*r*682.+*Wj5Qu"i-Z](f&<3'@MYc[URPcW)4N(D5tSp8c03N?hY@pr&A0:ps6CKiM.$?%Wl/+-JE\.SJ[\Y2&:d-rUguhR'NOR?!Jj=#P\=E5<;B8,_$Ghpk:6[8c)nl+"?+\XNMC(q1#Zd.$jrX67AD3Kn"$9t1ndl8-ZI+*:!/>dU)ANL<5._2PJ)O$Uln=26^%ok5pUgOZAu![f-PB+X_h?j3u@,!gc6khp[t+9/R<eUL.X$#0\@X;F"W!`9`3?tSZf2dfY21ao(.%.?adIiiJu<F;eIerKb*V,!H9,H#\]hA!"!4`AM1eP?W7^.eQg-YS-\V"*HksBhnAP"2_4VAdJ/61\Nlp%V1#`V12$Gc,!75I,'"jV<2.*7A>NB2,3U@4'#hhBUn%%.,8D(>_EU^N.2b%c>QSRKL+5IQ0E:32TE"P-.ZY$@-u.UUN"lP<5dM)oV9k0uh``joa1>j?[&TD[]??Nt\@bVqQO?[hRUhQ[rVh<Fk5Pf=f1Q8?0CBGOre@BBKlma<OXYV.ktqH#3F//6Re1h&?LbT+r;dl9PuOWDJOa6^qEd]KC.`&fDF>Bg4<$-A?9%j)PqE+;/=0<_V:;=8s61>98.EI]CK2XD<*aE3@EVH.;FptXEMVIlUWjqJV^hV>R7cR;BoK$cg_7dT%onf2IA4Jf7[<ZDUl=cS-:L/t%j1Z/F2*"shNr`]h65`5aNsn,,<oISTa>g=ZG&XY2/2EQ6s.cj1JN0s6VA^+:'^TPJ,Q2OY\T]ge[YQ0.B.6os3T7[)3bahkq'lR&fm&0G,H[8Ij`X^\_L3%R[!22(Z6trCDd!>i*?@hLl5CoAEGc1Rs,BT"u%9cQL[L![r6HpEbeMIND9I.$,BkF=p\Tuc1t&+])\3h8R4KLUaXXCa@Rg8NqSW!0%q\OEd:HnR)Gd@s7sC%Or^U'N:-OHfB!+;P3]\S:!I6e.T]afV%1s-f0#n&EpaZ.T`Os`SEXY6+4mMBRI'][-@GGa<P?tB.\Fn%U9+(5<$fOlU'\d-^Ut7\^?:XmKIufLqgT=i5=s!Co2Fs.deM8[M<U8]2'bio:SRF!mG/DrImifW4f/iBPc0`jId*GT<9<10=1BrboG9EF!a:TARDDLmP,T,/nk!Ei8?#-*!hM3QcfD'Q3<A&S,$=aA*A4"%%`/AcJ24].#3#UX0EL[%jAg[u.N.Y():Dl'L)R0r6;#0Ij39e2-*#NM`+X[J#lcPdpd&*c#U/_ns$_/STnXgXrl=1QdA/-r0d2F(-gBN@!F]pK3)>(RM*Fc:QkM7lq26Z>[f4POFb*4Zbdp/2;2(r%&;eTT5Xc7b8Hf[/&34n"#L<lk7S12gqZOVuS,a]K,YXGPX#Q%+DG+TjB_o=higiY9nV$R8q,h!3p>:QYV8cT#3%p6q-k=5B>34)/(l5Z=/T*J-N4WBe^.3K[b/Bq80D><lCspTNj*VaYHhgJ;rq#)]nSbbPbeOGIPhqn@\B1HR:K4(!l*"S@nV,J?q1#%Gfie>e4Hpa3,cr>'ma!:T(jZKAUr(m.V0AB$#Q?5FK;kUn[@k;0r7%A_2jV!_FD!@t6P)&q<4-CIQb`^%MXl)Uh16oA#Bj>RN5e>*SttALn@$Y?@g!;Ura_N!I!\h,bP<OYbaXof-M\C5+MT4S&4._+KM5h_RH+](Z(t8N"\ia`Ugud6+!2bl4E'_Ts,R5c5!eIbmg'-U>NeA#4:7a0YT_;p>*A,@l[V3,s(p*q\u.*Mfm>],EdT&sX=h80`YCSWP:%8XC&_O__dLknlgYV^X;W,Il)Ae0Kg_`[s/W`Zc*o#sY\^A\GO`(6VGU1`-]Q,b+rS#O#MfH;?m?5e9`Q^$Aku/AR5Z%JB]*=@bXG[$S6-1F<]aQ;'#?h`QLWf2o="eZDq:'sWr-J98b\kV+'!qt):sc'8,uuoO8o%eri@:tP=ej/=ft>#3MJ:\+p'Js^.'UMPb9ejRe'b\]76`b6!()D;?5dmIoq-]@pe]&-:KR7M15?Z^\LP%S<PttFu!JXrJt=#kI5W\TB5d;A>oBhS^\o?Z_U9Ys7NS1Z/E=XV".`f"L*-h<9b84Q"jVTotH%/CK@0Rs-(7TIl%)h2kU$E0NI]CDhSJr6@s.TbA[Db<`cKH*&p=dChEP2s8E7%NJ#YN^U7#['MA8k2[>bcr/\VjDL::`5P<(+LSsr`hlf5k7g$!>buM'oJ,d;KrR\eKo=S&:]35#dO8Lp-,@=/l'EHd6n/:fB'u0_q$154:,1n#cmr,&[O.(BX`S[%mf2X/h0R`d8#qulVO![-aUM#&Q[hAXDr5m\XRo;LJTr="Orib5!\l>i9IJuH&l"6Ocf15C]E0[HuLM&[J3Gsu[p^`pY:qug.DcLZZ:O`>Is7N#`4QnU$7KE$VH"BMNCG5XeAKC%]bRAmj3<ZkXh[-a*R4dqPs8JG[coZi1X"r-#Er5"6A`oKUo5FX+n#9I)0kY>pV=lQ[mg\hD#[k"cI!74QfR3V3d]$4!Sp+IL;^gFC?Re2SEjp*\WE0BGe#ZpsHi'T:E%Rh%7<m:0h+s+f[=9q"^CsBAe))N=@Nfa)%=<?(VteT&p"A$5LJZ9%"FS(86bBl,9D`A58_$%h/K%6`Zc_uS^;ehas%GNHT?7uOAu9TtPGD6Sb&8i^pA;h]HfTNLr57]]J$+JY^&4(DHZA?R>m0Wi$e!G:D*(E-r_N.WX*UgI,[Kl*MUR3kmtoOp5F^I%p#Nd8:7q6fXHid1Dl6Y6Yrm&q_r(=Qhehh]9Q^2Ud:9T!]%7l#msdR/i/Ss1ZL*LVUG,?fZF\Cr\XBNuSg;s-Td7[nUBJAm0ZrGX+@;8?6"j<"G2N+^aZ/\6mhl%fs8;?Kn&TNf'rbA\hT+MEo[V;77KJU.<77%2!0fko+-r2XL[d3jk%:L[Z0E-QYQ];=_#0nj,8S)")Ors;FG:4!/TfT`;s<9,o%A&']FrJd)T:9ni/9LjC$@2>>R)ecJ2)F^CYIjikkW=63pbKt3P=sr?2RB?UT8]Df1ET*GcrEa11Cl4e-L;,qTqPp$"-X/P>C%^?hVj;kP4KlM4MuT^j5jk1D2_;ZQ7/4HV(Nf:L&*WC@V1N,QmM=I4e4o(b-5U@&He3.tsu_V't^?=c[Js.)-So]%QL#rga/fI+IcToVH?s1_)/HpRZ:)=-Bkm'2>d$W.m%e\6VUiFE0p9hN1=N,1@fiYKr%TVis\NVi$/[UjE_0WEG<S!\Pu>'&i9Oe'Ft_c$'ob`\T>gAc\fP.-Nja;G=WBpjl:FTU"nTBASs_9rbk[bB<Hqmo^Qe9(4*'?ncX*p:Q_$[a.o.[D9Y;3MHfsF."/&;AKfMCF\/!`8c^HF08/XGOOD_r+<RSF2kMCC;3POh3XsV%cYr[^M7)O'#6uE?o.md]6V#7DfT^pSU%R&/7'A8o%*:-hLOk(gX#5oX%o:0Ar+q7&"NIaFO-M]G@.F9$s_:h\`C9tPJaQAG6Fu:JIe:b;Zh:Cnp,)),80os9Cqb5#="X3HflcnrI*Y->^*GrcgW;'moLtU"lPC)4eJ[$r:g3[\l3Mb]Yk$3f54lUhj_4)IlIB2`fr@7mK<:!#r^4LmtqVn2qBU"V;\!X[E_@-hGf?a`tYL;/4+=T77ZCPV>M&-oahpn0#:>,Vd?KM4%$oki4l<b1n*M@e])'V0q$OEJ.tn<+JjZ$63s[*q:_08&#K.m2t=V].8,rt4!>?2Y,GT6=VU?-M:eh5p2gr6O4.(WHp5eh!7m@Tg@$!\ne7IXd`M^/csK<nBeg9eTFpn>h7oYZo-9m1ht>3oS].YGJ/oQoipaXBOBHdUl$h5OM;!AUaa3MkXofiXc][dUq^TT-NHuhQMKu%jl&e90Jb9"b>i8`*ms(#R_8dWPH1LGF:J&@I7B+L9Q:N1I/(GFu==prUqF<S(j_t0,VVt8:ZQcgAFqmTC`(O)n&-GY0/-P"&%;1hcBFbQ[$k0m\G?9\&V_S9_naBIi]%EV@>?oNIGBV90TD?F=Htt&/]AaM*0W,q7Q0?FrC>%,h>3Y$.#lJ=63U7k^(?MatfoIPs3jD&!:#hPM)0mKN;&Foli'eHpiSE&Rkoe1UQt]>?+dJWnert@=6,NL_r1O&B"?0oo:YZa-OC=4NO%DGGKoJ3/r076P'Sl\\$!Ol?rl8XWOpE--jM^a/"i,kUh_^=Pe@3jmM/H)mT_R/h\>()A@T$J2]pcm*)UlHa,\BFACutLh,rBMMF82Y?-*8Y(XSUG%T:U)MSBYH1^:s+i!cV&SD6Kr%Skkhadh\;N5CYne0?Eo`N_k8Ph>V(eq9:'\VWg_[XSo2!Z?CW^E<:F$InWK-iQj^[D+,<BIpq%\@Hp\(pVs\:_>XDe2.*J4F/iOo>[aC79,"-@I-AsbchRPj=G:%4N>EW[AL/i0Vs19YHc\KKbDZ"U1]eG0K(]0B<ki!D>Q4)eI'm4CddOp(-U%"pgFj<>Z*8HH-aHr?Vb0cF<-5:2oBtJX(2A?)@q>NKj'R<);a%B`.m@_,n?Yn"<U>G.'R.#E5@d?S2S-KJX8)(38nV:"Hu8ZKY!;g]'Y!qohgB7/R19*6CT"E1S!`r2`KM4Tq/r.X]DnZ<XBQo\n5L`&s-]s/K`k.6q_+AAQC]Q,Lft!4JdB_UfU/:u?6"o)pZK:Dh^9NE@4.K/=1)6^iP=kWXOMA?.H+f4^tF<5g*aael-puXa>N5L'Lg*=.:eTB`"YGc3*bgp3B:L?QDt;l,l>f!LC5emn4PV>n--?(0Fk3Y(3Uc<9L!D&QK947'`@n[gN7\:+q@tnl0sNR^8&XqYVsYf).b1"qX^#%&n\+j]%$'_&u?Q=#f&[9\Z%>Qk/Ld?corO,_Dj;.MlWc$\7Sh`O3?S1!cPc-?_1"Cf7@ftdU%-kqd91U;'jqBnf(K[$?uA?ZVl]`W\SL@WL9]L<F+^.-RrIs-fE,i@=Lo-__8G(I.QkMI?K+<!gjNm";j;FAAI0n=Ke\l&db,JWI,6TbO%t9>h.ld2b^!Qrec0jJ=0bm7h?UXP5l@$;Fl$ST.A>mPY6Na;kkB?!.!Ys-JRDC!p$agV'>RC4;!P@q"MNq6qbGp$$=-EN,FjI>%e!,<N;Hjo#Q=[ooo,-m5#9%YIBEuJAufh;-i9h6%2==iGZHL/3a"cO,%;#Ko1lGnKlr%`LKSj*rbT6*:MPW@sp([h"E2rV\u^8GEukGVW^J6J5Q+49*bM*V]0_G@Nh^uK96&(r+C[pR\[\Hdj.@@Q0TO&b3B+NBp+h(,b$JQee*_"$]/We:)/X39rMea?eFi%`fhH:;Mlm'24g[Llep9M86EYU7_M_m,/@t;1Nmgc[Nl"?n)#FhKiRO8^p"FLE6su2RA<4RLbOh\B.IW&jFEhtM#lT9o)Y82kaHT`8L?:UAmgk6kf+kKFFB9=:WKuiejYY^!`3J3J3Pe&!!=[8]?2IPOKp=dV:+nC/JG-rVLm^OATU6d^dm.o>&45TX"!k2lbE1<)4<;k$\Y6Bb(Km^oRC-H$kErC&_tJc1;@^-P;)EA8Xftcn"@^JjT]ZEo+7Ypoe-Mn->(d.p!6)*RIl94h%M?_^HDIAqR_DYo$]LR&pdE"k);P6#7IM!D@dCX2L!CY<NUC)IU\$6bW6<>LM7CoR>N='HtKl<]/5U@htKZ%?S5lbDdr7U4bH\Mo[DuYC"9"]jCSC9A.Mt7(V4]Z8pUYZo)$Ghl[q(26ZlHVm7Zj4DjQM"hhZ`JbEFJhVE6O>i.UY$n>/<GM409PD[S#rP7b_M`VS`cr/D*"0AK:XjAnU!X%YZ(W0h;I44m(4TEn84/k.u[XGZ?<>>uloHp'61C=#ig"]GCN8nC[Ih.99WKTmrWWBrrM4"4$IF#WW7;i,r;>X'*77U\!-M<8tn0N2<9cg+l>&#:Ag?m,o:O7\pfSkX%EXD!"N)bG#&&dadk)-m<&6Bf>C"\bX^_,V[,DD\&D&1bAK<2r/F2;W\"/SL<h*!&AQ3B7aI,n_As]K9%";qXRcA=E.FPV6.*iNn[Z0E_]4&-c$]1H5pI*+:N->:u\$(gfjo72K*LIfA;MefRS\X<XMqP<s*U9"4!Z3IPM*M@`#Y+QV1R.:l%F)@EPL;<?5YW>&uL&no/+N=]/`&4)Wh#iU+K:F6CE00bg`J>ekIbZk-RW;uB;>%85?T1L7F1L;;eMW,_nD>rGTD&3lCf'ep,m98^&?pR'0)sm`sF!VT5q"[>>dn)jPK??4^U&lMm:J@YXn"+Na%20^-%(/3.@@(4giE4^CR&G-MSbiB-5uWUQ+d_Xnr7p0_p1GmFUCubI1aXa[,EcUe"7^\]0H^klNIWlZErk(tLe,Le9SLMVbW%K9*_ad!mdL`^j5b<^M_L,gOs-\ojZchIgLn_ne#)b]oju@^f4/5U]5f\87`EK+)`*=E3mW+fHr.0t7N6/fFmQ9VXKe2f/mZp@k]Y,(QJh_Bq_O+N1K:B(<>(S'\RJ!W6('/^S7Mo-*h"2bJ"3(aO_+'Y;!DfIE\G0jBgNEE25N9YD/(fm*AYa;cYGU<%Gj"`gt^!nc,flB=9=R6!P!fIHG2iKDO6`Q&p[6N^ji;]6q=(O'c(iMY6WGlbQ*)M-"ReXhguU*1/jEX%O[.KL`RffR*""nQr@#EJ810$Tu=',5AjW(fJ/Jn*WWRXhAac,mgKN9n5&1mKV=4(9#h8t[eTZlFo5P@j0aS08$Qh@Vqj.`==@bCkKi^M,C,^p;YnKh8L);%s'NA<DUMn73VVEfger,n]P:W9cJ7'WE`At2p/`1"V,L/c5IeUTCn[#pTVNXbJ-9<^M`MBkBRgAU&eE-RJ`c*:)KX"'m3C#7g"0b&I41Tbd?Jhl*Is7p/gV;$)33]mU2mE4.\E202TR9m)+eL0L(M9K0re^XpLqFYdAI1[in#t*A[#O$.E[p/rA@`U8\n0SYU?$0R2<-+R$O1gfR]We"dQ8L;RS?:9i<(2-:rX9"i)ljBnt+^,>9hraB*$@A0-/,g+'@d^FME([<HVO>*UQ9jK*&*,U&*cL9_Nq#KKf@Y^<DOUCSXlWkm..V!5"8<(7%X6mR\r[u8Z`pL"%HQ-DnRZF<<G"9At*"hcc=3L!+kR3X;AY[s'@BdSQk@:4G<;(_o59a.<u+cJfs5c:8:+XKH_<(Fn7q'8_o,*V::9AH=l1IR1I&Q_P/de_2;`Cm\0/A:J1Oc&:lB=Fedr5U@Qb:jc`,r8sm:ST3pC9I\.6P/f]b9RB]%#1]K8f<EcbZlH98`bP$,#5@tPYCe?_GEuO&OK?p\^Abt!Ks$</MY?3VD4!&R\77tRV+WL0LcV;!Jgb19<K9Bd;fHShf[6+(Yu3nX5m1Tl@SYbhJ.(MF6F*pG%P>T#em2j_KM%4e`s<+pe#r$/B,c^eVBI\NE]N2%TXEq;Wi8%Zh/oZ_g&VhZ>8jKZKYu5L?i,dGI42PZTElMk5tBaep&eb8JVY8bZ-ABXX;=72&dS:.[Z])dU9"&HSd'E\\Or:Ot-YI;1oC&@R^qi,"%Pk[NnGO2cl)<+^s`3]8;1@5Sq4ZVL#M?3Y\D^]Hlu:H*(s/8]Y0WcJuR<VG6Cr3:3$3GHlG<`1VJ%P8&\9aT.3OhF>bL;>^qL#s[\i2dG*#T-4_Jgb_b!"t]r[VP*\+I7;m!eS]!IUuk&lJb$Z''+bh>_XkI>JkFIPojtFj#P2hYfMgB,HOY9p'RWpo5m\b:(a@NDT;9.[3;:5!SUSPbjV'*0%$%1dgmZFu_#,;:>A@iQ,lpY2"u'4T`giir<[>jT1it7q"!1.uZsHWW;<CWO,c0odH7CA48J2(3]$*8JTSYE;:kZ>,!Cb/^s%l3H(g!Wc9Z?5HWbW4NN35uid%;$,RYpNa?B(C/]WZDM"\TW%c`c1Z<(S:r;8CE;8Pl9:pV^c#2+uBuBK)RG+/R28&-*Y%TUm:&_I"0'9Z109;^,n$dGr]=40sTs/s;p:X$IG0oYa;)^0hGsk5m>POpQ_bA30>CTaR'+o\o*hDQKF,D]WgIM()Z5^EZdT@'U?<>QA&g$6]e9&r87JTK8Q3M9)GT'd?9Ho4H(UA57=dBGiD!16bHF(rXS/TEMdSYMOH-1eAr=.R/d3$s27SG$MJ^5K(LbX]_XYEm_\b$e9DX^A,o;N'VIj#p;V[KXjKn9://qY;Wp;Um+L8Jf.jmLuuhcB/;9hq9`kt(Hd-AWCP!-Zc3lrAd5i'aR+Ig8lWtrTc5Sc7?rZ;RbI/rZt.T%PKIhAPI\fE1P<\B0G[EuW:oEQXX+YD:Hs&Los'^m^R+ihQ!QZhP-@.UF'=kZL88l_Us$tiN3^BtYoq1<'9+=V,/-a,$bmR2;)AL!lEili-8QCaWBc=h3D7<;'"J.0B:tY]0$\KE[V#Jlh/7_robVN0'$ba3.lFt$'ej:?81WTZV(EDcq799GO]HorXl;j*f7g&dO@5.R=e9Ac8OMa?(8meLk,,W4$d1W%7"0)mA9<bNh&\-0f?0<D)\s:V&UDO*VKmXa@`b[]KS'nEDjZ5TBr4KYJ@d('k_-Y318aM2:7$2TF:qC;05M+Z4btK&L0H3tdDR+k>)a/F;*]d?&@IAt'#5cX8l8u1!eUf07OEP10)<H4XT$[`2p\"=]LtJ)oj*k`ds,nJ]9\Q.4El_m$H>\0/;#t-5cMZFj[JAA-L^<f%Y*L>b0M$]2o@s9$V&74qo[]:T19'8JWp\Q6aCHH`PNm]+Jin[1La=HHsr,.E'os>+[/"?jSU4H(cDn;H1_60U9#7$g6TsB$mE)pKU05&$V@`(nk^30A#.HI4&^le#'!VY?oVbe)Vd^u;bg]$!-,']5b"*R5"";IBdQj(pd?I]gO8Q81<D("lRON0E?_%4Q]5N]Mg]".f%G%_(.P4.LfpmJ:mMTG:eSJeqi31/6Uk-V'!afl/',rq+\7W6\Jao_Z!^T@-?MV,]r,<&M$oED+I&-gU10:./NnB*Y`cJu8S?,(Tf7e`O<bb2*4qq'<Ju8&[-U:7p>'sNA']nBaJq$3BCAu'Gi"X>"H0cL'*-/@8#_WOXF4Tk-E(*Z(<lC9Jcu`;-%PD__E]9!#%a<:I9E.`51?]'&S"h'Qoga9Z;PDJH$W\IB+IIm(%31MC#5B-T/2es+Ymc6,*fU^Y,_N]$\g!OSru7WP(Q1c]OQ>12SZ2Dm'#[RK4*gY#ubAeb!-hMob]*RK-uA'b!IqQ#sr^iT=Doa"FAh!^_uEoZr'uTlB.nD^d%ld&.!fBW,rRn"OQkeSlnnKZE?H1?b^9]ZOq$La_'ka>U5//C(<CWWhc&=MS[*4f*>#<+C74U;&"^q'J29]PW6p%=ml,Fb+SZQ)1ZGeOD0kF/`$9kA>Zhk=1#_(EoGeZh*,E/KPlZS1\T,OHqFno9M&[:76IGB$8^[APdK\$@mO7,-O0[r!gJ5t!1Os3V+SPcPp9t+qT1l;CfKTNq6_kU_QPeC?AHS?.6XrG\)[D#"^UIE;fI%RBsS(D:a%$WMI[#:N^L`:2LF-uZa?\Qbl#Hl:`-!C$=s45URlQuPP,qeXZ5Rh=c3Ig\#pSeT%6heh85::8P/?tNCG]&mHJo8;R</heAG^$8j%VLRr[L8@][U`1)cC5!/O=rWjAR@RVAa8d[0%_8iV(KZp$2ZQ-*YG;U&<=HFju=@R86=k&-c#0N0"q'X(?sj;GpAr`P5.>a>LZ;i$9/!_cO)QtV)T"okr,l')WkkE6!'0%eg+q2@/!&1a05^/tbk8]T`rrQomLWnGe-V*==RCji4.Y.u7)CK^(f#5C4N(u7cC+::LGk@po+nX5[RDR6!->?6\7BN'm-j!j.jB<USaeel-%8Aj#e(=]J"CFlI5mu25d8OHV3_^OP[jZtBa]W+/kq)<F)[FQF$j7'U4"2LSMU+O-o3G3oH]WQHsrPIl=\iH;5HYBoHNR5!-P_QI!ObZkPs5*1Up[,Qg$>anMpok]SVQS80LMtj$:pc9'8CB^?b4N=E_8;0'U-n("Bfs"D-rt7+&kOtLqDb/:0]!@/XAr9TiM%TpM%ETc$T^GG$\3"\=Xu6g.?b0k9\MB0%\=[W(NEodZ`j+1H^e=NWIDO)j.[h-noS37<K1LJM]3fR*T<mC$WC1TL1!$T<ja'5nWsHSN$`!\=`gE<Q&Gc+[QHJ!`gA&FP>ma;.J:t<K39GDkV:ss?#s_O.'f03LH-o_H6r3V@M1i$f@AT/@b@(`72.K1'4W@u0aUbD_]>Na6KkD7(,'IVN+`EgrInJVXpHT,s5nOWD#&%Ql:#\bcga@%4Ht12Ic[O49E/LKVO,?9E+]ai-)jb)rHnFkBnl(kViCGH7bQ"CLd:&ibk&'aAn\iB>%n?N1mKI8h()A,pZ(YC4UVr&nUu[$fJL:Li4M6*SnN7J/\"\]/2F9XhrhK@`]OY%N2<l3%-+H8b&gKDF;,.JK`N!!*j'b981c:jqPM`ja(LpLA^5nPC&6HKG>3$J.ViQe9kLqK;etVe5I&0uRY8M+\*_IN62KmW9/<G,aAWcV@RR&mEeg*L:b"X(1Q-n^Js(Ruj^6hig<cA&8^6&(BZmoV2!;Gr(gB/H]\QYMTf/f-"tJ`c[keD#8N1-rEO@-udI.hrF<dMb.bT=*o;h9\N):imPY%p:9\>k<=6<0Q2btA#(1L@?\b0%CYL<G\k%5A"#e)*pGX,alA!q)CdO08j'=57MjUs"FR"ZD4'\(!CE;,P7e\K#^g3dc*/;M7q$G#`-T-*=!Ruc\D?uRhs3V?mB=4$/iKE<8sbXk?n)8:"RU5b-MC:^\q'k/5:D@XZeT#u(VOHGsLj_4m>'+KJhi3kJ@S9=C5(m]SnCMu%qZ4K@Po];RR2^PjW@Zlfa?uT`WK<(7,s6iiZk1FhiS<d-Kq0424U5KGJb.=J`\#,G$C38@'LAL3$2V'EN6`5Cjd\klc#P-&kJk?nl80Si^M+]k5G(!GT)CPZ)WV`^6?1")^SOGCMN%t4CYhV;a^"itVjr"hsM_Of^l`JWIktAQ\cs6!9JKcq+18&B[YN_e(3McCnY1d;I1TJ^1^U#h%>0DLjd2u:MWMkm+Cf1^kNW48:BL/nc`E6@]r\!f(1.';DHGN&C!6N`4R/p-rj3oepZUaES@;+oJY3^<>$,;c`P&TGHD;16<^2$(,MpuFRQ,JU#[:s@r8Sfd%VD%DBV,sXAo6(J=Rl,^VVVA):MLgUf@ch%#A<]E&&M%L4+NuDA(\(\LZ@V$5,Pmb_CP'b3c[4q@?C8d074`oC2S#h0BljL$oQ1]DrJ=ITj2'3`f>ucA?MI;--LRoK?;qhKP"OEV.J/t1lE<j%68cjq$?+SWVC?.:C+[\CDtfDu#MZEBPSh<7l3gf`Q,t^\&7g#[EcZ+2:5%E@(du&sd\X[2Y?8'knA[HbaSabtA@A&c]5Z';Z_iJL%.YA9':YjFGs6YP-ACNNO05Q&m]@o;bI%0oIp!jo_ZS0:)ajfCRf9-.G/^GXZMf28A!##Be<si=?i0E&H5^m3iIUMUNQgTF*:5C[Y>B-h'S.F9>ms0M[iu'W<>Xa&U75VRC-FfSoZJ4+Ui-hVbBl9[P#`U=#'615E2lnl%@c,nAqWOPH;\i@ecUD5-<hgLKc.BEXO+nK$9-O^@!Bom5m."i=eh\)I"AcmX4B0fX;faSl.Xj2EWm!(cTSn'?@(/[22?'/QA=^_o?&2"pKD=.qb?6e808RK%'H1mc:qCNO):@bbpZ3:7hSb&h`*OEfkrG]nE#:mC5?Ws<3I;`F6d#A2G:iK[;f2W[@fqB:HEoBki&8bV^A%4VG,lmj$9BV,+C?m3O<g8^mUfi<?1Vo[H&,E78\,9Ws37WHM1fj8p,j4l71Z56]m&%e'/PH2L-Zo`_,?OA7J[f^i2]J#HmHqfWXnOg1i3UG>1/Es0ad`&$/KK/`1s+iM"P>o":,9dI?(abOrs/I#^l,8H<[2PVoO"ZE`rK@F]ka\<omg9'`jS&hAGblU.@;PJl3r+m,NC,,&P"XdVlEl^-4$B<e,5=c[tpG/</GD/N4Y1l^IG+GNhS5Z')?f9r'Nqb\k5pY),C9TeG-U0itERt4,.V$!E.*m.Mg46.Oo01bdM@t-;V>-"!CJU$V@\c1%2d56S0Su-5)BRE#AP;9(!Pn4b<BK2bZjESRB`qkk+i@d*mSp/kfM97$KhD5qL3k'C[BPm\>q)cLBq2'AcdsGl0PW<fC;>YFX:`q#T$eB+RB6sZH9GlXK+!)8u9=Z^TfYEA2XR3)i.$l/$Sqnq8ouKGW85LQ&:o:I^8Y#L$K0/?<UJ`/#\%quSjRgisbRHp&R[QuIR!F/1IhUlaJk.AB_?f?<Q9P>EWld.]1j<;ipXHr&CWpH0f4FRJcWGXB?gqoX3'"*Dhi/GMBe4E]QuGJT.oqV#+tfa#^pVpf/rE3\SHP'7Z(Pk^iM&.@BX<jZ2=DNR^U\cl=72I$iC]mAlZ%ALo4B=^SQt5XA=M&b)GEcIK"4X"EVJ-*ngK/DX@pB/X`bC]nX_>UFqS2KbbBC'H/7<EH+G,Qq*iC!`',[QnArUq?fDEFNV[Ic):9<AAr-hDPSds5`HuE-1r3,\qh&u.\u'RQ\7aX3huCTQfJaT!SFPl9R_*Hb]TmWH!1Ul,kqK?_oBNOdp7&s;?6,?Yh4e/uSc@@H87Ee(5S,6Wq[t3_houA7U]SWKMWQOk#5*3Zf4>'92;cA;p&MmX5BD."G+;WU:<bJ*%)JIem8<nE_Sc&(&k52]UIAW+lo4IF=+:+-s872_^\nOF[GQIPGAk=d9H?o8mm$FT:VXl`\j*H$;@eIC+[qi5r>?q<+eH9`jTY[N68`%KD_IrTBq/!pq]#LkC>NZTs52&pIc8u+rT3!B&);9MZO_hpG!GN3hNe#Q,3Q;gSOY?/eWL;l.J4X8LS*>*DSbI?dYCl$4_/K4<q9f@DLKR!SU[1._k0--qQrKECd7`Jk:Xu-p9&7nIIYp-f&Pn"IJh-8qM`j(<lAqVjB$j-bAY&eapU.*8Wd."](8\=A>DejN3e@tK0=eTJiV*UHGjZnCXnsO:'%e7"!=%h^GE'gkE7?1r'A^d5J/u=ge5L`)i9lCL'pooXF%6$gQ5?Ol#4$0d@>))OrLaQ0WM:AnepH/M`WG49@&pgSZ1H'R'*DV37shZ4grLFKi[q*'+1ioc0J5<dA\j-^Ui%J1/@B#du#TAkJk0&IiO"Mg7WY4Rci4SDsp9Cm:doEoK`t$lY2dP)3ol0Re7A>^Dp=BE*&D)o21'M-/FedQR<!`%o6FN_80>g:L.h,4Bn/Ahic8@X&k&0G'G9*DS/!!ibIXT!oGFBH0F'o]r,MNRe-6_\78sQ_%N6d\SS.OB[P8Y'Bc3/:\#&[Ajj.[MC(61AtL.1B[3a)*qSf*c*Qfe'm#SGUQKCB/o;uE0oX[78JB#/Tf\LEXo+7E2]8-G,?d3RL;95UlPEd/Pr!`o71ChT;!eOH`g`,1#7YH,2%M\N+XJDK8`e]*J\<Q,>J%oN$-hk:1jiHnLqo;Ef79.R\ALet`;GGlT/,oU6abQ]h_mZJ,$A<kmBs<"IN-KE1GK;[k6irC@"[CQ-!FC35W7`/IA[crVXAQP_Au(6=uFV@bu@i-0">@U[!X8%)k8mb9.)'Fo>_lS(=pr_kO6S0c3Toc]'7/e_obdMqJ9SE-Jb>;_*]?-8sq,u'[1!0GYn`8D<dj+HZc:<1<M3&T$'7[_fkD;Y2bs\].XJ=A!L7.lBZP+qN$R+id,T.'P!]RXrZlmRb_%\Fk>FhcO>(t.K?sB<X9nH\33h<e8=In5</,&'8*]#L$$=A(.*GH6=X2g7L6r;;j.JYNL4EKiR'o(XtuiaI^_Z8YH(Wl6b5Q`^Md_d[.b!HR6e*IM!(l#CYibQVJ3_]e[2Sr8)Oa)W/BN^F#ge+KMV%K#OQ3"kr-5Dp"&A6f5MXIVb]o+aSSJ'D0'Caf[;W<YW;/Hbua2Yc.]+&6W:seX4-8PY/LA/beaSUQ@VbqlFmPT"G]acA\KY>!G;g/V.tlmBoK`6CPK=M@VV/A,I.e<Mi!UWD)"kfMY<KLH<[nrh/]j0rLJS@[!*#C2L'#pW-W(jB-!LhoaI98bg5shYBFL#-u8hRGbV`O!XJ9Oc+DVCgr1G;N2P-k-<@R+QYEWXc"i:SY!bj!8[UKJZOY2"T>&CTp:dFY@$j"<j,*cA?de1QX$r2S\+K-T*'O8C4aYrBqAiWQ)V/<rkZgWS,5c/Flb%I8IOq@*/M5S\4Up>IVJ]OZ/R&Q>k*fs1/r1V5G5es[7?PPFUM'IIcKsggh)nD/J!q`&rT*KcW;sY.;cn-%$Zd/""Du^>DnO87$S/7W6of0IKeQb.moqh12E"l)GM^;?GD+Ncmi#kO=]jQ2`1O*9JgX$+`'WCpFYDW"ZEd")S?H('`k7HY.FmX\N(r'=R'n-:qr1qC-cot]N9/lbPMmCQgT1us#YkT,0[&DG(+=n-S,J>B[qEF%\A;8"dL<d(:6L?_gLaGt03kRkh;V\A+YTobPrN[Qj;-.k\:FVXW5c9K(n&,o=gsM0]4\NPeLqAk^bob,euP0KQDC,NEpG?HRF;/;Kfa*!EPNN_<CRHM>-1JVDfBTOEV%lg02=a#28r<XlZ^VmW6ObRk[kZ.8S(mW[IZ==caO.>mB>oO&fXS-I9G$Fg@(Yr2mRji>?r1`k:Q'Sg0&XS#6M6]*Kq`orBbM\Q2BSOV=r:Zli]VCH*c<]ZcAEQ\2ljOr1B/ZY8"f8[SF:ohpam.c"G`%g8q!Up1D%PZTH>C1HlB@$N&06mc;2pcX+H@J/[o^Cou!(\%E>?5r4?d_H(;U455s&0sdda#0U,@9%?VK8SHAPeOO3IS[5?8q,p7+08c62NS\_TXd8%J,g\>2EX?<Qn%Sb6]rM\,^nDHm[foEfAsQ1`Wt\)MRVO_2=Q6)qan>7dc"`12N=Mfqcu.3(>L%2\4Y?`C`=3::f$7C+hSJX*>8JBLH;_LT[OQJ.DqhR*/AJ?fZ2BcV's2oES'P2[=l(r4S_=A;'m^WGp'2fcD:u5E_4UXt,ftMEVnXVOEHkfq^>`Us@O%T/6b]k:CT_km%JMR=4PUU!]l.+modrVK]J?6nLo5jJMi4a*&5O/'riZ!>mG$5)^o@%/2,P`6a\fNFc&X35dFA%Vs)G7;BpGZdc_aEYL+2b!@oP_RYU@C)ag>V82@Lief:IBTn^11h+h+7N*IRUgVUbF:8PmW3L[*YXZ;3?'J#Z>(-t)q<C4_eX)r$>t#o:,8+7?3kLTDLMWGK%HdVuRW9h1OH,o[=#(oIr'ABJMO+(%l`1+L:uoR"]3>E7#K&N5?2<MsqATh;C*Qed$5Ei/.c)+V\-9JEphf.H2[Q6nOje6?i:Dq?Ol)k.:?mTBV[b&aWMCsumhM8Rm;E3(T@r3@qJWD"?^^K@VO`q&$fb8;#F[YSNI0iT_6"*n1GHIPn-ZV&tU[]R!jqN>UTL3?am9@_"4edO]bbAjl_bZLie_)G>o$K:-uBX"n8%VLYIMB1*D"j*10`jsLlkh\>6HJ[ADQ<TLdq4+,n=(pVVSX(SX's1ANnA\q1?<oUhdi+?ne=]u_]8HIM;+@ISHu1p&UobS29%0K0>+$8KZLse.h5Uhe%(N*If%&Hg]9.e%>EgHaeO!VMriO*>CB=$P>P!T^es'oH6r_%>b7j-*PI>?j]l.>mo;'QE>Pg#]B4![-n<2?sNT@pOKD".q'nahi3*;5uY,`Aq\^"T`]"KnM;^q,H7suLmPh6ejA^`T*cFq<&T/k:<>2<mR(;gTm1nTm?T/r+<3&f!MMJ8NU>i4b6T4\`IOnd4,hTG1/"jGaj$fL-8k,hk9R=B>0U1@m'luS?[m2ZQqm@(EGjC)=PV7*LtFOD^e`*,R0%u!V0WmL['h*%Y$BVjHHBLh784%BJhca^^PP/1'4jjiP"Y1AJgkB-H2DHl9E]t@1m]VHR2,ZD[H@S46NM(5Wf=T.LWWSjP>=Gu>#jBD,2>mFS4jpZ-AL-)S6Q_*MKZYG,*p%Xi<F7YfpZe8i(f:J;!4@Tc\<J1@1lp=,`SuAR!UHU>KYBg,&,BK\+l.fF\bEXd/dJ2g:2,CCp>94Pa<LI:<7#48`@_-Z^O&rB[m]%l-lX.ei6eIuo,`*IaFBimTd+lhNL,]gdF7uOJk8$Wr2L<@$m[h#&h)IXfBM;PhYb6438`NC=<]*Ou:ikZ`0Sfh>`8[08A[bM)EV!,4M:PZYQ.Mp5PQ(PN1AA0#BCY&?>q<B;$("`1MQ+;R72]n&\,#P'NI,U!T9eBigosodo-<N_?4W6gO#<-7Dd+h>*a8$FpuK`UH!kQD0k#P$QGL--NC?@*p7LCHIe`QmH9@hjX15(LWAmg^^WuPtHcJ!V6rh_(a"FHaU!%29W^lb@"=V%')T7S]q-k\n<"Z?I:8;T>=5_G[H0pZPoF>YGC=7+q:rhdmrD"rG-oB"t*>-r)=pDM-P[W0MnZoql1cTYq[fLG!!E"^#Gl]hA_G.6kWB9UL9&%p;j8+1nVLm8qc"2&c0gBatJ8o2^rj/FO"X!lNk!?R(6FS1?>bbQEbY!(2.JpXh.N+QqLZ5]>IDF]LokRO$09R9^\%mCXML?uOe/eX^'V9M.W&!`G+;2WhZodMbZI5;Ii[)5g?q5m78.nZ#^!1#sbj_QU6$VAHNIhrPYO`og_nopCBPr4i3oe&O?L`d/N>]M8jZ7_OJhqW%F^-o%;I:*A/l2W9F+>Zb`CkRG/ANVa4)W(Yjd?;V%L[f16nY&GJ;:=laDO3p4<ab@b61WLKENXt`<$Pqa1Pr'GXNld7T'g1Om6p1][UlJ/-B3t6*h\9&f`nU3+I2^+oodT<hm[3kh+f-a*>[m$$^\!"4jkXGVt8OU4fA\p@!j%\hUbSZ5Zblj3gBm[`;G:B`l98kq\*B?*iN]o^T3G9@`Hlp%<NCi8DPqh*jh$;P7T$rVd8Nj9N&CC<!ipd^c<\V4eZH@)!8)(PGkSh,J%%bRDn1F5PI*5osb*p:kX%Xt2^[E;cF0W%4`ajKsoq\*iW'WEM"3C(mpKnFFNQ7@35,GORTpRujmk"?C9E3Zh+1;KG?YLr71<ecj\]Y#VH+J4YFPJrZ9"fRL$1QN.<3g&`X].gtf\Y;_54>V?<OaAMK?TK+tV&ICT6Qk=T5LuZ^AAuBcWVkKSZJY\,EQDmPLV:E(pJB.^S>%,1g[Q,V%^l`B9+D01^UMak1F"U$6Vq\dM_7C*aR9B4!$!39lkQo4E%6#.)Fg*AO%.J;!KC7n<Er)GHBEu[+PMEN,+X,q\L5>m^XBRV>%eg_Tm63H<fn5QDn[*.u:*gDr/D]QahQ0dWKW`I^IA((9,="!\M.)fVUiO#mKohJ$c7q*ej3[P=CBg/jX/7Y_+ECaM;QWQ&Ws"H*H:@0rj,N%b80'FYNeql\o@0Yhn4XaF1X3VLMjY-QlFalQ@Abih>Cr->'!PXLWl0#U.4::g2'#j7'#TDU_&0,6bp7G:rtaG;60%_p)o&A`lib9K_.=&Fk5>?S^QEcAf:(/)KUXr61^l"fZ5DgMO<iqq>AiO[P>FVt_b65_j)@XJQ)R7$39\6$k$X?cr7DGLA?^u07d+Ae*1tqgFPs/M%9G4S>0!f-;ifMArl;U,Q&AB?T"EC%N=?rR>Fe?q<C`T7`*3Y8<#Z2,M<1uu1*mX"-DS`S)NWO@MP@)N=+P.XX$W&Y/?+BJg]K89E.2*H*T6T6dF<9Unq=9</c[Y761\)PR:QSp@&Q*DiWLmpHW6jiFL_G%d1Q636/c,N9I%+_Q!\*ImaD&gk>\n\JV,GA?Up+q0F"c-C'%7ZPlY\,E*:27U=)+\=^p5Y)uV.9.?3[NVaX:i<N"]l^sHY!kL8F5"4oA-T-e.S+$+gPfJS0a,O<2sTmc;?Yp6d""A]E,?(r9-YDbeRA]FqhCGZO$>WG>2@O;(A^rOD?#+e"8E30JJG<c1[[@.9@g,e\qfIh&u)SGV:!/PZ(kVkJ971eX[#]kn,-RpmGJ5Zr\9KGnF=ptlVDR1!B1IY_G6qQa=UaTFr:(t031,ml\@OJOgENAh;OdQ'"U"+bg</P\gm58jdi%rd:8sR>ko(&9HEWYb,Z%e:<<27ag5ZNeFNsH7%HrAF)dqVJn'hb[ri)RVt!UZa7KJD#YCIcEmFUC)@iN,YZIYCCI27-Ba@ObT%M9PlcDEnV\3oH6C=hQ7?lY6goO8Ho!.Wl>%?a#a^ZJX*;/Ot/\A0j9Xn5:X5#_A8MkZHB0Uqj9Rb&/%RqmA"J^X5r"lX2@!aLMJD[@:7Nao.L$ZS!a`[G>9jg;.AG`&$JE^#3_J9#kQ&b9@_BFM6=E2=lj(*JY"d2C+<+9YX]SV.!$qj<4t-Mqk&m"YCbb*r>MTYU#'<Bm3WAUObQC--A7]_cgL3*noCZCZc*RkKNYeNM.A4@&qn7S#?&kNlb"U^#=oBYl<`Se*0!rlrXQYclK$VW!R'mO@*JL!!t8b1gK@KZIKluRK;?_O]2RF%0<hD*3iJ>68\er4Dm+=\HPc/ZeF(U0HCT2<g-9qegGi2>C\#&DKn'Hh<:=6CXVnqQOYl2?$YMXb[P,=<NUOV9.EjjQ+UB/GJ6uU*/e(g-F61c<>u7$M5;@:`T<f#:C-TiJ2+o..U+_t"?`7`':JLc\uKeD)%dk"G./a$YC9C$oS@X*eu*H3K2GC#Lqf`hj2MbhF_FpuR9?WA7_3A=^M2*@;*RcUBZ+-llaH#DW`3M<W<512bUnX%FK"FXM-ZDEfoC'iVNr0E&s\;`Mqq@0^4S1lkAFV5c]1%>=j^Ar!(L,9"pGLe'c((@BR\a"+/W$?]O6r;MZQ!k==agaQu)U&](ltW#d:A<>Ptem1NB3m,3E5*7.<mp0fKTN">DY^,"X"f>s)t5/rgn>G-j5Cg5f/#lsmT'$/F\lEC<W]*Pc&Al,7I4P^=h7B2nG=5Eq&KZq9c(2$-Bs%N3="@2q<P=:6V;3<GiZi.KVeBMO59g-uCPhW/7[@[Gjm!;k!7WT)cRlQ-h&$@JbDd>4*-VV"^A"81NikAFKf1,3Uo0%rF;5pa:K;.R[06iUGRBioV>_QC@^>^MKBonpmL'jL)GWe_>Qkdc*rg@Y6P)s.\!:TUU4c;dOn+5&K!JnRCL-)jjr>;U1>*[X>7-(?`r\Q6Kb`b/*EMN/Z4;[DSQjj\`hgT*nhCu2s`=5R:6/jC%BXetr[ifb-m2.J(o8]<[?.<CFgJX-o29[t%)a>RA>1Sj'/^[mmJU+TU8Sm>K+R6#Y"R%*,<@')S"h=Qnh\4Ldi4i2B@HV93^#S4)(%\>+gd8AluEs7UG^Hd=&1mAN;b&u8/7$Y?*6m*['=52[mgDKhD#R\R=iL'/*j$9r>$?YYMi8`sS;'`\,7!0I,qu?eZ*XG"iE9/[<Ql;r4\F9\QHYK,\5h'J)R/o/12@^eQKFcA!Tu5hMAHE[NE4A]a'#A\P%@4$D;_:'cejW?9<Kh1ERPYmS;DhW`2<2tc=5H\qGLTepAtLp:XH%L1X**s<rWN\l2NgJ%:P3e'G1EMjrd^FeeVl'+`"<O":55u:41UJM.WnT:CB_L_>-gTaPK$3_#[EUOSpRq+<40[t]MTE5&-1H:n&sKdW^1*jF"rRS(rL$Ac!okISk;ih*?E!bml*jq,dXN;V@#Uj-6n8j+INgp0f4qe,fZF\4gj:9`F\KVm\-tQAd<)&SiV!V<Osm?Fm=,3U.b\<CipbWQ8"6^Cg,'t',d&*0ej7Y!JiuD7MAWE+ro4k0bkHV9KM9p:^KmUM]@t4\[qu#W?X-j<:WY'iIRB,"Md>h',@f(iUK:4#b*;DYO6`HJ3"`n_jn(iP]Q%j(lK*H8sU_6]Cb`o=hBA?RW-7IHr<X)Mdr2gV)gn7I4/`X`8OH;!be;7\6).%5Y3G&&p"(@6I7JR"HaQq`lFWA!!\]=[+R$.'"t^F\2VO\g"U8>D/!flQ8<-aG"-'*cK.^IN7JFr$Fm"%2>sn!18bT/AoM*b*Y&KdFbER@fe.9D!+XYo?r..oHbRYqN5;*rK#\CIHMOsMLRf5gY%n?(Fm/t"d]cW!r2/cA:o[QQK/5PPX:eefA9_lJUbYQ1fK7Y"1/6js<ce`39q%^X>J+b`ahWgW0c-HA1.sa"W+K:TO]+OIUdq)7Vf[riVdj#l!VJ:07sr7"n/CJP[`VPkmqF=reiGSP:hPDuPo<N+4/!'pK'*Oq)+9R@/X[u@4p,RLL`dm4"J/?GH&gMY%Z"2OMcX`MY-YDk%^;Rq0O?'%>#Mn#i[)4rQlg!A\nn_sCn,\(i8^9+,MGpgajaa,.ko:\6EFmB1if+'FejXa"1Hlo</bF<SDq%8a"1beC\4^j_-m`>BKA&en@L9dj.&+FHY+l=2kP<1Ji$03YpU%-ZS?5s*/Bj*g2K`<R:>-6Y&YS$)1_0\+;rs5*"h*dTer`o-J"1$aJW%?X&b@!cE[O2X3l-T=Bj:[Z9'odo`1oi+R(e7rF1i-k6>4UU<O=WSmptQN2)6`N2)\4'4^%4o1`;/W\0`H4)^cJ`.]3p"8gqp=ckA;"Nd/sD25ZtcIkWd-`&g@Olo)I\)_;tosk*=KK'QsPR&H7&5k8SVcuKghLF;*@/AOJp>L=Dp@-G&=u'Ld3q4buNgN*#mkI(4_KW[h5_LHaAuVF+&`\PuL![N?b>r^]"DtVJ%)=;i\pb?H#8:pLmh.f2?rP\AT[FqoK+`K#'XLa=Ysr3ho^FW(;=$K@<4-79f3=Y$X_^p:=k_KnH#.9B765ZQ"QpLIQ5UPIE.PgKP+&UNHNfuH4E.u9W_B$L@Fu9d'Y6n;=?1^h/E"X#AWR=a>_m>Y'l^tY8s7KHE<4g_\'(LJ#X&PnWC@)"8$'?(+pc%rR&T.HduEcF)`UGp;)"1SZm&3/HJ1Y.*O6eP8^"Ni4?ZlD?1m5-XRDJ5IA*B5%G2nLKB(LjJ>\Gcfb<u8@`p2-^oW83XLmmW4+7&:Q/TmJ=cM)BgHuVjLM0a8'IBLo(d)#3<Un.4g1dq^E0UHaW]*]kW893Y<9@.458Y+2"\iCBQWB;rKanK#O,f#4`AOo+!N]WQdr?Z<2lo3JTW[^K'h'f9:_CK!qc)%Sb*H#48oAlBKs=G#Y7U39Q#kZp=mH`rRXtgr%4i6qO@0FAPcAJ1,ZVqo!Fh">]uFj)\R9O\(YeBkjbC)+9NfE9C(aU9oA]T[4aE?;>@mX?M*(YXO/RGkR:Jh4g__S@;9RG^>jG!&W'IC/(sfiI,b9mNe!#HQP^o-hHPY6alnS;f,`#mo0akmU&(?n`;TrTG_u"&l/a?\M[p'<=eR>9@USmsggl9-:>0@%9RcJ4T:u\4'<#1i&;bTSYnT8B[1lhVTJ]OqR"-r+$PpAA#^t/:R?k>;G`%Vl'85K^?.RODuRT[!Q-%Z"lV:."Of*Sc/<T5iA[M-NR6n/U)-#grA*YX<GISmDBLe.ed=dgU*+@$SGmo<$a>JW!l/m(%HF-9L"APsj#)HG;BCl4LX8^2he&o^N%+T`d#0EXlp!DSr<1Q"]4`%sIn"NgRY'I.LYLkm_kKFe_MYuF*'U2osRDRT8g>A=TSY[t%!50!XU,UJ<k>&:1oX(fEbb*7QWB,&A(/LAW2,[qqC`%9IB`iSK6_W+8M"sB&1nR^_D%:VfHUT3m[8lDXWGNdJ]P9MoN2(M>sMS:l*'[(9+DkN;kSL;+^n!I/;L+WH2"MC$-_"1(_>i>j,[;\[()eP,^KGTm\b@@NSnIG*Z<%aS<lKrYrZKj:n]HZ-q,R]!Wn:\%u2MPuTY)p&NO!o1M9D#Yb6pLmb?p'j+.[4dRGeBn]<Z`hELs'i?<h!dJBMiDd\8bh9-];(#DQ]!V-9-7K\*N+V[k_97lK+Inkpo7/c`c6-YZ[a@Nb?4(+X4^0?k=ru6j)GFCC;Xq-$E7.mjfkgW\C$(/[ib)KLKQrg:0g/$&%WA/=pnUGd]qep!pskHDG3F9LZ!5$#.@E'*emGaRj+E*=e:Em58`,_M5%,38sru/0#QDej:Q5NWY3QN+L6iY+0Bq=AQ8sA$*/fGD6rh4,2>3T5(u=+(>&`@b+6,'XQi9=kLqYiWsmr#[#YXU.TR36>9ilU31eroaE.[oJi]'pH-DX[Gd4sQa5ConskfeiD;RH@Vf[nN-P*rr]^%!k0pE$>:g=h!pm%i,K"C.5o_2M=mo@mEktJi1(85%>b69;btCu^lSMl3[A'_+X!:qiAS1Xke&3csLO(VXNcnc:f9o(@T[a+!dn>kNR1*+k^Tjn5=8sjW.<)!Sa8G85rT8et:hcKV4SR?I>0Ip-Y@Q,44EtCNV4qPf.h7Tl7(aot%kh-,dDG:;%A,K,Wf%CbdJn9&Eqs[dmn=\l*]IGpl$r54'%DVB%G1<V*F1l,q+dKG%]uCZbZFI9]XuNU464<SQ:Bh7?T+a_XuWtf)Xj^&qXK=3LGM`jN#!7FY0NnuBoN*q]4?(rfu1n`X.)`[b1)A.HLU2,CXZ'VLgujF*X6B0M6JVWg9c+!W,oE%Qu0Gl&$Xq+Q!%RTOF5=_D1W]Q@'+9IE]7&VC^rh#*]`E]-HQH`4ZdH&@ZF9c$*Z>"?dgKqA@1"D1Oj/EDV)&%q:md#^ME>oE+W%8YsYpOfmiG9.@b3j.VAEO)_tD!n@!%?B%suYPR\3^DeaXHeE#tRY=`P$8#TBB4/:h<MjZXbU`j<.Af89Vb:B.-;F:j(RW8bK9);,INYfC7Gt9K<i1ZW$Mm76mP`CIhf8T@h8GBM.cPY_aZ_qei-,ME7P\M)Kei23tNOL6edJ6$NJ/n]_)K01)I>,6-%c?/0Ak(*9VOc\;Y3]>A8]MQ<.^#RV,oggpF&E8?/@`,iV>b7sXkq\V*9uoNVfgjV/-s$%I5KpH[[JgEQ?.4nc'U($*]UK-Gt58=CtnYg.a7(GQ$nOB%l,E%Fbh_k:^4_Gp1<bYCPH2gf(In58`roudG-#:cBAplUQ%+A:ClbD?=K8rJlB928I2t=qb\fO#/sd091,+oM#`//kTTWdWPYB;)X8V<.:9;/I^!k#7Gu&%$V_YiHd_<adBmS,&n?&29/dUn*Wt<6Vb0Z,po"Lg+8qH`kHlVXO>"b.P"&dH$L=._nT-*R`UeE20LeLsRra;S;+_&N?)^)I-D7K>$mZS!\[?3OX\,Uj;JlGV@EHB-X6Z'h8eru0l=3E&>'='!/WpWKZ2PHSA-+a_jU6O&LLlAS9V!4T3C@:RT4q?3CdV*ig0,::i2n$Ipfr$1C=N/P[n:]q(tW*&lnjTR"BS5QF]2=T8lol2S_lLaA,A])4gmV!b((7@HM<a6KuA5b8H"bfQ!/=5<LMAue;V-Zn:9ubR9je1lZD!p&[=3/8QsjeH^:]/$FQC,rA`i!H*f,'M]a7A87X%Z&VO!W5d`Zol?+_Y$=HCAqX_\,CQ7q\k&/tnIC=Q"\$(a$A"?$:\RR-O:DVQM_-]@6k.Dk#ju7rG[tVXrC!/KB@Z-[DaEZh]=k#O9iaMY<`R+iNp75k-NAJ2KfMf>i_2QYpaY]cN[]MHlg1RpGYIiOHe"X?M4[c>_9oXThr.GN^h8KA]f9OsdUdEZ.Y.110A4]:d`_0Id3ErMKF6@FCh)3)'`b<Ht[62OGi/sp4o]8'_dl1H5]mIn!?0i;En"$X]L'AGmn,l6PG*(b;Pc;!LGL%8"ITb"&Cds4SA+afW[0)E$<iHfK?S#PGR_&2l<]5nD]P[=LCh7laV^E\L,k>7XJ!C8hI8-2HC4e]%VTD5L6%<a<d\aeNMQ)a_:X<^^#=!R?[KS2$(:SG2r6)![^2qKo=Lhiuqi^\p`Ys=B)h"7hn=E<mSm/(o/rIpl't5l0Fj&eHhR.P%deRsBH>#@Vlq\P7hQqI[7\9$[m-6H8lTVCQ=3/XP\:l1caeB>uM"QZfpWg@eg@Hf#2*8,n-XV8pWI+6+-Z3/FQ0aV/Wi\7aF`D_Zl."""`eI8]Rsg9FcaT)!f:>$=o9,INCqcqNr(NlE:YmPYb0f>@](tr`ALgomj+G'dqFFuq(io_*MtPeXZfWXDC1uptNh1?9QE6LH%+M1tAJU'H$4Dm5:s?G.bAJB(VHp+L=Z\Ha`i4#p6'YjocV1ThUK,k]N6C78SM"'82*3gr\nGJPAM[[79*`**dNgMlJ9a-$CHdh[2_&omV>9h=C"B6.G\41lP5\WdeOPqR!#5[1*)3?Nl#Z%]N\iDk*gs1U"+uU4`RWp:bukgNWl2EAKsOg(n'q'g##l?pIo"*meTfEUR^Gk,k[SbFl7NU#;hQ@Q@0nk\EVGN@4t-;YAliTNIX+H(`/ui-N/ZK35\8iM)=$Ep=0+K)]9^^hFI-iBLh+KfrbOPYqqCrbcW?n,d4BF<YASf8b3[YM0s=C>islqjV^Oog)CAprZ/s.JCO1m;eQl,&NDnlc0$`_R]bMj+R3;\o_S(eB@OP9K\V<ZpjpYs4AY.'iJWgCG#%L9_<nVr#mfW.dX1t/F%7u/d:[].Q6#l>5bHA$PrD4eP]rUsROq,E`bNFn%CSuR[P2MW=E.FF5gR\Qe_F`5HenKT]am8QkXi?Zq%s.8;\<om*9i0f`nq7+RK&8cZ:Ds]=:?Ab@P[thr:>Qk#V*7$[>..qj*,mGs61mt*BUh[Fj4`%mF7u1?H!A$"^"mA.P@SAi:J-H6/[\R!#Ca""AEc5T5uDb6)qQI.B20Iei.IFM:tQI!D5%[=?!Xmerjpji3-D5P*UKo="$<"$X6N>Q8o=;T0jNqo'YtPf=tD*DW<QjVbYj<*Z9g%@2k=aDpKb0qgGZ5Q$^VClDG!id`-Ue8i^=]6:^cM-Zgj'8(4>B`Vd/U<]4ok3<B%^**0l-$$2\O0S,CikM`XqB+5&_sj0Ze;)%,P`RAl7emZ"ZMO`NQXpU'SLbGTHA0%PWTo&d$@0C6bm/tAOtZ>PRZlN],E?9Fp'a]V3c)tW/>Ej0cBBO%-`l4rmpO+]ODl:!MLl<WPf4m%MQrS,U,#Pp3J1GnQk?E).CAuqT!Mp<13e'j^@/EY[Pe4)I+=d>^ojN?cAW!/lhWMA9l1-M<M\0Q1-/e.tE_NMfKJNNhO10PM9eiBLXK9aTi.VQW=@rD(bU"ro+m6tO.kk_IEe7)A(>o<?A4VgD^NH<"L<QY2feb\j3qqekRcGr"!3b>"o3k7cFWbZj)Wqsu,=fn6\%9&,#h*1Jg/,lp)3gS<&?bO*nlWMDBG&m;gj'crZeH9ira.(O`_e'`]5O<T33.lRh/!q-)NPsBWbtW-#egc]'>VjVE[,?P$B)2E*H(KeT/Sjtu3EH+?m[;X;8LX=IjqP9H>!-BfL3j@lbCR<s`-IYq;HjqSm*t8l@^'hgMor'T6fS5N(8Kg&OkSXO'%>dCfh&N]$XLbcIkY'b]A)eJ\EW-)m%g[8S@riX`Rh6YAes7\Vgo-5#)O#5b8e(RS;"ZP1h0RifbnkbkJiRSCQWON=t&CMD#Ql:S^b6oiliZUISuD(B=e.j4Bn%^iKF2klJ\l=3CPui:7,ltDLU:W=5U=Y[m0cKDo^rU9H.<nQW5]2_:Da>a/3K^cUd/"<d)(4S.lr&D+Bm;45P7&kd[jQIDaWKTqes.AhZ[_G30l?Hsl;/En^!#H;_:ecG\@+imhnbnkND".3gI)S`-L"PLaLc:#3IRJHqC>MnA0?p;P_Ar^sZ%]3qU>h\4GE9P5.0RW<OX_u*Sc14)<#9HEiL`3*QtZES@kIC/uprRC2/e"+`DXY[%+=lec$4?2-Z]/Hq!Z,nRB8]"_!fFo'V>=Y0XT#KqX0QL^,T=(FQak#4fN[tK".i[l$Zd_0ercn%i(#/-B%Q<=#XUDGGVjI`l`;\W2F4f]I3+ZAOX_gp"DdHO_<XKl7DBCqbB=]OLAsZ3O>PS0:nmqRYOIf\D"u(2F=Zj$5o"=6M^J#O*jVhqp9^-6.)HjHuG&PW@:_m5ob3FZgLN$+*WCE>%pBE]X^[#+d%d)C99IorTl-ajGfT9dj#<'kGFKVe]8&jCCClOf9qK?"_IP$M*DK%^t_m9T6D6(Sufs8tmY3KmTWQmQrb-'C-H$Ud;:-H?1:9#X9bI?&[`q2!f@g"cU%<\bCT3nf\CqaFBS!d+'\9o^HY4=*kM1nOFWg\6'HXf4?^t%,7':i@=-arK22qjg^pU@2sjd;*i-n^h;LIZLBAlMNILX,^-b)!;aB=P]Hotflk[r3?IWl_cg!qq(lmFK!ch=\KSeYZ-5<]b$bbc/M?fm'nK(,L[`,=@H@DDBGY.ikUONZhb<h+;arZad9rRUPXn\T(ChPUfD-;4neSU8h7Y]#D2tas)TTA$+1NZ#jOOjRl`g8%.*pg^koUG1:6iD3%,^3qu,3n27q=8,>U#=5e++.2nicciWF$W`Dk9R<^P(We88%mO6$.eN%ViB5>W1k2jk`lAs2d=Y"E6%pYW8+U`$4_)iKHOh&<?dTfnXE284_Dedb(V6u?%QF&4h&["[Shi=_e`*9mGpEmeQ/_[ffLAu:&b[<Sb5(m@&?o/%eh2sAT).jq9'"4eA7)71qaVrjdh<e#J\_M#HJPEa7N*9!icid'6OE[k4Sn*(P@r[]">7;KSHGtbFb`l2`"-"Rr1Y*9EYB^O0kICi4fK>,n<!'kH!8@e[09(r\p,!tqZWcUt9j/hMgVRPW+tS#4Pq:SPn![Qc*mX!blrHLl-qtuIR?#D7]Wb2up?$Gn]=%Yg"$SbI[@.2:\Lg"?ZS>L)47/ip[^E0QKkoC.`TUL1MmI^#GD;JeT<^F`[%mq2I91?k48ZDI10<]*ak9iKFc"GR3Oe\J>$`pFE-@hMQ3I=]!0ibp^#"\>E]g!Q<e>HN=:a_A[]d9D&P\hh.8&sl(t+nbVm>YEYGcfZAQJ5O=2e<DFRSjug1EY`:<rH0c>E7_]W4r@m,Yf/S/$f;DVqsQMrQ_5g1cr[[Xoe663Br<`2kO==eM:'r*rDP`'hFR#-H5J3ioX,TP^2PpP'@*'pJ=)C/sD$TjYZq!P7'Ed=ImaUIuuScG/SCmQD;h@-BCNi+U-XIH),Xp<$utGXY&f>"@=]:3!qO<oE2i3&Tm!b)VUS2o_7(e_)i?joFbDot3"Z]YtCTO!1<oXU>B;4a4og7XOj92:S/YN/mb9GHOMPiTub@T@=fS".a3DYGa;?<>[bd0.Q&M*\Y#7Y+"2&2<Tq#Tp]=lol?p'oXs!!,!?N4oc@TWO(qj(=s1+j[VCE(#o8k,B5<>[Kj(@:\&HdX;\g_I4:Qut,=k@U2\=-\`o?ol4Qa&.62$>i2eNSC(<roHW\:F8_#)D-WlebAf4HLI,3u1^]NqN2FsVF4X(RC5n-b6Tc-s\d*TtHfkOleHAhcQIW[b91O`%YHLB]^`&;)`7L-`Pj!Tl]TY\&</D/+*6iANR<7V/D0"X#kJ^q80UR'Fm@np("sA;hG<<$=Q-cGa3l+jh;)ei@=le\fdt6^ss`%7X!XgP!C,];3iEZ!N^4FObM+Q;p#4bmjo0J_nI_(=pZJW-QB#3cq)O+;:!-5jLI*eM0"Wr2c"aOo)4)R(:XN40-a]#i`NK\d]GB]M'c=BP=V^!8YG6@?l4&l']"9*D0-7!5!h[i0p30jjM]t%9Lpl:kZ3^_+j`nX&!/2`tn9Q2_)fNCFVfGP?\c\m6r@7j)V-r8H7V)['OJnh"!`qHu$.OAWi=8$J#X$XU>8l/j-Hnq##6sk+TV:nrB*[U&e)B/o\2&@Q7E%?NR"SV(>rD`"3DjID#k)Qf"1sgs99^D$sdJE_*n/>!'-uG%?+n'?[h%h[I-@eg[c3Tl\^2f(lK"8H6'"lqh&<>FsjBi45KX:("Q1oF9LF_4D+0ICLn>m#d5qS)X=THhHh1L$@qgU;H?mF)V)X$HhB<RJ%?k?.7-&]_YG(b[N0/`;#q3VfaAPDoA(`d%h,!;:N$*egbGNjTfQG;jc;u:Ao#uDSkR@M86#pS.sd2E=qU7`9"[lR\KmgRf%n\*p?mrI:ZgT()7SbNEe9&C=C7bI`N=0_Wf(=.dk\:#jdhE+/A5J7@bF\k7Y_j($"crRhpC0'A<1\5B1aAKurnu3u,<$)Vg%+5O=T0et4lqPh80>oHk5\ZWl*Z;/M`kJU]cF;8D&0_i^`.O+->?>gf9Sa3BmKok6o&6E14P)WJsC,<9<R2dN%-ZsqG:_Y9\?AJs$^gC8d_nr3)c"m/3A,oU@3]nG&q/kN4F)[E,<2XDMU[:XW%JD2A.H=p8]n>)P\9E%":-i6&1WBu+,g[1E3muPD;'8`@U_IrlAY;c<p`;VI\&k/)$gFH?Ias:(i"Rb$2m:C`M&C%&WigTE1J+u*S,+FsK6)@5_1Nmm-40tBXQ7:^`=H`0Q`aW!J8u4L2n'$>*^HdhJi%D$kD67a9U!DOb^j;2_$D7._J,\3lgMcFcqTo%Gpp4o:rr]==])bh=1 bi=nil ce,cd=-36709,-36709 end else bb=cb[100]bc=rawset bd=setfenv ce=cc[1]~=0 and 80498 or 31965 cd=31965 end else if cd<=88229 then p=table and table.move or function(a,f,g,h,k)local m={}local n={}local function t(u,z)n[z]=u;return n[z]end local u={}u[1]=0 u[2]=1 u[3]=3 local u=0 local u=-28854 local z=0 repeat if u<=-28854 then if u<-28854 then break else k=k or a h=h+g m[4]=n[-28854+199266]or t(89457,-28854+199266)u=42123 end else if u<=42123 then u=m[4]else for m=g,f,-1 do local f={}local g={}local function n(t,z)g[z]=t;return g[z]end local t={}t[1]=3 t[2]=3 t[3]=2 local z=40677 local ba=0 local bb=0 repeat if z<=-17657 then if z<=-35991 then z=f[3]else ba,z=f[2],f[2]end else if z>=40677 then if z==40677 then h=h-1 f[1]=a[m]f[2]=g[40677+15126]or n(39059,40677+15126)ba,z=-17657,-17657 else break end else k[h]=f[1]t[1]=(t[1]+1)%5 f[3]=g[39059+146197]or n(61739,39059+146197)z=-35991 end end until z==61739 end;return k;end end until u==-34467 end q=bit32 or bit r=2^32 ce=cc[2]~=1 and-38553 or 49539 cf,cd=49539,49539 else if cd<=89697 then bu=nil do bu=function(a)local f={[7877]={},[4904]={},[8737]={},[5792]={},[1145]={},[8086]={},[7937]={},}local g=bp(a)local h={}local k=0 for m=1,g do local g,m,n,p,t local u={}local z={}local function ba(bb,bd)z[bd]=bb;return z[bd]end local bb={}bb[1]=4 bb[2]=1 bb[3]=0 local bb=79497 local bd=0 local bf=0 repeat if bb<=-12682 then if bb>=-19656 then if bb~=-12682 then bb=u[43]else bf,bb=u[44],u[44]end else break end else if bb>=85468 then if bb<89491 then bd,bb=u[45],u[45]else c(h,{m,p,t})u[45]=z[89491+276907]or ba(-29898,89491+276907)bd,bb=85468,85468 end else if bb<=54725 then p=k+n do k=p end t=nil t=bn(a)u[44]=z[54725+14765]or ba(89491,54725+14765)bf,bb=-12682,-12682 else g=bn(a)~=0 m=g and 1 or 0 n=bq(a)u[43]=z[79497+14765]or ba(54725,79497+14765)bb=-19656 end end end until bb==-29898 end f[8086]=h do f[8737]=bn(a);end local g=bp(a)local h={}for k=0,g-1 do local g,m local n={}local p={}local function t(u,z)p[z]=u;return p[z]end local u={}u[1]=3 u[2]=2 u[3]=3 local u=0 local u=0 local z=24318 repeat if z<=-31247 then if z<-31247 then break else g=n[46]m=bp(a)do for ba=1,m do g[ba]=bp(a);end;h[k]=g;end n[48]=p[-31247+145763]or t(-43604,-31247+145763)u,z=59694,59694 end else if z>=59694 then if z<83701 then u,z=n[48],n[48]else u,z=n[47],n[47]end else n[46]={}n[47]=p[24318+276834]or t(-31247,24318+276834)u,z=83701,83701 end end until z==-43604 end;do f[1578]=h;bc(f,4845,bp(a))end do local g,h,k local m={}local n={}local function p(t,u)n[u]=t;return n[u]end local t={}t[1]=1 t[2]=1 t[3]=2 local t=0 local t=-26215 local u=0 repeat if t>=-25294 then if t<=-25294 then break else if t~=55832 then t=m[50]else t=m[49]end end else if t==-40629 then k=(bp(a))if h>=0 then while g<=k do f[5792][g-1]=bu(a);g=g+h end else while g>=k do f[5792][g-1]=bu(a);g=g+h end end m[50]=n[-40629+185789]or p(-25294,-40629+185789)t=46953 else g=(1)h=(1)m[49]=n[-26215+185789]or p(-40629,-26215+185789)t=55832 end end until t==-25294 end local g=bp(a)local h={}local k,m,n,p=0,0,0,0 for t=1,g do local g={}bc(g,45,bp(a))local u u=(1)==(bn(a))local z=not((bn(a))~=(1))local ba=not((bn(a))~=(1))local bb=bn(a)if bb==1 then local bd,bf,bj,bl,bv,bw,bx local cb={}local cg={}local function ch(ci,cj)cg[cj]=ci;return cg[cj]end local ci={}ci[1]=2 ci[2]=3 ci[3]=3 local cj=0 local ck=-24198 local cl=0 repeat if ck<=-24198 then if ck<=-39427 then if ck<=-44215 then if ck<=-45011 then bd=nil bd=bs(a)cl=ci[3]~=0 and 24457 or 39060 cb[84]=cg[-45011+351169]or ch(39060,-45011+351169)cj,ck=-39427,-39427 else cl,ck=cb[83],cb[83]end else if ck<-39427 then cj,ck=cb[85],cb[85]else cj,ck=cb[84],cb[84]end end else if ck<=-38252 then if ck<-38252 then ck=cb[81]else cl,ck=cb[86],cb[86]end else if ck>=-27501 then if ck==-27501 then bv,bw,bx=nil bv,bw,bx=0,0,0 cl=ci[3]~=1 and 20424 or 46465 cb[87]=cg[-27501+351169]or ch(46465,-27501+351169)cj,ck=29664,29664 else cb[78]={}cb[81]=cg[-24198+220098]or ch(-23455,-24198+220098)ck=-38299 end else cb[80]={}cb[83]=cg[-37505+220098]or ch(-45011,-37505+220098)cl,ck=-44215,-44215 end end end else if ck>=25721 then if ck<=29664 then if ck<29664 then cl,ck=cb[89],cb[89]else cj,ck=cb[87],cb[87]end else if ck>=46465 then if ck~=84102 then do for ci=0,bd-1 do local bd={}local cm={}local function cn(co,cp)cm[cp]=co;return cm[cp]end local co={}co[1]=1 co[2]=1 co[3]=0 local co=0 local co=-41286 local cp=0 repeat if co>=-11856 then if co<=-11856 then cp,co=bd[51],bd[51]else if co<=57656 then break else cp,co=bd[52],bd[52]end end else if co<=-49996 then bl[ci]=bx bd[52]=cm[-49996+308875]or cn(57656,-49996+308875)cp,co=61197,61197 else do bv=bv+bq(a);bw=bw+bq(a);end do bx=bx+bq(a);bf[ci]=bv;end bc(bj,ci,bw)bd[51]=cm[-41286+177804]or cn(-49996,-41286+177804)cp,co=-11856,-11856 end end until co==57656 end;g[4183]=bf;end g[3818]=bj cb[88]=cg[46465+89027]or ch(20424,46465+89027)ck=20095 else ck=cb[82]end else bf=cb[78]bj=cb[79]cb[85]=cg[39060+89027]or ch(24457,39060+89027)cj,ck=-42766,-42766 end end else if ck>=20095 then if ck>=20424 then if ck<=20424 then do g[6572]=bl;end cb[89]=cg[20424+220098]or ch(-23773,20424+220098)cl,ck=25721,25721 else bl=nil bl=cb[80]cb[86]=cg[24457+89027]or ch(-27501,24457+89027)cl,ck=-38252,-38252 end else ck=cb[88]end else if ck<-23455 then break else cb[79]={}cb[82]=cg[-23455+220098]or ch(-37505,-23455+220098)ck=84102 end end end end until ck==-23773 elseif bb==2 then local bd=bs(a)local bf={}local bj={}local bl,bv=0,0 do local bw,bx,cb local cg={}local ch={}local function ci(cj,ck)ch[ck]=cj;return ch[ck]end local cj={}cj[1]=0 cj[2]=1 cj[3]=2 local ck=0 local ck=41401 local cl=0 repeat if ck<=-23291 then if ck==-24519 then ck=cg[56]else cl,ck=cg[55],cg[55]end else if ck>=25044 then if ck<=25044 then break else bw=(1)bx=(1)cj[2]=(cj[2]+1)%5 cg[55]=ch[41401+165699]or ci(-16361,41401+165699)cl,ck=-23291,-23291 end else cb=(bd)if bx>=0 then while bw<=cb do local bd={}local cj={}local function cl(cm,cn)cj[cn]=cm;return cj[cn]end local cm={}cm[1]=1 cm[2]=1 cm[3]=0 local cm=-21436 local cn=0 local co=0 repeat if cm<=-32712 then if cm==-42624 then bw=bw+bx bd[54]=cj[-42624+210298]or cl(-32712,-42624+210298)co,cm=-17643,-17643 else break end else if cm>=-17643 then if cm~=47890 then co,cm=bd[54],bd[54]else cn,cm=bd[53],bd[53]end else bl=bl+bq(a)do bv=bv+bq(a);bf[bw]=bl;end bj[bw]=bv bd[53]=cj[-21436+79227]or cl(-42624,-21436+79227)cn,cm=47890,47890 end end until cm==-32712 end else while bw>=cb do bl=bl+bq(a);do bv=bv+bq(a);bf[bw]=bl;end bj[bw]=bv;bw=bw+bx end end cg[56]=ch[-16361+296770]or ci(25044,-16361+296770)ck=-24519 end end until ck==25044 end do g[4183]=bf;g[3818]=bj;end elseif bb==3 then local bd,bf,bj local bl={}local bv={}local function bw(bx,cb)bv[cb]=bx;return bv[cb]end local bx={}bx[1]=0 bx[2]=3 bx[3]=4 local bx=0 local cb=-33700 local cg=0 repeat if cb>=40345 then if cb>=59362 then if cb<61526 then bd=bs(a)bf=bl[57]bj=0 do for cg=1,bd do bj=bj+bq(a);bf[cg]=bj;end;g[4183]=bf;end bl[59]=bv[59362+222611]or bw(25990,59362+222611)bx,cb=61526,61526 else bx,cb=bl[59],bl[59]end else cb=bl[58]end else if cb<25990 then bl[57]={}bl[58]=bv[-33700+222611]or bw(59362,-33700+222611)cb=40345 else break end end until cb==25990 elseif bb==4 then local bb,bd,bf,bj,bl,bv,bw,bx,cb local cg={}local ch={}local function ci(cj,ck)ch[ck]=cj;return ch[ck]end local cj={}cj[1]=0 cj[2]=0 cj[3]=1 local ck=-31084 local cl=0 local cm=0 repeat if ck<=-26613 then if ck<=-41952 then if ck>=-42811 then if ck<-41952 then cm,ck=cg[69],cg[69]else cm,ck=cg[67],cg[67]end else if ck<-44829 then bb=bs(a)bd=cg[63]bf=cg[64]bj=cg[65]cl=cj[2]~=0 and-39973 or 68867 cg[71]=ch[-48365+164052]or ci(68867,-48365+164052)cl,ck=55208,55208 else ck=cg[72]end end else if ck>=-31084 then if ck==-31084 then cg[63]={}cg[67]=ch[-31084+32981]or ci(69115,-31084+32981)cm,ck=-41952,-41952 else ck=cg[73]end else if ck==-39973 then g[3818]=bf g[6572]=bj g[8294]=bl cg[74]=ch[-39973+32981]or ci(-23228,-39973+32981)cm,ck=80494,80494 else cg[65]={}cg[69]=ch[-32421+295123]or ci(-19303,-32421+295123)cm,ck=-42811,-42811 end end end else if ck<=-19303 then if ck>=-23003 then if ck<=-23003 then cl,ck=cg[70],cg[70]else cg[66]={}cg[70]=ch[-19303+295123]or ci(-48365,-19303+295123)cl,ck=-23003,-23003 end else if ck~=-23101 then break else cm,ck=cg[68],cg[68]end end else if ck<=55208 then if ck<55208 then do for bs=1,bb do local bb={}local cn={}local function co(cp,cq)cn[cq]=cp;return cn[cq]end local cp={}cp[1]=3 cp[2]=1 cp[3]=0 local cp=49439 local cq=0 local cr=0 repeat if cp<=-36976 then if cp<=-48692 then cq,cp=bb[60],bb[60]else if cp<-36976 then break else bc(bf,bs,bw)do bc(bj,bs,bx)bl[bs]=cb;end bb[62]=cn[-36976+281125]or co(-48397,-36976+281125)cp=83491 end end else if cp>=72450 then if cp<83491 then cb=cb+bq(a)bd[bs]=bv bb[61]=cn[72450+150054]or co(-36976,72450+150054)cr,cp=-13268,-13268 else cp=bb[62]end else if cp<=-13268 then cr,cp=bb[61],bb[61]else bv=bv+bq(a)do bw=bw+bq(a);end bx=bx+bq(a)bb[60]=cn[49439+18983]or co(72450,49439+18983)cq,cp=-48692,-48692 end end end until cp==-48397 end;end bc(g,4183,bd)cg[73]=ch[53183+32981]or ci(-39973,53183+32981)ck=-26613 else cl,ck=cg[71],cg[71]end else if ck<=68867 then bl=cg[66]bv,bw,bx,cb=0,0,0,0 cj[1]=(cj[1]+1)%5 cg[72]=ch[68867+164052]or ci(53183,68867+164052)ck=-44829 else if ck<80494 then cg[64]={}cg[68]=ch[69115+295123]or ci(-32421,69115+295123)cm,ck=-23101,-23101 else cm,ck=cg[74],cg[74]end end end end end until ck==-23228 else local bb={}local bd={}local function bf(bj,bl)bd[bl]=bj;return bd[bl]end local bj={}bj[1]=4 bj[2]=4 bj[3]=3 local bl=0 local bs=-31788 local bv=0 repeat if bs<=-31788 then if bs<=-49943 then do g[6572]=n;end bc(g,8294,p)bb[77]=bd[-49943+22785]or bf(56801,-49943+22785)bl,bs=-48400,-48400 else if bs==-48400 then bl,bs=bb[77],bb[77]else do k=k+bq(a);end m=m+bq(a)n=n+bq(a)bj[3]=(bj[3]+1)%5 bb[75]=bd[-31788+153856]or bf(40252,-31788+153856)bv,bs=48453,48453 end end else if bs<=48453 then if bs<48453 then p=p+bq(a)g[4183]=k g[3818]=m bb[76]=bd[40252+284927]or bf(-49943,40252+284927)bl,bs=84414,84414 else bv,bs=bb[75],bb[75]end else if bs<84414 then break else bl,bs=bb[76],bb[76]end end end until bs==56801 end g[1552]=u;do bc(g,440,z)g[6931]=ba;end g[666]=h[t-1];h[t]=g;end;f[7877]=h;bc(f,1145,bn(a)==1)local g=bp(a)local h h={}for k=0,g-1 do local g g=bn(a)if g==0 then local m m=bn(a)if(0)==(m)then local m,n local p={}local t={}local function u(z,ba)t[ba]=z;return t[ba]end local z={}z[1]=1 z[2]=1 z[3]=4 local z=0 local z=35301 local ba=0 repeat if z>=54241 then if z<=57424 then if z~=57424 then h[k]=n p[92]=t[54241+326458]or u(-26618,54241+326458)z=57424 else z=p[92]end else if z<=66766 then ba,z=p[90],p[90]else ba,z=p[91],p[91]end end else if z<=-26618 then break else if z<=-26564 then n=b(a,bh,bh+m-1)bh=bh+m p[91]=t[-26564+326458]or u(54241,-26564+326458)ba,z=75736,75736 else m=nil m=bp(a)p[90]=t[35301+195387]or u(-26564,35301+195387)ba,z=66766,66766 end end end until z==-26618 end;elseif g==1 then local m m=bn(a)if m==1 then bc(h,k,bq(a))else bc(h,k,bt(a))end;elseif g==2 then local m=bn(a)do if(1)==(m)then do h[k]=bp(a);end else h[k]=bi(a);end;end elseif not((g)~=(3))then h[k]=bo(a);elseif g==4 then local m m=bn(a)if(1)==(m)then h[k]=bq(a);else do h[k]=bo(a);end end;elseif g==5 then h[k]=bn(a)==1;else h[k]=nil;end;end;bc(f,4904,h)local g=(0)~=(bn(a))if not(not(g))then local g=bp(a)local h={}local k=0 do local m=(1)local n=(1)local g=(g)if n>=0 then while m<=g do local p,t,u,z local ba={}local bb={}local function bd(bf,bi)bb[bi]=bf;return bb[bi]end local bf={}bf[1]=0 bf[2]=4 bf[3]=2 local bf=0 local bf=26131 local bi=0 repeat if bf>=-17785 then if bf<=26131 then if bf~=26131 then bi,bf=ba[93],ba[93]else p=bn(a)~=0 t=p and 1 or 0 u=bq(a)ba[93]=bb[26131+176242]or bd(-30986,26131+176242)bi,bf=-17785,-17785 end else if bf<=56656 then bi,bf=ba[94],ba[94]else break end end else if bf<=-43522 then bf=ba[95]else if bf==-36473 then m=m+n ba[95]=bb[-36473+307313]or bd(78221,-36473+307313)bf=-43522 else z=nil z=k+u do k=z end c(h,{t,z})ba[94]=bb[-30986+307313]or bd(-36473,-30986+307313)bi,bf=56656,56656 end end end until bf==78221 end else while m>=g do local g,p,t,u local z={}local ba={}local function bb(bd,bf)ba[bf]=bd;return ba[bf]end local bd={}bd[1]=2 bd[2]=4 bd[3]=2 local bf=65734 local bi=0 local bi=0 repeat if bf>=-11418 then if bf>=47371 then if bf<=47371 then bf=z[96]else g=bn(a)~=0 p=g and 1 or 0 t=bq(a)u=nil bd[2]=(bd[2]+1)%5 z[96]=ba[65734+76229]or bb(-36931,65734+76229)bf=47371 end else bi,bf=z[97],z[97]end else if bf==-36931 then u=k+t do k=u end c(h,{p,u})m=m+n z[97]=ba[-36931+76229]or bb(-15976,-36931+76229)bi,bf=-11418,-11418 else break end end until bf==-15976 end end end bc(f,7937,h)end return f;end;end cd=-15954 else bq=nil ce=cc[2]~=1 and-45816 or-39626 cf,cd=-39626,-39626 end end end end else if cd<=32096 then if cd>=23028 then if cd<=23028 then bm=nil cf,cd=57741,57741 else if cd~=32096 then be=function(a)local c=33 local f=85 local g={}local h=#a local k=1 local m=1 while k<=h do local n=k+4 local h=(n<=h)and 5 or(h-k+1)if h==0 then break;end;local a,n,p,t,u=e(a,k,n)if h<5 then n=n or 117;p=p or 117;t=t or 117;u=u or 117;end;if(a<c or a>=c+f)then return"";end;if h>=2 and(n<c or n>=c+f)then return"";end;if h>=3 and(p<c or p>=c+f)then return"";end;if h>=4 and(t<c or t>=c+f)then return"";end;if h>=5 and(u<c or u>=c+f)then return"";end;local a=((((a-c)*f+(n-c))*f+(p-c))*f+(t-c))*f+(u-c)local c=y(x(a,24),255)local f=y(x(a,16),255)local n=y(x(a,8),255)local a=y(a,255)local a=d(c,f,n,a)if h<5 then a=b(a,1,h-1);end;g[m]=a;m=m+1;k=k+5;end;return i(g);end cf,cd=-21945,-21945 else bt=function(a)local b,c local f={}local g={}local function h(k,m)g[m]=k;return g[m]end local k={}k[1]=4 k[2]=4 k[3]=3 local m=-30899 local n=0 local n=0 repeat if m<=-30899 then if m==-42479 then break else b=br(a)c=br(a)k[2]=(k[2]+1)%5 f[42]=g[-30899+67086]or h(22599,-30899+67086)m=54995 end else if m==22599 then if c==0 then return b;elseif(c>=2147483648)then c=c-4294967296;end;return c*4294967296+b;else m=f[42]end end until m==-42479 end ce,cd=89697,89697 end end else if cd<=-12118 then bk=nil ce,cd=49384,49384 else bz=bu(bg)ca=by(bz,{},l())cc[2]=(cc[2]+1)%5 cf,cd=-38848,-38848 end end else if cd>=49539 then if cd>=53179 then if cd<=53179 then break else w=nil x=nil w=q and q[(function(a,b)local c local f={}local g={}local function h(k,l)g[l]=k;return g[l]end local k={}k[1]=1 k[2]=0 k[3]=3 local l=-47632 local m=0 local n=0 repeat if l<=-44193 then if l>=-46084 then if l<=-46084 then break else return i(c)end else f[20]={}m=k[3]~=0 and-44193 or-33982 f[21]=g[-47632+81759]or h(-33982,-47632+81759)n,l=54724,54724 end else if l>=46974 then if l<54724 then l=f[22]else n,l=f[21],f[21]end else c=f[20]for i=1,#a do local a=e(a,i)c[i]=o(d(37,99),(a-(b+i))%256)end f[22]=g[-33982+343901]or h(-44193,-33982+343901)l=46974 end end until l==-46084 end)("\142\150\140\142\140\155",33)]or function(a,b)if b<0 then return x(a,-b)end return(a*2^b)%r;end ce,cd=64142,64142 end else s=function(a,b,c)local d local f={}local g={}local function h(i,k)g[k]=i;return g[k]end local i={}i[1]=4 i[2]=0 i[3]=2 local k=0 local l=0 local m=29744 repeat if m<=-10526 then if m==-30446 then break else do local n,o local p={}local q={}local function r(t,u)q[u]=t;return q[u]end local t={}t[1]=0 t[2]=3 t[3]=2 local t=80415 local u=0 local x=0 repeat if t>=-15054 then if t>=52997 then if t>=80415 then if t<=80415 then n=0 o=0 p[5]=q[80415+49295]or r(-38432,80415+49295)t=28055 else u,t=p[9],p[9]end else if t~=78775 then x,t=p[7],p[7]else if n==98102 then return a[b],a[b+1],a[b+2],a[b+3],a[b+4],s(a,b+5,c)end if n==76177 then return a[b],a[b+1],a[b+2],a[b+3],s(a,b+4,c)end if n==95846 then return a[b],a[b+1],a[b+2],s(a,b+3,c)end p[9]=q[78775+311437]or r(-43951,78775+311437)u,t=88757,88757 end end else if t<=-15054 then if o==0 and d>=4 then n=76177 o=1 end if o==0 and d>=3 then n=95846 o=1 end if o==0 and d>=2 then n=90081 o=1 end p[7]=q[-15054+49295]or r(-23288,-15054+49295)x,t=52997,52997 else if t==28055 then t=p[5]else break end end end else if t>=-31946 then if t>=-23288 then if t~=-22025 then if o==0 then n=71632 o=1 end if n==77888 then return a[b],a[b+1],a[b+2],a[b+3],a[b+4],a[b+5],a[b+6],a[b+7],s(a,b+8,c)end if n==39880 then return a[b],a[b+1],a[b+2],a[b+3],a[b+4],a[b+5],a[b+6],s(a,b+7,c)end if n==85285 then return a[b],a[b+1],a[b+2],a[b+3],a[b+4],a[b+5],s(a,b+6,c)end p[8]=q[-23288+311437]or r(78775,-23288+311437)x,t=-31946,-31946 else t=p[6]end else x,t=p[8],p[8]end else if t<=-43951 then if n==90081 then return a[b],a[b+1],s(a,b+2,c)end if n==71632 then return a[b],s(a,b+1,c)end p[10]=q[-43951+180366]or r(49398,-43951+180366)t=-34047 else if t~=-34047 then if o==0 and d>=8 then n=77888 o=1 end if o==0 and d>=7 then n=39880 o=1 end if o==0 and d>=6 then n=85285 o=1 end if o==0 and d>=5 then n=98102 o=1 end p[6]=q[-38432+49295]or r(-15054,-38432+49295)t=-22025 else t=p[10]end end end end until t==49398 end f[12]=g[-10526+142165]or h(-30446,-10526+142165)k,m=44268,44268 end else if m<=29744 then if(b>c)then return end d=c-b+1 i[1]=(i[1]+1)%5 f[11]=g[29744+273236]or h(-10526,29744+273236)l,m=55381,55381 else if m~=55381 then k,m=f[12],f[12]else l,m=f[11],f[11]end end end until m==-30446 end ce=cc[1]==1 and 54122 or-38553 cd=-38553 end else if cd>=45700 then if cd==45700 then br=nil ce,cd=73791,73791 else bk=function(a)local b local c={}local d={}local function f(g,h)d[h]=g;return d[h]end local g={}g[1]=1 g[2]=1 g[3]=1 local g=-12752 local h=0 local h=0 repeat if g<=-34085 then if g<=-49015 then return b;else h,g=c[33],c[33]end else if g<=-13876 then break else b=0 for i=0,2 do b=v(b,w(e(a,bh,bh),8*i));bh=bh+1;end;c[33]=d[-12752+95513]or f(-49015,-12752+95513)h,g=-34085,-34085 end end until g==-13876 end ce=cc[2]==0 and 57741 or-36681 cc[3]=(cc[3]+1)%5 ce,cd=-36681,-36681 end else bo=function(a)local b,c,d,f,g,h,i,k,l,m,n local o={}local p={}local function q(r,s)p[s]=r;return p[s]end local r={}r[1]=2 r[2]=2 r[3]=4 local s=0 local t=0 local t=65262 repeat if t>=-18963 then if t>=-13611 then if t<65262 then l=o[37]m=(k%128)*16+j(i/16)n=((i%16)*2^48+h*2^40+g*2^32+f*2^24+d*2^16+c*2^8+b)o[39]=p[-13611+351175]or q(-24774,-13611+351175)s,t=-20878,-20878 else b,c,d,f,g,h,i,k=e(a,bh,bh+7)bh=bh+8 o[37]=k>127 and-1 or 1 s=r[2]==0 and-24774 or-13611 r[2]=(r[2]+1)%5 o[38]=p[65262+351175]or q(-13611,65262+351175)t=-18963 end else t=o[38]end else if t>=-20878 then if t<=-20878 then s,t=o[39],o[39]else break end else if m==0 then if n==0 then return l*0;else return l*n*2^(-1022-52);end;elseif m==2047 then if n==0 then return l*(1/0);else return 0/0;end;end;n=n+2^52 return l*n*2^(m-1023-52);end end until t==-20672 end ce=cc[1]~=0 and 89879 or-47185 ce,cd=-47185,-47185 end end end end end until cd==53179 end)(error,next,string.match,tonumber,string.gsub,string.sub,table.insert,string.char,string.byte,coroutine.yield,coroutine.wrap,string.rep,table.concat,math.floor,select,(getfenv or function()return _ENV;end),setmetatable,next,(table.unpack or unpack),(table.pack or function(...)return{...};end),math.min,(function(b)if b<=1 then return false end;if b<=3 then return true end;if b%2==0 or b%3==0 then return false end;local c=5;while c*c<=b do if b%c==0 or b%(c+2)==0 then return false end;c=c+6 end;return true end),string.len,table.remove,table.sort,(string.unpack),string.gmatch,string.find,string.reverse,tostring,math.abs,rawget,string.format);
+
+local L_1_ = {}
+
+-- Data Tables
+L_1_[130] = {
+    "Guardian",
+    "PirateGrandBrigade",
+    "MarineGrandBrigade",
+    "PirateBrigade",
+    "MarineBrigade",
+    "PirateSloop",
+    "MarineSloop",
+    "Beast Hunter"
+}
+
+L_1_[89] = {
+    "Lv 1",
+    "Lv 2",
+    "Lv 3",
+    "Lv 4",
+    "Lv 5",
+    "Lv 6",
+    "Lv Infinite"
+}
+
+-- Utility Functions
+GetSeaBeastTrial = function()
+    if not workspace["Map"]:FindFirstChild("FishmanTrial") then
+        return nil
+    end
+    if workspace["_WorldOrigin"]["Locations"]:FindFirstChild("Trial of Water") then
+        FishmanTrial = workspace["_WorldOrigin"]["Locations"]:FindFirstChild("Trial of Water")
+    end
+    if FishmanTrial then
+        for L_1082_forvar0, L_1083_forvar1 in next, workspace["SeaBeasts"]:GetChildren() do
+            local L_1084_ = {}
+            L_1084_[3], L_1084_[2] = L_1082_forvar0, L_1083_forvar1
+            if L_1084_[2]:FindFirstChild("HumanoidRootPart") and (L_1084_[2]["HumanoidRootPart"]["Position"] - FishmanTrial["Position"])["Magnitude"] <= 1500 then
+                if L_1084_[2]["Health"]["Value"] > 0 then
+                    return L_1084_[2]
+                end
+            end
+        end
+    end
+end
+
+function printBeltName(L_1093_arg0)
+    local L_1094_ = {}
+    L_1094_[1] = L_1093_arg0
+    if type(L_1094_[1]) == "table" and L_1094_[1]["Quest"]["BeltName"] then
+        return L_1094_[1]["Quest"]["BeltName"]
+    end
+end
+
+ChestEsp = function()
+    if ChestESP then
+        local L_1363_ = {}
+        L_1363_[1] = game:GetService("CollectionService")
+        L_1363_[3] = L_1363_[1]:GetTagged("_ChestTagged")
+        for L_1364_forvar0, L_1365_forvar1 in ipairs(L_1363_[3]) do
+            local L_1366_ = {}
+            L_1366_[2], L_1366_[1] = L_1364_forvar0, L_1365_forvar1
+            pcall(function()
+                local L_1367_ = {}
+                L_1367_[3] = (L_1366_[1]:GetPivot())["Position"]
+                L_1367_[5] = (L_1367_[3] - L_1_[23]["Character"]["Head"]["Position"])["Magnitude"]
+                L_1367_[2] = (L_1366_[1]:GetFullName()):gsub("[^%w_]", "_")
+                L_1367_[4] = L_1366_[1]:FindFirstChild("ChestEspAttachment")
+                if not L_1367_[4] then
+                    local L_1368_ = {}
+                    L_1368_[2] = Instance["new"]("Attachment")
+                    L_1368_[2]["Name"] = "ChestEspAttachment"
+                    L_1368_[2]["Parent"] = L_1366_[1]
+                    L_1368_[2]["Position"] = Vector3["new"](0, 3, 0)
+                    L_1368_[3] = Instance["new"]("BillboardGui")
+                    L_1368_[3]["Name"] = "NameEsp"
+                    L_1368_[3]["Size"] = UDim2["new"](0, 200, 0, 30)
+                    L_1368_[3]["Adornee"] = L_1368_[2]
+                    L_1368_[3]["ExtentsOffset"] = Vector3["new"](0, 1, 0)
+                    L_1368_[3]["AlwaysOnTop"] = true
+                    L_1368_[3]["Parent"] = L_1368_[2]
+                    L_1368_[1] = Instance["new"]("TextLabel")
+                    L_1368_[1]["Font"] = Enum["Font"]["Code"]
+                    L_1368_[1]["TextSize"] = 14
+                    L_1368_[1]["TextWrapped"] = true
+                    L_1368_[1]["Size"] = UDim2["new"](1, 0, 1, 0)
+                    L_1368_[1]["TextYAlignment"] = Enum["TextYAlignment"]["Top"]
+                    L_1368_[1]["BackgroundTransparency"] = 1
+                    L_1368_[1]["TextStrokeTransparency"] = .5
+                    L_1368_[1]["TextColor3"] = Color3["fromRGB"](80, 245, 245)
+                    L_1368_[1]["Parent"] = L_1368_[3]
+                end
+                L_1367_[6] = L_1367_[4] and L_1367_[4]:FindFirstChild("NameEsp")
+                if L_1367_[6] then
+                    local L_1369_ = {}
+                    L_1369_[3] = math["floor"](L_1367_[5] / 3)
+                    L_1369_[2] = L_1366_[1]["Name"]:gsub("Label", "")
+                    L_1367_[6]["TextLabel"]["Text"] = string["format"]("[%s] %d M", L_1369_[2], L_1369_[3])
+                end
+            end)
+        end
+    else
+        for L_1370_forvar0, L_1371_forvar1 in ipairs((game:GetService("CollectionService")):GetTagged("_ChestTagged")) do
+            local L_1372_ = {}
+            L_1372_[2], L_1372_[4] = L_1370_forvar0, L_1371_forvar1
+            L_1372_[1] = L_1372_[4]:FindFirstChild("ChestEspAttachment")
+            if L_1372_[1] then
+                L_1372_[1]:Destroy()
+            end
+        end
+    end
+end
+
+berriesEsp = function()
+    if BerryEsp then
+        local L_1373_ = {}
+        L_1373_[3] = game:GetService("CollectionService")
+        L_1373_[2] = L_1373_[3]:GetTagged("BerryBush")
+        for L_1374_forvar0, L_1375_forvar1 in ipairs(L_1373_[2]) do
+            local L_1376_ = {}
+            L_1376_[1], L_1376_[2] = L_1374_forvar0, L_1375_forvar1
+            pcall(function()
+                local L_1377_ = {}
+                L_1377_[1] = (L_1376_[2]["Parent"]:GetPivot())["Position"]
+                for L_1378_forvar0, L_1379_forvar1 in pairs(L_1376_[2]:GetAttributes()) do
+                    local L_1380_ = {}
+                    L_1380_[3], L_1380_[2] = L_1378_forvar0, L_1379_forvar1
+                    if L_1380_[2] then
+                        local L_1381_ = {}
+                        L_1381_[1] = "BerryEspPart_" .. (L_1380_[2] .. ("_" .. tostring(L_1377_[1])))
+                        L_1381_[5] = workspace:FindFirstChild(L_1381_[1])
+                        if not L_1381_[5] then
+                            L_1381_[5] = Instance["new"]("Part")
+                            L_1381_[5]["Name"] = L_1381_[1]
+                            L_1381_[5]["Transparency"] = 1
+                            L_1381_[5]["Size"] = Vector3["new"](1, 1, 1)
+                            L_1381_[5]["Anchored"] = true
+                            L_1381_[5]["CanCollide"] = false
+                            L_1381_[5]["Parent"] = workspace
+                            L_1381_[5]["CFrame"] = CFrame["new"](L_1377_[1])
+                        end
+                        if not L_1381_[5]:FindFirstChild("NameEsp") then
+                            local L_1382_ = {}
+                            L_1382_[2] = Instance["new"]("BillboardGui", L_1381_[5])
+                            L_1382_[2]["Name"] = "NameEsp"
+                            L_1382_[2]["ExtentsOffset"] = Vector3["new"](0, 1, 0)
+                            L_1382_[2]["Size"] = UDim2["new"](0, 200, 0, 30)
+                            L_1382_[2]["Adornee"] = L_1381_[5]
+                            L_1382_[2]["AlwaysOnTop"] = true
+                            L_1382_[1] = Instance["new"]("TextLabel", L_1382_[2])
+                            L_1382_[1]["Font"] = Enum["Font"]["Code"]
+                            L_1382_[1]["TextSize"] = 14
+                            L_1382_[1]["TextWrapped"] = true
+                            L_1382_[1]["Size"] = UDim2["new"](1, 0, 1, 0)
+                            L_1382_[1]["TextYAlignment"] = Enum["TextYAlignment"]["Top"]
+                            L_1382_[1]["BackgroundTransparency"] = 1
+                            L_1382_[1]["TextStrokeTransparency"] = .5
+                            L_1382_[1]["TextColor3"] = Color3["fromRGB"](80, 245, 245)
+                        end
+                        L_1381_[3] = L_1381_[5]:FindFirstChild("NameEsp")
+                        L_1381_[4] = (L_1_[23]["Character"]["Head"]["Position"] - L_1377_[1])["Magnitude"] / 3
+                        if L_1381_[3] then
+                            L_1381_[3]["TextLabel"]["Text"] = "[" .. (L_1380_[2] .. ("]" .. (" " .. (math["round"](L_1381_[4]) .. " M"))))
+                        end
+                    end
+                end
+            end)
+        end
+    else
+        for L_1383_forvar0, L_1384_forvar1 in ipairs(workspace:GetChildren()) do
+            local L_1385_ = {}
+            L_1385_[3], L_1385_[2] = L_1383_forvar0, L_1384_forvar1
+            if L_1385_[2]:IsA("Part") and L_1385_[2]["Name"]:match("BerryEspPart_.*") then
+                L_1385_[2]:Destroy()
+            end
+        end
+    end
+end
+
+-- Player list for combat
+L_1_[39] = {}
+for L_1557_forvar0, L_1558_forvar1 in pairs((game:GetService("Players")):GetChildren()) do
+    local L_1559_ = {}
+    L_1559_[3], L_1559_[1] = L_1557_forvar0, L_1558_forvar1
+    table["insert"](L_1_[39], L_1559_[1]["Name"])
+end
+
+-- Services
+L_1_[30] = game:GetService("Players")
+L_1_[10] = game:GetService("UserInputService")
+L_1_[119] = game:GetService("RunService")
+L_1_[52] = L_1_[30]["LocalPlayer"]
+L_1_[69] = false
+L_1_[129] = 50
+L_1_[115] = {
+    ["f"] = 0,
+    ["b"] = 0,
+    ["l"] = 0,
+    ["r"] = 0
+}
+
+-- Fly Functions
+L_1_[75] = function()
+    local L_1598_ = {}
+    L_1598_[1] = function()
+        local L_1599_ = {}
+        L_1599_[2] = L_1_[52]["Character"]
+        if not L_1599_[2] then
+            return
+        end
+        L_1599_[4] = L_1599_[2]:FindFirstChildOfClass("Humanoid")
+        if not L_1599_[4] then
+            return
+        end
+        L_1599_[1] = L_1599_[4]["MoveDirection"]
+        L_1_[115]["f"] = 0
+        L_1_[115]["b"] = 0
+        L_1_[115]["l"] = 0
+        L_1_[115]["r"] = 0
+        if L_1599_[1]["Z"] < -0.1 then
+            L_1_[115]["f"] = 1
+        elseif L_1599_[1]["Z"] > .1 then
+            L_1_[115]["b"] = 1
+        end
+        if L_1599_[1]["X"] < -0.1 then
+            L_1_[115]["l"] = 1
+        elseif L_1599_[1]["X"] > .1 then
+            L_1_[115]["r"] = 1
+        end
+    end
+    L_1598_[3] = L_1_[119]["Heartbeat"]:Connect(function()
+        if L_1_[69] then
+            L_1598_[1]()
+        else
+            if L_1598_[3] then
+                L_1598_[3]:Disconnect()
+            end
+        end
+    end)
+end
+
+L_1_[102] = function(L_1600_arg0)
+    local L_1601_ = {}
+    L_1601_[2] = L_1600_arg0
+    L_1_[69] = L_1601_[2]
+    if L_1_[69] then
+        local L_1602_ = {}
+        if not L_1_[52]["Character"] then
+            return
+        end
+        L_1602_[1] = L_1_[52]["Character"]:FindFirstChildOfClass("Humanoid")
+        if L_1_[52]["Character"]:FindFirstChild("Torso") then
+            L_1602_[4] = L_1_[52]["Character"]["Torso"]
+        else
+            L_1602_[4] = L_1_[52]["Character"]["UpperTorso"]
+        end
+        if not L_1602_[1] or not L_1602_[4] then
+            return
+        end
+        for L_1603_forvar0, L_1604_forvar1 in ipairs(L_1_[52]["Character"]:GetDescendants()) do
+            local L_1605_ = {}
+            L_1605_[3], L_1605_[2] = L_1603_forvar0, L_1604_forvar1
+            if L_1605_[2]:IsA("BasePart") then
+                L_1605_[2]["CanCollide"] = false
+                L_1605_[2]["Massless"] = true
+            end
+        end
+        L_1602_[2] = L_1_[52]["Character"]["DescendantAdded"]:Connect(function(L_1606_arg0)
+            local L_1607_ = {}
+            L_1607_[2] = L_1606_arg0
+            if L_1_[69] and L_1607_[2]:IsA("BasePart") then
+                L_1607_[2]["CanCollide"] = false
+                L_1607_[2]["Massless"] = true
+            end
+        end)
+        L_1_[49] = Instance["new"]("BodyGyro", L_1602_[4])
+        L_1_[49]["P"] = 90000
+        L_1_[49]["maxTorque"] = Vector3["new"](9000000000, 9000000000, 9000000000)
+        L_1_[49]["cframe"] = L_1602_[4]["CFrame"]
+        L_1_[117] = Instance["new"]("BodyVelocity", L_1602_[4])
+        L_1_[117]["velocity"] = Vector3["new"](0, 0, 0)
+        L_1_[117]["maxForce"] = Vector3["new"](9000000000, 9000000000, 9000000000)
+        L_1602_[1]["PlatformStand"] = true
+        L_1_[75]()
+        L_1_[47] = L_1_[119]["Heartbeat"]:Connect(function()
+            if not L_1_[69] or not L_1_[52]["Character"] then
+                return
+            end
+            for L_1608_forvar0, L_1609_forvar1 in ipairs(L_1_[52]["Character"]:GetDescendants()) do
+                local L_1610_ = {}
+                L_1610_[1], L_1610_[3] = L_1608_forvar0, L_1609_forvar1
+                if L_1610_[3]:IsA("BasePart") and L_1610_[3]["CanCollide"] then
+                    L_1610_[3]["CanCollide"] = false
+                end
+            end
+            if L_1_[115]["l"] + L_1_[115]["r"] ~= 0 or L_1_[115]["f"] + L_1_[115]["b"] ~= 0 then
+                L_1_[117]["velocity"] = (workspace["CurrentCamera"]["CoordinateFrame"]["lookVector"] * (L_1_[115]["f"] + L_1_[115]["b"]) + (workspace["CurrentCamera"]["CoordinateFrame"] * (CFrame["new"](L_1_[115]["l"] + L_1_[115]["r"], (L_1_[115]["f"] + L_1_[115]["b"]) * .2, 0))["p"] - workspace["CurrentCamera"]["CoordinateFrame"]["p"])) * L_1_[129]
+            else
+                L_1_[117]["velocity"] = Vector3["new"](0, 0, 0)
+            end
+            L_1_[49]["cframe"] = workspace["CurrentCamera"]["CoordinateFrame"]
+        end)
+    else
+        if L_1_[47] then
+            L_1_[47]:Disconnect()
+            L_1_[47] = nil
+        end
+        if L_1_[52]["Character"] then
+            local L_1611_ = {}
+            L_1611_[2] = L_1_[52]["Character"]:FindFirstChildOfClass("Humanoid")
+            if L_1611_[2] then
+                L_1611_[2]["PlatformStand"] = false
+            end
+            for L_1612_forvar0, L_1613_forvar1 in ipairs(L_1_[52]["Character"]:GetDescendants()) do
+                local L_1614_ = {}
+                L_1614_[1], L_1614_[3] = L_1612_forvar0, L_1613_forvar1
+                if L_1614_[3]:IsA("BasePart") then
+                    L_1614_[3]["CanCollide"] = true
+                    L_1614_[3]["Massless"] = false
+                end
+            end
+            if L_1_[49] then
+                L_1_[49]:Destroy()
+            end
+            if L_1_[117] then
+                L_1_[117]:Destroy()
+            end
+        end
+        L_1_[115] = {
+            ["f"] = 0,
+            ["b"] = 0,
+            ["l"] = 0,
+            ["r"] = 0
+        }
+    end
+end
+
+L_1_[91] = function(L_1615_arg0)
+    local L_1616_ = {}
+    L_1616_[2] = L_1615_arg0
+    L_1_[129] = L_1616_[2]
+end
+
+L_1_[52]["CharacterAdded"]:Connect(function(L_1617_arg0)
+    wait(1)
+    if L_1_[69] then
+        L_1_[102](false)
+        wait(.1)
+        L_1_[102](true)
+    end
+end)
+
+L_1_[48] = function()
+    local L_1624_ = {}
+    L_1624_[1] = game["Players"]["LocalPlayer"]["Character"]:WaitForChild("Dodge")
+    for L_1625_forvar0, L_1626_forvar1 in next, getgc() do
+        local L_1627_ = {}
+        L_1627_[2], L_1627_[3] = L_1625_forvar0, L_1626_forvar1
+        if typeof(L_1627_[3]) == "function" then
+            local L_1628_ = {}
+            L_1628_[1] = getfenv(L_1627_[3])
+            if L_1628_[1]["script"] == L_1624_[1] then
+                for L_1629_forvar0, L_1630_forvar1 in next, getupvalues(L_1627_[3]) do
+                    local L_1631_ = {}
+                    L_1631_[1], L_1631_[3] = L_1629_forvar0, L_1630_forvar1
+                    if tostring(L_1631_[3]) == "0.4" then
+                        setupvalue(L_1627_[3], L_1631_[1], 0)
+                    end
+                end
+            end
+        end
+    end
+end
+
+L_1_[43] = game["Players"]["LocalPlayer"]
+L_1_[20] = function(L_1731_arg0)
+    local L_1732_ = {}
+    L_1732_[3] = L_1731_arg0
+    if not L_1732_[3] then
+        return false
+    end
+    L_1732_[1] = L_1732_[3]:FindFirstChild("Humanoid")
+    return L_1732_[1] and L_1732_[1]["Health"] > 0
+end
+
+L_1_[134] = function(L_1733_arg0, L_1734_arg1)
+    local L_1735_ = {}
+    L_1735_[5], L_1735_[3] = L_1733_arg0, L_1734_arg1
+    L_1735_[2] = (game:GetService("Workspace"))["Enemies"]:GetChildren()
+    L_1735_[7] = (game:GetService("Players")):GetPlayers()
+    L_1735_[4] = {}
+    L_1735_[1] = (L_1735_[5]:GetPivot())["Position"]
+    for L_1736_forvar0, L_1737_forvar1 in ipairs(L_1735_[2]) do
+        local L_1738_ = {}
+        L_1738_[4], L_1738_[1] = L_1736_forvar0, L_1737_forvar1
+        L_1738_[3] = L_1738_[1]:FindFirstChild("HumanoidRootPart")
+        if L_1738_[3] and L_1_[20](L_1738_[1]) then
+            local L_1739_ = {}
+            L_1739_[2] = (L_1738_[3]["Position"] - L_1735_[1])["Magnitude"]
+            if L_1739_[2] <= L_1735_[3] then
+                table["insert"](L_1735_[4], L_1738_[1])
+            end
+        end
+    end
+    for L_1740_forvar0, L_1741_forvar1 in ipairs(L_1735_[7]) do
+        local L_1742_ = {}
+        L_1742_[2], L_1742_[1] = L_1740_forvar0, L_1741_forvar1
+        if L_1742_[1] ~= L_1_[43] and L_1742_[1]["Character"] then
+            local L_1743_ = {}
+            L_1743_[2] = L_1742_[1]["Character"]:FindFirstChild("HumanoidRootPart")
+            if L_1743_[2] and L_1_[20](L_1742_[1]["Character"]) then
+                local L_1744_ = {}
+                L_1744_[2] = (L_1743_[2]["Position"] - L_1735_[1])["Magnitude"]
+                if L_1744_[2] <= L_1735_[3] then
+                    table["insert"](L_1735_[4], L_1742_[1]["Character"])
+                end
+            end
+        end
+    end
+    return L_1735_[4]
+end
+
+function AttackNoCoolDown()
+    local L_1745_ = {}
+    L_1745_[7] = (game:GetService("Players"))["LocalPlayer"]
+    L_1745_[10] = L_1745_[7]["Character"]
+    if not L_1745_[10] then
+        return
+    end
+    L_1745_[1] = nil
+    for L_1746_forvar0, L_1747_forvar1 in ipairs(L_1745_[10]:GetChildren()) do
+        local L_1748_ = {}
+        L_1748_[3], L_1748_[1] = L_1746_forvar0, L_1747_forvar1
+        if L_1748_[1]:IsA("Tool") then
+            L_1745_[1] = L_1748_[1]
+            break
+        end
+    end
+    if not L_1745_[1] then
+        return
+    end
+    L_1745_[14] = L_1_[134](L_1745_[10], 60)
+    if #L_1745_[14] == 0 then
+        return
+    end
+    L_1745_[11] = game:GetService("ReplicatedStorage")
+    L_1745_[5] = L_1745_[11]:FindFirstChild("Modules")
+    if not L_1745_[5] then
+        return
+    end
+    L_1745_[4] = ((L_1745_[11]:WaitForChild("Modules")):WaitForChild("Net")):WaitForChild("RE/RegisterAttack")
+    L_1745_[2] = ((L_1745_[11]:WaitForChild("Modules")):WaitForChild("Net")):WaitForChild("RE/RegisterHit")
+    if not L_1745_[4] or not L_1745_[2] then
+        return
+    end
+    L_1745_[6], L_1745_[12] = {}, nil
+    for L_1749_forvar0, L_1750_forvar1 in ipairs(L_1745_[14]) do
+        local L_1751_ = {}
+        L_1751_[1], L_1751_[3] = L_1749_forvar0, L_1750_forvar1
+        if not L_1751_[3]:GetAttribute("IsBoat") then
+            local L_1752_ = {}
+            L_1752_[1] = {
+                "RightLowerArm",
+                "RightUpperArm",
+                "LeftLowerArm",
+                "LeftUpperArm",
+                "RightHand",
+                "LeftHand"
+            }
+            L_1752_[2] = L_1751_[3]:FindFirstChild(L_1752_[1][math["random"](#L_1752_[1])]) or L_1751_[3]["PrimaryPart"]
+            if L_1752_[2] then
+                table["insert"](L_1745_[6], {
+                    L_1751_[3],
+                    L_1752_[2]
+                })
+                L_1745_[12] = L_1752_[2]
+            end
+        end
+    end
+    if not L_1745_[12] then
+        return
+    end
+    L_1745_[4]:FireServer(0)
+    L_1745_[13] = L_1745_[7]:FindFirstChild("PlayerScripts")
+    if not L_1745_[13] then
+        return
+    end
+    L_1745_[8] = L_1745_[13]:FindFirstChildOfClass("LocalScript")
+    while not L_1745_[8] do
+        L_1745_[13]["ChildAdded"]:Wait()
+        L_1745_[8] = L_1745_[13]:FindFirstChildOfClass("LocalScript")
+    end
+    if getsenv then
+        local L_1753_ = {}
+        L_1753_[1], L_1753_[3] = pcall(getsenv, L_1745_[8])
+        if L_1753_[1] and L_1753_[3] then
+            L_1745_[9] = L_1753_[3]["_G"]["SendHitsToServer"]
+        end
+    end
+    L_1745_[15], L_1745_[16] = pcall(function()
+        return (require(L_1745_[5]["Flags"]))["COMBAT_REMOTE_THREAD"] or false
+    end)
+    if L_1745_[15] and (L_1745_[16] and L_1745_[9]) then
+        L_1745_[9](L_1745_[12], L_1745_[6])
+    elseif L_1745_[15] and not L_1745_[16] then
+        L_1745_[2]:FireServer(L_1745_[12], L_1745_[6])
+    end
+end
+
+CameraShakerR = require(game["ReplicatedStorage"]["Util"]["CameraShaker"])
+CameraShakerR:Stop()
+
+get_Monster = function()
+    for L_1754_forvar0, L_1755_forvar1 in pairs(workspace["Enemies"]:GetChildren()) do
+        local L_1756_ = {}
+        L_1756_[1], L_1756_[4] = L_1754_forvar0, L_1755_forvar1
+        L_1756_[3] = L_1756_[4]:FindFirstChild("UpperTorso") or L_1756_[4]:FindFirstChild("Head")
+        if L_1756_[4]:FindFirstChild("HumanoidRootPart", true) and L_1756_[3] then
+            if (L_1756_[4]["Head"]["Position"] - L_1_[42]["Character"]["HumanoidRootPart"]["Position"])["Magnitude"] <= 50 then
+                return true, L_1756_[3]["Position"]
+            end
+        end
+    end
+    for L_1757_forvar0, L_1758_forvar1 in pairs(workspace["SeaBeasts"]:GetChildren()) do
+        local L_1759_ = {}
+        L_1759_[2], L_1759_[3] = L_1757_forvar0, L_1758_forvar1
+        if L_1759_[3]:FindFirstChild("HumanoidRootPart") and (L_1759_[3]:FindFirstChild("Health") and L_1759_[3]["Health"]["Value"] > 0) then
+            return true, L_1759_[3]["HumanoidRootPart"]["Position"]
+        end
+    end
+    for L_1760_forvar0, L_1761_forvar1 in pairs(workspace["Enemies"]:GetChildren()) do
+        local L_1762_ = {}
+        L_1762_[1], L_1762_[2] = L_1760_forvar0, L_1761_forvar1
+        if L_1762_[2]:FindFirstChild("Health") and (L_1762_[2]["Health"]["Value"] > 0 and L_1762_[2]:FindFirstChild("VehicleSeat")) then
+            return true, L_1762_[2]["Engine"]["Position"]
+        end
+    end
+end
+
+Actived = function()
+    local L_1763_ = {}
+    L_1763_[1] = game["Players"]["LocalPlayer"]["Character"]:FindFirstChildOfClass("Tool")
+    for L_1764_forvar0, L_1765_forvar1 in next, getconnections(L_1763_[1]["Activated"]) do
+        local L_1766_ = {}
+        L_1766_[2], L_1766_[3] = L_1764_forvar0, L_1765_forvar1
+        if typeof(L_1766_[3]["Function"]) == "function" then
+            getupvalues(L_1766_[3]["Function"])
+        end
+    end
+end
+
+-- ============================================
+-- SPAWN LOOPS - These check _G variables
+-- ============================================
+
+-- Auto SuperHuman
+spawn(function()
+    while wait(Sec) do
+        pcall(function()
+            if _G["Auto_SuperHuman"] then
+                local L_988_ = {}
+                L_988_[2] = L_1_[45]["Data"]["Beli"]["Value"]
+                L_988_[1] = L_1_[45]["Data"]["Fragments"]["Value"]
+                if L_1_[45]:FindFirstChild("WeaponAssetCache") then
+                    if not GetBP("Superhuman") then
+                        if not GetBP("Black Leg") then
+                            if L_988_[2] >= 150000 then
+                                L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuyBlackLeg")
+                            end
+                        elseif GetBP("Black Leg") and (GetBP("Black Leg"))["Level"]["Value"] < 299 then
+                            _G["Level"] = true
+                        elseif GetBP("Black Leg") and (GetBP("Black Leg"))["Level"]["Value"] >= 300 then
+                            _G["Level"] = false
+                        end
+                        if not GetBP("Electro") then
+                            if L_988_[2] >= 500000 then
+                                L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuyElectro")
+                            end
+                        elseif GetBP("Electro") and (GetBP("Electro"))["Level"]["Value"] < 299 then
+                            _G["Level"] = true
+                        elseif GetBP("Electro") and (GetBP("Electro"))["Level"]["Value"] >= 300 then
+                            _G["Level"] = false
+                        end
+                        if not GetBP("Fishman Karate") then
+                            if L_988_[2] >= 750000 then
+                                L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuyFishmanKarate")
+                            end
+                        elseif GetBP("Fishman Karate") and (GetBP("Fishman Karate"))["Level"]["Value"] < 299 then
+                            _G["Level"] = true
+                        elseif GetBP("Fishman Karate") and (GetBP("Fishman Karate"))["Level"]["Value"] >= 300 then
+                            _G["Level"] = false
+                        end
+                        if not GetBP("Dragon Claw") then
+                            if L_988_[1] >= 1500 then
+                                L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BlackbeardReward", "DragonClaw", "2")
+                            end
+                        elseif GetBP("Dragon Claw") and (GetBP("Dragon Claw"))["Level"]["Value"] < 299 then
+                            _G["Level"] = true
+                        elseif GetBP("Dragon Claw") and (GetBP("Dragon Claw"))["Level"]["Value"] >= 300 then
+                            _G["Level"] = false
+                        end
+                        L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuySuperhuman")
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+-- Auto DeathStep
+spawn(function()
+    while wait(Sec) do
+        if _G["AutoDeathStep"] then
+            pcall(function()
+                if L_1_[45]:FindFirstChild("WeaponAssetCache") then
+                    if not GetBP("Death Step") then
+                        if not GetBP("Black Leg") then
+                            L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuyBlackLeg")
+                        end
+                        if GetBP("Black Leg") and (GetBP("Black Leg"))["Level"]["Value"] >= 400 then
+                            L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuyDeathStep")
+                            _G["Level"] = false
+                        elseif GetBP("Black Leg") and (GetBP("Black Leg"))["Level"]["Value"] < 399 then
+                            _G["Level"] = true
+                        end
+                        if GetBP("Black Leg") or (GetBP("Black Leg"))["Level"]["Value"] >= 400 then
+                            if workspace["Map"]["IceCastle"]["Hall"]["LibraryDoor"]["PhoeyuDoor"]["Transparency"] == 0 then
+                                if GetBP("Library Key") then
+                                    repeat
+                                        wait()
+                                        _tp(CFrame["new"](6371.2001953125, 296.63433837891, -6841.1811523438))
+                                    until not _G["AutoDeathStep"] or Root["Position"] == (CFrame["new"](6371.2001953125, 296.63433837891, -6841.1811523438))["Position"]
+                                    if Root["CFrame"] == CFrame["new"](6371.2001953125, 296.63433837891, -6841.1811523438) then
+                                        L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuyDeathStep")
+                                    end
+                                elseif not GetBP("Library Key") then
+                                    local L_991_ = {}
+                                    L_991_[1] = GetConnectionEnemies("Awakened Ice Admiral")
+                                    if L_991_[1] then
+                                        repeat
+                                            wait()
+                                            L_1_[4]["Kill"](L_991_[1], _G["AutoDeathStep"])
+                                        until not L_991_[1]["Parent"] or L_991_[1]["Humanoid"]["Health"] <= 0 or _G["AutoDeathStep"] == false or GetBP("Library Key") or GetBP("Death Step")
+                                    else
+                                        _tp(CFrame["new"](5668.9780273438, 28.519989013672, -6483.3520507813))
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+            end)
+        end
+    end
+end)
+
+-- Auto Sharkman Karate
+spawn(function()
+    while wait(Sec) do
+        if _G["Auto_SharkMan_Karate"] then
+            pcall(function()
+                if L_1_[45]:FindFirstChild("WeaponAssetCache") then
+                    if not GetBP("Sharkman Karate") then
+                        if not GetBP("Fishman Karate") then
+                            L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuyFishmanKarate")
+                        end
+                        if GetBP("Fishman Karate") and (GetBP("Fishman Karate"))["Level"]["Value"] >= 400 then
+                            L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuySharkmanKarate")
+                            _G["Level"] = false
+                        elseif GetBP("Fishman Karate") and (GetBP("Fishman Karate"))["Level"]["Value"] < 399 then
+                            _G["Level"] = true
+                        end
+                        if GetBP("Fishman Karate") or (GetBP("Fishman Karate"))["Level"]["Value"] >= 400 then
+                            if GetBP("Water Key") then
+                                if string["find"](L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuySharkmanKarate"), "keys") then
+                                    if GetBP("Water Key") then
+                                        repeat
+                                            wait()
+                                            _tp(CFrame["new"](-2604.6958, 239.432526, -10315.1982, .0425701365, 0, -0.999093413, 0, 1, 0, .999093413, 0, .0425701365))
+                                        until not _G["Auto_SharkMan_Karate"] or Root["Position"] == (CFrame["new"](-2604.6958, 239.432526, -10315.1982, .0425701365, 0, -0.999093413, 0, 1, 0, .999093413, 0, .0425701365))["Position"]
+                                        L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuySharkmanKarate")
+                                    end
+                                end
+                            elseif not GetBP("Water Key") then
+                                local L_994_ = {}
+                                L_994_[2] = GetConnectionEnemies("Tide Keeper")
+                                if L_994_[2] then
+                                    repeat
+                                        wait()
+                                        L_1_[4]["Kill"](L_994_[2], _G["Auto_SharkMan_Karate"])
+                                    until not L_994_[2]["Parent"] or L_994_[2]["Humanoid"]["Health"] <= 0 or _G["Auto_SharkMan_Karate"] == false or GetBP("Water Key") or GetBP("Sharkman Karate")
+                                else
+                                    _tp(CFrame["new"](-3053.9814453125, 237.18954467773, -10145.0390625))
+                                end
+                            end
+                        end
+                    end
+                end
+            end)
+        end
+    end
+end)
+
+-- Auto ElectricClaw
+spawn(function()
+    while wait(Sec) do
+        if _G["Auto_Electric_Claw"] then
+            pcall(function()
+                if L_1_[45]:FindFirstChild("WeaponAssetCache") then
+                    if not GetBP("Electro") then
+                        L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuyElectro")
+                    end
+                    if GetBP("Electro") and (GetBP("Electro"))["Level"]["Value"] >= 400 then
+                        if L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuyElectricClaw", "Start") == nil then
+                            notween(CFrame["new"](-12548, 337, -7481))
+                        end
+                        L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuyElectricClaw")
+                    elseif GetBP("Electro") and (GetBP("Electro"))["Level"]["Value"] < 400 then
+                        repeat
+                            _G["AutoFarm_Bone"] = true
+                            wait()
+                        until not _G["Auto_Electric_Claw"] or GetBP("Electric Claw")
+                        _G["AutoFarm_Bone"] = false
+                    end
+                end
+            end)
+        end
+    end
+end)
+
+-- Auto DragonTalon
+spawn(function()
+    while wait(Sec) do
+        if _G["AutoDragonTalon"] then
+            pcall(function()
+                if L_1_[45]:FindFirstChild("WeaponAssetCache") then
+                    if not GetBP("Dragon Claw") then
+                        L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BlackbeardReward", "DragonClaw", "2")
+                    end
+                    if GetBP("Dragon Claw") and (GetBP("Dragon Claw"))["Level"]["Value"] >= 400 then
+                        L_1_[18]["Remotes"]["CommF_"]:InvokeServer("Bones", "Buy", 1, 1)
+                        L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuyDragonTalon")
+                    elseif GetBP("Dragon Claw") and (GetBP("Dragon Claw"))["Level"]["Value"] < 400 then
+                        repeat
+                            _G["AutoFarm_Bone"] = true
+                            wait()
+                        until not _G["AutoDragonTalon"] or GetBP("Dragon Talon")
+                        _G["AutoFarm_Bone"] = false
+                    end
+                end
+            end)
+        end
+    end
+end)
+
+-- Auto Godhuman
+spawn(function()
+    while wait() do
+        pcall(function()
+            if _G["Auto_God_Human"] then
+                if L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuyGodhuman", true) == L_1_[2]({
+                    "Bring me 20 Fish Tai",
+                    "ls, 20 Magma Ore, 10",
+                    " Dragon Scales and 1",
+                    "0 Mystic Droplets."
+                }) then
+                    if GetM("Dragon Scale") == false or GetM("Dragon Scale") < 10 then
+                        if World3 then
+                            Lv = 1575
+                            _G["Level"] = true
+                        else
+                            L_1_[18]["Remotes"]["CommF_"]:InvokeServer("TravelZou")
+                        end
+                    elseif GetM("Fish Tail") == false or GetM("Fish Tail") < 20 then
+                        if World3 then
+                            Lv = 1775
+                            _G["Level"] = true
+                        else
+                            L_1_[18]["Remotes"]["CommF_"]:InvokeServer("TravelZou")
+                        end
+                    elseif GetM("Mystic Droplet") == false or GetM("Mystic Droplet") < 10 then
+                        if World2 then
+                            Lv = 1425
+                            _G["Level"] = true
+                        else
+                            L_1_[18]["Remotes"]["CommF_"]:InvokeServer("TravelDressrosa")
+                        end
+                    elseif GetM("Magma Ore") == false or GetM("Magma Ore") < 20 then
+                        if World2 then
+                            Lv = 1175
+                            _G["Level"] = true
+                        else
+                            L_1_[18]["Remotes"]["CommF_"]:InvokeServer("TravelDressrosa")
+                        end
+                    end
+                elseif L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuyGodhuman", true) == 3 then
+                    return nil
+                else
+                    L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuyGodhuman")
+                end
+            end
+        end)
+    end
+end)
+
+-- Auto SanguineArt
+spawn(function()
+    while wait(Sec) do
+        if _G["Snaguine"] then
+            pcall(function()
+                if not GetBP("Sanguine Art") then
+                    L_1_[18]["Remotes"]["CommF_"]:InvokeServer("Sanguine Art")
+                end
+                if not GetBP("Sanguine Art") then
+                    if GetM("Leviathan Heart") >= 1 then
+                        print("Completed!!")
+                    else
+                        if World3 then
+                            _G["DangerSc"] = "Lv Infinite"
+                            _G["SailBoats"] = true
+                        else
+                            _G["SailBoats"] = false
+                        end
+                    end
+                    if GetM("Vampire Fang") <= 19 then
+                        if World2 then
+                            local L_1003_ = {}
+                            L_1003_[1] = GetConnectionEnemies("Vampire")
+                            if L_1003_[1] then
+                                repeat
+                                    task["wait"]()
+                                    L_1_[4]["Kill"](L_1003_[1], _G["Snaguine"])
+                                until not _G["Snaguine"] or L_1003_[1]["Humanoid"]["Health"] <= 0 or not L_1003_[1]["Parent"]
+                            else
+                                _tp(CFrame["new"](-6041.2924804688, 6.4027109146118, -1304.6333007812))
+                            end
+                        else
+                            L_1_[18]["Remotes"]["CommF_"]:InvokeServer("TravelDressrosa")
+                        end
+                    end
+                    if GetM("Vampire Fang") >= 20 and GetM("Demonic Wisp") <= 19 then
+                        if World3 then
+                            local L_1004_ = {}
+                            L_1004_[1] = GetConnectionEnemies("Demonic Soul")
+                            if L_1004_[1] then
+                                repeat
+                                    task["wait"]()
+                                    L_1_[4]["Kill"](L_1004_[1], _G["Snaguine"])
+                                until not _G["Snaguine"] or L_1004_[1]["Humanoid"]["Health"] <= 0 or not L_1004_[1]["Parent"]
+                            else
+                                _tp(CFrame["new"](-9495.6806640625, 453.58624267578, 5977.3486328125))
+                            end
+                        else
+                            L_1_[18]["Remotes"]["CommF_"]:InvokeServer("TravelZou")
+                        end
+                    end
+                    if GetM("Vampire Fang") >= 20 and (GetM("Demonic Wisp") >= 20 and GetM("Dark Fragment") <= 1) then
+                        if World2 then
+                            local L_1005_ = {}
+                            L_1005_[2] = GetConnectionEnemies("Darkbeard")
+                            if L_1005_[2] then
+                                repeat
+                                    task["wait"]()
+                                    L_1_[4]["Kill"](black, _G["Snaguine"])
+                                until _G["Snaguine"] or black["Humanoid"]["Health"] <= 0 or not black["Parent"]
+                            else
+                                _tp(CFrame["new"](3798.4575195313, 13.826690673828, -3399.806640625))
+                            end
+                        else
+                            L_1_[18]["Remotes"]["CommF_"]:InvokeServer("TravelDressrosa")
+                        end
+                    end
+                else
+                    L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuySanguineArt")
+                end
+            end)
+        end
+    end
+end)
+
+-- Auto Find Mirage Island
+spawn(function()
+    while wait() do
+        if _G["FindMirage"] then
+            pcall(function()
+                if not workspace["_WorldOrigin"]["Locations"]:FindFirstChild("Mirage Island", true) then
+                    local L_1008_ = {}
+                    L_1008_[1] = CheckBoat()
+                    if not L_1008_[1] then
+                        local L_1009_ = {}
+                        L_1009_[1] = CFrame["new"](-16927.451, 9.086, 433.864)
+                        TeleportToTarget(L_1009_[1])
+                        if (L_1009_[1]["Position"] - L_1_[45]["Character"]["HumanoidRootPart"]["Position"])["Magnitude"] <= 10 then
+                            L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuyBoat", _G["SelectedBoat"])
+                        end
+                    else
+                        if L_1_[45]["Character"]["Humanoid"]["Sit"] == false then
+                            local L_1010_ = {}
+                            L_1010_[2] = L_1008_[1]["VehicleSeat"]["CFrame"] * CFrame["new"](0, 1, 0)
+                            _tp(L_1010_[2])
+                        else
+                            repeat
+                                local L_1011_ = {}
+                                wait()
+                                L_1011_[1] = CFrame["new"](-10000000, 31, 37016.25)
+                                if CheckEnemiesBoat() or CheckTerrorShark() or CheckPirateGrandBrigade() then
+                                    _tp(CFrame["new"](-10000000, 150, 37016.25))
+                                else
+                                    _tp(CFrame["new"](-10000000, 31, 37016.25))
+                                end
+                            until not _G["FindMirage"] or (L_1011_[1]["Position"] - L_1_[45]["Character"]["HumanoidRootPart"]["Position"])["Magnitude"] <= 10 or workspace["_WorldOrigin"]["Locations"]:FindFirstChild("Mirage Island") or L_1_[45]["Character"]["Humanoid"]["Sit"] == false
+                            L_1_[45]["Character"]["Humanoid"]["Sit"] = false
+                        end
+                    end
+                else
+                    _tp(workspace["Map"]["MysticIsland"]["Center"]["CFrame"] * CFrame["new"](0, 300, 0))
+                end
+            end)
+        end
+    end
+end)
+
+-- Auto Tween To Mirage Island
+spawn(function()
+    while task["wait"](.1) do
+        pcall(function()
+            if _G["AutoMysticIsland"] then
+                for L_1016_forvar0, L_1017_forvar1 in pairs((game:GetService("Workspace"))["_WorldOrigin"]["Locations"]:GetChildren()) do
+                    if L_1017_forvar1["Name"] == "Mirage Island" then
+                        tween(L_1017_forvar1["CFrame"] * CFrame["new"](0, 300, 0))
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+-- Auto Upgrade FishMan
+spawn(function()
+    while wait(Sec) do
+        pcall(function()
+            if _G["Auto_Fish"] then
+                if L_1_[18]["Remotes"]["CommF_"]:InvokeServer("Alchemist", "1") ~= -2 then
+                    if L_1_[18]["Remotes"]["CommF_"]:InvokeServer("Alchemist", "1") == 0 then
+                        L_1_[18]["Remotes"]["CommF_"]:InvokeServer("Alchemist", "2")
+                    elseif L_1_[18]["Remotes"]["CommF_"]:InvokeServer("Alchemist", "1") == 1 then
+                        if not L_1_[45]["Backpack"]:FindFirstChild("Flower 1") and not L_1_[45]["Character"]:FindFirstChild("Flower 1") then
+                            _tp(workspace["Flower1"]["CFrame"])
+                        elseif not L_1_[45]["Backpack"]:FindFirstChild("Flower 2") and not L_1_[45]["Character"]:FindFirstChild("Flower 2") then
+                            _tp(workspace["Flower2"]["CFrame"])
+                        elseif not L_1_[45]["Backpack"]:FindFirstChild("Flower 3") and not L_1_[45]["Character"]:FindFirstChild("Flower 3") then
+                            local L_1061_ = {}
+                            L_1061_[1] = GetConnectionEnemies("Swan Pirate")
+                            if L_1061_[1] then
+                                repeat
+                                    wait()
+                                    L_1_[4]["Kill"](L_1061_[1], _G["Auto_Fish"])
+                                until L_1_[45]["Backpack"]:FindFirstChild("Flower 3") or not L_1061_[1]["Parent"] or L_1061_[1]["Humanoid"]["Health"] <= 0 or _G["Auto_Fish"] == false
+                            else
+                                _tp(CFrame["new"](980.09851074219, 121.33129882812, 1287.2093505859))
+                            end
+                        end
+                    elseif L_1_[18]["Remotes"]["CommF_"]:InvokeServer("Alchemist", "1") == 2 then
+                        L_1_[18]["Remotes"]["CommF_"]:InvokeServer("Alchemist", "3")
+                    end
+                elseif L_1_[18]["Remotes"]["CommF_"]:InvokeServer("Wenlocktoad", "1") == 0 then
+                    L_1_[18]["Remotes"]["CommF_"]:InvokeServer("Wenlocktoad", "2")
+                elseif L_1_[18]["Remotes"]["CommF_"]:InvokeServer("Wenlocktoad", "1") == 1 then
+                    warn("Sea Beast Soon")
+                end
+            end
+        end)
+    end
+end)
+
+-- Auto Pull Lever
+spawn(function()
+    while wait(Sec) do
+        if _G["Lver"] then
+            pcall(function()
+                for L_1064_forvar0, L_1065_forvar1 in pairs(workspace["Map"]["Temple of Time"]:GetDescendants()) do
+                    local L_1066_ = {}
+                    L_1066_[3], L_1066_[2] = L_1064_forvar0, L_1065_forvar1
+                    if L_1066_[2]["Name"] == "ProximityPrompt" then
+                        fireproximityprompt(L_1066_[2], math["huge"])
+                    end
+                end
+            end)
+        end
+    end
+end)
+
+-- Auto Train V4
+spawn(function()
+    while wait(Sec) do
+        pcall(function()
+            if _G["AcientOne"] then
+                local L_1069_ = {}
+                L_1069_[2] = {
+                    "Reborn Skeleton",
+                    "Living Zombie",
+                    "Demonic Soul",
+                    "Posessed Mummy"
+                }
+                for L_1070_forvar0 = 1, #L_1069_[2], 1 do
+                    if (L_1_[45]["Character"]:FindFirstChild("RaceEnergy"))["Value"] == 1 then
+                        vim1:SendKeyEvent(true, "Y", false, game)
+                        L_1_[18]["Remotes"]["CommF_"]:InvokeServer("UpgradeRace", "Buy")
+                        _tp(CFrame["new"](-8987.041015625, 215.86206054688, 5886.7104492188))
+                    elseif (L_1_[45]["Character"]:FindFirstChild("RaceTransformed"))["Value"] == false then
+                        local L_1071_ = {}
+                        L_1071_[1] = GetConnectionEnemies(L_1069_[2])
+                        if L_1071_[1] then
+                            repeat
+                                wait()
+                                L_1_[4]["Kill"](L_1071_[1], _G["AcientOne"])
+                            until _G["AcientOne"] == false or L_1071_[1]["Humanoid"]["Health"] <= 0 or not L_1071_[1]["Parent"]
+                        else
+                            _tp(CFrame["new"](-9495.6806640625, 453.58624267578, 5977.3486328125))
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+-- Auto Teleport to Race Doors
+spawn(function()
+    while wait(Sec) do
+        pcall(function()
+            if _G["TPDoor"] then
+                if tostring(L_1_[45]["Data"]["Race"]["Value"]) == "Mink" then
+                    _tp(CFrame["new"](29020.66015625, 14889.426757812, -379.2682800293))
+                elseif tostring(L_1_[45]["Data"]["Race"]["Value"]) == "Fishman" then
+                    _tp(CFrame["new"](28224.056640625, 14889.426757812, -210.58720397949))
+                elseif tostring(L_1_[45]["Data"]["Race"]["Value"]) == "Cyborg" then
+                    _tp(CFrame["new"](28492.4140625, 14894.426757812, -422.11001586914))
+                elseif tostring(L_1_[45]["Data"]["Race"]["Value"]) == "Skypiea" then
+                    _tp(CFrame["new"](28967.408203125, 14918.075195312, 234.31198120117))
+                elseif tostring(L_1_[45]["Data"]["Race"]["Value"]) == "Ghoul" then
+                    _tp(CFrame["new"](28672.720703125, 14889.127929688, 454.59616088867))
+                elseif tostring(L_1_[45]["Data"]["Race"]["Value"]) == "Human" then
+                    _tp(CFrame["new"](29237.294921875, 14889.426757812, -206.94955444336))
+                end
+            end
+        end)
+    end
+end)
+
+-- Auto Complete Trial Race - Mink
+spawn(function()
+    while wait(Sec) do
+        pcall(function()
+            if _G["Complete_Trials"] then
+                if tostring(L_1_[45]["Data"]["Race"]["Value"]) == "Mink" then
+                    notween(workspace["Map"]["MinkTrial"]["Ceiling"]["CFrame"] * CFrame["new"](0, -20, 0))
+                end
+            end
+        end)
+    end
+end)
+
+-- Auto Complete Trial Race - Fishman
+spawn(function()
+    while wait(Sec) do
+        pcall(function()
+            if _G["Complete_Trials"] then
+                if tostring(L_1_[45]["Data"]["Race"]["Value"]) == "Fishman" then
+                    if GetSeaBeastTrial() then
+                        repeat
+                            task["wait"]()
+                            spawn(function()
+                                _tp(CFrame["new"]((GetSeaBeastTrial())["HumanoidRootPart"]["Position"]["X"], (game:GetService("Workspace"))["Map"]["WaterBase-Plane"]["Position"]["Y"] + 300, (GetSeaBeastTrial())["HumanoidRootPart"]["Position"]["Z"]))
+                            end)
+                            MousePos = (GetSeaBeastTrial())["HumanoidRootPart"]["Position"]
+                            Useskills("Melee", "Z")
+                            Useskills("Melee", "X")
+                            Useskills("Melee", "C")
+                            wait(.1)
+                            Useskills("Sword", "Z")
+                            Useskills("Sword", "X")
+                            wait(.1)
+                            Useskills("Blox Fruit", "Z")
+                            Useskills("Blox Fruit", "X")
+                            Useskills("Blox Fruit", "C")
+                            wait(.1)
+                            Useskills("Gun", "Z")
+                            Useskills("Gun", "X")
+                        until _G["Complete_Trials"] == false or not GetSeaBeastTrial()
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+-- Auto Complete Trial Race - Cyborg
+spawn(function()
+    while wait(Sec) do
+        pcall(function()
+            if _G["Complete_Trials"] then
+                if tostring(L_1_[45]["Data"]["Race"]["Value"]) == "Cyborg" then
+                    _tp(workspace["Map"]["CyborgTrial"]["Floor"]["CFrame"] * CFrame["new"](0, 500, 0))
+                end
+            end
+        end)
+    end
+end)
+
+-- Auto Complete Trial Race - Skypiea
+spawn(function()
+    while wait(Sec) do
+        pcall(function()
+            if _G["Complete_Trials"] then
+                if tostring(L_1_[45]["Data"]["Race"]["Value"]) == "Skypiea" then
+                    notween(workspace["Map"]["SkyTrial"]["Model"]["FinishPart"]["CFrame"])
+                end
+            end
+        end)
+    end
+end)
+
+-- Auto Complete Trial Race - Human/Ghoul
+spawn(function()
+    while wait(.1) do
+        pcall(function()
+            if _G["Complete_Trials"] then
+                if tostring(L_1_[45]["Data"]["Race"]["Value"]) == "Human" or tostring(L_1_[45]["Data"]["Race"]["Value"]) == "Ghoul" then
+                    local L_1085_ = {}
+                    L_1085_[2] = {
+                        "Ancient Vampire",
+                        "Ancient Zombie"
+                    }
+                    L_1085_[3] = GetConnectionEnemies(L_1085_[2])
+                    if L_1085_[3] then
+                        repeat
+                            wait()
+                            L_1_[4]["Kill"](L_1085_[3], _G["Complete_Trials"])
+                        until _G["Complete_Trials"] == false or not L_1085_[3]["Parent"] or L_1085_[3]["Humanoid"]["Health"] <= 0
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+-- Auto Kill Player After Trial
+spawn(function()
+    while task["wait"](Sec) do
+        pcall(function()
+            if _G["Defeating"] then
+                for L_1088_forvar0, L_1089_forvar1 in pairs(workspace["Characters"]:GetChildren()) do
+                    local L_1090_ = {}
+                    L_1090_[2], L_1090_[1] = L_1088_forvar0, L_1089_forvar1
+                    if L_1090_[1]["Name"] ~= L_1_[45]["Name"] then
+                        if L_1090_[1]["Humanoid"]["Health"] > 0 and (L_1090_[1]:FindFirstChild("HumanoidRootPart") and (L_1090_[1]["Parent"] and (Root["Position"] - L_1090_[1]["HumanoidRootPart"]["Position"])["Magnitude"] <= 250)) then
+                            repeat
+                                task["wait"]()
+                                EquipWeapon(_G["SelectWeapon"])
+                                _tp(L_1090_[1]["HumanoidRootPart"]["CFrame"] * CFrame["new"](0, 0, 15))
+                                sethiddenproperty(L_1_[45], "SimulationRadius", math["huge"])
+                            until _G["Defeating"] == false or L_1090_[1]["Humanoid"]["Health"] <= 0 or not L_1090_[1]["Parent"] or not L_1090_[1]:FindFirstChild("HumanoidRootPart") or not L_1090_[1]:FindFirstChild("Humanoid")
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+-- Ship Speed Modifier
+(game:GetService("RunService"))["RenderStepped"]:Connect(function()
+    if (getgenv())["SpeedBoat"] then
+        local L_1209_ = {}
+        L_1209_[1] = (game:GetService("Players"))["LocalPlayer"]
+        if L_1209_[1]["Character"] and L_1209_[1]["Character"]:FindFirstChild("Humanoid") then
+            if L_1209_[1]["Character"]["Humanoid"]["Sit"] then
+                for L_1210_forvar0, L_1211_forvar1 in pairs((game:GetService("Workspace"))["Boats"]:GetChildren()) do
+                    local L_1212_ = {}
+                    L_1212_[3], L_1212_[4] = L_1210_forvar0, L_1211_forvar1
+                    L_1212_[1] = L_1212_[4]:FindFirstChildWhichIsA("VehicleSeat")
+                    if L_1212_[1] then
+                        L_1212_[1]["MaxSpeed"] = SetSpeedBoat
+                    end
+                end
+            end
+        end
+    end
+end)
+
+-- Auto Press W
+spawn(function()
+    while wait() do
+        pcall(function()
+            if (getgenv())["AutoPressW"] then
+                local L_1217_ = {}
+                L_1217_[1] = game["Players"]["LocalPlayer"]["Character"]:WaitForChild("Humanoid")
+                if L_1217_[1]["Sit"] == true then
+                    (game:GetService("VirtualInputManager")):SendKeyEvent(true, "W", false, game)
+                end
+            end
+        end)
+    end
+end)
+
+-- No Clip Ship
+spawn(function()
+    while wait() do
+        pcall(function()
+            for L_1220_forvar0, L_1221_forvar1 in pairs((game:GetService("Workspace"))["Boats"]:GetChildren()) do
+                local L_1222_ = {}
+                L_1222_[1], L_1222_[2] = L_1220_forvar0, L_1221_forvar1
+                for L_1223_forvar0, L_1224_forvar1 in pairs(L_1222_[2]:GetDescendants()) do
+                    local L_1225_ = {}
+                    L_1225_[1], L_1225_[3] = L_1223_forvar0, L_1224_forvar1
+                    if L_1225_[3]:IsA("BasePart") then
+                        if (getgenv())["NoClipShip"] or (getgenv())["FindPrehistoric"] then
+                            L_1225_[3]["CanCollide"] = false
+                        else
+                            L_1225_[3]["CanCollide"] = true
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+-- Auto Sail Boat
+spawn(function()
+    while wait() do
+        if _G["SailBoats"] then
+            pcall(function()
+                local L_1240_ = {}
+                L_1240_[2] = CheckBoat()
+                if not L_1240_[2] and (not(CheckShark() and _G["Shark"] or CheckTerrorShark() and _G["TerrorShark"] or CheckFishCrew() and _G["MobCrew"] or CheckPiranha() and _G["Piranha"]) and (not(CheckEnemiesBoat() and _G["FishBoat"]) and (not(CheckSeaBeast() and _G["SeaBeast1"]) and (not(_G["PGB"] and CheckPirateGrandBrigade()) and (not(_G["HCM"] and CheckHauntedCrew()) and not(_G["Leviathan1"] and CheckLeviathan())))))) then
+                    local L_1241_ = {}
+                    L_1241_[1] = CFrame["new"](-16927.451, 9.086, 433.864)
+                    TeleportToTarget(L_1241_[1])
+                    if (L_1241_[1]["Position"] - L_1_[45]["Character"]["HumanoidRootPart"]["Position"])["Magnitude"] <= 10 then
+                        L_1_[18]["Remotes"]["CommF_"]:InvokeServer("BuyBoat", _G["SelectedBoat"])
+                    end
+                elseif L_1240_[2] and (not(CheckShark() and _G["Shark"] or CheckTerrorShark() and _G["TerrorShark"] or CheckFishCrew() and _G["MobCrew"] or CheckPiranha() and _G["Piranha"]) and (not(CheckEnemiesBoat() and _G["FishBoat"]) and (not(CheckSeaBeast() and _G["SeaBeast1"]) and (not(_G["PGB"] and CheckPirateGrandBrigade()) and (not(_G["HCM"] and CheckHauntedCrew()) and not(_G["Leviathan1"] and CheckLeviathan())))))) then
+                    if L_1_[45]["Character"]["Humanoid"]["Sit"] == false then
+                        local L_1242_ = {}
+                        L_1242_[2] = L_1240_[2]["VehicleSeat"]["CFrame"] * CFrame["new"](0, 1, 0)
+                        _tp(L_1242_[2])
+                    else
+                        if _G["DangerSc"] == "Lv 1" then
+                            CFrameSelectedZone = CFrame["new"](-21998.375, 30.0006084, -682.309143)
+                        elseif _G["DangerSc"] == "Lv 2" then
+                            CFrameSelectedZone = CFrame["new"](-26779.5215, 30.0005474, -822.858032)
+                        elseif _G["DangerSc"] == "Lv 3" then
+                            CFrameSelectedZone = CFrame["new"](-31171.957, 30.0001011, -2256.93774)
+                        elseif _G["DangerSc"] == "Lv 4" then
+                            CFrameSelectedZone = CFrame["new"](-34054.6875, 30.2187767, -2560.12012)
+                        elseif _G["DangerSc"] == "Lv 5" then
+                            CFrameSelectedZone = CFrame["new"](-38887.5547, 30.0004578, -2162.99023)
+                        elseif _G["DangerSc"] == "Lv 6" then
+                            CFrameSelectedZone = CFrame["new"](-44541.7617, 30.0003204, -1244.8584)
+                        elseif _G["DangerSc"] == "Lv Infinite" then
+                            CFrameSelectedZone = CFrame["new"](-10000000, 31, 37016.25)
+                        end
+                        repeat
+                            wait()
+                            if not _G["FishBoat"] and CheckEnemiesBoat() or not _G["PGB"] and CheckPirateGrandBrigade() or not _G["TerrorShark"] and CheckTerrorShark() then
+                                _tp(CFrameSelectedZone * CFrame["new"](0, 150, 0))
+                            else
+                                _tp(CFrameSelectedZone)
+                            end
+                        until _G["SailBoats"] == false or CheckShark() and _G["Shark"] or CheckTerrorShark() and _G["TerrorShark"] or CheckFishCrew() and _G["MobCrew"] or CheckPiranha() and _G["Piranha"] or CheckSeaBeast() and _G["SeaBeast1"] or CheckEnemiesBoat() and _G["FishBoat"] or _G["Leviathan1"] and CheckLeviathan() or _G["HCM"] and CheckHauntedCrew() or _G["PGB"] and CheckPirateGrandBrigade() or (L_1_[45]["Character"]:WaitForChild("Humanoid"))["Sit"] == false
+                        L_1_[45]["Character"]["Humanoid"]["Sit"] = false
+                    end
+                end
+            end)
+        end
+    end
+end)
+
+-- Boat collision handling
+spawn(function()
+    while wait(Sec) do
+        pcall(function()
+            for L_1243_forvar0, L_1244_forvar1 in pairs(workspace["Boats"]:GetChildren()) do
+                local L_1245_ = {}
+                L_1245_[3], L_1245_[2] = L_1243_forvar0, L_1244_forvar1
+                for L_1246_forvar0, L_1247_forvar1 in pairs(workspace["Boats"][L_1245_[2]["Name"]]:GetDescendants()) do
+                    local L_1248_ = {}
+                    L_1248_[1], L_1248_[2] = L_1246_forvar0, L_1247_forvar1
+                    if L_1248_[2]:IsA("BasePart") then
+                        if _G["SailBoats"] or _G["Prehis_Find"] or _G["FindMirage"] or _G["SailBoat_Hydra"] or _G["AutofindKitIs"] then
+                            L_1248_[2]["CanCollide"] = false
+                        else
+                            L_1248_[2]["CanCollide"] = true
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+-- Auto Shark
+spawn(function()
+    while wait() do
+        pcall(function()
+            if _G["Shark"] then
+                local L_1265_ = {}
+                L_1265_[2] = {
+                    "Shark"
+                }
+                if CheckShark() then
+                    for L_1266_forvar0, L_1267_forvar1 in pairs(workspace["Enemies"]:GetChildren()) do
+                        local L_1268_ = {}
+                        L_1268_[2], L_1268_[3] = L_1266_forvar0, L_1267_forvar1
+                        if table["find"](L_1265_[2], L_1268_[3]["Name"]) then
+                            if L_1_[4]["Alive"](L_1268_[3]) then
+                                repeat
+                                    task["wait"]()
+                                    L_1_[4]["Kill"](L_1268_[3], _G["Shark"])
+                                until _G["Shark"] == false or not L_1268_[3]["Parent"] or L_1268_[3]["Humanoid"]["Health"] <= 0
+                            end
+                        end
+                    end
+                end
+            end
+            if _G["TerrorShark"] then
+                local L_1269_ = {}
+                L_1269_[2] = {
+                    "Terrorshark"
+                }
+                if CheckTerrorShark() then
+                    for L_1270_forvar0, L_1271_forvar1 in pairs(workspace["Enemies"]:GetChildren()) do
+                        local L_1272_ = {}
+                        L_1272_[2], L_1272_[1] = L_1270_forvar0, L_1271_forvar1
+                        if table["find"](L_1269_[2], L_1272_[1]["Name"]) then
+                            if L_1_[4]["Alive"](L_1272_[1]) then
+                                repeat
+                                    task["wait"]()
+                                    L_1_[4]["KillSea"](L_1272_[1], _G["TerrorShark"])
+                                until _G["TerrorShark"] == false or not L_1272_[1]["Parent"] or L_1272_[1]["Humanoid"]["Health"] <= 0
+                            end
+                        end
+                    end
+                end
+            end
+            if _G["Piranha"] then
+                local L_1273_ = {}
+                L_1273_[1] = {
+                    "Piranha"
+                }
+                if CheckPiranha() then
+                    for L_1274_forvar0, L_1275_forvar1 in pairs(workspace["Enemies"]:GetChildren()) do
+                        local L_1276_ = {}
+                        L_1276_[1], L_1276_[2] = L_1274_forvar0, L_1275_forvar1
+                        if table["find"](L_1273_[1], L_1276_[2]["Name"]) then
+                            if L_1_[4]["Alive"](L_1276_[2]) then
+                                repeat
+                                    task["wait"]()
+                                    L_1_[4]["Kill"](L_1276_[2], _G["Piranha"])
+                                until _G["Piranha"] == false or not L_1276_[2]["Parent"] or L_1276_[2]["Humanoid"]["Health"] <= 0
+                            end
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+-- Aimbot Method Skills - Aim Player
+spawn(function()
+    while wait() do
+        pcall(function()
+            if _G["AimMethod"] and ABmethod == "Aim Player" then
+                local L_1570_ = {}
+                L_1570_[1] = L_1_[59]:FindFirstChild((getgenv())["PlayersList"])
+                if L_1570_[1] and (L_1570_[1]["Character"] and L_1570_[1]["Character"]:FindFirstChild("HumanoidRootPart")) then
+                    if L_1570_[1]["Team"] ~= L_1_[42]["Team"] then
+                        MousePos = L_1570_[1]["Character"]["HumanoidRootPart"]["Position"]
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+-- Aimbot Method Skills - Nearest Aim
+spawn(function()
+    while wait() do
+        pcall(function()
+            if _G["AimMethod"] and ABmethod == "Nearest Aim" then
+                local L_1571_ = {}
+                L_1571_[2] = math["huge"]
+                for L_1572_forvar0, L_1573_forvar1 in pairs(L_1_[59]:GetPlayers()) do
+                    local L_1574_ = {}
+                    L_1574_[3], L_1574_[1] = L_1572_forvar0, L_1573_forvar1
+                    if L_1574_[1] ~= L_1_[42] and (L_1574_[1]["Team"] ~= L_1_[42]["Team"] and (L_1574_[1]["Character"] and L_1574_[1]["Character"]:FindFirstChild("HumanoidRootPart"))) then
+                        local L_1575_ = {}
+                        L_1575_[2] = (L_1574_[1]["Character"]["HumanoidRootPart"]["Position"] - L_1_[42]["Character"]["HumanoidRootPart"]["Position"])["Magnitude"]
+                        if L_1575_[2] < L_1571_[2] then
+                            L_1571_[2] = L_1575_[2]
+                            MousePos = L_1574_[1]["Character"]["HumanoidRootPart"]["Position"]
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+-- Aimbot Camera Closet Players
+task["spawn"](function()
+    while task["wait"](Sec) do
+        pcall(function()
+            if _G["AimCam"] then
+                local L_1578_ = {}
+                L_1578_[1] = workspace["CurrentCamera"]
+                closestplayer = function()
+                    local L_1579_ = {}
+                    L_1579_[3] = math["huge"]
+                    L_1579_[1] = nil
+                    for L_1580_forvar0, L_1581_forvar1 in next, ply:GetPlayers() do
+                        local L_1582_ = {}
+                        L_1582_[2], L_1582_[3] = L_1580_forvar0, L_1581_forvar1
+                        if L_1582_[3] ~= L_1_[42] then
+                            if L_1582_[3]["Character"] and (L_1582_[3]["Character"]:FindFirstChild("Head") and (_G["AimCam"] and L_1582_[3]["Character"]["Humanoid"]["Health"] > 0)) then
+                                local L_1583_ = {}
+                                L_1583_[1] = (L_1582_[3]["Character"]["Head"]["Position"] - L_1_[42]["Character"]["Head"]["Position"])["Magnitude"]
+                                if L_1583_[1] < L_1579_[3] then
+                                    L_1579_[3] = L_1583_[1]
+                                    L_1579_[1] = L_1582_[3]
+                                end
+                            end
+                        end
+                    end
+                    return L_1579_[1]
+                end
+                repeat
+                    task["wait"]()
+                    L_1578_[1]["CFrame"] = CFrame["new"](L_1578_[1]["CFrame"]["Position"], (closestplayer())["Character"]["HumanoidRootPart"]["Position"])
+                until _G["AimCam"] == false or Mag > dist
+            end
+        end)
+    end
+end)
+
+-- Auto Get PlayerQuest
+spawn(function()
+    while task["wait"](1) do
+        if _G["AutoReceivePlayerQuest"] then
+            pcall(function()
+                (game:GetService("ReplicatedStorage"))["Remotes"]["CommF_"]:InvokeServer("PlayerHunter")
+            end)
+        end
+    end
+end)
+
+-- Auto Kill Player Quest
+spawn(function()
+    while task["wait"]() do
+        if _G["AutoPlayerHunter"] then
+            if game["Players"]["LocalPlayer"]["PlayerGui"]["Main"]["Quest"]["Visible"] == false then
+                task["wait"](.5);
+                (game:GetService("ReplicatedStorage"))["Remotes"]["CommF_"]:InvokeServer("PlayerHunter")
+            else
+                for L_1588_forvar0, L_1589_forvar1 in pairs((game:GetService("Workspace"))["Characters"]:GetChildren()) do
+                    local L_1590_ = {}
+                    L_1590_[1], L_1590_[3] = L_1588_forvar0, L_1589_forvar1
+                    if string["find"](game["Players"]["LocalPlayer"]["PlayerGui"]["Main"]["Quest"]["Container"]["QuestTitle"]["Title"]["Text"], L_1590_[3]["Name"]) then
+                        repeat
+                            task["wait"]()
+                            if AutoHaki then
+                                AutoHaki()
+                            end
+                            if EquipWeapon then
+                                EquipWeapon(_G["SelectWeapon"])
+                            end
+                            Useskill = true
+                            _tp(L_1590_[3]["HumanoidRootPart"]["CFrame"] * CFrame["new"](1, 7, 3))
+                            L_1590_[3]["HumanoidRootPart"]["Size"] = Vector3["new"](60, 60, 60);
+                            (game:GetService("VirtualUser")):CaptureController();
+                            (game:GetService("VirtualUser")):Button1Down(Vector2["new"](1280, 672))
+                        until _G["AutoPlayerHunter"] == false or L_1590_[3]["Humanoid"]["Health"] <= 0
+                        Useskill = false;
+                        (game:GetService("ReplicatedStorage"))["Remotes"]["CommF_"]:InvokeServer("AbandonQuest")
+                    end
+                end
+            end
+        end
+    end
+end)
+
+-- Auto Enable PvP
+spawn(function()
+    while task["wait"](.5) do
+        if _G["AutoPvP"] then
+            local L_1593_ = {}
+            L_1593_[2] = game["Players"]["LocalPlayer"]["PlayerGui"]
+            if L_1593_[2] and (L_1593_[2]["Main"] and L_1593_[2]["Main"]:FindFirstChild("PvpDisabled")) then
+                if L_1593_[2]["Main"]["PvpDisabled"]["Visible"] then
+                    pcall(function()
+                        (game:GetService("ReplicatedStorage"))["Remotes"]["CommF_"]:InvokeServer("EnablePvp")
+                    end)
+                end
+            end
+        end
+    end
+end)
+
+-- Auto Safe Mode
+spawn(function()
+    while task["wait"](.1) do
+        if _G["SafeMode"] then
+            local L_1596_ = {}
+            L_1596_[1] = game["Players"]["LocalPlayer"]["Character"]
+            L_1596_[2] = L_1596_[1] and L_1596_[1]:FindFirstChild("HumanoidRootPart")
+            if L_1596_[2] then
+                local L_1597_ = {}
+                L_1597_[2] = L_1596_[2]["CFrame"] * CFrame["new"](0, 200, 0)
+                _tp(L_1597_[2])
+            end
+        end
+    end
+end)
+
+-- Day/Night time
+task["spawn"](function()
+    while task["wait"]() do
+        if _G["daylightN"] then
+            if _G["SelectDN"] == "Day" then
+                Lighting["ClockTime"] = 12
+            elseif _G["SelectDN"] == "Night" then
+                Lighting["ClockTime"] = 0
+            end
+        end
+    end
+end)
+
+-- Ice Walk
+spawn(function()
+    while task["wait"]() do
+        if _G["WalkWater"] then
+            pcall(function()
+                if L_1_[42]["Character"] and L_1_[42]["Character"]:FindFirstChild("LeftFoot") then
+                    local L_1730_ = {}
+                    L_1730_[3] = L_1_[103]["Assets"]["Models"]["IceSpikes4"]:Clone()
+                    L_1730_[3]["Parent"] = workspace
+                    L_1730_[3]["Size"] = Vector3["new"](3 + math["random"](10, 12), 1.7, 3 + math["random"](10, 12))
+                    L_1730_[3]["Color"] = Color3["fromRGB"](128, 187, 219)
+                    L_1730_[3]["CFrame"] = CFrame["new"](L_1_[42]["Character"]["Head"]["Position"]["X"], -3.8, L_1_[42]["Character"]["Head"]["Position"]["Z"]) * CFrame["Angles"]((math["random"]() - .5) * .06, math["random"]() * 7, (math["random"]() - .5) * .07)
+                    L_1730_[1] = {}
+                    L_1730_[1]["Size"] = Vector3["new"](0, .3, 0)
+                    L_1730_[2] = TW:Create(L_1730_[3], TweenInfo["new"](2, Enum["EasingStyle"]["Quad"], Enum["EasingDirection"]["In"]), L_1730_[1])
+                    L_1730_[2]["Completed"]:Connect(function()
+                        L_1730_[3]:Destroy()
+                    end)
+                    L_1730_[2]:Play()
+                end
+            end)
+        end
+    end
+end)
+
+-- Seriality Attack Loop
+task["spawn"](function()
+    RunSer["Heartbeat"]:Connect(function()
+        pcall(function()
+            local L_1767_ = {}
+            if not _G["Seriality"] then
+                return
+            end
+            AttackNoCoolDown()
+            L_1767_[2] = game["Players"]["LocalPlayer"]["Character"]:FindFirstChildOfClass("Tool")
+            L_1767_[5] = L_1767_[2]["ToolTip"]
+            L_1767_[1], L_1767_[3] = get_Monster()
+            if L_1767_[5] == "Blox Fruit" then
+                if L_1767_[1] then
+                    local L_1768_ = {}
+                    L_1768_[2] = L_1767_[2]:FindFirstChild("LeftClickRemote")
+                    if L_1768_[2] then
+                        Actived()
+                        L_1768_[2]:FireServer(Vector3["new"](.01, -500, .01), 1, true)
+                        L_1768_[2]:FireServer(false)
+                    end
+                end
+            end
+        end)
+    end)
+end)
+
+
+return L_1_
