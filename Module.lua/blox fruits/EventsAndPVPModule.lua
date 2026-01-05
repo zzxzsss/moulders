@@ -1,6 +1,8 @@
 
+local L_1_ = getgenv().L_1_ or {}
+getgenv().L_1_ = L_1_
 
-local L_1_ = {}
+local EventsAndPVPModule = {}
 
 -- Data Tables
 L_1_[130] = {
@@ -553,6 +555,8 @@ end
 -- ============================================
 -- SPAWN LOOPS - These check _G variables
 -- ============================================
+
+function EventsAndPVPModule.startLoops()
 
 -- Auto SuperHuman
 spawn(function()
@@ -1591,5 +1595,7 @@ task["spawn"](function()
     end)
 end)
 
+end -- End of EventsAndPVPModule.startLoops()
 
-return L_1_
+print("[EventsAndPVPModule] Loaded - Call EventsAndPVPModule.startLoops() to start automation")
+return EventsAndPVPModule
