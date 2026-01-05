@@ -1,4 +1,7 @@
 
+-- ESP, fighting styles, sea events, PVP features
+
+-- Access shared state from CoreModule
 local L_1_ = getgenv().L_1_ or {}
 getgenv().L_1_ = L_1_
 
@@ -424,6 +427,10 @@ L_1_[134] = function(L_1733_arg0, L_1734_arg1)
 end
 
 function AttackNoCoolDown()
+    if not _G.FastAttack and not _G.ares then
+        return
+    end
+
     local L_1745_ = {}
     L_1745_[7] = (game:GetService("Players"))["LocalPlayer"]
     L_1745_[10] = L_1745_[7]["Character"]
@@ -509,6 +516,14 @@ function AttackNoCoolDown()
         L_1745_[2]:FireServer(L_1745_[12], L_1745_[6])
     end
 end
+
+spawn(function()
+    while task.wait() do
+        if _G.FastAttack or _G.ares then
+            pcall(AttackNoCoolDown)
+        end
+    end
+end)
 
 CameraShakerR = require(game["ReplicatedStorage"]["Util"]["CameraShaker"])
 CameraShakerR:Stop()
