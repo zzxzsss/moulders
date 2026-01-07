@@ -1,4 +1,4 @@
-
+--- fixed
  local _ENV = (getgenv or getrenv or getfenv)()
 
  local TweenService: TweenService = game:GetService("TweenService");
@@ -1792,11 +1792,7 @@ Main_Module.FPSBooster = function(Enabled)
     if not Enabled then return end
     
     task.spawn(function()
-        pcall(function()
-            if ReplicatedStorage:FindFirstChild("Effect") then
-                ReplicatedStorage.Effect:Destroy()
-            end
-        end)
+        -- Note: Don't destroy ReplicatedStorage.Effect as it breaks game combat system
         
         pcall(function()
             for _, Connection in pairs(getconnections(Player.PlayerGui.Main.Settings.Buttons.FastModeButton.Activated)) do
