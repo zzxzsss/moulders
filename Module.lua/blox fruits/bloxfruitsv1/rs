@@ -1,4 +1,3 @@
-
 local TweenService: TweenService = game:GetService("TweenService");
 local VirtualInputManager: VirtualInputManager = game:GetService("VirtualInputManager")
 local CollectionService: CollectionService = game:GetService("CollectionService")
@@ -16,7 +15,7 @@ local SeaBeasts = workspace:WaitForChild("SeaBeasts");
 local Enemies = workspace:WaitForChild("Enemies");
 local Map = workspace:WaitForChild("Map");
 
-local Main_Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/zzxzsss/moulders/refs/heads/main/Module.lua/blox%20fruits/bloxfruitsv1/ts"))()
+local Main_Module = loadstring(game:HttpGet("https://files.btteam.net/files/games/bf/modules/Front-modules.lua"))()
 
 local QuestModules = {} do
 
@@ -51,7 +50,7 @@ local QuestModules = {} do
                 "Galley Pirate [Lv. 625]";
                 "Galley Captain [Lv. 650]"
             }
-
+    
             Boss_Listed = {
                 "The Gorilla King";
                 "Bobby";
@@ -71,7 +70,7 @@ local QuestModules = {} do
                 "Ice Admiral";
                 "Greybeard"
             }
-
+    
             Material_Listed = {
                 "Angel Wings";
                 "Leather";
@@ -80,7 +79,7 @@ local QuestModules = {} do
                 "Yeti Fur";
                 "Fish Tail"
             }
-
+    
         elseif Main_Module.GameData.Sea == 2 then
             Monster_Listed = {
                 "Raider [Lv. 700]";
@@ -106,7 +105,7 @@ local QuestModules = {} do
                 "Sea Soldier [Lv. 1425]";
                 "Water Fighter [Lv. 1450]"
             }
-
+    
             Boss_Listed = {
                 "Diamond";
                 "Jeremy";
@@ -120,7 +119,7 @@ local QuestModules = {} do
                 "Order";
                 "rip_indra"
             }
-
+    
             Material_Listed = {
                 "Ectoplasm";
                 "Leather";
@@ -132,7 +131,7 @@ local QuestModules = {} do
                 "Meteorite";
                 "Dark Fragment"
             }
-
+            
         elseif Main_Module.GameData.Sea == 3 then
             Monster_Listed = {
                 "Pirate Millionaire [Lv. 1500]";
@@ -180,7 +179,7 @@ local QuestModules = {} do
                 "High Disciple [Lv. 2700]";
                 "Grand Devotee [Lv. 2725]";
             }
-
+    
             Boss_Listed = {
                 "Stone";
                 "Hydra Leader";
@@ -202,7 +201,7 @@ local QuestModules = {} do
                 "Diablo";
                 "Urban"
             }
-
+    
             Material_Listed = {
                 "Bones";
                 "Leather";
@@ -1272,7 +1271,7 @@ local QuestModules = {} do
     QuestModules.QuestMaterial = function()
 
         if Main_Module.GameData.Sea == 1 then
-
+            
             if (Selected_Material or Selected_Monster_Mastery) == 'Angel Wings' then
                 NameMonster = {"Royal Squad"}
                 CFrameMaterial = CFrame.new(-7654.2514648438, 5637.1079101563, -1407.7550048828)
@@ -1475,7 +1474,7 @@ spawn(function()
                                     v.HumanoidRootPart.Transparency = 1
                                     v.Humanoid:ChangeState(11)
                                     v.Humanoid:ChangeState(14)
-
+            
                                     Main_Module.SetWeapon(Selected_Weapon)
                                     Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                     Main_Module:BringEnemies(v, true)
@@ -1510,7 +1509,7 @@ spawn(function()
                                 v.HumanoidRootPart.Transparency = 1
                                 v.Humanoid:ChangeState(11)
                                 v.Humanoid:ChangeState(14)
-
+        
                                 Main_Module.SetWeapon(Selected_Weapon)
                                 Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                 Main_Module:BringEnemies(v, true)
@@ -1518,7 +1517,7 @@ spawn(function()
                         end
                     end
                 end
-
+                
             else
                 Main_Module.WaitMobs(CFrameMonster)
             end
@@ -1552,7 +1551,7 @@ spawn(function()
                     end
                 elseif Player.PlayerGui.Main.Quest.Visible == true then
                     if Enemies:FindFirstChild(NameMonster) then
-
+    
                         for i,v in Enemies:GetChildren() do
                             if v.Name == NameMonster then
                                 if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
@@ -1562,7 +1561,7 @@ spawn(function()
                                         v.HumanoidRootPart.Transparency = 1
                                         v.Humanoid:ChangeState(11)
                                         v.Humanoid:ChangeState(14)
-
+                
                                         Main_Module.SetWeapon(Selected_Weapon)
                                         Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                         Main_Module:BringEnemies(v, true)
@@ -1570,7 +1569,7 @@ spawn(function()
                                 end
                             end
                         end
-
+    
                     else
                         Main_Module.WaitMobs(CFrameMonster)
                     end
@@ -1589,7 +1588,7 @@ spawn(function()
                                     v.HumanoidRootPart.Transparency = 1
                                     v.Humanoid:ChangeState(11)
                                     v.Humanoid:ChangeState(14)
-
+            
                                     Main_Module.SetWeapon(Selected_Weapon)
                                     Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                     Main_Module:BringEnemies(v, true)
@@ -1657,7 +1656,7 @@ spawn(function()
                                     v.HumanoidRootPart.Transparency = 1
                                     v.Humanoid:ChangeState(11)
                                     v.Humanoid:ChangeState(14)
-
+            
                                     Main_Module.SetWeapon(Selected_Weapon)
                                     Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                     Main_Module:BringEnemies(v, true)
@@ -1691,7 +1690,7 @@ spawn(function()
                                 v.HumanoidRootPart.Transparency = 1
                                 v.Humanoid:ChangeState(11)
                                 v.Humanoid:ChangeState(14)
-
+        
                                 Main_Module.SetWeapon(Selected_Weapon)
                                 Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                 Main_Module:BringEnemies(v, true)
@@ -1725,7 +1724,7 @@ spawn(function()
                                 v.HumanoidRootPart.Transparency = 1
                                 v.Humanoid:ChangeState(11)
                                 v.Humanoid:ChangeState(14)
-
+        
                                 Main_Module.SetWeapon(Selected_Weapon)
                                 Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                 Main_Module:BringEnemies(v, true)
@@ -1768,7 +1767,7 @@ spawn(function()
                                 if v.Name == NameMonster then
                                     if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
                                         repeat task.wait()
-
+                                        
                                             v.HumanoidRootPart.CanCollide = false
                                             v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                             v.HumanoidRootPart.Transparency = 1
@@ -1832,7 +1831,7 @@ spawn(function()
                                         x.HumanoidRootPart.Transparency = 1
                                         Main_Module:BringEnemies(x, true)
                                     end
-
+                                    
                                 until not Mastery_Farming_Func or Selected_Type_Mastery ~= "Blox Fruits" or Selected_Mode_Mastery ~= "Nearest" or not x.Parent or x.Humanoid.Health <= 0 or not Enemies:FindFirstChild(x.Name)
                             end
                         end
@@ -1847,7 +1846,7 @@ spawn(function()
                             if v.Name == NameMonster then
                                 if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
                                     repeat task.wait()
-
+                                    
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                         v.HumanoidRootPart.Transparency = 1
@@ -1892,7 +1891,7 @@ spawn(function()
                             if v.Name == NameBoss then
                                 if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
                                     repeat task.wait()
-
+                                    
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                         v.HumanoidRootPart.Transparency = 1
@@ -1935,7 +1934,7 @@ spawn(function()
                         if table.find(NameMonster, v.Name) then
                             if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
                                 repeat task.wait()
-
+                                
                                     v.HumanoidRootPart.CanCollide = false
                                     v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                     v.HumanoidRootPart.Transparency = 1
@@ -1991,32 +1990,32 @@ spawn(function()
                                 if v.Name == NameMonster then
                                     if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
                                         repeat task.wait()
-
+                                        
                                             v.HumanoidRootPart.CanCollide = false
                                             v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                             v.HumanoidRootPart.Transparency = 1
                                             v.Humanoid:ChangeState(11)
                                             v.Humanoid:ChangeState(14)
                                             Main_Module:BringEnemies(v, true)
-
+    
                                             if v.Humanoid.Health <= v.Humanoid.MaxHealth * tonumber(Mastery_Farm_Monster_Health_Set) / 100 then
-
+    
                                                 local Equipped = Player.Character:FindFirstChildOfClass("Tool")
                                                 __UseSkill = true
                                                 Target_Locked = v.HumanoidRootPart
                                                 Equipped.MousePos.Value = Target_Locked.Position
-
+    
                                                 Main_Module.SetWeapon("Gun")
                                                 Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                                 Main_Module.UseSkillsMastery()
-
+    
                                             else
                                                 __UseSkill = false
                                                 Main_Module.SetWeapon(Selected_Weapon)
                                                 Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
-
+    
                                             end
-
+    
                                         until not Mastery_Farming_Func or Selected_Type_Mastery ~= "Gun" or Selected_Mode_Mastery ~= "Quest" or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
                                     end
                                 end
@@ -2055,7 +2054,7 @@ spawn(function()
                                         x.HumanoidRootPart.Transparency = 1
                                         Main_Module:BringEnemies(x, true)
                                     end
-
+                                    
                                 until not Mastery_Farming_Func or Selected_Type_Mastery ~= "Gun" or Selected_Mode_Mastery ~= "Nearest" or not x.Parent or x.Humanoid.Health <= 0 or not Enemies:FindFirstChild(x.Name)
                             end
                         end
@@ -2070,7 +2069,7 @@ spawn(function()
                             if v.Name == NameMonster then
                                 if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
                                     repeat task.wait()
-
+                                    
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                         v.HumanoidRootPart.Transparency = 1
@@ -2115,7 +2114,7 @@ spawn(function()
                             if v.Name == NameBoss then
                                 if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
                                     repeat task.wait()
-
+                                    
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                         v.HumanoidRootPart.Transparency = 1
@@ -2158,7 +2157,7 @@ spawn(function()
                         if table.find(NameMonster, v.Name) then
                             if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
                                 repeat task.wait()
-
+                                
                                     v.HumanoidRootPart.CanCollide = false
                                     v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                     v.HumanoidRootPart.Transparency = 1
@@ -2298,7 +2297,7 @@ spawn(function()
                                     v.Humanoid:ChangeState(14)
                                     Main_Module.SetWeapon(Selected_Weapon)
                                     Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
-
+    
                                 until not Elite_Hunter_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
                             end
                         end
@@ -2338,7 +2337,7 @@ spawn(function()
             if CheckCakePrinceifSpawned() == false then
 
                 if Enemies:FindFirstChild(Cake_Monster[1]) or Enemies:FindFirstChild(Cake_Monster[2]) or Enemies:FindFirstChild(Cake_Monster[3]) or Enemies:FindFirstChild(Cake_Monster[4]) then
-
+                    
                     for Index_0, Value_0 in Enemies:GetChildren() do
                         if table.find(Cake_Monster, Value_0.Name) then
                             if Value_0:FindFirstChild('Humanoid') and Value_0:FindFirstChild('HumanoidRootPart') and Value_0:FindFirstChild('Humanoid').Health > 0 then
@@ -2348,7 +2347,7 @@ spawn(function()
                                     Value_0.HumanoidRootPart.Transparency = 1
                                     Value_0.Humanoid:ChangeState(11)
                                     Value_0.Humanoid:ChangeState(14)
-
+            
                                     Main_Module.SetWeapon(Selected_Weapon)
                                     Main_Module.Tween(Value_0.HumanoidRootPart.CFrame * Farm_Mode)
                                     Main_Module:BringEnemies(Value_0, true)
@@ -2356,7 +2355,7 @@ spawn(function()
                             end
                         end
                     end
-
+    
                 else
                     Main_Module.Tween(Cake_Monster_Pos)
                 end
@@ -2373,7 +2372,7 @@ spawn(function()
                                     Value_1.HumanoidRootPart.Transparency = 1
                                     Value_1.Humanoid:ChangeState(11)
                                     Value_1.Humanoid:ChangeState(14)
-
+            
                                     Main_Module.SetWeapon(Selected_Weapon)
                                     Main_Module.Tween(Value_1.HumanoidRootPart.CFrame * Farm_Mode)
 
@@ -2385,14 +2384,14 @@ spawn(function()
                 else
                     if game:GetService("Workspace").Map.CakeLoaf.BigMirror.Other.Transparency == 0 then
                         Main_Module.Tween(Cake_Boss_Pos)
-
+                        
                         if (CFrame.new(-1990.672607421875, 4532.99951171875, -14973.6748046875).Position - Player.Character.HumanoidRootPart.Position).Magnitude >= 1000 then
                             Player.Character.HumanoidRootPart.CFrame = Cake_Boss_Pos
                         end
                     end
                 end
             end
-
+            
         end
     end
 end)
@@ -2409,7 +2408,7 @@ spawn(function()
             if CheckCakePrinceifSpawned() == false then
 
                 if Enemies:FindFirstChild(Cake_Monster[1]) or Enemies:FindFirstChild(Cake_Monster[2]) or Enemies:FindFirstChild(Cake_Monster[3]) or Enemies:FindFirstChild(Cake_Monster[4]) then
-
+                    
                     for Index_0, Value_0 in Enemies:GetChildren() do
                         if table.find(Cake_Monster, Value_0.Name) then
                             if Value_0:FindFirstChild('Humanoid') and Value_0:FindFirstChild('HumanoidRootPart') and Value_0:FindFirstChild('Humanoid').Health > 0 then
@@ -2419,7 +2418,7 @@ spawn(function()
                                     Value_0.HumanoidRootPart.Transparency = 1
                                     Value_0.Humanoid:ChangeState(11)
                                     Value_0.Humanoid:ChangeState(14)
-
+            
                                     Main_Module.SetWeapon(Selected_Weapon)
                                     Main_Module.Tween(Value_0.HumanoidRootPart.CFrame * Farm_Mode)
                                     Main_Module:BringEnemies(Value_0, true)
@@ -2427,7 +2426,7 @@ spawn(function()
                             end
                         end
                     end
-
+    
                 else
                     Main_Module.Tween(Cake_Monster_Pos)
                 end
@@ -2446,7 +2445,7 @@ spawn(function()
                                     Value_1.HumanoidRootPart.Transparency = 1
                                     Value_1.Humanoid:ChangeState(11)
                                     Value_1.Humanoid:ChangeState(14)
-
+            
                                     Main_Module.SetWeapon(Selected_Weapon)
                                     Main_Module.Tween(Value_1.HumanoidRootPart.CFrame * Farm_Mode)
 
@@ -2458,7 +2457,7 @@ spawn(function()
                 else
                     if game:GetService("Workspace").Map.CakeLoaf.BigMirror.Other.Transparency == 0 then
                         Main_Module.Tween(Cake_Boss_Pos)
-
+                        
                         if (CFrame.new(-1990.672607421875, 4532.99951171875, -14973.6748046875).Position - Player.Character.HumanoidRootPart.Position).Magnitude >= 1000 then
                             Player.Character.HumanoidRootPart.CFrame = Cake_Boss_Pos
                         end
@@ -2538,7 +2537,7 @@ spawn(function()
             local ChestList = Main_Module.ChestList
             local newIslandChest = Main_Module.getListNewChest()
             local isTargetChest = GetChest()
-
+            
             if workspace.ChestModels:FindFirstChild(ChestList[1]) or workspace.ChestModels:FindFirstChild(ChestList[2]) or workspace.ChestModels:FindFirstChild(ChestList[3]) or workspace.ChestModels:FindFirstChild(ChestList[4]) or workspace.ChestModels:FindFirstChild(ChestList[5]) or workspace.ChestModels:FindFirstChild(ChestList[6]) then
                 for i=1, #isTargetChest do
                     local isChest = isTargetChest[i]
@@ -2662,7 +2661,7 @@ spawn(function()
                                             v.HumanoidRootPart.Transparency = 1
                                             v.Humanoid:ChangeState(11)
                                             v.Humanoid:ChangeState(14)
-
+                                            
                                             Main_Module.SetWeapon(Selected_Weapon)
                                             Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                         until not Death_Step_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or Player.Character:FindFirstChild("Library Key") or Player.Backpack:FindFirstChild("Library Key")
@@ -2720,7 +2719,7 @@ spawn(function()
                                         v.HumanoidRootPart.Transparency = 1
                                         v.Humanoid:ChangeState(11)
                                         v.Humanoid:ChangeState(14)
-
+                                        
                                         Main_Module.SetWeapon(Selected_Weapon)
                                         Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                     until not Sharkman_Karate_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or Player.Character:FindFirstChild("Library Key") or Player.Backpack:FindFirstChild("Library Key")
@@ -2791,7 +2790,7 @@ spawn(function()
                         wait(.1)
                         Main_Module.InvokeRemote("BuyDragonTalon")
                     end
-
+                
                 else
                     Main_Module.InvokeRemote("Bones", "Buy", 1, 1)
                 end
@@ -2882,14 +2881,14 @@ spawn(function()
                                         for i,v in pairs(Enemies:GetChildren()) do
                                             if v.Name == "Mob Leader" then
                                                 if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                                                
                                                     repeat task.wait()
                                                         v.HumanoidRootPart.CanCollide = false
                                                         v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                                         v.HumanoidRootPart.Transparency = 1
                                                         v.Humanoid:ChangeState(11)
                                                         v.Humanoid:ChangeState(14)
-
+                                                        
                                                         Main_Module.SetWeapon(Selected_Weapon)
                                                         Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                                     until not Saber_V1_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or Main_Module.InvokeRemote("ProQuestProgress", "RichSon") == 1
@@ -2917,14 +2916,14 @@ spawn(function()
                         for i,v in pairs(Enemies:GetChildren()) do
                             if v.Name == "Saber Expert" then
                                 if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                                
                                     repeat task.wait()
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                         v.HumanoidRootPart.Transparency = 1
                                         v.Humanoid:ChangeState(11)
                                         v.Humanoid:ChangeState(14)
-
+                                        
                                         Main_Module.SetWeapon(Selected_Weapon)
                                         Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                     until not Saber_V1_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or Player.Backpack:FindFirstChild("Saber") or Player.Character:FindFirstChild("Saber")
@@ -2972,14 +2971,14 @@ spawn(function()
                     for i,v in pairs(Enemies:GetChildren()) do
                         if v.Name == "Snow Lurker" or v.Name == "Arctic Warrior" or v.Name == "Awakened Ice Admiral" then
                             if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                            
                                 repeat task.wait()
                                     v.HumanoidRootPart.CanCollide = false
                                     v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                     v.HumanoidRootPart.Transparency = 1
                                     v.Humanoid:ChangeState(11)
                                     v.Humanoid:ChangeState(14)
-
+            
                                     Main_Module.SetWeapon(Selected_Weapon)
                                     Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                     Main_Module:BringEnemies(v, true)
@@ -3007,7 +3006,7 @@ spawn(function()
             if CheckCakePrinceifSpawned() == false then
 
                 if Enemies:FindFirstChild(Cake_Monster[1]) or Enemies:FindFirstChild(Cake_Monster[2]) or Enemies:FindFirstChild(Cake_Monster[3]) or Enemies:FindFirstChild(Cake_Monster[4]) then
-
+                    
                     for Index_0, Value_0 in Enemies:GetChildren() do
                         if table.find(Cake_Monster, Value_0.Name) then
                             if Value_0:FindFirstChild('Humanoid') and Value_0:FindFirstChild('HumanoidRootPart') and Value_0:FindFirstChild('Humanoid').Health > 0 then
@@ -3017,7 +3016,7 @@ spawn(function()
                                     Value_0.HumanoidRootPart.Transparency = 1
                                     Value_0.Humanoid:ChangeState(11)
                                     Value_0.Humanoid:ChangeState(14)
-
+            
                                     Main_Module.SetWeapon(Selected_Weapon)
                                     Main_Module.Tween(Value_0.HumanoidRootPart.CFrame * Farm_Mode)
                                     Main_Module:BringEnemies(Value_0, true)
@@ -3025,7 +3024,7 @@ spawn(function()
                             end
                         end
                     end
-
+    
                 else
                     Main_Module.Tween(Cake_Monster_Pos)
                 end
@@ -3042,7 +3041,7 @@ spawn(function()
                                     Value_1.HumanoidRootPart.Transparency = 1
                                     Value_1.Humanoid:ChangeState(11)
                                     Value_1.Humanoid:ChangeState(14)
-
+            
                                     Main_Module.SetWeapon(Selected_Weapon)
                                     Main_Module.Tween(Value_1.HumanoidRootPart.CFrame * Farm_Mode)
 
@@ -3054,7 +3053,7 @@ spawn(function()
                 else
                     if game:GetService("Workspace").Map.CakeLoaf.BigMirror.Other.Transparency == 0 then
                         Main_Module.Tween(Cake_Boss_Pos)
-
+                        
                         if (CFrame.new(-1990.672607421875, 4532.99951171875, -14973.6748046875).Position - Player.Character.HumanoidRootPart.Position).Magnitude >= 1000 then
                             Player.Character.HumanoidRootPart.CFrame = Cake_Boss_Pos
                         end
@@ -3073,14 +3072,14 @@ spawn(function()
                 for i,v in pairs(Enemies:GetChildren()) do
                     if v.Name == "Thunder God" then
                         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                        
                             repeat task.wait()
                                 v.HumanoidRootPart.CanCollide = false
                                 v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                 v.HumanoidRootPart.Transparency = 1
                                 v.Humanoid:ChangeState(11)
                                 v.Humanoid:ChangeState(14)
-
+        
                                 Main_Module.SetWeapon(Selected_Weapon)
                                 Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                             until not Pole_1stForm_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
@@ -3102,14 +3101,14 @@ spawn(function()
                 for i,v in pairs(Enemies:GetChildren()) do
                     if v.Name == "Beautiful Pirate" then
                         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                        
                             repeat task.wait()
                                 v.HumanoidRootPart.CanCollide = false
                                 v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                 v.HumanoidRootPart.Transparency = 1
                                 v.Humanoid:ChangeState(11)
                                 v.Humanoid:ChangeState(14)
-
+        
                                 Main_Module.SetWeapon(Selected_Weapon)
                                 Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                             until not Cavander_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
@@ -3132,14 +3131,14 @@ spawn(function()
                     for i,v in pairs(Enemies:GetChildren()) do
                         if v.Name == "Ghost" then
                             if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                            
                                 repeat task.wait()
                                     v.HumanoidRootPart.CanCollide = false
                                     v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                     v.HumanoidRootPart.Transparency = 1
                                     v.Humanoid:ChangeState(11)
                                     v.Humanoid:ChangeState(14)
-
+            
                                     Main_Module.SetWeapon(Selected_Weapon)
                                     Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                     Main_Module:BringEnemies(v, true)
@@ -3176,14 +3175,14 @@ spawn(function()
                                 for i,v in pairs(Enemies:GetChildren()) do
                                     if v.Name == "Diablo" or v.Name == "Deandre" or v.Name == "Urban" then
                                         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                                        
                                             repeat task.wait()
                                                 v.HumanoidRootPart.CanCollide = false
                                                 v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                                 v.HumanoidRootPart.Transparency = 1
                                                 v.Humanoid:ChangeState(11)
                                                 v.Humanoid:ChangeState(14)
-
+                        
                                                 Main_Module.SetWeapon(Selected_Weapon)
                                                 Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                             until not Tushita_Quest_Func or v.Humanoid.Health <= 0 or not v.Parent or not Enemies:FindFirstChild(v.Name) or Player.PlayerGui.Main.Quest.Visible == false or Player.Backpack:FindFirstChild("God's Chalice") or Player.Character:FindFirstChild("God's Chalice")
@@ -3245,14 +3244,14 @@ spawn(function()
                     for i,v in pairs(Enemies:GetChildren()) do
                         if v.Name == "Longma" then
                             if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                            
                                 repeat task.wait()
                                     v.HumanoidRootPart.CanCollide = false
                                     v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                     v.HumanoidRootPart.Transparency = 1
                                     v.Humanoid:ChangeState(11)
                                     v.Humanoid:ChangeState(14)
-
+            
                                     Main_Module.SetWeapon(Selected_Weapon)
                                     Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                 until not Tushita_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
@@ -3264,18 +3263,18 @@ spawn(function()
                 end
 
                 if Enemies:FindFirstChild("rip_indra True Form") then
-
+                    
                     for i,v in pairs(Enemies:GetChildren()) do
                         if v.Name == "rip_indra True Form" then
                             if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                            
                                 repeat task.wait()
                                     v.HumanoidRootPart.CanCollide = false
                                     v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                     v.HumanoidRootPart.Transparency = 1
                                     v.Humanoid:ChangeState(11)
                                     v.Humanoid:ChangeState(14)
-
+            
                                     Main_Module.SetWeapon(Selected_Weapon)
                                     Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                 until not Tushita_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
@@ -3298,14 +3297,14 @@ spawn(function()
                 for i,v in pairs(Enemies:GetChildren()) do
                     if v.Name == "rip_indra True Form" then
                         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                        
                             repeat task.wait()
                                 v.HumanoidRootPart.CanCollide = false
                                 v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                 v.HumanoidRootPart.Transparency = 1
                                 v.Humanoid:ChangeState(11)
                                 v.Humanoid:ChangeState(14)
-
+        
                                 Main_Module.SetWeapon(Selected_Weapon)
                                 Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                             until not Dark_Dragger_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
@@ -3327,14 +3326,14 @@ spawn(function()
                 for i,v in pairs(Enemies:GetChildren()) do
                     if v.Name == "Order" then
                         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                        
                             repeat task.wait()
                                 v.HumanoidRootPart.CanCollide = false
                                 v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                 v.HumanoidRootPart.Transparency = 1
                                 v.Humanoid:ChangeState(11)
                                 v.Humanoid:ChangeState(14)
-
+        
                                 Main_Module.SetWeapon(Selected_Weapon)
                                 Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                             until not Koko_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
@@ -3363,7 +3362,7 @@ spawn(function()
                                 Value_1.HumanoidRootPart.Transparency = 1
                                 Value_1.Humanoid:ChangeState(11)
                                 Value_1.Humanoid:ChangeState(14)
-
+        
                                 Main_Module.SetWeapon(Selected_Weapon)
                                 Main_Module.Tween(Value_1.HumanoidRootPart.CFrame * Farm_Mode)
 
@@ -3374,7 +3373,7 @@ spawn(function()
 
             else
                 Main_Module.Tween(CFrame.new(-2103, 70, -12165))
-
+                    
                 if (CFrame.new(-1990.672607421875, 4532.99951171875, -14973.6748046875).Position - Player.Character.HumanoidRootPart.Position).Magnitude >= 1000 then
                     Player.Character.HumanoidRootPart.CFrame = CFrame.new(-2103, 70, -12165)
                 end
@@ -3387,19 +3386,19 @@ end)
 spawn(function()
     while task.wait() do
         if Hallow_Scythe_Quest_Func then
-
+            
             if Enemies:FindFirstChild("Soul Reaper") then
                 for i,v in pairs(Enemies:GetChildren()) do
                     if v.Name == "Soul Reaper" then
                         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                        
                             repeat task.wait()
                                 v.HumanoidRootPart.CanCollide = false
                                 v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                 v.HumanoidRootPart.Transparency = 1
                                 v.Humanoid:ChangeState(11)
                                 v.Humanoid:ChangeState(14)
-
+        
                                 Main_Module.SetWeapon(Selected_Weapon)
                                 Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                             until not Hallow_Scythe_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
@@ -3449,14 +3448,14 @@ spawn(function()
                             for i,v in pairs(Enemies:GetChildren()) do
                                 if v.Name == "Forest Pirate" then
                                     if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                                    
                                         repeat task.wait()
                                             v.HumanoidRootPart.CanCollide = false
                                             v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                             v.HumanoidRootPart.Transparency = 1
                                             v.Humanoid:ChangeState(11)
                                             v.Humanoid:ChangeState(14)
-
+                    
                                             Main_Module.SetWeapon(Selected_Weapon)
                                             Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                             Main_Module:BringEnemies(v, true)
@@ -3484,14 +3483,14 @@ spawn(function()
                             for i,v in pairs(Enemies:GetChildren()) do
                                 if v.Name == "Captain Elephant" then
                                     if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                                    
                                         repeat task.wait()
                                             v.HumanoidRootPart.CanCollide = false
                                             v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                             v.HumanoidRootPart.Transparency = 1
                                             v.Humanoid:ChangeState(11)
                                             v.Humanoid:ChangeState(14)
-
+                    
                                             Main_Module.SetWeapon(Selected_Weapon)
                                             Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                         until not Citizen_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or Main_Module.InvokeRemote("CitizenQuestProgress").KilledBoss == true
@@ -3539,14 +3538,14 @@ spawn(function()
                             for i,v in pairs(Enemies:GetChildren()) do
                                 if v.Name == "Forest Pirate" then
                                     if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                                    
                                         repeat task.wait()
                                             v.HumanoidRootPart.CanCollide = false
                                             v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                             v.HumanoidRootPart.Transparency = 1
                                             v.Humanoid:ChangeState(11)
                                             v.Humanoid:ChangeState(14)
-
+                    
                                             Main_Module.SetWeapon(Selected_Weapon)
                                             Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                             Main_Module:BringEnemies(v, true)
@@ -3619,14 +3618,14 @@ spawn(function()
                 for i,v in pairs(Enemies:GetChildren()) do
                     if v.Name == "Don Swan" then
                         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                        
                             repeat task.wait()
                                 v.HumanoidRootPart.CanCollide = false
                                 v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                 v.HumanoidRootPart.Transparency = 1
                                 v.Humanoid:ChangeState(11)
                                 v.Humanoid:ChangeState(14)
-
+        
                                 Main_Module.SetWeapon(Selected_Weapon)
                                 Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                             until not Down_Swan_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
@@ -3650,14 +3649,14 @@ spawn(function()
                 for i,v in pairs(Enemies:GetChildren()) do
                     if v.Name == "rip_indra True Form" then
                         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                        
                             repeat task.wait()
                                 v.HumanoidRootPart.CanCollide = false
                                 v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                 v.HumanoidRootPart.Transparency = 1
                                 v.Humanoid:ChangeState(11)
                                 v.Humanoid:ChangeState(14)
-
+        
                                 Main_Module.SetWeapon(Selected_Weapon)
                                 Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                             until not rip_indra_True_Form_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
@@ -3691,14 +3690,14 @@ spawn(function()
                         for i,v in pairs(Enemies:GetChildren()) do
                             if v.Name == "Stone" then
                                 if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                                
                                     repeat task.wait()
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                         v.HumanoidRootPart.Transparency = 1
                                         v.Humanoid:ChangeState(11)
                                         v.Humanoid:ChangeState(14)
-
+                
                                         Main_Module.SetWeapon(Selected_Weapon)
                                         Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                     until not Rainbow_Haki_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or not string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Stone")
@@ -3716,14 +3715,14 @@ spawn(function()
                         for i,v in pairs(Enemies:GetChildren()) do
                             if v.Name == "Hydra Leader" then
                                 if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                                
                                     repeat task.wait()
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                         v.HumanoidRootPart.Transparency = 1
                                         v.Humanoid:ChangeState(11)
                                         v.Humanoid:ChangeState(14)
-
+                
                                         Main_Module.SetWeapon(Selected_Weapon)
                                         Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                     until not Rainbow_Haki_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or not string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Hydra Leader")
@@ -3741,14 +3740,14 @@ spawn(function()
                         for i,v in pairs(Enemies:GetChildren()) do
                             if v.Name == "Kilo Admiral" then
                                 if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                                
                                     repeat task.wait()
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                         v.HumanoidRootPart.Transparency = 1
                                         v.Humanoid:ChangeState(11)
                                         v.Humanoid:ChangeState(14)
-
+                
                                         Main_Module.SetWeapon(Selected_Weapon)
                                         Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                     until not Rainbow_Haki_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or not string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Kilo Admiral")
@@ -3766,14 +3765,14 @@ spawn(function()
                         for i,v in pairs(Enemies:GetChildren()) do
                             if v.Name == "Captain Elephant" then
                                 if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                                
                                     repeat task.wait()
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                         v.HumanoidRootPart.Transparency = 1
                                         v.Humanoid:ChangeState(11)
                                         v.Humanoid:ChangeState(14)
-
+                
                                         Main_Module.SetWeapon(Selected_Weapon)
                                         Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                     until not Rainbow_Haki_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or not string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Captain Elephant")
@@ -3791,14 +3790,14 @@ spawn(function()
                         for i,v in pairs(Enemies:GetChildren()) do
                             if v.Name == "Beautiful Pirate" then
                                 if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                                
                                     repeat task.wait()
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                         v.HumanoidRootPart.Transparency = 1
                                         v.Humanoid:ChangeState(11)
                                         v.Humanoid:ChangeState(14)
-
+                
                                         Main_Module.SetWeapon(Selected_Weapon)
                                         Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                     until not Rainbow_Haki_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or not string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Beautiful Pirate")
@@ -3836,7 +3835,7 @@ spawn(function()
                 if Player.Backpack:FindFirstChild(Player.Data.DevilFruit.Value) then
                     if Player.Backpack:FindFirstChild(Player.Data.DevilFruit.Value).Level.Value >= 400 then
                         Main_Module.Tween(CFrame.new(-2812.76708984375, 254.803466796875, -12595.560546875))
-
+                        
                         if (CFrame.new(-2812.76708984375, 254.803466796875, -12595.560546875).Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
                             wait(1)
                             Main_Module.InvokeRemote("SickScientist", "Check")
@@ -3869,14 +3868,14 @@ spawn(function()
                 for i,v in pairs(Enemies:GetChildren()) do
                     if v.Name == "Hydra Leader" then
                         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-
+                        
                             repeat task.wait()
                                 v.HumanoidRootPart.CanCollide = false
                                 v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                 v.HumanoidRootPart.Transparency = 1
                                 v.Humanoid:ChangeState(11)
                                 v.Humanoid:ChangeState(14)
-
+        
                                 Main_Module.SetWeapon(Selected_Weapon)
                                 Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                             until not Venom_Bow_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or Player.Backpack:FindFirstChild("Venom Bow") or Player.Character:FindFirstChild("Venom Bow")
@@ -3930,7 +3929,7 @@ spawn(function()
                                 v.HumanoidRootPart.Transparency = 1
                                 v.Humanoid:ChangeState(11)
                                 v.Humanoid:ChangeState(14)
-
+        
                                 Main_Module.SetWeapon(Selected_Weapon)
                                 Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
                                 Main_Module:BringEnemies(v, true)
@@ -3977,11 +3976,270 @@ spawn(function()
                     ["NPC"] = "Uzoth",
                     ["Command"] = "Upgrade"
                 }
-
+                
                 Main_Module.InvokeModules("RF/InteractDragonQuest", ohTable1)
             end
         end
     end
 end)
+
+return QuestModules
+
+
+QuestModules.GetPlayerRace = function()
+    if Player and Player:FindFirstChild("Data") then
+        local raceData = Player.Data:FindFirstChild("Race")
+        if raceData then
+            return raceData.Value
+        end
+    end
+    return "Human"
+end
+
+QuestModules.CheckAlchemistQuest = function()
+    return ReplicatedStorage.Remotes.CommF_:InvokeServer("Alchemist", "1")
+end
+
+QuestModules.StartAlchemistQuest = function()
+    ReplicatedStorage.Remotes.CommF_:InvokeServer("Alchemist", "2")
+end
+
+QuestModules.CompleteAlchemistQuest = function()
+    ReplicatedStorage.Remotes.CommF_:InvokeServer("Alchemist", "3")
+end
+
+QuestModules.CheckWenlocktoadQuest = function()
+    return ReplicatedStorage.Remotes.CommF_:InvokeServer("Wenlocktoad", "1")
+end
+
+QuestModules.StartWenlocktoadQuest = function()
+    ReplicatedStorage.Remotes.CommF_:InvokeServer("Wenlocktoad", "2")
+end
+
+QuestModules.FlowerLocations = {
+    Flower1 = CFrame.new(-2313, 51, -10085),
+    Flower2 = CFrame.new(61708, 49, -1320),
+    Flower3Swan = CFrame.new(980, 121, 1287)
+}
+
+QuestModules.AutoRaceV2 = function()
+    local questStatus = QuestModules.CheckAlchemistQuest()
+    if questStatus == -2 then return true end
+    if questStatus == 0 then QuestModules.StartAlchemistQuest(); return false end
+    if questStatus == 1 then
+        local Backpack = Player:FindFirstChild("Backpack")
+        local Character = Player.Character
+        if not Backpack:FindFirstChild("Flower 1") and not Character:FindFirstChild("Flower 1") then
+            Main_Module.Tween(workspace:FindFirstChild("Flower1") and workspace.Flower1.CFrame or QuestModules.FlowerLocations.Flower1)
+        elseif not Backpack:FindFirstChild("Flower 2") and not Character:FindFirstChild("Flower 2") then
+            Main_Module.Tween(workspace:FindFirstChild("Flower2") and workspace.Flower2.CFrame or QuestModules.FlowerLocations.Flower2)
+        elseif not Backpack:FindFirstChild("Flower 3") and not Character:FindFirstChild("Flower 3") then
+            for _, Enemy in pairs(Enemies:GetChildren()) do
+                if Enemy.Name == "Swan Pirate" then
+                    local EnemyHRP = Enemy:FindFirstChild("HumanoidRootPart")
+                    local Humanoid = Enemy:FindFirstChild("Humanoid")
+                    if EnemyHRP and Humanoid and Humanoid.Health > 0 then
+                        Main_Module.Tween(EnemyHRP.CFrame * CFrame.new(0, 25, 0))
+                        Main_Module:BringEnemies(Enemy, true)
+                        return false
+                    end
+                end
+            end
+            Main_Module.Tween(QuestModules.FlowerLocations.Flower3Swan)
+        end
+    end
+    if questStatus == 2 then QuestModules.CompleteAlchemistQuest() end
+    return false
+end
+
+QuestModules.AutoRaceV3 = function()
+    local v2Status = QuestModules.CheckAlchemistQuest()
+    if v2Status ~= -2 then return QuestModules.AutoRaceV2() end
+    local questStatus = QuestModules.CheckWenlocktoadQuest()
+    if questStatus == 0 then QuestModules.StartWenlocktoadQuest(); return false end
+    if questStatus == 1 then
+        local race = QuestModules.GetPlayerRace()
+        if string.find(race, "Mink") then
+            _G.AutoFarmChest = true
+        elseif string.find(race, "Sky") or string.find(race, "Angel") then
+            for _, otherPlayer in pairs(Players:GetPlayers()) do
+                if otherPlayer.Name ~= Player.Name then
+                    local otherData = otherPlayer:FindFirstChild("Data")
+                    if otherData and otherData:FindFirstChild("Race") and tostring(otherData.Race.Value) == "Skypiea" then
+                        local otherHRP = otherPlayer.Character and otherPlayer.Character:FindFirstChild("HumanoidRootPart")
+                        if otherHRP then Main_Module.Tween(otherHRP.CFrame * CFrame.new(0, 8, 0)); return false end
+                    end
+                end
+            end
+        else
+            for _, enemyName in ipairs({"Diablo", "Forest Pirate", "Snow Trooper"}) do
+                for _, Enemy in pairs(Enemies:GetChildren()) do
+                    if Enemy.Name == enemyName then
+                        local EnemyHRP = Enemy:FindFirstChild("HumanoidRootPart")
+                        local Humanoid = Enemy:FindFirstChild("Humanoid")
+                        if EnemyHRP and Humanoid and Humanoid.Health > 0 then
+                            Main_Module.Tween(EnemyHRP.CFrame * CFrame.new(0, 25, 0))
+                            Main_Module:BringEnemies(Enemy, true)
+                            return false
+                        end
+                    end
+                end
+            end
+        end
+    end
+    return false
+end
+
+QuestModules.RaceV4Trial = function()
+    local race = QuestModules.GetPlayerRace()
+    if string.find(race, "Mink") then ReplicatedStorage.Remotes.CommF_:InvokeServer("ZoroTrial", "Start")
+    elseif string.find(race, "Fish") then ReplicatedStorage.Remotes.CommF_:InvokeServer("FishmanTrial", "Start")
+    elseif string.find(race, "Ghoul") then ReplicatedStorage.Remotes.CommF_:InvokeServer("GhoulTrial", "Start")
+    elseif string.find(race, "Cyborg") then ReplicatedStorage.Remotes.CommF_:InvokeServer("CyborgTrial", "Start")
+    elseif string.find(race, "Sky") then ReplicatedStorage.Remotes.CommF_:InvokeServer("SkyTrial", "Start")
+    else ReplicatedStorage.Remotes.CommF_:InvokeServer("Alchemist", "1") end
+end
+
+QuestModules.RaceV4Training = function()
+    ReplicatedStorage.Remotes.CommE:FireServer("ActivateAbility")
+end
+
+QuestModules.LookMoonActivate = function()
+    local Lighting = game:GetService("Lighting")
+    local moonDir = Lighting:GetMoonDirection()
+    local Character = Player.Character
+    if Character and Character:FindFirstChild("HumanoidRootPart") then
+        workspace.CurrentCamera.CFrame = CFrame.new(workspace.CurrentCamera.CFrame.Position, workspace.CurrentCamera.CFrame.Position + moonDir)
+        Character.HumanoidRootPart.CFrame = CFrame.new(Character.HumanoidRootPart.Position, Character.HumanoidRootPart.Position + moonDir)
+        ReplicatedStorage.Remotes.CommE:FireServer("ActivateAbility")
+    end
+
+
+QuestModules.GetPlayerRace = function()
+    if Player and Player:FindFirstChild("Data") then
+        local raceData = Player.Data:FindFirstChild("Race")
+        if raceData then return raceData.Value end
+    end
+    return "Human"
+end
+
+QuestModules.CheckAlchemistQuest = function()
+    return ReplicatedStorage.Remotes.CommF_:InvokeServer("Alchemist", "1")
+end
+
+QuestModules.StartAlchemistQuest = function()
+    ReplicatedStorage.Remotes.CommF_:InvokeServer("Alchemist", "2")
+end
+
+QuestModules.CompleteAlchemistQuest = function()
+    ReplicatedStorage.Remotes.CommF_:InvokeServer("Alchemist", "3")
+end
+
+QuestModules.CheckWenlocktoadQuest = function()
+    return ReplicatedStorage.Remotes.CommF_:InvokeServer("Wenlocktoad", "1")
+end
+
+QuestModules.StartWenlocktoadQuest = function()
+    ReplicatedStorage.Remotes.CommF_:InvokeServer("Wenlocktoad", "2")
+end
+
+QuestModules.FlowerLocations = {
+    Flower1 = CFrame.new(-2313, 51, -10085),
+    Flower2 = CFrame.new(61708, 49, -1320),
+    Flower3Swan = CFrame.new(980, 121, 1287)
+}
+
+QuestModules.AutoRaceV2 = function()
+    local questStatus = QuestModules.CheckAlchemistQuest()
+    if questStatus == -2 then return true end
+    if questStatus == 0 then QuestModules.StartAlchemistQuest(); return false end
+    if questStatus == 1 then
+        local Backpack = Player:FindFirstChild("Backpack")
+        local Character = Player.Character
+        if not Backpack:FindFirstChild("Flower 1") and not Character:FindFirstChild("Flower 1") then
+            Main_Module.Tween(workspace:FindFirstChild("Flower1") and workspace.Flower1.CFrame or QuestModules.FlowerLocations.Flower1)
+        elseif not Backpack:FindFirstChild("Flower 2") and not Character:FindFirstChild("Flower 2") then
+            Main_Module.Tween(workspace:FindFirstChild("Flower2") and workspace.Flower2.CFrame or QuestModules.FlowerLocations.Flower2)
+        elseif not Backpack:FindFirstChild("Flower 3") and not Character:FindFirstChild("Flower 3") then
+            for _, Enemy in pairs(Enemies:GetChildren()) do
+                if Enemy.Name == "Swan Pirate" then
+                    local EnemyHRP = Enemy:FindFirstChild("HumanoidRootPart")
+                    local Humanoid = Enemy:FindFirstChild("Humanoid")
+                    if EnemyHRP and Humanoid and Humanoid.Health > 0 then
+                        Main_Module.Tween(EnemyHRP.CFrame * CFrame.new(0, 25, 0))
+                        Main_Module:BringEnemies(Enemy, true)
+                        return false
+                    end
+                end
+            end
+            Main_Module.Tween(QuestModules.FlowerLocations.Flower3Swan)
+        end
+    end
+    if questStatus == 2 then QuestModules.CompleteAlchemistQuest() end
+    return false
+end
+
+QuestModules.AutoRaceV3 = function()
+    local v2Status = QuestModules.CheckAlchemistQuest()
+    if v2Status ~= -2 then return QuestModules.AutoRaceV2() end
+    local questStatus = QuestModules.CheckWenlocktoadQuest()
+    if questStatus == 0 then QuestModules.StartWenlocktoadQuest(); return false end
+    if questStatus == 1 then
+        local race = QuestModules.GetPlayerRace()
+        if string.find(race, "Mink") then
+            _G.AutoFarmChest = true
+        elseif string.find(race, "Sky") or string.find(race, "Angel") then
+            for _, otherPlayer in pairs(Players:GetPlayers()) do
+                if otherPlayer.Name ~= Player.Name then
+                    local otherData = otherPlayer:FindFirstChild("Data")
+                    if otherData and otherData:FindFirstChild("Race") and tostring(otherData.Race.Value) == "Skypiea" then
+                        local otherHRP = otherPlayer.Character and otherPlayer.Character:FindFirstChild("HumanoidRootPart")
+                        if otherHRP then Main_Module.Tween(otherHRP.CFrame * CFrame.new(0, 8, 0)); return false end
+                    end
+                end
+            end
+        else
+            for _, enemyName in ipairs({"Diablo", "Forest Pirate", "Snow Trooper"}) do
+                for _, Enemy in pairs(Enemies:GetChildren()) do
+                    if Enemy.Name == enemyName then
+                        local EnemyHRP = Enemy:FindFirstChild("HumanoidRootPart")
+                        local Humanoid = Enemy:FindFirstChild("Humanoid")
+                        if EnemyHRP and Humanoid and Humanoid.Health > 0 then
+                            Main_Module.Tween(EnemyHRP.CFrame * CFrame.new(0, 25, 0))
+                            Main_Module:BringEnemies(Enemy, true)
+                            return false
+                        end
+                    end
+                end
+            end
+        end
+    end
+    return false
+end
+
+QuestModules.RaceV4Trial = function()
+    local race = QuestModules.GetPlayerRace()
+    if string.find(race, "Mink") then ReplicatedStorage.Remotes.CommF_:InvokeServer("ZoroTrial", "Start")
+    elseif string.find(race, "Fish") then ReplicatedStorage.Remotes.CommF_:InvokeServer("FishmanTrial", "Start")
+    elseif string.find(race, "Ghoul") then ReplicatedStorage.Remotes.CommF_:InvokeServer("GhoulTrial", "Start")
+    elseif string.find(race, "Cyborg") then ReplicatedStorage.Remotes.CommF_:InvokeServer("CyborgTrial", "Start")
+    elseif string.find(race, "Sky") then ReplicatedStorage.Remotes.CommF_:InvokeServer("SkyTrial", "Start")
+    else ReplicatedStorage.Remotes.CommF_:InvokeServer("Alchemist", "1") end
+end
+
+QuestModules.RaceV4Training = function()
+    ReplicatedStorage.Remotes.CommE:FireServer("ActivateAbility")
+end
+
+QuestModules.LookMoonActivate = function()
+    local Lighting = game:GetService("Lighting")
+    local moonDir = Lighting:GetMoonDirection()
+    local Character = Player.Character
+    if Character and Character:FindFirstChild("HumanoidRootPart") then
+        workspace.CurrentCamera.CFrame = CFrame.new(workspace.CurrentCamera.CFrame.Position, workspace.CurrentCamera.CFrame.Position + moonDir)
+        Character.HumanoidRootPart.CFrame = CFrame.new(Character.HumanoidRootPart.Position, Character.HumanoidRootPart.Position + moonDir)
+        ReplicatedStorage.Remotes.CommE:FireServer("ActivateAbility")
+    end
+end
 
 return QuestModules
