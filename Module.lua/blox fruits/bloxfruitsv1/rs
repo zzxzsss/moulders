@@ -16,7 +16,7 @@ local SeaBeasts = workspace:WaitForChild("SeaBeasts");
 local Enemies = workspace:WaitForChild("Enemies");
 local Map = workspace:WaitForChild("Map");
 
-local Main_Module = loadstring(game:HttpGet("https://files.btteam.net/files/games/bf/modules/Front-modules.lua"))()
+local Main_Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/zzxzsss/moulders/refs/heads/main/Module.lua/blox%20fruits/bloxfruitsv1/ts"))()
 
 local QuestModules = {} do
 
