@@ -2636,63 +2636,75 @@ spawn(function()
     end
 end)
 
+--// Helper function to get weapon from backpack or character
+local function GetBP(weaponName)
+    if Player.Backpack:FindFirstChild(weaponName) then
+        return Player.Backpack:FindFirstChild(weaponName)
+    elseif Player.Character and Player.Character:FindFirstChild(weaponName) then
+        return Player.Character:FindFirstChild(weaponName)
+    end
+    return nil
+end
+
+--// Helper function to get material count
+local function GetMaterial(materialName)
+    local count = 0
+    pcall(function()
+        local materials = Main_Module.InvokeRemote("getInventory")
+        if materials and materials[materialName] then
+            count = materials[materialName]
+        end
+    end)
+    return count
+end
+
 --// Death Step
 spawn(function()
     while task.wait() do
         if Death_Step_Quest_Func then
-            Main_Module.InvokeRemote("BuyBlackLeg")
-
-            if Player.Character:FindFirstChild("Black Leg").Level.Value >= 400 or Player.Backpack:FindFirstChild("Black Leg").Level.Value >= 400 then
-                if Map.IceCastle.Hall.LibraryDoor.PhoeyuDoor.Transparency == 0 then
-                    Main_Module.Tween(CFrame.new(6372.57275, 302.194611, -6838.97461))
-                    wait(.1)
-                    Main_Module.InvokeRemote("BuyDeathStep")
-                    wait(.1)
-
-                    if Player.Character:FindFirstChild("Library Key") or Player.Backpack:FindFirstChild("Library Key") then
-                        Main_Module.EquipTool("Library Key")
-                        Main_Module.Tween(CFrame.new(6371.2001953125, 296.63433837890625, -6841.18115234375))
-                        wait(.1)
-                        if (CFrame.new(6371.2001953125, 296.63433837890625, -6841.18115234375).Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 3 then
-                            wait(.1)
-                            Main_Module.InvokeRemote("OpenLibrary")
-                            wait(.1)
-                            Main_Module.InvokeRemote("BuyDeathStep", true)
-                            wait(.1)
+            pcall(function()
+                if not GetBP("Death Step") then
+                    if not GetBP("Black Leg") then
+                        Main_Module.InvokeRemote("BuyBlackLeg")
+                    end
+                    
+                    local blackLeg = GetBP("Black Leg")
+                    if blackLeg and blackLeg.Level.Value >= 400 then
+                        Main_Module.InvokeRemote("BuyDeathStep")
+                        
+                        if GetBP("Library Key") then
+                            repeat task.wait()
+                                Main_Module.EquipTool("Library Key")
+                                Main_Module.Tween(CFrame.new(6371.2001953125, 296.63433837891, -6841.1811523438))
+                            until not Death_Step_Quest_Func or (CFrame.new(6371.2001953125, 296.63433837891, -6841.1811523438).Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 5
                             Main_Module.InvokeRemote("BuyDeathStep")
-                        end
-
-                    else
-                        if Enemies:FindFirstChild("Awakened Ice Admiral") then
-                            for i,v in pairs(Enemies:GetChildren()) do
-                                if v.Name == "Awakened Ice Admiral" then
-                                    if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                        elseif Map.IceCastle.Hall.LibraryDoor.PhoeyuDoor.Transparency == 0 then
+                            if Enemies:FindFirstChild("Awakened Ice Admiral") then
+                                for i,v in pairs(Enemies:GetChildren()) do
+                                    if v.Name == "Awakened Ice Admiral" and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
                                         repeat task.wait()
                                             v.HumanoidRootPart.CanCollide = false
                                             v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                             v.HumanoidRootPart.Transparency = 1
                                             v.Humanoid:ChangeState(11)
                                             v.Humanoid:ChangeState(14)
-                                            
                                             Main_Module.SetWeapon(Selected_Weapon)
                                             Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
-                                        until not Death_Step_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or Player.Character:FindFirstChild("Library Key") or Player.Backpack:FindFirstChild("Library Key")
+                                            Main_Module:BringEnemies(v, true)
+                                        until not Death_Step_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or GetBP("Library Key") or GetBP("Death Step")
                                     end
                                 end
+                            else
+                                Main_Module.Tween(CFrame.new(5668.9780273438, 28.519989013672, -6483.3520507813))
                             end
                         else
-                            Main_Module.Tween(CFrame.new(6473, 297, -6944))
+                            Main_Module.InvokeRemote("BuyDeathStep")
                         end
+                    elseif blackLeg and blackLeg.Level.Value < 400 then
+                        Level_Quest_Func = true
                     end
-                else
-                    Main_Module.InvokeRemote("BuyDeathStep", true)
-                    wait(.1)
-                    Main_Module.InvokeRemote("BuyDeathStep")
                 end
-            else
-                Main_Module:SetNotify("Death Step Required", "You need to reach Black Leg Mastery 400++", 5)
-                wait(4)
-            end
+            end)
         end
     end
 end)
@@ -2701,51 +2713,57 @@ end)
 spawn(function()
     while task.wait() do
         if Sharkman_Karate_Quest_Func then
-            Main_Module.InvokeRemote("BuyFishmanKarate")
+            pcall(function()
+                if GetBP("Sharkman Karate") then
+                    Sharkman_Karate_Quest_Func = false
+                    Main_Module:SetNotify("Sharkman Karate", "Already obtained!", 3)
+                    return
+                end
 
-            if Player.Character:FindFirstChild("Fishman Karate").Level.Value >= 400 or Player.Backpack:FindFirstChild("Fishman Karate").Level.Value >= 400 then
-                Main_Module.Tween(CFrame.new(-2604.6958, 239.432526, -10315.1982))
-                wait(.1)
-                Main_Module.InvokeRemote("BuySharkmanKarate")
-                wait(.1)
-
-                if Player.Character:FindFirstChild("Water Key") or Player.Backpack:FindFirstChild("Water Key") then
-                    Main_Module.EquipTool("Water Key")
-                    Main_Module.Tween(CFrame.new(-2604.6958, 239.432526, -10315.1982))
-                    wait(.1)
-
-                    if (CFrame.new(-2604.6958, 239.432526, -10315.1982).Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 3 then
-                        wait(.1)
-                        Main_Module.InvokeRemote("OpenLibrary")
-                        wait(.1)
-                        Main_Module.InvokeRemote("BuySharkmanKarate")
-                    end
-                else
-                    if Enemies:FindFirstChild("Tide Keeper") then
-                        for i,v in pairs(Enemies:GetChildren()) do
-                            if v.Name == "Tide Keeper" then
-                                if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                Main_Module.InvokeRemote("BuyFishmanKarate")
+                
+                local fishmanKarate = Player.Character:FindFirstChild("Fishman Karate") or Player.Backpack:FindFirstChild("Fishman Karate")
+                
+                if fishmanKarate and fishmanKarate.Level.Value >= 400 then
+                    local SharkmanNPC = CFrame.new(-2604.6958, 239.432526, -10315.1982)
+                    local TideKeeperSpawn = CFrame.new(-3711, 77, -11469)
+                    
+                    if GetBP("Water Key") then
+                        Main_Module.EquipTool("Water Key")
+                        if (SharkmanNPC.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 5 then
+                            Main_Module.InvokeRemote("SharkmanTemple", "Water Key")
+                            wait(.1)
+                            Main_Module.InvokeRemote("BuySharkmanKarate")
+                        else
+                            Main_Module.Tween(SharkmanNPC)
+                        end
+                    else
+                        if Enemies:FindFirstChild("Tide Keeper") then
+                            for i,v in pairs(Enemies:GetChildren()) do
+                                if v.Name == "Tide Keeper" and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
                                     repeat task.wait()
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(60,60,60)
                                         v.HumanoidRootPart.Transparency = 1
                                         v.Humanoid:ChangeState(11)
                                         v.Humanoid:ChangeState(14)
-                                        
                                         Main_Module.SetWeapon(Selected_Weapon)
                                         Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
-                                    until not Sharkman_Karate_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or Player.Character:FindFirstChild("Library Key") or Player.Backpack:FindFirstChild("Library Key")
+                                        Main_Module:BringEnemies(v, true)
+                                    until not Sharkman_Karate_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or GetBP("Water Key")
                                 end
                             end
+                        else
+                            Main_Module.Tween(TideKeeperSpawn)
                         end
-                    else
-                        Main_Module.Tween(CFrame.new(-3711, 77, -11469))
                     end
+                elseif fishmanKarate then
+                    Level_Quest_Func = true
+                else
+                    Main_Module:SetNotify("Sharkman Karate", "Buy Water Kung Fu first - requires 750,000 Beli", 5)
+                    wait(4)
                 end
-            else
-                Main_Module:SetNotify("Sharkman Karate Required", "You need to reach Water Kung Fu Mastery 400++", 5)
-                wait(4)
-            end
+            end)
         end
     end
 end)
@@ -2754,34 +2772,45 @@ end)
 spawn(function()
     while task.wait() do
         if Electric_Claw_Quest_Func then
-            Main_Module.InvokeRemote("BuyElectro")
-
-            if Player.Character:FindFirstChild("Electro").Level.Value >= 400 or Player.Backpack:FindFirstChild("Electro").Level.Value >= 400 then
-                Main_Module.Tween(CFrame.new(-10371.4717, 330.764496, -10131.4199))
-
-                if (CFrame.new(-10371.4717, 330.764496, -10131.4199).Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
-                    repeat task.wait()
-                        Main_Module.InvokeRemote("BuyElectricClaw", true)
-                        Main_Module.InvokeRemote("BuyElectricClaw")
-                        wait(2)
-                        Main_Module.InvokeRemote("BuyElectricClaw", "Start")
-                        Main_Module.InvokeRemote("BuyElectricClaw")
-                        wait(2)
-                    until string.find(Player.PlayerGui.Notifications.NotificationTemplate.Text, "GO!")
-
-                    if string.find(Player.PlayerGui.Notifications.NotificationTemplate.Text, "GO!") then
-                        Main_Module.Tween(CFrame.new(-12548.5967, 337.198151, -7492.63623))
-                        if (CFrame.new(-12548.5967, 337.198151, -7492.63623).Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
-                            wait(3)
-                            Main_Module.InvokeRemote("BuyElectricClaw")
-                        end
-                    end
+            pcall(function()
+                if GetBP("Electric Claw") then
+                    Electric_Claw_Quest_Func = false
+                    Main_Module:SetNotify("Electric Claw", "Already obtained!", 3)
+                    return
                 end
 
-            else
-                Main_Module:SetNotify("Electric Claw Required", "You need to reach Electric Mastery 400++", 5)
-                wait(4)
-            end
+                Main_Module.InvokeRemote("BuyElectro")
+                
+                local electro = Player.Character:FindFirstChild("Electro") or Player.Backpack:FindFirstChild("Electro")
+                
+                if electro and electro.Level.Value >= 400 then
+                    local PreviousNPC = CFrame.new(-10371.4717, 330.764496, -10131.4199)
+                    local FinishNPC = CFrame.new(-12548.5967, 337.198151, -7492.63623)
+                    
+                    local electricClawProgress = Main_Module.InvokeRemote("BuyElectricClaw", "Check")
+                    
+                    if electricClawProgress == nil or electricClawProgress == false then
+                        if (PreviousNPC.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                            Main_Module.InvokeRemote("BuyElectricClaw", true)
+                            wait(.5)
+                            Main_Module.InvokeRemote("BuyElectricClaw", "Start")
+                        else
+                            Main_Module.Tween(PreviousNPC)
+                        end
+                    elseif electricClawProgress == "Started" or electricClawProgress == true then
+                        if (FinishNPC.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                            Main_Module.InvokeRemote("BuyElectricClaw")
+                        else
+                            Main_Module.Tween(FinishNPC)
+                        end
+                    end
+                elseif electro then
+                    Level_Quest_Func = true
+                else
+                    Main_Module:SetNotify("Electric Claw", "Buy Electro first from Mink race area", 5)
+                    wait(4)
+                end
+            end)
         end
     end
 end)
@@ -2790,27 +2819,57 @@ end)
 spawn(function()
     while task.wait() do
         if Dragon_Talon_Quest_Func then
-            Main_Module.InvokeRemote("BlackbeardReward","DragonClaw","1")
-            Main_Module.InvokeRemote("BlackbeardReward","DragonClaw","2")
-
-            if Player.Character:FindFirstChild("Dragon Claw").Level.Value >= 400 or Player.Backpack:FindFirstChild("Dragon Claw").Level.Value >= 400 then
-                if Player.Character:FindFirstChild("Fire Essence") or Player.Backpack:FindFirstChild("Fire Essence") then
-                    if (CFrame.new(5661.89844, 1210.87708, 863.175537).Position - Player.Character.HumanoidRootPart.Position).Magnitude < 10 then
-                        Main_Module.Tween(CFrame.new(5661.89844, 1210.87708, 863.175537))
-                    else
-                        Main_Module.InvokeRemote("BuyDragonTalon", true)
-                        wait(.1)
-                        Main_Module.InvokeRemote("BuyDragonTalon")
-                    end
-                
-                else
-                    Main_Module.InvokeRemote("Bones", "Buy", 1, 1)
+            pcall(function()
+                if GetBP("Dragon Talon") then
+                    Dragon_Talon_Quest_Func = false
+                    Main_Module:SetNotify("Dragon Talon", "Already obtained!", 3)
+                    return
                 end
 
-            else
-                Main_Module:SetNotify("Dragon Talon Required", "You need to reach Deagon Claw Mastery 400++", 5)
-                wait(4)
-            end
+                Main_Module.InvokeRemote("BlackbeardReward", "DragonClaw", "1")
+                Main_Module.InvokeRemote("BlackbeardReward", "DragonClaw", "2")
+                
+                local dragonClaw = Player.Character:FindFirstChild("Dragon Claw") or Player.Backpack:FindFirstChild("Dragon Claw")
+                
+                if dragonClaw and dragonClaw.Level.Value >= 400 then
+                    local DragonTalonNPC = CFrame.new(5661.89844, 1210.87708, 863.175537)
+                    local MagmaAdmiralSpawn = CFrame.new(-5230.7573242188, 34.912307739258, 8466.9248046875)
+                    
+                    if GetBP("Fire Essence") then
+                        if (DragonTalonNPC.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                            Main_Module.InvokeRemote("BuyDragonTalon", true)
+                            wait(.1)
+                            Main_Module.InvokeRemote("BuyDragonTalon")
+                        else
+                            Main_Module.Tween(DragonTalonNPC)
+                        end
+                    else
+                        if Enemies:FindFirstChild("Magma Admiral") then
+                            for i,v in pairs(Enemies:GetChildren()) do
+                                if v.Name == "Magma Admiral" and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                                    repeat task.wait()
+                                        v.HumanoidRootPart.CanCollide = false
+                                        v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        v.HumanoidRootPart.Transparency = 1
+                                        v.Humanoid:ChangeState(11)
+                                        v.Humanoid:ChangeState(14)
+                                        Main_Module.SetWeapon(Selected_Weapon)
+                                        Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                        Main_Module:BringEnemies(v, true)
+                                    until not Dragon_Talon_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or GetBP("Fire Essence")
+                                end
+                            end
+                        else
+                            Main_Module.Tween(MagmaAdmiralSpawn)
+                        end
+                    end
+                elseif dragonClaw then
+                    Level_Quest_Func = true
+                else
+                    Main_Module:SetNotify("Dragon Talon", "Buy Dragon Claw first from Blackbeard ship", 5)
+                    wait(4)
+                end
+            end)
         end
     end
 end)
@@ -2819,12 +2878,53 @@ end)
 spawn(function()
     while task.wait() do
         if Godhuman_Quest_Func then
-            if Main_Module.InvokeRemote("BuyGodhuman") == 1 then
-                Main_Module.InvokeRemote("BuyGodhuman")
-            else
-                Main_Module:SetNotify("Godhuman Required", "- Access to the Third Sea (Lv. 1500+)\n- Mastery 400+ on all fighting styles\n- $5,000,000 and f5,000\n- 10 Dragon Scale\n- 20 Fish Tail\n- 10 Mystic Dreplet\n- 20 Magma Ore", 5)
-                wait(4)
-            end
+            pcall(function()
+                if GetBP("Godhuman") then
+                    Godhuman_Quest_Func = false
+                    Main_Module:SetNotify("Godhuman", "Already obtained!", 3)
+                    return
+                end
+
+                local GodhumanNPC = CFrame.new(-459.02398681641, 331.66931152344, -429.85247802734)
+                local requirements = {
+                    level = Player.Data.Level.Value >= 1500,
+                    dragonScale = GetMaterial("DragonScale", 10),
+                    fishTail = GetMaterial("FishTail", 20),
+                    mysticDroplet = GetMaterial("MysticDroplet", 10),
+                    magmaOre = GetMaterial("MagmaOre", 20),
+                }
+                
+                local superhuman = Player.Character:FindFirstChild("Superhuman") or Player.Backpack:FindFirstChild("Superhuman")
+                local deathStep = Player.Character:FindFirstChild("Death Step") or Player.Backpack:FindFirstChild("Death Step")
+                local sharkman = Player.Character:FindFirstChild("Sharkman Karate") or Player.Backpack:FindFirstChild("Sharkman Karate")
+                local electricClaw = Player.Character:FindFirstChild("Electric Claw") or Player.Backpack:FindFirstChild("Electric Claw")
+                local dragonTalon = Player.Character:FindFirstChild("Dragon Talon") or Player.Backpack:FindFirstChild("Dragon Talon")
+                
+                local allMastery400 = superhuman and superhuman.Level.Value >= 400
+                    and deathStep and deathStep.Level.Value >= 400
+                    and sharkman and sharkman.Level.Value >= 400
+                    and electricClaw and electricClaw.Level.Value >= 400
+                    and dragonTalon and dragonTalon.Level.Value >= 400
+                
+                if allMastery400 and requirements.level and requirements.dragonScale and requirements.fishTail and requirements.mysticDroplet and requirements.magmaOre then
+                    if (GodhumanNPC.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                        Main_Module.InvokeRemote("BuyGodhuman")
+                    else
+                        Main_Module.Tween(GodhumanNPC)
+                    end
+                else
+                    local missing = {}
+                    if not requirements.level then table.insert(missing, "Level 1500+") end
+                    if not allMastery400 then table.insert(missing, "All 5 fighting styles at Mastery 400+") end
+                    if not requirements.dragonScale then table.insert(missing, "10 Dragon Scale") end
+                    if not requirements.fishTail then table.insert(missing, "20 Fish Tail") end
+                    if not requirements.mysticDroplet then table.insert(missing, "10 Mystic Droplet") end
+                    if not requirements.magmaOre then table.insert(missing, "20 Magma Ore") end
+                    
+                    Main_Module:SetNotify("Godhuman Missing", table.concat(missing, "\n"), 8)
+                    wait(6)
+                end
+            end)
         end
     end
 end)
@@ -2833,12 +2933,38 @@ end)
 spawn(function()
     while task.wait() do
         if Sangui_art_Quest_Func then
-            if Main_Module.InvokeRemote("BuySanguineArt") == 1 then
-                Main_Module.InvokeRemote("BuySanguineArt")
-            else
-                Main_Module:SetNotify("Sanguine Art Required", "- Leviathan Heart\n- 20 Demonic Wisps\n- 20 Vampire Fangs\n- 2 Dark Fragments\n- $5,000,000 and f5,000", 5)
-                wait(4)
-            end
+            pcall(function()
+                if GetBP("Sanguine Art") then
+                    Sangui_art_Quest_Func = false
+                    Main_Module:SetNotify("Sanguine Art", "Already obtained!", 3)
+                    return
+                end
+
+                local SanguineNPC = CFrame.new(-6508.5581054688, 337.46493530273, -314.37997436523)
+                local requirements = {
+                    leviathanHeart = GetMaterial("LeviathanHeart", 1),
+                    demonicWisps = GetMaterial("DemonicWisp", 20),
+                    vampireFangs = GetMaterial("VampireFang", 20),
+                    darkFragment = GetMaterial("DarkFragment", 2),
+                }
+                
+                if requirements.leviathanHeart and requirements.demonicWisps and requirements.vampireFangs and requirements.darkFragment then
+                    if (SanguineNPC.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                        Main_Module.InvokeRemote("BuySanguineArt")
+                    else
+                        Main_Module.Tween(SanguineNPC)
+                    end
+                else
+                    local missing = {}
+                    if not requirements.leviathanHeart then table.insert(missing, "1 Leviathan Heart (from Leviathan)") end
+                    if not requirements.demonicWisps then table.insert(missing, "20 Demonic Wisps (from Demonic Soul)") end
+                    if not requirements.vampireFangs then table.insert(missing, "20 Vampire Fangs (from Vampire)") end
+                    if not requirements.darkFragment then table.insert(missing, "2 Dark Fragments (from Dark Beard)") end
+                    
+                    Main_Module:SetNotify("Sanguine Art Missing", table.concat(missing, "\n"), 8)
+                    wait(6)
+                end
+            end)
         end
     end
 end)
@@ -4031,89 +4157,291 @@ end
 QuestModules.FlowerLocations = {
     Flower1 = CFrame.new(-2313, 51, -10085),
     Flower2 = CFrame.new(61708, 49, -1320),
-    Flower3Swan = CFrame.new(980, 121, 1287)
+    Flower3Swan = CFrame.new(980, 121, 1287),
+    AlchemistNPC = CFrame.new(-11245.5, 332.5, -8656.5)
 }
 
 QuestModules.AutoRaceV2 = function()
-    local questStatus = QuestModules.CheckAlchemistQuest()
-    if questStatus == -2 then return true end
-    if questStatus == 0 then QuestModules.StartAlchemistQuest(); return false end
+    local success, questStatus = pcall(function()
+        return QuestModules.CheckAlchemistQuest()
+    end)
+    
+    if not success then return false end
+    
+    if questStatus == -2 then 
+        Main_Module:SetNotify("Race V2", "Already completed!", 3)
+        return true 
+    end
+    
+    if questStatus == 0 then 
+        local AlchemistPos = QuestModules.FlowerLocations.AlchemistNPC
+        if (AlchemistPos.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+            QuestModules.StartAlchemistQuest()
+        else
+            Main_Module.Tween(AlchemistPos)
+        end
+        return false 
+    end
+    
     if questStatus == 1 then
         local Backpack = Player:FindFirstChild("Backpack")
         local Character = Player.Character
-        if not Backpack:FindFirstChild("Flower 1") and not Character:FindFirstChild("Flower 1") then
-            Main_Module.Tween(workspace:FindFirstChild("Flower1") and workspace.Flower1.CFrame or QuestModules.FlowerLocations.Flower1)
-        elseif not Backpack:FindFirstChild("Flower 2") and not Character:FindFirstChild("Flower 2") then
-            Main_Module.Tween(workspace:FindFirstChild("Flower2") and workspace.Flower2.CFrame or QuestModules.FlowerLocations.Flower2)
-        elseif not Backpack:FindFirstChild("Flower 3") and not Character:FindFirstChild("Flower 3") then
+        
+        local hasFlower1 = (Backpack and Backpack:FindFirstChild("Flower 1")) or (Character and Character:FindFirstChild("Flower 1"))
+        local hasFlower2 = (Backpack and Backpack:FindFirstChild("Flower 2")) or (Character and Character:FindFirstChild("Flower 2"))
+        local hasFlower3 = (Backpack and Backpack:FindFirstChild("Flower 3")) or (Character and Character:FindFirstChild("Flower 3"))
+        
+        if not hasFlower1 then
+            local flowerPos = workspace:FindFirstChild("Flower1") and workspace.Flower1.CFrame or QuestModules.FlowerLocations.Flower1
+            if (flowerPos.Position - Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                for _, obj in pairs(workspace:GetDescendants()) do
+                    if obj.Name == "Flower1" and obj:IsA("BasePart") then
+                        firetouchinterest(Character.HumanoidRootPart, obj, 0)
+                        wait(0.1)
+                        firetouchinterest(Character.HumanoidRootPart, obj, 1)
+                    end
+                end
+            else
+                Main_Module.Tween(flowerPos)
+            end
+        elseif not hasFlower2 then
+            local flowerPos = workspace:FindFirstChild("Flower2") and workspace.Flower2.CFrame or QuestModules.FlowerLocations.Flower2
+            if (flowerPos.Position - Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                for _, obj in pairs(workspace:GetDescendants()) do
+                    if obj.Name == "Flower2" and obj:IsA("BasePart") then
+                        firetouchinterest(Character.HumanoidRootPart, obj, 0)
+                        wait(0.1)
+                        firetouchinterest(Character.HumanoidRootPart, obj, 1)
+                    end
+                end
+            else
+                Main_Module.Tween(flowerPos)
+            end
+        elseif not hasFlower3 then
+            local foundEnemy = false
             for _, Enemy in pairs(Enemies:GetChildren()) do
                 if Enemy.Name == "Swan Pirate" then
                     local EnemyHRP = Enemy:FindFirstChild("HumanoidRootPart")
                     local Humanoid = Enemy:FindFirstChild("Humanoid")
                     if EnemyHRP and Humanoid and Humanoid.Health > 0 then
-                        Main_Module.Tween(EnemyHRP.CFrame * CFrame.new(0, 25, 0))
+                        EnemyHRP.CanCollide = false
+                        EnemyHRP.Size = Vector3.new(60,60,60)
+                        EnemyHRP.Transparency = 1
+                        Humanoid:ChangeState(11)
+                        Humanoid:ChangeState(14)
+                        Main_Module.SetWeapon(Selected_Weapon)
+                        Main_Module.Tween(EnemyHRP.CFrame * Farm_Mode)
                         Main_Module:BringEnemies(Enemy, true)
-                        return false
+                        foundEnemy = true
+                        break
                     end
                 end
             end
-            Main_Module.Tween(QuestModules.FlowerLocations.Flower3Swan)
+            if not foundEnemy then
+                Main_Module.Tween(QuestModules.FlowerLocations.Flower3Swan)
+            end
+        else
+            local AlchemistPos = QuestModules.FlowerLocations.AlchemistNPC
+            Main_Module.Tween(AlchemistPos)
+        end
+        return false
+    end
+    
+    if questStatus == 2 then 
+        local AlchemistPos = QuestModules.FlowerLocations.AlchemistNPC
+        if (AlchemistPos.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+            QuestModules.CompleteAlchemistQuest()
+            Main_Module:SetNotify("Race V2", "Quest completed! Race V2 unlocked!", 5)
+        else
+            Main_Module.Tween(AlchemistPos)
         end
     end
-    if questStatus == 2 then QuestModules.CompleteAlchemistQuest() end
     return false
 end
 
+QuestModules.V3Locations = {
+    WenlocktoadNPC = CFrame.new(-10579.5, 332.5, -9322.5),
+    MinkChestArea = CFrame.new(-12500, 50, -7500),
+    SkypieaCloudArea = CFrame.new(-4900, 750, -2900),
+    HumanKillArea = CFrame.new(-2850, 50, 5350),
+    FishmanSeaArea = CFrame.new(-3000, 10, -10000),
+    GhoulGraveyardArea = CFrame.new(-5500, 100, -800),
+    CyborgFactoryArea = CFrame.new(383, 75, -530)
+}
+
 QuestModules.AutoRaceV3 = function()
-    local v2Status = QuestModules.CheckAlchemistQuest()
-    if v2Status ~= -2 then return QuestModules.AutoRaceV2() end
-    local questStatus = QuestModules.CheckWenlocktoadQuest()
-    if questStatus == 0 then QuestModules.StartWenlocktoadQuest(); return false end
-    if questStatus == 1 then
-        local race = QuestModules.GetPlayerRace()
-        if string.find(race, "Mink") then
-            _G.AutoFarmChest = true
-        elseif string.find(race, "Sky") or string.find(race, "Angel") then
-            for _, otherPlayer in pairs(Players:GetPlayers()) do
-                if otherPlayer.Name ~= Player.Name then
-                    local otherData = otherPlayer:FindFirstChild("Data")
-                    if otherData and otherData:FindFirstChild("Race") and tostring(otherData.Race.Value) == "Skypiea" then
-                        local otherHRP = otherPlayer.Character and otherPlayer.Character:FindFirstChild("HumanoidRootPart")
-                        if otherHRP then Main_Module.Tween(otherHRP.CFrame * CFrame.new(0, 8, 0)); return false end
-                    end
-                end
+    local success, result = pcall(function()
+        local v2Status = QuestModules.CheckAlchemistQuest()
+        if v2Status ~= -2 then 
+            return QuestModules.AutoRaceV2() 
+        end
+        
+        local questStatus = QuestModules.CheckWenlocktoadQuest()
+        
+        if questStatus == -2 then
+            Main_Module:SetNotify("Race V3", "Already completed!", 3)
+            return true
+        end
+        
+        if questStatus == 0 then 
+            local WenlocktoadPos = QuestModules.V3Locations.WenlocktoadNPC
+            if (WenlocktoadPos.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                QuestModules.StartWenlocktoadQuest()
+            else
+                Main_Module.Tween(WenlocktoadPos)
             end
-        else
-            for _, enemyName in ipairs({"Diablo", "Forest Pirate", "Snow Trooper"}) do
-                for _, Enemy in pairs(Enemies:GetChildren()) do
-                    if Enemy.Name == enemyName then
-                        local EnemyHRP = Enemy:FindFirstChild("HumanoidRootPart")
-                        local Humanoid = Enemy:FindFirstChild("Humanoid")
-                        if EnemyHRP and Humanoid and Humanoid.Health > 0 then
-                            Main_Module.Tween(EnemyHRP.CFrame * CFrame.new(0, 25, 0))
-                            Main_Module:BringEnemies(Enemy, true)
-                            return false
+            return false 
+        end
+        
+        if questStatus == 1 then
+            local race = Player.Data.Race.Value
+            
+            if race == "Mink" then
+                Farming_Chest_Func = true
+                Main_Module.Tween(QuestModules.V3Locations.MinkChestArea)
+                
+            elseif race == "Skypiea" then
+                local foundPlayer = false
+                for _, otherPlayer in pairs(Players:GetPlayers()) do
+                    if otherPlayer.Name ~= Player.Name then
+                        local otherData = otherPlayer:FindFirstChild("Data")
+                        if otherData and otherData:FindFirstChild("Race") and tostring(otherData.Race.Value) == "Skypiea" then
+                            local otherChar = otherPlayer.Character
+                            if otherChar and otherChar:FindFirstChild("HumanoidRootPart") then
+                                Main_Module.Tween(otherChar.HumanoidRootPart.CFrame * CFrame.new(0, 8, 0))
+                                foundPlayer = true
+                                break
+                            end
                         end
                     end
                 end
+                if not foundPlayer then
+                    Main_Module.Tween(QuestModules.V3Locations.SkypieaCloudArea)
+                    Main_Module:SetNotify("Race V3 - Skypiea", "Need another Skypiea player nearby to complete", 5)
+                end
+                
+            elseif race == "Human" then
+                local targetEnemies = {"Diablo", "Forest Pirate", "Snow Trooper", "Mob Leader"}
+                local foundEnemy = false
+                
+                for _, Enemy in pairs(Enemies:GetChildren()) do
+                    if table.find(targetEnemies, Enemy.Name) then
+                        local EnemyHRP = Enemy:FindFirstChild("HumanoidRootPart")
+                        local Humanoid = Enemy:FindFirstChild("Humanoid")
+                        if EnemyHRP and Humanoid and Humanoid.Health > 0 then
+                            EnemyHRP.CanCollide = false
+                            EnemyHRP.Size = Vector3.new(60,60,60)
+                            EnemyHRP.Transparency = 1
+                            Humanoid:ChangeState(11)
+                            Humanoid:ChangeState(14)
+                            Main_Module.SetWeapon(Selected_Weapon)
+                            Main_Module.Tween(EnemyHRP.CFrame * Farm_Mode)
+                            Main_Module:BringEnemies(Enemy, true)
+                            foundEnemy = true
+                            break
+                        end
+                    end
+                end
+                if not foundEnemy then
+                    Main_Module.Tween(QuestModules.V3Locations.HumanKillArea)
+                end
+                
+            elseif race == "Fishman" then
+                Main_Module.Tween(QuestModules.V3Locations.FishmanSeaArea)
+                
+            elseif race == "Ghoul" then
+                local targetEnemies = {"Reborn Skeleton", "Living Zombie", "Demonic Soul"}
+                local foundEnemy = false
+                
+                for _, Enemy in pairs(Enemies:GetChildren()) do
+                    if table.find(targetEnemies, Enemy.Name) then
+                        local EnemyHRP = Enemy:FindFirstChild("HumanoidRootPart")
+                        local Humanoid = Enemy:FindFirstChild("Humanoid")
+                        if EnemyHRP and Humanoid and Humanoid.Health > 0 then
+                            EnemyHRP.CanCollide = false
+                            EnemyHRP.Size = Vector3.new(60,60,60)
+                            EnemyHRP.Transparency = 1
+                            Humanoid:ChangeState(11)
+                            Humanoid:ChangeState(14)
+                            Main_Module.SetWeapon(Selected_Weapon)
+                            Main_Module.Tween(EnemyHRP.CFrame * Farm_Mode)
+                            Main_Module:BringEnemies(Enemy, true)
+                            foundEnemy = true
+                            break
+                        end
+                    end
+                end
+                if not foundEnemy then
+                    Main_Module.Tween(QuestModules.V3Locations.GhoulGraveyardArea)
+                end
+                
+            elseif race == "Cyborg" then
+                Main_Module.Tween(QuestModules.V3Locations.CyborgFactoryArea)
+            end
+            return false
+        end
+        
+        if questStatus == 2 then
+            local WenlocktoadPos = QuestModules.V3Locations.WenlocktoadNPC
+            if (WenlocktoadPos.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                ReplicatedStorage.Remotes.CommF_:InvokeServer("Wenlocktoad", "3")
+                Main_Module:SetNotify("Race V3", "Quest completed! Race V3 unlocked!", 5)
+            else
+                Main_Module.Tween(WenlocktoadPos)
             end
         end
-    end
-    return false
+        
+        return false
+    end)
+    
+    return success and result or false
 end
 
+QuestModules.RaceTrialPositions = {
+    Human = CFrame.new(29221.822265625, 14890.9755859375, -205.99114990234375),
+    Skypiea = CFrame.new(28960.158203125, 14919.6240234375, 235.03948974609375),
+    Fishman = CFrame.new(28231.17578125, 14890.9755859375, -211.64173889160156),
+    Cyborg = CFrame.new(28502.681640625, 14895.9755859375, -423.7279357910156),
+    Ghoul = CFrame.new(28674.244140625, 14890.6767578125, 445.4310607910156),
+    Mink = CFrame.new(29012.341796875, 14890.9755859375, -380.1492614746094)
+}
+
 QuestModules.RaceV4Trial = function()
-    local race = QuestModules.GetPlayerRace()
-    if string.find(race, "Mink") then ReplicatedStorage.Remotes.CommF_:InvokeServer("ZoroTrial", "Start")
-    elseif string.find(race, "Fish") then ReplicatedStorage.Remotes.CommF_:InvokeServer("FishmanTrial", "Start")
-    elseif string.find(race, "Ghoul") then ReplicatedStorage.Remotes.CommF_:InvokeServer("GhoulTrial", "Start")
-    elseif string.find(race, "Cyborg") then ReplicatedStorage.Remotes.CommF_:InvokeServer("CyborgTrial", "Start")
-    elseif string.find(race, "Sky") then ReplicatedStorage.Remotes.CommF_:InvokeServer("SkyTrial", "Start")
-    else ReplicatedStorage.Remotes.CommF_:InvokeServer("Alchemist", "1") end
+    pcall(function()
+        local race = Player.Data.Race.Value
+        
+        Main_Module.InvokeRemote("requestEntrance", Vector3.new(28286.35546875, 14895.3017578125, 102.62469482421875))
+        wait(0.5)
+        
+        local trialPos = QuestModules.RaceTrialPositions[race]
+        if trialPos then
+            Main_Module.Tween(trialPos)
+        end
+        wait(0.5)
+        
+        if race == "Mink" then 
+            ReplicatedStorage.Remotes.CommF_:InvokeServer("ZoroTrial", "Start")
+        elseif race == "Fishman" then 
+            ReplicatedStorage.Remotes.CommF_:InvokeServer("FishmanTrial", "Start")
+        elseif race == "Ghoul" then 
+            ReplicatedStorage.Remotes.CommF_:InvokeServer("GhoulTrial", "Start")
+        elseif race == "Cyborg" then 
+            ReplicatedStorage.Remotes.CommF_:InvokeServer("CyborgTrial", "Start")
+        elseif race == "Skypiea" then 
+            ReplicatedStorage.Remotes.CommF_:InvokeServer("SkyTrial", "Start")
+        elseif race == "Human" then
+            ReplicatedStorage.Remotes.CommF_:InvokeServer("HumanTrial", "Start")
+        end
+    end)
 end
 
 QuestModules.RaceV4Training = function()
-    ReplicatedStorage.Remotes.CommE:FireServer("ActivateAbility")
+    pcall(function()
+        VirtualInputManager:SendKeyEvent(true, "Y", false, game)
+        wait(0.1)
+        VirtualInputManager:SendKeyEvent(false, "Y", false, game)
+        ReplicatedStorage.Remotes.CommE:FireServer("ActivateAbility")
+    end)
 end
 
 QuestModules.LookMoonActivate = function()
