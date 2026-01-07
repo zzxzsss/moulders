@@ -1,4 +1,3 @@
--- fixed
 local TweenService: TweenService = game:GetService("TweenService");
 local VirtualInputManager: VirtualInputManager = game:GetService("VirtualInputManager")
 local CollectionService: CollectionService = game:GetService("CollectionService")
@@ -1449,6 +1448,12 @@ end
 spawn(function()
     while task.wait() do
         if Level_Quest_Func then
+            -- Check if level 2600+ needs submarine travel to underwater area
+            if QuestModules.NeedsSubmarineTravel() then
+                QuestModules.TravelToSubmergedIsland()
+                task.wait(1)
+            end
+            
             Selected_Monster = nil
             Selected_Monster_Mastery = nil
             QuestModules.QuestLevel()
@@ -1496,6 +1501,12 @@ end)
 spawn(function()
     while task.wait() do
         if Level_No_Quest_Func then
+            -- Check if level 2600+ needs submarine travel to underwater area
+            if QuestModules.NeedsSubmarineTravel() then
+                QuestModules.TravelToSubmergedIsland()
+                task.wait(1)
+            end
+            
             Selected_Monster = nil
             Selected_Monster_Mastery = nil
             QuestModules.QuestLevel()
@@ -4114,6 +4125,85 @@ QuestModules.LookMoonActivate = function()
         Character.HumanoidRootPart.CFrame = CFrame.new(Character.HumanoidRootPart.Position, Character.HumanoidRootPart.Position + moonDir)
         ReplicatedStorage.Remotes.CommE:FireServer("ActivateAbility")
     end
+end
+
+-- ================================
+-- UNDERWATER / SUBMERGED AREA (Level 2600+)
+-- ================================
+
+QuestModules.SubmarineDockPosition = CFrame.new(-16269.7041, 25.2288494, 1373.65955)
+QuestModules.IsSubmergedTraveling = false
+QuestModules.IsInSubmergedArea = false
+
+QuestModules.CheckIfInSubmerged = function()
+    local Character = Player.Character
+    if Character and Character:FindFirstChild("HumanoidRootPart") then
+        local pos = Character.HumanoidRootPart.Position
+        if pos.Y < -1500 then
+            return true
+        end
+        if pos.X > 9000 and pos.X < 12000 and pos.Z > 8500 and pos.Z < 11000 then
+            return true
+        end
+    end
+    return false
+end
+
+QuestModules.TravelToSubmergedIsland = function()
+    if QuestModules.IsSubmergedTraveling then return false end
+    
+    local Character = Player.Character
+    if not Character or not Character:FindFirstChild("HumanoidRootPart") then return false end
+    
+    local hrp = Character.HumanoidRootPart
+    
+    if QuestModules.CheckIfInSubmerged() then
+        QuestModules.IsInSubmergedArea = true
+        return true
+    end
+    
+    QuestModules.IsSubmergedTraveling = true
+    
+    local attempts = 0
+    repeat
+        task.wait(0.5)
+        Main_Module.Tween(QuestModules.SubmarineDockPosition)
+        attempts = attempts + 1
+    until (hrp.Position - QuestModules.SubmarineDockPosition.Position).Magnitude <= 10 or attempts > 30
+    
+    if (hrp.Position - QuestModules.SubmarineDockPosition.Position).Magnitude <= 10 then
+        task.wait(1)
+        pcall(function()
+            local submarineRemote = ReplicatedStorage.Modules.Net:FindFirstChild("RF/SubmarineWorkerSpeak")
+            if submarineRemote then
+                submarineRemote:InvokeServer("TravelToSubmergedIsland")
+            end
+        end)
+        
+        local startTime = tick()
+        repeat
+            task.wait(0.5)
+            if QuestModules.CheckIfInSubmerged() then
+                QuestModules.IsInSubmergedArea = true
+                break
+            end
+            local movedAway = (hrp.Position - QuestModules.SubmarineDockPosition.Position).Magnitude > 100
+            if movedAway then break end
+        until tick() - startTime > 15
+        
+        task.wait(2)
+    end
+    
+    QuestModules.IsSubmergedTraveling = false
+    return QuestModules.CheckIfInSubmerged()
+end
+
+QuestModules.NeedsSubmarineTravel = function()
+    local Lv = Player.Data and Player.Data.Level and Player.Data.Level.Value or 0
+    if Lv >= 2600 and not QuestModules.CheckIfInSubmerged() then
+        return true
+    end
+    return false
 end
 
 return QuestModules
