@@ -2049,5 +2049,128 @@
      end
  end)
 
+-- ================================
+-- FUNCTION ALIASES (Name Compatibility)
+-- ================================
+OtherModules.FruitESP = OtherModules.FruitEsp
+OtherModules.AutoStoreFruit = OtherModules.AutoStoredFruit
+OtherModules.NPCESP = OtherModules.NpcESP
+OtherModules.RemoveLavaDamage = OtherModules.RemoveLava
+OtherModules.RedeemAllCodes = function()
+    for _, Code in pairs(OtherModules.RedeemCodes) do
+        pcall(function()
+            ReplicatedStorage.Remotes.CommF_:InvokeServer("Code", Code)
+        end)
+        task.wait(0.5)
+    end
+end
+
+-- ================================
+-- MISSING FUNCTIONS
+-- ================================
+OtherModules.FruitNotifier = function()
+    if Fruit_Notifier_Func or FruitNotifier_Func then
+        for _, v in pairs(workspace:GetChildren()) do
+            if (v:IsA("Tool") or v:IsA("Model")) and string.find(v.Name, "Fruit") then
+                if v:FindFirstChild("Handle") then
+                    Main_Module.SetNotify("Fruit Found", v.Name .. " detected nearby!", 5)
+                end
+            end
+        end
+    end
+end
+
+OtherModules.MirageNotifier = OtherModules.MirageNotification
+OtherModules.KitsuneNotifier = OtherModules.KitsuneNotification
+OtherModules.PrehistoricNotifier = OtherModules.PrehistoricNotification
+
+OtherModules.SeaBeastHunter = function()
+    if Sea_Beast_Farming_Func or SeaBeast_Func then
+        OtherModules.AttackSeaBeastFarm("Sea Danger 1")
+    end
+end
+
+OtherModules.TerrorsharkHunter = function()
+    if Terrorshark_Farming_Func or Terrorshark_Func then
+        OtherModules.AttackTerrorsharFarm("Sea Danger 1")
+    end
+end
+
+OtherModules.ShipRaid = function()
+    if ShipRaid_Func then
+        OtherModules.AttackGhostShipFarm("Sea Danger 1")
+    end
+end
+
+OtherModules.GhostShip = function()
+    if GhostShip_Func or GhostShip_Farming_Func then
+        OtherModules.AttackGhostShipFarm("Sea Danger 1")
+    end
+end
+
+OtherModules.PiranhaFarm = function()
+    if PiranhaFarm_Func then
+        OtherModules.AttackFishFarm("Sea Danger 1")
+    end
+end
+
+OtherModules.SharkFarm = function()
+    if SharkFarm_Func then
+        OtherModules.AttackFishFarm("Sea Danger 1")
+    end
+end
+
+OtherModules.FruitSniper = function()
+    if FruitSniper_Func then
+        for _, v in pairs(workspace:GetChildren()) do
+            if (v:IsA("Tool") or v:IsA("Model")) and string.find(v.Name, "Fruit") then
+                if v:FindFirstChild("Handle") then
+                    local Distance = (Player.Character.HumanoidRootPart.Position - v.Handle.Position).Magnitude
+                    if Distance < 5000 then
+                        Main_Module.Tween(v.Handle.CFrame * CFrame.new(0, 5, 0))
+                    end
+                end
+            end
+        end
+    end
+end
+
+OtherModules.SkillAimbot = function()
+    if SkillAimbot_Func then
+        local Equipped = Player.Character:FindFirstChildOfClass("Tool")
+        if Equipped and Target_Locked then
+            Equipped.MousePos.Value = Target_Locked.Position
+        end
+    end
+end
+
+OtherModules.BountyTracker = function()
+    if BountyTracker_Func then
+        local CurrentBounty = Player.leaderstats["Bounty/Honor"].Value
+        local Earned = CurrentBounty - OldBounty
+        if Earned > 0 then
+            Main_Module.SetNotify("Bounty Tracker", "Earned: " .. Earned .. " Bounty", 3)
+        end
+    end
+end
+
+OtherModules.NoDashCooldown = OtherModules.NoDodgeCooldown
+
+OtherModules.BuyRaidChip = OtherModules.BuyMicrochips
+
+OtherModules.StartRaid = OtherModules.AutoStartRaids
+
+OtherModules.TweenToFruit = function()
+    if TweenFruits_Func then
+        for _, v in pairs(workspace:GetChildren()) do
+            if (v:IsA("Tool") or v:IsA("Model")) and string.find(v.Name, "Fruit") then
+                if v:FindFirstChild("Handle") then
+                    Main_Module.Tween(v.Handle.CFrame * CFrame.new(0, 5, 0))
+                    break
+                end
+            end
+        end
+    end
+end
 
  return OtherModules
