@@ -1,4 +1,4 @@
---- fixed
+
  local _ENV = (getgenv or getrenv or getfenv)()
 
  local TweenService: TweenService = game:GetService("TweenService");
@@ -2317,6 +2317,102 @@ end
 
 Main_Module.StopAdvancedBring = function()
     Main_Module.BringSettings.Enabled = false
+end
+
+Main_Module.ChestFarm = function()
+    local Character = Player.Character
+    if not Character or not Character:FindFirstChild("HumanoidRootPart") then return end
+    
+    local ChestModels = workspace:FindFirstChild("ChestModels")
+    if not ChestModels then return end
+    
+    for _, Chest in pairs(ChestModels:GetChildren()) do
+        if table.find(Main_Module.ChestList, Chest.Name) then
+            local ChestPart = Chest:FindFirstChild("Mesh") or Chest.PrimaryPart or Chest:FindFirstChildWhichIsA("BasePart")
+            if ChestPart then
+                Main_Module.Tween(ChestPart.CFrame * CFrame.new(0, 5, 0))
+                task.wait(0.5)
+                firetouchinterest(Character.HumanoidRootPart, ChestPart, 0)
+                task.wait(0.1)
+                firetouchinterest(Character.HumanoidRootPart, ChestPart, 1)
+            end
+        end
+    end
+end
+
+Main_Module.NearestFarm = function()
+    local Character = Player.Character
+    if not Character or not Character:FindFirstChild("HumanoidRootPart") then return end
+    
+    local ClosestEnemy, Distance = Main_Module.GetClosestEnemy(500)
+    if ClosestEnemy then
+        local EnemyHRP = ClosestEnemy:FindFirstChild("HumanoidRootPart")
+        if EnemyHRP then
+            Main_Module.Tween(EnemyHRP.CFrame * Farm_Mode)
+            Main_Module:BringEnemies(ClosestEnemy, true)
+        end
+    end
+end
+
+Main_Module.NearestBossFarm = function()
+    local Character = Player.Character
+    if not Character or not Character:FindFirstChild("HumanoidRootPart") then return end
+    
+    for _, Enemy in pairs(Enemies:GetChildren()) do
+        local EnemyHRP = Enemy:FindFirstChild("HumanoidRootPart")
+        local Humanoid = Enemy:FindFirstChild("Humanoid")
+        
+        if EnemyHRP and Humanoid and Humanoid.Health > 0 then
+            if table.find(Main_Module.Boss_Listed, Enemy.Name) then
+                Main_Module.Tween(EnemyHRP.CFrame * Farm_Mode)
+                Main_Module:BringEnemies(Enemy, true)
+                return
+            end
+        end
+    end
+end
+
+Main_Module.KillAura = function()
+    local Character = Player.Character
+    if not Character then return end
+    
+    local Tool = Character:FindFirstChildOfClass("Tool")
+    if Tool then
+        for _, Enemy in pairs(Enemies:GetChildren()) do
+            local EnemyHRP = Enemy:FindFirstChild("HumanoidRootPart")
+            local Humanoid = Enemy:FindFirstChild("Humanoid")
+            
+            if EnemyHRP and Humanoid and Humanoid.Health > 0 then
+                local Distance = (Character.HumanoidRootPart.Position - EnemyHRP.Position).Magnitude
+                if Distance <= 100 then
+                    if Tool:FindFirstChild("RemoteEvent") then
+                        Tool.RemoteEvent:FireServer(EnemyHRP.Position)
+                    elseif Tool:FindFirstChild("RemoteFunctionShoot") then
+                        Tool.RemoteFunctionShoot:InvokeServer(EnemyHRP.Position)
+                    end
+                end
+            end
+        end
+    end
+end
+
+Main_Module.InstantKill = function()
+    local Character = Player.Character
+    if not Character then return end
+    
+    for _, Enemy in pairs(Enemies:GetChildren()) do
+        local EnemyHRP = Enemy:FindFirstChild("HumanoidRootPart")
+        local Humanoid = Enemy:FindFirstChild("Humanoid")
+        
+        if EnemyHRP and Humanoid and Humanoid.Health > 0 then
+            local Distance = (Character.HumanoidRootPart.Position - EnemyHRP.Position).Magnitude
+            if Distance <= 150 then
+                EnemyHRP.CFrame = Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, -5)
+                Humanoid:ChangeState(11)
+                Humanoid:ChangeState(14)
+            end
+        end
+    end
 end
 
 return Main_Module
