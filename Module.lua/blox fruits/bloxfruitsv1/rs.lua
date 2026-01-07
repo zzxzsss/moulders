@@ -3983,137 +3983,10 @@ spawn(function()
     end
 end)
 
-return QuestModules
 
-
-QuestModules.GetPlayerRace = function()
-    if Player and Player:FindFirstChild("Data") then
-        local raceData = Player.Data:FindFirstChild("Race")
-        if raceData then
-            return raceData.Value
-        end
-    end
-    return "Human"
-end
-
-QuestModules.CheckAlchemistQuest = function()
-    return ReplicatedStorage.Remotes.CommF_:InvokeServer("Alchemist", "1")
-end
-
-QuestModules.StartAlchemistQuest = function()
-    ReplicatedStorage.Remotes.CommF_:InvokeServer("Alchemist", "2")
-end
-
-QuestModules.CompleteAlchemistQuest = function()
-    ReplicatedStorage.Remotes.CommF_:InvokeServer("Alchemist", "3")
-end
-
-QuestModules.CheckWenlocktoadQuest = function()
-    return ReplicatedStorage.Remotes.CommF_:InvokeServer("Wenlocktoad", "1")
-end
-
-QuestModules.StartWenlocktoadQuest = function()
-    ReplicatedStorage.Remotes.CommF_:InvokeServer("Wenlocktoad", "2")
-end
-
-QuestModules.FlowerLocations = {
-    Flower1 = CFrame.new(-2313, 51, -10085),
-    Flower2 = CFrame.new(61708, 49, -1320),
-    Flower3Swan = CFrame.new(980, 121, 1287)
-}
-
-QuestModules.AutoRaceV2 = function()
-    local questStatus = QuestModules.CheckAlchemistQuest()
-    if questStatus == -2 then return true end
-    if questStatus == 0 then QuestModules.StartAlchemistQuest(); return false end
-    if questStatus == 1 then
-        local Backpack = Player:FindFirstChild("Backpack")
-        local Character = Player.Character
-        if not Backpack:FindFirstChild("Flower 1") and not Character:FindFirstChild("Flower 1") then
-            Main_Module.Tween(workspace:FindFirstChild("Flower1") and workspace.Flower1.CFrame or QuestModules.FlowerLocations.Flower1)
-        elseif not Backpack:FindFirstChild("Flower 2") and not Character:FindFirstChild("Flower 2") then
-            Main_Module.Tween(workspace:FindFirstChild("Flower2") and workspace.Flower2.CFrame or QuestModules.FlowerLocations.Flower2)
-        elseif not Backpack:FindFirstChild("Flower 3") and not Character:FindFirstChild("Flower 3") then
-            for _, Enemy in pairs(Enemies:GetChildren()) do
-                if Enemy.Name == "Swan Pirate" then
-                    local EnemyHRP = Enemy:FindFirstChild("HumanoidRootPart")
-                    local Humanoid = Enemy:FindFirstChild("Humanoid")
-                    if EnemyHRP and Humanoid and Humanoid.Health > 0 then
-                        Main_Module.Tween(EnemyHRP.CFrame * CFrame.new(0, 25, 0))
-                        Main_Module:BringEnemies(Enemy, true)
-                        return false
-                    end
-                end
-            end
-            Main_Module.Tween(QuestModules.FlowerLocations.Flower3Swan)
-        end
-    end
-    if questStatus == 2 then QuestModules.CompleteAlchemistQuest() end
-    return false
-end
-
-QuestModules.AutoRaceV3 = function()
-    local v2Status = QuestModules.CheckAlchemistQuest()
-    if v2Status ~= -2 then return QuestModules.AutoRaceV2() end
-    local questStatus = QuestModules.CheckWenlocktoadQuest()
-    if questStatus == 0 then QuestModules.StartWenlocktoadQuest(); return false end
-    if questStatus == 1 then
-        local race = QuestModules.GetPlayerRace()
-        if string.find(race, "Mink") then
-            _G.AutoFarmChest = true
-        elseif string.find(race, "Sky") or string.find(race, "Angel") then
-            for _, otherPlayer in pairs(Players:GetPlayers()) do
-                if otherPlayer.Name ~= Player.Name then
-                    local otherData = otherPlayer:FindFirstChild("Data")
-                    if otherData and otherData:FindFirstChild("Race") and tostring(otherData.Race.Value) == "Skypiea" then
-                        local otherHRP = otherPlayer.Character and otherPlayer.Character:FindFirstChild("HumanoidRootPart")
-                        if otherHRP then Main_Module.Tween(otherHRP.CFrame * CFrame.new(0, 8, 0)); return false end
-                    end
-                end
-            end
-        else
-            for _, enemyName in ipairs({"Diablo", "Forest Pirate", "Snow Trooper"}) do
-                for _, Enemy in pairs(Enemies:GetChildren()) do
-                    if Enemy.Name == enemyName then
-                        local EnemyHRP = Enemy:FindFirstChild("HumanoidRootPart")
-                        local Humanoid = Enemy:FindFirstChild("Humanoid")
-                        if EnemyHRP and Humanoid and Humanoid.Health > 0 then
-                            Main_Module.Tween(EnemyHRP.CFrame * CFrame.new(0, 25, 0))
-                            Main_Module:BringEnemies(Enemy, true)
-                            return false
-                        end
-                    end
-                end
-            end
-        end
-    end
-    return false
-end
-
-QuestModules.RaceV4Trial = function()
-    local race = QuestModules.GetPlayerRace()
-    if string.find(race, "Mink") then ReplicatedStorage.Remotes.CommF_:InvokeServer("ZoroTrial", "Start")
-    elseif string.find(race, "Fish") then ReplicatedStorage.Remotes.CommF_:InvokeServer("FishmanTrial", "Start")
-    elseif string.find(race, "Ghoul") then ReplicatedStorage.Remotes.CommF_:InvokeServer("GhoulTrial", "Start")
-    elseif string.find(race, "Cyborg") then ReplicatedStorage.Remotes.CommF_:InvokeServer("CyborgTrial", "Start")
-    elseif string.find(race, "Sky") then ReplicatedStorage.Remotes.CommF_:InvokeServer("SkyTrial", "Start")
-    else ReplicatedStorage.Remotes.CommF_:InvokeServer("Alchemist", "1") end
-end
-
-QuestModules.RaceV4Training = function()
-    ReplicatedStorage.Remotes.CommE:FireServer("ActivateAbility")
-end
-
-QuestModules.LookMoonActivate = function()
-    local Lighting = game:GetService("Lighting")
-    local moonDir = Lighting:GetMoonDirection()
-    local Character = Player.Character
-    if Character and Character:FindFirstChild("HumanoidRootPart") then
-        workspace.CurrentCamera.CFrame = CFrame.new(workspace.CurrentCamera.CFrame.Position, workspace.CurrentCamera.CFrame.Position + moonDir)
-        Character.HumanoidRootPart.CFrame = CFrame.new(Character.HumanoidRootPart.Position, Character.HumanoidRootPart.Position + moonDir)
-        ReplicatedStorage.Remotes.CommE:FireServer("ActivateAbility")
-    end
-
+-- ================================
+-- RACE EVOLUTION V2 & V3
+-- ================================
 
 QuestModules.GetPlayerRace = function()
     if Player and Player:FindFirstChild("Data") then
@@ -4243,4 +4116,3 @@ QuestModules.LookMoonActivate = function()
 end
 
 return QuestModules
-
