@@ -1,4 +1,3 @@
----fixed
 local TweenService: TweenService = game:GetService("TweenService");
 local VirtualInputManager: VirtualInputManager = game:GetService("VirtualInputManager")
 local CollectionService: CollectionService = game:GetService("CollectionService")
@@ -4244,3 +4243,4 @@ QuestModules.LookMoonActivate = function()
 end
 
 return QuestModules
+
