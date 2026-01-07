@@ -1,4 +1,4 @@
-
+-- ts
 
 local ZlexUI = {}
 ZlexUI.Version = "1.0.0"
@@ -390,41 +390,51 @@ function ZlexUI:CreateWindow(config)
         end
     end)
     
-    if IsMobile then
-        local mobileToggle = Create("TextButton", {
-            Name = "MobileToggle",
-            Text = "",
-            Size = UDim2.fromOffset(50, 50),
-            Position = UDim2.new(1, -60, 1, -60),
-            BackgroundColor3 = theme.Accent,
-            Parent = screenGui,
-        }, {
-            Create("UICorner", { CornerRadius = UDim.new(0.5, 0) }),
-            Create("ImageLabel", {
-                Image = "rbxassetid://10734896384",
-                Size = UDim2.fromOffset(24, 24),
-                Position = UDim2.new(0.5, 0, 0.5, 0),
-                AnchorPoint = Vector2.new(0.5, 0.5),
-                BackgroundTransparency = 1,
-                ImageColor3 = Color3.new(1, 1, 1),
-            }),
-        })
-        Window.MobileToggle = mobileToggle
-        
-        mobileToggle.MouseButton1Click:Connect(function()
+    local toggleBtn = Create("TextButton", {
+        Name = "ToggleButton",
+        Text = "",
+        Size = IsMobile and UDim2.fromOffset(50, 50) or UDim2.fromOffset(40, 40),
+        Position = UDim2.new(1, IsMobile and -60 or -50, 1, IsMobile and -60 or -50),
+        BackgroundColor3 = theme.Accent,
+        Parent = screenGui,
+    }, {
+        Create("UICorner", { CornerRadius = UDim.new(0.5, 0) }),
+        Create("ImageLabel", {
+            Name = "Icon",
+            Image = "rbxassetid://10734897102",
+            Size = IsMobile and UDim2.fromOffset(24, 24) or UDim2.fromOffset(20, 20),
+            Position = UDim2.new(0.5, 0, 0.5, 0),
+            AnchorPoint = Vector2.new(0.5, 0.5),
+            BackgroundTransparency = 1,
+            ImageColor3 = Color3.new(1, 1, 1),
+        }),
+    })
+    Window.ToggleButton = toggleBtn
+    
+    toggleBtn.MouseButton1Click:Connect(function()
+        Window:Minimize()
+    end)
+    
+    Window.MinimizeKey = config.MinimizeKey or Enum.KeyCode.RightControl
+    
+    UserInputService.InputBegan:Connect(function(input, gameProcessed)
+        if gameProcessed then return end
+        if input.KeyCode == Window.MinimizeKey then
             Window:Minimize()
-        end)
-    end
+        end
+    end)
     
     function Window:Minimize()
         Window.Minimized = not Window.Minimized
         mainFrame.Visible = not Window.Minimized
-        if Window.MobileToggle then
-            local icon = Window.MobileToggle:FindFirstChild("ImageLabel")
-            if icon then
-                icon.Image = Window.Minimized and "rbxassetid://10734896384" or "rbxassetid://10734897102"
-            end
+        local icon = toggleBtn:FindFirstChild("Icon")
+        if icon then
+            icon.Image = Window.Minimized and "rbxassetid://10734896384" or "rbxassetid://10734897102"
         end
+    end
+    
+    function Window:SetMinimizeKey(key)
+        Window.MinimizeKey = key
     end
     
     function Window:Destroy()
