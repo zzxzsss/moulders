@@ -1,4 +1,4 @@
-
+-- fixed
  local _ENV = (getgenv or getrenv or getfenv)()
 
  local TweenService: TweenService = game:GetService("TweenService");
@@ -686,8 +686,46 @@
              local Target = ToEnemy.PrimaryPart.CFrame
              local BringPositionTag = if SuperBring then "ALL_MOBS" else Name
 
-             if not Cached.Bring[BringPositionTag] or (Target.Position - Cached.Bring[BringPositionTag].Position).Magnitude > 25 then
-                 Cached.Bring[BringPositionTag] = Target
+             local function getGroundY(pos)
+                 local rayParams = RaycastParams.new()
+                 rayParams.FilterType = Enum.RaycastFilterType.Exclude
+                 rayParams.FilterDescendantsInstances = {Enemies, Player.Character}
+                 local rayResult = workspace:Raycast(pos + Vector3.new(0, 10, 0), Vector3.new(0, -50, 0), rayParams)
+                 if rayResult then
+                     return rayResult.Position.Y + 3
+                 end
+                 return nil
+             end
+             
+             if SuperBring then
+                 if not Cached.Bring._LastSuperBringPos then
+                     Cached.Bring._LastSuperBringPos = Position
+                 else
+                     local zoneDist = (Position - Cached.Bring._LastSuperBringPos).Magnitude
+                     if zoneDist > 500 then
+                         Cached.Bring["ALL_MOBS"] = nil
+                         Cached.Bring._LastSuperBringPos = Position
+                     end
+                 end
+             end
+             
+             local groundY = getGroundY(Target.Position)
+             
+             if not Cached.Bring[BringPositionTag] then
+                 if groundY then
+                     Cached.Bring[BringPositionTag] = CFrame.new(Target.Position.X, groundY, Target.Position.Z)
+                 else
+                     Cached.Bring[BringPositionTag] = Target
+                 end
+             else
+                 local cachedPos = Cached.Bring[BringPositionTag].Position
+                 local horizontalDist = math.sqrt((Target.Position.X - cachedPos.X)^2 + (Target.Position.Z - cachedPos.Z)^2)
+                 if horizontalDist > 25 then
+                     local newY = groundY or cachedPos.Y
+                     Cached.Bring[BringPositionTag] = CFrame.new(Target.Position.X, newY, Target.Position.Z)
+                 elseif groundY and groundY < cachedPos.Y - 5 then
+                     Cached.Bring[BringPositionTag] = CFrame.new(cachedPos.X, groundY, cachedPos.Z)
+                 end
              end
 
              local EnemyList = if SuperBring then Enemies:GetChildren() else self.Enemies:GetTagged(Name)
@@ -2280,7 +2318,9 @@ Main_Module.AdvancedBringEnemies = function(EnemyName, MaxMobs, BringSpeed, Brin
                 continue
             end
             
-            local Position = Character.HumanoidRootPart.Position
+            local HRP = Character.HumanoidRootPart
+            local Position = HRP.Position
+            local LookVector = HRP.CFrame.LookVector
             local MobCount = 0
             
             for _, Enemy in pairs(Enemies:GetChildren()) do
@@ -2293,24 +2333,24 @@ Main_Module.AdvancedBringEnemies = function(EnemyName, MaxMobs, BringSpeed, Brin
                     if not EnemyName or Enemy.Name == EnemyName or string.find(Enemy.Name, EnemyName) then
                         local Distance = (Position - EnemyHRP.Position).Magnitude
                         
-                        if Distance <= Settings.BringRange then
+                        if Distance <= Settings.BringRange and Distance > 5 then
                             MobCount = MobCount + 1
                             
-                            local TargetPos = Position + Vector3.new(0, 30, 0)
-                            local TweenInf = TweenInfo.new((EnemyHRP.Position - TargetPos).Magnitude / Settings.BringSpeed, Enum.EasingStyle.Linear)
-                            local Tween = TweenService:Create(EnemyHRP, TweenInf, {CFrame = CFrame.new(TargetPos)})
+                            local TargetPos = Position + Vector3.new(0, -20, 0)
                             
                             EnemyHRP.CanCollide = false
+                            EnemyHRP.Size = Vector3.new(60, 60, 60)
+                            EnemyHRP.Transparency = 1
                             Humanoid:ChangeState(11)
                             Humanoid:ChangeState(14)
                             
-                            Tween:Play()
+                            EnemyHRP.CFrame = CFrame.new(TargetPos)
                         end
                     end
                 end
             end
             
-            task.wait(0.1)
+            task.wait(0.05)
         end
     end)
 end
