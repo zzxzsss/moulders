@@ -1,3 +1,3472 @@
--- this file was generated using ironbrew1 discord.gg/Vxr3H5sYUY
+local TweenService: TweenService = game:GetService("TweenService");
+local VirtualInputManager: VirtualInputManager = game:GetService("VirtualInputManager")
+local CollectionService: CollectionService = game:GetService("CollectionService")
+local ReplicatedStorage: ReplicatedStorage = game:GetService("ReplicatedStorage")
+local TeleportService: TeleportService = game:GetService("TeleportService")
+local RunService: RunService = game:GetService("RunService")
+local Players: Players = game:GetService("Players")
+local PlaceId: PlaceId = game:GetService("PlaceId");
+local Player = Players.LocalPlayer;
 
-return(function(a,a,b,b,b,b,c,d,e,f,g,h,i,j,k,l,m,m,m,n,n,n,n,n,n,o,o,o,o,o,o,o,o)local p,q,r,s,t,u,v,w,x,y,z,ba,bb,bc,bd,be,bf,bg,bh,bi,bj,bk,bl,bm,bn,bo,bp,bq,br,bs,bt,bu,bv,bw,bx,by,bz,ca local cb={}local cc={}cc[1]=3 cc[2]=1 cc[3]=2 local cd=0 local ce=81909 repeat if ce<=28503 then if ce>=-27788 then if ce>=-10775 then if ce>=25891 then if ce>=26946 then if ce~=28503 then bp=nil cd,ce=-10775,-10775 else break end else bm=nil ce=42636 end else if ce>=20152 then if ce==20152 then w=q and q[(function(cf,cg)local ch local ci={}local cj={}local function ck(cl,cm)cj[cm]=cl;return cj[cm]end local cl={}cl[1]=0 cl[2]=0 cl[3]=4 local cl=0 local cl=79581 repeat if cl<=-11935 then if cl<=-29131 then ch=ci[19]for cm=1,#cf do local cf=e(cf,cm)ch[cm]=o(d(37,99),(cf-(cg+cm))%256)end return i(ch)else break end else if cl<79581 then cl=ci[20]else ci[19]={}ci[20]=cj[79581+218576]or ck(-29131,79581+218576)cl=-10745 end end until cl==-11935 end)("\142\150\140\142\140\155",33)]or function(cf,cg)if cg<0 then return x(cf,-cg)end return(cf*2^cg)%r;end x=q and q[(function(cf,cg)local ch local ci={}local cj={}local function ck(cl,cm)cj[cm]=cl;return cj[cm]end local cl={}cl[1]=1 cl[2]=1 cl[3]=3 local cm=38882 local cn=0 repeat if cm<=38882 then if cm<=-11247 then break else if cm<38882 then return i(ch)else ci[21]={}ci[22]=cj[38882+60815]or ck(48243,38882+60815)cm=57047 end end else if cm>=57047 then if cm~=84916 then cm=ci[22]else cn,cm=ci[23],ci[23]end else ch=ci[21]for co=1,#cf do local cf=e(cf,co)ch[co]=o(d(37,99),(cf-(cg+co))%256)end cl[1]=(cl[1]+1)%5 ci[23]=cj[48243+60815]or ck(26170,48243+60815)cn,cm=84916,84916 end end until cm==-11247 end)("\165\167\157\159\157\172",50)]or function(cf,cg)if cg<0 then return w(cf,-cg)end return j(cf%r/2^cg)end ce=82075 else br=function(cf)local cf,cg,ch,ci=e(cf,bh,bh+3)bh=bh+4;return((ci*16777216)+(ch*65536)+(cg*256)+cf);end ce=43588 end else bp=function(cf)local cg,ch local ci={}local cj={}local function ck(cl,cm)cj[cm]=cl;return cj[cm]end local cl={}cl[1]=0 cl[2]=2 cl[3]=4 local cl=54602 local cm=0 repeat if cl>=-22131 then if cl~=54602 then cm,cl=ci[40],ci[40]else cg=0 ch=1 repeat local cn local co={}local cp={}local function cq(cr,cs)cp[cs]=cr;return cp[cs]end local cr={}cr[1]=4 cr[2]=3 cr[3]=3 local cr=0 local cr=28430 repeat if cr<=-26630 then if cr~=-26630 then cr=co[38]else break end else if cr<=28430 then cn=e(cf,bh,bh)cg=cg+(cn>127 and cn-128 or cn)*ch ch=ch*128 co[38]=cp[28430+171730]or cq(37875,28430+171730)cr=-43155 else if cr~=37875 then cr=co[39]else bh=bh+1 co[39]=cp[37875+171730]or cq(-26630,37875+171730)cr=31220 end end end until cr==-26630 until(cn<128)ci[40]=cj[54602+91226]or ck(-27586,54602+91226)cm,cl=-22131,-22131 end else if cl~=-27586 then break else return cg end end until cl==-31410 end cd,ce=-31371,-31371 end end else if ce<=-25782 then if ce~=-25782 then bu=nil cd=cc[2]==1 and 88081 or-38180 cc[2]=(cc[2]+1)%5 ce=-38180 else bi=function(cf)local cg=0 local ch=0 for ci=0,3 do local cj=e(cf,bh)cg=v(cg,w(cj,8*ci));bh=bh+1;end;for ci=0,3 do local cf=e(cf,bh)ch=v(ch,w(cf,8*ci));bh=bh+1;end;return ch*4294967296+cg;end cd,ce=-12164,-12164 end else if ce>=-19187 then if ce<=-19187 then be=function(cf)local cg=33 local ch=85 local ci={}local cj=#cf local ck=1 local cl=1 while ck<=cj do local cm=ck+4 local cj=(cm<=cj)and 5 or(cj-ck+1)if cj==0 then break;end;local cf,cm,cn,co,cp=e(cf,ck,cm)if cj<5 then cm=cm or 117;cn=cn or 117;co=co or 117;cp=cp or 117;end;if(cf<cg or cf>=cg+ch)then return"";end;if cj>=2 and(cm<cg or cm>=cg+ch)then return"";end;if cj>=3 and(cn<cg or cn>=cg+ch)then return"";end;if cj>=4 and(co<cg or co>=cg+ch)then return"";end;if cj>=5 and(cp<cg or cp>=cg+ch)then return"";end;local cf=((((cf-cg)*ch+(cm-cg))*ch+(cn-cg))*ch+(co-cg))*ch+(cp-cg)local cg=y(x(cf,24),255)local ch=y(x(cf,16),255)local cm=y(x(cf,8),255)local cf=y(cf,255)local cf=d(cg,ch,cm,cf)if cj<5 then cf=b(cf,1,cj-1);end;ci[cl]=cf;cl=cl+1;ck=ck+5;end;return i(ci);end ce=57329 else bj=nil cd=cc[1]==0 and-43013 or 45654 ce=45654 end else bo=nil cd,ce=-32460,-32460 end end end else if ce>=-39701 then if ce<=-37634 then if ce<=-39701 then cb[113]={}cd,ce=-37634,-37634 else if ce<-37634 then bu=function(cf)local cg={[669]={},[6058]={},[855]={},[8927]={},[1316]={},[811]={},[2105]={},}local ch ch=bp(cf)local ci={}for cj=0,ch-1 do local ch ch=bn(cf)do if(0)==(ch)then local ck ck=bn(cf)do local ck=(ck==0)if ck then local ck=bp(cf)local cl=b(cf,bh,bh+ck-1)bh=bh+ck;bc(ci,cj,cl)end end elseif(1)==(ch)then local ck=bn(cf)if not((ck)~=(1))then do bc(ci,cj,bq(cf))end else ci[cj]=bt(cf);end;elseif ch==2 then local ck=bn(cf)if ck==1 then do ci[cj]=bp(cf);end else bc(ci,cj,bi(cf))end;elseif not((ch)~=(3))then ci[cj]=bo(cf);elseif ch==4 then local ck local cl={}local cm={}local function cn(co,cp)cm[cp]=co;return cm[cp]end local co={}co[1]=4 co[2]=1 co[3]=2 local co=33275 local cp=0 repeat if co>=33275 then if co<=33275 then ck=nil ck=bn(cf)cl[43]=cm[33275+34284]or cn(-21171,33275+34284)cp,co=53694,53694 else if co<70660 then cp,co=cl[43],cl[43]else break end end else if co<=-21171 then do if ck==1 then ci[cj]=bq(cf);else ci[cj]=bo(cf);end;end cl[44]=cm[-21171+165355]or cn(70660,-21171+165355)co=-12725 else co=cl[44]end end until co==70660 elseif ch==5 then ci[cj]=(bn(cf))~=0;else ci[cj]=nil;end;end end;bc(cg,6058,ci)bc(cg,1316,bn(cf)==1)local ch=bp(cf)local ci={}local cj=0 do local ck=(1)local cl=(1)local ch=(ch)if cl>=0 then while ck<=ch do local cm,cn,co,cp,cq local cr={}local cs={}local function ct(cu,cv)cs[cv]=cu;return cs[cv]end local cu={}cu[1]=4 cu[2]=1 cu[3]=4 local cu=0 local cv=30042 repeat if cv<=-32322 then if cv>=-41708 then if cv<-32322 then cu,cv=cr[46],cr[46]else cv=cr[45]end else break end else if cv>=35020 then if cv<=35020 then cv=cr[47]else co=bq(cf)cp=cj+co cj=cp cr[46]=cs[61068+180459]or ct(-28259,61068+180459)cu,cv=-41708,-41708 end else if cv<=-28259 then cq=bn(cf)c(ci,{cn,cp,cq})ck=ck+cl cr[47]=cs[-28259+49388]or ct(-44378,-28259+49388)cv=35020 else cm=nil cm=(0)~=(bn(cf))cn=nil cn=cm and 1 or 0 cr[45]=cs[30042+180459]or ct(61068,30042+180459)cv=-32322 end end end until cv==-44378 end else while ck>=ch do local ch,cm,cn,co,cp local cq={}local cr={}local function cs(ct,cu)cr[cu]=ct;return cr[cu]end local ct={}ct[1]=2 ct[2]=4 ct[3]=3 local cu=0 local cv=-44273 repeat if cv<=-26520 then if cv<=-44273 then if cv~=-44273 then ck=ck+cl cq[52]=cr[-49410+60595]or cs(-29025,-49410+60595)cv=-36350 else ch=nil ch=(0)~=(bn(cf))cu=ct[2]==0 and-15022 or-19395 cq[48]=cr[-44273+191666]or cs(-19395,-44273+191666)cv=55261 end else if cv>=-29025 then if cv==-29025 then break else cp=bn(cf)c(ci,{cm,co,cp})cq[51]=cr[-26520+191666]or cs(-49410,-26520+191666)cu,cv=72805,72805 end else cv=cq[52]end end else if cv>=33093 then if cv<=33093 then cu,cv=cq[49],cq[49]else if cv<72805 then cv=cq[48]else cu,cv=cq[51],cq[51]end end else if cv<=-25191 then cv=cq[50]else if cv<-15022 then cm=nil cm=ch and 1 or 0 cn=bq(cf)cq[49]=cr[-19395+191666]or cs(-15022,-19395+191666)cu,cv=33093,33093 else co=cj+cn cj=co cq[50]=cr[-15022+60595]or cs(-26520,-15022+60595)cv=-25191 end end end end until cv==-29025 end end end bc(cg,811,ci)cg[7921]=bp(cf);local ch ch=bp(cf)local ci={}local cj,ck,cl,cm=0,0,0,0 for cn=1,ch do local ch ch={}bc(ch,4155,bp(cf))local co=(bn(cf))~=0 local cp cp=bn(cf)==1 local cq=bn(cf)==1 local cr cr=bn(cf)if not((cr)~=(1))then local cs,ct,cu,cv,cw,cx,cy local cz={}local da={}local function db(dc,dd)da[dd]=dc;return da[dd]end local dc={}dc[1]=2 dc[2]=0 dc[3]=4 local dd=-38628 local de=0 repeat if dd<=26532 then if dd>=-17984 then if dd<=-15693 then if dd==-17984 then break else cz[86]={}de=dc[1]==1 and-11985 or 28731 cz[89]=da[-15693+23520]or db(28731,-15693+23520)de,dd=63505,63505 end else if dd~=26532 then ct=cz[84]cu=nil cu=cz[85]cz[91]=da[-11985+23520]or db(43034,-11985+23520)de,dd=-40658,-40658 else de,dd=cz[87],cz[87]end end else if dd>=-38628 then if dd==-38628 then cz[84]={}cz[87]=da[-38628+23520]or db(40720,-38628+23520)de,dd=26532,26532 else dd=cz[90]end else de,dd=cz[91],cz[91]end end else if dd>=51503 then if dd<=55433 then if dd==51503 then de,dd=cz[93],cz[93]else ch[6239]=ct ch[6368]=cu ch[6283]=cv cz[93]=da[55433+23520]or db(-17984,55433+23520)de,dd=51503,51503 end else if dd<88374 then de,dd=cz[89],cz[89]else dd=cz[92]end end else if dd<=40720 then if dd<=28731 then cs=bs(cf)ct=nil cz[90]=da[28731+154591]or db(-11985,28731+154591)dd=-20282 else cz[85]={}cz[88]=da[40720+154591]or db(-15693,40720+154591)dd=41882 end else if dd<43034 then dd=cz[88]else cv=cz[86]cw,cx,cy=0,0,0 for dc=0,cs-1 do local cs={}local de={}local function df(dg,dh)de[dh]=dg;return de[dh]end local dg={}dg[1]=1 dg[2]=2 dg[3]=4 local dg=0 local dg=21400 repeat if dg>=21400 then if dg>=42367 then if dg<=42367 then dg=cs[55]else do cy=cy+bq(cf);end bc(ct,dc,cw)cu[dc]=cx cs[54]=de[76186+143700]or df(-26439,76186+143700)dg=20044 end else if dg<32419 then cw=cw+bq(cf)cx=cx+bq(cf)cs[53]=de[21400+143700]or df(76186,21400+143700)dg=-11000 else break end end else if dg<=-26439 then cv[dc]=cy cs[55]=de[-26439+143700]or df(32419,-26439+143700)dg=42367 else if dg~=20044 then dg=cs[53]else dg=cs[54]end end end until dg==32419 end;cz[92]=da[43034+154591]or db(55433,43034+154591)dd=88374 end end end end until dd==-17984 elseif cr==2 then local cs cs=bs(cf)local ct={}local cu={}local cv,cw=0,0 do local cx,cy,cz local da={}local db={}local function dc(dd,de)db[de]=dd;return db[de]end local dd={}dd[1]=0 dd[2]=4 dd[3]=4 local dd=0 local dd=-47815 repeat if dd<=-13134 then if dd<=-47815 then cx=(1)cy=(1)cz=(cs)da[58]=db[-47815+148366]or dc(25981,-47815+148366)dd=-11362 else dd=da[59]end else if dd<=-11362 then dd=da[58]else if dd==25981 then if cy>=0 then if cx<=cz then repeat local cs={}local de={}local function df(dg,dh)de[dh]=dg;return de[dh]end local dg={}dg[1]=4 dg[2]=4 dg[3]=2 local dh=0 local dh=41084 repeat if dh>=59275 then if dh>=61836 then if dh~=73879 then break else cx=cx+cy dg[3]=(dg[3]+1)%5 cs[57]=de[73879+194800]or df(61836,73879+194800)dh=59275 end else dh=cs[57]end else if dh<56032 then do cv=cv+bq(cf);cw=cw+bq(cf);end do ct[cx]=cv;bc(cu,cx,cw)end dg[3]=(dg[3]+1)%5 cs[56]=de[41084+194800]or df(73879,41084+194800)dh=56032 else dh=cs[56]end end until dh==61836 until not(cx<=cz)end else if cx>=cz then repeat do cv=cv+bq(cf);cw=cw+bq(cf);end do ct[cx]=cv;bc(cu,cx,cw)end cx=cx+cy until not(cx>=cz)end end da[59]=db[25981+148366]or dc(30681,25981+148366)dd=-13134 else break end end end until dd==30681 end ch[6239]=ct;ch[6368]=cu;elseif cr==3 then local cs,ct,cu local cv={}local cw={}local function cx(cy,cz)cw[cz]=cy;return cw[cz]end local cy={}cy[1]=0 cy[2]=4 cy[3]=4 local cy=0 local cz=-21764 repeat if cz<=-10522 then if cz<=-49496 then cy,cz=cv[65],cv[65]else if cz==-21764 then cv[62]={}cv[63]=cw[-21764+159350]or cx(29526,-21764+159350)cz=77111 else ct=cv[62]cu=0 do local da,db,dc local dd={}local de={}local function df(dg,dh)de[dh]=dg;return de[dh]end local dg={}dg[1]=2 dg[2]=0 dg[3]=0 local dg=0 local dg=-49007 repeat if dg>=74085 then if dg>=77619 then if dg==77619 then dg=dd[60]else dc=(cs)if db>=0 then while da<=dc do cu=cu+bq(cf);bc(ct,da,cu)da=da+db end else while da>=dc do cu=cu+bq(cf);bc(ct,da,cu)da=da+db end end dd[61]=de[84818+160450]or df(74085,84818+160450)dg=64329 end else break end else if dg<64329 then da=(1)db=(1)dd[60]=de[-49007+160450]or df(84818,-49007+160450)dg=77619 else dg=dd[61]end end until dg==74085 end do ch[6239]=ct;end cv[65]=cw[-10522+28279]or cx(71769,-10522+28279)cy,cz=-49496,-49496 end end else if cz>=77111 then if cz==77111 then cz=cv[63]else cy,cz=cv[64],cv[64]end else if cz~=71769 then cs=nil cs=bs(cf)cv[64]=cw[29526+159350]or cx(-10522,29526+159350)cy,cz=77620,77620 else break end end end until cz==71769 elseif not((cr)~=(4))then local cr,cs,ct,cu,cv,cw,cx,cy,cz local da={}local db={}local function dc(dd,de)db[de]=dd;return db[de]end local dd={}dd[1]=4 dd[2]=2 dd[3]=3 local de=0 local df=-12202 repeat if df>=-15876 then if df<=35802 then if df>=-12202 then if df~=35802 then da[68]={}dd[1]=(dd[1]+1)%5 da[72]=db[-12202+177871]or dc(-23798,-12202+177871)df=-44861 else de,df=da[76],da[76]end else if df<-12782 then ch[6435]=cv da[79]=db[-15876+46800]or dc(75871,-15876+46800)df=48082 else df=da[75]end end else if df>=60084 then if df>=67250 then if df<75871 then de,df=da[73],da[73]else break end else cw,cx,cy,cz=0,0,0,0 do for dg=1,cr do local dh={}local di={}local function dj(dk,dl)di[dl]=dk;return di[dl]end local dk={}dk[1]=0 dk[2]=2 dk[3]=3 local dk=21789 local dl=0 repeat if dk>=-14157 then if dk>=21789 then if dk<65262 then do cw=cw+bq(cf);end do cx=cx+bq(cf);cy=cy+bq(cf);end do cz=cz+bq(cf);cs[dg]=cw;end dh[66]=di[21789+98417]or dj(-38893,21789+98417)dl,dk=-14157,-14157 else break end else dl,dk=dh[66],dh[66]end else if dk==-38893 then ct[dg]=cx cu[dg]=cy cv[dg]=cz dh[67]=di[-38893+229488]or dj(65262,-38893+229488)dl,dk=-20428,-20428 else dl,dk=dh[67],dh[67]end end until dk==65262 end;end do bc(ch,6239,cs)ch[6368]=ct;end ch[6283]=cu da[78]=db[60084+177871]or dc(-15876,60084+177871)de,df=-48914,-48914 end else if df~=56750 then df=da[79]else df=da[74]end end end else if df<=-44861 then if df>=-45398 then if df~=-44861 then da[71]={}de=dd[3]~=1 and-15876 or-20339 da[75]=db[-45398+177871]or dc(-20339,-45398+177871)df=-12782 else df=da[72]end else if df<=-48914 then de,df=da[78],da[78]else da[70]={}da[74]=db[-47767+46800]or dc(-45398,-47767+46800)df=56750 end end else if df<=-23798 then if df==-38450 then df=da[77]else da[69]={}de=dd[1]~=0 and-22584 or-47767 da[73]=db[-23798+177871]or dc(-47767,-23798+177871)de,df=67250,67250 end else if df<=-22584 then cs=da[68]ct=da[69]cu=da[70]cv=da[71]da[77]=db[-22584+46800]or dc(60084,-22584+46800)df=-38450 else cr=nil cr=bs(cf)da[76]=db[-20339+177871]or dc(-22584,-20339+177871)de,df=35802,35802 end end end end until df==75871 else local cr={}local cs={}local function ct(cu,cv)cs[cv]=cu;return cs[cv]end local cu={}cu[1]=2 cu[2]=4 cu[3]=0 local cu=0 local cv=-35379 repeat if cv>=-27470 then if cv>=76672 then if cv>=79414 then if cv<89292 then cl=cl+bq(cf)cm=cm+bq(cf)cr[81]=cs[79414+146983]or ct(-27470,79414+146983)cv=54602 else break end else cu,cv=cr[82],cr[82]end else if cv==-27470 then bc(ch,6239,cj)do bc(ch,6368,ck)end ch[6283]=cl cr[82]=cs[-27470+146983]or ct(-36381,-27470+146983)cu,cv=76672,76672 else cv=cr[81]end end else if cv<=-37663 then if cv==-40284 then cv=cr[80]else cu,cv=cr[83],cr[83]end else if cv<-35379 then bc(ch,6435,cm)cr[83]=cs[-36381+15912]or ct(89292,-36381+15912)cu,cv=-37663,-37663 else cj=cj+bq(cf)ck=ck+bq(cf)cr[80]=cs[-35379+146983]or ct(79414,-35379+146983)cv=-40284 end end end until cv==89292 end ch[4134]=co;bc(ch,3548,cp)ch[3462]=cq;bc(ch,4421,ci[cn-1])ci[cn]=ch;end;cg[669]=ci;do cg[855]=bn(cf);end for ch=1,bp(cf)do cg[8927][ch-1]=bu(cf);end;local ch=(0)~=(bn(cf))do if not(not(ch))then local ch,ci,cj local ck={}local cl={}local function cm(cn,co)cl[co]=cn;return cl[co]end local cn={}cn[1]=0 cn[2]=3 cn[3]=4 local cn=30479 local co=0 repeat if cn<=-40333 then if cn>=-47573 then if cn~=-40333 then break else ch=nil ch=bp(cf)ci=ck[97]ck[99]=cl[-40333+59227]or cm(49713,-40333+59227)co,cn=33305,33305 end else cn=ck[100]end else if cn>=33305 then if cn<=33305 then co,cn=ck[99],ck[99]else cj=0 do for co=1,ch do local ch,co,cp,cq local cr={}local cs={}local function ct(cu,cv)cs[cv]=cu;return cs[cv]end local cu={}cu[1]=1 cu[2]=0 cu[3]=4 local cv=0 local cw=-19618 repeat if cw<=-10359 then if cw<=-38079 then cv,cw=cr[95],cr[95]else if cw==-19618 then ch=bn(cf)~=0 co=nil cv=cu[1]~=0 and 55191 or 81301 cu[2]=(cu[2]+1)%5 cr[94]=cs[-19618+145022]or ct(81301,-19618+145022)cw=-10359 else cw=cr[94]end end else if cw<=68116 then if cw<68116 then do cj=cq c(ci,{co,cq})end cr[96]=cs[55191+13951]or ct(69514,55191+13951)cv,cw=68116,68116 else cv,cw=cr[96],cr[96]end else if cw<=69514 then break else co=ch and 1 or 0 cp=bq(cf)cq=cj+cp cu[3]=(cu[3]+1)%5 cr[95]=cs[81301+145022]or ct(55191,81301+145022)cv,cw=-38079,-38079 end end end until cw==69514 end end cg[2105]=ci ck[100]=cl[49713+190298]or cm(-47573,49713+190298)cn=-49954 end else if cn~=30479 then cn=ck[98]else ck[97]={}ck[98]=cl[30479+59227]or cm(-40333,30479+59227)cn=-36079 end end end until cn==-47573 end end local c=bp(cf)local ch ch={}do do local ci=(0)local cj=(1)local c=(c-1)if cj>=0 then while ci<=c do local ck,cl local cm={}local cn={}local function co(cp,cq)cn[cq]=cp;return cn[cq]end local cp={}cp[1]=2 cp[2]=2 cp[3]=0 local cp=0 local cq=89405 repeat if cq<=-26888 then if cq<=-46055 then ci=ci+cj cm[104]=cn[-46055+96871]or co(-33193,-46055+96871)cq=88055 else if cq~=-26888 then break else ck=cm[101]cl=bp(cf)for cr=1,cl do bc(ck,cr,bp(cf))end;ch[ci]=ck cm[103]=cn[-26888+227942]or co(-46055,-26888+227942)cp,cq=57443,57443 end end else if cq<=57443 then if cq<=-15012 then cq=cm[102]else cp,cq=cm[103],cm[103]end else if cq<89405 then cq=cm[104]else cm[101]={}cm[102]=cn[89405+227942]or co(-26888,89405+227942)cq=-15012 end end end until cq==-33193 end else while ci>=c do local c,ck local cl={}local cm={}local function cn(co,cp)cm[cp]=co;return cm[cp]end local co={}co[1]=3 co[2]=4 co[3]=0 local cp=0 local cq=-37271 repeat if cq<=-13014 then if cq<=-37271 then if cq<-37271 then c=cl[105]ck=bp(cf)cp=co[3]~=0 and 80366 or 51944 cl[107]=cm[-45618+77799]or cn(51944,-45618+77799)cp,cq=86815,86815 else cl[105]={}cl[106]=cm[-37271+208870]or cn(-45618,-37271+208870)cp,cq=-13014,-13014 end else if cq<=-33220 then break else cp,cq=cl[106],cl[106]end end else if cq>=59080 then if cq<=59080 then cp,cq=cl[108],cl[108]else if cq<=80366 then ci=ci+cj cl[109]=cm[80366+77799]or cn(-33220,80366+77799)cp,cq=29266,29266 else cp,cq=cl[107],cl[107]end end else if cq<=29266 then cp,cq=cl[109],cl[109]else for cj=1,ck do bc(c,cj,bp(cf))end;ch[ci]=c cl[108]=cm[51944+77799]or cn(80366,51944+77799)cp,cq=59080,59080 end end end until cq==-33220 end end end end bc(cg,971,ch)do return cg;end end ce=53677 else p=table and table.move or function(c,cf,cg,ch,ci)local cj={}local ck={}local function cl(cm,cn)ck[cn]=cm;return ck[cn]end local cm={}cm[1]=1 cm[2]=3 cm[3]=3 local cm=0 local cn=80626 repeat if cn>=46473 then if cn<80626 then for co=cg,cf,-1 do local cf={}local cp={}local function cq(cr,cs)cp[cs]=cr;return cp[cs]end local cr={}cr[1]=4 cr[2]=3 cr[3]=1 local cr=-17574 local cs=0 repeat if cr<=-17574 then if cr==-23603 then cr=cf[3]else ch=ch-1 cf[1]=c[co]cf[2]=cp[-17574+30689]or cq(78298,-17574+30689)cs,cr=34887,34887 end else if cr>=34887 then if cr~=78298 then cs,cr=cf[2],cf[2]else ci[ch]=cf[1]cf[3]=cp[78298+161760]or cq(25502,78298+161760)cr=-23603 end else break end end until cr==25502 end;return ci;else ci=ci or c ch=ch+cg cj[4]=ck[80626+222063]or cl(46473,80626+222063)cm,cn=-31625,-31625 end else if cn<=-31625 then cm,cn=cj[4],cj[4]else break end end until cn==27962 end q=bit32 or bit r=2^32 cc[1]=(cc[1]+1)%5 ce=53442 end end else if ce>=-31371 then if ce<=-31371 then bq=nil cc[3]=(cc[3]+1)%5 ce=-44822 else bt=nil cd=cc[3]==1 and-27788 or 75608 cd,ce=75608,75608 end else bo=function(c)local cf,cg,ch,ci,cj,ck,cl,cm,cn,co,cp local cq={}local cr={}local function cs(ct,cu)cr[cu]=ct;return cr[cu]end local ct={}ct[1]=2 ct[2]=1 ct[3]=4 local ct=29144 local cu=0 repeat if ct<=-14844 then if ct<=-24463 then cn=cq[35]co=(cm%128)*16+j(cl/16)cp=((cl%16)*2^48+ck*2^40+cj*2^32+ci*2^24+ch*2^16+cg*2^8+cf)if co==0 then if cp==0 then return cn*0;else return cn*cp*2^(-1022-52);end;elseif co==2047 then if cp==0 then return cn*(1/0);else return 0/0;end;end;cq[37]=cr[-24463+191025]or cs(86594,-24463+191025)cu,ct=-14844,-14844 else if ct<-14844 then cu,ct=cq[36],cq[36]else cu,ct=cq[37],cq[37]end end else if ct<=29144 then cf,cg,ch,ci,cj,ck,cl,cm=e(c,bh,bh+7)bh=bh+8 cq[35]=cm>127 and-1 or 1 cq[36]=cr[29144+59954]or cs(-24463,29144+59954)cu,ct=-21149,-21149 else if ct==38315 then break else cp=cp+2^52 return cn*cp*2^(co-1023-52);end end end until ct==38315 end cd,ce=26946,26946 end end else if ce>=-44822 then if ce<=-44822 then bq=function(c)local bo,cf local cg={}local ch={}local function ci(cj,ck)ch[ck]=cj;return ch[ck]end local cj={}cj[1]=0 cj[2]=2 cj[3]=3 local cj=0 local ck=72471 repeat if ck>=72471 then if ck<76150 then bo=bp(c)cf=j(bo/2)if(bo%2)==0 then return cf;end;cg[41]=ch[72471+220799]or ci(-46423,72471+220799)cj,ck=76150,76150 else cj,ck=cg[41],cg[41]end else if ck<=-46423 then return-cf-1;else break end end until ck==-28232 end cc[2]=(cc[2]+1)%5 ce=49610 else if ce<=-43063 then bg=bf([==[1qEbh8nnA,!($J&d?"7Hs8P=%s8W-!s8O8B5=ETms8W-!s8W-!s8W*0(%O_G$l/>#L&=c&$l(PITgOMD(&C-okRSCh<9R0YLCX"Ws8W-!s8W-!s8Sem:n^715#gbGs8W-!s8W-!s8Pohj"Z)"k=G6tnc'1#+#67*s8W*q+[^rG<6.;Rs8W-!s8O2;6iA)fe=f6`%eYVVs$'KH:`h_tkYR$EocH6Es.TJ1I-<9as'`fu%28TBL\X/NR*]7O*TjS75&?TRLCG7fFI:E`%NFO@*@>lq_hL?KfJ$aOKFJSUbTHO4J(QFs3c(1fL\\00%eF*>'DB<`53u\fqdI?jQk(.u6P)5m:6HeCrRgZ?6QA=$M"i.m6QRF^Ll`cHKa8RUO<Hq3,38bI667Vp+o`'qkYNEhKfhcE:k+;JTgJ`%6A>>)#s-RE6AI[FW0!]>L'eg`clio?.Wia.TgSg7#Sf+:aA?;3KantIoS5L"Ti=C73qRbI4X>Rg'f+9j$+5KtV4g6`3`KcY*BI.j_1W4;.^YiaFK!RTJdO)s:`_BVTN+er3g:Odf2.&2<#A!+Tu[e=6bitH&dk(8#_HGOi*m+S4[jjL,Sl579IQ]e&MU!KWZ8pN4A/$P56rtdJnbQh+ou>?EN5.Of-.E%<i+4u)R-hN7qNPbP7f]1C?/;c/mI9:'urXA`<]ir+%bBhOHKnn6-82P%+%WKL;99a&r*-8.d2G`!M!G9&ZlTPOTA+_Z"d??)@TA@.;BF40S^k"*.j3_p'\F>_OW3Eb:ZrS+J,Q_*eYkKS[rYnaR*(BY:(S1nMHs=2YDLDTeY+Xh<$1X[n-h0<,`I0qV1LM]oRm[V4LQE*$("O/RNNH0bb6@9*\7)ebE#"j4S94U8EHqWJZ><PdF")?s*o.-D#dt>(8@dODlQ2L#,*X.D'5c@:@(W[)TG$ftN'&\%cq&$l"8<?.K42(GP?7jbV9B"!+W\-tk"r'$?=<![1PtTXt19U<n<5$4V\)(mL\/6ns?=cpXl5kJ_sJ%95h/)FJ!G.&.*B;6Vb0LVVTVA_3CHJ&GLB*5VCYF'(_:7eWT-,G5@sP2;"L;CYfYRN#]Q'?!iY#'?/F#0ZT5f?]mA#Bl9=cI!5077D_4#nosrJJ+-c#q-sK63r1'5VN`m66ALX&.BsSC(1Z06>-p!-pfaX6F1?'2GY`DC.k@QTJL'e'9XUV#j)\@"qa5ND(hT>&VqPt$%eg(&[.T&)?VRT>Y+_"#p].FQkh&!ND9Wq7MO$^'n\iGS*l;eB_5Eq;a:mL#t^7jF4;*boWgE,,8`!=p14=L1^('oR0JIi#R1r8Y:Tf6/.Q4t#"'@CQG)H?+sgY6JcJ-59JT]WJs^9R9(98o$dri..k4(OZ!qqu(.&&3WRijMcolO,.`Nh:1rMa(#\F,\$q3;o*,kF3"W/?^'-U;1P)PN7C=#c]7D]7;"+a";*c3<0FCETeU7g[`gO5hd_+%i'+e$qnFNd1XMR&$[U0GIB<,I/.MH)\GeiAsS2&%26l)ul['N'W`ZjH*@M[N[#&e(]Q!P/g_nI.)`+V;sX#&'`1dCc`?._8615B^L",DqVDJ?t63Z,DMS<>7cDoPq/-I;(GhiP]ul-b9QfCPV"BcWDR7H2WIpcA3<q,qIK\H%DnoX(3hc7&_>uWDT#VR1??M)@.bt-7Z`B'2h0D_#a^j/kWJn@F62'`"s=YV^@rG)Hc`&6PZGl8_akC))SaPB76V<^5u:p`)ehGBqA<5>+;uL'L=NC%+Wa&M<5A6WehCBd:6;qB2ejM6l/,s8H].C&9UB25h(Si1a0Yb?pPAj&2\MB@gj9-+=%!36k)m/X-b*^)?S'S2[U!^82?p#^gqOXUdd%A18ZZP@D!9t63OPaS>(fS'F?H*`_KC*(sq7ZaS<rW63%3&0Hj;DVC58mJS:@@(e<aVUM#!YkuIk<0jZYg7"Au:@[aC6kgKmu=ht^WUCp:S+s]Nql9#.eK!G\?JtN7iWYA<-J\`!+X$m2Ke[g\X&K_[D(i_rV<(Ed-JI.#s^_hlBXYj/EI2Z!$2QBs!_WW71$U^iaX["D`CN3m@#XG.0(nCqi@'%P6"?<*2"QF\`<:O):K2c=m)V3BhOm$1&`l!H8`VSj3-sSe7.t.QUU']&od"e#M0kr,N.Ukb=BK].a3K#9m+GpdW4r=f?hOkhO"sG-X(aCi2?:6i7p.(m#>=:^i%m_As>Qb^1bo<KT!mhOp$iun!"EPKe$P8.n[#>Y&+\\-?-'\J-FGTNV5Y)$/SW[ld5Z7e97$iHC":YA]+>c-[!(J9/,f%>A&?7)X"$JITJq,0NOUgLZK;(kj63mW@"GM@,Kg&nk:]N==#S*nkBFJ0H815(iLQmlI_#QoS7KNi>8:ZErK.$:?%])po;$A\G+Xs(IKK+;N(<mGB:'+#oUU)4X\@AIO+<dF]&t0pW"I*sK8ZP;p!>,Ai/;G(=*_fI]Al&U=7KqfX";V:,Nf9;KJF^W^Eb[HHRNRIlN0m_)&gfq+"I];k&1?IA>(O4qI#O(R7t@7q;uq<<!P7u'"GK00+@JI<:c,*jeI0af'h!+8!mhO87F2S_`@%>_,R"3*KSCa[8T['](eHsp;^G%`,RPr+i#<(QF@6jq+CIf/64Kb><"oT>N?j*BJUn4Me`9+$Q0L]PL]M'Y1-SR/K`i:q5sWgjP#+&.cq#u`&jeopN04fM,_/3O7gTol^iNU#THP!^"9DmEEO<YJ,o&g>!+HBEd%/T/ck-jV6N@=A#b_X*.%j(D-n$5]Tb=pYP$j.q;B6<j"DB%p!Xo3@Ka\N+Sl$dgT[V91]I]&=:^Bc-,";hV!mkXP5S.FQJP`":"N<?3#W*^,Td=1a#\AB/:@9@2*=^7r-%I3"'+?#iN/0i1PrXE+&2@--)ENJ)J;I0saOih;!)SIY!J86<WAn=F'HoLE'8<,$b=#83V$'Ig-o=>GMF%m$OSD41UC\9(3!G1rN$3]P0nPcX"D*[^)$*,21^$)E('q^S8ch=/!oVjm=;<7SLknA0(su1\N(Pih$3J"`57nSB4&_@N$3N*b7XoSH`Bku/.]E[fM5"Xp-pU6@,2uFm+M_Ye(o/4(5m79`25.$@7)D?bM'\#r;*Y7_@62dqN^;L.>\9F.HHoK$kGYDFGYfdKfkA#P&-*K$dcj<bWu/ecP9;!"WPF0`<<6M7!EP:a4/!8@."hj/5tD7m"@*M0"9\`k&-RXl!E;;sK`D74'-mTE!!J,j#XCWdP!DP^8.6XCJKj-M,i],$#f:ljQNmY*3>*5E6E$i1nN\T)K8eG`;[pO69UKDhAKi.`&cfNI'4Mar%>+-g+0@g/K]n4\#U4eR5X>r*#TtAn9*48C[$c*SOleDNT;K+flNK8mF)"!n"CafUO<>;`5Z@!R>Sn+S8#]$%Ji>36L?*HY7=cZ*GL2/-+:'/:,"RY8!P/mN5nFZ[OK]iY#_sZn%?60^->6j#KC'@L#_Mh<(e=[[SYC^2V2e#Q.V4#Q>RghRFB;IX]R/sSeBpqiUT-1d5mL=EEh6/3$C><l80STh(f@PQ'"2Gq`&eC)#XFVrF92n:LQI*9[EQgM9bGJ]&26Gh&qU-Q"9ThT8W(=-&/p(Z'i.+_<Q_hVLkJ`@8DKL[itDt0'!%O]O%+O5_(nC]0ii$W'S/SuCFkoA_*H^t]!*3]%T\3[75t-/%7)Bf\dBl_(cr0f$3NFWF[?`L7M8<j**k#)Y0oSQW62%X"_\0l5)P;K,%DQ(CFpt8"9F4n-q"/jUrD$;MFcM2JKP_b:J`<#VA91h#9a3^.Kp_/'VQKJ'Ukj$c'8"%0V/k*UQ]F(!3I2k&J5aETSX6pMR3X]Ra;Kf6A/03et^*LTqKo.d#](^Jfs\n:kYK@Kn-HS'LEGl)j3f!KgZSX5so$:UlYQcZ,.>-'!i]+64>+HEC=9:#XCnaMhJr4nW\pI)'K\+;04pt$5sO"%T,MZTaUu>PX69[=^l>12/9'63%cAc[[F!n$LpZfW2a#1`>__%P[;RsAXWah,OmK65/GSi!"JHu:]L\GJXJ2e777_A(^uks2/V_+8jo?eNLhfU9@$N"TKth1/:i3n#)!*g%0`+)_'fH5fG7T,!!UM+,n*BV&aQMqdSLVYP`YDA#S9@T+AdlE7_tb;U8sq)'b:n@,\TU+""?WO8;AK*)?s]!H72bs(dY'm&;S1]TaT!V-qoK5#UlF##Xt9NTb%kEMA.l['8:$I0JS6RJO7>u/;+!40n_g=THf<u2B7R(L):$t"KbH33l5)_;/0)O4g@1>#g,Dh3%G-Cd+4BPWLu^iej0F?X5S^<S44]q-jCt#,7Mks<>qQ,#__Eg;2gPCK^j$a!<E93$VGr2nHi#%1lMos7kg2nd8:0k-#!ZN#Rq/`-*YIj:\!1>5XhG'!\b6aLOq%V8#$`W,iSkKd"mf.(3Hr6&-OC9"Cf^jPq#*h-j0WDk[G:#,0$Ah1!gM0&u!a0.S1p_W)/HtLl*;h"I'b)1^]$OTS1*'KOuKKKLQY1(+9H?N_U`S"/5dK66_Ei651"7Z)IFW&ZSV,@C"cU6j+u;JjKH(&nV7iMTI&r=KNa>8<OMc"9FTX;[oC9RD]`c0QC^_";(WWqt-s[!#g#+,^,1j#r5Q+!&.p<!YQkN!$)(OOoPk'UYMU^,\An?.GJX,BIpb*,hdVTRRMl8^dJt8!gj7%MDRb\:Qgt.OSCAJ@snA6&qU*^P>I768t:3q->4[WSb39HlLE^6?aFi#JUpq@#!ER&S0S:b3f*if)6-0jE#aR;BgiU7)Z('O"DG1KTHGr8&04%JBF"neLi08tOFU:5+:OG^dmZMXN0UDH1f+=$?ptb1/fpLd+r:$b+DRc_8eMdOJ<%fO$3Nm$>m*hh8T\!1+9kK[=;3ec'S7[R:*J#DK*Vg:;@#OC!#gG1=;5HPJ0=&*,[q=]&ssJPHU7^eCl'EhmMUq;VLg!W8:jYQ!MD,E'b-O(N!,,lJ8Qn>'M/R`&VU9Y:dbs`#XpKN,:]ic5nWWYYbOIV8.YnhPQZR<5nF0<.NjEZ.QQ.BAn"^qEF%$leue,YOu%__S3XY187u[HI35L!3(3i%(pg5\4364R>Y`XDJ1X2"'aJF7p#KAP2`6[ui4K()$)2A>EEM8M-CZ68/teEDHFcK]#`Ib38P"-gZ8-#,dLnND.(Bs?(MkN$$j+ukjumEt.'Q*9LaRj(j-N:RfgVR3[7m>V^a92qMUJMf,S61I8Jl+r.?kJY7LUIHU..se&<T8P&7@mo&YU'%UC^9.KG6j+JjLhE5Doe@*(lL5YmMYC-&EE0.E)Q"LP\8coN-!h>!]6Y3Mf&rJ,o:d:aCTY+VYPUkq*16X!Q,-+@Hd7GT*WN:.[d2GSm_%_(HmS.7;Eh&2dE;U_,m`-o=?uK?t_VJqbBr&nOpp#_FC4P_QP5/.H<LL-S*2!@UsQ,S;LT#Vh.0&J60YM5W`ITd-4o`eZo.dErL?BLE^MMC;&LJu33jN"J@?.MSNp,@XW;'MBob<)j3$+VCAE8C.O);,p#DJ0G\:#VcD$ZW8MUJ8UH$7)_4R8J"$YM3'>[.jW]`8toJKW']-06<>#WJPc`2L+#?\@A8>[ibD@cMM<7L;G^aT6m5[5TuC^!;'a:,Loi0G6BQj$.$BnIAe6A!=?1mX$c&2C1_20-^n;O'YF`!'5q120@P#\*$pf9%LimA8BI#kX,tNZb;$7?)Jl]&T>m3J*`3Ne2djao$<0oHs].+pqLoF1;nLU<%I)aUCLEtEF,@I6+h[4t6:T@knitT`L@?M<JKG]LhM.qfsM5==3Qc5U)HOSIq(`80'OrblKP5)"SN(3kG,(p"1&-P9%-k`0Y!?hMs$DA":&k<L0,g33F`))-fKu=<A@g*Kp&VL;4']MZ8\>%I!1["g*!4s,@N!H_PQkrY$!*MNqEe5/V)$1?^0dIl08E=_X0GqhI)F>]e5fbp9J9$f\$uq4\8=9^7a!8UP&`@cTX[&(^.O'Z[5nF1(Gm#Ng<C27m#Q^/f.3^KI"@+-8;Q!-LIYS2_#_F0!6&5O5/0_)d_/TSY%3Z#h&Hj86O;RO4,_@4M%0?ZhOX$M1!)mHUNX>gr,)N$2&JQYu5m[^+`$uU\?&CnPbh#:N,lpk;3s$f4KKp>%_CDYtdkKZoF]Rn&2_QU/.RL"'5sR`06_UR#84b!NJHR.uh*i*m<tGFhP$1mfe](aL6Go'>>H.a*=@PDE=ZZpuVDJPc_2*o/nO^`papbkD=@!KDWpe)&9$eI!+9l>^#bXe`-dW0A"I4.jd!SLrGH@Et.SD.P(dcD*/Oa&A=Cu;7$6fhTX77URRYh)7'EuN]L-r2@7L0Z29%b1WJiOH*[o01tPjELP+s[^c&-UR<!!=Yo"?:9*!s0#:)!O-#_G6',,t)4=RS%ZN0l]TUhOL`:0H_DSVfq5JkZQ5/;;*Z7!ZaQtKSY@NS:gA[#*oUK&uK=f$6ogC^^NXU&0[@h6^YrA7&(d+"-HueV*Is9"@*5(WmVa$!W`CldR9mbY%FZ2!/*NV'kKq+Neid:8r+U]%>6"F:dc^OMBZ"D5_5"b#Uj=V&dGAS7g2/>?6c7:[jFqQ:JlWC!>nW]74\a65USlBO\f#Z#`<#oL^H/,+V:rPW5CHD+:&ts;$%;n;*h0[Pei>2bW*EM1+<J5'gi*2b6SNPYp:_I&Hi@O9*?#,*m)JGJ>-0+dn=-]J1-'V+Y'K?N8,K`_a%5&;ue-W;<S;-O;<NU7bD;!M&i=je"*EeeWL3*=V6Pt#R!i>&1,K,*W_-(&Md6n42NHM3]*P\J4*<QKMY(9$Am-I`/;R7U(f,<*,^SZ#XB%9U(e<R7"pjbjTrFe8gAk'+[PG"Jg(8k8-90c+V4ci#Wa/ck91tfP"LO<<<Yi,6r=TKN$pLp!?to>-NmQi$H40.K.%9SP`gh&*J#*N>)H_8L_5>l"K)gg:ajFo#\Gb=&/HeC4ea*5Neg&c(t>N-#Tu[.>Ylgm7*<)#M,9KD!_@hC7>)qTW'sj`+TN\5`$[gFJ<1n*r>ktf[HNEh-iftO+rEk)O9gYR$rs6@`/(?)Yp)SE@Y>S`#`WbVEAM%)%#Ib*&.jL/-&P)],Y$0a,=&6$M3P)-&-?O60N;-e%%&drNheC+!Y#2f,(qpZ>)4"g.YWI@'Jrun1fZ"j86_Q=7M(6/;mDu<J:K(H(0)X*Lt#N0FJVuMeN&LJ)M3^j`$uo"kom04dY]nL@Rq=I&d!YMLm2HQ!Yb]&&g7ibHnnGnl's&CVZfL'!^J3%LaAaFYn%j2K8C0d5[YI`M3+_]?r/="Le)nmS5<&a$IDAB^+h#9V'O2KCU4A#'es=/LFH4G(<^t?JAJ"Z(^M5i6pO:07f^eCE7S2L9ELG%+9Xud:hYj:(DRhVgHYb'U&dqYLd_n1Laj#^"J$eM(pXHG#R""fMSMJ#`H`X/TFpD7I#9$N-1M%&',m)H;`"N2"!Ksp,W_3NJtf#JY\G^-'N$+f0GQ)pJ076MUK&V5%"T6>#Qb)tP+j5$(hnAM!`1]b1f:Lf5r3t'k]mN..4HN/$40sjjp37MKE)o7641PZ`%"rCOet2dLftE#JMdQ4#n1@;<^h[B!#1lXOGY/kN,j#D7n8CH!f_l3d!;!&!$Vtf7%g1j7;,'m&Y]j`.b5/'`#=Ma!^T?[5mX/.TK<l<JKR2k!GH-rL/`akW!Gg'U6Ok6Hc-M-+@^lZd-)/U+T`jJk\,XJ750Nt[A4rX#XX;a<JV)/(o]2dJiHZD2'`caNY!*863n/711mHtnIlU(,@]&WTEtUpJWM(h(dLAPig-R!&f%+pMGOSp+Fq9664=,b.4kl4!h^i2@haP47+J`.1]dbN13N[A!fF?/J3cRp&OFg#=;l;$#Xsgl"sfL0Pc'+b&cmUr5S-RR4JO<`9gm'),tp]\+bbRt@02Sd.5;t88e(k1fO`$b5Y*-)6=9co?napD&-`7A&jT"R#m?.45p.ER(f]^X$@sfr6'24CJ0JG6J;ul+0Tl\j6AKT9Zi]=s)?:u`0L7fE8Q?*$';$`e6_tnt!.g6q+:-(+3<^`$;8+5T85'>A&0V)u.V99LQ'$/Ve-M$X(_G%_"GHgeJq7H[!b+Pp7R[;SdL&Qt:7k,Z(m+M\6)0Ss&LS9mL]B-/0SU-t8B`8)m)4ED";h\8+CpEF+gb@&ckmKD"XTh85RAhU&;5_T.A2M1?$ltZ,>hD`,,?F`*K<Bn7#8e(].jmp'te51T`B'8;2bdCpgg*C.&A)uE'oO]kR/to;$[^70Tm[oYGeJ$N*d,7&PE*bKd_dT5QFN7J\J'ZJ;-qb"@W>+P)+o2^]XZd"Frec<"t;l"G),s&:u$`AJ0;g&r9_S(mG/o!$Nd@N))hAk[K>h.$#Td&h?KU1m"(.2&$W:"YV("JjpR_5Y+`u?pJ13UdZ*9?kIpOUm3ng63;B5M-VHMJ7)1V#(hq)(fO?F6.I4,WM1"MQ+37/cl$LRMP:[/#XX1M@qVek6A\bT_LR1l6AZJQKZ#;H6El-Y"9oTl#U,4)#YG(1P!B9Y!X+>l#_5/f673tM5p-_l,a]^iJ:NKN(b6sFWW7mLMP,b<!QCFk4c>&PDaIpp,)d%'XQV#Ldo/fj;%Y!l#:Wju+T[rSA^Q;6$AkGa+`RR?dD!#E+Fo3b<#'t?5l_T393&tb#snX/p](>.,\(CV]F[u&Gj/<U7Z,,UanR7cP`RUt,^)d8?A]9p:dc-^,oO0!&jo)s2/Nm)$Ak<`5QPODj/!"qag`cq&V13tUa0GM+r[-g+eTF#&0sH14O7+A![pAPVm9iuC+0pTOWttS&\s3)LJ@u@@4D6[`CYYs-fCs+a3J%?mauU*H)iHnGM*k>a0]'C?I_V/^=K4++7F@ucQ>?#UoAGbKu9,0OhJ>5o"iG![\i)>fYB9UnuVi@@j^V.Jf26e#jYc^\7##dWB66B79o:VU_B8I>]jTE/6on,cL(=k9UmVKpMi`0gN(KdCi1?&nUOn*[]Z@e<,^:9`d*48$.7i0V;-Y'ZZ"1"BsT.(O?&f-(gVclf&F53A"r@*f$q!Hm0YWR=^st\e`/,il8!@UAR$tQkiiu,l/j6C4EP&LYT:nW:-cV6hE%'a[WY$35/H7ac5;Yr"185S:25,f9rf\n2U'f-Kr[9r(>,r0m[oGZVG9."MMFtaT:.Ung[1L_FL-,>39R_JcY?T1F$.9q3>0d5j.^7Qgj=o1?7J!YMPjKlS:NE1mZ@n0=kW!(^=6>M4fu=jP24S+Ot078UtSCb#4GT0=Z`!@RWnRq;D8T3=!n:B7s]>L9k/<o"iE@MK;3Efn'UiBg;,X[Kl+/Omhs!#9CXDKhCXD+R]X,X4_FIddoG*YCrW1a2)o7(^+.nmFU1@6BB"l])2#Qn*7UB6DOjK4-FQp]*?T?Ip/&k2mliAa4jG/t%U5eO5&dBCHIC^PO)$ft-F-c(FRL*&f!$B>,M03*e`9\QajBAXaQY=irS[%mJY$JcR2uhbG+>JA[qJnnLHPqJpMM_12:F>rK#]n1[#\FPDb;s#]A;H.e'=HEVQS%?SYLf^[\QZg,KH]$1Md7i<C7tc?!4!KO.pJ>EVM.lf3C*TiKDCqO0gPjh20)&nY:,fAG*7MrB,B]`47C;mb,g(h%mbNc?MA:DmAWSDQBN#X_?BF"ZaEUhX.4VB\&&Y=AbXY\=j7J81gj1a',@"oA#Ij=E-pI=P,WK7<&BE7Wlr+q;[6kfXGpB`\g<QT\gVu>e<DYB4HAY%X5WIk,6OJfs!ENFSm"S\\k\CPB_2dOe[b)ZdG)Mdt\/)Od>+M36[-SZZ+<kFdk9B?uFa"Q9BT'Cg/W)9FulbgB/@uDk0SS_=_D&%NOT))@U>#lB6/Qm"o''[W5\[A_>MdO0a1P%F,AS-YO<7i^g.JH</>2hMNQpk68'HZZ9"En,t5E&Fjh@897:f0%ht")6;@?SrMKO!h3?=.FG\J\;HRKZt$qVN@1rOc$2-g2[:*WSqDrU+0_ie'.[kpfn4INNh3oXe<k;/"d\Q?,9DuE`V'FM7!Al_U5VLJ$i<DKo=APmG!%IZ1IlL1,VEP][e)#KD>4,)esV*.iKEE_Hs04a@!CG0c#-WM@D/m^<f-&)KYrp'a!DZ$G%-0MA77:N13,_.Qp'NmS@`ibFtV(C(m;dren&$e>@tmF)E,Y_-sX,?I<]/L^2\Dd;#>QbRrSB\0uqS0Ls(irVX27gkBD`XkacM!k!4(PiE7[cp%P?#G(2PCXe'^+B.qnMYhkHNVQA"k%+(J@]e#.N>u'*+6g[1tC3+Ljpr8H>ATt.6_e`Is]JDG!oS6EkER!Dq]K<ZB9Z=hWATm;$`3*o4rEO5?>s9^nT"'K23Gh5@K&aa3!m659FEUW')1l)e*F$`JG[O]tn+"&naa-kHod8/A(llS[NP;YbBb)kocPjMSll"9E4#HfXA/CQERW/(%YK>*:.SHbDaliD0%S!&6aSMD)Tm?hFQmG\6Qp>Vb1,[c,=XGcR5:"G-)7r&fe[>s+=FsTp0tMY`L8e[+i,WX)j=Qj+b>kB+'o/.$T&\KM*rTbYA]:@SS^g4G<NkGS<>=4K9[Bl@1rMIWO>tib$nP[t"R!,c]Zm18o2d0+OW@qn1YQVed-J."YH'E+G0W0m;RYkiNdX"Cld)mNc`#EYR*Yj=k)>[bdofO^cGn8C.BE<hlKrm]qcL^E$21.>T=Z&3!HukNT#T6\nl"t#*8WN/ElM3$1!.huV#.1t2qsPZEESdGrRdj`i\,,2_$Og<J,[:80ET7FrgAqB1lXom\?0+!NO$Ln`.<29:)roSCX,+dK_`lhj$VM=o1mUj#B4\Uf(nGb?)*oQ'j&Q;h!uJ$qBu)Rn1HhJBN_^3kF`9TDX3aO"5\3JW+!ThFN[Ki9MG[oSg2,>FteK<\Ga@G)VitP]?FW(Ed25GerH"Q/\60*M6>X04Tg^m1Nr//abj[.\]RTUKf@YgJ,YrUS++5kq0#HG,IrENUT/8m0a2?j-QgsZL!K[Gc"Dukg/a7V<>XWTW3,LclGde^#'5YnNd$bFcGUS`2$XnNKmAHBSSU1r>W$Tc'^i?+7d)D.X*U,`FsPCP?,4B8h:b]Q2L/tY:U4``JW5YGk1/F*Dq$,5WGg->qG641,M%o8cg8dj>?Y(P+0fXq*ECpBp<$Ap4F-#Yh43@aEI.I$]KWfN[d>Ip;Nk5:Ff&k0'1XWbHKqe]V/[/i>lf:5cpqtf4MGOBh)Jti09;(IG^f=__%k?uDg^phh*.JN\sJeh?*iYbN*U&hQMgtM4`YCWIsP^lQeB$"?,`O;6J'Q?O:CrV>9WU$g,6>X4&UM[=>>7E4?-J:3=d)-L&*ek>Ou]8#o@8n,EA4kJ6QhM!7HI`gBpi=H6?c;40%9njt+-]1+N/O#dtY`$.'MR=@NZ$#g8GIM&Su'3=l0Vb*"H=OGkhD$\OZi6/i5LV?g)&&P-&MB3cCa$5-\_:Dc_q+pc&kX<Qb>!)f*dM&T"`6"12Co)'VAe3V7<6-?2MnUtGc5Tg>p1,BIS@<l<IiWgVX;ZMXn8=;OF^euM67E/G$!`2FXP[s,G!!Fa;(8U:);T;35KQ0onAW\aZMSof(K#A`TOP#/LRg'Ke!.c8(NZ\T.KRb1bC.\:/"KW2q,Y:s&`&JYA0aJ'h!oV?RQDl9a+<X4CHqtYs#Y^AJ5p?TpAW2Zo+HUgMJKP4r<eVe%.FWem_Pr+u5QLo2:<'2s^d(/]PP+V!!K7XILQDcCJs8,964-SAK#A$"JfmV;&d0<_(lF9;Z>>Fb-ui8h+W4@;OGoG3"c5)B=`su^.n,RsnHD5^#\+)P-O:<;'I'ddKoc?A&]P.\6/i1PMC?IYM'WE16H078BEV-;63oot'S8#6+RoIU3*M8/8B(rK&n_JYlp-@L83A%$Je2@Y4Tr9/G_]'C"@/(D5nX2$+ULCF#SKL\&4'b08A)r*`_[h3+:&5Y5nG;R5g'"4g`RJ9&-tiM8Ba=!K#A"L#RCQb?qV(t8=4OX&/?9h[Y,2;^46at#QbP_SfmP)+j7/&+UA4&J-Fs@A#_p65Ceh`iWRBuK9-@q`![ji,-[mM&kA$=2%Tlk+c1`f%4(os8:3\^"%ZQ6"@59aJ.Nk8P%@igQ5P7<2*p4T6/jj=0P63\$RB%$5`i9#+L)(Q#SG&`"@/&(0b=I:4+\"E#Qb&nL`dsp&4-LdKFfE+O9?*tK#A33!$MXO!C>]J&HW4>#SJd5,X@ID64uT,_B;6U#_F1=!f7p?#S@,i`!R[k#SQ1t82J8C`"`mj&-N7N&h.%:`!Rbj+>F%V)'f=j&]P@bK#A*D^*#.c#g;WY0q.SL-UhJM&iYoX4@ktB63KRc`X.e.Q_tZB73G.V6-@W;#[-9l#_[^>+:nZ!@gE]g8-2)55S+'T&L8Mj$pe>+![&a#JfmGm`Z66++@t915nJ]#P5ug=64aDl'EEi;+:o_&64aEUYlt1P63JHA$PL2l77&7`5ThUN6A,?TQ6Hm'EJ<&nAe,.Q!^XVf,)IO4LldQI"@:,=6UKc88.:'20o$$E"\Ct8&0VW.N"\`e+i63+#SE0.J]%g>QB2A=+qQ$6+Rt-k&X#CMKT%\mOdL\bL_)j]"]Dc3"@.bp73kVN!/(UY#QfZiS3S2&KFl-5Otd&q%gYEc&->-/8A%1f+i7?4`!6Er&;2SBK-1F&Je0(36%BMTX?^4u&L'W!&0M)e":ti1#Y>R5&mLI-![0i@KHQ3g8D+Y#"9]lG[Y5hLJO!ZL+[eQq#SG&]#T4]qJe0)'Q@pL`+T_[1Lr:8W,SA$'OoU)!8-hJ:0P2F^"9\u:!>$N"+RoPc&AaYf90n(N5Tg=55p-F9JKRA?#XSY[+@p<]<!eC(AKi6&&]P7_K#A*0!.b[o;hu!8+:&P^_3Q92&B5'16jNiuM?G)Z!.k1^"9_&C5Y)#D&-*l^'F@)366ZOT#S;Xp&<OEI.$>E7KRb15Lk(SG^Bh*@$.r-$!(%;b&/$7KO9?^0"<g$d&4$:%&HkBj#dtEJ+[Q_c<Zj+%+[Q__85'$e&0ccM#Y>R1JmaVW8P'I[b+:k+9:N&F6jS@^$mLW@#XSY[80T;\+=)Om5!T+"+H.<DCh\JD#Q\.eKHOg,5X5l)+=(G"![&U2JflU+Je14=8;n\n+X%s6!=09h+97)!V$J4G@8%gG#SDY27#2rk@g+"Y6*MZ!2^2(W&O_EtnGrYu99Cf#&hB&'!?iU/nUh)JJj9kQJfm;i5S+J0"Gmj]#hV3k^EMO?qR$cp9PS=YEmuQZ6$ms&cbT&0UnOcOVTtVjB22Ws/ml>%jdJp0rh"/ec<Yej*BJ<;/9<$-iT;P#RDA><"-Eim69&;0W(8.*<&>4S-OO/%!U_o[7gNPV+/CFt&gIZj=W+$*(HGV.h5?;](ircu+/DR5Un"`F`2l&>1</?ENe`Sj=<\'>5/q6g1*U;@l]LT<bP'O+Y"pbF!@_Y.8=:Sk9L6h1GBVP<eJ1Ng7>53_*AFJLR^>Qd$A:so5QF+0$5-,G!.r-"&.g,,+>G>jnPKDp64b=PK+L?^KEu&n!^RA#+UNf5,"VNQ(cr93M%`G5(o5@U,ZZ#fJs=eOiWN/F"=]7]P\!/?$ke&O(kT[CP3#kt!("d*@2V-<#XSY[L`eqg5mTd_#R!FaKT$KS#Qd>#9+q=L#RH"n6/i6n(dUEkV+;.#M%^.#&J@A@J075[#`onJaCZY>E<6.PP%FJ4!'uDPM'#,V@@7L6X?ZatKHpg++UE`lgcutf&<cPa+gr'c"GnW7Ogm[iJfmC1O_%fh!.r-!,\A/e5S+9Z+<Ur?+:&TEOLTn\$\Scg!<`E(!C@D%!>#eB+bGdu&/#$G"<emU?qV5k%nO>u5S/So"@8,oJIhhn"9Lmm6"1*d,X)26JriBVOFSGVJWM!"64uTj@g`?i`#8a]M'jQ8KHphR+:(:>=gj&1"9AQI&SrltJcLHL&.fBa#SJqT16i__Jfl=K#RHQ[J]%lu5tD8),Q]+jKEr/&"9E=Q@S;h+"C$`dJrju*A=OeE!^U8u&;9S)#XSY[#[p&/#!nB)&-<s[!<b\2+@$JD!eMO#Jh9D&"@3"hJM9i,9:8M9"G%[,#SK3ifMZ</,\%%8&.jL+#XT(H6kG"W66[\+&:o?S#](q6#XT.i#XM!(&:uUM+:(<R#pKWV!?nlc&J@Ch!tm*q^m600+@Hcm+:*fH7,eF`#SDSp9+__g8=VqS%nT#W!eS>u"9aPpfM[Af+:',966brO#SD^q+bTi3W?MI3,"ToX#SE4*"<dgP&Kj=MJ<0mV#TtB)+qP"lKEND'Jq*hE"@;#LfMZ;l,_6M[,QnAZ+b1[i![/\jV26=*S03Ib"G%+NChXL`"9AW+6@aSO#RF!E#TsC>&ciP/+Cq!-@Ka+R$#F<"YlY%/&-P;'V9C7t+:*W+!=6e,6>S(`KJA-*Je/%j&]P-?#XCodKT$KK&8Wf%'nZ=Hltm`o>W$;+g2>u6LiM\mQ7K5SaDtDF8@^@NNZm>0Uo_*T@Te2,pMS32WA$L>F!tV_>F)PZ%iMRZnVMK3fGRmq7Oo:p?\YWhj0ce.m-2h5!P0J6,9UuY&-<,RBp+iL"<do$#U,-C&0TV',S5QX/O]q:"9_"%KHLg=!C78."G%[<#SKo=5lb>`5[jit"GmZA;FHWAK7K$hKE)%0)$iQ^&.ehn`!?Kt+<Uq56kCOJ$&L):63MiN!C=Me,!h#:70GnA5Y-KW+:(4D+p7oPJfk&F!.k1^,YfI-KRb0f,XFtS#`1eXP1WYX#XX1i6<5<Z&FL/D&X(3q8'd.014_al"@C*BOq8f?+W4q&0B@MQ!/a*.&0_Z27R/(%J:Jab6pO:0Hj.hFiKYi(#SC`3%j$bWTnE5u#a&5S;BuPUM@a=P:5TUC,:NbG+G`9RJriCEHqPdDOgBb7.3V6PE79i>AI0I`Kg9)MOVe*#6&6Wh&X!\2$%d[m-h,3+^cR6(EpgI_l4<8J'EZW4KnOt!nUZ4q\o6r:8PRt%qEt.knrqY6fCl;N'q'd/MFld::1i6m,\r:7A)%&gMZXtO=[Om5;3l'2gsH317>m9?)?bUVLd43j&-<CG5S/UeAlDL!U68E?<hs!h#r8?4Jq]6T9..ie0cg?Kc4g>]qnu`j\*kS!!_mb5L_/i&"-3`#3;(pgBj6YbM2VI[N;f4MdpDlE(Vd!$-R+/!JsJ+^NpJrgJYb^q7a*l78FYiW1G%Rq?g8,h,@[aEKm2uP47ePK\8U9XDY,!clFH/\-NJ=G/b?+N!DtV<SW_qA7t;4OXC`/<bX"c"+bIWR"G@$]6-:`D!'u-c+@s^AL]D6?&qGMN%&E4s63Mf]nHK#G5S+25`XW+_,^,9.+X$`Q<*1<Be1UUp%*q&C+%rFTMW`@o.BPRQI(MD]=@P-`45F_R5RBb46DC7h5Tp9>iLPu7&,;:`Gh*H-JJ\NH)pW3H*'9Bp;Nmhg&k(sI`sfEu,71gr+e\<UK`^_)_i)Qp*TtL_b7"nNka#rK"J'5;q^g&5<Jr%nKb/&LJh9CmJfk=%"Fr'm"Fq'Q`0d-r;G1f#Mpb@DcV<FW3DRcY;,V9NL&e;XoOE?uQs`#M+$D[@=k%HOTb:ha*'4^FmF_i$P?SRHH1oGp*oFA,j"CU1dTAK5DT^`I&hB(=!!7C>OtjO,?jt)m`;$d*`4,-lM).pGEIQ/MCD.bdqko3mh_sD]SL-h:4[8uL)5H0l61Nla=TTpalO.sSVA9R+3HBkDIHFR5O?!-Uf`Eibi@rfg3^*+[mAe"g`MSEc!%\O]VN;M<,(BBe`$gAeM!*'JBfk^5]e7"sBIOr5?t",f+"nY^6b<Xt+c-1b5Ql`G"QA?M/m+JtLTo^!^`9%=_#T)?0fk*joO*_OSo)ngRA0nNN;u`p,#"$^aWqY#9PB@ccZuB!UH:q#NcuLRmN=XVElMNT!'?/q&MhH`gE6V%5sR=Z8Ph]F._paJM6O)77,etQ"s,!/_Qr\pK,?]pBEqB7g_R/$/E9_k'@B/O;h+N?I:6f1X$T%),.M(-R=_p7oag@P>>QuWk+lHl:VrkSkmN#QDnfpg"l,L&k>&'Ppc*(qQ#0"ln!L#5N5$ng32!"s=32;!@$WY/3I4.M&uUpc,".6W9VMZAG:AG?>o"I+4//C%."hkXM+=3MfXWM4WR00[@psrOf\0g_KPF1k!E3_Wn:NQdctS%XgL1dLm0Eb\URq'/SeX'U8<?Fn]M9?VKZ"E)6/huu#Y>:>6h@W$_+5J!8E^Xf&HW*Ok+7A4N:tUQaiui)S[2po0Ggb@\2VUn1W,^tB0GI6$LGr]Bc"45ZZ>Hm4=Q(5<5XZU7E-=5kpP\2,*UL8+]Xe($b[o_`r2PW0b)$b.NBuXg_i\2eg;6+dlr?7)4[WYFLS`fG7P)j)`)3NPj*8ObagtJnY2l:ns+"ADq_R:a%fRladHc_4YgHE-Xcisd=A'`nbk7CS;,L9"[]KXSfTU`$JM'XBD\'.ql<+BKseiRcd/X;NM2jk't^H6YS<j7Y,'B3?%r@]PRnB/U'rHT%3dg%gY0*ff8)r6U;8)g"p\dXf-?H>Jj\1^EI%mN4!W*84DsYQFU=+nM"H[(9WC5kGFlc':BNFi["s#LVCAR[29ots,,rp:\iRjt3YFR51NaB<h9fcN=so^?`Qg'&So>W,><as<D[SJCq%3ZdTg`Le`J>!3%=Jfg@fNVYm.D76]'h!e`>4W"VW#rt?C#$F`3dZhi=UlY",T]_5j)R[Pj.EGXiF\.hfaBkGVDf%DXpJ+Ri]b]'bB)72/(\a0U(XNc"\fGOCjkr7GF^sTb('66J9c:1H/hagCRb)6FrC9Tj[<M;mVM[P!GP%:"<>b1si44%NQ#5[N+ng(XH589H_omTL^8+&qCF&bRCP4/Gm#pgin?X]7^i]>,RrjM&/-aRi'AB@lgiB/1*+ZAL&.Qg5'H-RKAi^+UF2iW]t&NXcU0RL93V.>;c_SitF=H`]78Y#[E3X5d[h-JiBF!:#$^4T'P4\]kr$h2i9T&D:k`>m8GnRD@+0)5#'6V/kn9:-%7Y.JTfi")S\!!fZ^HrE<WN#3-(3I@3h^aYs&rm[*Pri$VUZQ\9.u]J2a2uh`)[tU]Qm"T!WbUk2?`Y@'_52.=rs-P,Sbp]08!/jUtgObHMLo-b>MIFI#_NLlC5]_AZU6-46Ch+9GuQjs$R98;i?O#d=gq>hh;N@h)S7'7^+??!i/hE"/u,4F)ig<8=S3Pg'<h$:>d?)5B_8bQB/1S"p?WHn@ZNOX(M&_T@=]PN.?@Jd;N'Z)('GY[)q_%3^<G0hsNe1/<],M?F8PYbg+e0h)J+h\A52#XAV<#sh*Qr$<KU!<F>eAPWj[8F/r4b=n8WZ?_W6%0Ss>,XFu@\4D3<iWXoVJ.NTq;Pk7lZ=g^/N=?87`5N;-gQ@jh6HU-q/QK[_M]hPA#_<OAP:Io]MSoi'@JiC5Xrn9$Xrm^1b/,948Iu"j&:bl/M3&:3AQJj464sP*5S,'jdNn>c.C4O1638;:+b27I+L).P_;J5lk@GO[-*E+]Adbkd#m&[P;6M9;=qlK06t3)#!9Fd3/g3XB"B)*'!Y?OY5sUO;.L6.X63O`]Ikq6R<Zksf5TiT[6%C)./Ob8Q/6bFb,a%kP`!?ns,U!ErM(QgH;/)=Z'e)4r!/+n,5sUOA?=O6h#U+0k!C=lN+:&%%AGe`D+:&#f!h%3f5UFYL,Y:9e&/5:6.>46*KE._p;2C<#<88Go6->oe+H/+,J3ZX..J!O*&:bn.SV$o2JrjP>&0c)uJWPgF#XAqF0nj.c5p/Qd&0b[WO>oToiX%r)8=VtT%"a!p#[uL!Q3b"J'"HeN.8`FkYnWlV8/6`SQR3t$Je2RR&b;ZS8:pmZ6&5MmPYhG^+:'(q+@t0*"9\`..5QPe6BEr9L_)h5Z8X$3&0uEAE<dWmJcGp&gI!`&+@OAP+@HbP"9BW9r(<80<"L6A&>Vu)"GDGmf`4QG*"jD,KLh%e&>ZB6&gIqn!X't,K-1GMOGr^8IRQds7,Y%+cuI"[nL`i#(ChVX]o/2R*!MR3M<T%U7.Up2^&nBlOq7n%<ec8M83B2\c9TI<JX!9&L_)#9"+l'A#Gb$"KLhL2#SA9N!f9'2*'k,A+[?S]#QdoT"@AERJ05+#!=/`mLm0b_iWB6I8=&@'5S+L&ljOJlAO.FE!'q0ZJ0=@e+TasPZiEDo+W8aTJHR,(#Ur"^+G;=8"@3%HRg4coi(TbB":.RFM'2!fCakOQVB\Doiho?F,mZbu/G"F'R0#qGJWL.8Ad/lp&-OF\!<E=[[j#B-+D'q(,lfmR.V"]2#_WI,,Qrc+8Uu<k"FS*(BsB3J+<Y5sO>;gs.:WDl7n(RpJ:L=9@`E<1\=KLF7`2H`@N_<jbhA5O\Rc.f.'n3Zk/*.\QAp_MrN"[OA]r1jJspLK4(bF_f=#RBTG\df;gY`*"2!9Qbo=*bpMfk_E(AF;mF^#.@]T'Y9m;S$mKU[DSK$1/Zp60<.j\7k[Xlo'5K=SUJ[t(b,-KRep1qm8S=a&M0Q=%!]N(/.XW#q;EXk``VVuq?p@TG2:lW*#Bi0$AR,`'<R,1;S]/i$%9/'up-Hj^',4Ng4Pt;!>A?6WShK0b+`k:]+a%ZKJYQUH7TA8>3Acel=]34&>ZO8QV9.$F'n[_0t,B[fM6W]B>WAHQ`"mdX<c067UA%Rqok=pj-%JESh\TuoKdS`b>[$>qRV@F]uN&t?,#OS`,%h0<V&,??0V5LbW^($B0X?"qN)!C3%+-:_cDJ*d`7gHYHPBLBM#.G##8u6'Ho$#S8CrbBrkrcFel.fG$]Ub%UY$JZg%6LncGg+?A$=_rl]r;T#"%TnqSH/!of/T[V:;,qoantt0F6g7<%AS++JZK]Y-d8+DSO^O<:>&>j0TIS)lj?o9Wmu#$ZY+s9Sj+he4g_N3<gsE*)oqVN9-lO!38QR+hdWp_ES%W.oOmUHcVDuu](sT\2dl(d=(jY(dbgO`1'nHVhYh$O6Mo`k8?(BK/D)]DGEUgli^AC.I9,@_F\80(JEc'lB4GsD#NgBtiRg&gS\pI)WD@iEHblY"NL\n2D6seFQd6tUTnBgVL0,@pd_0Jb!Q.:k44nC^T,k![>T=r!f2[/(^chQ3fA8;#ZOQfb^Xo"^41fT4,;$@K;,4:O,=U3tf[]+<.j;Ff#RCdt>!q)sC+;t0T:D40"6+9&kH%6LFVC*95$lrOV.:LF-EPuIAcMV.[;3/[qsthl)Nr2Sg9P8LJOq(t69R<hF&c5#,8SVEiJQ$Q;N5`Qe7^Q*#VJ,ll(#DHC.)6FmfAh7,,ek^BCpYDX0LBkLLiqbbH'r*\3[WKg%ftP=-4I6>g@>Gl;$J&7S]R_0j'R*TA2W=K#$[Wo%fe+2eAMo5<4&Vq?jPb(Ns`A:EFek:e@1^L8!;?FnQC*[AT`TCX_\JdSoL-?c,/OJG4"[^8#ghe&75S%\$$5'6nafC9N]S;l22_Z^O:J:L62*T3(ZYYGd7Q/dVOuD*Hs$fD[QCV_5u%=W;o7Z.9")E^UCnFAEHC5\.5\N+2]COik#79<+n.?(;hVEAI\+8NK\h:c`_5Dk-0jh9lbB!%X$D#Bh)!0j-o[=mFt91`ENc[OU6T6X+9S]X:th_"6a)p8O7A*#8[5_(<rh\8S+r2IcT)]Cp%kG]LQ<g*$T*0m6No$okH8kTBsr`oHWlB&6]/Ysg3GB%[c>HPhUFKH^SR&k%fc_'746g*E3PW<qTP=pp!0(::!?jnq4i9t1HF\"nAX]:CB"eg4"h=s50JO<Yqn#`'%C_Y'T6LiD\t&emVC!"fno-q$l[";-:m5S+&a&-.<D7.WqPKjp7]JdZ/V<9_J7j4Nk]XDDXufU8tQ6jPN6\uLK]<)>SYPZ>p6i)'.&4IQuc'T](e.#9"!)HIOd&B#5#qHC=-0d*FI65:Z?/?9$_JcM0q5T*Us0G1&o<(p!h&J_%f.\WORPS,-N<J7$(+D<=4`ta:PcrG`k'T0o0arm72QH?,N(sm)c(ki5=#bi%HIo/PZ$"[(p(aV5dP$;T21dc&s(_mW?L.Y*=)AJml'f68s##,4@9%9f>6&AJJTIW;aU802+<4,/Ri8K?_OMX^LBOZpnli4kT:lM'JP#dEo-:WufM',h"-rEYVM=(ll!q*!R7%bu/A5e+Y:acH75e+Bn.$?hT!<HRrW'jj\&J?gU#R][eTIdW27jnFEM%H4G80B/`70F`&8A[]XKVG,)&OJcOeIWq?!0%]FMLkh)!^bf^'gVk[YtJb"&QLXpPkYMU#R*q!?A<+p*?emF.Ynp.TW8,_&IO*I/JWkl5_p7#Q&#DP6AZh0,`>\i7%fbG5`,=D7=tR`$&T#KKFf=Q8QA@q+[&*tNPHYb&Mt1*Ld1tAKFf&d5XRgO$j&^B"-c't0Mk"GTgd<V651ULVH/DD:cN/3![o6\]Y#)V1o`r?J.QCo,Q\TT;$7^e$)!KT+W^\m8/XjI+=&d#1dZkkTFi@0+N>M'a=3[9!C7#X#_`fjJj9ITRhDM@<,Xre)M/Si:_]-<+J^,('GMt?+U!C7d8?QiMLn/;U`,JZ#U,ulM@b>(UJO@OLa%_66;`O_fbkrH6:)695Ug/u&nht%W[OSE&]dEf'EY*\#`,.9J<3`!:kVZ0-mF>!TLaZ$;^"^>)A,:ZBL4P=MWc6>:58+mLlR:i=jei&71g5k+:o/.#_G<46D+oV'VU[8PsbV(+:(@H+p:4F%7*Ml"<es'+W>qD@L\/""XSsi83p?q"VRP+"9p5bp48#*+[ckY&-*V8,Xro,;?B1@&lFgfTKjYgihHbnJj;gs'HdMm!YdsH:67jPOY)C9YY<\?6T"qKbJA^ls/RYYM#`c/5oD(!;H?4777X&P#SJ@>">D$M7M:6+?m',RS;fcVcp0uA#$'52"@,=ATb%2IJd;L9-,Nb%!ePq81/<]lOc1T>&-Ri`U'M>Z+e_H$&1Tt:$7RA+M?lL=6:f*%#bZhRLlaq):l(3d6AQgNU!O>N5nT=]:ad#L!ZD+SMA.8-LbNFu`(CUAKu?h;#fR?I@])Nq64e`&Ae9M)JVF_h?qV(;64u]m+V[g>#mk'4Jq>*NKd%(*U'QE_I+4go/;qGIN=l[4;Ghs2iaiCG!We/aM#`58"bf91TF'Y3L^J\EAIotV,m6J$KT(s)+VY97#U.9oOpEI5JV&u@&d!lN">l9<,R=Q>5nQrsKht;WO;JlBTTLF_3'e)]-j1Y\#RVK(MAV!rU&mWZ,"*XY'Xe])TnlNuUl_f,&V5`LM?neH7"ca0!$qV61-UR<#RWj'N?j3G!$\(5(`stf-pe'E2'EgT#XAN(8//LS'7at6#pk*k+UA+#,)UA<&HY93NJ'!OAlR/K5q,5?-Nkh36'bIU"V:eb&V(,oTMRtLUDlXT";ISf63*G[j.dehI"24D&V)(:;$mp\#DnYDU/7Qi#_e'YJ;+&G7F2Ws/lkP/L`h5HR?LHF@KZagP!B<[6/htZ,7l)YOU;sb6R*nsVIVed+_V.=,\RH3,^(<'OSGdt-j2#9>u[L'A#0<mK#SWV6Ge85+@ORJ!>HtZ+:nYW!eN\DJg(7_PS+QP#S;Y3'G;SqKIG1Y$AoB=+G::l!/"*9&;(018l.jKM,7"_0dqoG6j,de";*+--jYZ+&;5u_![%VZ8B_eL6kP/_KHs0_M3%uE5mSkE))Et.+qu=<NJror<Cd)s!Dl18&jj[FVi`6tM1C<\:b:o^)4uFE7q-!W,)DsY'/:c*.=bm/S1%m#!XKA@J06QK+Tg"%"9AW.:^!F):ahY.6"19)+s\96+=$trHpEM+e<!e45l`**"COk9cr:8p&-riC9FDI==giHVPS"Yo$kS4+3[1:(1_gT**<g+EJ;+o*(_fgq'M:V=d*O0b<!4*OTSidr$C%4i3h]%hK`W/2-t1>YLnH1(6@sqW&46M1&1,8V8cf,]&>G:8J-\^L6/i"c;,@OM&-7A*#_Ku0"<%>n!X1h#"@5Sua@I"s+RoS#&4'+u"<eEHZAQT1:1U4L:e4af";7c18X@Eb7*<7dcESo<OI0l.j0iGu@`d<5D,pa:[PtKc1*G].;ktt8V(k[FlR^Y#d'8Pp4NB4tP$p@#"f.YC+Q`NY=OEBO!JH2=()nj:/D`D=`pZ15nRP]&7mfo8<mE(O$OC_)Hif67Cj+L'Pj"\Zop$g<5rEus)1VItg3HWuNOViqC,V,+B8Br:NY'rGX4Ngad8Ur-<NNRP?Z1XM6GQNc63pHR4H`#j&g0%;<`1?,6m)U9JOLhTbe/I,6r6.5#S8:eOWku/+*T)'Ld3X\0G-'@VDTi%4W6s9,#GVn#m@HRf1.6c'MqaA8no.STL^doCpo4W$493%Tb%c$&8hk#,oZ*I25;700D>%9EN4)5fAf!@@?Z>J@rgVjM70ipbNeH\C0?_/E/1SlR^N-hjf0p:UY1=JG&Q:)`(0nU%OD@dJouFcW;uD]#iI:hZ.tAX0hFs`L`g[>.4`=2!%Hq76%FJaao4Ub;s@A")+`h4b[,V*dYQdclpU]P0cV89V\<.=3XcKG]ZFHJ;&Bj1E_>8/]bO>beP."RRZ_W+K2iL@UAYdW+:/p:(c8bFc`u>a#Y0$rfdt:M:fJ<GO?Mht,<?>3h0NN@C$Ii>bN(HK%\[*1WC@9^\U@tb<hL+C>t(O<n"6%J@s&u\#p(e1NbB7uPXHo:&.QRP!1M7AR]Ri37Xug$XThX0@6gT]+Z`Is@`/f[>+R3O:g\o9m>qSWJfoZD,GKo^&[>f0.!/=;Z4p.J'iIU1eG,O8.#NgI(FYsh&L/+q]1`qD&M"CoAI)!5;)F(`QASS#nrum;#bj.B64#I`'d]<IJuDL;BLF8#;KP8r<Jo4t+GM@ZR*u>P(_VC;N)KYY-;>pm,/=VH17[hn/M.,ld2::[70sP<1a=1UTb:*6F;h/G#Ug%S"9Sgbc3T:E:sb"8dKjR(6.VmS=HuCb<EN4%f4Lo"9^KmoKb-NR3&rP\_nN9CVQi.pb79_E?,NL?!Lu[D:;A)IC-%F;]+pQ]Ph>?I15H4p(,9(,X4@mOYJ`bj/05:JgI!in[s1K5<>9+A]cDZS-m6M8bQEGo/-IFH+sSQ?6j+[,-)f0%M'E.2M.Q&u@q9;>#q/\pG6B*T&.jKtCebHGX9u40>M*Bjc;5i]c1Kt9I<)i-\SRD5LLj0c#g40""N#1A8RtsGUl>%q$^Oq5Pp0doMNgKAKTo+7!YD.IV,'sWC=XDBP#,aJZj=t7j3Og!\fOA^X=De&XI?k5GFNc@%W._4\b'R8I`;\4D#G5MnpB)[Wg3)=]'5`.`o<iji++J^U7HM&`V.ss4i)^:j-T5&3IX;1Z?9RDfdGOeV5#CiDYFq?mU2D2-$2Mt`9#Y(XEtH/[>pjnVIlrsRXVV]>r8:lf^YrZFtW9!c^CY7A6,W:f<6rtAXZh/33U]BG&Uj-Pcc_U6[2,QKX7Vp3eFaZ<a!ngOaVoe^-='O:6THgZZ0p"_Bb:9*KB7V->VaSXRQ\3d<QU`-Zcumm(V=FSQn:W`t,\JWN)E;ob2,,Rh=JW/Q%JU:</q.$f!KrX1NW[c<\,0lCQM.#rXdg;r'L:fJl+'fd,jk"oe5K,H#Y79Zds&K-hJ_Hs??`9rs_NgG@TN7^Vc-PHnKC)]NE]K'2QZ345"u;'Bn$T)n;]AQcR?56\]HEc\)F?ZS9CKf*'ZK@Qu>BhY&S?e+;T&R#4,8eBjZfrh=OQCjY<>;L[!ij2Z&m45l";-SM\9!k1r7uZ?`QM5XInjh!]QJQUJf7iP#Att*$HuMMLK^g(aAdlG9-h)Z41?Ic/8K-]3S>$4kYGbn(ADCKKDt2gTA`M.]#r4E8H\;8;F4X42cd[5u_@Uqcg#30H5tBc'0q/CPmBSWf8.DtuOG6BqA[3REmUUFF003LO=OM!<m<6dI.`M&MNo[:-b%bX/l(9uLD,O#'`!OE9V0q-fS_USap6gh3PA(QLoSIEp3`f8qQ`iI*dCMmC<-@@S)Vj\dZ1-h*StfrL8oWRF4Lm,qd*lA@a*?Hsku5XH*L]'$bkr\qlcbe0dne4K<c;'@WKPp\LXnJiBM%+8cIU[$?-E)%XZPj0"CdCNYfZOsWH0mZh^C%JhL;,B@eZ"^@+gjn/cP[tZpg8IVh;'hNs&TtQli=ii;3"37q\AQIGI_?`L,>$lS^(k9ZbJ\M>#;t[554(S7J[AMt].+hYo5Y(KO4DS2\#^_ss":()JF(l`<88QhpXo7rC;mqo$E-)n'bcQtG%-)'."AfN9f9];)>a0m5m[$X<Que!C1BMUeWB;tDiXYe>6s['4jB`h0hPlfno[D4B4mr_VqUq$1r;abUmXF0Z0C:KfT$jhrkmL2X6I;L@Pb%G=2!p</uER'R9nH+7NKZg=29IeM3d4c\]dknmQ:)]UTQho]ilQYkLEO%Ml3(X-);`j4SL-VW0a8p+/Sg-*6Fn]W*Do;[TA;o[.TjH#OnN&E<5c.\$)4mffu&,$f0S3&>W\_t,oNcVcd>7bre[?P9kY5OQMO%:9be4sbpj#Ble^U@e+KS/-qY\*_?@pEVo6`FpJr>DABo]4UDgth6N_q$B=SpmK7V6+b8RZ>9accX>/`6?5p_P,8mVgCr7=*O_oNV;Sgfc>uG\<ZHXOmS'jG'hc8I^9YK7cj!4@HZ-Nf\"]bg.!N/_(`W8ni<QkB42CkBQ&d5Fhph=GuYG=k_LWq1DFEe+WT](LQY%KnJBqb@VVRuOD.Dr?C.r4&W91?^ls<]V'uGT,*W4Wqf3X3X[7n6s&A`kh>g5I@+,kQFuUK6@"OW*NEuMS0di8PL5./o"UKYj+Ws/Y+@HJH+s[F+";(tJ+UJ2n&J+q/Cah[V5nF/"JKQ3D&VPg&&A[C[?-R=.!j?DZ+r>+A=$$$PioI,Xn8NJ.iL\KKjP"TZo41A?8^F"gZYSTeoaMef2]hFMm)1_e2gMChR!*LLfXu<AmB"5e;j'R4F4rXlm9&#5osX6)Qet!,@nutr]4h.j]WYu>g!ePkhC^%n%sGG-_?0mmoC1=FUNOe3V0tGNh0r,:U,*RW$p#2F_Qo1j_d#k+4IaR0s5:D@F/O+R3SD,c;Oa#LGA;T!2mR#o:o:[EM"Bf]/DANW25=YtrSch/o:n)q23W)]/*D('!o(%.IFqm_R,1l52!6I2UC3Q3NOF+4=-Z?]?YpdP$(8'Jj_3;/Q2"Y"agg=$"+N`33nmV,>]=io1%gL-AmDBp[&gm4ZbVqH2pLqjbO%3Rq.0A':$0G(bEh#NS!fj'7Z,+l"?8)pGVIHG)$43D0W($7E28%r8Y*2PbAs_CKt&>ike(p4OBe6LGKn%mMR/`rRp.!uV8WS)<=G`2#8HnC:>tR8$:[^/mf>7qGO+O^oo")<iaC$P6`=Fb&?`qR1Sn_"!QK+G@&5`#+usB@;6ZGB[4mLs%0<DHH2SVjCB5>e!T)I9=A3Z6!Oso.fgchif.J<i9km#[#8a*7]Ou-#m8^JCcGo[[rjh4SN"WXD%rrAf3.J*0&;RMGU;ZDl^*,dp4\2Y4He:MumDQ#9HYH!Z;\>L&m5ohE"1p-6G[H$[V@mB!hN24FRE8F!;@FUB6">;RX'&KDO_&8=&=*W5Q>o;(`XJ#AH]WIu,bA/1Z#Z"=g5mjYK9RfE;J)q"R6F.Z2[DZN[Y+q0="==X&HZdj,_?)LL^-@U#_E>=#RR.l&-,<*+lGWaC>!](ZD3SiP=kYR_IB]of^ah="V+<U-B9"iXX.n5@:2e/`/;hu:<\^#>I2&dF>`OA1M'8#pmoIf-*+'bFq*a76Fa&P/QS&COkj#cF'R/qH`/An+\%Y7qM"TPdtQl4#!jXIX*k7+0hi_GM6[R]7r<QbG7kk:L0]]M34mZ\oSQ(%mS>q)I$;SiZ?TuOa@\)2Ufs\j'ZS_Q6j#5[E:K\!7/MP,NG>e(-T6b"\.^kAV4EOoJ@<CqL/*OREk2?1d7rU[\&V;,`jqq6q*iWefbnP!C4c*E%@U@,io$4qC&JUd7gE'i=k5W*4C&jHbZOmEhun;=4t/d0_7;=c[Dj+$S]-FQet>iJ=(`nP+<$.:qL*d:8eH\@[o:A)_u,+K`9CZfBBq@k.@t_t3UNmO%S?3'llbm]F36j1?+j$U\!an;_+DDB&G3-b342pk-iV,NP?9o[fD'c"ifgT`HS.%AGglT,;JnA'Lo$2F6`8>*66X,O-)J2RrcFIi'LfH(*>NnT-El0cO=>InOPn7/X>.RCl!^7$F%9-Y`m"u.N:ePIB9-!?CiCPW)(J`&/m(&!$H,Ef.2ndk4i8">-*>!,+WWsBc.R!7g"KHnUAZr95<Z)4@85iO[DWIPYj/<?#Q)L"<0,LW/4j,'5#<.U7_IN>^]o8T5%@]G+i.H?&=*pgK^E*c1LABuZt2Va9kg/1%-LA`9BX0T87EUr2s=,CQ6^LjW("TL+9T[3_(\H9`qZLj7)g.]<D/F>_Eb+WM3fnu1c5r.N?KObZk!Tk]B1/8&m8/&gJhFG4VgSHh]6\<4bj64NGV\BK9_ft)IG.=L5Acr8YKFC3%l#Fb-8,t+]AukLIa,=Es\aYcma321'bf/jI-JRlA&5FW"Nf%gc`3fqI20IkSAAY$4OR(;i[DGW;pk=R1Bh'JKqi1]o=XsC)^)Z&C/9WMIZd>qj]BA3O9JU)BZB1->fnJ^:jqmghk(j)q^06=S*FKF-\U[\^/U(CKND4%o2d24&Y'ph)U@\M)n^]mANlc1O"N1<V8LLJY1ClZpV6\PN>V:\5FTHVeR4KZ_[gkC&&%HF&5<(`PX^lW_8aD*uDJMp?WIQ\gjRSZ,>Kb4-if7YW`-M"ACcli2gV+UA;<65sNL!M:oUO_`aDmnGLhbdVO5p%B:a:DGEIL(dX9)j&5\UB?qqDk/ss"@ucYf@<lA/4'atiiD"cMcA%o8a1>qmE'ioO/-&ToNe]TSK"rpsrPZ(<eB/Z*YrTZj*\#.U,WlT=8N*+YR&3Jp5gQ(YNbim%+>I/aE8bj*dWJ8*QO+2kR(/r4kG1!"jNd;f12"[O0:7l`54mACIq;R/[^qZ4,j\W4K/4nBbjDSO9'sI5Gg]n]E]>uEBj?P7l=5Y=FE;o6B'7h,7'3ER7WA@sr8pCVHh(:A;8(f-"hLdFlL<Wo+h%8[r43=m&X3&6E[d<Y/0\S:)ZR0bS&jU"Zd1hQN*7sEV09l"RC0QV4+jD'LE2\^Y2e[#LP,,Dcf_QaI_9u*F^idhY2LD5;&^GP[4CidpYLE68,'X%HQ*B:<cfE&5"#:>AcSYh?%D*^m,XQb7a3>5[Y[_]CV1/D@`93h4`8uUK'C,JOY#nZ]Ud-6c<72(,t[RJbe_4,5;gILDr0apisdcVR+P,c]kc^4mMt&8.s3l7!n6,g:\_$G23t@6C8I0M;ipX)e?8;B%I%.[pOoLtPp2t,K8OC/*G,sp%eh$1<R$+uZscSonX2FZa'?9tX&r9=coBT!l/)Df;Aq'/`h"JT<`[j%R%EIFcR9Q$@\F)\T1gHl9OFQ)Ph=7/)3`cCRVFrZm]+O,;>)Y",dhWYO0b*Di]SX\:3k;=FkZ%H@q@Rk:rTU/Um$NcTp^K!``-fU0f,;^W#h0HAV2&YAZD5=8,hErBq(ENj9/4>0l#_egp_]me5]MP$ZtaH?*M34C/l>#VjUeAG9](.9F,]4HHF+p#!KYcZV.$;E>S5PHL$EYLfR<IJVP0o"up[G[FFS%Mo>rsbFBR]dng\u=Ak:.>F(_j>J4".#dheVMlUf-jVaS;rm(54c5E-"_\V5HFHNudhn*^0'jWqHDW;iD3B^Z]"!c=9%(E)q86&rErk;9l8S;VE\16:C=DO5in;jH+bjXDXh\1jQ#%u+Y%Dfif];P$(G\fS#:4jiYBof0$:n0?URon@S[UT$['2,@ZfBoZAZuV+W[l)XOdb03Fca;`d9Mj+u/%98[/k+``*c"s:]O[hW$#a/-L(lS6_f\mpd-e.-EC[?:8=<M<K'h;_'o>s&91_1NH@t>7G#bWOES9!LHZE?1q9_gX-'n&a@ZK*+FX8&PI+ls`:Lkhb*V0tF4eLn\mr]cpd$ds>/HLmWD9gS#TA3HQ2PFM8gqN,Wl(D<Te%"#IPraHIDY$Q[;=i6aq<`OQ@/i'WW`3(\_aCtkLO5)Bha'Zs6*@LDD18_?=BI1.4VupT2#9m)U^PU7Ua$AJ60kWmX_/Rj<O"%oe3P;n#Q&Y71ioZB%*B#k(=\X@93*]=oZ`HF#`JS8YH8_uA9?$H_3r<S&=4]bosc;^d$B[/=an`u9G/1CMjp.EXd&4r!YEAmLip^;OZ7rWM*\GKWC.Rj,m"-V/<p3m#YAG5&I8D*8=6)!W0e_21^$&T+@qG+M3/un4B)lXfn(=l5p=,?-is_VK#C1d,u?u9-ijno.>4El"@\JA#tZ:,:kBkpJrlW:$AG9@#XP.TMNB"f'M/lbP`QS&!JDXFTU+T]FbM^0`qkQU(&".4BTO.o4L.1TgRq^8j:(=4P=G*-Zjo/^eWs<EGIXF$U'renF5s&;*At<OF2?.-(5u?n+[!:*]O'd"F`d5@cBI,GZ2-;<qDu[JX@VVs40h4D\!b1Nge'\ZEHSjppNWaC5:[_?6f<em:$,-Nj)']C0ft,,d2:(8k3Vo]#PMQ_\Tg^n?p>u2kdX.8@MAi`8<oH8+``_i8:6NC!/VL$;6h3r63)T;"G$gb-O84nbm&YDhI'(b%D4p`CuI;&NPi3JC^N;WKPNq0D0)bBqbLhL*^57$:I2*XX^f)sNTK+Jk6A<B7acC])S_m!):iVkQ1$hqa)WPMA5t9YkN%kAFT,_'O.eMCE:*E\D@ngGTinkMmD2q<L+,6=pM[C9l.;H;oDkc=k:Ss6]#IJ[*(=8L[s%W,M->O5Zf:WR6YH^j9f^=\L&-E=X4tkB3PJIQh1o'?>d\Y(3ISa^>B]I?)'3*E30UC8B?aPgG%Z9r^>u@9rpYn-UNehZ@+RI$WiB3fb2a^-,>.)oFH<A\qF-V6eIXC[41U1E$H$M9kH&?0([[0L%3t]R^%%)qC[oo:W[2iU`q,A"$IlY/;MgfceiG$<UH(+i.>l]YgfiCTE)_WTTIa.hbp$DTb1;Q,_?Y+&GV0G-Sj22XEuRVLY_$n;Nn:3U>i4OpkEoq2?)^Jd0Yo>#Q1(kZF-=0,H=C/>5!Q+IS.6?72H8_%#?oi^e$=4Vhm.aJ<32=Y"l1[fqPL.?9]*@$3bi8\(#i4"A33dr#2kTnMTd3/\gX][l1E%*j\XRS):a*"QD@'ARs0e!pZ"QsjS*QF`J%c@&VBb#.IKS=]A"i,/6WCK6A%,<1pOH?0Ym'YOsh#rL(]YQMaAR0&<[S:KS0tPSPgX'QK+R5;c\!6*I5FbPcST%3.%n0a:r?T<Td+\1\(7&N_P:m_s1%YB/K8@[Zfs\A"'=AQ-.'MWtnE5aFWW_kDekJos8G[?cei?*,_l'ZrY3<VFJR<_Q7BhU:@aC[].kqW)C\6h9kbY\Wqg1B]Yi:mQtOs]h5AB[&[5f44ZBDb9e<*B/XTBp!VU$Tkg=cg4fLSQ7`NASfMVe^8^qp<W/uDCYq=q22p=GA&IK^Hu[U1D(Y,_LW5n:j19:1l,(0+8c@oIVN!sT8rYY$T5*[@m`g&_E6_%%h@dfn-B,fWg<r:?]kAU67PMAFb10@b]_G'ngI;Y,21FuQ_fEKIUJnS6EoWs(`[b5;1_:@GBN]k@"l""3i/U&3%\6@R=l.Y3\YDf?<FN>=&$mGdMs0SsHIhYUQ9u:DFa.YbCo9GW]$??>?:bfTZ>'1s*]VNX_?uljL(=Z=Z%RiVeWo*PNc`RLCN;LqJVBr)l6%-SJ+uQHR#rVf8KjBd#nTN:4LENU1<U>G8>$2C-4/;#]SWD3O^hnB<jtLc2:*sg<jDso<gBf93-L)38L%h`5WFI5'a4\[H3YCrrkN?"X/M!NYtpo7'F:*p33Tj"1K031imect<S6,dL8XNY:-ph!7dCa7<eHqP$?"*#=s0T[O%aTFK"@r`dfe#P*F@qeMH^S40dAYpYR)sN%33s+I1gG5>nbtFP9hT?g_*j'2KUXgIe(R3mA4X,T?WlX>e4J28d$emLF[3(0dHY1[FjXg\t'YfAS=O[0YuJG\n3B;ASbZ.n4ZBZ^Bna%[D$Z$]2.Ac&uG+&Um%o:3n*]4M_3&X"'fDLeE3=`89Zc<J&KF&\b9/&I%?&uqf-T4g3T5*2=>S:[&V6hhN_kO*?VG"jO?J1A*>LNhRBT7j/us9@hp/WBKYXW2Jm>&e;l`*IB08]AlTk?>E\Ub[rp,X`TQfnX?Z_eWP@=#>$993EDBW+7j"MuE;PU2.$^qq`GH",VQ$>W8>h]"gcp88Yu(lUFSiGQM9mj0B2UWkSTX2'\'1Jt/k:Po9e29#3PG#ld@6`9\>,eWjM'S8'gs88e4OXqVf:q*?%,uE&^57:VK3MukAKP(CF;juPH[EA*Eh8Z,rL#-"PLQ)DZ@;\kJ<2Co`/m3J]u@FY,OgQWk!0S)C=jIBq,6QM`h1W+V6r4#S@a_)2LZ`.V=R2";K%^+:&U(&4,<NKH^SnL`fM\5Y)TC-mF1,OUqZ:g2Nj1R3LRHV>pdpJ>\%pXNMu'mLm>Fj*M[r9M^^4<&]FiG+=\Ofd+b$CR6cA4"L1H-O=Zg"lk%73C'Q+fiZnJ1=OMWJHu7"[H772dtCV1=Vau%9(S3k:0P_r-)oF\onHtfa"IkTP+-['p?,0]j[9V$g>!soRu]KRYf)d[M?703!T92(4_"tnW0lfBN_NJ`K68uY9ft)DY`U_s%8V/63Y"nJe2OK*?n&X);L^ot:[E#RX0#XP`jKsf@b,@&lrFSa=F+^Lhit,"D=6ZE[^CUZS]#&3^K586<t1X#1%.BjZ;KDfV4hZZDI/E3[sVKTlreHolhb_uO]L`t9X(X?gppq8HD?'</\=W=L9gd,%V`Mdk'T+.6=lA3XA)H)gciQEZ[GQ+3GKIucd;"kIrn-"ls4L:H=buK:1hJ0Ja/Q;<NSc%`k))JTu<Jk]l$\e=[i:_-2Ei1kDaF<h8t[kUX!./,"eA!T@\R;AG`IpXQ`6`bDHBXNik+=HJlGM.6kb_=4RnAgs)?.4_McT\$'k";Wl<]NN3u,qRO`8I1u"TTLlS_S@f2UX&>>Dk/r"bbT^/TMjFZ4;Kf_%/mm*t!@o_S>rXD<]bo&K)D%'X%AtcIC7jm=:NLkoL!nrR@U58X3cG&2dJe)aD.fkFH(^u1]3FRT'B;Ns_ct7Ea*/o_gZbaOR2Rl1m$r@;g?k/8`-.Rb,L,(U4YcBkoC1\3_]'*?UM&r`A4a4M"l%XQloTR,'$!<\Dc6&*Pq!%9(KX=8QlPO9]5m`pRWFN.R2JuA;hBaUrJ@<@_r\Fg3dOo7V9o]1<X4<P"b]kgAF%_l:*%"rfj8CN'm5Yu]$StU(%ue`G8XVJF$1+nGoal,o-pS,RGKjgA0Rrs`<HIXO=$W%.r"M2q;-Dq1n?E0#7>X;+6rbb%:R1-BDNf['2o-IW-eD1=;PA%Z_s@@Ao7Loit4/@L,O&KQoTqB>h'W#nSg[c'9d8^4]L6'!%q(o>eT@FBq)V<Rsi1/a6K[,^O3uD=h/6nQQGXVYHOO@VV="RnAql>`bk+E/@A1-2;OkD'dMD3"qRlY*8T2YU7,KJbX,$R's?4F/B$r=2pC,%!ZQ_8me9eV7O,rCj<gsO7s<=@p5rrI;s1>5(k<.NZSp)\huhNLT<[[?<U<migJl9sD&nTdlH[5X15sfdX<m_g^qB?1L;E_c@kCo>9PTJEZG$"JlFIknh%K%OJNJS$\:1BQVf:qVKc[_4%s7QD%_#ZGIcl[_;,tW;S@r=X2!OC'W#=3[!jH2@_u_(f!H](h-j56gGu[b0Z7N"B^iC2:'G<_HaiPEjY/%2RhZUA/3dZnU20$T\%5$U%g+$.6bfOhX,!!;DoVbnKk&`11]Cp?+4ER)#*',VQqo@2.Ub?N.)!i8B4Zfo'[m1-%a#,f/9/_(-Nh*&=2qYEmCh`+*>W$`i`;13\08f8QM(?S_hGi+NK3O_5cn[G)>./PuMg@i[_bSAZ/m,QV\1'YY&9)=Q!q)\\,'Zc512f3'[siPMUb*Rq=W5lCmURd$E_cS?K;[+0/^%`+Cu:ZnLUXDB34,K-T<5"*``V"r2rsAJD"$%?I^Yee.$l49.ml2AJrugJf%>Cl][7I!3NS=42_s/IF7$DqV.F/V8aEZfQ.VQcPE"7@-OPQ5$]e`KIscl1(p0;h@`>:.WM."<Uai5M*SnD<q"1-k\QQ6TN17`,6V"Af>gA[rM6#5Kl9183cnWe@Vi5L2EpL4a3N4XeSm8b#g9i5=pG`tbY\iCjf#;5h@J[KRF8G&.)`E*,Wi:/Bh_:HDB$`aq]l\*qqNTXo7;qhngAYX7<jWO.W-6RGe)]1^_cdl%BfU7YUh*2G)X9h6HL8B<gOdt6Eg&DQP%g[8>rHEP4IJ*AT`.4<MS>qAP!-^lXRDa*@].i)lE.0DmF.gb]>fopR0O5^%3*m*/Qb+)XSNr3a(DoJ$[`cL-Ehl+pfM5j1$D':1U:i^-?-m'Mc7YQQ^jePZYa(--EcbTGE+DZ5-fR8)t[B_ar\QA(sBV6g@oED5a,1nJQmH5)JHXRPJ1E]KFt9PQEuoUB'gn$dqf%>BBKtIj3Gl77;+Y(FGdLT+0@_?A2e@i^ceAM=>c(b-AnpA<mO]qUVqOYj@hM1\of<iTe/7_n]9D&IUc15_)A!g3BA+si_eC>\IjI2<aaXmbP2@l1FdVb=ps1d5>NTcj"4nc,Ba&sf0Cc2%ctq]Jg(b:`3=\IOdL\BGXH7F2$I=L#R5l7NY$(P!@!KOkBm=<M'#9i5QDDMJ>95[e[.e3O3juH$6dT+k%k)3*t;-o+qR(+'*<s<BJHMe+'ok>C8qsXDmgS2C1rR8Bc'!K"X@85*j1+cEhQs5F7$5hCX1di9m`VccQA:+?I_VK*5=nK[je`'>:q>KZ"(B&[;*UH<NQ9C_TaF<>MQenR?U$2@nFhCo>HaSNW9,I"GfAI=3i\oP3;"mGdqjM$nXoM2dCBN5tumrhB0$$OQ4EgaM-/g</)?6equ<P=<!&E?9XA?(9K+S6@!WIH9Bb9D=#L&RBmLXIrKH5Y6`D4h%VZq?Waq>[Y>R(Oj),l&IGfjAuMp?Q(,=)S'>lS+95Km0g;FAgRMT93F6!#/5(i8b`PL*;<*]S4ghYG_Q:^d:#uu+rQPD%3W=U&Qn=ZtiTL^i`i,(fXrp8a^K\Hi9Or,61$[midkW6bU/;`+@(?tkRMF5?$b7OMRO#Q54<1[HpL11;OXXbhNpju<'gM(*QALgI+G&i<6Kb+P?>\4b.a9rFo('_QRj)=p7q1"AP2J`Z,ui)$')+7i^*=9+]b(96_JtXADF\.t?l7L5&Rq$Y/5_Lk"U$5!DRfq.A\-$i[^Q#O7o7A'gm:'Vo?dPN,fob?P'C7jI9Zjg*XF:NQnl(el^6&u/qU;B5o=6o=B<.5=r?k7:)cDLBKX&\V+9'2Z!A#['*>(W(f>6@j76'@'>VQfiRAS$2&#0XAeCOfK=K'DfG%d42m/['<pL@ea>TZAN^@\j\:q0[EQ.\ZBR'20cKnEfXO7gZ8t=oTi;O'FoBb]KD^0i7EEGZg)4X0()s1)\fFXU8I7XQq]so0Q*SE86B6t&BN?1g(K<flZ$jd!$`XKo#hT6O$)L-4Ui&.hV0/USp6],qO,[7tWgbc%^N?iKJcG7%I]pP4*N:YM'0l0;]"uJ6]r9e]Z,0arLY;"bir(7Y-m)-C*A`LE<dnL&c"]J=ge2.cM#7@eY-50^H!,PV:+(rYIP:utMAXR?)TEmg/f(la252Y50Eh<^id(ip4b!>-SjKR<!FCsiD&jR$V^"SqOjOC:nkDj[/P:+P,VU=g>7t1E^'qW4i['HYW^uju`bG[Bl4Z.<V3MXQgEm&VI*El:iZ_)Or2e<X:_ZMEt%Crgj$g&i!W)V*Hh73b,0!B'Obc)&bj4]:#;d>WSV6djW(`(C6C,L@88J(!DXDcdH);[Aik+k.QkE;fm6OOF..';@\GEsUta1FLt:*5L;9m57\<3ejX`*iI)]4b=8FR8Mf)uFEN\\O0/(@IbN<Rn0DKI;I$&1gS;WSFlL/>U(IEP@RDa]l2IS(=i\H_oJa5,/Z7e)QbFgV`@/o13G,n'$;l[^R.T2u1li&A),&['InK72W'-iMohuj&Y\r2p`-R6u(neBWC6]SuGI[CctSZj@lqRks4A08tW/nmq>kSN7NK[Eq5/hlh2AQ(aj:EX9<-!V?8!ET"fYASTT]bE3),X'Y('oA?:<f/2U,[M#H"LBXre/qjYXp@+/g%k9O.l5:]qV+p+Qh3G$^Om"s+^J;#^G<oAKiIsAY4cK-+%*>QNsLX)aU^c!&qeJoA81M1@g7&O?[i\1\aSCkJn+`j6C3PV`T;EGECPJZRr-?9"P'+!CKOkpY2]D=QE"5T5pX6_7\c8Q(hpJ9OLEuKTW!lD[f:7#X]/ZUce*6tIFV\+NMV[P.EZIYRM@jQ-[31cJad,pB+FaRfJ0G:#tY[f96GA%?G5(lhrO?!@F_6Sp432^V8!%T*&!?_XR+UB4C;J$Sqf-oi.8DJ,hR'aRr:afjs2VG0n2QjBBR45aLqa9`<BeFu4T`WSV(t0\P/..?t#(k#(i0kX)BF1q=oEeQ8lsT`#M3X:22Mn?;ZX[%bbU%N$r)+p8ga0HK-dY>E-h-PdG/Wm9R?CD%djQPe^2b*7S?Yda0>jhlWnC^f]lnAV=iZNDU"LRsDYLUScX4')Uha&_nnd)#kpG^rb]KmDT3"hj38T8GFR_W%T1`_fbgF"7d'Zm-Bbe#`C[3nOT6jlu?D*?$adp]kLQ*q::EThNQD95(D8Q*#]%JU:>U`RG)*+r;D4Fsm\">f1K;0nf<6t>o&O[FcYfs=0V5(_BrVG5hW9oAoKf4W9%61'nA2_"rR;TK`+?_Hm`L_]?mkb)NfKQ2BR5a`q#njE-(l)KYN]+Cd7E_A<-oe-TlQX01H4C,IoSC]]=j\P?ZR'ZL&^4G.\LmINO4*%5K0!-abE2N?L>,0589jX^TeX+//u58FX[:1]_fkF8!u7cRBtLT<A_!TQ%0PY_N'X!rPEm4K/'.'l?*Lm:W;(_'4?0%;F/TV1aB9_R6cZ%Er!FL93#4C#QuU0>Yc.:,oL[f)E>.Za;MiVS/NU&Zak#mGF-AnRgE69Z*bjr0MJDQDDfJA&.s;C.G\@NEYpktUM-5T"m^)fWk[8d5`$=2d4?0ZtTrF)o%!#+H:&)Z?\W';e/"Q`S#0q(c'24(<&X]<n.&:[:c`J-_/<b%-"<iU52cgS48eTc&k7e6<gY.M5\Yc]oi(u(.kDAreSjS5*jC%QbJ*"bsPqtKlk9I0!UC$><R5L`deK.)q9bWhZ]$?ZtZo"7j>c1NT-]#[AAcA'ok**<3SA-94G8KE9DA^i8cC$\=:&g*uPEVJ:[s-Ao]jgG<T1aku*ZYm*3*=mZp:b#5_BePm2(NC9e(&]K_k=M[<.;64=K,:O=[R:#NAKiOL)>IAd#kVEatdR;kEN)JbSIaHY[>\U9CBo<Xk_Z+Kb;.Wh%g5Nc0Ku(rGWn@-/)Qk:RMr0[+FDrp@foX3RoKk;4:951TOCtq#VlqHh\:1U>#@3F(Ih/?uO/'Cm2/:M^5)PG-45SC=\D:GQrqBjP[Tj3RknR6Vh]QCEK"^Um(%$&gIIj.Xu@,_T=V.3b#q)bnScl7n0[Ncr[,3?,UEG1]'dcceId3ag=QMQu<muc.W`+:9*.+VUfT+ILKe-GE5fYOe.olB2/=M?$3RcKS<-)dK*As(?*=Zbs"hJ:a#jZ#ic/XUr5Bo&qZbu5$teXG_`UB&HGS7<=T?IJIlcu9n6F)bP3)eFZ&Dk`>@MSglWmRd"X#sNmoZ5[NIY#B(!K`oBkfT_q'i-\oqcOhM%6M2f.![M=\/M4hYHEbPI*9F*#g]Y3VUkI<fs^e#Z!kg9@]+d-93kk83L;/qY+(SF/2&:7ka=CrFECbUJKODEfHHL2H:K`:ITdo6Qmm#8:oniA&p6:?tPd+FT"$Hu6uK$a!SE0Hr7-ZeS85gtB*`9Tb`ljae^IqcDsXSn3X\8`s1AW1$iB+-#\KjO)4V(+ifM1pA,\Au?VY[Va0UV4g-A5hIu9K8^g@+1D^2p4GDH-IY>qhYa#r=FY:L(LitA55)dX[&N]RSEZT/S<sjIck_RDR?b:_`_$^7YN\2VQ_$.HYe#=UjD`\CT.OWM_^4%P4-AeHnYM@Hn@Aq9Ak\J#N.5Y$G"Ebo0'R*_(D'CP">D(\m+<X>/-c01V6&NFgboD^NnMc.Yr#+P=^''.D-b^M,L]`$_q*r_$^2n`()J#uJY].M]19$*5]G#B.aFNnCgF8/iUlnUDt8^P(-iM@]m"9P)%U]['[&XJhl,Yn]NR*h4KP;:[t8)B1a$dl,WMu:<S-_,@"r*dF]JZYB2bkc'9gC(\0$-DHF.n#LOS-:7*rRbh%I2/S5SKWPr:q[W&fms`mu+X0$U@mgZE42l<'l0N<(`EM1G^2!?a_p!;gSk3ZDiGXJCZ6\I9&n;(,<V"WAR-nPKm-XU>/+34"=+b)fD1)9H&/R(RA;qIm2_Gj"9n7u*YD>oZC/Wa%?'UlI!>C\)T4<jWVkX.(HFbY=U!_;k.-V6bpD$V("<;2\,+baUL7m1Td^#ohc\,T3pm9(b9:!n7,.f*bY#WY=B>P:3Ml.Qtqbh&P*T,sAbWH?[EN)1?/H^p+d+a!UA&,n<C)2-,6eL+9S8ke\1n=sj;gNc;Xcn_2U"EXL2GBB2Jr'&V)o;9;tDcs!I(iLMu=m8DEBII0;:F3P>h7lU;rj.YM]r+WW(.m)l_X/pi0j`Dd%OTocCV%VpB+97#3BN-E:.!XH_G"^2j+T4uT=_FJ?M#5oC"gbd!dG^c>#aWT#;_&^R%7cn.kNm!;](_0:)-NHnR&3%+C0'9?L#XP^*-I]M1M31V28An$e-4kOU:*t=/C.ZaM\B00^mW+T;ZY('(qkueVuVDLcLT0<'mh,T8ht!tA<1meWm/*.\LZ9N.;QAs1[/jimHBu)$X4EAlCR'r$#ig0\i+*=F>e&E0WO;pft*2ZPZX#YS1Sa#R?>Ef=(>l4"2&2H>Kb=&-cVaSS,BMn(leg`l:TVq_hR3rZZPSRXtY"OZ)u^,klk!X9:IUHJ>lP!"p,&CT3tE>*4<tdkN'&UeM:!rBqn_Y(AkAWVQu+X\?R`9]*o(1E-27$%PLR-!<3'%<<2A"`b\*%q\/?W*@J/;*i:?/#H#@"Dka>*@od(Lgp(Y@WlC5b7@>BPWUl/;a?(kJ&`_-?Wl<_4NbP!:\7kXCCZ3h!]#:?NY/&'>7##`fY&pQ9KLi/_ZUicaJ+L7gU>[oH#gV"0B&ilC1(%kt:i%nEp$,+3O\k6b'I*'%P%@W>-fFB`P^Q&kN=>PKV(YXr><>`Koe)+5'Zo!OihdbZ14*2.(fc.=V4:*iKJ3s=)90`/pdkV4m(pLiNQ4OBiVX-X(XKp(]Oc9BCc"N8h,pe0#Q[5#40lJJ`6!+?o)*XU[*J-[`/*E]V"e?IfL<n/"GICU25CL%7`l.1A;hb,'0qAS;.a;g#t8D6;$%(*@##)LilTH$'gi*QF)sdYA;;%Td#(@FK0fhLTbFc2kmSq](f530+[?Uoi,'LLNrhcp"H)_("9aQuBWa@r?t^Pm7E'GZ@go-*)2hpt@4[$dk(Z,GM?)&4ZshbPaRm;6b$9ma@2,GtfRoEB6/qTJ,Ygp6Z5TA9peOGNJrnoU21u!i+Dk0&jK]deeuofEIHb^-V'Fo=&%c(Y0g3IUEZ1igO>n;^-c#7;[T5&!;<a1PAI+t)1?=5FPgf>_BUMo@\Xd4JD\EgZ#[sN-W@Vg#:gM$2W[N^62fYDW$l))1#Qip<@1VCo#_4ADLk:e7RXe:hA3>i^hG?2:POU@7M1D(hBLi.0KeYY,&0if@(!mNm^\erZ5fG4N3#$t_-m/L:BZ*!7`:LK@$DGBF!^Hl&!T&BcK`Hf,%O9m]%s9A>GWgu'-]66mjX;f,J4'Z(8f0o,1^"6g)F=R#.9%M^IKZ;W6C=LB!"ArO";%JrIL!tTeHq5APHe;Q0/.j'.KD;V=,g_V+q_g"C_IB\$3>+Pa2LVZUb\Ma!'q0L#Qb&o16+iffH=[X&3u'pE,OF0/7Y\NI&<dM&L[dtN9$iK%2(a(4B6)$/k"^\63?RDWUAsnj/9h-]:jD@`Q)M)OWk"_i@f(]N*UU.&Pl1nX:lk.AL4WDPkZfNGbi8?E`NP\4&%4CkI'N4CD%6e!Am/oK&G<OMN@g<m8/C$',1]bZU%>TTok:8<@oX_6O7Wo'a5!kM#b12N2<8b<Gd=3K^hB*@SsDS7>X>2gnFp2*Z:t#:iX&n@,.cVjAlrp;\=VP'a-sYJ7T??KJ5lM!,8425fLkO+\kD_2\:Lo`"A.<&t^f\KUXOWntdo7OL"j)#f&td?6s#b$W98:))ESt<H[@r@=3L<:B9NJ]MqQ)'u,H5HnnraJhE!<#_7ZJBRboWN)0L$8DMLl7pli/AdIB!@9G?'+u('3Z)hY-_-W:`BgQ:*7+"8/AL-5`,hC8pl=`QiM*G8&X@+=_HZKmaDub`Ydo3(/aDc]]EBAup8HhnN@f/Y]n]!Un&WIO$M?"\((b[`p,i2866BR;_;)*8%5mX-c%n.>mdLZjN*]*p0@4[tZ$n;(n$3X'W<<<cPD]"=p$Ye"b7O@b/LE_tIN<9JUKX!B8>q#o.4)c#dN_3%q0i$"R"XO'[^0I$kWZYP8+[c;M*mGP4,s[-0?6EfTkYjrIi`JKUPS!%FJ=XCpR#-ELJ0;+SfS/a0,;hreDBs+[`9NZp^o0R"%>e:NQ&<N2.PP$n*:K0f9-oD]86HTh<'g&-ckoE?!7!r@AHGQ$84/6C&ef(_$(]"K3=2o'M3WuBMQs>iMU7Bj`!74eTS0Rm_?m"hbEa@j-/tUF+E>SdpkpNuJ[t!Cpjp@2j@2t-(lmMs.ZV5PWZ^h%M3K=$dD`Deg6KOG4sd(#1.DpfI/Oo9`,VIn"B-R@+S!'2(af]r!u6=Yj5V"GnUoQG@4AHG1W:L,mR'UVGRRPFX%6L%&;A%7&pk6j"D_O1%>e-uM4lDU(ef2J0Ip+Z=+Q<u,Oq,I6qD]2L`+=?Ad:bQ11!_qGfV;+d@_>+R6enLKnRB*OtiIlLX]IX/rU`?HnqE5gDq>tOAHR>C$;MJ/f>ck-j1rl-7CT9[Nb5C3['(t0iB6ppo;8>Y"$3%"GC@,+rNVS6;%m0/.`4\llZnU4u/.5OLQJO&HL!Fr(9N(N5unM@4Y8A@[G.qWW3_G2gdq/f8.Aj&5Xq<$tF#R7`Ggf:9TT,:nWKHMFah+'ZTf;&k4.<!J(M..UJ"N8J(r[#Y>#)]KlO264+>a7H0RUn]>qtZ#^g%<8<]\1*29p",WXJ&V)e`#)Ue],s%=]K-MO)6eX=!NP`1k'H+M@,_!o2.:Yh)&u.+'&:br3@@SH"-B)Y(!*#bQ=\ct>"!hK5nkjBZ,-b&K$3>AUM4"\`0*Hep"E5/[G#aI+7,hJuj#LJ1`":KD0f?"&m&CaEAQMjP\3_ALM=2)`i5ZB/DF3@ViV!!)4.c3lrncu9m&elfrK:MpFGnKG3/.FaY`KNi!d)@'0iNbh-j6M=ap>S6!,)Yb&RZPU`[Du"!\"odUs)V+K^f/$<CW:::aB'aAP5Aj$@s<S!\'nF8:2.$5Pu-l2HM0D+Fo1R.4Bit<;CW(!;L=4\.8UJ+7`hC5=EAL4b2=IPY(fF-6u?i54lp-(Ou(3pEO\#8H:sM+lmMR[ZU'?5'Y,G5'ZbnpsG.q^aG6=2bEoM!q>4UIKGA@r5:0Orq,+;LYkK_oC9#sr=\ZBndkZC/"]+Uiu\R%b`i))%g(=D^EETK8&0&V97idb!s,%nak+7di'3=8n8#PrO(`J2j_Ekb07=AIGQ7/>s*jXg5J?R;-XZl1leh[=[ug&Bo>RULs24;sHhR8"]_Ku`^\ZE'^@R=Cq3aln^$qI@?b,pF-XQ`'997p)fYuIto(:BQq;d0h]_7Hu?h],,?G#]a&&*coIcRmA?MW*A:YpH;ol&]5p!_5OFiEa7?$t%b+*eM`En@-0\`%rI?#nnZT7-_sYC6=(\c;(J/punNT6T79QTjs)-glBYW[g;Slg*0XF6U(c^NeeZY'o?(>;*_O`fK!IJZGESnu5j^\GbtKhn8ud='pF@\MkUXo$'sZm-a2B^?qbXIIpGs4F[+dO$.jC-Q`38j4AZ&s,e]#GMMo.B:l]tl,TBCm.".AI`\q*55Wi^(V]O]a.L@AY'of6QgiCLT=j.2CHh=2O+-<4-h)blJ+=6Mb`r^oHi&45qS4KIqrB?<o;;98/$=?bg<8TT([f$"ooIp%I/*]ahRNOP9.teiC&H?$TCVH]?9e;/71\;U[,;T6hfefCYCHJ(4$RoOZT$]dl0E75TCVN//+:1:R`@(qlIJTm-N;K?>^b97f3eL3LL5N,i>3THm`J>^Y1J*mj-P5m[ca6qntDuLHg9;9?N'BB=5SjQH0E!*++Nq-bO<4Dn`qMbp$<FF]QDc5cWtk=c*r,bA%-sc@=6$W(OkA-=+'5r9-1_3;WT,^hfCk\55N9_[leiYD7<kupOaR#8T/hk5PC3e?[qm?:NSi"_S+P`n\>n6H-b;qmF<;)n>0o,H/\bG5Bb"9T&W8cj/9)-nue&1naZK0]D&!0^@m\IDoYA?rV4:>IHnu@m^`)P2qS@"r"4;KZb6#%#Hk])lK]PihugXYhO?0Ji3LPMXVZKV[JQSD@Fg5%]B(85h0J8V2nX+Sh/^hWlL_&;DS,[XHi8S;nXWapEo#bWhgGG+:L3Jsn#e#kH1JQD5AD:Nr)6BqI.J;D?ZO+5n%\=k`5C25CTkG<R;:%^f3[tr\bDueY.Nflb:gD,Y'oMr-U.(a7rN[gQSPOOU*N;A,bCnB;$[;U0[:5]`"f)<a5r-=#]V>6>t"TY.)aN:,NSppGenMn3SDseA6JX#T-eR7n&]TWNA6#M8="+"^!D0q"je;l_F-];V%E]&o*Mu.5*#\.q$.Q1S<lkSI,Qk,IdX0\EJ]7NCfr"+$kN1c@t"n:;n2VB%2V6JWOXhCj%j$%hfC_]qtNN#26T,fc\))<bBMq"DnPZT([I@4>UT9\oT<p]\FdN$5(9.(cn,d`s7@NXpe^VNSM*(cmM@O%nM,C6-S>nu%A13A5'EFPAadYM^NA.eG<UN06e?hS_4)\*cuo9rQem)PXg^N?q>ZF=^[B3:?F]APpSl1rI*CRl4nYed++NKQ&&!A2"8G@!o&<=2]^!XT]ITD[L7c-D0tlQFeGUK$148Gg#OEgUHLBAIXpgqN9J1hgrWbY/h#6loZQ9FEdcBds>]R6"igCa'GkUCF*aX0Aa7$e+mYCFu\)-r&O'[/2*V\CeYi4u9??,Su=$>r#m&aph]2,%j4nE*-_L(CqfBrp9IIf4<rVb>SJ'Z1'\a:Pg-N!@h0>$>>VsR]OPQrj_:YDeOIcHiCUAM5TkS$ah57p)s:X&3]0Dc^rS5\VZI"LjI=$H9!l_!tL/+:4BmS+5LL<ncHq]FVlg)Y[Vp"ADYn)!npGJ<b5QeqZ@YPRBe%m4sSs!Q^:s4-#ao5!p22fAEX++Jaeeb?_'f>BO0nC"/b?hT<ZqBmr2g0B!l9kbi/>Aq*jgkS\\#;h4X"-5YF,_#<<BCSpZX0:GoorU13mp>tJm>q5<JXc1tj:hRjb"FsEl8q6,hpoJgk.3LcpWb.Yq8rA[o_li1q"FGgrq(\HJ)Vijq9+]/l\j*gmU+k"oS6eanQTA4k4p\/i6/l]o]_]\^?(r!Isg!VI;e!9j`c2O5ODn%;lSO/WVXU:?Re59>k[jJ?MD/"W8R)^]n,:;r;</Dr:sE$HLW'fs6KJ&s5N-A+8Nk8d;Ns9s6^!j^LnifqK@Vg41F*pa\=^^:Ha/bn*)_(IcQ('54P/m?$"'2g$:;<=L!8N-a(5KL+B!65C*'WQ_a%qmBQsM\aA@<(YiSn\[uf<n%.2#igSAlro5W!]_gOj0"^Yf`-$:FPi`K]S$h[l90RL[mJ-AoT(>/FoRkcPJ(6[m?Zs=%O$3L??-2t]].F!/-hWKq?;p[iX8Hb:\prOA='_8E[d^PK+26^^8$9REHfja3YB]j9l`[kYqI`]m^#7dpo*n!-BhABmabRWX_fP9PGOsi*IDW\mpf2IG5*2prh]7b`J'A`&?2`[rceWdEmC2!EqRmdHb55Q:T74krmE3AJGNA0`h0Fk4GXq>igMRD%\^I7qVf!pqR,@l7jhV\(])Bd`.R%%Is2Ki]rD,WKaSf#J13_>M[pAu@oSL1$I3a6m.p&OLZ`eiMom>KUT=Y'&CN"VR)S@BloL$s;n@1rS?735=H0(gq4`oFYHI]?U004GurgAi'Q@7]R]:p+EXEsdXfACr$*RA)YH0#Wcf/)$G/ACH#(N1q=S-U0ak_:P<hKmW[:HiaZ"8S:%Gk/]#'/)T2(N-f?o?%_B^Mo1S4a:c(]aok,id5%Bp!S2.+"c<<qUhRBgE+&gr^Tek*ddNs5*:3`C3StGO55!66T6B!]Dh&=5>f)d-3(eCIf6=*n%&AQCEC4HJ+:gRjLJK4bhVgX8"]Uhi#gP,I[g)eMjHR$k^E1hXC&TkbQ%D"X$1b)4jLd/\GPPq*k_-EbCV[EJ+Ju,mnDLTr:QhMs1CAdcBFlHn?^Hs+5V%u9lIfEn4bjuHd.h4j:cH\]TBbeg8j\WqAT9qqes&/q2a^AGjq!f9E4q?oj>8hq$18Sm=mi3q8u?uLS)iIq3^$#Gj'4055=D+a[bd1n!RhWI-/8&/*^K[[g.c6S]-I.?N%`f?e4/D-Z6Z`i@COI3dpU,0E;#aY.sMCk8sZdAcMbt[pKKG]B:Wdqjr*$ROA,XC%:o@or4+dn[Zp902G?TCNB<J>K5HGql*e;a?=Y";bnYgY@qdYn3`go/.<TC-(bN;Kc=ohr&_*3IK*$FhX&dirRXsiX]KnGp>R(NmqCfg/p!ei^TP`;F#JrK](rKV?G-03inZmLp$ATJWI:Z&_,k!S\l??.;02apGJ*k5?1-j1SoaX2p>cn^e3,J?oZ1P:Vk1N`[V$Y\.c#L$"88-!YOEXJqjsi1^[(_dUO+%WhZ"ufok<@Mqnl&#l<W\grkP;J8()TEIf37mn"/j?FNmN55Q>EZg$#8J?:pXLiV[3;h!QY1HhkWV4d^;7?5L;s]3]d]ncp8f-h@)fn&sSXKR<Jcm!0e<]2Jp+Id1NlJ)RtSDg^i]]<A[S<k[uXe(H5m](],^h0T#OcTLcM\aQs3YC#r2i`#YmceSEMD5jFr='+O%I-TS'hjV+TiP_LjIpVg=F-!jj*dHXBpJjDAahO!`jGBA/ceL;;M$j/cinc&$WP8&!_AuFdk2l'Bl$G(rHunPK/"b-NG]i&ScZEETRImIkQEAm@o^.uNqha;_GCK;/;PUf$VC1_YO!bPNhAb<PGJi_Wgg,<*p%d4Cr7%j0?[d4RF\eYO&b!gHN)t9\L<!Z54]?Lp26Xbsn6WQuhC=dPDot0UhXstp`sgekKi4R_m#HiBb$89GeFh/FmHqIL)u!_6ir/U8I?cp&ni&d>Of>n&pU\DJ:L8DH]iXB(XgmE-#NXk9:$KT[NAg:3`3jeREW,3!h-9j9IF$"C=64<l(N.5'(%/3=WAacQ7UPr?bE';`6hSoP^AMZ=Gh_&NV]L?aQDa3'9Fd]D#Em3@Dg3\tf3WOqXnA#[hfeH_06DVu2u*JT$`R?_BC@J/?%8>+qEXbo>@((]o$gSk?Ys+uj$>3)2a.p>HV9`SrJHJc]rq!@Mp57.s*2M*hQqMu"_ZW[=Ok<&00`?u^%]fMk,-2&\ij>ABl!.]kGh8I;\*4g[n/cMIF*K5[X50glKW"(naF*/].8q\^J1?6pZWW\\bhtIka%"lBm_tbo^qJ?R6p;YYIm\Uh*%_BmS?hF>'SspXa&pG9]g1UiSOjoDhA$jYNOBeESmNMQs0rBAh&`KT"=7-U6q/Z$$P+>k6ls,+!lI1gDR&J:L5^4iuqk%C5QDo87;J""Dk,Nfm]W2HGlfGh]`j/Zq4hM"[>0JT%EeXD(4AL<40I:i7#/"rV0TCj5]+AYJ0e;5&s"FF&+\qoAV"_JZ!ajXjh^jl!'eQoT:Qr`2e9ZBV/]#c:;m8QKgtXX)QD@Fj6Jd'f&q\F1E7;b37'[KA]8f:G[G-*]$TghgG:.r2^,b9l'X=[ZB<QH#M1!=(;uUp"IHmHM+&1ZLs5'^?7]7WA^_8EmHW;h3i`gp"0/WR?(l/$<8\X\EVh1hA"gqVo^cCk/pn2HEctsl`7o.Db*"]9__`Pq)b3"n>1I]mnDR8p^Jn;?N0SpDG<9(/)9I"8N(=4/mibqe"r(Z2cFhM^QPcR7>V@GAa_9TVXD+%\eMjQ^eK#QGYc'36Fl4'Uh5cqT;m21T"FBRY?[R3Vp^B&?$YlZiKMUWeJE.R18:lVX.oJ1SpqX8mmU6bFPT<5>/Zk6*dTI==Q6S%mONQY8"Ys"D_GOaiT%+R#l8s.H"HGFm4(;`nt/HV<9i_dA$8!/4:tWLH?4L_D<fWR>H6GLH8\cKA%!k,on0I+qeo6@$XYH]=E/,V4`SraHJ8OhB^M@2[s]rOd(eYuRh<@2_C(pK4<sib\(B6'J+5*L^[ffY<R3g+fogh7nO1?3f,;+ZmCUF,asYMaW)3MaA=q7-n\)N#DgCu#m!Q/qo2Kj/](,;Wh6Y4MT6pQD2JV[E8>#\9XUP=NUqLK]#?#bPGN6U8hY4teDTr!'n!!L-3*ogOGW`W'On9R\bt;P\Dp9"aYL/_:i_KB`aZFirFDH<bc&GH.m-D-qG2&4)qq8QY'2NuGG\(.a5547kk.,j;QP6c![)CEh<'>A6AIAP4h,42oj(26"hXORJ[sD*?ku?_.oZAs9/#@'eWo8ZKVbMknrg@DjYkMh0!pk<n'@1u+Fag?u<ZamseA1a!A"S*/pNV,Zj#Q#d0(GQo?HkW0P8([VM6Ha$2)eP^hL=U@LDu(WI-^KlgD\Cc.&Zf?7/k)XNo?$`ROn^OK4NLgWEZ]Q4edpiRaUfRpbaY+qN6P;\eO*!9Km$hLIDc^1q)90&_;5!f1X^)gluf[Gbdqe6!aJ(lS-'/l.7fMgSoF/g40+i].5omms1`";4PtkDl?Amr5Or0GX6be2pH]7l0.hW#5N*-\q\>I1W@CuYMTu+p:sCJIJpnHr@+k`iTYYQ]X(e2]N(eSf"/l*ZA*=&,HF@?e&Xk>pLYUFiqR:"h\#Pj4^=2D!7%T?hqld>0_rZl)183n>r!b.HTia+(R0cUrn%FkeVSSRIjQ.D$15PKEEh`Ia\-T&2.<hBJ/oL1mV69kL>(9N!%Lp&!qmkS4p8[kCD$JJ/`X1\'&]co&1D(0NaUHe1_f`8-Ek$"Kqh?JfTRUOf+U3%&J50-+Tuli7JP9&P>g`jXKc+9=',Mrf\]))6@.8qKdgKPjrO^4^f*jDec[6fL5>4>NfdnK,ARDi#KIM"O"3$gE6e*l&G<l7N:ke+8CmT&1'6CK5Oe7p$?nC-<*)I?r9Oe#_/"=K6"6[Pp6:D?^V[ng\4)ANo]Nr1\9_u<'ZYcG.8R-/&Y99e?-VcSpUaJBZ0n9o,pQtmhbaD617l#;SA(;d0l7FXbR9V/.gT\%7.YjD0$b2I;qs`&gGlRLapA&d(:Yepl*i;lDRS@'6'6m='mR6$7fmM.+)_qS`Gq*fX=F@b+uM[LpY-?o*UPh-_YJ=QE6.EPm7:VR@8Y\dY"oTp82UP:17m/Gd*<di]Z1YIpd6V'(^RjQ,5t(,?o)<cHBf%K^V,36%s&EdY++G`J@W-P,2iKF,)Md-&HlOD+Gl1bZrmZOYhib5kH?7?D@[FeP/P&0iFN,3n=@"9_GPEFkabi%d5C4\H*_=M'ldosa?m;dF-nG?XKn1#^FUJI3@!7uRXr8KWQub,VKrQ(F"Luh[sdEI$6:--JI!Vr%OPhk(u.?[`gg82bHit/[_u13E+\^`7`C%6WIPsj.q!die45naKL(Bo>$FEA1CAh)s+-WXF[RKKpG,O$`2Jdf(OIY2htcX!`)-T"aq+4q-J;3\&V0m2/CU'f8<@4ihtlGA/q$=8G;&[U0(SMHrq,17IsgsHBCC=(rK:4ZpqJaMrMN^=Q"M.0gfE_:iD6XNpBZ"lfV>3[O']iHAE?Of#5Iqr]crs[2T]&X^cS!@4)b<+n.#KGAi['bOl+uY_VsDO:))Vq''g0[$-V1Trnko9fO*O[15UIUN/SDt<83B4.)ngr_mS<Z*sgd4eT7>N&V+/4,\FYe"?7KS)]FCF.MB3@Rg_Xc)?2#3n[d,Vn25#[@YTjZX+*7!ci-8+>T:L4^5<]`5;]p>B.Mf/%JMg<Qb(_sBr&>?:&MA6pm0&?or4GGT$$mbrT+AVIP"+VSZI1:Z.`dTEP6,0Y<t!4RX',Is#6S:+m=XcRKPn.cM0M\!&b*+ek*Y?,VTt!a^!@FJA&/:r5:?S=;&B"UK!b30,4M0.9fS2rktq"^/=Hd!;7n"!)KsVk4:-r%u]fV']Tpac#<Ts^U!$*AXPZ4K0m42h,GENrR@&,Ca1"?OmF$ij$c0F\a,OXbr8;eYq(V.o[i2s.,kW\4oB"9<DXURDnBSKiJrIjC1#&ZDJKr:Wk@N/n%\Oll\k"_CL=dDdH]m9qtlFKmb`o\,O^'7&3u2frUFNuBh`+*NN.aBT6g1\gX8+R_S_5aFT,EaB/957k9#(,rQnh'VjU<12qg3^2QXord,)E!s4U8O.s6?S&W+hCUlU3+&U_hTZ2k]8b;XZCdM:NMa+&T6s$nsA4?fZ]h%3PP"@%3f$h&G;Z7@0mpU1d.';)\TNp!/[(M068p$\N>%lBc5bfc93=D4dDCbr.UkZMJu:q6;_j:>U3_QaoZ#[h@/Wm'D7-QhZ&WBQsr]udt^SWCEa?f<;Y""P.)]]jtq;tQXgZo5#P:0",?^N-<<*e$7GdU2l2D559Sq74)j-b5r:WH;EWrop?KX.[9i'#Od7SZcBJe%YU(baS"aGk.]/T.EI@(IF>Z.Z@":H%0ZSRsF?!kM,hE>B[.#PR,'dGe@(mpC@'))]rlo]^FM1>Trd5^07(bnBVcOfBShIdlgM)qMcR\nr=U!TAjrP)>!bqot-@]bG<]H)dODi-R@=7l!Ji7]:XTM4!/hC0)W$\%84WR0DtCo=,Qe7+5HeT%t=/,F?Y3]b59U'n`d!\(V^pF1nZC@kM=Ls\5l9EQNdPqhLe./fl]OtT0gCX=80HOUi#@9U&u58f-YqZ=B)poOZ8A'`oeGqrko\o^SMR4<D=QPPFkdn==iJshtbTZJ,?NIs6T8oJ,%pq]_2/G5"WSiPQ<a;Q7q[.S^;EW?/PM7]g'7*@2]/#F-ZU%ZLZoJ35-:qs5`cY],mm9-g4jqfi\:Efm@d/YMlor_VW9D0^\hDA_gj)n=?3Np93>f*rF`nD^GAZIeL&0K!5.PniPXQIM:Pc-5rZP`5`NU9&=T<rG)qXp4fBt2dc8THgtDSn2ncpmeYduo(^ZdH2h.e$DggmDQeNSM6Gd)bGHa_Y41Qi^[fqT(ZO4grpYturQjT.%9%lM;QOj@S5R@FP@]pa23\gSpET@'H1@N9L8aMVlG(LIEfVC5?o-c)+SXD/@7K&NV3JeN0k9[Rm6jf[N<GVNic6&t/$,Yn\%V@7O5fHNI97b4h.1mK.fkru36a$T=oRE%:C6oi[KI)QCfj_%fOB?u^O>8]Sq!\"iF`)+b*aj$eTN6<!3@AUhne_fqjC.P#V.dV?)J&,r[\J?(j."lr5>+Hp"Rf@L4U6@mNjqlnU=dNE-gg`k(+"\[]-J,qd!lHiVPgh;>Jal4ctZ"j]`hGd\BcHhoYY1/j8`P#K*HMbNd-Ed.5(Bh).M4hi:;1>k0`NrJ`5LrcjuXLIcg\W?sIfrL?+2E8L'c)XP653Q&?A8H<f7Hi.eEo_k70o?TUcqmPU"'O\ll*4uZmqd(6tT>LX-OL^F+b'_(?rUr1brTiA?j.H5cs*[b8S[OG/<Zf*AL)u\r^A5u[T):+QE-3Mr7E)a.XoI`L^\mrSJ,TD.1RmqeO+%&o=+Bi%GMM;3?etBIjql:)eQ=F$grn!D/c>I:1b,=Qq[U:9OrWqXYl1ocs)TSkURd,o>CF]a>P0ZLHKQBQ7=Xg/7pGG]l_Qn*;,PZ`e]J]CFHcIsi6C5G'Y><@>G"^L>n>cimB;r@:%<Gbr6k1\fU8K(*(FDjI/_CrCUkY@5-\,\chP"@m+%q:AAg"C0=r8!hqXO.bY!gtOY[Q!41q4,f6t;I.b='.SsbPU3Qoo8g]$i_:\]/nk-RRa03f5GD@HaK28&n8lm$a?VTM-Qi$H9CXaE:`p^a1BCMe>K82WQ5KPb7qs1S"aG2\Y"q2ccDn]L]G7i>nVT6a;XJ&Bd^?cNnRPSK7:q;29K["Qmimuf,,rCln1J+f!h^\;.i'GrU,OdGM7_dg4O)(Q$fGpM"iICIEP)M(W\[HfMe6Z^kMU,;C#jurLpX.Oh7VuQ\@24`Y#[CkP:mld#?W4h>a>JJBH55X$*]`$"-Ef6pD#N*3S."(&NO&Z@jhtl'Q11n'/n<1u.FQ!`pp\ZOBi+QTHZM!n"r+Orr'.DY0N*#]:#T7]A=8ca#b9!f#J6Q>sQ%=nD4\#P.k+Pe!?N9#WJdLFCo+`U"'jl2M<P!:7R\*p_ZX92aQh3H(_Y_g_-%X'cIEs\d^OAP8Irj`3c5a0JrCVSJP`ri[B1%U86:8PApoUIOGp!7kn6$ADqOQJ^aWpZFhksJi2$bo6qXSQus8-!7WBG$g7fZX-_Cf'iXA=kYQbj]PQ93f(regY+5#R0^F;FYhXB$RU]"hH.VIT4"kj&fHHgK(F4bs,^<KgPghWbY[EdR30*Du@h^@*G+s6Q1]M?JG[&bokVM'3fhEW>3s7pB>HbQ\9dq<"fgp>+Cgr=4;9hPW[Q>Tq&1QS^ndX\VjKWdaH))OrD;BA;,Q2J#*omh7?;oN34;j6^<4>n=X(T_O["2,8b7BFNTU+lG"+26?5KCT[>HAD4r1had9,"I?.])L72b+)4f.SP@Lt2JF43b'\;5EX6[Y1CnNG/!X$,U\fA4>_gDq>CLW\[[Mg>8@c/EO]3"B_Q(a+T9W<Xq"S2<s5@fqFB\BEXYJLhVf&81k.AlZ?htL4<V5=DJ$*2G?$E4mE#8a\eX%>&ib+<D*@=*V5mU6'IE''k/5YRB6E46@HZ10Bbs'W+@&_jr:(,X+_nQ'-B)U-u#U`D]e"ik:+s9WJelTR'5&M;\moJeh3>?:Z;i0,fmNZ0)CEK[=#b^H`KZ(XFld0['Ybeliq")g$M9k)M;!VJk:*Gc,FPDusqd:kd_'O+\]dd=hq[9lE+*c&Q=+9=(^a6]FARFSe:(#;6*hCAS'jI=23:sFFS;&ifHM"V#*rGL=FM7J6Q?tas]=NIdS\)UY?f2Rp#VA*X]B1c9<>>Z7Xc;$U'K[H0hn5]7IQ!f&E%L\/J4ZVFHR-8uJU=q[_d?@H-VCT)orl-A0qaZlT)nHAq-MfURqf+K5$9*^D96&]ZXIpu(S>FIn4TUU?@Q9aWpfm]YW$"IXF25u?t!YkW4fpsf-Z>Vq9s,i8$9Dg5"_]H"i9u`T</]X8P%WS&p=1@fa"&*?R4(;KO8VjIerk4iIm0KB'^!-HjW_0g1lG7,.Ql+c>0EEorZ:W0$@iV$_<RMQ,QGD(uZi(9X"E=gL'jGpV-Ti?UVYp5Q9-a99Z3=hYG!krqF9N\Q74]C@X]`F+f):)WUk_e(+3khmcXN?k#[ik]B&7Ha6H)UPpc[fDRs)>si^PXd9`D8_-,Y`$kZ,:VRGRh&$Y"_c+BQgt:T<dZM]f^3&fs03A,O4`<GfcNM9h4II3&P^Z1<^tq#aqfkc9EiA!BFu!G!bU?g@iTHl,"E+]lqo!mn-7Sal-->Y*+\I:n&AXS*PMHd0ZWQnY+9K?'H_j;52E]Qe'khQ4A_mA8!,r:].7JYF6NVW*/X7V<[H(bme<"B[b;dle%iC0k!.*pe"pH%A,1tH?*55U^U*<-mDlM"[.9og4m&+X)/X6i;I79^kY"LUap6f]'9>+2\JTk1]3^&>GSk%%5j8Ds^]"j#+#)0\'PU$PN#dEiVO+npEYTK:_R!F6WMI3X,XBJVuI('F_$\+8]Wp\&Yp4X=3r;srCYu<-#XC[([eOksda>Y+?9bl0MFI\QJb%`]9Uu5=]=GR*ie-I`QJ4D.V4K<FSGD7P0fq$=D'tobIDQqoS8mBF1s&Y",SkV)TJ0WB(dI^gPnYuCgqq,PRHLh%Wh"gYNTDZRVs7tiUs8;P6T'Z@"AUh4!,[>'3?anl"(Uf+nhf^@WTE+Foch]3d[^V;V1P`A1B95<.<bA$P5(So"jtqj4B!;:F-\uMHbWC30+g1jk"8MOf2;oW=]&e6eo(:cF[sg2Kb*EeSJ5)^[&7BH.CI=!mUl:lgAJ?K4ZK>;d7ES:4.GK:h.9A;JE<D&e,A#[AaR[f7PeB_EnVKdSQ%6frOg;.t)/#&:X!;0W7>^d<:.N*Z6I>P-$IWH=8?JF5b'Xq$=PW=(r&`ig'mtN+rG-GMN&J6PnI([qo3]$Soua0s'0b+>GaH'aV0?k:h7J<.-W@EKI,X@_$,6(F/5u?2:KYWCohVc=m\d_bg\.]*rht2hr8ij/oC.)8a,!5Eqp(pCOYTT,s2\j@Ndgb\+!nZ$EqPVnOA.n/juYL;mWbJchU^iSSpOf?nr$:-qn:<_q*b5804+DB)q@.rJBpGre+rH[]F*E.ps%Q_[%^I4r5jia^Kk.?HB`^QX,jpm6?Uq+DgR!-ok/%<ACla3]dNPHL$):js#p$KF7o!nJ*gh/n`)^o<"Rg4]=/!S0i\8@Ruo9lZ^Z]8B:&(i,G&R4[$mm.2%ji4?l^q3/%)H])od).K57KZAUHt>@5@u#"(S(q]luU;XmbcEhd1Be5C`J%CSauFht4[+6d,LIIdN[jJ)PUf[r6QO7mFQ[Xe,FNs-;dIKceIfjhL]ZpV-19;lS7WIeA6eoCL9E&i]dRmR62omp)(Rp,>57`J;5+V456u^%<%hqYImX'u0\6(N4,&k)J7]q:3F>l-/&rm^rAn.K&MIen.!+@Nt=YA+>oCOWqVkI/:H]MEaNXY__06<m(He<M9Hkj`d<6J,Y!;r6]^NQ.4F"oAIs0-&Ni6a91<3r4D$MS0sA?r9;t>I(Q+.ppL5c""V=Y=U+Z-Y=3r"-N<P)P4HY@L[T\]k+dt]^^?8%Np7_#-QMgZQ^<2Ors427IWT\M,(e`;<W#7'rVkL-;"KrjB>=/,D`lE#MZ8NDgc#MVGJ6L:+6`eV;Xq^ZIp9],njr6$T"tFn9="Akh_j-^L#42'Er7F_s&L-Tf_7L[#QY]-Yl4IVqt>6,THQi5H)Uk#^[4fcJc9kS57[okZ9S-0PC;=8r6s`=s*sg8$CEXEp9ueN\^rONi&\UOqWm$7?08]\hFhgdl+Ph,ku[lUai$,EmJQ'E072.?f[$g'<EUaQ<Rk&%rH]nE?iKr3SEjih($dW)]ci_G-C6sjf%3%s'2G\0@Kq*DnF=52][EjAABYF2ru)C>j8XQO)#O2d2E1Pb@=1^`m.f@KX=uE=5M+_KC)rVUVFH"D@[!Fr-1VsDhjM,?m?NES^HeR&V]!0DUAV(,0,bc,jPZs3G'3*E2k0;XrshN[+84dccer'EC$'X(:VHT&#;Tn5WOJr,>@5J/2tHg]421B28`0H/191-5$dtZ]k,PW]8,nQs"<cC'Gn=ASARhig?OLUo^;:FI!$V]"Kfrs\&-ek,K)uC:'*o^'nH&_6#k/(a'G"42)A;Q.FAJ9u#Y)fD;\iA"@p(Z#H!AV=#p*Rh@9gk$N7!GMJC.b4gtE%\LuoZh$ROS!,CkrEp3+Z..jIGkoO,8qCGda^:eG^"ZRfHi+s7ScXnAZ+e@7"MGbaQIDmk&Nih!?$bC$/C)F5U)&E&tlIEPS49&<MhOtR,HQ$\6s:0(.1qq=!cq9!huk<=r6_*A>n,B24;_6)<:^]$$I?iSGJplh&$ccKBUPGm`D!l+?XX&a0/#eh;Kpq>!@/iS:VDPRpT6F.1031L>tLmSk2Q?L1MkU<Zekjr0VVB]Io)0aHWb+HD+^`,X9&AmZW!Ce?[1YPWrbBAG(pL,=pjkPH,+Ck["!na%0W@#W?!Bg.H^SZ463MVW8)?D8G)j**[Q*E3BD#`*Y;`#rB`CKXuk8==X/^)!d+X8*\S&;Q%qoTcT"Y#?Nb7HpKr1t"BfGT:PH=cD#%X4%6ggs-Gc*P=qY>Zc)/[uVOdYWZ%YhU[n^ru<-=$QH>X(n91r7)VEOtZjmff$KWaN;]X:)?eo&3A[FR&_AfTk<Q_nAK"&OK+JQJN?r7ikKD@=FAlkGA"(K]7$BEoQKF!k6lIIY\f?fQ0">H[-1N)1kP8@+p#%R&]>f3<$Gn!V!S*<,;cW;cBt0_H->ps&itM4?5S'GM,X;a(68+NeB6&fr?t2@(C\X$EuIq4Tsj]bb3hq90Jt@OO(H@m&tu=U_58P[0:9VAMY53SCa;3fNWZW.=/7F7-AGrap+,1i#Uj8cT((X/g6El*ol+?Miu\q^CF+Ek&.$I('K*jS)=b>)nS,E>5:\:crq_$f.[C!p-_#N@QPlCTXH\3*qYia:PL:#XY>nZ(1b-\C$#]6,^_dtZ>UcZ8])1hkReTThl[O+ukD[b!(2X=bR/tLbqchsl]AGtpr!s=OrO'g0L&dS6AeTl3ruZn.!':5o;f>[tSe_qi+iH%o#;#oPUH]lq@,W)"Ai'N0-@jCIk/0En['qNpfF#:ZB@/0sL=*%)i,/Tu]po(?DX&-G"lOJpRC@TF'`<`enoRsSrA=\)Bb+q9UO*;Ur+4=iY.tMn\7n_/(=UpmD.ZAe-+rZ&M/ZGNBl%iX+rLJb6j/--#9jF>1;4#s+;COQ!^InsJ.Mur"T_`j,X;r7M4h'"8/uJ^[g]-i&Xb/R;VA>uALd3j'Y&K9%H6j/4Bo3%9AO@UI`iQGb:$W@O])obO#Uo0Nr'GRHgcro!fJN'E`=m1#s2/G1G,\j?j(q9js_RYD[F6a?dATtq![gG,@D1A>sV%m<jq_rGi2"IBS$[Krh:"/<f+`ESG9jWP7r><$1PVt)9^6cEV*7@F%nk5IAWkXgRZF;(6QD[Xid.0(N^M6/hj_/C:7=s*U?5r,6GC#2[];%N#[SF92%ADR3in(*;9AX9B!&Y^\7=^5@=A";iB1`VVh;0Tg.b:WG)cU[7@*Lo1?nl)F=]k&Ib//]#.THna*^bQ4-?PXdHTuM,XEQ.&8N>1=CR1c[Gnf&RZ'i#nV\QSA,Vl@8Ro7Rf15[]=.E_8K#I?M/r`kH^!VGUC*1%;@$MS5W(Bt$=%'VE[@&Q`JPrL,u34UCFf9[9*d3p5W<qAE<c+B#t"tE37B+43\VKA-AtSB3Pga2g_(uOoTSjS@D!ZW2phR6X5E8[qt+)uIt-Tf\)$q+rLFs+:#GDf!;S$/)b.%SQmd2JVVa!E]<("D+VUp#Hh[P)"h!l=57rkk6GPfV441hA^JVctTjU@Bkf!<?i@fTY(LID$T7@.Qn=NUETR&0)O*9jJT*fBg7Q3Mg!8Gb/GB7Wa=$HK<]7TLdHM^M<as7TEo.d6E:<,$%qP,_A./Zus,8jDk(bbiV=FBX7pND^L\ac:08,.X(,;LPDgsP?_hjmgnq!U.BA,i=gk%>TQ0<qf8q1Z"emS=oB9*%l+pu/%Ss7t+;4e687jn0!=2/ECG-$*r^ipqSHii=mCcAb@3OSGJg/0T7<jAQA6E_O.HST"f7Z=^XmRK._`6La>:f:O9_i@b9.E[qGUZ2fa/I-9<J;AD:V<s59(R%=o2dOaG4k6ZXnlq?,_G0dWs"TK\i0qPbpGcMB@Uqm\$E<6/bgcq>/\2YK_[[i32-OB(`N2e>"'2H[Y)?RDZ6TTXDjW2?sPa+J=aOh729;7)Se%^X%R&pu&E36Pl"T?po2af404tDR>"=H"/iME.m0`6R%3\%B5405)WAmh?/#Z6Ot%=o$Rp1G$99%Pa,1Q9l6P@PK?R#J#:[UahRg,VK]pq>-&#eh/WpaL;`r6GHOM'iEBAPXN.WroU9`&U4"-qipe&cn@TDX[@A`Vq>CfL'<aJg2Kl1l5^t@3!<+'q]7erjQ;2Q421*7%X8-'E<LE:S2au\!Q.sHa'D4kVmue,J_1t@s@J!)o)3HXP#-;lP^*9@heaPhr^2SRYQc!O0D#o%i%/s5[]0TD0H?'>;E*E)/BKrcHcl.MtC4F;$fYG5Hc%m@@TR_VVd8egQX,':HmM)-Xk6c(QTaS*;fPUmc[1Q;8s%Gcf6DTJ%<(P,4JRCs,0FLCNoL(,b@\En"7tdR9b=nN&F[W5kt)Y^DFG6COUTa+$p%!6\6I((&?`7LQ+RuAh4j6\kLI16O6;7Aa[<+#[Tq[O$k4YS2&F_UF<qXo*#*\:O*a?qXEr<_e"m+U"e1F7'Rr.El8Fpi6c)N5N/;CH@(*b\Og;*(t=@+ec/jmAi'ZJSXtq\;5UYqX'bbsIrDbhPbbJVL&8.Hh,h@O?[VQEV^1/uPkX'p*>F@.$=$&`]?qIn()0QQNj@eq?[;Kc:B@W<^[48h7cAb:p:U#4-h4nI8!0IC;e.uljM0#BRAE+-"-<?qM%NEj_T/b!JPZL%DV08^f8m!?cAbX#YH"@7`5)/4:l+\/5uo;?&:a6)8%t`$C0=ju.(Cu\5Spls/:8fq&u0q7<\)#Ti#i1762s(c9*A3I8dI=2Q8fP7NtV:_"Fq'Hq2_BiT:qA)HT`k^Gf_Xo'd:AK4GEk*Sl\Lf6;-sD!_!A##nTDJ<<8G6]ONq#%M^L)QJp944iXLO:@<^`H\0N^T'c9*YX!_iaIr9o+p&pE!(=%S/]<^)KEVu=;^(\9e<!Hk+YY%UM(K&Ab@D$Lm8OBO/rZ&>B0E5I6@]W#aIa+KTHR[V.a9poajWe.YPBpr/5O%;!BA-9;AcGQJ\)KgUYcpiULsjOrKjjBD]&F;lNBCZNP6J<n5U(\Uf>2i+TR53G:I)Z="`o,@)C3r@EaIN&Lq+h",JZ7I+n,;kM9Ll8H;!J*MhBj#iY*!66X?Pa-_jLVsXmKh(mD*V6[eP%pGDWmsa^QJ,@99jRRcaqV6RLH_1pOf&uj@QAje_hRJ:K.Z[s[fq2lI0L#.<K"l40(_^.(N*4n:hL4S32dY+&0VTa!?sqd4#_3?en6..5iG(,kY98@6-*c>_[\"pu<s[i.$PK)pIE(no*J`Q=,Y#D!?j2B1#^AFfS[N>s@S!:gU@AHjNTc>S"imqF&'-a(O;LPT@f$4e;<!ca!"=^Q^2uedIJ.[WL/8)-AaH$iQEB$Z86P\M&jR!.$Nrdo&1E]Qf7:g'm@k09OYVie+tt7hQ2"u,"CS_p9JD4Y;$_^:9Lk6O;Duct8/Yc9+[D,E3XI8(IQp_Z?BMP!+_>GV0\AoO\8o.qph\$!o't/fQ4`*=_sJ&rFEs71);_ht>82P]RC]ITQG;0]1;l-EG[it50`NogoV6V5QMfXANPBl(B0>tX7=Dn'n,DmA4oi@q,lW)[ZOM%(cPZ<jRsjNN0XcsbmmU]/csYs@!f2d&c@%E\bXgEq5[[\I?pHuK^Q\3BdW,T9k#6IX5'u^*):bj5&8iJ1kCi^9^kWO3mLB<.7RpJ88Q]J*P1FHiUU]gHL.BKUFWJTDdd-[TIf717mC>P=s)9_.B!D<;BBuT;RNG4Fq1J-FqPDNQf^S";XV@A=9d?\kk)Ytbq^\dOf$W!tpsaq7^<iJ9gMm70$ha7&lXsRIXZ!h'^@5BMpKPu/Fn_f2hk0:],6L$^=t3n*^@8[fLU"P,4t$,08ZdC-T$jR1e*fro2k("eX$77[<"/3<g0qrR]_(tt[f<2H;)Qkc[pSsTVd"uK%6D[+IaLj*&n<#s2)@6!08mM_pp>*0M:%#8nH?g5g.4NE0\+ZFQkRYpO,[/*Xd]G<A+b*3:;So5FX1*&JA6sEJ>j0#!E!CHB1W5`M9c_FPX>KH@,8V_g?drA!B@(Z/tH9T_m6l>VB_ZiN;^Rj6K^to\(:m,%FT<2=Zu3CcTbE;=dl!/Jrq!:#Op?IcJnVKosMqm<5l/eH9962iIfL]U\/Kp$Nupi&7Xs&pc5o:o&H?2^VnPm;.+,R_#&0M?%r>QB`I*;"Sg`$rJ6D8Q=a9AeU:trPY54$05pj+GD#Vm@@:Q,]KgX&A%Y^V<;cF,qWk2fJt;`=!CMMEGY9Ojp!UV'"EiCE=Yc<18c\!KJs=*g&ecN[+iOuc,N(kK0g#-$rfmUKqVKgree?O!^\s@grW0.6EnrK_Kh-0DW"EEo"QpmerUUn9OSB[9'JEUT[54V;i_,TBr\"DiXor69&/&+'<W7Y*o]:[S?k!4>3rdHsr8[VP?[a;D=5_(\QG@tcM;,BU!rP<PJF9c@ZX<YlWm&B82,Wl)L<$krm)Y8C]+^%M?n:*bqtOg8#![<=&&,k&)fafl<(9Zrot/)q(ok]Z@iP^VmS!`3qh;gaTD]B5M?)Lh^mj2-!dUL^#KL&].GTl6mh'QbXn3=_C?r#f)(,BLP3cP\mn'%0#1a@`9o@k-ImW)"R%']2#Nd,<W'\:V[D>oW$LGWt@FlBV<VV-F=%@4(n3-C.+.jYLVsd+THMV"KZ![MhIr@,]jKoSuN''(#RCu&gmY.<@S<Gr.5CM<eJSc.S&H"OLn=!P>Pg<&ur];8eSfMOLQ2&kd^"cQT^0LL$hq\+j.pgeUK0Q+2CVR+k=8`#hY)B4G+5lS]rq<8VmiDHnkWf!q'&V/hs#h>JloRF[PDs:q(OtsNs/nTcdkdWcrq>f]4:`f/4[Xha?N(f[X2S+"B')SfZ6N%5Y/]&D"lAG@aO=ZrQi5tE%j-'WcnDbNHm'>h^p4:IO"D"Hr]98bfjEgB^sA57m(rI]j_V;K=/`X-H(^dPIsBhbSH=6iUNZNoqFW*_Gi!``@0ceb:Jk]L[>l>L9TV!p]Hl<7Re-KZ8BeLr1>%FnB]-^t8bUt?Vb4U3V#I^i=ncQ(<aJb%EB;e&YHL_k_,i>dn%/i$hXVpu6V(Yp)8E:tUS`LD@KkAo7r)Dr95QYiT7'f1`F&/!,<6o$nb`QNN+dG2ci<"6O5bMTK4gW'91)/>p@nLRrSgm[rq@N7b5_==J,<)63R87e':-Gs^AUY`q_Q[NC+'(Jg-pMg)p7A:1?Mq0YVc"0IjNNR4MU!]:r[L?q-qA-@SZtDe^$7D9>fmf^G^U1$Q^P__C-ZnRN`kA4^NedR(e(PaT%97J&UotJ#\`XocjVQ`qM@LXNUV@f^F_JENJ\k"$c[#NB:_iVjBRG[;[9%9CI2S[]>G&?Y`Lno7&+S[4)0$j)^I'YClng^o&mV^74oY:G8c6T\0KUqJTcp=o?k,s*R"E^\c?4#"85oFFUTb?[M`/&qD,=e-55h%1.!%j\V)R0*rn!#q>aPIf%13gS[pa^LY(r';q)#7UPVKD^4thlu*#Fi9eo^Q(*7SMN$L+'`Rr('!V<-BG,RY(h5TZrDj84h;.\Jj($?.-Stb#'S]<X(F,&)></Al[A`lF5@5(gWnbp<_#(>5Zt!6%paboi%9,=e7W6Qg9O\_t-7*3k%rS.f-'-uYci)WtJnFN0oP_i;rT8cupS?ld@V"e&o#Z(aJfBj[0;2DElKe1PO\kME7]GJ(:Cf/XF4@5hX8\h1Z%NU"\l9#*HqbBeq[<7-S&MVIW>.Mk6*I`MH.B`8?i!rj&X1?:lecCUP\XJ-^\5SFr:'!?_gb5C$cA78pO)bLr>.\SQiHbu@:O*)QOhb^lJG>r\D"W\F]4_$!W1,gGI-g^3WNOH^&0l)JG3cEb1?UODKB(r(X?A&CgP#M<q-oi;JukD\"\EC*MZ#iD@_'s5U=lp3O`9kraA,:*/bBhPNtib>5;J?,A7Se1kug2Eoi%tQtJs++'OW+N2%R6#hs(G]Llm/0Hr3/+ET.r680U6h3N&8ECsmm$n+Lu1B%p(=tHKc=P2"q@*5c.9:n_jPX=0>Os,jV^oR_LfQKu>_lOOV"N#.k$^jJ7`]0M**$.7tHh');Y;#VW]i?Q74-\RKX;<cfF@<e/,4d/+*2ceaf<k;j$o*&jXQl`Uj%ou,A`BhYEt)#KfCrs2kMXh,$e6Nl>ucb8ZJJ]ceI0UId`.)5lrl8H]S+Lj2d85keY(q!*#Z?hUg-.q)#q?.'AuY:(q5%64<U;Ype)1^8=9HXA=OfQAk9QS.>u3>N"Dl4"t$QFMI7a8g\bTr9Y$hBcY<BFq*(?%A]jNYQJJ<GR7p/M!t64o6LlA5/l`EpfPXKAQJ'cVdPLtupI6)9QQ7$t9`XeTNRL&AY9^W",XGsl>Ludb]#C5S&e>-\'^qJiB0t#pd"DNlq_ke?>XbL(_?KPT,[%I@)74-9Ud^.ded\$`k1L38-bsIb!!@gqQ6!G/@/LXh'l1<u[DOEF?ZK79`M\SfB*mEE$-Z8nKKauGIMaG$%Y3#b'Ehg#nO!)]U_&&6+e80Vld6CM3?*<AYhEnD0GBR2.AUL>=@(pLd9EhuJf+Ac-t%X7U_"(?^a9[=&ArgO+M_O0nQ'(o;J86C?EZYi$IK/r+MJ+%!mnYL!mF2CR>RtATW8\`8TZ:UBT@g]_(bs;7o:I<hCMV=-:DOR"3-H9TUJg[,JqB=,XsXH7L=p8d8ZkpO<H#;e/sHBKd+;Y3>HT)RFD3;(hqAgKn]R]_)Il1?pK6;`$-Tb7]e$m77"iE^0lh+Jma01%\a=<J-CeYKWmdh85'I;2UKg)7$(Lt11@*e&aU!!0Lr@+J;sU`5E<\JRqFL7%tDQ)^Vg8OI'pojZ_5lu"`&Qb!+prcQStJt*P(NoEHknqL0q%OH`&Ngeiluti'.[rn#3G9[CT'WH`'UmDfi*=WRQmV2+%cL`tqL@1j^r(pq)G&V@ChY_)jgGc&i*lL-eJFghkrK\?p..9B*Z0c@!:)^?t@/95QPsc8suSi`K3f[4)g:86coR.CB&&,Z#SM6hO!CC(W/CYtY1]r"0O\aN->m!/Mi;qI%9M0VPnP0AFDFr.npS5g#,E=3c*bTuqqudiE:,p=tr1EoZbf\KNT/@48A'-be+CS9.sRT'fKWg-j8Sbi%Y^)%gB&=13UU!Js[9+&IfDcXW7Of/J^`fmQ*+&PRHP$/i[MXhU8,S<i^CLZKRiQKn@>H\[3"=u2!o*kA>#jC<YhW2eG2MXCV86K4Bd]T9ht9]!]HYj?W0*GiBG)rCN5(&U^F@GRhC5G,&[pTkD3r%^V.+"iqBD8#sN&rseBh+E3'8t<J<S.Ka9]U#J6Dc?F!9"m<%fPh9eY)\hC/ou6c5l\O7J%YWro^&2u"^g+c:&$IeI/"A8GZMI5LFW34Tusr>jjL13pU2%38%,>rLCW57UY3?KUK*7On)&0RY+CR";3F`@`<a6m6GRC#!l2Hk@^H)q59C]*7`4m=\FfTJb)YF<Bjgc,StL+Q+?3=4V2;[@9T23fO<K)H0-UBXELA%U(poDPA`rC?*[C4&F6li):OW*^HJ<@Eqp#p0]mI;FO%0C=PQ0ulQ8knOcT(1+T>?D5D5PYI++Nh&6F9RF+)Pf(?86gc5s]C+pGq?4ip2ZT[GLkqpBC#JE3M^(T.0g>EGJ"eEo*.L7@QrN7W`$'mW,lhm%NUUJ0)J&pFBg&nps^1o82T-hJ`GQ0lDd@kKNi9W_`CZ@TQRLl;t"`lKk^I`fOU'$Qf,n/E.pYba(B$,>WjIS$bG>D69b(`t)gk,B;OQ*U6V842Q=)LgL[(`*]SEHSKSk</'Y&i&dk]nVn(QT9MDhA!ET)(*0i3_;s//MTIa<64n9-9jKYW1?roKr8?JIq6.s?g6Q(hE@[-*N9gGQg'-eA_C7,Co'<'M\S,PW*E.?s4`=Hb@YPsTI`,fF`lY7QT*`LoIiGT*9dN!26-HS0q`KXm:IkjWL=V,^I'Sq*(]Wsa8??^4rH)h0s)V,%+%+$90F;YgV(s<8(r7E_HH\-nHPTkLf119CQ@R-CWlnV1&eau!m/.Q-pYrg:Aof_bPk\Rr3]u`S7Ug^FGYe\(PjjHbTE!l=f)kqQJ,U>`O#8R=iV*"^-@bK+&hgTt@C$=j?6I0Ld:=OgHP'D;!,tXR+n/+"/02IpWGm>R=Ea\P+h7("5?M?M='jikI*8il]UP<R2736kf.14>d0WMHlUjcg"lK4-LVB&gI%re]q#3Lj0&alc^NoQH-(XpQS3k8c07Bj;Hs!_6YNk>?^Z_nFr$H2HK27!ZcZ_4u*JXU-H788!Il[@=c0+EEhV;MQ5PPk,.PTk7TB0qc^OFTXGtTYOlu[P_(>U((H$SJRf)matX2S=t\S1d/!8fp$fsBsYQVW,->M.m\-P\Z.V2+QKDO#ND&l2P.<84c9<;l2kZb5P%VQ];-s*OD\+&8X%(d?Rngh.,UP?26K;l7Z!l:'t2YC-"Y07D@_^lR7:ob411mtO&51L*fsnDM"5f;$ZHY;T!YO;A;_.hc/K)UJE1N(!hUmh\4ZjJtbm5ED#u"bG-UAU[D^b>gEq9_qN%1)31!%I3FRX@@XcKTc.^f.OSH&c9!^cXRB%4!R%1`m[G5TaBX?%`^V9E,NAJ[bLh.l#2%Lqca;\cN!i#,QMcR<t/n[TQ,9fFb++YOYNlDR"f%uWgl)TG2i:,NNVO_fap'I&'peCNsWYuF(\?[3B+n#cO`>\OA1SU`ju).[>`jMag!->3FkR9?rM0mXOV*A9AJ.+0s1[!<])HgfZl6JQh\5E.N[XA5\,*7@slV*DQf+p^0-U9QN[2a/+"c2`RFi&"'GNm`Uha5&u.mX\u-!^:;dYLIPjVT5Ofd%^q5C%jlb5p]iAoTc-PL$^]&!TM?*\9O+'kiITmY=ENogN<$&a7QacO\-F?c0>5V[bGLj"b5(IiV3^dH1MW:OJ8rUrRJGoK\JsW#qb488<g%'l9r6k/r",\0o&nm6_ia6"T1%N+U2i^3)9Ii>aU\0I[+FpUg+TPmHRjVe?+9Ju,+hmMB)iiq5:)/):&/i_W>/pB3s5bhBFnt3d!9_%S]FeD7mjJaT3LdSQ9.'J*7iT@8s7T(M2ij$&`Gb`6"J<S-@R74_!f^Kf`u]Z_:Oi&_7^]\a*Gb<$S42oUK$OdDD\a#GUVm+t);b'-AZTbVO]YU2[O\!D+sF0h%.QIp'V7)[9OrN7Lqp&\$XrK4,_"Wn"Sho<Ulm_)JZ8CNTSoJDikPC_KQ*L]5qQ89SsCX^l8uaOrUDX5i27M&A"Qu2m+D+!90iUo_];Gp@rt-RUjcj2?MJ*.;$&`@0ilc,]u$`($)#U@QG)H)EQV0Md/71W?gCc-G+V,)7\=<VrXWPf/c+F$(=c>'\pIgq0(Ku-HkMe$)H=h$[A%72</mJkIDci?SX"H7q!W>2\hZGg1Z--<^kZ7lZi-pPl$K-t5+Cp7]Jbd*:K[@[q>\F>DouV:=7P+Mj6,ZAp$U6VLMmPqbMZHoNBZMo2+AR&cbIgg';'cW=+6CPW5L>`pc35@3LQ<K,edEKo8+(ZkDS1c;EZjQ[&7R5j-*t0'`^T.A,aEYol%RQ?siu<Ejr!I;.H.&ru,.;k4;(Aac[R4\Dj\Z@k3!BKRc4rjL*I*V"2@5J,oZ5s6(Q(bC<cj"Q!o<-iu&\ZMaDa<*?u;/EcI_UeEg>b/Gk<r^BO9H!`s5AhHh/iEYLP_n96F">>6oN'*IM#m(6\,+_n_ChWB9##g`tJ"AZW6b9g-pMkC`\"rMYM/i,AbXf3(43h8'O:&ho?u_1P``/:;Dm/JG7t[r-]cHbP%*Ml+:20#OV`0Pj!cZHGmo2;%"PfcA%@1::g=$B2q#7!+X;a!j*90*lNN2lF-SV;c*/k_-O:L&!(%&-Lr:Ou'"EP<to%cdQ\BbJMre1>+&qHfF9A'3HLB8C6$-a"m!AH3&Vn4$*-%(AD(>k>Apfn0XO3/mP/._eN#]RiI*2+O``VR=-8Vp^ip2J"_,@cDel0sh%PKtQ_a^6:r>i(Fu09\St"@abW$\H`!E1uVA<)tM_!7#E\-YWaDQ@PT#&1.(80M*DYnW,m1cdK&D^0^F#\,Q>Hl"_"\frkJE(At(7^48GZB7tMqYoH@k<mPC04I!oeom_\pO8ibiM*SC:(d!Bbc5V<9i%D>lr?"Np>?uWpZr,i5Ei\/(a,F"C"?oF=dZ=aZ2%^0D"RsF_e00@/C\UdBJudaN`7pQ^MI_[C!`$1_haFeb^_mkN:+J>8)C:+i?iJ';?\XWqB4%lMbZ')d<s^P&(.Cg7l;OL[SV47a,5@acZ*XBm7pD9*s-:Lq06dPD`t3>*pP]iQ75t*V\#;P.#T!\p7%hi+6;l[*D+_J^/P])_5pf,NWN%ThpNC';p_Wk3IK+f3ci<fX5!%'[h5A#NoZ*-Kf8&:KF]P0.!*K'!'DP3f&W/^63/G$<rEI$i-L1&#!m[YG"VJ83KKHnQV8Qbq!<(3jDe8oIM84UTj`E_5`=kT?HcG7eoe0DJ2$!_kR*QSbM*;P:(sK+TI4'[pJ=.M^'@BWMO]Y)UlmN'6<oi,!07<Lq^J+Y(0'oV5T4Z@2]`fT==c4K7G^okF!sm"<'FGX+9ZDGPGaH(*0]:>f8;E(2s7#*;8q>HkK1].[AqL4STraKR`]F9mU9Y"9TjT$IB"JO%2r\t`.3Q?R,]gG='6nmA!A9p1!<1:-*oBIfU=Q+ZX*U]Crl$3mg&:qD^H%Phch)`&_;EEJT;Pr+/@WFYK"Z;>G7Q7j/L2fGWK1?=+U5P^p=F'-@[9\8I;`pUV^Y4@]2Ra1gLk[Dgs"F\5Ka93D[k/^&(fPCL+[aOZ\$B>:X!ZYi_4ea#Q,i%pMb;HbD.TPX4$_<Yrr4k%P;cECJIukeTi=R`&V7rT@tgq38@bT=Yka[!\A8YP7P1oWhcb>)h.?WI51Va(BXF52W+@4KC>5`(DD8/1/jSn7Oq4$%",m\BJ#p*o\hh+`oT?.`X$s!o@&-10AI9>70rqZOU2d^'n$$7Tp.-M@2]*60Qq"N!<e7aO8nsl.t&mtV%eK++b5I[pe_pXE5^<^p__Q\SRJ-rpW]?_RJZg%=l]LAj*]RkLVfSYB/m;`qMU[GK&3,T#2a#%S#ZM.J%j@%)#M4[SfI`hQhtORM]D.FDbJ,?m(DpG<I_C@IF's'ga)gfSkk>:PfTKq;?+[_5EKcd];"HJUJu?#RYecb`kMK,5?7N.%JE>CIuJY:a$AK?\q"k-U."nIj8.pXZAB_$HqQAc.)##254HC%N[:@a-V8LXKG>+Z9]D?61<#,E1rLL>PT`^5Gq3j)V:DrBRV#^S0E#'S_Ols*;;lUDF)"nYo<2L:__Zf(9%!&+rn\H@HS^YBqb[`eF&/E&:Ms"*fWL:-:4&9Tc/Ru+e\2WC<0I$$PuN7Q3-Ag2ZCt(n`VZ6cB;]?WaL.?nq7Wt[q[IB$29+W/^\"_@S@,CEIe`MAr8[B<:&b;kLdU3qnm_u"O>@K9n#7/\hB&,s`-7puZL1=Pr6'KI?b&MN,uXMDlh7u^q8TbRi"uFlqUq3.o2jH?<!_EK+0HRI&`</\+hZA[VF_W"rsW!VejP#t6\'Yr#]SoMAXm'5(u%1X!WJ'%Ia'Q9X[ous/!R:l+m$&V[<G@>SmAlNH^8aW04h/f.Dq%7_.<RlrsiDO=+)ma&cnXK@?QF:-j0\\!JR0X,")tC"B+=%Xljkd:p`WH[B>73d:>\9OX*iKh.<+;huT0M>\BpS=cWk2lH]YRpC+7-)HK,TO,RG[e9N:bB\"K_jG=X>!/:ab!X&QJM%CgRf[;#j_8e\0IqR4=aCg*AXS4gaK##/dIB3"l?`!d:#TBsL#hq7a-=1\\!$N[]^dJL@d@Gl^OT[rV!WhCZ-q&_0&-=&OJ<1<T./Ka4TL;<_MEjH=+p\7$+<Uq%J05+!&0sFh'VZ-=MB\i%;&#]0!YHgm$5!Dl+J;OFMBG:u"GNRH-pf>8#S@bZ92Pa)PTUZ,TL_K1$5.8*L_,95&-+!Z7,W?'?jR8a\R?\b(d6.G`\l6QGr2f$nT?Ea@o]mhdlYV%b)/8Qh#<Sr=5fuoIJ(9m=ItcpIm9]'Ai-ko#/S4*\C"J*?_^0K.K5%qZUb!,?CQ3:HS<.hnBV?N:LL^!RcO/!XjoA5_!gG+:>rYQQk%J,eE!rW12lC,^CAA"<@Kp_'OEd(r>0qk%t,\n]q<m']fB7a*$rNH-Z$C;F&DqC]pJTY^Kisln!:%_q=5$H_o=\K01h@!Wf_u(7Sg:M"p\B;J)UT<psT\oiV7D?>=D6oc'R=dr8oZIWL*XM=F<XV-\V70gQ3SPHo#"5p^J\Rhpk<<?iJSOm>>K#2Yr:;!q%-cA=R!nYiPf&M>3/+Ub6`ji#B>!0@tsVda_DJ+*.-NO"e3[W/j/C@^[kTl"e\lc[=m`p.&2*4M)!)2p0j(-bo/Y-Gp?3q3h0LMS*,Q&Z>D\M'Zpdf<-O;\$Yc!!R\6X&FmdZrSNu<G)]<*^=+ms3[Z$"a+NBG.s@gS<0%YdLgL*l!pcf*ed?W`^@=QH40K,?T1mNsRdgbM?%Q'31R88!`iADHQa5AG7_.fg`QD8`ms4s*Xr5Hj8G2HNS!JR'1dAnB%7W'l21"_0mHpn\C]F0HAJQB`f0^t&LK0.bDtCQ8O,&TM[A*1pNnQTa^`3,c3Z+dN5sp.r#a9<%pW8"/=UMr;9?0ej6eOKV<"E6"#,f$H?r<[MWu$n=L.7+d;<:&dWW/0!S2_?[?86?sk$0(FFM,\I&k/F7g:si$d%gh-1X@UB_dYV:2>]9($`=F!SjL)O)3*3T:g:sloqnq:0NS#Z1M2GN7BZ5#;MT=#+7Zs>2LT=lq7-mM$L9)>mW!I26tILMeI0(rLRc7n`3^9]c?Y>_a&-AWJoPZ6@p:#<18G(mU?hOk!q>^KjEm.*s6T1h!a&EIl<kk;Y?4!OGVKbjX1s($RfYS/IrKE"h9c,OqofTCZ.`/Me\Bm\^Inn7:Z/''`+S?BR(r6O-Q!cjq"N.]1B49165Oo20DVmNm&g7/@uj3>q<#l-RH,Fln)*$(CfQ_G7\QWPrs0ob%2V*,"H)>hbcT>I4P%mBbSM"lW[`b<i*5+<aFq>(GNus2!X:n;bG#.QK`HSI1B-:HGt[X8&sf/%nr%rhhu->F=sR"<N.%`6!Al&k"p%@f=aIJOi8aS3+e\hKRMPXP/]M2*ID>[Z@`-hK6kdPHd!d;*q3iAhVZQ_o>PFRSnIIk_b1hCD=>=AnQN'GLL!efM;Z"rS7a?CO"N-;fc"`1CUeGjk5P=u<pu^MXbsnM2qb*CQl9;*FVYJ]KogD"DrDI%Qi]PKP=8CQ^-O+L=A5_GX7<Q--WT_4_4$)OR2%qf.kIet)c:[fEmVhLfmWF@,VQp,%SdtP?^0`5"aE%-d\/`QCMQ4BHq"Ih<*\*$mo$dSZk>)D.,S]aENKpli?^;J:Z;T%'+:&s,7'XYW+WH]hB2Jq!mH8MI(^r_;_[Md?Ur2Ia9<m)HdYbRIU"N4Nn4e/M9h\E[N+f\3\],Kg^lfka'XF>fP*Ai"dE@BjGnXgZelV4'nDTh0DH"^34&YlX_*?W27n:Eq^04R.QZ"W;kc;:'BhG#gDAdc($3Qh$+b6bCO$CCo249\q6ede)(tUu4e[odH685,QZZ]3b'f/^:4*LUoL3g.<X$Q4c?VCF[QR-MsZ#E2XLV#*,Rj%hOB!HL,n7Pko4Rg&#VUc's(S7uPL(j$OQ`(Bt$I?2W"/hN@5IAG!RQmA:;L2-N`<W:g%t<md:&VbepsgtRr6r(BL<iUeM81EQX9`b1C4ZEU9s7MJfR>CKj>V5j??34>\m$P0@uB!Pbj`2qmIKVq_k/<Zp=usq".]<jHMh(fW@l:>?/'2B0HP(UUZ;lbQkJN1X=?'f``K0fWm]h;qk[=kaNF`OoPG:_P`N/V8aP[aH@$!KKb6:hIr3q9Ygi/MhdAt=XesEl+nPDObs-Z>[6tnQZLCq1k`GiRhfQf.J0=sBbS3V^pt]X5&hbNTVgX.uXdSYW2-pQ;6Q*W[4>ZCfPrN&n`"Du*I*"1_-R2rP6RF%G%eh`BUH@ncIuJR66f!I)07N@[^\_)9X-ibO"60U?IuJmM\ZT<8f^LsHiA^<$q<?p"Rr+kiF-?,5%%mIUBt#>_JbkG\7>Z4POe-jSVc.MJ@/War*AW`/VH'V]7s4(\NXpS"1B*Xi00c_Yh0Rq7Vg]h5@5[6Ae;\gmmE`GldCRtJ;)TdLf`XAT9N_=coWLFPcg)6_[XS$6esQ>@k1YkB2>(eL`qqOX+"of6AfrkTVhu&dD.L&I9+:,sq;`4qj4Y<T>c(,!_"]O"BGP`M!UcJb-G>n9?^m8sI>XpL'\AE9cJ+G/1LQ`)(-A!EY=qVp>WfHfP_bVq;(%jr91""G9NqLp'<jTKp\>iKd\I=t6f>*B&S%<-on;Vq2_17`3gMM#h*!"J(#Y7Z[ar/PdN_3gT`&:AZ<.!=+Ibqedi$9Oc[Fc4(WPM1p]c#3MC5"2eX=L'k(`cF4=l,bNNfALAZe8u^1j+`&\eV*CV2hc?k<D%BYV_;<^,(Vh#H,d)2')&]!YZQKs1*R1Pl^$k-K](J+;%PDuS.5ahD0?Y-#:La"qBj$U:iOJOM9bA<SnLD7218B\H7QNr!OVn,%@S9m'dmYL:2GYJ&lPTPnshII_@?]Hf\sg4jl?%f];#g4..6p$eSYnsN^FD>h^rc""KZ\TbdbZ_'ALq0sfD_6GQ*rT=HtOCcUNhgXu0#^/3(`Y%^B5(?)BkG%be!jF/5m?h=4M'Kal?g@9k58J$ol"m@BiL+YHJ'\)fjYZ>'qYkDtd/J<uh"%kkbH8M"Mp15/RQZDA$VC<Bh,Z2J2`p[O^PNO+m()O?_cH`B<4@'=!oHg'KG4>U"Q+EEl4*3(nfCF7*FIgLh_F(;>*.:6hh];9WKbU+l/1.@RW,GUL37nR?]9TOhdsI;Qh#Y$BDNCYo(1`Rq^Zr*m.B3POVn#+s,e],M.d7qOa=K1F]*,3TTi_*2GB,r&3pe_5`!7\9O[EeFa2=^N`8gT#i$G."8=bX^d.f8[boXl]lT*!rep*4%"!>GG^NTSi[$QAr+I1@^b<(cc'_F?f>Y-WQjU+SAe*OBd,DX9h`(+'hpWK^j^p<U`\&1#kZaSdHFL=VX\AUL3W5^JY@u+l=F*#Qgm&jdG/;j'X(\88?cJh.Q#omW!m!;`E5>Rafe\6K[j2XSHtrKo;bfOORl,[W-I5H!F0,2A'r+7XoYR2a2rCgcaB[Es.aOn1Aq03+`VGp.4mC`d+%T'Wb,!6_^0g`d/Yu@_O%\+'[!/b9p1p""o7bt0*H^?@?M!T5kOi3\R2'G%MRhkfac=2AljY1_HZWlCc`R`W?%)#'eE%"%oIdI(q:Ff=^ACV#eR^t6P5*\7nN[#bHQE?<L<U$]n"`H]'*7#1,0pfO7_Y'3KT,YqT6.\8I:@7)&!2<Sn3Z(u7OBhb?R)gC=E\4qU#(M)iI@K>[Zt2pVaN,%G=TU$S?sB7i:Q[$JEY#)4VNoe_6Fta3:L>4pUcF['h9=b?e>/Q=HXQ\iGZC&8DX/I;ZD*AH0F/1WaEqpA([TVf08:M]_.Q17l;YlSrqdJNqsq!FLCgc2uW0:h[;)b@3=39+#S^!4;G#0Yq!"CC`fZionWO?=4m6g3;39bm_j7)]=qDCI'`51Ri\Sn@C1P[VL=b'G%&Urjiu,SSe\]Bb[R3r<l4mOE?*__n@l^F?,KD(-YkD"2!)^0j#\pX<u<]s.2E`NY3IM_^)^II9hF?388m.IY,aQ-EVQ=XQ@4/HZ=UcM=23?_KG/a'd6U9*\oLb8^qT2"i2ouSK"Q]_X7ol\mL:d@VDMmY[^YDMN,TC.:WpprZJ8?^JEml4]<fH"('l)[>obg91n]XFj1jc:]c1fAVG!F>*4X>rk;[tX2nWddo&d1[7gJ2'o7&!>p_>$n-m8Rs)%`GI69mp;5fU+M,Q>*!bRi?R$qk@uR6A\1I+?.mqAgfAiA^ahGD+Ot=+#@ZpYJ/G18qPkr84Y!2?/BKZD>#1f>#"/idF&dWBWmK)(jnPlmBnk=+kS+a0LY\hD$Z:6ai@\q-hOr=t5t*-Qc4Ab;[qaj179F0K%IjW%%h8IVr_0._g;qcD/;Se<3V=Y'Of"=6j.]AC_8dR_&=Z!q*8'CYUer2n%?6>"GE:TLlk^C*)e[n%P_Hn\)^X9emC%8r\ld)]A]NB9[e@X]J)m1Z96"TiD+8r_d?H8XAp=.X[r-*>\Q<3mFRNijTRlnlt,2r+]!apeDj\4oIY/KBtONV8>a)*<3_He^05@Af.:XZmd/0lPtJ(8=U*>IX=JMhn8WG#WhPEF2ZB`Ic369P[k?r1%UPI8@Z!Aa"8=5\!B8C_^(B8!Ij/]rAK(1Rl?W$\W!^.2>sp;o5L2FTY]<k%Ybk@5&&\2@1S2CbO/Rtp,`>Y(G/F1p#(7GFkEc5@1aCD#S-K%8<1Shf?LSfOk!TkeeMO3j"Hrb->hB)b6c[j6e`McLWRBHfq$le9L^<fi#Wnm#7@k&93[0C36<I?DSl/`9tAc@?!QH@PL`#m$p'+DJ7%jhY@PPFrl_$uHnG3SO.;j[-5$C(MtUN8CeA+K9TZ:#\OOQk?DAn2]Y6YKT6^6,R+#>(3OCO4Up6qE,3SC?.dDYrgQ<i5Nb83j&-E!Ygg2:[+FkR7-!?O6',l>dk64KnMl&Lc!!Ydn78fuR6\@sn5U0.!'L"JeiLr/7N>_Qq1n?<%_$Im]!Enr^C(rhjXD`S8ku#Uc!Prhf49JL4?\\UaM5MS099;+oJcU^p,%Ygcinh%j:&o-)Td;.t.+0&tIor-;<nm6l$8XR7_2V5i?!SI+.lOfC.m$p`4E6Q%**&&WkRC,[Xj4f2bD-6gVEr4%<FI5c4k3BF7&Dd/:Ro0^UQYAa&CVKPr_hS#iR/=B(_g#*(T*I56t)t"bBRRYC''0cg.'t$-(i?ohb8kZMNko8'K<aNE4TFg/ri",L_q5K3dL))&Lj!A0'jCXdP<MY^WKlAB?5SZZ>6Nhq#i":;b*:qSoflSGFk#,-:*9iG=B]lh%QU`S?pkH$Gbtb(l?fK%>@^Q=SC:l2o7PZ_@SO$]nMd%LbU[\UA#T=MCdBJcZ^cAWPYe5eLM5-2@Q>d#-35CX<`3V55'_655q?XM)/?t.(!)6JmTJJ`)jebj1_Q=HN2iZWG(S>M0e_0NE@!U]t,s%D[S8_iG.'7S9Np_oQ$)V=q&/2\V?E)OqRbBG0ZGW8rXmZT1o9)=YtM4=04#f)5$ck/0hVVhD(Dp>6qA?9lJ$(AhqT/hE,Jjm&"jidYT=FJ`]@QeaBm>VGL0h0"5lla[JdFG&ilHf$k/*m,bY2J*Kkj>L>POXJD?ppjk\GT7tXs'+OMdThO<HSF1Z,9=I?5gs?#od[2s.'>_6,YJ+4HHFONjlj\Pg3%?d@6kEBH639uC+[qVX-q#J%1nYL`;"5+Y-_W`e^8P"\pRfpDQnY=YL:7ut(=/u@(&h8gafQOU/U-TuL)GG'#"g^,?/ink's"</S3of7Rt(47CRT)!'3YVfNnZ@(Fr8<e'u^au:3U?sCpKAb'iBEl._#/rb%c_#`JqK!bcl>eVj#/\:>'5SDJ;Xe:UIUAM3Ih<3E/l'p+c"pR3du.E54"G0migLBD`]j0F.Y0R1<<;2.rKWc#3B2EV\pM2h^kZ)DsHS*Ve,5Tj/K1AfKI7&LUsq;Q,^"4o\LSYL-J@)Omq:fmBLON&<T,fd<bJ-a^\3?0_7\M[e?1*r.sie#tDpY]D7QT4t4e3t;:@@u:2EJ.*1KaeB[f!$U+7lI0ZrN2tY6k<?`LY6:^P\GKb(2\W,SE*n'//iN7c^C.Jss*NW:@Iq_^cobRr4+..9"@bR,#HDFJ:C"Bnm?2eF$@\;P.Y3:*[C31Wa^W!78K%=hcj0Z/'aP(rYj;fs[Y?&,K^Zh0jS$7A=T*]TkW`)H:Qjb$RGAmcTo:O?*cmHN(c-)Kd9,7obt?77kk:Tnd@@/0b%]r)?Il\qG$BF<W[PL)*hB'<E8#Q,SorJmEn4LI.pfk<+Ydi(SLW>R(+]VH#CZ>El@["$Tp]&Pd%%"c,'FJUoHoPg/8.C,o(H1t*?lin$]="`Q%D\R#2ePNBU73__.Sts/3'R6TFfEsckVFo,,BV"Q&>;AcK%bG5nj^X3'i=s*h%<TE^>mD]5$Se=K_Tif#k5SeV7$[F_DlT@u*-^m2,<apPp2g#jnC/3n=9-rH>qUbd_c31Am1s2bX<NpBtCIb7[]2/U4rc\(%=3^]-tUo!<#.#/Mo4=>\'orR8iZO;WAVPK(ClqaNR&f=HVUhV/jWh?A61YeD>=Xl1,ED5JP!D=n05\I_j%m]%MG#TW*Hn)lU"di.oZ"2C3X&56#*Dc+k^4k7FM,_$_BE%:%s&M*&h'EeXC<g6,uOIIiD3$%k8*k>e/GADp#S]2cjo8S^2F(hS<lrugIe!%KlE9fG(cMf[SC;/XU]Y0!l&!-Y#pY"Rbq"_D<Q$kGYJfsQHh[&_OCt;O2\G."PN9%*.7mM_L'GXNaqjtO>h^qTN.dP="Sujum=B!.rSXIF`:IJ>fYH3tNs/u/-r^JSVFB;M?r;0^u<]Fk/^5+k05NKLcjk,%s7t2+J&bq7`H?S7sACnTlHi2j;q<3;jQ!aO&k_d2P]a;M+hZ>jNbW9Hpr1\L[Se;6H4Gfh#Pu`"RKB0G!:TJ&sQkDHJB.?tneuuDd<k8sBS$n@ICR<::XIVF(gh9T^WHc3Z<\BuU.<B#;NdP7-]WGs=p?ANEbu;r%[L3k9"uWk!A#$^\lA="9qfhBJ4fRP[C$(47fjb@=;d5Ccn#FEdM&\_(B$AYB-j00f^hj2t6?&VL$57#t<*q=#hWQJba<Hihl:";j'icu@.4?@,)M0+%i\?VG89?bagO/Rt7K9W-4:E/VP@(>[kZOlVT[R?#*c7^O<rCrl62$lL?1Wh'?[WoD`'VVbV[Y(jJs6kYGJnesUCu52mj[CfN,$R,*a9<r!4/3*+Q#/NClo#-gbPpVQHh+mJ668Z94(Vrf%,re?[P$:HrI_S\A;0)%@V,lR9F4NhVtD$hKQC<q3n^7O8/7KRhAK\c#$<QJ"/4Z0Yqr7g1]1b2uW`2[%no'L:fmXn,XBFjB$LDS5>3ZE8dr2^K"c-ebcK;A+K$8^+V\6<8OW2%f]!<J5X8V)?c]E"GtO##tbf$W-n8N[i%3lB90[/Z0&nFr(X*9iBR7;YS[0jU;TF8oP6g^+-(S#B<]:!H$m,5%e?BI`@XQX)iR(1PbK/tc0BL2*bu@(cNiK&WIKTDkP3\o\aAhR$Y2uTdO;kt<UEqU+t/MD/.ZEjWlcq^d'f_!aM3Xh\30>QQ>'>o)QEX`@gM]#7mBu5?\:SM@T#%1*>+5`>8$A.^VL<_o`PVq?t?E8FB6g:mSH7Qm<?[ZkmHPN3BM<!,"rWYk3I26B0M!Hk$kQd4?%8lm4o(Go'%H\T,qTmFFtpTCV6HHdQD#V')VUL+Ifg?@'BHlB91V?:uKWU%d^D(;'39qc*fV6^.+7m^`^?=<hP_31B]M+J-ENi)0$k]2\I<&_eQN]HnS40:(kpETL=Zj5QCm!Vdh=;S>;j`Ro6%\CN'bPN-2-W#FmeJ;*lhYm2lVJ=EDk;.2W%d=>cE.`*_8[B,0O"WYPGlVlEA%HGYGQIYX0Xh`ERC2&Z!AR%jT2L;@X5Z<@N?(!V!*;;r6,9rT,ig".s(EdlZ7j_(3p38Kt=]$WMo%25?R>N!G'MlUr8Z'?>neg./%1bUHFhmc/)G]/"@AZYpn^NqLmJ"@a*/>)t@+8N7-"uBp<?92#AqA`?F)U,q;:i%U#YQcm6`/l[1s/2#HYUTiL#uDlq,X-]=TT#9_^jg'`h+8auaSb;JaWm)rI,;%q/,6MO_25ki/)PiAE]iZPAb'o(ZLd@h_p"/4r9c^Xn@GGi]^YX4DJ&8f?K_<Z2<QOb(?=>;rW*%T3c->h=K8nt"[M%\`i>gn$8W\rNnlRh,J/Cmp4OrtS3"2jcVujN#2/>J1&)',f+$C2.suSS=Q?5iWD;InD/bm/di^M1?#RbYFr5K?Ob7LQJ1e&A,mbV;@ruQ@?$*l=g$--s@*k\saJt<NGq,$b(\'PQ#o"DGrTd-,88(D;&diE.:`_r:jRgM9J0qehf42P`Gep#aAtuoX'1,i'H44_6g$]dPH$%rI:-:@2?+!ptZ4:4Uo]@k<.plueBhGEEqTeRVq=2E"](ZV]CT_Mb)5iI&pOT04-Pkagm2qMe_#!$RY==ZJ(p8&.\62`H[\l_r.SfCeV^djG`#)cD0&MW,-=N`n9@)6OGAQF<^&DA\$YeOMoGBrGhtG&K<8(bcP,Z_)Am6p*J's]<<_#CB%I<\l@KH+5OZTCon6N.(!lB`6b7H3=E6%IeRH!*Z%#EE2`X5t/$SJ.R%QlT%&?Arh7f7&M#`^3%1^*W\@#4po4R*N9,_?TDkFLN>%kXZ9?`GI3B?4d/`E2sD;<=<(%(b5-+htmZ+b!c,5L>D(s!&pOd#ljSHW^;_jZi5fd::orb-H5l9Q$Di0/iNmD-P7t9.f^m)&[icbMILp:CP:F3,7<(_N_PGagHn$CLX'7?;0G6?2K9]q45ciqKLqNiTp12mLSQIe@PPc$g3RD=1GeQ;#cr)hIk+jaeYi^@ZsM].Vbu'G>ip1H$4/.DnT<G<m?0FXXfbWo:p(X`#_;9JX[E$:)KJ;A5<t!<tf8K+]Y3Q]-a3b#\L"pANo..a$3QZ<iUBj?"K,\Y):A<NZ(7u,X>EJ#R#]`O[R[K9hBe6#W,',D!c&L?<X@/1hisd;!gG!M1Q..]_O&C,3l;kL(PbrJ/,Kem42K')(lqX$W8>=S/H28>d;j\(+KtH-Ip-9[e,QE-,7XN9Xig01UR<lkdAsW=D9K)2.Ps3B!Q$Ur%='[dd-hm!>_b0*F$+5$A6U78Ldi/r^6hN<VMLj.$bWCB2(+%FLdhE`M=D:5@b3M;:>39k.I_iMW8$h;.@0l[/#gYfC^_R!r]U*<m:nuYj,W'+3oTR0;B(%)'ddt,^+6>h1/Y41F["lFBcUdL2VF:`Q2,Ymtf=S+MP[!gXcitXq+U1qJlP=1!71i?HksjTR#HO?e:3Yrf8gD(WbaB)Emu0_D5=)m*oG6W;TrO(m8NVMX=Eh$d7$B^4U";g?o9+^GrVCVtHnq::IXI#Vj+>g7BM@4d6nNk\d=L%eN/d_^+E3qMV1d$`l)='ffCjP!)uSap+85+n[K?dcFA(7+^]j@m&(U)A="co6*OM6Xn7dZY(7mKV,R0]VH-(C_^#/T%;IaK53Ks=b3'](UZ)q'Icf-mg1YcH=Tr@B;_RP<5DC8.\oKK?mHX@NHM,<#Ve,XOpI$r<bnD'5:DDu@*=pVAq&)F/%K1eZZssoE@rE&0Uqq3^'/S$XIZ`(-JUf!4)o:4ca_XYZG(*,7T1h;"ZPDjq/&J-!&WGCAc%GQEqWXgAc/2$F4p8`l#Vaib>,j/<HfSiYTSMImD4O-ASbWUPXc8f]_o&a1$atCR6fo3RD`1gr5\5TX[MB=:hbi;K`EDELo:T^0XCT-YKJRSL'(f,)U#=X<,]t5R`%_Q=aP3e,Z\c-3Q@jC@S))-dq>HT8BTq)Q`Nr8QY]FHXQ`;&>imd\r6bOEm1jNk3]"9fBn`T\"c\YF<0f@_>aqB2Q99)D(m3gh!u7[g+!k"><$i9M=DPOu!M:Cqn&@G1q9\%n3^MLS2Aq0M\o5TWKWUYA\^8QBRPl'79hFP_.7mT$\#NV_gF]ohj's`3T4!;7,(ea&p,NjMnDqO^&E=AVN>@;Qi@!%f.Y7;?DiEXt0)>SPm6gUEdpHj0[j8&rF<rZ/j"Dhb<Y1ks(`)nEs3MBQRG7,=[s_V!?!ua*:WcuJKi+^L'4M/'"%=C>KHqZG5VN]o;%*d[J8-5oJfl0A(-Xsgo`(?@1QDmuWM-=7!mjW3$J==DA/jnS><D`r.jho,8g]aGCT\n^88:AWk8XeB:.h6QVN0K`iMYD)./M@o]f$s#2,#B5X@Y*!m9q2;V>gB)8ZGi(UaqX[X('Y`Z'lB1BECki%qM_874ob7Qnc]2UF?r/Z:Y4rEfj(nF(iJ.k*C(.X&T.X^gGCUm7c.:7d6\#eP/2qP.tE.Jo;'ISo^RE=@V/hSO;/+c+SF"cqGLm$%tigX`u5cT?^R:SAXg1f:&r%H+c>Ap_+!a;DJ&3O4Y0F\71',7$!3:+CaSk8F@Jq/WgG[";m!n%0,l]Q,I$I''&$ko'[+&p[(18pm<e3-]%GZ*::#TlT&QT-dT%p2Q/FV>73S9rp:[#;]R_qL;79>G?(ccN,o!6m#jFZ(pD.OF-76(_NO[k9nauGK(.-\LgYF*Zeq=Xfru\o,IqucP&nS6f+G]^5fU06JQ7:nES=f0[#3j=X#*#d(joXd/%%0)`BF=_;!Ne=roYbY$bk-Od@h+dV?2lU(d-ZD<+n@C6pfDa5OSF/TDp3Rg+V=2@f/e9qr7d;l/4Ca\\,G9!,kH2?9j%+4Z=Uiqe?0u@+R^H,6C.%$M+"Xa]j?_LOe=2KYr^24l5Z6;e],H5EQ/q5;t^nIEBB(B47eG;8h./c]6r&f).P\9aH+B#"PpW7iA*4&-dc>7kqLASisa"J!ac&'8dfhQOto&315:-&FZ%E6_'I]QRtBn%%@[aY$ltm_R"u1Je6^_N$-UU0=I.Gh:Y1@ck/ZR5Pt$Z+2*919@/M'EH(EKj!Y%sHbV]n9aFPg+6t)]'F7JB?8kb9pGb\VcT5PEiP%1Gh\-275*bRm-^_8X6j,T?Rm'F!GJ'g/<cntmY5Vl76g*-!,pcPRF,D2UBN0dT";@MT`#uc*d"ikm`+Y\YU(NAKKs$?,%SNEk,"h)BQk1E'h[AUe36<C-TC>N!lp5UL?,Qa^im<O'M%^$h\ZCCM%QhU=_n3/APX!`rS^a61Cf6LtVN*u='?N(bfH3@WI"DnM9qNIYI0tB,,RnN\OoUHb;(5H__M"^T7i3*T-lO"M,aFZ=@5iu54Mo0%8YF^,7q!fOKMFlO-rc?TKJ:bNGuB\YTVJ2Y8K*aU8]/r_1fOfjq.g"`p-Ro[H/7Yhjq_1;8q@EP)ue`T.F.3!h^>WR\B?/mjbqqH]uJi)^]39joC-Sm02^;MrkA+E"5c(Iba$JKn3)CGF*1t[qO1*mE_f`PV^EYXlj?iAEN.HV_l#Q-<b)g2mXb^pX4qYO/)+1[deg)U[^:$k@g*[/*CqtP"m5%p4OiY'3'UXhCen-%DhmT"6u$9*B`C#__0UiA`<ujYgN00b+r!n0p6VM^m7j9J;I>)0eE>mN1)W8?esI@4ps'M`q9PHB;@W6BA,@%#?"MT*)J-&WU0pNYc=uq)La2[+rcE/.5M+pALC!60=;4RRh/*tUh,s9>b;V?32I:/VRl@nG)0f*@m^Ru`^@4SOWLG>$&.tFN,.EmDFks#-MQ#k;Q<s+u0!"/1lWou0?ih^<1:)m[]+8N.PCBbG5PVO0/Su6oCC@Ic2)EcsY4dKer)D-Ue]U"#h8G.\G8<[u-WQsoe&0S"N>aftT2,H*Z=?cg9og/-ec^Jo^Mdhl>Kd?8D)#J9_+,=CaA@H?oQD'ZA7'Z'LX@M8&-N1aVinuA,DbuFK#sDo,!cf2jD*N0);hc(-?$u]<+qXt8><P^lrVH#mjR>%q(M[,G7egNI[h$DF"@\(?BWE6*F.-EWor]3dM)S]O`iSsd'2+thtrHfbj5VrV%rAU34n##7,+Fa=C@_*l(,)_/bd-#7E[1Bj&7f)n%R<]1Ikt;Ao,TD&YZt(b;Uc/c)e4'a4c+n)8:#d&oSYD<negB<_enjKaDR[16F@1I(/'lIpl8MauE7:^W3/?E0L(t<PGYiO&lJTLUBHCr6fg>Lnfi6d#Rs*P%r>qB$._i:dTG!Nb5[S4H0jtN>skAj&a[$rC9@b++Bn3mc09KJ,<<>&!$8Uq1K:@Gd@u%--KO%bLIOOm]qFHc#!?P[%9)0]mM]O`Z&R(J+aB,X9rt6W6YrlI4/O0##8/UK`;l8`DFu9igkdNmC;8WSQc>&"ZD"E1"9Jpk]USP[UET5cgFB]'T7V!QT3Vu2(BWL4?-N5h0Fe0en3\c]0H%3D>NK/a+K:3#3i?ihrG]mPVTPh`Oo6`6q%k?=:mo].QA3D80J[)O_?YP9M,=S+kaf8#Ra!:7"$m!-(dFI'cjE7+pbG',`1g45_tFu.Lool)Fe>X(D//G!tD">W&PrPAf=)IP:A%]gV%%d]%Y^\oi"fTmN-+;?7,u_Xk+A=B4e,/(U+L]5Pinp$==Z<-A_ETc[u?TXB\KoO\'p)8VQK[11Lc@4GD[@<Dd*R@<au6A,S%u9+3R[^RDBXI&W[rT`7)4Smh`A&"9_ed5][<3%f@L8Pr8^=:/=aa(;DGr,l?7"RPbcp'1&RNJ[;MAQ:eilr<*El8G,/A+<5:\]BF:/`GRVZ\hKB2jT&N(/=LG=*RilfFpWkKJH`$VK'^N(]*dn:[Z)9Cksj\bXaO`G#d+J/`&^i3"/Cnr`DD3O>87BEdsBE"Sl>pcNh=Z(G%@2D&/2#V!p$?Oi3n)oE<l$NFrM=ULGZ='1)Yke(k<[;G=*a^4eX=W\rt@_<EdY3<&(S3f]7K[*2pRYGsdK#ZUU'hc8J/h3D+HmdDU%ZC1QOUMsX2N.<@:@U%]]e_jpp^qqAJAOfF"D9hf<(#[Vr&@56!>.!+>m^*,J>'c$5F95Of;DeMSi@h8tM;cZ>D^/hh*CQS-eBf"p.:Fi.1udnH%L1O]k.fo9H&ju)p@7\VT"MO)62PU&qA?p&R)p#4cT&eIAHUPUj(>aLqdV^b%(?\RT>k/`f8Rl'*h+*Lk.WrBYt'N)Y#NI2jWb-"9>&c87d=.%V,qHX\7DjH2Znus'1\:7o?"r5Wnl^E/VrU\=&3$CbFXlcDdn=UP8YU)c`PQAodU1*jXR46h!$mrdJPI%V#Up(aZHs8O`tN<W0-c"@%\'\:LGf;-MNHdTBS(T++J1D/7C`,7`Vtp)46pl,PM"dHH&TQZVkBH"T?XNC$8_7=MkY43(.()/nkI#P-'G#V:oIfQV;[r(n?SO9;"0:fFRD=\Uif3)bk9WG'9aXQl]`Vr!*G7-C7b7aY*irG"7iiV>#UiQKokF@p$AH_&"mAK11+o"eR\B;5?Xb"QA3W#j)J%SHP<KTif@nDPu)bKjR=h6Wc]sNVGE:b%EBm/Y`3UA5Ht"J)-beE:"18%sIN)86O`&(@\jh9kR/`bI0+VpASEe)iRKCo^7Zo]/\Lb*_:/&'6od,)I,%1rc%o2I2j\!)ina9Yqp_?RE:UU0ur#a2OH^ho:D9s#V(=$h;5U/nCWdJJns\I6p9,,+t52B&_Qn='0[d85X,Do$$05?7i8VN<>qf%,_67K"k(gABce9SB4,4SE&3KRhc2uA0`1>plIH2hZsiot0rlXE5-m-cXA!8c+1c:X_Un7#Zo>A#pnkh`M5%;W]Z%G3W>PeJ=!`8(4_G++dOIPZ"B/lu8$^-5Cs6"lA*;ddeRk)8ABUK@[&nCSKpS?,8<=@H(*k!>AH%n"$o;/DC>s>Hp!1sY-SDV3/Fh;5Fajt]I<A02\"'mJEi!p<J)L9_10"1*(uD2\I3kTo0iB>gLDg;f:Z%0.oG:b/Q&t1IlHq`u$D!jKlX*,/=u7,ZS^%L=2Rd4sCW"fCIB@@7kDRNo#1m1Ro_[I]qO=@"=BO78G'-oWkg^+g?#!'=g+h:<CeUDdm)id=I<s\MZXi#O\'j.t,r-]e?-/cd-Igp"qMA%gB,>;@PZVpkd6XVGbiI\eif6uKLoF78a14-u.=][G;%)8"=t#R/g7#ZuAAKc[_ZZ)dM.r\c8>-G/<(Q(&ao/;k8uN<-0Z)<XSS\cbW<aE\lK:]VQM2=grQuFDZMD\#O#.XN_j.0REJO*;(f$Pu!7IES(nDFbeMAOO8s6W'X%l(SF#`&2FfNldQV?AOB$OO[")B1i4tC&c.d/(h3ZuR)Ub>qkng7fT>'CQETi!3@YfVEH&0Wke"M,8Z;MY-@2)$E*d?`<G=t,>+rqu^I0jl2WTCoYYW)/G#,`oK&UBpR>8A^82)6W"&2bc5\H=WP*hIeC=M"haXTqu.I5>`=1`NQH87Nc9gI%Z_:UU30E2)j@WS=/&V,c(]p1V)X=ig.u#>NMB,hn:g)1U2,IfZqX)ZTZgd_K-)B3H*3'9uUWd)9M1pRrkrST^V91&Q@iZSE$69Pg%*Il$mWn4Of@$g3<ZD?%l:\oa?%;Z3$""M^!%C3e#1;d?2l.*scU@KjQ\ZhGKi<I*25[J$-3"?b!\i_UMaXd7]C$'J4$hMQ6.pp'Rl>Wh9q7LY-*/B'".ceZ.n[MGY?#@k\.Ma<HB:IL%74)WT!SBPfN7>CLejn+$9>'Z#SBrG$0l>*`GN!pNp\bu4N1HREPTgmX]rTc1E?iLE+h)8'8Z5a#_fPs%+&Rl:JaWT)Q$>EZgZ7(`-*9LYu99>8-NZem>_[:br'p6ODMj*YiFV?tgY=>uX>oM5#'l1?'dI61/,,g&d)eZMMUPX?7?SoO\.=2roJ^G+>uqQG"25tY3V0Ndi%q_;n+01%BX9;d7:LD(s0^#>;]WS%#`Wo+iAC"GU@r(W79-V1H\\Ka))Qq>N!?<ga4;AK_PW+JYr=S9KF=r^"MlZcaF34a?<0o,e`4_(;m(9S[C9V'tSI80!`"uBn^^GPM6OX&.DS6^Hf.',gpP)=HY)je6_lAC`O0dh.gW7iq+@TB)Qd$jr_Ku$lsVS^[Ye[hR!7:??\cuVVH+:sb[8_P.Zf#^(^&1_QA*_+2C)jC'V5E/aqK_TREFMh*k.mascWs0kW^@e!9WE'-"NoL((59NrIa.K[@:#WCP'j>Xd';?&.C[J=p#=U]L?A7CK]s]\5;.@6YI,Q;=K2:=riqWAhS06Sc-%=Y0a7EeOHmY@HH%>_t2-AN0meruPAh:X"@=gZhV(h:$3+^7n[H=P;6NOSMlLG>2U/>r!W/6tI?MEgqo97dH;.@i1c!K[OM]]6+9e#X7V5#r2WR9m1"[8MF6,[4TRL'YUmeA<elA5N>c'B(ZbC)"fmW'dR.^]/'E+@d=Cgqh3o'3'P7CCfY3kN8k-4aH=hlU4@="c((NiQ=4[<uCuUD0"m\7hkE(peVYWkfF7XLZ;0hC]S9_pV!ECJt3*9Rc[3^O&``h$,cV";jL9P@gEunRVkrLu8mQ'OcY]5mZp96p\^/6FYYce7o-5&/>pG+XBB@8/`euGg+TneRoW55>PD2cS)M/[JY_<;#0^aGXd>d3H'$>0>DJ]1?Qc"6ZKA<0g4:LmqK$bKQAfRXf:T?\b5cai,dkW#.JYC?"q(Lh;#*ZKO+$UFf&1UC5T-2d71llBm$6DE/d(5a/f.B_'Pe?N,M)^U_$TS!s"N9oh3qON+*)ZL`^uA;T%rKP9OF.9D.@`e)TCNFU5h663;,OftC?!6FVn=&6C+[JH7#cbN9HHP9FoR=!Y(C9Yn6d*OW`e!bY7T\%HB*!jF2&$LqM=:iO2@:DJh:Xf#B&DDUj9%Gs)="Z5%$c`#i)eH+In&`@":+'H94jkc5URR-_h!CnfXDYTM3PF5eoc4%1/Ic^In8]PM2B$?Br_1@6\HHG=%Bq-:A;/(@?-</USMmJ.CA#?P$BV%aoL4c"7[qooE9JF<T#Xi\:p])rY>N<%BcmA"d;[pV_I3l/,5H8)*JjNs<+AlQ91*FB^'F5+(m".J=64i&]Nh\m-"9gn)R_UJ8,bSF#``V+$&t"ptQZGURYAf5</hg%%eMBrMenMA]nRBM&,qlX38B$c<Bdk'll,K]s+:&RtG;p04K#EA8Xef8To>N!=Xr?>UK)^E%FqtFnAJj=/.I>!UT&IX^?JV5j4PMJf>d_)LANY0Tm9WP/,WXDOm&[$&[d7e$Qn6Wn*7:>Bg/-17CrP1@n&&oRek4m"?K_[7c+tnI,I/4G8=CtAp<Cedb[Y>8*5S7V'hoFm`5igY449*<dQE.+#3$SGX^Et\]bU](H)QT#PotTe,T9OU2W3=cX#SXne7F!TP*AKGRW*ifj]e*daY-[@%6d_P,:!D4m?DU8I+%'rS.Y^*m#oE/)IfVjGd^qE]STSLVCZN#!,#HH5@(8[]I">q^`Lf+aW]OS95(i4ZZ;W*A^L-f9Fo8;BZ1nE`Ehl-,5"QPIfDk!j.ZLlI]AIUqiYRq5p])"+!R)nGs4"(UW5&f@VM]G)(JHN?kgr/S+h"8M/T&C]^"i"06:*dZ\nH_+G/(UAoj)396aniRL%[iq3hqAld'g@PrMggJNf9"]V^Q2L&&_#@Fi&!eBC7c!d(!(%m:FndS7:%5R'mSdA1lO>s3LGE`6IJT2G&B?$>!5^XhP94Ejh4!*mgR403cbV`Upl6L51o2fiF]!<sa$&HOFQ%2A/'/28V.?"B.MVh+M-hfFo-5uLapP58k:\e7R?&qqcX$:^E/a+tba08c5cJ%UZ3TVE^ZY$@/]]>u4R?qZ]65R8MW#Ufa!![s3;Jfk1_"@3<!;#Q,^-k`4fo]=cPUQ,73)TR;3'[Y&?KTH*YQaklMO.pmb-UeT!Zl0JF68"@\rRo:Vq'l_`+V,^c$b_tC>B=6n`m9QgGBSUWArU!"ba`7.M;DLEFNf5oJk!fCD51:`#r5e/-u`:bA)d<1e\V(Ye7:eLUNt8*O%i3I:N,'&5A;a[D-V!S>B:1m2<NC[+bJ4uJ>`g-?Be(\B-mCS.\s>*/hqrqVRG60Y`@NfP!uhD/ODX``4Bm5o>M9#1h+fq+lj8'%iSer4KhX8Z(g*."E16Kr"g'JAQbX>(7JHW_#kNl9`'g]K'hr"\\ZFb<M&.m__T-mC-s%[V6Fl`L=="o)iKEa$RVu\&C!:!4tNK^n!gV2`Zg.3<ccr8CX0"1CsR@7&1e*K"ib4$8OX4=:X72l,(d*adjC6>+p,h&B>m-^.72,a3jiDuepU?-9J2iOI+;c;C,%LV/QSs/0Xm4"?5?0A`F+[7bV`f4jo1:dW2KuU&YU@9"+CDBNq/%SXno&ImZ/<iFV]>n^mDfrQff\hUDeA(`J1IAE6MK9T#!F@Fh[0c%=ti;C9X*s%X]Db.O,aY.#/m.A=V2bc*di.G>^W7Y&98;)P%e9ZF)hu_pn;j%@Wn:NR;hc<IrsbgPAeK)`.OA`]4mdi@:Q8+[UOj&TBiVZ#)!14B74^&]F3RFOVPHl%+M<Ir&K;3c^a1kcYji&c'W&>=[f"$Dsm+Q>ie;W=I,4ftG,AFJcabC25^B>-V2ko?@'qP.3QTDU0Y:_^HD8eX#\VS@^\I*K'P$pFVB6[dN5H`4r#u?2g#4Sr?e,\28jPbr:-&T8BZ>!ZI7J8M;7<.&',cM2rfHP,mc(,-'l1lS:ItN;0$k$H3caY-NQ/X2fRSVuu-4-5M.<U(l+:(0[4L776M:7#[L`g$ugM\G6ZmIq<-n9:!:(6qAs#=S@1?+l8WQpjD4)0CHdg^&>kV0j>c$;Q0tjq5"\Bc5#e0GIW"4/tHESP>^9m@`19JI@Nd^^S8'gl`81p3br3A/Jqb)f!VSB1uQL@,sD3:NmX@[.D`UTB1C>TS+B%86pU+F#I3hN,.PU,ob4e/iEpI5(]+Eu/f\aCR_<'"19%t)dGPOOX8dt42p&IWCS4FKR\K#7Di>`7r#<ee1IK1F5d"T`7EMClA[mS%p"$:)QZ-.hkb#Ir<HV(f`>YfE`Q=T],]E>;8g<.)A;@/mm8K@Qj2du#$Bo,P2/)9mm;!A7_*S;fWCXne;EiMN,Qc./21]nF.!&f;L6LAm<!r?*hNqsc3YA&,'J$K<Y7Q?Oo9CLVfoA",n_-V02\Em/P5aG0^otdI,LF7k_&`tK,+d0t"G#2%Xr9*H+P8M/1LI1G]"I%:`p+FO0MMjIXJD-3eZpSbcBp9QX.0eN^fs^Y?&I4ICgHh@*V^A!1>^O>R^]jHc^Rab*QIs,/f'G6[R$9T$[?MV#m9+TEibhaAP?$Us#SnpHiA`9ZaE8TT@O[.aqFu;+8qe.@.YAUqq]j8eTi>#`+QjVos>bp9)JcpJA7`TYa5ge%r@H]/:)6M^YtS:OqkqlqD5TSWso3/.pLRXn?s,sR\&'<Gi[MW23D0/X38E0[Zh'r-g"+p6\,agka.H`S$U#YBb#+\,,8k:*P]>p^auhl$OIL)KB)9e)jQY5R+$tLZ%6Qhk0@QM6.7AOZBFMPokT[3T]Gf!1pJGDq0_.IUu5sM):'Ug#m<tf*Whl<WuVDLi!5Fj^Ir88,;HJhKF4p!5Or_e.t1.tq#9;#8l7Ou+EUfUDs5953P;dn2`?YVVM`TdP%]ub__H$#dhlP=ZueT2U@+gWLT;$s7;3#dAaKe>N*M@%2Kca!%i0hX(0;@(#spb=6D7A'j&cEn;+I?8JV[+pKE0fb9&07*-=K1k^36=C6_fW=8?/4G1ndF6$2h;P[+TrC>G?^),&.\eiMYEC(;]1^n1R<45Mi#R22QhVO!mE<_/[@^C_FbSk+B?[dso$mJ`!H2)VcI^(<d`SOhhnlF-_"#gO[H7B\45KM_f^K)LXKWeCCXj@h6!8X]W6SlJ<pj=$<7OfSM4_R@$1&*&]!Hj"7?Ok?/&`?MMe6IJ6t'Z[[H&f-G<.$7?8iHPG\p'D22(OUCm%3J,"7_foSbJmuMCiQoltL"N*;SUVd`]WFi2gMAe!Ieu9B5H+-eU1cd\H?4+'(aS?CT!IaTF/US_.jGWAZ7[LA0Nob0;dpOXc`b[k@k7i[0s+;=oI'D8"n:Mu1?gr=-OTcCV'/$c,iCnMSfks!7a@Nl>I$/bRk$X5i\MZjJ)n^5ghkYjFR.-=?FT@n:Z#(Kd'I)\Hg]^9fJ`0o],lI"i[ZZ@2taYogt]8^c'*".*o-_akGhjuk(05Z(V]ldBCOJ>?iK[65Ps^=:V?E#94#.*M3l4F<SdFnb<+%bF8)HBrP_Q^f&)enbWFfjSN?AkT7<2?#1k.2I/(%)Q_h]kYdq8eE*^GNcd(AZ<G;mE"qlld]Q!lb/B^[7b!9Q@:&PL\[:i4n;9]TC<A0mJ:#u8P@n'*];g!eCr/3f8o(a(sm.bsSoYW&Js&%#W>PjlGptWLM"SZIs]`#D8hsof4J+ekW?[_\Jf:QpJH$mO>5CDN"FkJEkJ#2GX=3'4gjGT9`r2[^5/Pj(QZ`itkY(e<1HY[XfWh0%'c(BLaZ`3-Ep9_sWL'gO8T%NnZ<R6%LGbOPm_<,"iGjVGX1OXVRrVXS-[NEYagHG'&To&Z=b^=#HP^W/pH`nOjrQgET/YA8Wp7@JG5Q9TI]On3gnq,DaW;5t<lb^Zq\!u;_hV[RiekOgrT7<Irp\Zf`^%A^j>JB^*:[mrd5*eDlFj:dEg)ll3oPT:7XfK23aU;>1=R*=P5/-R(kW9=S+Lj'2rO]i-SNWNLT:=7lWii2Yk-o4m`Rhinm#,4G^"GWs?2N(:_`).F:VQ@$p\S=2]digLi4uaWcW!(H9`@Y+<Rn)''/,A*-ai'Drh`KY8maJmb#_c]2Z1DW`bGC<hKn5fhttikdX8S)qQDdtI.AR:q2(f+4Z;H=Vb4un<bFT\VPa?tr9#E![JeUM8"6rUEQ@tE>^tI4FO&&$j#>Orp"?=:Pd].+UL$(VMJ9fH^6$(hd?Y#[m1G-@O4SgAnBTmVXe/,pFa7hr\7B:MXrF5Zh0$[QSnRQ)m5&s6$"*ONU%Z>BY'o;+Xh/:Nn([YmcaJ%YjO)TET=CcdK6k<qF8`W@Q:puKT/cQ4m@OdC/-_NlbF^<A;>n?:m^r2DT"9)OH-%6hr9fV.9mkibq>>B%I-SqA-f=al*@I2EHJG->?f*YDT6RBpL223bGAGMTD>2i4qs?Vkijsn/QJ^Eem+>64SW`,2I.$*DY3Xj*h0e&BRm+R\!r(BMDt'bNIe.W-?[Lseo:C8JI.,O`=%6uu]5Qb:^\@^/52LI\4B;".(Scj\jlr8</A@:/%p](Ua0/7PFmWg;q9eN+ZD4%n\D^?_dI8:Sm&9R>^Ns8>F/'Fmh:suT\@T*HhFjU+??lI<S+!u"lc.8"VXH+Nr5nQ&mepTb3njDDmUsPhjlb`3$pHm6QcqGUHV<rXT)P6*IYo41j171+T6T_YH]S3p:!;-1qr1[[=5EWuG<^H%'B\07EFo+D\#ZqKo)_XVjp"q37$=Xt=C40VPF!Vj)o"gtNe$kcQV=n;:$3`g.3ZDO/A.'=45P0MipSlP7R>6l9T4D7-T4UkXM/af_GUej"DrUN^lt@l'Jt_M2$j,lcqR0lFp^h1gE-hFI_Yl,[;f4f!c31/h]HiPQ;i8.qM=pJ:V^>8Lg0[Z+oIYF?e+6IQ=df`QOK[%q5AG(jm/dE*b`g`;ndI-,hCK:cLMjfI;@tUbGn]$EHY=pb<&jm*)@7_(Wl1C8tLM6b>"8c.G*g,H.j!tL,Us=)G0_VVl?D_9]^$?-d^u_%Z'tP0'Qq0C8GHLP0eS[U`[4.V2>s0<Y@ga'FR3*'l:hk?+d2B,"<gg#6]stLbr9MBSluHYCY%;TlHc,5Yu3PD,Jh%St&8q^/gD[=?4&SB1_d#;Ku6n_tf9:O&,;jgCZ?L_n?oW(BUDqD(fB5XG9YFfC9f&R?Rg_&D`WAnC7`&(8`<S.S@fh5ZhOI"1&qnrV.sLctD1I1!9i'f,6;<HARpPRDH^->t[V`G"CSEr<2Op=38BQ!u"-PCD*=f-nBm^5Ie*D4rm80kbA9sp(EAqHMr?:IUNS3r6/O>D_2DX+uEN<rB'Im;K7'.'Z7>$(>F.Uc./HY&m6KJ?K:,^P`T3mVO:na>$`bibt2H3\h<#s<9q"?]ZB[]FJNnULo!@q.7e&M/nlF$fX-!O+uNNOU7+@#P\kB<L@ci`,VBHpV(n1::q336Bs+_Ad(OL08$P%N[Q,58Zm`LWKuRNg#9LJ$3qY40p!G5t2@D.QQk9`D"S5GD&.o=?Ls]BlTeq`7b"&FP_usk-L#AW%MBW40LhT0%`HZukTR?8r5uUZJ&`NV-&n8th!RbQ_P+s`u+[8!AKu6i+oA,<D4CdO!m]N+,:46f+6.#fFpS8\)lCO+,=4k9.O!2jU+i0Hg+bV*H5p-GC"QKSU#_@D@*JM<#NFK=>I9b6<.F3tmhNp:'P;[=udn4OGA9;R[c.((3<8Y-c5\_GRcSt\d!o$WV#nS5J+XBe9/akKo*VDh]^N+fr[,aUU6DF7T&XhF"o1+h`WUCncmtfd3e'+O*I)\I=*f!L3DQAaq<If]3[YHYO;\A6!KKu#>ee*+-[LDIH#%Q_h7qX=<WD''5%,S.+`CR85/W4rl(e0Y'&"C4)1-0O0;.T+jGRm]eKl`p)"?F]*)Sc8H2Y>b>Ps2h8bLMoE%EkhU3S$-l64Jkf&(Gf"ZrMp<O<W&u:dWNl=iNthkKE<*RdVWjO6T31;B;[e'QZ@<9=O(<6N`=SQ<3o)l.q["Uj6A3ggWIk*h!k(C`0!"DIYT/1X3S@qPMTiY,Sk#Td5eCII"=9$C[((FXaN7bNC/\?X^jugH78L`h\c(?o<q:e6uKg2kdo^'b0VH9H)5`X]XMNM$rppP`<ir\e0Q6$\/ZfIOX7'd6rZ.C?c+kB`nr?@.crk`da#4H,D.DO8rR[&U;$bT<Hn3_\0f!)LmS?Ctspd<q\+:&mo\)8;>%kPuqHI.`AJAA=:7HYt2a=E^S8(.egYdDQ^cK-BE$<.1KN4S]0^2>l77>Mlb5m'*5ap^+:YIQ%Z^80Pko'N,f@5G]cc=<M(@/Y:[g.hqJcYKuK:`?SgTF(-`X(^J6:j:BD>$e]&/9JI(E/_'5?IW.X:!lIS?EIM2D,)M($b%usl.Eb1eLr(rV3dSuY3A<#QP^-'l_Wg@_X.>^Gu<HX`JS53AaA9B*6lDZQT/t\c-PORE-K*@<?>jXe_^%r-^/<ZZ[^a1UA,o]<eCXG6lggMn+fW5biV.b<C'Yc/6el>lTiTC8?.2YL.4J<`3R2Id0Ygs(W=O#m4"I9<pcT"ebi3;j5TdhU(]#@36/L?*Edra\ti<l"gj-C$1/55;a_^Zl8Z5-eq?G8nEb.9p+>.f!Rc-5?Kf3+eJ?s;I;p>H1>'BjiB_g+0`UhKFT#7k7]#h(3^;6];Q7p<P9f"2-ae*XA.kDsthb6`*XfP;7JnnNm1RSMM"gR>&l2-4Kh0RB"RoYQ76"_;Q"9@p`q/TPIJ:hO'[_6gdJ1]6X.0\]JK3M%WNE#:5#1"V<@81kH,0V3O'AjlibZ^=!Tk=F'(O(*o?ilusD#`9gInq[k\0`kG1+'2'4Z&YD0mp!jN+#F$7Jr+>"^5&Nnp/]rCXV--nXst%%X(j'.pf&#$0W80I,)0HC]d;p]M,4p1I,6)[7+;e5Abf47"UuggiPIgCG^7O$>&HpB$`Zm==&gS/?r7#4V!AWpk;'h:%%B^H3uV\aC6F9Ec.\uQ,&5GM*'0jAprEW&PA;,X(&,-?9K+kVMZWpK_/+'G/*^_I(P2!(,:Un^6%Qi,`!d"I,:%to;2@O^@kn0*#\73B1ZXIK67%6?RjU7:#q&A4k>#$8%9aLq,#Mkt1B&YuY7Y#W"DX'L[CSt/Q5qpK@p6=SNlg^2`rt/Na]uZ:ior]q^^K:dBqdBjZJ4,0bSQZ20F.;C>!Sk'Je2".1UpN06s@h"GuJ"0Y^KZFPe@kZ9U4UQ(094\M?FSi.P281;%#sHj-ZW=i'S[\VhppYM\5.2O6]Yt6T7Mg;M_#oO712#AnUQ#p\kO0\r7Nq<V:P2=_e]AWE"T-VZr=PrUY*@<n/<oOYjUs;qA=7mjdS'jNN47D[nWU,d;Rmj>5,GcES+u**B(\c6tLTVU-8iJW<&bnCZXp;kntp'ZI'u.M=StHta.,1P%bi]Q$KbN`f@dP(7u)Yd%Z?VUED[+.2Z_Ph*/a_1Ebcjb[t(k`tqEPB;BVY*r)BW#>b:ig'Lb6!&1C`+%knnnk(o43u7op/SUMKb&GfeL27DJ]"W(k7iT7S$S5h2"1DWZt5T3cD^O:Nf#Mrl)']`3XtcUrEGHAs,nmm7@b'+:-I4"EtYA*B,:3-N5'>1Z%GbV7d[pe9O^J.f;+7e4$;Jcf3,p=hit&C1^H[?VK.tjM4[+35sl<:2&*-eP_Pem*Y:7FdEcF.<=q:_bfC&u(R(&L=c+Y#2.;L'f>WZ_loeRdC8jkiI-Uq\7HYCKN"Vk]Xf4jY`:+OlA4bf7@9IafPp0@"_4ZcdPmdrA<Tk9UC6B&0-00(\8YrTb>">5fH?Z`jj%ci`KebtC^7H+tK<.eA@:!Mpr#P,pbf&.7]/)Z%CUc2Y\Q^)_f?1+J>^L[;EHAu5PYJ\7F*-^4q8R.ClLFl@P>MQ#,P\>8c$cp:53"/V1D98XdM"S%&Gk<@B-p.X(MjI7&1gC*60;!"Xj#WIMe2c&-Wj8?RCf,5j_8lmc<Im#&Bu'H\6fGrm/nQ`YV'FF%A+D@D?[WS9MR]NI0Ukc%UAd&g6aQE#(QHm;))b<QHF5<rXJct5P86sJFk4+:dr9DY7'W=<a1d\]'DkhM8!9LStoahPilOSlXjuNS0b4NP+r?tCISeUY;2MVZLZM./_)^_X+q/0?='-P9oeAKf#Jtme6:'fKU<ni7rgU'=;AJ;alp(KBtuA<Ord@X$l>+*>sLtXTEoPZ:NC2.QY^@;4jj:?&l2l`HYBX-6dfemXdZtE`,HW.Cg4B]IWTI#Z>7RVSjZY'!KN,^CmdK9Nc&`O>d.^Yl6Cq1>uNH3a>6,e_,^AbR;h,F<TEriI?h,d[I:Gqf?u"q`.K4:8EAc=#+?#_FSX(q:K?+Wkk]O<I*/B9^ZjQ,PpdmU#CU(;,9BP%;j6HG3NNnPV/q9hV7*7YNDqd0k,58D=N:gBQsiQLc[ONTLjnr`X^AinCWBNUM2M')m<2C4-B\20'5OCQJ`HMF0$J4d;JIr)A9sPW/^qoHDYV*AiO5/reW!4f<b:WcWK.2<Mhb3]e$o1J]N$6aP#*;o84'OA-UA+)mj76Dd]V2g">l72+3<ZeR8sK-&&u]QMQ-[O.0WBOcMk&=ZHRmjo?pb<Jkg=eZ'-jRN"d=U#Ucf:CU1qT&T'=t#[$2]Q>nh/;Et-B<O[AEBBbgJO#n88c5T[U]NSU:^/Q3nm\o%qCp!G)q/'-ua;S$3+n.eDY*moW$=RE0l:5HXk]!u:/_eZQ+]snT_pZj."3XTQJJFB0NNZd%WnYk/#0E?LG!p+e?4B,0$s;UP&L^a=5:Vc/BKG;qBS*QgMQ]jMf8(j&[EDr1QE?TaV+[3.[MT"iS=N5"*)jblgn;jROQ.Mm#?;I2&uSZkm[LmnXIcKdFEZ;qPZ;(+;JqabdgS8iB8UjnKa<[1Rq]*n<jG`D"[W3#j"DS4EB5?)=)](+T)ebK'/Y:d/(ljM)J:%P=G<clGalW(JX.f9gDe3<$84t2qamFTGS-4olJITt?0rJ$ie]<_8LM)<A@JlUV;AiYcUl#_U[RT4Zc(>+[W+V?%A+PaISqp#At=n:@/PuhAi2?l=^t]9Q*K;n]J%Zho,8*lUKYsrOKIdSqo>aoP/O)F!JR1/)4CS[bd;p,MucEGFqST*p$+r3+?ujRWU9#gQ,=)8mQE_g`r@7d@fggf>pKDN#l"M*YM5jmc_*;"Yk&'n.f^)*"P,fei[N9I%pqX:s5>o+Y5'/gnQC>L-L'lcOkl:>?:rrV1Gr2-b<3$jg!'fC%_En;fXnmE\YH;]D@5+-7B%=e35+%u6[#[_qIfKLp7?-GM'uP\"S95]s*2L/[oXmWp*3DH1C0LYZ]C!FIanAP3e<#.1m1]sq,)@7!Y[s6k[P5bq2M<E.\.l]TE1Jei/;4TRLu6$L5lI43*?L,QmE/@"l#eC;jRXh5j`&%nRurnfQKiK\2ciKDtt,JJ,\Q%)Y!Y(+4RoP:=(>N,XLks,q4H7H9"iZVS7HB-T:^U3[@Z*1Bbu&`K*kaE8cj@'JQUXY00^B#Tt6$OuVt6$L[cl\[ZUu4Ih&QR[r*d)Y^ogS+QF9PE@<DHIKP]+hh\Y=FZ/XS>oko<NCGd-+kq(?_"+beE[cX2<>E)f$YH?Kth@a0eGH0_p1aS_u;cIaJnjl0-?H/.8,6mm$]Q\?EKoPjlmZp*6L!*+H;Lh_cZ"USe*LpSKatW9`h==m;%(jQlA^_.#8;01FX!lWTphQPmFTARn5)NOsoH,/-6M`CUtO0j;!=/W%>SnC:G`k&+j[a?L<OhalpDajrUG1Xet"7mkjdjF0MNYJk/hKj]KYWX#D>3`p>fo.HWQ0\RfHR:+tUV':()a%Z^XY+-oi(f\:c,;T@SQdWU[B/eTKK&ASU/:EioKL*,pDE0Qu_d<qda0RkQL=!`Eg[<eubULJU@+_=>c]c];jmrK%l8Co=/)iCOLe$q42^@Nlc*fg_EqXKGWjH6Mh(%rOGqZX2O_W%9s.]sr1TOlfr[5DVB''\cHZp2U;r/YEb(\co(SJJ?$+cNG&D=+;A\Z.X=A*A,:L$[GViVctJc;04(<mk!#=;W'E/2lqeX-`^OVQG37gpRLY>H5]0=A67.<X5^W2c^QY\r6nlVR?]iDJ5pMbJRuBjSn_Dg00gn&SD9c%=.lq9]WZ=:]'1l$hbo0_Fh<d866A<e>1;rFeD6:)NF3i9\AEW)^Ucr&"82V>Zl7@5fP(G@#D650P'#I?JubOMV-Fb6WlAQK:LupLS]Le_X=h\H=qOkMitK9)=L5cnr5b/*Gc);X""gA%F`'g2^qukARG>[AE;JC<7g,7kOMK@k9S]fIWeeW3:[l2.Zlm.$tbM@/.#10."_3[qK%4@\l#E*+Mb.6m?EKb:/eYX,5)Fj6oRu&UH%1Z-Rh?+ZDOauZ8c]9EPV^14nSRSCbmg">giDjP,RYKN3WL=\3e&u>t_1qm;W2'cg-d[oU.&:6@Ht<9X&cYSP<oZn]qgNQ<5D!^TLa-_M+g[>/8i?EP'k'1+?5&'M?)k2C3(WW,!_3Ytb^U1Zf@TUPSt%HgSucTW5Fnr,[c*)_*](&VBo*%<)>2i\5B.6@s>;9N5"-G4f=a5XuTTXYQS-W\b(*iWG;mh[BFOb!+@='OZBR(E"!oXu't&CYFW2*1l"F^,;H)S2Zh(ffX]3kVKe5EGa;(=[eqt0luYln@6c#>gXUr+.YESY_e+=<`FH<'+p6ISL4K9:5-HQi1<7[_5)(,U8*n7MT%F@QrIZ%#q"3GdO@`p5hRX'K0b@X":bda-buS[R.=7r[:qYQkuW_</e1Rana@SQ'g,p8m`^V5^g'KdTp/9X9MM]#6WmI#O3dhW:4H96:A1M;oASM6TlNXXM_V=uRQ^I_M^sPdl<,u1Bm)5%Zh)N1:\FS`WPICjEdiaheC\"e[3#;9,6(IoV3C7.Dfhc@r.erna[D4oIFpG'OuQC=*kl+XQecbs5jN3%k2?TJ)M)sB%6%a,B-="3F_Tj%*79"FO`1&K[8EiG:Iq)mNaCA!6)1]&:A#ArJqaY/:71.QfQSdim0J,B$3OKm.3+Njh<dC)8Y4^:f[T*ASG*t[`Mg2lT&H-IokI-XQa@ER-en5-"t_*>>FL-hcn"WR(Zc'&VY%R<g7ccg6#>`\cO9^_iAmDUJVd7SjWlWceb1ct@V;7R'NLuU!Y76lYbK29h&#5IN"lq`Y1m@$$Rct`hl#4=*Esn-X@Vh=of@_IA*8k1*Qg5kM_Zka[@uE\EVeD9lre23o9ked-8sTcJ&b]W!HIPcd\ET('k5W]&b5gQE7J,1-a]KrMAdhj8H;Bu-8=t-3_Uh;<>W`UN5'0_rc3Be(pjQ,WgrO_-0JhE/Z(`o0p3E53Cu4s'@(SnhJ@0P]m_h/GPSjp+6rLc0S@Y,:8,7'B([HKdEJ%/4#7dq</tX_muO)*NZC)2PHt."8[KZ5kP-h$BJe[eJ(7!0Rp.,@(sq2&%)FKQ'aP8*CRsCjn?ja>&msuu)(^\<<C5A^<VJqWDOd!KGu+$^O^W%&0!Xi=F4]!be?tJ:cmCX-BKsa0jeS<0Met).j'K$'`PT1MT&C]21n.--dB)'q<MNd^L=pA+"0ndXU1Ye.!Yo7G^QI1D;6N;V@Q!&1Fsuf#%+lo2.7+gsEC2l->(Lqtopdu6dCe+r-i$H,Xm4a^](N,()PX%%;/g<[jB=Tbf.CZCV)m+-Cn-nGUh[RI-V;q@A'R;CSnp6[Cqco*aC@WH-%8hcmcrNec<nAnEL)'#VD'm3^<1t,nd.DVH9]:F*jm0U8I2YkK"X-400@.Zc%R,Y<E[p2`Rn^@TlVaH2>"A<*YsL"r%B<Omot',?fd6npXrmFcSdR61$CX48+95QSY\H@%XM9t\P'nO6KnR;bZ34HIt<Za9`O9'<j0U+0#$A">'BfR6bKS;QjntA,@1b[0j\/.:7:9%OfTc[_s46:h2Oi4CuW8cM/6rpC"op=pEZLQr*ehW.us#gST?&/&,L,p_%_G6$%r2qAqD=i:9]I<WfmI9*sQH<p>*s^L@DHA+D<6&63.fh),@L8A5dtJDMII?=>SNnl4V`X80J6A6&5Mo6jNk!2\AI]6A,Vt6kBEO_\Jt4+V:Gp2Gk`V&4&Pm+:nYV+VBAm#](q&&g7i"+[R@Y+V8nse5Z32eZ<FmYd$6;c5@7Ojp&lNfXBLFVjik/@stdAeY$Q/isQ!oC07i7m'EiH"A;\1&SEa<0jsfTINO1SY8Wg3n@YN]=NTTL)G#YY4l/h#8+Pj@6&-&uSt#:.6#e;>^sO9!4R)b=r:cEGO.oWO)[[]D.kA;L;/$ak*R_8g<LY5XiD%dhONhRq$i9ih@uZs7].P6e=+r.[2OE((.+#aG=LXSEgd2\nEf%::2O8g[>+`]I+Q`nuZ25l?i$OY2ilt,o'o]&*WuHrq2NNHJNeh;5S0#K=.Uif->2Er)(O3"#:YMC[=Lt7k>o6FC=L0P`>-J>T=l6=jRlBW(3o>nL>o6r$:3g+>it:a.@E6XpD0VTNHga>j-&,coI7_1)`#/bg``J[&d\P38n#EC]k.Ib>MRYhO^AJ*7.RCkd*75;tjurs"@3Pcub1Tb2n+f4KK?LY1J3n4jQukNLInnoI&gPrD&=*][QgEp#Y6q;hgpW(pVpB+,rs7sLda<$H0"922;`t)Ie`itYG+Qu:T'O9+qZ!]LU0#ffD"cr,;\<d^IsK9icap_X[[n/FpQ#O8TE(1^hc$#k2//+9Y8Kq(X/0)5?RR>H.c8.YI?/tE;5HN4]i?,mGc7'V(L$aVplW`9f`tH,GXg,pS<cc`Xn96]<1ElsIp+(dR(&oRdBa29lP!bs8(U/_kRXLWAs._qa^PN0i42g8TSgP@\\D+IBip_r*e/K)%uW5Bmh&Du8\uQ4E(CCWm=MG>?/[e1!#FY1*(*R;&HE_QaU*KePQZB_DhO$/^3ff-^H#_%!hdijr.Iag7K"ot^o*LPXD8n2-L@I=`$N)k'e<<:h-?6%SZl/H<-/r<fG%9?3t"innrq&?d:NE6Ue_[]D'I]7a3Lqj>Nna)c84T6LD%fFk)(Tr,[d+&(PEn6j2p<n&g"G,(,[DOM0"[i:'g95rBq:UI/*H.m_@$q+$qOkR/9>DjX>4`ADrpY#CPGu"o,k>,'AR*$#nQ$QA6H)=n!Ek1nT?\/h]t4:&MtX4uX."3?j"j=AQ"0Ya7s/;*]q7!#QTGfMZi7!oV`aictQ5Cgek"br5rJ[LZ^6@'8Z*J/9JK+X5e#_&0_<R/ou!cZ[(ir8h)^*[LT(5DC*_D^7$]$\;3gDpj<\UnT,1&-F(a>",0+*1Tbr])q[^h*W\+#qciMDe++d3<V=g%H'X4J>OkZ?HF$)-#ck97sph;CtEq%QObdIn6?%`TU_?9OUsqS'6lT1:a?)J5p/DuK(sAH^bl76k12o_8+t;lMb^un:3'g7-SRPf#^Da?9&TcT63(akid]G`j.h15Rum4jS1FXK`(lK2qUn7Ck%beq4[i%?Hf0=*7_kLM<Q9N((,I!S\:eE[8Gl\EOO++b,[O&Ml(7t\N3$ETM)'6D4@4FGZ/8*f#=Kbe%28q*:$CrJrIcseir[685D[(E,DY"jVrSF6#V?Jd:RjlC1kDQ,Q9E)eh`$Me86Jt(TaDrW!VT`92W=U[VJJj)bJFUK=,0oO/I?ZfG_0qjKNks]WMVQ!3:.Yp'S(o<e+4FVS1"Lo$:5HK(b3A$/AWgPP6?+\j)_:J1glk>j%12b+^0mKp<@eJ\6e[/[Lb-dURla)+UE1cLNk1$+E?a>,ctPqL)H0[27G`A5V0^CcCGHW_/!8s"<iG[=Q/R]AE%JS>-.6W4[%Ph[a'(S.d;I!cY>fS?(_L.:a"6!L_-7.$)/h6;7sIl\oX:4;+4>1K+_'Y6=NGJU500E5R@Q&Y?t##O,-\f,_Q^P8X'MK=bYdMqU0:7'b\=+`A3c8UIbSSE4pI>1#-G8F17Xn:Xh>1f'aLU^1G,W5>DkaO8J1Cbai("`<!j`-2=f=6eELkH*Bq-4ZZnh_U\Ku.0Z=f-6VYSE:Z"V]Mh"#7Ln#^Hb:L(_'R,9+9F5?\<.m:+^>eRca_L?MQg/`':&s_&]Uc\L#@%H*L4Dr'LEs9BLGBbB3V(ANM-EC>A*e4SYL44i];p;Glm#Qo@Op*n3V1nN)jO8AFR=ofNC"72G`^J(MA^"rO+G?L"**@)ogeVRK#f'o"I:,3Q>pK?"J--iq7JW7-%&[r\ad<%iFfK!.7U+JoD8_M*n'O&I<*-L/9"krAjA;llk;oLkq-?)@9S:n9dJP&u5Lo1?#MXH\jY5ckPe?-O"j^^]XZD,DnGQ'N:]_09LfpS<QR$!:J)WUDnpj],i,e&Q+,c=]U<_mhM4fV]R'7/fp.\U_7>D(g[(.8XiPo'ZRB^7:(&;;ja"A[UUG>R@W7l:7VG:Q'j29AE/ml?\'g8@L/h:SriOL?keF5Xp>1W64AfcYc7c\0Kh>Ag$:Pt$7\B?cK5pSUM>>oU23"riD_rm=l#/ZT'BLLQ76[."!?6ZJ)"G22NVblM%WdK<(.j%,;DTE/:(0E.1uDP#3i<!0HllOLbO!K'U[;uiRVlJLXHM_</n=WKm]@L.o76^)"oqu9hD<YS4COt=gg3)M"q8te.,>"!p1*<Z;+dW#S`K$(oiA0?gL!Dgq8F$GpanE7#ZPG8PGDS%1AnO"ZMB^YaQeqe:E9A0MU-!78PE&8CC58-<O8TXMcM!6BTnhZV0>&63-?qG-FMfOW`9k$B-MtRNmPdL,bDR,d=@8/%%++aW]WK%YQ\:a(KB2]OT^g$_dr[eLb2uWidWsYq8MS`bU\:2Xrs4YY\RM@%.ep&of%JD'EL?ad<f7aosEsLLifm<hgT)/=E')(muOt0(B?:6kkWJ>XU&m:4V@k(rRm9;9sJ$cm3L3Qm_b+8G3rHZq="2:*!skn8)/k0WPh.CFffuN?Pkf"E2:E?a+(sQqW]f`,BMJ;bX?n\3RsV^?o%b[3Q]Hn4``3-+C:o.'-\=-Y2,QBF$uQ7GYPSY-&4LGfF2b!'10RipR#?Q)&XoYaVI[&seW4B4r/M'@>M@r/H:YNfZ6FWaJRM_Lbl<0G@hd(^7RNplGP%EJeGJ/aWZV"O!'(&k`D.^dN]JJ-j\XAL<*6-n9<2;+m9]S>d\lN[LFhnf\Jn5e3]e"BHuX&Q(tP9[#Vg=<MkG"NJ\h3JbU$3ffZR+M);.dctP:UXP&Tp08Pd-\qk_`9F5[Hn0LM+!>O2!6bWR&AgK_KQoh76NlaR!]dWY=I$2P&-9B#;8Q:_9nW1RRDn^&Lm%n11TH`;#qVr!#S+)T_2PK!X>L8##VQ@Y9HhL]N5)lc!$_R2elBGF^.&1e&7>f2>/HMs,KGYO,(='V6@p=6KIgoJ&<0d="`>OX$9k9U[1qX)U<.6TKAm&h"EW-#Am(1^(_F667Hp`q9]TI_:*3lf^jC<".B,$)n;*;HX>h]F)b0=k/SlUlA(XLhN);XT3#Ar*j'G^eeeils=<\;Mna`*jj+7#ViWF5._0#EjOe@d!&n2E2b4lc"dLiXIKC@u+`#/]&0B6#3NrVcH,e>a#%85?8+S;^Z8d1.\-7#jtYX?3@P/irI`"6&D*CMf]Br%_Z+um7W'?8>*i!WulluT1S:BlLS\.Uq;P$6i==p7m&C.8ij1eQ79b%OZA('ME$!J_99ciueiL5;Jrd3HsSCPYh!Jl,?Z(_J\M0K48HXCS,]A0_shBc'tiC$@E,*Wp2F-]Blu,<j3DoEIq372T9[`%2Bp=JrZDYJi5u;?6/%`ht@I/l4Z38F'R6Lk[&B42Ntb0Qp#a^p4;?RS?D5E]d*I-3.:;fY\rs.tD>oEUs^HbWl=C``!J"+p\4G,QK")GUX7]7H/_B0Q:OrZ.T.t=N9%"j=nW4!:[2mK^kB0Bqc84L'2GT!J4r!Ql[Qnr-?6@"SNpL>f!;Qo;:kY'u4-CN(Ll-!k_7s]Ej$7rHL>3A_Q=qWesK`.Vu:H`%D2f],t3L_HZUA(RU77C8e=_mdq&k5##i6N]CWgn&ibA)tN4'e-:tfp:3rI311+WHE\Wl;.a*\Q$87IWa9'k[,e\rT+e&QpE'_t+7I[MeJgtIS*Hk(D/Ga)0hc#*f)C]DJaOZ%)`(ME!(A%[)L;^m0T"]SriO#kcM+S:WtQ?Pn88Efl(6u>i/T:DeR%,DE,`G)TkO^4UFmHV!Y`HJ&-2F)&09Z`'qo-SM\Fq,5-"fZVK,ma9G28d2=!"B$/gA+5p-.pRY#AlKk'^U2(Y1Yrn-#>I`mn2L&,oWoQ?R5Q"eim4IocjG]38ZTk$c>,gof`@Qs9NHsjCll>Vs7QCTD'E"Z+,d,r3kC5a.kBKuOL-^'5SMqsX%,-TeKD,c$KJu/N3I=a^sr65:VoF6Z5VZL=W?_[+=qSX]]0:bU`SJf;%:O%L\!&Q:.)A:5F<7IF*^d%l]V9/?jrFnL-c:GQFmOF_j]K;?8fq^8=,n<G1@jKkfOIk9BhsZ8u,dH]5N@+jgE:%0BEYBAiet)J66A2/-R^aebH@o`l'S04,p"^5r_iQ&TNbo*?]Lg=ITs>.\1'%Ou/lifYdOO6d29]%oi/-O+Sbl0()7)N!C(dT\c!jga?1C21#3)^R!pmiLW0&loj7<`jD6BRgZ1(kt&M08Fio<NQPc&.s)?aB_YX5p[B5KHu)J@RZTW/i1Bmc.D_)=!P7]OfhZ+`0^JH;N*i$[fGI=d@A/-D*Z-e,*>#K1$i-j,D@Ul8*\.lg*])jkTM]kRC*W6p=,Q+d&*:7XLm7gcrWVQ(unG4&r$^DQ?'K4_f=P3>1FY"E-)DK.DTB$nWD5@3+3BobK&oC/.m-;WH8V>WXrIV4k:8<<NOj1^K?SPI1>2c@G/!j#T_<XB6a=QeaUM%oN/h^V+;6;mf@4hQUKoMqL@q#J'$@)KgUMME&KcRD!#pktJQ#i)JE#aTce#]M"3!iA?o!?1M#=G"TSkW"l"=bO_rG4_km'$IQ9"HO1J^rsZr2uUc,=Gg!R`ki`afCX8]+!R]KLklB5'2@[Z%6YMD=gDUr?hf`!r'LU$j@)7&GE9m'RA"o^T%98qBTlbSP!=DiCK/3A\bRi?oVA$2G^<CGPA&^th*3Gf[5W=u/`(TDLUADoV)l&RU'(jU,>Y4JA*/+>?KNk,1N?Snj\u=Eb;KCZ$&+"3@TYpL?j@jn$sUl%JQ7;-"pMfSjHp#<N3/>%$7QW<brMWj5>"%)1h,D_^fcPC"J-ht=3`2/&2?X3'>qG=pG#\V*(GW=3j;a)Bq&&\8V.IV'$cUpW=p&O)=AQLi#.0,%*oRW6?>?\5/DN20h1t0`pn!MiE/@\0o=F(/__>S!1,KNSE^@[gWgM["@<)W!1i;8#gCRV%njV<F+LTIn`*l+_^!^lOg>J/S%-r**l9^C(eJPU*Jm%G"CShC<f"atc]e,MJe2=^@ZBn>,%]FB*3*G"g3+Zn,'_>GO8`R>@Q^]KVIeMI3FYGl&l05B3WUlHS4g*)_A&TB."ng[n6QSrN?CQ`/6kLA#Q^k6iiF[3:E`"M&R:1pgDo698cTc>eh73d/;^J8KWr=(4l]ln!2iKDiVs`\D"N2F'VYZc1k&Z4gE$PlKU3J#DZ&,]ZSi=E7OpLh7"/W,9pAUcCU$U>]VojhmK6r[(QK@3_3)(ucgQupN4q#O2l8>g</!3ZKN&441Ul3R8Y?M(VSm3QQ20]P?0qs;?AB&>@%>n7]f:Kjm\7"'>:$L#.\rPk#&6j)YP-IIom4U]":,'<$Nrd!![@gk"<dn7#TtCtV+@he8.Yo399F`I+:*K/5p-:sKZ'0M!eFKgEoTXbZLP9G\9:n4-e6l$[4)BN5#OCeZJRGfkZhl.lWX4b2+8V9W$^7oL_:YOaR]X5T.EOhKKEs>oJ!:"Yd4C`J9'k)WY<<[&=&V?&VP/$Q,<cM7K<fc#h`"XVV(;S/1G!En$%G!^cG'Fm'Us>]PJ%.mH6/u+97C7,hUnspgDrV5s-\\cfb$953;'gq.bT`et&"rh5A;i,Rb\g;d`C]Q=)'`^)Fhjb#C6,5enSI(dul2OGJuC#KG"mI6Q70[>&juLCjr3oh.?:;lq]X@\Q-V%1XK5d[Ado4j]6aoXCt9R8A.SY7sfsFsr?Dhr`Ot;iKc!4fbGi0I[6BKQr"bnGrZ]J?DLQ'lOE,XD2J>U5tkk;G`/0e5?F/YknIP4R+-sOGKt\DP[V$.@$2R.iR&5c]00?,k+jRQmS*:_#4Cs1KOAVp9SR>Bu!UM@h`$gX:l^n"Ge;<"9CKRF[GFW5H"srM\Or@^eG"df_;#YP%0o2+8,]+'+E8:_Gnc.62@r96f>HSk7!qP!-;V5TZqNq`kR`p"H3I'@slSYY#t3#n>]CiUZ;S4,>eTJ,k6Y?W.2N->TnWoN5-??'MsHU:1P**R,jY:>Y1/k=n9?s8]F:/]egqqnO-5<+Y=A*2I*O:F]L9JO_AW0Ye.7"di7o2#6n,u[r//QbcI)gBj\1ThfhP(Ou?kADYV>N'2dHcleOC?Te4c"=GK?-U5je@^ZO`gC=Ee#_$fpe?rR[(9uAZpqfgRJ?baW]?JspLAVB2Y*1'W21Ds2`A>O+1<ARA^J[CB+Q-]l;oVm@@4[D@6^=!co-o>B_eHAQK-IbaLp>,Zp"^kP+b@i?@"p#^^;N`bN&8Z+Z=p]7/S1uK"X@2**R8a_2Alt?=kp/CZ1KH2=#MIBHdVR,d$6lMpPC6fLKsO`F;<N`83-TBmWh)J>DY&T+n^bK7T#;=Olpqb>#XVo5V,/k=$)'mVL_,j]!!=!M#[gib+KD4mr^pTM<K\9P&'tR!m!7?k(KM^E]NqD=hm4e<K6p'_b\`it3E4`mm/:A_9LV6DU7que/I!@Q-B/l4'aR-:pFOTV"X8ba#Q^JmKMDR[70l=U($5X4"?M6%,Fie"1(r5l#Y!`k`)*Ks'V$EQ1$h=3)Qbfi"Aq"U:!)10$p!0A"O.6E%-%nTTEsaN'^,TF;YGj@#S@W3@/OH'$qfLr=LN?F5SL/*?/f](BT.u[MK(ETJ4>n;1P2GT!q.Kf1km4Xb^A+Q"^kYBp?h\^+cKD8#_IS`@JiPcr(EbV+c[2lY<XH>,mft*U(W"5aOiD)!_!_FVS>/W'[).B!N+!V<[[F!mnuOcNU`&\],F*T/"fF`+@JJVGg5G(6kNg%+rEFG6Dk)`_WO<Jh]oAPG]30mSO!rk,7&QQfl24=XToMjXmPSQaHS\NF$i<S`Mt3Fme<2=>L_Y4g`!G3c-"1F,+Ak5SJ*8M>tihp?n#4=0KV,9@E;sp:!76<[WHqo9Ku2?hMh4q5quC6l/Yu9)PgPUR47J;]Hi=R@CHr-74%K6^n;_L*$A@o<L+2nI\?2;#HSS3!Z5%*C_E87fL]m,Fq^p0/qDV'Q3lAT:.3<@XJZeXpBa4F&7Lb>)'`5&?UEC:GU,hW+os2/Jeo0[+CfMVn9CU?`n>,16GP(Bod,jt.q>Np;.jM\\qO$Z.l"ViGRllmVKG6%bp7jC;8AV+9Tgrh!oSSU==!61^d0"RN!/&c)(#VD@G/%SJ4aC9"BGi1Q&+hG\[H;n"j=h,&OEm`?qO*"&pR.O==+n9'p=NjGlJ'r=<jC^>f7[D?W2XTc6akVT/"1b4@&D;[L:qf?nFr8&ROkBEG(]+X:fK8nX"g3gls87ChMEZ1;6N-G`VpL38VH/aVk4%Q/&nQ;X&ApUqh05GX:i_@Yrk(**]5mK4?1Hi>FrbCBU^LTqO!>.jWJeZ-htBIKA;8o@UIE>F])?Ag6h<Rndl_Rf9P+E82.<D+a:&)FSFI1.9N6FlrO:1]?3*X0<>HCGrAdO`oUH;U'a.P/RP)Po-f*NXNW8,6Fqao-)m(_KO3F+#Fk>mmo)<Qn]dM(P(lcVtDs>Y;-$^:/aZ5oj=;78BrOJ[DpYiT(q;@-(9Aro3QXN<asTH_\*&E/-LhZK#TPR/P.]9e]OJR`9tmn>;P.JHmUU$^k@?2ou*\=P1L6l:*fGCQW<_iajr>e14q*T#&V%Nl@4MIVU:FWgaXP\rGZ2]4.a)Wp#CnE'pI3VHQHsWMId;),L3Ll:p@E,ck/H#jCo?;,+&`d(=8&>r/#Wti]/=Ws(uH"m0tVn7L;\G'EOp6!JSHn5mS)F5_sq5+@qGVnAjuB."hlQ1T$qW!hWptVTU\??kX1l1!(cC*U.BU\j'b\_Rusbnn(tL5<16b#],O#D$8?Y&9JIK&3rLRM'KTkmW#TS"<%:ZagaVBJWL"$13PIB#_=R5:d7.!_YB%:mk\kdpuK$M",c8=nM+nB77?"BQ<7'phmDnp.YatH)7P1:,B>\Phl=Ib"HO_aTSm$bRda)7(cR8%qcP7$Chj25k8F<'b&E&gUB:N_iWKlqKLZ;M.Q/k!*^Kpg^m,\!/j^'SN!QR'c5;rT<Cf*%Ga^rY8*Z4XM<?5Z[8?qT/7B5ci3C?>!;7:XOMI@d02cqKZ=0oo(s@pS.?bTEf!rVLB,*,pQ18j<J,npLK>9kTXBX8FckG?U&L'c.@"#4M&F:`OB&_L`ppAfN2'gaOIZ&_D&HOQ40O@br8>$QF+=&+@fb'C?ntQMq6;.^T*Wf3OPB`I&Q%5cXS:EmBCKI__fZmS#PnKIaa0P3]!FkO%'?1]IGQL2u7gr5tT[Qh,!%fI8%:PNsM+rhBJW,Xe#n;al9ct]*'V;66K>j0Gb%mo%MHNTqb[b:bWQ9m470=6tWX9JdJk0+RV/Oh'9!\7f"%(!7X>i]%ST7VnVBN0[@<Ve_*R,#5OV]dFFFq3Tq_QcLjS[k4D0!mQV6[cbd?J[7hOH`Y>H'e033aoDdkieZ9'BL;3aNA_#krTE0,#!PjZ%$J-<U77ib(;ZI$ZKmIkt:U*U/S&"Y[Z26+_`q"pEs`T!1h#,QU)*M-ZDO0O]ne/;./X<T_j8N+E.n?mJ3"0[@M!I?X1-6ElPr7X>3qYQ4$#r3qYsaJ;=!Qk=ikJ5?e..tk,pY`i#uT!&2<.3s'r`Wr:jT)/X7A;jsM(;^di`n-FX6Gs/+XK@-XN+iur?n>aQQ4aU\:_Pqkheohng?Qu6)uRX2#,Z?Df"m[h)QGd/WD]\l3rM[IUiHUB_Igto"F)RO&Ig%`/L[8icj72pJAFk%g.[5(MEm+uNA.&$N$1TYC+6kC9r'6gL5(EcTI9q?+UCC[<ZhZ/L8jtRWnWu48;28Drksg$0<24bR_Unh.9.+AC0Qf[rP&*^=<+qhqt\^0)QXcATrAV@8QZ>cM/Ekl+pd1h+dtii&>16N+[Ug3&HP<%_^KWjJFtIuD#FIC#+M2$QjQlM&n!1S$PfFuL6dRi+fQ^rdBGfN_I_maQKaR9j?i3XkM8A8n^_?fF9?]CP`7Jb-#8V_aUgpFPR;)!#bZhRN0B)I!JI*XJ>ncM*CVXn:kTseW*g5LM?(Wj9@]L<Q7V@M8aI!cVoD?EpqY"#I-Nir^ci^LL14/uQOmPtn5M>Ve3Ul#V!QjYpd5cE6APd(UF8M1#jIHc:^BB#,,hdp^(PsXZ-/C80I0U0+bC=oYnWg&E.hfq(8;2hE:lU4Sfh,e)@6``^XE7R*e=q2"gC;p73NduJ"alcTIKsu!t-$89+j9qkR_<a<#EA-N\uL?W9E4o2AJLX(0EL4E$_1t5plkj0HeRF^f4]KQ,L*oTF-4c,Gp90'T)m<SWsCg@*J0mZ#?4b@Zf:q&>)3"2.nY;W/SJn,Bse$/m,.e#RL]lNt[@ncB63BCL,?9&@41iEe4U$CkEmS,dd'?=p)n]T,MRM4^HUhO_M/<H,VW]EcJ7#-o/DL.p,D3*I[7?1bgZ=[=%b;ieZ=\^>+=fX'CR^l1?ZLb9B&j%UmM(SDZT?+</&@T:^T.]F\C?8UQDS>;9fn:5p/=Z->-qR/kS/Aa7=HSach39CJ1)'X1;N)e2i&i!]Zn+Rl'dM>%XsKE)sK,6D1BG8hVI6;o4q*V!Mi!gfOUAarN)n'lXg>V>&mM0'Eh?,T\=3I&Ct$7sLLF99+a9e[sIeYp9<S@6@80dTKrDq;TsP8^>XKYY#0_<?Oer+*#]TYB/hB6@V))Y7Z<X@@\e0\("Rh3>Gfl+YrYc?ab`'Cuar7oX^shEW'^i]s5`B^eF=k-k4cjR+2DNWqg:b".#1qMaVWD(kcXig,^ucQm#]oFm/uM@^mu#_^j4k9Lp";bs&B5*d=mlUZkT/m'4S>Q3kT+L$?m%@A<LQg(D2I,d@.G`kkIEas^-MY3ZmR]p7'^G&_-<[_Ko0(6`0*Aq,L-ZF7+GtD(ZB#26\^!tqET5jtmn!<LDKdI[?GbLZQC5HMY;je1o*51Yf;30>\GCT=U1i@VL/LcoF>U*^sY@H72[D9C"5"1(_$'nRqLecU[60OC]LCDg\Wq_>;M-5lJ3l9a]UU@U&An/M",=f)8\WAYQ0/m_=P*\bGJ%VqdbP<Rh*qWB@1YFc/DXNX(D/%HQib4l"-RL*)?UWld.le1h`ktcnT7gIKTdpZ`IeK:sZt>'n3WY8Rn,!UP>0)IXSYm\^E1f;.8jt+s_P"6_(MZ=B/g>7<aSlP]J3l[(Y:dJ-b4(Mlr:/Efh@f:EQ`Z^Bnl'&9_=hVn=IAj:5-WJ4LEA%+SC$"pn$'$5N9BpD%b4]lK;q\g&OIHVUH"6@C/(8W@$]?/,dD+Edo#-CT.M84YaN;<j8pbeJ,Jo[CBG.Ob?]e?8+5su1H_XK4e`;.6qT]Y(CMc#J/9JkYB*"o7"ok@hKX_0H5>JT"]<0OFWtR>N:mF]D8_Mn1)CmAHneS^h,$*_5LADLC<i\Mj#4[;i/gQClEJ4:o4hQ/*Kn9ii$6Jp'JW$!.+nNMn%KOLoBDcQT.-i7Ej0Chm\SLjLgiUtMu1ERbM.Ki_.Y8:)XF8tk#V65d'@Q8po3,9aT$3N>-o%]<ckP(KUi>q/mH?C$YG8hFKk8ndG*e"Q\^PRgE-dMFh4Z#kVoR]]Q)o$HE-+gplW?jj.ZK+plVt,FOkLA^IlgI0J8k/(^tuI1#!&\D\Y^Y[`3Z@SNBZSZOu;!i60-bXI8-=0A/86#+X'=A5t'5U-D>XerQgI2`\B#m&K^MJH74Vp\t/hcdlTYa3g$a>]XJ6<8u:Z1,@2"?!aVd3G3>#hK)\Ll]tQ<l`@TGqX,VF2o]^,4?5X'Wlkd*r5Qb+:KFR!n")5GI6sBr9<2&[Lp!/Zf-Fu)'TmdK`qu2PO8uWEr>Z30i6/uh-TF7R+KOs8^LbL.elg3T%]jbHC-XMHUsia@[Vl#=E@[6`fh4A0Z]d96iQMRU@bW;2/5&S&=rn:Rh0Wctr5jG7R*(K(@@V\<15RnUI&AduN`95r5AA$<-.0pm.TX!<2Hr>\b1PFHX(-G/:7d.Z(gRt;V(_BDqmm3`k,b-<Jp_5-7?b9ZmN&/gLuA`kO1sH4r_OSWHG5'O?RkGihshhb7MgH-pqJ43)8"DV;>g*^c.uW4M5i]TSVXoJo-g,V&"e/ija3WS^1:!J57f*'pEYgMcJ;hb]JZ/>W`X#D.Q.sB*LTqj1GR3t+la$6WiAU/P;<Ysn)+7O2fm73RF7E3S&-fg'ZFLb?r\mG&:?S`['_0Reo..OFG>%6,5aj\K)N+.2b'9]<H$-R]Mq@"-+Kdd>!Wi'JcI!*n."Fpb=SGtd7E8<Y2N^Y_<2:g=p0;p&rmR?JDecC_+8P,N'u-Hri;!.!N?idm9Apd</SWYY&5*b%FM'3lPH\fgs@ouXu7#8B.PSd+'IE1P5+lQ13p$(f\]]ul:joZG$lmF^sf-C\+E33\#o<9q2c*2La@p(6A"]Bon"Ao[DXk"UX'WCA<p:B4C^g7Xm!-jCI_H8G'oi:!f\Jbj^gd%)US[@P.$Z6p+0][Rb)?YlT(<2l(;b?iQehNG&M4d[2</og-%K))TS@AAP1hA6L3Q]?4iVAT'dci>gmPlIk8/(N8Z"8?tMMF#j\R:$)2tX;<gCb#8[/(%BmlR#)77GGTlmW&VC(Y7?U%m9iFV,JTE5I8+%I!\<IMPBT;W@oTJ>E=%3\'RNu+(S?ZWO5HndEC!,dOl:>:(.)(`?ok-]4-7p_d#=F&Y:5`,)-AC_QcGR:,1$HqWX$MT:Nd:7Ge>9=gL_CBUkYF"VT3qPL\a.Pm=oO2n:KOS"S+57F'4sPP1[4dgro#'ul_=$,;V5\%p#=h*9*]0,(Gfg+5*YN=;7p?lX":1ObT$bu!i$K!*%`3\#geUmQTu-a*OE]A%aQtW#b!#0&8NCJ2h=Gm'?5Q=ODiFUp_P$bi!6+O%=Vg`<6u2:%b%/q)d9VZO<,o0<S-Ecb3YE-lW6d!?KY]C1IlduF4<i>"+n.5&IQ<JRe2rM;:_E.XM?8<Q2^NZMG@rCNXSEEb81frKYT;QDs*8j+7fl3q;$oH=p6m4*'S+i97D1E8)fMG7j$K?O)h#FVt=N*'q1*0)%!f)aDk0TF`?cYWY$IFNo2n0gucpbe[iDboE#.64D("CUE-(27:;;7)b`K&D8XL1>-*sJ[WnU"Be+m)T')tI;*]1.kZ09amd`I0F3Dk;,19>ubOQmk8cR/Kk,]S'\im$+GE46_KQEIO7_MgMES^!X@A`M?MD=L@[6k&^h-/+3.p^UAM/d7I+MnC-Jj;j0+mB;)+lL)AT^[Kp.E.)dm_T@gd6Jt_6l2#jQ]`+:il%0$:9&^4p.UeenNR6hXBrBg)6F34ch0A9bP`Q-d?pWYKQBhS4fNRlVDBh5H"tS&6[2h\<$a`^2Q9SXe3g\JbRB_p9,R6/"T]npN/ZCu#`Y:7i-;#\GhEs5)Fu&c#kg8K1a,HE,2"1t$>^:0m&:PE=o%DYoos=X;h$s='nmb)RPrFOqDp;.^-pK$k-A7%I3q/*]9%m#iL).*X^*)^1[B-jAnI\"=QMKqef!_G3nIT+f0*S<ARKF,"_&[l+Z+`o!oR<lG@HC94(QukPS%rI:dF$h73QZI]DZ?p<t3>_5(LMF]NF(KZD]aa"rhmuF)uPN@k]l\MHIJOBa;+Ik+Y"%*Rg(`Da0gWQ5YMYRY:dYO<KLc4>H3&$Du_po3*--FF'rKMr4j*&R7ca/BoAh:.*ZnJ3ks_M4ae)kYWE[=)-bVM_W"+lK^D+k$e"'[CJdLSC:,KAlE0UhQAmqfK*FV%VUV5C\i<g.QKUo,5Y)O9)PL:WXG!GKFL>:+I5Fr5mW>k`M*ZK"JpSn65:>:L]A9GJj9G^KL-gn+c2onKg80p@7KESPd5*K<Mh^a[\5e+/BRRa(_*fu]ulWV_g"KJRDmfn@p[Y"\3>Q49:CXJ5pI!Z#0n&'Ba@3BKYPu!Y\MM$Z-2['<@K(2FpDfXTto=.!G^th`,D@P)C?qc"RW@0DB9&V/K$FbX`dZgqbAdrp%^eN*.?D:me!^j5qm4@bZ-*UC^M*8U'_n(FD'RK&TaJ.E8>iY,r'&6&kRklbDUsEGgY/u\LY@PMGORE`ho2a+V[eL&HRK3G=S9c?6=FfJ[_3>XkNIljCD^iC?b(&(N%GnC2+aEPUK9HCa1_dPIA0PeDEAM?%$2@ki7Gr/?/t?<1MOqC/pNDGd*j:5T1X>_??JM+j!S`au:*FGAK2>?b^uR6*^HC=,VZJ8H9nW#_XHU4%5ZUQg!U20)k[C=1lkdKHEP,=6(,DH\Sl<20l1ud.j>;S!`>C+.)'6WXTTI15re7DJ[bti@Ye&0(t')l3a;%for%X5cpYpni[!(9_6\snN\J?G-FTJ=MDNtSDAR>8MF07K[<<'j3u,&eiRI9_L$c(3<Ld\DIR!C'ZR<1]lhj#]W,DYU?$SMcCC%X_Z\5@an9KHU6ulESaihCOU0lED3)H6IR"3!/!\@%c2.B:]uRDK#RVe4e\2%M4(t7_q:[",@cu7UXLRqQT/2\u'a8qM8p-?\E4F%unkF=KE\_+hE>,R)BL."9V=!qigsq]K=jtR@Ld;3_R7Lf<n;,=/+jN%/c]_FaMEun\7#6r+&;$XCViVT[$<;ASa@E-+qMN%0T0?c:e\D,k7IERoHcL"o^j:*Xf/]mPHsJ_>Ajp\NK@JE1=@[Pmpb[JCf@%)f^._Z+JP7<Ib=54kBKYLWh/cV6&lk0YDHuXLQDf=,.b7:0+PpK0SuCpn*)%IqX#1OF/K_.GC*>clF$etA178%;JhO\:5Q%?X/+i_bb-E\[_g+&AoR7a]N6Xm525g#u_;eJb7nub(3F]KHTfr'GFYm#Z/,`\Q:%GCBME\5nHD5c/`g+53>aUtZ;I^$#pm-Mf6Ob("Z@.S$$6i!ZTTf_6Ngio@].&=<%ot_0JJ)-abgYVGo7rr6rq:C\.jGl;^aD1ea3mti@SR/KEGfECb,@c%C*k5kS6k&_p.nqaXlsqQkl[ud<kFZ'K4/`&Z)Yb0#pP+qP59YS@Zcf8Q1]Lu%ela,2-VG-$[6lR_GO[#:dfQ4&](1/6sn2aD\!$hjB]B*4he1e(9a2X<_B.4d`u`Ano34%MX$5q<V<c&atIo1f+^PWZt4#:&1,k1MB`5Fk488YWp8<K>?$Si9lM:Zh;f"'V]6#gV6_qs=u#0ZO?@>XM+>>MIYu"?'lX*HPUV?+FB/0F]!HfQKss$!YU2,21[!L+("3YOR@1L?bdsNJN]l2UVIdTp3<=O1:N/`AL"ZBl`/$kg!4/Z"dKsH<R5Jj!/FV$:fp%R/M9ZV87a?19A!0i:D5)(#&,c0>I.%M^H/pVk/a9jnfpRuAG$VhdPWC>3>n'i/7#gG:gn)BQ8rDP]%V8`')2VoH[P"2X310Bb+G42W*""/);+c4+Sg`5+P/]Ip/GWc?k:EUmf'MTsCbs?6#\="l;RFH*'LG3l$\aE\Eg?BS-Yb8?<;H?2DoI'IElYcc-Pdt>/?)tt'fL@SipG-*CW<aUdjJam1[FrZMg*j=qE*#.'tG6hD2*_eS'Gi>3kjnX4,1"Yl+*SRpSur_;ga?5kVT>q;<_FI.S7Top>a7^@^I6OU'\R;cdqRi0fTd_>jJj/In)C94oYlEC@D\8UEr!.'R(VcSX\Gs0Fdib7P7Q[&SQccJh;=Gfnt'WHTUL_'laQgNq#a_WaM;/U.@>E#8=L/DK-GN*LYAb7YG1HUq'bVR,I<^$Irn5?jM<3)?PSZOWYgN^3dM>R$G>up)'lV>TOFtG1bK:quBK.?+%uO'pIfm=Wb".7gEZu^9cR:=%jTXcE+:_Qs6r.q;A]L%:3W7,T1MuL$%a/0n[<jL$ljm&,nkA(AeXs1C4tN7EY^lEet6k<6P#c5hTcQMI)1U,GZL@F<BD9o7(s(BsY^Hc(o3['Ff!'`9B339-1Zqn_*S\pZ1J+%DhSYr8+iMm8Q,f8e\7L:'tCu:k1%F=ER`q]9G1022eLC=`l&-<&A`R=0Zdi7>IQAR#j;<.W('g6Ng=0JHM&Qjnb.`.sf[Qoi/U1>!ZudmT`OK0FH$X>$H\bRj*J<TaJNV-YQe0i1Ou#i#<Wmpun?"&nn@_9f?aIVDK(/O)+@Z;pAfN[Un<qZfb>i><5`1Cug]3A[P`XM/diQ?+OY\((7U8+!)D#'B&LN'W@+T1^U+[gXn=(7rWP=570H['Z4>dE)Jl5;8XjKIj%&BFL-\Yb'i()fl[!<MZ;T<V)+sBmt2'a'qR>HSgWCe6bW<f&tDg8GEYL$d$1Wi?sAnqOnpnu@KEo!9:"G$5`dDd0i0lQIXTS%oqSp/-M,B-LdML&N'PIe"r&$nP"HoDMupQ>HYgjSgSS6FX!r7T?iT7()LRl7bC!bINF.),Y;WZ`F2RU]nhX*&gX0XGjG^d?+`46Z*E]^[e7Opm>TRa&3#/%>BER7enGtr^^q''W@:-OG^/,\`9#"d<R_?b:1CY&fK+5j?8#d+=\fDUrG^*;5`YLAJIF4SAq-F\hASaV-XpnU9QY4naAjJ)-ft;3(]01:;:QrWOE"lV(cWN!-1@'i'B_4\X4Dmn-+Xl!'P@m:Z-r-Mp1*t;'&1.ZRQBP3%:k/:J7o/R2Y1YIWB$p'Bg8=o(MOrZg=580mT3l$5\BR`U"/Zu3)Lh+gPoH'r&CmAXgS2A@l*]+obc+88`W[RUJT-mPSEHTJ/f@=kSusfDQ`I8O(78tOfV)FT<<-B=EUPQ'?RY5<5-19aI`(&,ZI,0@*cCbuUErAu_VZnmYJD;/ibuU-T&N?5i@hRPr>t^n$p<+I'5?t6,Mf[.ltYE\kY",sei&ifO2Tcl'<=$09,<EJ/_Mu<KKtZ!9GR6l_N\Gt2/AM;8`IjF:u%R81D^?h@a+m>.,eFd4;BH;,5f$D@r]`r1jFB1pCHHEq58W->Bj60B&toabbmhEGW#Wk7e#(;#[#gQ=%=s-e>)..Q8=Zur*ST<;(*D"aj4`!i5k<?3?g2,@_;?ZDgd+MD,"o!%9r.'gXrjqkNq[_%JfZ%ROa/1*4E-,=Fn)bL1WHl@]2c#TeJ_T6i_+p51"-ufB$&%^6pHae*R=e[%L:tH\4]-3L-@/raP.e42l@,cg^c%W^_,f3FXB0k>TO-Y.f$Xj-g;GUbb0X,;*,^/c$r?rno*Okq<J>,kCc._N_l+btCF'`u1jt"Pl+k^3QjNc'b]Gk3d")=4,_i0kh;WP2ldf;!91PKL4\TVJJd'L#C;W]mS)eMS,PZcY"l$p&k>XPp+:TfO:M3)JmVA062u_-D*J#fJ%?un=Wt2WKui5Wfa&H/fVE97-TeuOXJda*3-$\VikX!+#g^:,>'Lm>[?Y59RrtnYna-.;Q6H(G]EhQ,V)aM!ON1YEC*M!C/NGUbrh5$B(Vq'IYAUu4gF^^*?K*c.Ca]7(<.CN#4B;kS[`s99XIIKm_8LL>pH5mCi(]J/<4O<-YGh&qIK?]q,:p]l:(0(J@eA1Vj:n`F4T;hPr6"`1?f2k8dmY5Zm[),E$W-?&8W!P!M,XW8C3_/';L7\.6(d5;M9XJ.)=aQ^\+^)IGla9&)'quV)+C,,5?dAnX^Mki;1BSc74=dgc@GZVn\p;W(&GB]VsIBFiQ+!26s]6=0TpgkAAFb[S6CaV[X)XadT"[JJ<)39[Bs1^/0'OGI6*1G\FO]7tkhgO'!\[JdYK]4B+2ZEYfcI&\'GP3Qnq5#7t?2gl7u/'B1D+&64RfI?%[FKDP;Vrcd8g\o1O,7.o:R.W5t1%u[k?fq8ETD0HGl87@YHXCNn@6SZieYdqh>RI4cQ]?ShffRC-"Bk?&'IAKY(!t&uYHdi<f64U-S[5cd:c(:RK9TGUhG&l,9mk]_<&f0qAM\9#&JWL#9,5CCUA^9hWk=o=\B$PD@c_]XEOdssD6FtpK03D)h:C_6An(iUb,-6bRETa.GT$g/Jn(+lslDe+Pg"?PJask='^_dmj=<giT67&"Ti6<_Q/,`[:5d&eL*X5T[-OQPf5aDrj/VS0,(iNp'\A@Y5-u(kfQeo'NF/_gC]fB%QE*c;!k9Yc#RecZirF^t*51W!h;^4fn%G!5)Kk6UZ?6Ro[,J/Fqg9e5fPJo%b)e18]V?W6i(gpG&S2q(gG%!A6\#,Dp(A5(^)G#D-4Q[5geP0cIl@jdbJp`r59!U\!cW4rk"e;Y8Q5`pi]6CGceFPV1rO1GH[#Li9c1ZDn3QiL/Ao2InE80`9F^qK+lg*'5hb4RMJTH,FF,]&LUkAe'F/-`mD'DYIE^u:C2%k7inHp=pf\5u^rQFSnXS#&9(C\>smFF5`6Vm2Mr\0O(+4Z<oj^"R%El.^^fHimV&OaLZa07U4.,-YP<EchZ;139^(O$*JcV*G0W(n:A*.Yh\9+6]6A0#E^D/'Cr]230G?)UL(F9FQa1E`>%>Vk55KM[IHM+'*@+Ek>WLCL,Nn@Ee+pp!5.ApA&`&F>giDnPqa&p;15AK+<h]BXrm-Y?uUgU:#J3BCSB%2ouf^sVhBrN]:WEKngP@@^78DaRJ,3T'TG.k$!b<9DJ#7SsIF#%t&QT5g^>"3n`Oa`6%O0m-,^M=`@hUK`I3B/<uP["?K\.n:',`:?f7<`QI66;HgF$mjPi#T@W"AWq087^#6$*'ss3#jt\KC[W[tVU-m%(h'dSYAR$@Q&MUQ_%7/=J-\^Ln0S:Qj!?>6Ab$QNEd=t$[u%Mo34U<%^H3>oCiU*m(?^Tc4bl+cL2M^;S>hQ-e;Pu=*A9GAr<!L_?-tV@XZ&.(!cW$W<K05l,eSe\3$En3c(pFj8V-WelPrTXR\j\Fs0V;pq:!9P+$]Qo)1R*pq8!J`V\HS.LRTOTf.aIT`^lkbfa&%FWqq$Z$Q\QY%+6bl9o!Y5@NDsO$(-eS6EKQKY4IeZm]/h_Ya3r)es&;eG2(U+`?+1M.C:o7FYS_WoOa-l+uS<?*D=X&1NU:07_<=ahDoIZh@pU)91I-3(UT,"n*DbVQ+19#R<q$5<P8Y3T3$.^L+-&^[9(!dTD7o9a#05h=*69`F'@gpgo"0me"L=3A&5C(W-BSd+5'KeOS'Po%\L#1\"eHD,0WL9'+BD&!li@hPrNDul_J)5WIYXR7A=sP@W]+&YL]I;!DsJt4hG`7D.\sDGST\Xi(j+Ae=YUiUT^#i(&`Id'gM1dIfH>Lo3&eG0Ms"*f%Sh3d8\gsLS82JiUPdS#&DY&K5.U^dIuof4e-2b1c$,Kcof/QafHO+k)5tePP5KAq>bVEiAi!DWn&sFMcRVO6<2o)Gsk##;(,"T%$bWd#"A<m,aOQfJOZ[^7dqY4jX1qDm>&u9H/X`_r%?<\Kp\I`0W/p/qj.e1YA'F(_*-P5fJAjGD!\2OFArKGa6l-$pd-\SF[WZPo8)r$MWC5ab[f$,e]Y&*Y_NA1!'hbGgSR`lV04aKCpaD8a6*\YX@qTtL;R\,&#rWg_2?iV>Nar1`]iMBDq>kPnfKuY;W"M]/XlC5bcEMl9JM-#O3'+>X)>gWf5_!]cUB(,2%m*sW/laAONHJ6O_J*ao;r#J>7/u.8d[6ZJ\`b.&VM9?^dH"NfO(9>>L`XfGA,">s4%RtgKF9F&KJ>mo;(?!L?\A*/NP^r\n3m\_&6*U9=(n@l=]6WqGBb\>m8f?&HXX\@YDtB9-FX)EB(cgeJ&<UUh$ICHKLB&/dZKO\*$2nC;XTrT7>m"ZKYT*nrK<.IOI%3cOYYrNEs`6H!bN1/Y*T]\].@6>+/?oF<d@`X4,eR4+BeQbR$M5#<!Vtd.fBM<sJq&Y`^i]-A&pfV-_@%L;pCA#"tVr-0c@p:7Y7VM*XFa(dSbMce`j+EHf=8*^/];,u9"6J,2MohKekD,PJE*r^nNnpTqqf^0]cj?K1q9Ng[D\3RPJjQ^`0`W#b4BR0dr`'>s+5&!XM>BNqmE0'OCH&p_s[L.6o=-Ma%eG#LDOEL%bukO;0:<d")hE:i_L6IH5S,,?F"jdlO$<>FIjfDX'[pF^jgKs-cEN[jkK4u;TL?_"dk5HhfVr0?Xk>[G(VF8"\Z5G.T5s,E!G%UbLl!iuk+$Ti[)>se&bQ"]%,&r]_t37qDLD)@Z8b!Bh@l9UUP5CT'PBQ%?rCSe.ORk_0thYbl3'pN0aJ.R8/Wm\AG-o>O<[]uen'p*[ZfJ?]T2,'Y+Hc.7&":ZN+:'uSD*W[[BG`BiAJ"#(6(Jf?[]I#`>@g<Z;]L2;Bk\^uO`&@o_MYY6)Kd^n#m$b1;].r!fe.t`K[C*&:C9*BH3jkQp!eHioD%$FRRVj(XTlP3>/C^W$1cX4o`2sba%*GLuo78C.UZ$@AL9L7:qsqslm*C,)1XjV)ZaIeJ&Ir[CdE3jp5M=_+-?lUuaQ=\[E7fbU,$X2og56s^0csUSH!jVBfX,?Fo<G_1#?DWj%U'#q/X]Fd(f(o?;fhZ:A5qK7/4^['Koj\B:5EaE#!\\8Bd`*mLnFgt6\n^'fAi'GN4->WO0;[^HN'hsU0FQDa6Xfm)_%&GCYbFTD<No'#?FR2G>cDeEJZ3d]$?aJF4T@(<BA112\t#%!k?R!klQmr[@&/FDg5tS(Rf3(ntZ-PmC&kFQc96ECAak5+h&fh_W':s('c\5nb,<jD8EIK\or3u`hK`0V/4l4ek1q&E0c*d[=1"e36JVhkS]PK,^Yq\RL6gD^k+9lE&^#"')O&><0DZE;0f1(2QDjLMZa_PHfDu"3[BJmpjX@5VicF3C8)=a%>?:q=HFd_OFe<h<9odla?#2fKc((qNK@gQ$>J#"iU`@[G\?X'Tk;%X9#X_A9K+em_%()\c-eFW<"IegB5+FQiXlWpAAj6mQ+Vu%8t31;.+6b^iM5,lUVU7QIW.Coj,9G,qsEMDD)U[H4WgYH"Bb7=n.$2;*,lXqR2<pb6JRT>1@]YUiqMNsBDG9(l2(j3h8(s#O'T*""-5r-m@t%foX.NIUe*XVMFu0pbM(aenEF-n%hJ9J%5">PkiAC4fUSZr:D#9=j337#!tch9rQ@2YV=6rA!/`uj?t)DS-Qd';Ua+Fb\Ml9I4mSGtou!H/G3eqK5c#peh=/.TrKS&F\c"<FG+S(1Ht7jF!]SHKCK@g,iqZ0cVe=1]?eF7sY7;j)o+R9b-#OoHVH6uS8tOnn\G"k)JSh%SdX`;9=a*rIq.pKXeh16+\R_KbDXL;TeDecVH#8fk)VGg``O+1AM$7sRq!'IGm*bReVq2D>.f0!%W`XHh66IH`6"!2?Ta8%Wi6Lih<=M<EF)_#%%45b&BZhC$HI8>>UqQTHHJ(43%E$k-1:8qJ9fYq(O>)U<;.Q%QgHtsS#T-,]"E6-UE7;LJf0@"ir9$"dgO/&;-2F@mAVXoGrA3W<.ONdA@V*_#P*2lZj5KLGLl#X2p52OVlcbl)G"KgVcu;9109LG$2N;h.`\G#G:XXFgqmLD9#_$I;_4[J0!RQ3,.q^9HT.[[nHfU]rl!Jl8h%0M3^$4hKDl*'R>;!POjN#1=/G_74L%t1PqmTW[DP,g4@Gm=?f@aoom-!PkC`"!Q.?V_aXhYE>#XT)uD'0Gm7oprl#hFf^S!"t&3LCYDK&rQAdZ!o]9[feK@e?kI'.WL6a.*'48eICqkhp[Bqe>/=K#_W=$:YbuN>h0?f:6,-cWTR*V0*NtI:77Aka^FK9Se<j@9j/d%W_V9[n"od9YMfT\jGo6=o2:0SOESWL_q$tOt_4Cj!4W>)H^GO!B4Np#LiJ59\6J\3PYLa'\fGk^^fJhB`2A2?Lt,bj,UqA#QM;;pD<oP7R/3u(Qd=#92LKK#Yr93\X(Xtm@=0ERG>&\ac'`YqqI:*m(#nG8,j]S/afNeLR/6K,?+Q%ST%#h=7]s#cp\L4Ltd9?.HGuR^=AJFbn!;QKWVFoplQS?_^M.PAat@eCV>%>^a]Qc&QcZA5FkOo.3:qYlndiN>j`ChRP)\/&im<]?^aRoH*eqF:l'X^>=m<ZLVCP&p\E-YjpNjB1O\rnDUi/C4i/ei4!n1k/cJ[iU[$N0:XK^HbaLV>al:I%Ip3l76ZB?A/NYmN=6V0;nV@i"U%nse,XT"YmM]@%egK>Qbcg^c<ke&tn#<KK*o"Gs!hXnRc&E1h*;KWkm^J.G-lORoDFCtphiE[+bfuCYR*R(0#e$3KgTb:bA(19F80WkOgu^R_<3ItW'OcO3T,9)1eD.Cm<kTX0q<h1XqZf=`cVL1IAKuf?r=AntLgRXfc*pmSV9._jEQS0&\JX+6LmU5.\_Sj@nd$?>?]cVJ9I&%UegED4UAh>G^@i'7n'XFIlcr:tga]'_iG&"KAW8^eF<+Yl1q@5jkYt?X@dC>^V$d\Q(om_@f!47udo"5P/%<bgCMt#X@)0$j<kCkT5%r[sXT3Og&;g^G,)SuPU.>D#",1O)@&=;+.fF#!(*3iJZ7X:'])@QUmS-AI/8hY311ta05=mNT>V`NiAGIs@0VB@J1\HK49(B5PqTH',q)>YHnaGIls*ZNcMOr5t1Ha6U'R3PhD&o/'JQQ.qiLd"*[+_hO'lNZr&bCo$bGK2!2oe:,c4HNj-uKJ",m%0(=o"Wd6Q^fSV*6r/hsR_"S)c!$N*HSI@+NY!12;BHEc]g8hH*Xb$p,B]h8"h=fGj1d6O-_XW3WMZ;;F'Xa`]WHL31j%;pl74,6Ze\J2mq>2$5(MmWdAGn#u]IifnP0EDuaqY?+cnW<H[?r2lX1d&^o4<1:07ODY[7^_P(eX+DH"!X&N8`%$gE:j>`2/c<DoKjRVLMWUapY0;TekODNI^hLo"SY[Zt((,Vc:hEO8Mj<P'/b<`G>B#RQ(N01MKIB/C;0)juN9r>69ER^N&5f\^TEI^C1r#<;]f-rm+2@H2-fDSTk692qOY1R0Dnq\ERJ+949u0E/`'b42L;F=2*M9&o$%fsZ#s!8NG'>7`'[I'C[I"&*=+9:N7Y<$_:\L0/-kLOA9QMm>CK^%cV.)+]i#5,0"o`MJ&Q)l*%:8un[RKbL9Q.u%#@#[`b"SrS$;sJD#R<M%+iH-fZfSRSo##D%/[#Mmi/bW\R*@'bj'`LTh]%MR2Z[9"l_l4sI0`8TNCR?@<"pKX,1&j`"?-O45YfWGlq33CcE>"lD[aahH]ueUCu)$j).Ai'(Z'F0%If4&'8#TG.KLrmP%a-]p'";+WPYi@K?)g84r&S*`6IslZ<8EgfpN;_V+*(I?.Kku)M4n&JkajR#_cY0`06rT*SZ&5JAGmCNGYU).t[MV6-(S,gOd:18FfBLoV/Q[mcl\P2#Y\t\IMS,`L2N,&b-Y_rOKs9PGTmL(SW&);M$BOYBE,)Z7Sh3#iITJ5@2lO;uoCCQpeOu?AO3()'SE!i)N\qbu_OFr,gg4hsp%DRM'elfNK;:TY;`i4(:c#?'<.\M(h=pOVEWRJIll*/j]UZZEX7g'3m$%H0X2GgapEX[V'FfH)VB.CeW1c=B'f+X,%<>72"!n1*'Mg%I/9]LlU82JkZPC@\CTW;;[B<AJo+q&jm-o;2>hf'HnGq"@WUE&Ja%12^Rn).'n_<:.h\[@+5,)#N`OkUa_.;SSODIf,/m^[oMqTcLK",-RTJBqaZU;5A=.g[G*'Up)`<r&Ql<*kI7f(4"eC+mYD-?63t3gO:F4Q27#Ym`8]14>Ael_oAS"Jr.%XHh,-h7,oU&YfO8&a3_M"monbk>P8Rj[&OQsjJjM.n@Sd]J6[>0[ff*2$BB-R9lsfK-ia'!9-kYF*oVVjd7d#iW7&M(SfG.lt2C958](E"@H$dECD80q73hN')ZX)47MtW2U*C>Z,5S+RQ&\tqU<BAf@oZnW,mp5]#'Q3k;WX8u0a+*mGbC5C)b-7@m%n1)sVeXVGelW-PDiS4#NM5;Lm.kMp'PbF#?C6oMpM;F9'AZ*F=+]rch.F,C+c_W7W(UOd<T]T#lqWJX3eBL#3W_)\I!:SNr-moV^RE'l7K8<-]$P$<KkR!EYM;e(-$GLA/u;]H_U?$i/AC.-F$*?FD#BqW.V;+U\ZfL0Y3U=ZIoG+?rm7k5F+T>:S/.]gZ=`n`p#WbogY#\Q?/*YH,Fa]h^hY=fK6BWEn;lIk%[!?4S\+m7.s^=Nmu2Nf0FE?2nk@\6erJ0k<]Bf:A;#P=MiGY&,`=ujP!fT<3J)'G`l[u$4tB7Weh=$;Jf7jT%b$q/pHhNcce<OSr**W*n,X\_='VE"I9m0h>co1.eS'J+2rM[K"Z?hZV$VVeQ@qj5Qho\]13%caM;Eot.OM:qTJm2o1fOs2H&(c1!UO%3_?*@=nFs%=XVg<1+o"#@MW2UdN1[8gf85I>k;:f&I=6epcT?BO.fceKfP^a2p;2gX2\MeDhjOQ."@<8\&e?8EmicZEq`k&dD^0j,WtUjIU0X>p#]N/-UG.G3(U9BZ5T#V/+UH'-p)8U9#Xee]#pL(HKH`uSJ.Mu(+%QqK&Kl`<KRb0N+[dFu"<eqA&D5DV,Q]-tF:!ON>s]a>V+HJn/_)+P"^hR$MVG"fF/DtPSHK!7Kh77)G1=q_Gh!',P'.+#XB.F.Y@7tf22(a!pA_dm#pD9>rahD>*d-9r2pqnfbE(CSga"&<F/u2Klla"7NgSgQK%Vms%GdgH,'<1H2t\^6kr@_*C*/!*i?,eps)_jJFb@14>3Nn6JRkfZec6O!;%c/+,"+u]>S>E.A#S'N<`J*$f#_OYmGj%?WYCu0aOQ(]0HS216tE__=Wu%%HnFH;]u$B<m]d^mqY'^ur"0d66%K?6nHDX\"<(&1G?&ua_'AUXp&2!V7P#KlLpP09&ibssF"Td5F8u+7ICqlk1^IsMlL"II6GTI>4?=.dXplD*NY2\]GmTXA6,G!;:qL^)Y0GqBe)-UQ*kO4\/Z%%PQ"):KTQkmk<D4"G>Qi9sZ^c0\Gi@kQ?W]);>L2"^lTY7!_a"$NpU82e\IBlOMeQ\_k,-^[+=%OK$%\20ON7DGGRTqRHJf:'4Y&=2iO"8<m6,B/?ieadAr!mL;<pfn7mK(:;'G&fdoTk<a,[Qq+7cb;hgL8Or3O&q]C0'qpu_`K7TYcR<_$[s!>;T,Ti'/B70XQ]pY`r9)tBS]m5P`'j"@>L8P]MeJuKJIGfqmkJNb#pDNg+a?**8VSser7U9d<.@P+Qo*/XCp=ET3RIM.8$Yi[P+rHuE&)1jbil8BtdB\G$Z$>;bX5VNdNU@<t@&!oH@=TP\[]uRGeU;9]eJrIr2iUdlo'EDFj)^72F_"Y9]*?/d#UMa\7+9Xe(hF1^?7ubH,JtN`#1'+^EHQ9[r"N5SQjfK[M:]sRjHj1jF/GOd?hZuoiReQLo_6@<[B'Rr.2lm/flGs!P)Qde>+VhXi&PO`rQuXg>$%?Y):Z7L]N=B2YPf!LXhk=XL?RA?+bZ,T,,Y1g(&crFa"<hfbrkqb/J*YP1ae]6,<9W;^2-HPO1*_hf%F`K-'YK]?KGHA*$g',05P,P:164Y;q$[U\P6o1gL?Kj!&1l;)FuTgoY>YQM&3*cX>#N/^kah.V1.je'EmDqa[/(2+b6A1%7OoY#8;%83[=f_1eo3S7H<&e%%YL?g#nK]C+^cT_8<6;r+qQ%l+p_HsUj*1?M\6IoOuT<k[H0944QY*M=OsLo/T_O^*D+m@7k.%d!>m5OAqaat&I1$(:g(O:aWgV2o0o3kg%U9Mh`Z+2nl!u'0@(qq'd7!8l2jW&'Z.3l@:4>i-r)5L2=s^rke4p8Y=RkncUqcg<V860NI:rl<)DjU`58N(M;UK14r*HEKirFi6C5u8kclAqndOk5NiTD`Nq;dHPC7P@GF5/nk9n:V#5,nq!@!C,5R?[Di&*=^AeLiNO+RDo*W,Oe6*hUVQm)"!:^H74N5-B#J`Rm.4OF)nN-?:l]I=gL6q]$b'C>BD&IJOg,M9G2#Xp#"OR%2I>''Pn?]J9dVlO.!Gf.e=p$7QDBK.3;<B9C)(&1WWMb.3J?U'`K\9q_@0@^I85O3PE!c)UgrCQ]GLO0G+mh+I_hIF3M?-PA+1\WMINrZU0M<0BhW/'8?N;b1V%kABOfnZ+^m!kSp&PrbkqgQUe"Fr]Y]Ms>Jr,'Nbrk3Cqs7"J<&L,;_IY[u[&?EQm;dKa5%%k,$Lqjn+$%HBa)u,`3-hsb2?M.;'k&i5&ocNbJP)tcTI%:s(I4<*Ys7q8.IsZt?^OGU'&-%1LB.r?8rrL"W!!'V\!!!"M.S#L?q`k)[+o_NA6\Yj]ndluE6\RX%aA=&[s$Q`,1/u=^IE55.6\Pqka?q!=;#gRqruqD=LC=pgs$MJ;6\c!h.WhUVLC/I.%isq"FJqS,TgFMA*@bTus3RH+s+^mqqG8:16QJ3]kRSCh<9R/6%X%!>LCP%G<9X?9L]0Yp#otp'kei&\rF*SM3_\0[LC4bV9\@^#_@#FE@Dda-*@A.$6Q[XsQpZUa#nAY0N^SpKrt"Z"+[8AnO<5t5LC+\UA>hj:lHk.\6\Pp^1=V(C<9TF;6A>delGJ8b'/F[.%iOXCIAehC6\Pg]3`P<>Tb!u.6A5g_3`O0fLC=nQe;"GI3ohGNL'\ao6\PjFL'`8Fnk`b<2mfSmrm5)D<8S"H@/ebFCDd"HTu0^j%21d]Tu./)(6%[T-Q/.Vp-XTIF9nP/Ur^rE`K/"<5K%Pi4Tm:j&2VC0#^oV2"@BUANebtoa[oh5Nuu6h\.T(!$Nfi%)+R%Z8/#5;&Q019@e.[:E2\j,69uSVH!!p8)MOm4kt+s&,XPA!*ta2m5TsOfcqp$;1N[lh!Abu8K`L(VPQq9lf!*OE1'ra:4TqkUaoKuHP=t7Wf@j@hDe!'uRal`=:4g&O7K97aja5])XkW3N=^WB7`mC"h&tJ.JRO:TSeGscLNF":pBBDBR7i<htpDn2ATlpimTeAgPZ<g6E1L[H9HBWO+<su:s25$K1W#.*:kEuE$g"@S?R=f>d_=!`V*Z%\-65%6XZg&42/>7TB_k!M`$[#W-e"q%%=LU-:'/rSf.'&CHED%&VNgX%sW#J!"`CPN:@8(4cU.*mM(0AHd)iLGak?SM6(A%@gP>fl">,5#p*g<a(DeceIW"ij"7LSjU@Sk;a;l>A&UD0IT:,("hWA&'dIbGu4c&IWKOr@=6"3nl=R?Buc+hiab'8+56OZ8f>&ThG.dH+?IO[4kEGV$'e%1<gQKd8HC&Pal$`]@PFkUq1MP%9iGM1I)r"3i*5UZ<KG,YVI-UFBdmNM=&U+cg*q*!E"-rd8E)D+%&"KWpnE&R.G9gh+.%)FPK:ch=$,Re"8anHPP/PYcc*kXBdN=\p`d]4NtFcqGkH`;J+5A"?(@EJkj+R:_Ab-D1X,\79-*A^8T.g"B4kDmGD@-s+5Mq=$Yuf1Sg7@qtrhFC]LUGu<*`&XnP7Ql5FY.$4V&ct"s]<e?tL`aM^e+IX/O`'dGE-nLdb)8T%-^o]t#.FYTGWY5t6X,t;\&=(YlP145uof?L78VEsi'.nNH;,kGH=Ka#9B.A47![ZD#bAMD6"Zkb.M*M3\[\PNDi4'YtFSrCLSQ]ke$kKbW7luHa.\0m)+MGh?B15fo`gE7"T?]0jNod@_[")765L-U4p%OUlM%,*TFLh(PSH>RN%OR@./">)UEPtdQAm7<*h+XN9)5Whs8qr]g@>Mk?R[^.1!<uu2R1b(MRA2ODDA,jW(ei>OA7u*#(F%:N<tRNR>+HuJ^ihN7W$E,#=tYJ;s%#W[RTT!E$9)?2e#Y0fh(U]paTS,>8V#2W,_0M6?o/1'P0/'I.aF;+R>P=m,,p[q19jTAPnH\%KQ,_"hL0H;Waq26AensrS-I&V&O@kDcm6(A@RRb`P$:LD2];^=6QJU0D'<nR@"uKcQT&/_FNHuI,[gt:;Fr\p;#,2ZF6GGp2Edn`H4hs$6n+J7pX-=5jP67N#nrMY,I?(N-;[S^<JV2UM(t?k;NBj#'9f.';l"]0`(Ybj47,a=_(n$qK"498R@@c!OBh!+M'+2`ab"L=L.hpW``*Y'_*Z=c+em1p((_[RJfA\a$18G".2%BZUJ#\h7LCP1.@$i(%7Qr%UCfEk+pf*=M\7`\7<?Qn(l/h>JIldQ<6,a2"p(8T"[]t01DOQE/9->7Lf&8_)o\IQ!PU6sBcN<HT..&.E[e](PL&7$4MTI$]=e0$31ui6:8/MB>Y_o.YI1JqdC2O\L5B,0Yca6Ij$l,5RH?FRU"7o$n"d\>m2B,RMX'XJ?dN,_!:JLfg"<cA;*9:hKl`$I0A`^?K*SBT!\D_ufaD*TMl'LtfdUkn!_Ok@cY89]or2D^$:1Q1Qb'*I;udN)WQ@c0Y0WSr9VKlW!@Uiona<Q?R=HKSd[DXr"IK=9$(Y$K*K<D<iIG#6Q%>s6P3PB6%[eO8-3,?+C-&0eOQo*.YX#'6+]BYJl9M6!+:p:s!h#eS&Y^^$:T!XZ3Ca-S=sHrkbtMM3WZT:r;<"U#9VubIRA-Zt0o8\"ROY>k/Q&N_X;RV`81.N/!0eHH6m*+-#XUobWA$Y0Potm_La3N5&-7GT'gdRj8J"9X+qTPU@KoF;8eN<N64a`[h#\c,Knr8b8;.Te#cSN68rtMg6n/EbUfn$Ac--HU[!djhOou=%Jj9Sb5Y)W@9]:LqQ-j_oB+e1Go.<TNDfJ^PS2bil]+L](5X5k]!`?pe8.Zpe5_o[XL]Bh2YUqeXhGE+h'EV]X-FWX:[Wl'hR_-*r(e@D<mJqHc4Zh;b>dMDo]gDN[VO7+$h0`LVk8(gXs-DtP)/$stgq50B@He!fFXGd*AJ>`0<!s9=5p-f.4;tc9[1J['>pnN@V$F'deKhPKnn;UtN2)sG03I"qcr@]qkrTY6fs6mF_u&KYqeqRqH@pWNRdA_HLQ_i)DVJffHh/P?m@-4XIl)[QVK1is?pAZdfkjTO]@$=DXt@,1mCl+oQ&:^U\*Oq#C1HSW6;obHIJ_9uR:%.AP"EJj3Z1<t^f4t6A<MXWLA#LrWZ)tJF?m>iR1%:mSQr[7k8B*VN2ug^mMR>/TFL6C)elmf`2>&7?"(LK;Q3pMgSB_/+:]\+Jo7TKF.kp"j`24b!;d+S%KUf>m*,;>G8[A<Ulq!.=%/AsUdC0B*["I79^tKM$`PTY5Y1Q:a:oMf;NN@KV$*)pRr>c[?Tr(3CY-K>@uQc/5hL>#i7^KW6m>ZK[/ZZ1kl[4]);$0'%I'CC10ZeE)g8V-2Rc`Fapf.D(L2>rA*0*IVAbb9?iTu)X04R4=!Jc(Kj2EJ7;eFQU[=am>#3Nm?n/[_<XUWZ<$3AJBk,e0`m>qCTG'q0]UtQb<C2Lt.eFsDLlgPZ&?@:DRj\RTJk46n-qOt:bU?%p`'kQ;j:W&U-;c+HJ@J!5#YIPmEQXe<8MnP"10RDj-n'a8gmnMh,g)Yp7@=`*-q\/*1C4?AOoQY'Kckn_fd)op3R(7["QdMU&kt*g_GO&E8'CtW$:.3P.N5jpg8@C?H_N$HCphqtD,nI;A!P1!,\n2IhmoeR"Z,b<6W\W?`0)f/&r8:=<?jS"*r<bK?8FZUn$REPnK?8^dEOt?9WHj%ZG#5J"k32\IT<\PFcjr)eHk<ujLm<U?QU'<7Hk3/i;jDB8=j"VY!%@$)63G8g0U'=\Nir:=1H?DL?&aeiMOdr)qMDKZ\`Q-_F2p5a$=Tsn`7doB%7\2!]HjR$E=4;VWu)s;r-lb]'&2JZeJQO2!9J>>c6?/d]7,^H4$-ES=)HU`O[0P*j8'Ko<(Yq/$;#gL?hW<EJn+LFXY1bPP=_'Gj7`DfW7BRHK=S?l*f+MDs-WJ83(^9@rF7F`bac5PP\NrcH34PA^_N4p+4Bg:@.VW4Be#o2:]/Td^iu:aGn*d<8)rl_FRIQ>;EQqp4U6'0Q`9%\oIjG]IS#p)gGf8e=YmWI-ImjRkSc8).hCClHV^4NpYW3EdMHil8=oGSWR57habja8[sj<^%FSR`7qS5GFq)YcF:kN@spHtB@FG2hU35n43^D!@q0.g;%S%-Ybiib#`'s"eC=3.ij<d4o`LDF(o#RJ7:!HtC!A,JqtYEk\MM^"a7rt60,PblnPOJ[_Ql=I[=!EaVY.(X&f\T33$]H_HsTUE\[6U7,NGBW6&8;Gc:q+=f<nl3&m]NndQ=c$@.1X*>b<%KX)UUqD8jsrbehpk._$>H?9D`j)0&"ohIO5N(\\oZ^b`XdJ<-.^':3RF`b!c'jE\AIF*N!`)to]YRL=KDn*@YBh9JePALC48lHlgnkq\puL);5;R&Wq1_FU]1BC=SR+'[KhHIBF:H-(_+Dtdgl;eT\\00Xd\c#fQ85l\I`$CsL&S%RH3D><Ih`nh/QiTfs,Wtt>IHWm"^jY\j*4k+dVQ?-CKG@YK,4)`%-ZW:qD#=3-@MFI]?%U./He]qq8?;.Ft>HkVCP9mV(D#1kb]IPq54@9eQS\`kue7f_(EFJLG2tQB-?#*5CGO<1Rb%CCTD"m_pK@AFZF8l.@g9TYLjSGDpZDm!/m46L$\:U6[A6Cm8/e93o"^/u_8BhU\*OI<Mr0^0'c$%E)/e?qr;o@$QIm!2Jgh/Pt7[rC?Q?4uI3IGC]Z6lrY\7Lm_]YdM+"4N!NeI5kC%a?F)'!oNP$8)d@YXW"T0e6jk%kTeWAaApdO]bbEAl8cP<b9iF4FP?5;-dU:fA,tUTgfGE'TGYL%<NI-X"1IJalX%1Q*!0":*hf1=^DNeXK,ij&ZQ`5`lolCWq(=MA0@FLe:n2qF)^jkqlWKunaPhM%]?lp'A)&?7Al\??<cK+m'[J`2V1K*X9>)[7tR-S"j&6l6pd,-<MrQI>Z`<QS\SaA(N]Gc`\ib3EaB2YZY<41frV<Vqm&kX6fsW]jgF>7qc^+@l;2okkd5-40o_<eWD7sO6Np,ZP0n!=_l6k?.smG^=RWNdbL/L6ibhceTbaTfR%-O#.WdEe3I9+1!TSD+B$*UGC/)E(4)`VE\c.J-YM*:=\gh7X@GfpgF"WnXfg'l2_6^ahfn<_$fqS/*aA#\Y^KsSPJrin59rVQi&^Z]0!*$u*rEJ.?"PBnXH\9b+UEL4^U[[&,-F,AVgal024I!nRn[c,WqU2DWhS&lf@q;>jH"FjI7>4]pcse/^"AQa\flcW?hO@TN](E@Wab=eS*$6Us+rDT1LVW#]d5pOS)qQI<L,;r^N7O4Q=su6tUBt=S:,l`e6dTbr"RK@Foq'iZK+jP^.*KZ;W'$bMmao]rD*hkfkh4\J`/8r]M8B#Le2LX&p*U2@N@m<Am,YG<BOGL!_S\`R?1(d7les8c8&1d4m8#t2npK5f`*K,CPaoM#31_9dQ5jpt#Hu;RC1##`BrhRp<H63cT@5cLjnoE:5@J0[2G>OE^SmZ$/)1+k&=]3tm,:W`j&Ok-?+HmLl7s9C=EP_d`sXiB'#a%/N)V:0fkk?:h56Br.;Aq8#q!K#-Uu2`bUkN$JqKj[)1k=U!Ye4"J6c\2''KJ68*L]i_2q.o6:;rL7]HQAT/#;eSAkbmF1$jn[O+<g!2hW(_]l=_3'1&)6uY2cJjHCXUe6=heQkKd(eBo8YU0AbWP"QsAL2Gb(q^tD&0jM0N1er@UL?5Y`QX?,DGZ'm<qr<rLbqOX,qj\4<9`B-A.%M[,>s6`8<rTLi(`d's7F'Tqd+aHRlgW.9-8ZWI:'PN_0b&=g8!!Oq8#!2IcSHY5Q8V45C^^hrGUP@h[;)cF29XCJ+,ho^#Oa+;MHJ!6E9bQE2luA'sX`)l_Z/3b_W.C@:JUaQ`BK0UoHSks3JIVd6$cCmbT0!+1^\lfp?'Yl`"O3n`8GC]^VE"mX4u\T0N5(Olubja$0=\?U"G.:VZVW(S?3@OY>Pbg/m,k3r&X=0E0.UhtrRjdjZ/`ooTdAp&#Jq]]YJS5OmD'H1TuVmX":/?b5uf^\#b1:HX*%H/tY04E]icYEFD4+92,j^V9SP?aigb00O^Wq]G^\b6j!-Ie`#[++4'un%A-s56"u>n`33TrpB`3c``E-kEBiAopO,io<1r<p$Rcoq`]>uTmn2sj4!Jso)%i;H?8YB:H\L/8+*uZaa\U'DuTP&SKIcbH_5WNTa)[Olh+.l%pqMclJ!t>oudknplPefHJlmm_@qFh\DI//'@5P0d_jtPqm!%`rq&>qqonYm4Fc6iMRu*`\9R-,TDmb)O+7%hcTUi.HnFjnIsiS+ne(bf)1LOKH/oL.F<*G`a'JQ,?ekPS7uoe,eX)`N5Q0f:+*bA\:A"C\h"Ws/I.D@Ke^6W^XWB7D0+3M]@q^n#D<CM6n[f<Z@"6>e=tN.BI3,:kE3cZ@kA*3GWt/tATbpDur,(HFFfKhIP)[Vi1?CF2Rn<jV[o5;Zg'K%(&HeE1,Y1VJ?AYjRTh>GOOsgC9i;uViGkm$AK[*e)kKf\'d-pK)Wk83,UMbTHM5nkrX7rLp5Sqi2_meE8n<NX8+8Y'ar8,K.*#s&lE%D>ngBc./9Cig4guWIc);nU.)?I*iSog7VUFm[`$2MU>\PsUJkd/ZB!kp;gI-o,)^Rt-sYBa$h57t4e"1o2F3otkhlr*CWj3MCZ_"XH/eE`MA^>Z(g7(=TXE&<#J^GFT,?\SATFf).-l+c"X*_@E3.mJ+9pDe\G\[Wj]*>=ssAGn92Lpt.k*:r(#oAS2<i,_24pO3#cr-_Imm'g=qdjH2IpgP0644t8h5Ec$6UX/pq?*Aq8X4I0WJ&[LUI&ug"H1?O]^%V,s^AUNaV(Xs$R3"E#3I^q=hL+h3QQL\L8FjmhDo8qY94,7(kfXO$jK\aRf:W":nk^B6r5Jh/dS*0Frn'`hr9N#Pou0-Y'L)6^s8?-sd(LMoCH8VJ7c"j-;3`m;4SahPr:$ohhk-"0hA->j@.mQ>o]'#oSp^@#7t87%ld^4-UQ^17qrQ/\rn>\Iq3A^D`ub-!,KZ)=q)S>8D;h$e?`q)Dl?rWq*TJg1H1h'lI>e$iDa'Wo0P'+R^U0>V@6]"7V4[e)hKn@_59\q5?X%dORFg:F"TQ[f(\bL)Sc<9j<\u8a#mn?;hkK&YS_qUgNA?$*Fa)AcQFI<J<>?I$s78PSeJDQ"l=FM*0Sg!aqTPE>s7jA/oY:DQ&^'W,a7`F-cP-7Tn,1E`;PAU"m9H=VfGECnV0kUI\aeK7IjMSZi8<B``%@k$qit-gZjE,^AdHO-Ok!ck:f/H&,QX'7hQe\kf*A^\e*)Yh)Fk_jP]U]u/CNU#l13Jj&E?o+70AZ<eab%7eI+LkYe)+\)t%X@htqs-QoV-ZiV6H'7t;]5q6aUTqt#]mWY8$p3YQYBO*#Bu#FYj9KqP9kX>0#=M;:5T,@NQ#"Q3@_l%KGT?^Q]YJjBD&p3=)V<G/`N:r1MslIJM<F5\!,"jMQ)i%W9bbLhb+IPX-\bJbS(CMXP)0#/q!JH*Pe+]K)gR@+&&1EfGH'@0hhI2&n/<@MtVP9_QB&_/ku1+*f/QHsBG;SuRABTgY_URFJVoKPt+7a'Tefc2IriAMA@NOu'M5A,K,Dm/q_)Y\aST;8hP5^gt5b[5)!oOS[f,H(Ku$"0[q"75tQB(<nugn"CqHM^pL:aWQJdt=eW3E`%E$"NR0-Ic_7dXK(,Vt</_,&n8Ts4e$3-t+8nh7#WLS%3mm0>@IW2gO/%I963Tl`\#-L)44m9CXsDMuN&\QuM&Z57^!%KpIV+oHeM>Zhg8L.hVQBhHpZP`pY@5-GCd>d<Y)"q!H;C`p^mR@J2&pd>N5rW>>L_<Bp;sJ+-qT#l.8JE&';$s!(3$B<!.:2V</eoDeU[UPD#f5hU)ShuA`t5!kQ<U?iE*=)!gt86Meg,k7Z0qp,DhSh3O_#u(=cY/J"($N,RR!9F.m]O=T6lQlE&+!`ao-*;:fUBH&*b%9\A+Q868!"MVjaWLZh&5o2]lJ-_mao86>/:9rMor%F$$jls+FXKu`_<i-/4I_phMib;<(M1tCF^2^T'%ZrKS@^:I(m5HK_e!0JG[@jC(n7S4/6U+Y/7g7o;2]c.n^-NaC)q/-+&4ie>r/dRCJgWs]uc&)"o%BG1lXPkN'pPdP,b@tba:H<8C^c0*hgQN9/l>P$2u@iJCP26r.g.&^tipXeeK8$_Jek.i,1`%&!`TV(Hq50!JZaSpA[=FG^rZE$`q^V4-,'bhr"3t)i1MHoN0)`_l)>\SQ%"/"CNSX<XA^r.MX-%+#Ah\lJ-j)8>Sr@5JH<3(Q&aYo-!doqS\#Y@bT*@o?_0\GfSnAqnt&^+^*?)dhFRcCF?MG9?j-qZ<V^q-M#R'*J6#AX-8Jte"kjT\iJW42PO2b8lqiI4Sa1.n4o]B&qJYeQq]53V+-[RnLeG"]!;#f\Xc^iJ,1?X<N5s$5HVHVNU/3FMQ&=@SkP\fA`@K\lcD;,DgkVDci?]>$AjUi;1Mm1Q%`*Bs%Yg(&<f(=B'Z0&PN$`aSF:mncfk)+0u+I"$J*?OaeR:`r73GQk-Tdffs9C#,C\>FFC/60QVXmL6_\=f7M?l6hELY?GlFf>Sk`)oO#5knnsDJA*k-1HgX>4+g'K).ejFr_MtkWW92R/OgmS)3YR&#A\'OsmJObrm<N/9':!<R6r;B^r/U^6>qVtd5J#2k:huD"bnq3;:=P>sm^7`<PAX9V+X\'T_%:c4mVYd-V:%8Hd[757m&Ba]O$IJ0Y5:*T0;*FNhpgRHXGO.!^+2YQrg&Kjf2T+FnDJm/dK>4HE_[#`SR$VOHG;jg0Rr/aXB1QSB'(!p>6J[1VdV"a&\%a/s-B-hbqhDaSPnsDhrRB>_]\dK(42c<h[p*!e1EhA+-<72o'3mG3lB2iT2[3,JXV;=jQ&3'e,CKI7n.0G*YET3aB*:HW5@'"]dpKU5;^PC=`b-(lYJ)^e-0`X!a.6C<85Ra%H(`!%B&DlJK)cmb`S:kn_t&F2=t*/POYq_bi="^4lW8S^7'SDoP=>?+\OjQrQ0qh*2Vq4l."E?jR.X]%&lXM`&XjcCdH+LsX)d8+(FF`)Wn(T<rlfKl91Ds@Wdgc;XR^e;cXsXl<;6Al0heM'gZ_#=5IV1/1I^&?HBGB0e[msP8h0KO$#2s,UfsYm:JC=]qCMlUKFZ8(BSsccfm"$'M[-^LVU^$>h/'dJh11>:$TbUB6Xm83KtC!g=><gt79)ncn4':ZVH%.qd[qW1al`lKQAYi:8lG7u7N-f=Qe\'rKa[R+dOEU9e<$Tr\jXh&HMrWc/7s*M]]MHG?I`V3.`o8*)DTm23q'P>7+(\F,c(K'qJN=A](\nc]l6:P^a_3K;U^4"SrKF#X!sD:,\T!7(7aEmdL3t9ouJi+le(I!-esssqV_!^ocCEFWF6aR4Occ3UuYGC/3"A#g>eFF._N<f2:SkuUtK"K\f3IRP(jC)>TpX'VWK4fLnl(s(6.abBt5]^!/3[k05%Vhh:V@f-hMW=FM8:KWQKOYpXQ2b'@7D70j$at1<'$N;iU;a5&S3uhKLqDeF[j.T"<N,)4.&EPe-dI`5/TZe,$C=(o&R[$g4@*GV&L-(qXAjc`>+HqXUf4`miHr1t:l,bqMp,F0d8=i3!Ns*KjC@j8;&+XA#s\EO]gThs<YR[VkD'1=(QBL7UtJYXVtd+'KL`Br"=DJ*YM%"a4eL%_'.C:*3gt(cl0_6^Pg]B,R'>TF2?Qe\7J(-GVjq2C,`llGAjQKA+u@L.OXkVCWGsW@Bb_=Pl"&/;][9iX*X?kHF0R)iH!3#Tn7X7+W-r].GPrgsY"+\M53p1h$S,bhUI"JJV$g5*UE+OBFb_XPU:o2Gij,-\-Vfj7M],F[_uA'?s9?4l16\X5:,HWV3e?8RO,tCN+M,'qBdc,",`Y(QN9U=)6'#$Pk=2+*5*hG7>g3GFjN_QRsoaVdkn\^[d9,,[o`4bq)FLAMM*A`+c4](@1A?U5#MOn"`BF_Qr=2Qu%Z&7ie%0MN)SsqN.MJ8RV1(31JABX&aB2\qu7hD\N:)k0omo8L)7j+5)o2ZsClLD*P\`iO*LZ]@$eTh#=GkAKmmp[18)SE\UXE]KT>#>%2HtmZA-_lW'jAMK#L0Fg0O:*]tm97:!o,Pf1$&/*$'GH^FF@)n4FgK<;uNR'ujt\h\[Y#g>2r]';*KC>dV"pp_?cgSmbRDdmO;qbK6JW8qc0/r"R/\u2B(IB9RYNLG8r=s&AIRO*P=LC8:OB:aW[W*n#3!&*LokIHt5qIFm<0u8JB4kcK>UE9A:2ja0</g$2P$'!q\\UUDO8dXtP5B'e/"AdliDTiA_JXmrd0IF.6fa3,T5kc2NNJ3(F-4\Yn7@IUeh_$*B2Oja^il.I*os!1<Eb8Xf,o;5I/;g.h?DU51'hQ$cB&fnFKr$Wc&4mF""IP]7Y@1%]4N_-/0UJeCh%lkp])V&/AZU#C&rP-0_^l+N;>/7JFR.Am2YY/]p-kfMD3#CAE[d>qbC*P+dr16e`Ma3;?I2^0SX9T;Rh1nO[GJ&lR@+m!Q>13aaDA/I(1Ejp<+gVSV_d,mc/lqMHI)!n;%m"d'[/[m=-QJ;(ug"$hq_Y.-f,pH'?7aH72cLb*,9X-cKO;1o\`iO;oq;BPQYku/Qa8#iN91M4rQb_5FGr/da1f+'RX(.A&H7R**nfDVVO%i],%;*<\Y3adJZ/u>tKPCLVNc>9-=2&AbqQ=l<-i>SoN[bfN7dEf5\&U=gPh#-NZXjZt?Nm0:bVg@PEP<?#-j/c$3$"B^iI[e(F&,gMkDq?3+pOj4:Wu]#dd>EZ*VkQ@Nsmd5bu5AQ"$<eDAK\7uoBI\D:ck^&+]#NTuo$YIbQ-@QeBire.1>J_AFTf;7S!LOI)l>4U%;Qmi<Ne7B;1!N+R#^h,L"fea1Q?<1FB((O]@&LI/*C"\[#m2eV;-^V01>=V36V.)!FV%:PW14S3Nm*9h+H/bq<EH8.W]ECpGJ[?:b[ar%W`pHqn0[0W1h:&hZmdO95O.CF\VA2u(f]n"sI5*2Hr;hqVV\\pVa*N-79Iu5\\i[5G:[O_)-m.m54(4+Pa06.S]?XSA=SMrs0.FNqUfQ:%)&/[cF/@,D]=7,]7P>)b*iKO/om%=&Pd#C9;"kStjp/mMfIDg\*_^'^cU_ZL;=#pG9@mpcm&?93SnuH@A#Ersa2YFYd+m?H^+FsD^uYQpnElKNMTtS^qhF+g9`[KoNi$kYWB?.#o-\mNp28F)V0aCfb7fY_n9D"_n&!cVHhO:Up9s@8hmI[[c99;>,=;r9foHr8D)Gq56C&L)]gZ(NcZ,HFm,Ko<]@<=:#&DN4K9rZ&2OlT#)Ge7*O^W9+EdR?*Y0pMnS'Kk-l9Qsb^raEgOh<<i]=WAB=jbi2qg3'U)!"M6>$bPmZDGe4Y@<Y([*4]=2`'p(fY+]?0!_Uu4JpRHj6Hbcf:4g=F)#c6%)u#&>H*pVX[uujeW\k("YkrN=i+P4Di5WF!$O]u,M=tc7df)\JRSFRSedEqP:=;2HhN%Cm1;;>Hn;Y^fR=OUhOB%^C@KWQG.k_U6#9;&^)[aO(2iL$+d6k^hk#/"gAi4M^9^K-PQ7%ffr*Z[?sLIh!,VJh6#l<dG\p?H%Ni>LP@Bj/?Ci1OeT;:9rL3$k#7gg,8au:9I5GpCZKpgpgmG"L?goL[h(I(Jg`XE'D?6nI^O)G[pJ'02r;oJ02KOi\5W3>G;:2PZ4h_il1tK#]lrL/WY\UbnNgk@[EGK'e"64rL%08qAMEubJ'"(5q3m-71P14="GM!sFHLUD^b9mg<PO+SS\A$!W2ei#;8aT(7h/b7!Vo6hLP3D&T`VR<j+oo'!s3:'\mB6]J2e`PBm`%onX$#k;UR'o^eMeCOZ)f0&aW"ts>GGZW89r:m%37=m*Sd4P(#[II%D^H2lRkN2A]o2t2tj:'SEjFlnW6TP&Xa36]^)e@jec;gXYBOo'ipm>RP#_0Fhp?E>KXA6TSRGKB,s+2F!^2f:tP%Gpt3EIcfKe3>ti[aOX9>ArZ+S^-*>!\[L]^&G8FiIar>Wq?pjpTR:&l/f^`M>Ooo1>rS938RQ^%D!c[E5_*nI5McD&5Q2%S&Z0-(BKZ>GDe0,hDJ;K:5!e\_#g#:KGDV;PeC]Uu_Gi2t+lV_`%C":=4.b"572i+A2TkaahM1C9[$c>]iQ=$_C@[s"PTnXh<1/DFo8%rTFCkpcRk4[\!,2p*5lqm.]?d4CX12s^cek(5=Dp/l[#G%@XW')tQA1VLupAMSui</t!l'VTX[d*Ln]6mN7jj\'gRDU5XRkb5MDE:;'UM%[Xkg#41k/lS*CC=PA,g2HTOJI;:!+,2:p-_pD;U@Ol!mD+h6kr$r=^<?d`l+Mr"@;SRUAk]bl?FY^Quii2,ls=N$eBXPU)6g3+UTo)d"6?(+b5=N1lj^-YDQ[b9qYIVj*aBqd,d2mG^X$$"u0D1<GQDe@^K2)Un`<XJ*Pt2:$8^@#'f!D70!MsE,D@UIC]Ec$Rf7;[^8]h5tOau:ZlC<S3JZC&`E>7`q.r<Nuo.(Y!+OIJ5ufg2$`X(4]c8$MN4jlXaQ$.QBEo>-G/m0kL@Z'C:V*-d-+cT)sS&@e9)SAbMd2QO+Gmke(TRi`;\;lpWCHbbrVuN0%&\H+fjHp=VbMf*Zq^0"")#e?khP!T9j@J(pf-ER-EBmW@enSWnOo;fqEebgYQ<dK9m"VTRjq%qh8<G`(\c)W%mu1UfF8N9i`9-]*`26-mo#31RE6=e1E9u;()OjNTlJ=<OKc^.qBM?;%R5n?#1Pn>\VXj=BI'HF_s*J^Q.iR"dtSk*@#(IL]KCR=7\m@/;j^g)2b.%FpJT!fp2,_DA!$b@;[b9J;O"-^oCRd+0rS,eEm=4p=PO\HNd_#\7KTj`tX-@hRocPf"?I_TEI(t3C^i1#Io)B[!u!C\h:4%m2@M6h"?@T97'_f.[7Fqg[>.)7C:tQ\m^u<3*e8q)dj9eLoto?eUUj+)dP`Sc+_.[Sm&0c*bst4hl;O+A(LDOKPoY5%.2B`J.$P9i2-bEoJaZ-]-1+T\0UZb<N"5([3llA/pIikL"ZY$+m,keoUh?G->5\H)UHY[;D.J1\Hre$"g)!,Dg'BB)S7ri>q9q&;`5$<3*toWBmJDd_s-5P9R-#E@`o[\\I<_0KZY,*1g9UHA6Lst]0"N$<nQPHpPG`;]qs57WL*>&108A"8ip\UZ4hRSq[/#*m4p8PJM.HaS#DS]n[%JeA[S.,Th]B#`ssr'l]Q;`j>2tnFSa5E:Cgt+^MLINab@Fj=a=>^3]eMX:ZY_82][*9pVt\)gIlH3U-G1!DOEp3r!VnF1\.V#)p95'>S?_rW?Z$L-:pQGc>7e>K!_JbUg8.E/X<K+>C5=BVZWH*.3t>O>g.Q8>#[8cUlOEB9oBioF/?]ner"kBi^[1[jYO!e7HG=>]hQ2\aXp)*pfQa@qGFN,3I,46s)@eo/^]qCZ^<L+HV^`PC6M*+53&?1Vgl'md@o*%aMbg^R4WMA?^pC0\D2peWBN-i.r<IeB@m$l0E.=%IT"&L`*/UNP_0?c9q5P`f+]'goHec4K>V>GXX+sCGLe$GcB`BN<QiVc4s[7r0d51hiN+6A4-uOXnE`C#$[8KfL?J:^Q2)b`s!ft:CibmGp=\T*l`<t^ARCC@1_T#^H191RBl5:Ob#n@J9l!LGQmg:;nns@>)iMasb_r?pMm>7a-Z-T"/=%Zc3Sj5"a#"D^<3,5^cUs^[c)s0Kp6iO^F0'.:DX,A_9R:84S"67cLT`UkQdZg:2KhdT%sl\o3>$2A3G)R)\=fFN%jh\8`ROIBXg^Nc'm83@NO?DL3G$95MVm@;itp=s=eBX[YgJEQXdL`7:$ArrQFcVR;i6m15LnfQY/,I"RB3$oBnrpdd<KH_@rZRqAu(V"bMeP[ced9MJ_UreS43Ys1s):D3+K<]RbU9@YBO$Vhc87[-qEPP6IV;T/@p1re8$eoeqe3NF/uWdLoVBZ"F6)J`)?\TSQ)(sEE;sf1HbY"27]L+B,>;g=jR#?o<KkK6_5$T*b]gd"P?AU&@[ce.)cj&N:`P.i(QI19kkGtNZgX"[dSYH1Y6f,S*L]5O5SlTk4L(<o^jq.hELT3!r]==])bh=1 bi=nil cd,ce=-25782,-25782 else bk=nil cc[3]=(cc[3]+1)%5 cd,ce=63453,63453 end end else if ce~=-46830 then u=q and q[(function(c,bi)local bo local bp={}local bq={}bq[1]=4 bq[2]=4 bq[3]=2 local cf=46257 local cg=0 repeat if cf<=28248 then bo=bp[13]for ch=1,#c do local c=e(c,ch)bo[ch]=o(d(37,99),(c-(bi+ch))%256)end return i(bo)else if cf~=46257 then break else bp[13]={}bq[2]=(bq[2]+1)%5 cg,cf=28248,28248 end end until cf==28878 end)("\175\198\190\194",76)]or function(c,bi)local bo local bp={}local bp={}bp[1]=1 bp[2]=3 bp[3]=2 local bp=70050 local bq=0 repeat if bp>=22214 then if bp==22214 then break else bo=0 for bq=0,31 do local cf=c/2+bi/2 if cf~=j(cf)then bo=bo+2^bq;end;c=j(c/2);bi=j(bi/2);end;bp=-43019 end else return bo;end until bp==22214 end v=q and q[(function(c,bi)local bo local bp={}local bq={}local function cf(cg,ch)bq[ch]=cg;return bq[ch]end local cg={}cg[1]=4 cg[2]=2 cg[3]=0 local ch=32972 local ci=0 repeat if ch<=-39261 then if ch~=-39261 then ci,ch=bp[15],bp[15]else bo=bp[14]for cj=1,#c do local c=e(c,cj)bo[cj]=o(d(37,99),(c-(bi+cj))%256)end return i(bo)end else if ch==-11942 then break else bp[14]={}cg[2]=(cg[2]+1)%5 bp[15]=bq[32972+58039]or cf(-39261,32972+58039)ci,ch=-41595,-41595 end end until ch==-11942 end)("\115\129\133",16)]or function(c,bi)local bo,bp local bq={}local cf={}local function cg(ch,ci)cf[ci]=ch;return cf[ci]end local ch={}ch[1]=2 ch[2]=3 ch[3]=0 local ch=88400 local ci=0 repeat if ch<=53526 then if ch<=-37282 then return bo;else ch=bq[18]end else if ch==75308 then break else bo=0 bp=1 while c>0 or bi>0 do local ci,cj local ck={}local cl={}local function cm(cn,co)cl[co]=cn;return cl[co]end local cn={}cn[1]=3 cn[2]=4 cn[3]=0 local cn=0 local cn=32655 repeat if cn<=32655 then if cn<=-12721 then break else ci=c%2 cj=bi%2 if ci==1 or cj==1 then bo=bo+bp;end;ck[16]=cl[32655+151425]or cm(80760,32655+151425)cn=64636 end else if cn<=37777 then cn=ck[17]else if cn<80760 then cn=ck[16]else c=j(c/2)bi=j(bi/2)bp=bp*2 ck[17]=cl[80760+151425]or cm(-12721,80760+151425)cn=37777 end end end until cn==-12721 end;bq[18]=cf[88400+72623]or cg(-37282,88400+72623)ch=53526 end end until ch==75308 end ce=64799 else bs=function(c)local c,bi=e(c,bh,bh+1)bh=bh+2;return((bi*256)+c);end cd=cc[2]~=1 and-27788 or-30348 ce=-30348 end end end end else if ce<=60024 then if ce>=47670 then if ce<=53442 then if ce>=49610 then if ce<=49610 then br=nil cd=cc[1]~=1 and 43588 or 21227 ce=21227 else s=function(c,bi,bo)local bp local bq={}local cf={}local function cg(ch,ci)cf[ci]=ch;return cf[ci]end local ch={}ch[1]=0 ch[2]=1 ch[3]=1 local ch=-27171 local ci=0 repeat if ch<=-38149 then if ch==-38961 then ch=bq[12]else ch=bq[11]end else if ch>=20584 then if ch==20584 then do local ci,cj local ck={}local cl={}local function cm(cn,co)cl[co]=cn;return cl[co]end local cn={}cn[1]=2 cn[2]=3 cn[3]=2 local co=70453 local cp=0 repeat if co<=-28074 then if co>=-31720 then if co<=-31720 then co=ck[10]else if co<-28074 then co=ck[5]else co=ck[9]end end else if co>=-42118 then if co~=-38765 then break else if ci==83430 then return c[bi],c[bi+1],c[bi+2],c[bi+3],c[bi+4],s(c,bi+5,bo)end if ci==22272 then return c[bi],c[bi+1],c[bi+2],c[bi+3],s(c,bi+4,bo)end if ci==51551 then return c[bi],c[bi+1],c[bi+2],s(c,bi+3,bo)end ck[9]=cl[-38765+207211]or cm(82464,-38765+207211)co=-28074 end else if cj==0 and bp>=7 then ci=77168 cj=1 end if cj==0 and bp>=6 then ci=91041 cj=1 end ck[6]=cl[-49806+76140]or cm(-16305,-49806+76140)cp,co=37901,37901 end end else if co<=37901 then if co>=-10677 then if co<=-10677 then co=ck[7]else cp,co=ck[6],ck[6]end else if cj==0 and bp>=5 then ci=83430 cj=1 end if cj==0 and bp>=4 then ci=22272 cj=1 end if cj==0 and bp>=3 then ci=51551 cj=1 end if cj==0 and bp>=2 then ci=48720 cj=1 end cn[3]=(cn[3]+1)%5 ck[7]=cl[-16305+207211]or cm(78735,-16305+207211)co=-10677 end else if co>=78735 then if co<=78735 then if cj==0 then ci=51613 cj=1 end if ci==26278 then return c[bi],c[bi+1],c[bi+2],c[bi+3],c[bi+4],c[bi+5],c[bi+6],c[bi+7],s(c,bi+8,bo)end if ci==77168 then return c[bi],c[bi+1],c[bi+2],c[bi+3],c[bi+4],c[bi+5],c[bi+6],s(c,bi+7,bo)end if ci==91041 then return c[bi],c[bi+1],c[bi+2],c[bi+3],c[bi+4],c[bi+5],s(c,bi+6,bo)end cp=cn[3]~=0 and 82464 or-38765 ck[8]=cl[78735+76140]or cm(-38765,78735+76140)cp,co=53053,53053 else if ci==48720 then return c[bi],c[bi+1],s(c,bi+2,bo)end if ci==51613 then return c[bi],s(c,bi+1,bo)end ck[10]=cl[82464+76140]or cm(-42118,82464+76140)co=-31720 end else if co==53053 then cp,co=ck[8],ck[8]else ci=0 cj=0 if cj==0 and bp>=8 then ci=26278 cj=1 end ck[5]=cl[70453+76140]or cm(-49806,70453+76140)co=-31402 end end end end until co==-42118 end bq[12]=cf[20584+28382]or cg(64788,20584+28382)ch=-38961 else break end else if(bi>bo)then return end bp=bo-bi+1 bq[11]=cf[-27171+28382]or cg(20584,-27171+28382)ch=-38149 end end until ch==64788 end ce=76103 end else by=function(c,bi,bo,...)local bp=(c[669])local bq=c[855]local cf=c[1316]local cf=c[8927]local cg=c[6058]local ch=c[971]return function(...)local c=ba(c[7921])local ci={}local cj={}local ck={}local cl=0 local cm=0 local cn={}local co=0 local cp=k('#',...)-1 local cq=bq+1 local cq,cr=bv(...);local cr={...};local cr=1 local cs=-1 for ct=0,cp do if ct<=bq then c[ct]=cq[ct+1];end;end;local bq,cp while true do bq=bp[cr];cp=bq[4155];if cp>=7 then if cp>=15 then if cp<=23 then if cp<=18 then if cp>=17 then if cp<=17 then local cq,ct,cu=bq[6239],bq[6368],bq[6283]local ct=ch[ct]local cq=c[cq]for cv=1,#ct do if cq==nil then break end cq=cq[cg[ct[cv]]]end c[cu]=cq else local cq=bq[6239]c[cq]=c[cq](c[cq+1],c[cq+2]);end else if cp<16 then local cq=bq[6239]local ct=bq[6368]local ct=ct local cu=cl local ct=cu-ct+1 local cv=ck[ct]c[cq]=cv(t(ck,ct+1,cu))for cq=cu,ct,-1 do ck[cq]=nil end cl=ct-1 else if bq[6283]==70 then c[bq[6239]]=-c[bq[6368]];elseif bq[6283]==127 then bi[bq[6368]][1]=c[bq[6239]]else c[bq[6239]]=-c[bq[6368]];end end end else if cp>=22 then if cp<=22 then c[bq[6239]]=not c[bq[6368]];end else if cp<=20 then if cp<20 then local cq=bq[6368]for ct=1,#cq do local cq=cq[ct]local cq=cg[cq]cl=cl+1 ck[cl]=cq end else local cq=bq[6239]for ct=1,#cq do local cq=c[cq[ct]]cl=cl+1 ck[cl]=cq end end else local cq=bq[6239]local cq=bq[6368]local cq=cq local ct=cl local cq=ct-cq+1 local cu=ck[cq]cu(t(ck,cq+1,ct))for cu=ct,cq,-1 do ck[cu]=nil end cl=cq-1 end end end else if cp>=35 then if cp>=46 then if cp>=58 then if cp<=97 then if cp>=69 then if cp>=80 then if cp>=89 then if cp>=94 then if cp>=96 then if cp==96 then local cq=#bq[6239]for ct=1,cq do c[bq[6239][ct]]=c[bq[6368][ct]];end;else local cq=bq[6239]local ct=ck[cl]ck[cl]=nil cl=cl-1 local cu=ck[cl]ck[cl]=nil cl=cl-1 local ct,cu=cu(ct)do local ct,cu=ct,cu c[cq]=ct c[cq+1]=cu end end else if cp==94 then local cq=cr local ct=bq if ct[6435]==249 then c[ct[6239]]=c[ct[6368]];elseif ct[6435]==157 then c[ct[6239]]=#c[ct[6368]];elseif ct[6435]==266 then c[ct[6239]]=c[ct[6368]]/c[ct[6283]];end local ct=bp[cq+1]if ct[6435]==299 then c[ct[6239]]=cg[ct[6368]];elseif ct[6435]==238 then c[ct[6239]]=c[ct[6368]][c[ct[6283]]];elseif ct[6435]==88 then c[ct[6239]]=c[ct[6368]]+c[ct[6283]];end local ct=bp[cq+2]if ct[6435]==253 then c[ct[6239]]=not c[ct[6368]];elseif ct[6435]==82 then local cu=cf[ct[6368]]local cv=cu[811]local cw=#cv local cx=ba(cw)for cy=1,cw do local cv=cv[cy]local cw=cv[2]local cz=cv[3]if cv[1]==1 then if cz==0 then local cv=c[cw]ci[cw]=cv cx[cy-1]=cv else cx[cy-1]=c[cw]end else local cv=bi[cw]if cz==0 and cv[0]then cv=cv[0][cv[1]]end cx[cy-1]=cv end end c[ct[6239]]=by(cu,cx,bo)else c[ct[6239]]=c[ct[6368]]+c[ct[6283]];end local ct=bp[cq+3]if ct[6435]==110 then c[ct[6239]]=c[ct[6368]]+c[ct[6283]];elseif ct[6435]==129 then c[ct[6239]][c[ct[6368]]]=c[ct[6283]];elseif ct[6435]==213 then c[ct[6239]]=c[ct[6368]];end local ct=bp[cq+4]if ct[6435]==265 then c[ct[6239]]=c[ct[6368]];elseif ct[6435]==47 then c[ct[6239]]=#c[ct[6368]];else c[ct[6239]]=c[ct[6368]]/c[ct[6283]];end local cq=bp[cq+5]if cq[6435]==77 then c[cq[6239]]=c[cq[6368]]*c[cq[6283]];elseif cq[6435]==52 then c[cq[6239]]=cg[cq[6368]];elseif cq[6435]==194 then c[cq[6239]]=c[cq[6368]]/c[cq[6283]];end cr=cr+5 else local cq=cr local ct=bq if ct[6435]==234 then c[ct[6239]]=bo[cg[ct[6368]]];elseif ct[6435]==265 then local cu=ct[6239]local cu=c[cu]cl=cl+1 ck[cl]=cu else local cu=cf[ct[6368]]local cv=cu[811]local cw=#cv local cx=ba(cw)for cy=1,cw do local cv=cv[cy]local cw=cv[2]local cz=cv[3]if cv[1]==1 then if cz==0 then local cv=c[cw]ci[cw]=cv cx[cy-1]=cv else cx[cy-1]=c[cw]end else local cv=bi[cw]if cz==0 and cv[0]then cv=cv[0][cv[1]]end cx[cy-1]=cv end end c[ct[6239]]=by(cu,cx,bo)end local cq=bp[cq+1]if cq[6435]==120 then c[cq[6239]]=c[cq[6368]]/c[cq[6283]];elseif cq[6435]==297 then c[cq[6239]]=cg[cq[6368]];else local ct=cf[cq[6368]]local cu=ct[811]local cv=#cu local cw=ba(cv)for cx=1,cv do local cu=cu[cx]local cv=cu[2]local cy=cu[3]if cu[1]==1 then if cy==0 then local cu=c[cv]ci[cv]=cu cw[cx-1]=cu else cw[cx-1]=c[cv]end else local cu=bi[cv]if cy==0 and cu[0]then cu=cu[0][cu[1]]end cw[cx-1]=cu end end c[cq[6239]]=by(ct,cw,bo)end cr=cr+1 end end else if cp<=91 then if cp>=91 then local cq=bq[6239]local ct=bw(cj,c[cq](t(c,cq+1,bq[6368])))cs=cq+ct-1;for cu=1,ct do c[cq+cu-1]=cj[cu];end;else if cp<90 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]-35),[4155]=bp[c[bq[6435]]][4155]}else c[bq[6368]][c[bq[6239]]]=c[bq[6283]];end end else if cp~=93 then local cq=cr local ct=bq if ct[6435]==275 then c[ct[6239]]=cg[ct[6368]];elseif ct[6435]==147 then bo[cg[ct[6368]]]=c[ct[6239]];else c[ct[6239]]=#c[ct[6368]];end local ct=bp[cq+1]if ct[6435]==280 then local cu=cf[ct[6368]]local cv=cu[811]local cw=#cv local cx=ba(cw)for cy=1,cw do local cv=cv[cy]local cw=cv[2]local cz=cv[3]if cv[1]==1 then if cz==0 then local cv=c[cw]ci[cw]=cv cx[cy-1]=cv else cx[cy-1]=c[cw]end else local cv=bi[cw]if cz==0 and cv[0]then cv=cv[0][cv[1]]end cx[cy-1]=cv end end c[ct[6239]]=by(cu,cx,bo)elseif ct[6435]==159 then bo[cg[ct[6368]]]=c[ct[6239]];else c[ct[6239]]=bo[cg[ct[6368]]];end local cq=bp[cq+2]if cq[6435]==253 then bo[cg[cq[6368]]]=c[cq[6239]];elseif cq[6435]==144 then c[cq[6239]]=cg[cq[6368]];elseif cq[6435]==205 then c[cq[6239]]=c[cq[6368]]/c[cq[6283]];end cr=cr+2 else c[bq[6239]]=by(cf[bq[6368]],nil,bo)end end end else if cp>=84 then if cp<=86 then if cp>=86 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]+1),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else if cp<85 then bp[c[bq[6435]]]={[6239]=(bq[6239]-20),[6368]=(bq[6368]-39),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else local cq=cr local ct=bq if ct[6435]==115 then c[ct[6239]]=bo[cg[ct[6368]]];elseif ct[6435]==152 then c[ct[6239]]=c[ct[6368]]-c[ct[6283]];else bo[cg[ct[6368]]]=c[ct[6239]];end local ct=bp[cq+1]if ct[6435]==239 then c[ct[6239]]=bo[cg[ct[6368]]];elseif ct[6435]==140 then c[ct[6239]]=#c[ct[6368]];else c[ct[6239]]=c[ct[6368]];end local cq=bp[cq+2]if cq[6435]==83 then local ct=cf[cq[6368]]local cu=ct[811]local cv=#cu local cw=ba(cv)for cx=1,cv do local cu=cu[cx]local cv=cu[2]local cy=cu[3]if cu[1]==1 then if cy==0 then local cu=c[cv]ci[cv]=cu cw[cx-1]=cu else cw[cx-1]=c[cv]end else local cu=bi[cv]if cy==0 and cu[0]then cu=cu[0][cu[1]]end cw[cx-1]=cu end end c[cq[6239]]=by(ct,cw,bo)elseif cq[6435]==268 then c[cq[6239]]=c[cq[6368]][c[cq[6283]]];else c[cq[6239]]=cg[cq[6368]];end cr=cr+2 end end else if cp<=87 then bp[c[bq[6435]]]={[6239]=(bq[6239]+23),[6368]=bq[6368],[6283]=(bq[6283]-35),[4155]=bp[c[bq[6435]]][4155]}else local cq=cr local ct=bq if ct[6435]==269 then bo[cg[ct[6368]]]=c[ct[6239]];elseif ct[6435]==54 then c[ct[6239]]=c[ct[6368]]*c[ct[6283]];else c[ct[6239]]=cg[ct[6368]];end local ct=bp[cq+1]if ct[6435]==214 then local cu=cf[ct[6368]]local cv=cu[811]local cw=#cv local cx=ba(cw)for cy=1,cw do local cv=cv[cy]local cw=cv[2]local cz=cv[3]if cv[1]==1 then if cz==0 then local cv=c[cw]ci[cw]=cv cx[cy-1]=cv else cx[cy-1]=c[cw]end else local cv=bi[cw]if cz==0 and cv[0]then cv=cv[0][cv[1]]end cx[cy-1]=cv end end c[ct[6239]]=by(cu,cx,bo)elseif ct[6435]==174 then c[ct[6239]]=c[ct[6368]]+c[ct[6283]];elseif ct[6435]==45 then bo[cg[ct[6368]]]=c[ct[6239]];end local ct=bp[cq+2]if ct[6435]==131 then c[ct[6239]]=not c[ct[6368]];elseif ct[6435]==296 then c[ct[6239]][c[ct[6368]]]=c[ct[6283]];else c[ct[6239]]=bo[cg[ct[6368]]];end local cq=bp[cq+3]if cq[6435]==45 then c[cq[6239]]=#c[cq[6368]];elseif cq[6435]==238 then c[cq[6239]]=cg[cq[6368]];elseif cq[6435]==233 then c[cq[6239]]=not c[cq[6368]];end cr=cr+3 end end else if cp<=81 then if cp<81 then c[bq[6239]]=c[bq[6368]]+c[bq[6283]];else local cq=bq[6239]local ct=ck[cl]ck[cl]=nil cl=cl-1 local ct=bw(cj,ct())cs=cq+ct-1 for cu=1,ct do c[cq+cu-1]=cj[cu]end end else if cp~=83 then local cq=bq[6239]local ct=cl local cu=cm local cv=cu+1 local cw=ck[cv]c[cq]=cw(t(ck,cv+1,ct))for cq=ct,cv,-1 do ck[cq]=nil end cl=cu local cq=cn[co]cn[co]=nil co=co-1 cm=cq or 0 else local cq=bq[6368]local cq=c[cq]cl=cl+1 ck[cl]=cq end end end end else if cp<=73 then if cp<=71 then if cp<=70 then if cp==69 then local cq=cr local ct=bq if ct[6435]==296 then c[ct[6239]]=c[ct[6368]]-c[ct[6283]];elseif ct[6435]==241 then bo[cg[ct[6368]]]=c[ct[6239]];elseif ct[6435]==153 then c[ct[6239]]=bo[cg[ct[6368]]];elseif ct[6435]==134 then local ct=ct[6239]local ct=c[ct]cl=cl+1 ck[cl]=ct end local cq=bp[cq+1]if cq[6435]==209 then c[cq[6239]]=cg[cq[6368]];elseif cq[6435]==219 then c[cq[6239]]=#c[cq[6368]];elseif cq[6435]==102 then c[cq[6239]]=c[cq[6368]]-c[cq[6283]];end cr=cr+1 else local cq=cr local ct=bq if ct[6435]==263 then c[ct[6239]]=c[ct[6368]]/c[ct[6283]];elseif ct[6435]==237 then local cu=ct[6239]local cu=c[cu]cl=cl+1 ck[cl]=cu else c[ct[6239]]=bo[cg[ct[6368]]];end local cq=bp[cq+1]if cq[6435]==138 then c[cq[6239]]=cg[cq[6368]];elseif cq[6435]==131 then c[cq[6239]]=bo[cg[cq[6368]]];elseif cq[6435]==208 then c[cq[6239]]=c[cq[6368]]+c[cq[6283]];end cr=cr+1 end else local cq,ct=bq[6239],bq[6368]local ct=c[ct]c[cq]=ct[1]end else if cp<73 then local cq=cr local ct=bq if ct[6435]==253 then local cu=ct[6239]local cu=c[cu]cl=cl+1 ck[cl]=cu elseif ct[6435]==145 then c[ct[6239]]=#c[ct[6368]];else c[ct[6239]]=c[ct[6368]][c[ct[6283]]];end local cq=bp[cq+1]if cq[6435]==225 then c[cq[6239]]=cg[cq[6368]];elseif cq[6435]==234 then bo[cg[cq[6368]]]=c[cq[6239]];elseif cq[6435]==87 then c[cq[6239]]=c[cq[6368]][c[cq[6283]]];end cr=cr+1 else local cq=cr local ct=bq if ct[6435]==232 then local cu=ct[6239]local cu=c[cu]cl=cl+1 ck[cl]=cu elseif ct[6435]==112 then c[ct[6239]]=bo[cg[ct[6368]]];else c[ct[6239]]=c[ct[6368]][c[ct[6283]]];end local cq=bp[cq+1]if cq[6435]==149 then bo[cg[cq[6368]]]=c[cq[6239]];elseif cq[6435]==70 then c[cq[6239]]=cg[cq[6368]];else c[cq[6239]]=c[cq[6368]]/c[cq[6283]];end cr=cr+1 end end else if cp<=76 then if cp<=75 then if cp==74 then c[bq[6239]]=c[bq[6368]]<c[bq[6283]];else local cq=cr local ct=bq if ct[6435]==174 then c[ct[6239]]=c[ct[6368]]/c[ct[6283]];elseif ct[6435]==217 then c[ct[6239]]=not c[ct[6368]];elseif ct[6435]==258 then c[ct[6239]]=cg[ct[6368]];end local ct=bp[cq+1]if ct[6435]==71 then bo[cg[ct[6368]]]=c[ct[6239]];elseif ct[6435]==251 then c[ct[6239]]=c[ct[6368]][c[ct[6283]]];else local cu=cf[ct[6368]]local cv=cu[811]local cw=#cv local cx=ba(cw)for cy=1,cw do local cv=cv[cy]local cw=cv[2]local cz=cv[3]if cv[1]==1 then if cz==0 then local cv=c[cw]ci[cw]=cv cx[cy-1]=cv else cx[cy-1]=c[cw]end else local cv=bi[cw]if cz==0 and cv[0]then cv=cv[0][cv[1]]end cx[cy-1]=cv end end c[ct[6239]]=by(cu,cx,bo)end local cq=bp[cq+2]if cq[6435]==114 then c[cq[6239]]=cg[cq[6368]];elseif cq[6435]==45 then bo[cg[cq[6368]]]=c[cq[6239]];else c[cq[6239]]=c[cq[6368]];end cr=cr+2 end else local cq=cr local ct=bq if ct[6435]==192 then c[ct[6239]]=cg[ct[6368]];elseif ct[6435]==261 then bo[cg[ct[6368]]]=c[ct[6239]];elseif ct[6435]==123 then local ct=ct[6239]local ct=c[ct]cl=cl+1 ck[cl]=ct end local ct=bp[cq+1]if ct[6435]==216 then c[ct[6239]]=c[ct[6368]]*c[ct[6283]];elseif ct[6435]==141 then local cu=ct[6239]local cu=c[cu]cl=cl+1 ck[cl]=cu else local cu=cf[ct[6368]]local cv=cu[811]local cw=#cv local cx=ba(cw)for cy=1,cw do local cv=cv[cy]local cw=cv[2]local cz=cv[3]if cv[1]==1 then if cz==0 then local cv=c[cw]ci[cw]=cv cx[cy-1]=cv else cx[cy-1]=c[cw]end else local cv=bi[cw]if cz==0 and cv[0]then cv=cv[0][cv[1]]end cx[cy-1]=cv end end c[ct[6239]]=by(cu,cx,bo)end local ct=bp[cq+2]if ct[6435]==47 then c[ct[6239]][c[ct[6368]]]=c[ct[6283]];elseif ct[6435]==75 then c[ct[6239]]=c[ct[6368]][c[ct[6283]]];elseif ct[6435]==147 then c[ct[6239]]=cg[ct[6368]];end local ct=bp[cq+3]if ct[6435]==182 then c[ct[6239]][c[ct[6368]]]=c[ct[6283]];elseif ct[6435]==103 then local cu=cf[ct[6368]]local cv=cu[811]local cw=#cv local cx=ba(cw)for cy=1,cw do local cv=cv[cy]local cw=cv[2]local cz=cv[3]if cv[1]==1 then if cz==0 then local cv=c[cw]ci[cw]=cv cx[cy-1]=cv else cx[cy-1]=c[cw]end else local cv=bi[cw]if cz==0 and cv[0]then cv=cv[0][cv[1]]end cx[cy-1]=cv end end c[ct[6239]]=by(cu,cx,bo)elseif ct[6435]==261 then c[ct[6239]]=c[ct[6368]];end local cq=bp[cq+4]if cq[6435]==159 then c[cq[6239]]=not c[cq[6368]];elseif cq[6435]==240 then c[cq[6239]]=cg[cq[6368]];elseif cq[6435]==50 then c[cq[6239]][c[cq[6368]]]=c[cq[6283]];end cr=cr+4 end else if cp>=79 then local cq,ct=bq[6239],bq[6368]local ct=ch[ct]local cu={}for cv=1,#ct,2 do cu[cg[ct[cv]]]=cg[ct[cv+1]]end c[cq]=cu else if cp~=78 then local cq=cr local ct=bq if ct[6435]==100 then c[ct[6239]]=c[ct[6368]]/c[ct[6283]];elseif ct[6435]==141 then c[ct[6239]]=cg[ct[6368]];else c[ct[6239]]=c[ct[6368]][c[ct[6283]]];end local ct=bp[cq+1]if ct[6435]==136 then bo[cg[ct[6368]]]=c[ct[6239]];elseif ct[6435]==60 then c[ct[6239]]=c[ct[6368]]+c[ct[6283]];else c[ct[6239]]=-c[ct[6368]];end local ct=bp[cq+2]if ct[6435]==145 then c[ct[6239]]=cg[ct[6368]];elseif ct[6435]==262 then c[ct[6239]]=c[ct[6368]]/c[ct[6283]];elseif ct[6435]==89 then c[ct[6239]]=bo[cg[ct[6368]]];end local ct=bp[cq+3]if ct[6435]==195 then c[ct[6239]]=bo[cg[ct[6368]]];elseif ct[6435]==56 then bo[cg[ct[6368]]]=c[ct[6239]];elseif ct[6435]==294 then c[ct[6239]]=cg[ct[6368]];end local cq=bp[cq+4]if cq[6435]==83 then c[cq[6239]]=cg[cq[6368]];elseif cq[6435]==214 then c[cq[6239]]=c[cq[6368]]-c[cq[6283]];elseif cq[6435]==221 then c[cq[6239]]=bo[cg[cq[6368]]];end cr=cr+4 else local cq=cr local ct=bq if ct[6435]==294 then c[ct[6239]]=-c[ct[6368]];elseif ct[6435]==167 then c[ct[6239]]=cg[ct[6368]];elseif ct[6435]==115 then c[ct[6239]]=c[ct[6368]];end local ct=bp[cq+1]if ct[6435]==205 then c[ct[6239]]=c[ct[6368]];elseif ct[6435]==222 then bo[cg[ct[6368]]]=c[ct[6239]];else c[ct[6239]]=#c[ct[6368]];end local ct=bp[cq+2]if ct[6435]==212 then c[ct[6239]]=-c[ct[6368]];elseif ct[6435]==178 then c[ct[6239]]=c[ct[6368]];else c[ct[6239]]=bo[cg[ct[6368]]];end local cq=bp[cq+3]if cq[6435]==57 then c[cq[6239]]=bo[cg[cq[6368]]];elseif cq[6435]==72 then c[cq[6239]]=c[cq[6368]]*c[cq[6283]];elseif cq[6435]==54 then c[cq[6239]]=cg[cq[6368]];end cr=cr+3 end end end end end else if cp>=63 then if cp<=65 then if cp>=65 then local cq=cr local ct=bq if ct[6435]==245 then c[ct[6239]]=cg[ct[6368]];elseif ct[6435]==287 then c[ct[6239]]=c[ct[6368]][c[ct[6283]]];elseif ct[6435]==53 then c[ct[6239]][c[ct[6368]]]=c[ct[6283]];end local ct=bp[cq+1]if ct[6435]==226 then c[ct[6239]]=bo[cg[ct[6368]]];elseif ct[6435]==138 then c[ct[6239]]=c[ct[6368]]/c[ct[6283]];elseif ct[6435]==277 then c[ct[6239]]=cg[ct[6368]];end local cq=bp[cq+2]if cq[6435]==135 then c[cq[6239]]=not c[cq[6368]];elseif cq[6435]==247 then c[cq[6239]]=cg[cq[6368]];else c[cq[6239]][c[cq[6368]]]=c[cq[6283]];end cr=cr+2 else if cp~=64 then local cq=bq[6239]local ct=ck[cl]ck[cl]=nil cl=cl-1 c[cq]=ct()else do return t(c,bq[6239],cs)end end end else if cp<=67 then if cp==66 then local cq=cr local ct=bq if ct[6435]==153 then local cu=ct[6239]local cu=c[cu]cl=cl+1 ck[cl]=cu elseif ct[6435]==248 then c[ct[6239]]=bo[cg[ct[6368]]];elseif ct[6435]==267 then c[ct[6239]]=not c[ct[6368]];end local cq=bp[cq+1]if cq[6435]==243 then c[cq[6239]]=cg[cq[6368]];elseif cq[6435]==280 then local ct=cq[6239]local ct=c[ct]cl=cl+1 ck[cl]=ct else c[cq[6239]]=bo[cg[cq[6368]]];end cr=cr+1 else local cq=cr local ct=bq if ct[6435]==284 then c[ct[6239]]=c[ct[6368]]*c[ct[6283]];elseif ct[6435]==127 then c[ct[6239]]=c[ct[6368]]/c[ct[6283]];elseif ct[6435]==287 then bo[cg[ct[6368]]]=c[ct[6239]];end local ct=bp[cq+1]if ct[6435]==209 then c[ct[6239]]=bo[cg[ct[6368]]];elseif ct[6435]==169 then c[ct[6239]][c[ct[6368]]]=c[ct[6283]];else local cu=cf[ct[6368]]local cv=cu[811]local cw=#cv local cx=ba(cw)for cy=1,cw do local cv=cv[cy]local cw=cv[2]local cz=cv[3]if cv[1]==1 then if cz==0 then local cv=c[cw]ci[cw]=cv cx[cy-1]=cv else cx[cy-1]=c[cw]end else local cv=bi[cw]if cz==0 and cv[0]then cv=cv[0][cv[1]]end cx[cy-1]=cv end end c[ct[6239]]=by(cu,cx,bo)end local cq=bp[cq+2]if cq[6435]==254 then c[cq[6239]]=not c[cq[6368]];elseif cq[6435]==45 then c[cq[6239]]=cg[cq[6368]];elseif cq[6435]==48 then c[cq[6239]]=c[cq[6368]]*c[cq[6283]];end cr=cr+2 end else local cq=cr local ct=bq if ct[6435]==203 then c[ct[6239]]=c[ct[6368]];elseif ct[6435]==235 then local cu=ct[6239]local cu=c[cu]cl=cl+1 ck[cl]=cu else c[ct[6239]]=bo[cg[ct[6368]]];end local cq=bp[cq+1]if cq[6435]==47 then c[cq[6239]]=c[cq[6368]][c[cq[6283]]];elseif cq[6435]==108 then c[cq[6239]][c[cq[6368]]]=c[cq[6283]];else c[cq[6239]]=cg[cq[6368]];end cr=cr+1 end end else if cp>=61 then if cp<=61 then local cq=cr local ct=bq if ct[6435]==116 then c[ct[6239]][c[ct[6368]]]=c[ct[6283]];elseif ct[6435]==102 then c[ct[6239]]=bo[cg[ct[6368]]];else c[ct[6239]]=c[ct[6368]];end local ct=bp[cq+1]if ct[6435]==163 then c[ct[6239]]=c[ct[6368]]+c[ct[6283]];elseif ct[6435]==276 then c[ct[6239]]=c[ct[6368]];else c[ct[6239]]=cg[ct[6368]];end local ct=bp[cq+2]if ct[6435]==174 then c[ct[6239]]=cg[ct[6368]];elseif ct[6435]==260 then local cu=cf[ct[6368]]local cv=cu[811]local cw=#cv local cx=ba(cw)for cy=1,cw do local cv=cv[cy]local cw=cv[2]local cz=cv[3]if cv[1]==1 then if cz==0 then local cv=c[cw]ci[cw]=cv cx[cy-1]=cv else cx[cy-1]=c[cw]end else local cv=bi[cw]if cz==0 and cv[0]then cv=cv[0][cv[1]]end cx[cy-1]=cv end end c[ct[6239]]=by(cu,cx,bo)elseif ct[6435]==99 then c[ct[6239]]=c[ct[6368]]+c[ct[6283]];end local ct=bp[cq+3]if ct[6435]==41 then c[ct[6239]][c[ct[6368]]]=c[ct[6283]];elseif ct[6435]==242 then local cu=cf[ct[6368]]local cv=cu[811]local cw=#cv local cx=ba(cw)for cy=1,cw do local cv=cv[cy]local cw=cv[2]local cz=cv[3]if cv[1]==1 then if cz==0 then local cv=c[cw]ci[cw]=cv cx[cy-1]=cv else cx[cy-1]=c[cw]end else local cv=bi[cw]if cz==0 and cv[0]then cv=cv[0][cv[1]]end cx[cy-1]=cv end end c[ct[6239]]=by(cu,cx,bo)elseif ct[6435]==277 then c[ct[6239]]=#c[ct[6368]];end local ct=bp[cq+4]if ct[6435]==74 then c[ct[6239]]=c[ct[6368]];elseif ct[6435]==130 then c[ct[6239]]=c[ct[6368]]/c[ct[6283]];elseif ct[6435]==142 then c[ct[6239]][c[ct[6368]]]=c[ct[6283]];end local ct=bp[cq+5]if ct[6435]==294 then c[ct[6239]]=#c[ct[6368]];elseif ct[6435]==184 then c[ct[6239]]=cg[ct[6368]];else c[ct[6239]]=c[ct[6368]];end local cq=bp[cq+6]if cq[6435]==197 then c[cq[6239]]=bo[cg[cq[6368]]];elseif cq[6435]==207 then local ct=cf[cq[6368]]local cu=ct[811]local cv=#cu local cw=ba(cv)for cx=1,cv do local cu=cu[cx]local cv=cu[2]local cy=cu[3]if cu[1]==1 then if cy==0 then local cu=c[cv]ci[cv]=cu cw[cx-1]=cu else cw[cx-1]=c[cv]end else local cu=bi[cv]if cy==0 and cu[0]then cu=cu[0][cu[1]]end cw[cx-1]=cu end end c[cq[6239]]=by(ct,cw,bo)else c[cq[6239]]=cg[cq[6368]];end cr=cr+6 else local cq=cr local ct=bq if ct[6435]==104 then c[ct[6239]][c[ct[6368]]]=c[ct[6283]];elseif ct[6435]==156 then c[ct[6239]]=cg[ct[6368]];else c[ct[6239]]=#c[ct[6368]];end local ct=bp[cq+1]if ct[6435]==181 then c[ct[6239]]=cg[ct[6368]];elseif ct[6435]==125 then c[ct[6239]][c[ct[6368]]]=c[ct[6283]];elseif ct[6435]==251 then local cu=cf[ct[6368]]local cv=cu[811]local cw=#cv local cx=ba(cw)for cy=1,cw do local cv=cv[cy]local cw=cv[2]local cz=cv[3]if cv[1]==1 then if cz==0 then local cv=c[cw]ci[cw]=cv cx[cy-1]=cv else cx[cy-1]=c[cw]end else local cv=bi[cw]if cz==0 and cv[0]then cv=cv[0][cv[1]]end cx[cy-1]=cv end end c[ct[6239]]=by(cu,cx,bo)end local ct=bp[cq+2]if ct[6435]==267 then c[ct[6239]]=bo[cg[ct[6368]]];elseif ct[6435]==206 then c[ct[6239]][c[ct[6368]]]=c[ct[6283]];else c[ct[6239]]=c[ct[6368]][c[ct[6283]]];end local cq=bp[cq+3]if cq[6435]==251 then c[cq[6239]]=bo[cg[cq[6368]]];elseif cq[6435]==190 then local ct=cq[6239]local ct=c[ct]cl=cl+1 ck[cl]=ct elseif cq[6435]==133 then c[cq[6239]]=cg[cq[6368]];end cr=cr+3 end else if cp>=60 then c[bq[6239]]=c[bq[6368]]/c[bq[6283]];else if cp<=58 then local cq=bq[6239]c[cq]={c[cq]}else local cq=bq[6368]local cq=bi[cq]c[bq[6239]]=cq[1]end end end end end else if cp>=180 then if cp>=222 then if cp>=243 then if cp>=253 then if cp>=258 then if cp>=261 then if cp<=261 then bp[c[bq[6435]]]={[6239]=(bq[6239]+12),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else if cp~=263 then bp[c[bq[6435]]]={[6239]=(bq[6239]-40),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end end else if cp>=260 then bp[c[bq[6435]]]={[6239]=(bq[6239]+6),[6368]=(bq[6368]+37),[6283]=(bq[6283]-37),[4155]=bp[c[bq[6435]]][4155]}else if cp<259 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]-37),[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]-38),[4155]=bp[c[bq[6435]]][4155]}end end end else if cp>=256 then if cp==256 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]+6),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]+20),[4155]=bp[c[bq[6435]]][4155]}end else if cp<=254 then if cp<=253 then bp[c[bq[6435]]]={[6239]=(bq[6239]+3),[6368]=(bq[6368]-19),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]-23),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]-51),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end end end else if cp>=248 then if cp<=250 then if cp>=250 then bp[c[bq[6435]]]={[6239]=(bq[6239]-38),[6368]=bq[6368],[6283]=(bq[6283]+21),[4155]=bp[c[bq[6435]]][4155]}else if cp<=248 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]-31),[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]+31),[4155]=bp[c[bq[6435]]][4155]}end end else if cp==251 then bp[c[bq[6435]]]={[6239]=(bq[6239]+26),[6368]=bq[6368],[6283]=(bq[6283]+21),[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]-6),[6368]=(bq[6368]-39),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end end else if cp>=246 then if cp~=247 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]-48),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]+46),[6283]=(bq[6283]-21),[4155]=bp[c[bq[6435]]][4155]}end else if cp>=245 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]+39),[4155]=bp[c[bq[6435]]][4155]}else if cp~=244 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]-32),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]-27),[6368]=(bq[6368]-13),[6283]=(bq[6283]+29),[4155]=bp[c[bq[6435]]][4155]}end end end end end else if cp>=233 then if cp>=238 then if cp<=240 then if cp>=240 then bp[c[bq[6435]]]={[6239]=(bq[6239]-21),[6368]=bq[6368],[6283]=(bq[6283]-18),[4155]=bp[c[bq[6435]]][4155]}else if cp<=238 then bp[c[bq[6435]]]={[6239]=(bq[6239]-5),[6368]=(bq[6368]+13),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]+1),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end end else if cp==241 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]+32),[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]+30),[6368]=bq[6368],[6283]=(bq[6283]-18),[4155]=bp[c[bq[6435]]][4155]}end end else if cp<=235 then if cp<=234 then if cp~=234 then bp[c[bq[6435]]]={[6239]=(bq[6239]-38),[6368]=(bq[6368]-12),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]+2),[6368]=bq[6368],[6283]=(bq[6283]-8),[4155]=bp[c[bq[6435]]][4155]}end else bp[c[bq[6435]]]={[6239]=(bq[6239]+35),[6368]=bq[6368],[6283]=(bq[6283]+2),[4155]=bp[c[bq[6435]]][4155]}end else if cp<237 then bp[c[bq[6435]]]={[6239]=(bq[6239]+24),[6368]=(bq[6368]+10),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]-37),[6368]=bq[6368],[6283]=(bq[6283]-7),[4155]=bp[c[bq[6435]]][4155]}end end end else if cp>=228 then if cp<=230 then if cp<=229 then if cp==228 then bp[c[bq[6435]]]={[6239]=(bq[6239]+27),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]-25),[4155]=bp[c[bq[6435]]][4155]}end else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]-41),[4155]=bp[c[bq[6435]]][4155]}end else if cp==231 then bp[c[bq[6435]]]={[6239]=(bq[6239]+2),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]-36),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end end else if cp>=225 then if cp>=227 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]-15),[6283]=(bq[6283]-38),[4155]=bp[c[bq[6435]]][4155]}else if cp<226 then bp[c[bq[6435]]]={[6239]=(bq[6239]+38),[6368]=(bq[6368]+9),[6283]=(bq[6283]+32),[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]-24),[4155]=bp[c[bq[6435]]][4155]}end end else if cp<=223 then if cp<223 then bp[c[bq[6435]]]={[6239]=(bq[6239]-23),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]+35),[4155]=bp[c[bq[6435]]][4155]}end else bp[c[bq[6435]]]={[6239]=(bq[6239]+29),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end end end end end else if cp<=200 then if cp>=191 then if cp<=195 then if cp>=194 then if cp==194 then bp[c[bq[6435]]]={[6239]=(bq[6239]-33),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]+13),[6368]=(bq[6368]-7),[6283]=(bq[6283]+34),[4155]=bp[c[bq[6435]]][4155]}end else if cp<=192 then if cp==191 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]+8),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]+40),[6368]=bq[6368],[6283]=(bq[6283]+23),[4155]=bp[c[bq[6435]]][4155]}end else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]+48),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end end else if cp<=198 then if cp>=198 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]+4),[4155]=bp[c[bq[6435]]][4155]}else if cp==196 then bp[c[bq[6435]]]={[6239]=(bq[6239]-36),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]+1),[6368]=(bq[6368]-51),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end end else if cp~=200 then bp[c[bq[6435]]]={[6239]=(bq[6239]-4),[6368]=bq[6368],[6283]=(bq[6283]-11),[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]-10),[6368]=bq[6368],[6283]=(bq[6283]-10),[4155]=bp[c[bq[6435]]][4155]}end end end else if cp<=185 then if cp>=183 then if cp>=185 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]-17),[4155]=bp[c[bq[6435]]][4155]}else if cp<184 then bp[c[bq[6435]]]={[6239]=(bq[6239]+13),[6368]=(bq[6368]-44),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]-20),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end end else if cp>=182 then bp[c[bq[6435]]]={[6239]=(bq[6239]-39),[6368]=bq[6368],[6283]=(bq[6283]+30),[4155]=bp[c[bq[6435]]][4155]}else if cp<181 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]+9),[6283]=(bq[6283]+30),[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]-45),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end end end else if cp>=189 then if cp<=189 then bp[c[bq[6435]]]={[6239]=(bq[6239]-4),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]-26),[6283]=(bq[6283]+22),[4155]=bp[c[bq[6435]]][4155]}end else if cp<=187 then if cp==186 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]+21),[6283]=(bq[6283]-27),[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]+27),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]-51),[6283]=(bq[6283]-1),[4155]=bp[c[bq[6435]]][4155]}end end end end else if cp>=212 then if cp<=216 then if cp>=215 then if cp==215 then bp[c[bq[6435]]]={[6239]=(bq[6239]-37),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]-20),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end else if cp>=214 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]-39),[4155]=bp[c[bq[6435]]][4155]}else if cp<=212 then bp[c[bq[6435]]]={[6239]=(bq[6239]-21),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]+38),[6368]=(bq[6368]+45),[6283]=(bq[6283]+39),[4155]=bp[c[bq[6435]]][4155]}end end end else if cp>=220 then if cp==220 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]+14),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]+17),[6368]=(bq[6368]-14),[6283]=(bq[6283]+26),[4155]=bp[c[bq[6435]]][4155]}end else if cp>=219 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]+49),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else if cp<=217 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]+18),[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]-19),[6368]=bq[6368],[6283]=(bq[6283]-36),[4155]=bp[c[bq[6435]]][4155]}end end end end else if cp>=207 then if cp<=209 then if cp<=208 then if cp~=208 then bp[c[bq[6435]]]={[6239]=(bq[6239]-8),[6368]=(bq[6368]-49),[6283]=(bq[6283]-19),[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]+34),[6368]=(bq[6368]-20),[6283]=(bq[6283]-25),[4155]=bp[c[bq[6435]]][4155]}end else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]-10),[6283]=(bq[6283]+15),[4155]=bp[c[bq[6435]]][4155]}end else if cp<=210 then bp[c[bq[6435]]]={[6239]=(bq[6239]+16),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]-35),[6368]=(bq[6368]+6),[6283]=(bq[6283]-36),[4155]=bp[c[bq[6435]]][4155]}end end else if cp>=204 then if cp>=206 then bp[c[bq[6435]]]={[6239]=(bq[6239]-17),[6368]=(bq[6368]+2),[6283]=(bq[6283]+4),[4155]=bp[c[bq[6435]]][4155]}else if cp<205 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]-55),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]-28),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end end else if cp>=203 then bp[c[bq[6435]]]={[6239]=(bq[6239]+20),[6368]=bq[6368],[6283]=(bq[6283]+36),[4155]=bp[c[bq[6435]]][4155]}else if cp<=201 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]-56),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else local cq=cr local ct=bq if ct[6435]==54 then c[ct[6239]]=c[ct[6368]]-c[ct[6283]];elseif ct[6435]==261 then bo[cg[ct[6368]]]=c[ct[6239]];else c[ct[6239]]=-c[ct[6368]];end local ct=bp[cq+1]if ct[6435]==159 then c[ct[6239]]=cg[ct[6368]];elseif ct[6435]==141 then c[ct[6239]]=not c[ct[6368]];else local cu=cf[ct[6368]]local cv=cu[811]local cw=#cv local cx=ba(cw)for cy=1,cw do local cv=cv[cy]local cw=cv[2]local cz=cv[3]if cv[1]==1 then if cz==0 then local cv=c[cw]ci[cw]=cv cx[cy-1]=cv else cx[cy-1]=c[cw]end else local cv=bi[cw]if cz==0 and cv[0]then cv=cv[0][cv[1]]end cx[cy-1]=cv end end c[ct[6239]]=by(cu,cx,bo)end local ct=bp[cq+2]if ct[6435]==66 then c[ct[6239]]=#c[ct[6368]];elseif ct[6435]==122 then bo[cg[ct[6368]]]=c[ct[6239]];else c[ct[6239]]=c[ct[6368]]-c[ct[6283]];end local cq=bp[cq+3]if cq[6435]==173 then local ct=cf[cq[6368]]local cu=ct[811]local cv=#cu local cw=ba(cv)for cx=1,cv do local cu=cu[cx]local cv=cu[2]local cy=cu[3]if cu[1]==1 then if cy==0 then local cu=c[cv]ci[cv]=cu cw[cx-1]=cu else cw[cx-1]=c[cv]end else local cu=bi[cv]if cy==0 and cu[0]then cu=cu[0][cu[1]]end cw[cx-1]=cu end end c[cq[6239]]=by(ct,cw,bo)elseif cq[6435]==282 then c[cq[6239]]=cg[cq[6368]];elseif cq[6435]==207 then c[cq[6239]][c[cq[6368]]]=c[cq[6283]];end cr=cr+3 end end end end end end end else if cp<=137 then if cp<=116 then if cp>=107 then if cp<=111 then if cp>=110 then if cp<=110 then c[bq[6368]]=-c[bq[6239]];else c[bq[6368]]=c[bq[6239]];end else if cp>=109 then cr=bq[6239];else if cp<=107 then local cq=bq[6368]local cq=c[cq]cl=cl+1 ck[cl]=cq else local cq,ct=c[bq[6239]],bq[6368]c[ct]=cq[c[bq[6283]]];c[ct+1]=cq;end end end else if cp<=114 then if cp<=113 then if cp==112 then local cq=bq[6368]c[cq]=c[cq]();else local cq,ct=c[bq[6239]],bq[6368]c[ct]=cq[c[bq[6283]]];c[ct+1]=cq;end else local cq=bq[6368]local ct=bq[6239]local ct=ct local cu=cl local ct=cu-ct+1 local cv=ck[ct]c[cq]=cv(t(ck,ct+1,cu))for cq=cu,ct,-1 do ck[cq]=nil end cl=ct-1 end else if cp<116 then local cq=bq[6368]local ct=bq[6239]local cq=c[cq]if not cq then cr=ct;end;else cr=bq[6239];end end end else if cp<=101 then if cp>=100 then if cp<=100 then local cq,ct,cu=bq[6368],bq[6239],bq[6283]local ct=ch[ct]local cq=c[cq]for cv=1,#ct do if cq==nil then break end cq=cq[cg[ct[cv]]]end c[cu]=cq else co=co+1 cn[co]=cm cm=cl end else if cp<=98 then c[bq[6239]]=c[bq[6368]]..c[bq[6283]];else c[bq[6239]]=#c[bq[6368]];end end else if cp>=105 then if cp~=106 then c[bq[6368]]=c[bq[6239]][c[bq[6283]]];else local cq=bq[6368]local cq=c[cq]cl=cl+1 ck[cl]=cq end else if cp<=103 then if cp<=102 then local cq=bq[6368]local ct=bq[6239]local cq=c[cq]if not cq then cr=ct;end;else c[bq[6368]]=c[bq[6239]];end else cr=bq[6239];end end end end else if cp>=128 then if cp>=133 then if cp<=135 then if cp<=134 then if cp<=133 then local cq=bq[6368]local cq=c[cq]cl=cl+1 ck[cl]=cq else cr=bq[6239];end else c[bq[6368]]=bi[bq[6239]]end else if cp<=136 then local cq=bq[6368]local ct=bq[6239]local cq=c[cq]if not cq then cr=ct;end;else local cq=bq[6368]local cq=c[cq]cl=cl+1 ck[cl]=cq end end else if cp>=131 then if cp==131 then local cq=bq[6239]local ct=c[cq]local cu=c[cq+2]c[cq]=ct-cu;cr=bq[6368];else local cq=bq[6368]c[cq]=c[cq](c[cq+1],c[cq+2]);end else if cp<=129 then if cp<=128 then bp[c[bq[6435]]]={[6239]=(bq[6239]+38),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]+27),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end else bp[c[bq[6435]]]={[6239]=(bq[6239]-27),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end end end else if cp<=122 then if cp<=119 then if cp<=118 then if cp~=118 then local cq=bq[6368]local ct=bq[6239]local cq=c[cq]if not cq then cr=ct;end;else local cq=bq[6368]local ct=bq[6239]local cq=c[cq]if not cq then cr=ct;end;end else bp[c[bq[6435]]]={[6239]=(bq[6239]-35),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end else if cp<=121 then if cp==120 then bp[c[bq[6435]]]={[6239]=(bq[6239]-36),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=(bq[6239]-38),[6368]=bq[6368],[6283]=(bq[6283]-38),[4155]=bp[c[bq[6435]]][4155]}end else bp[c[bq[6435]]]={[6239]=(bq[6239]-21),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}end end else if cp>=126 then if cp<=126 then bp[c[bq[6435]]]={[6239]=(bq[6239]-37),[6368]=bq[6368],[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]-6),[4155]=bp[c[bq[6435]]][4155]}end else if cp>=125 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]+3),[6283]=(bq[6283]-18),[4155]=bp[c[bq[6435]]][4155]}else if cp<124 then bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=(bq[6368]-39),[6283]=bq[6283],[4155]=bp[c[bq[6435]]][4155]}else bp[c[bq[6435]]]={[6239]=bq[6239],[6368]=bq[6368],[6283]=(bq[6283]-32),[4155]=bp[c[bq[6435]]][4155]}end end end end end end else if cp>=159 then if cp<=169 then if cp<=164 then if cp>=162 then if cp>=164 then local cq=bq[6368]local cq=ck[cl]ck[cl]=nil cl=cl-1 local ct=ck[cl]ck[cl]=nil cl=cl-1 ct(cq)else if cp<=162 then c[bq[6368]]=c[bq[6239]][c[bq[6283]]];else local cq=bq[6368]c[cq]=c[cq]();end end else if cp>=161 then bp[c[bq[6435]]]={[6239]=(bq[6239]+3),[6368]=(bq[6368]-5),[6283]=(bq[6283]-32),[4155]=bp[c[bq[6435]]][4155]}else if cp==159 then local cq=bq[6368]local cq=bq[6239]local cq=cq local ct=cl local cq=ct-cq+1 local cu=ck[cq]cu(t(ck,cq+1,ct))for cu=ct,cq,-1 do ck[cu]=nil end cl=cq-1 else local cq=bq[6368]local cq=ck[cl]ck[cl]=nil cl=cl-1 cq()end end end else if cp<=167 then if cp<=166 then if cp<166 then local cq=bq[6368]local cq=c[cq]cl=cl+1 ck[cl]=cq else do for cq,ct in a,ci do if ct[1]==c and cq>=0 then ct[1]={c[cq]}ct[2]=1 ci[cq]=nil end end end local cq=ck[cl]ck[cl]=nil cl=cl-1 do return cq end end else local cq=bq[6368]local cq=c[cq]cl=cl+1 ck[cl]=cq end else if cp<169 then do return end else c[bq[6368]]=c[bq[6239]];end end end else if cp<=174 then if cp>=173 then if cp<174 then c[bq[6368]]=c[bq[6239]][c[bq[6283]]];else local cq=bq[6368]local cq=c[cq]cl=cl+1 ck[cl]=cq end else if cp<=171 then if cp<171 then c[bq[6368]]=c[bq[6239]];else c[bq[6368]]=c[bq[6239]][c[bq[6283]]];end else c[bq[6368]]=nil;end end else if cp<=177 then if cp<=176 then if cp<=175 then local cq=bq[6368]local cq=c[cq]cl=cl+1 ck[cl]=cq else local cq=bq[6368]local cq=c[cq]cl=cl+1 ck[cl]=cq end else local cq=bq[6368]local cq=c[cq]cl=cl+1 ck[cl]=cq end else if cp<179 then if c[bq[6368]]then cr=bq[6239];end;else bp[c[bq[6435]]]={[6239]=(bq[6239]-27),[6368]=(bq[6368]+25),[6283]=(bq[6283]+11),[4155]=bp[c[bq[6435]]][4155]}end end end end else if cp<=148 then if cp>=144 then if cp<=146 then if cp<=145 then if cp<=144 then local bp=bq[6368]local cq=bq[6239]local bp=c[bp]if not bp then cr=cq;end;else cr=bq[6239];end else local bp=bq[6368]local bp=c[bp]cl=cl+1 ck[cl]=bp end else if cp<148 then local bp=bq[6368]local cq=bq[6239]local bp=c[bp]if not bp then cr=cq;end;else local bp=bq[6368]c[bp]=c[bp](c[bp+1],c[bp+2]);end end else if cp>=141 then if cp<=142 then if cp~=142 then local bp=bq[6368]local cq=bq[6239]local bp=c[bp]if not bp then cr=cq;end;else local bp,cq=c[bq[6239]],bq[6368]c[cq]=bp[c[bq[6283]]];c[cq+1]=bp;end else c[bq[6368]]=c[bq[6239]][c[bq[6283]]];end else if cp>=140 then local bp=bq[6368]local bp=c[bp]cl=cl+1 ck[cl]=bp else if cp<139 then local bp=bq[6368]local bp=c[bp]cl=cl+1 ck[cl]=bp else local bp=bq[6368]local bp=bq[6239]local bp=bp local cq=cl local bp=cq-bp+1 local ct=ck[bp]ct(t(ck,bp+1,cq))for ct=cq,bp,-1 do ck[ct]=nil end cl=bp-1 end end end end else if cp<=153 then if cp<=151 then if cp>=151 then local bp=bq[6368]local cq=bq[6239]local bp=c[bp]if not bp then cr=cq;end;else if cp<150 then local bp,cq,ct=bq[6368],bq[6239],bq[6283]local cq=ch[cq]local bp=c[bp]for cu=1,#cq do if bp==nil then break end bp=bp[cg[cq[cu]]]end c[ct]=bp else local bp=bq[6368]local bp=c[bp]cl=cl+1 ck[cl]=bp end end else if cp~=153 then local bp=bq[6368]local cq=bq[6239]local bp=c[bp]if not bp then cr=cq;end;else local bp=bq[6368]local bp=c[bp]cl=cl+1 ck[cl]=bp end end else if cp<=156 then if cp>=156 then local bp=bq[6239]local cq=c[bp]+c[bp+2]c[bp]=cq if cq<=c[bp+1]then c[bq[6283]],cr=cq,bq[6368]end else if cp~=155 then c[bq[6368]]=c[bq[6239]][c[bq[6283]]];else local bp=bq[6368]local cq=bq[6239]local bp=c[bp]if not bp then cr=cq;end;end end else if cp~=158 then local bp=bq[6368]local bp=c[bp]cl=cl+1 ck[cl]=bp else cr=bq[6239];end end end end end end end end else if cp>=50 then if cp>=53 then if cp>=55 then if cp>=57 then c[bq[6239]][1]=c[bq[6368]]else if cp<=55 then local bp=#bq[6239]for cq=1,bp do c[bq[6239][cq]]=cg[bq[6368][cq]];end;else c[bq[6239]]={};end end else if cp<=53 then c[bq[6239]]=c[bq[6368]]~=c[bq[6283]];else c[bq[6239]]=nil;end end else if cp<=51 then if cp~=51 then do for bp,cq in a,ci do if cq[1]==c and bp>=0 then cq[1]={c[bp]}cq[2]=1 ci[bp]=nil end end end local a=ck[cl]ck[cl]=nil cl=cl-1 do return a end else local a=bq[6239]local bp=ck[cl]ck[cl]=nil cl=cl-1 local cq=ck[cl]ck[cl]=nil cl=cl-1 do local bp,cq,ct=cq(bp)c[a]=bp c[a+1]=cq c[a+2]=ct end end else c[bq[6239]]=c[bq[6368]]>=c[bq[6283]];end end else if cp>=48 then if cp==48 then local a=bq[6239]local bp=bw(cj,c[a](t(c,a+1,bq[6368])))cs=a+bp-1;for cq=1,bp do c[a+cq-1]=cj[cq];end;else local a=bq[6239]local bp=cl local cq=cm local ct=cq+1 local cu=ck[ct]do local cu,cv,cw=cu(t(ck,ct+1,bp))c[a]=cu c[a+1]=cv c[a+2]=cw end for a=bp,ct,-1 do ck[a]=nil end cl=cq local a=cn[co]cn[co]=nil co=co-1 cm=a or 0 end else if cp<47 then local a,bp=bq[6239],bq[6368]local bp=ch[bp]local cq={}for ct=1,#bp do cq[ct]=cg[bp[ct]]end c[a]=cq else local a=bq[6239]local bp=ck[cl]ck[cl]=nil cl=cl-1 local cq=ck[cl]ck[cl]=nil cl=cl-1 c[a]=cq(bp)end end end end else if cp>=40 then if cp<=42 then if cp<=41 then if cp~=41 then local a,bp=bq[6239],bq[6368]local cq=a+2 local a,ct=c[a](c[a+1],c[cq])if a~=nil then do local a,bp,ct,cu=a,a,ct,bp c[cq]=a c[cq+1]=bp c[cq+2]=ct cr=cu end end else local a,bp=bq[6239],bq[6368]local cq,ct,cu=c[a],c[a+1],c[a+2]c[a]=g(function()for g,cv,cw,cx,cy,cz,da,db,dc,dd in cq,ct,cu do f(g,cv,cw,cx,cy,cz,da,db,dc,dd);end;end);c[a+1]=nil;c[a+2]=nil;cs=a+2;cr=bp;end else bo[cg[bq[6368]]]=c[bq[6239]];end else if cp<=44 then if cp~=44 then local a=bq[6239]local a=cl local f=cm local g=f+1 local bp=ck[g]bp(t(ck,g+1,a))for bp=a,g,-1 do ck[bp]=nil end cl=f local a=cn[co]cn[co]=nil co=co-1 cm=a or 0 else local a=bq[6239]c[a]=c[a]();end else c[bq[6239]]=c[bq[6368]]-c[bq[6283]];end end else if cp>=38 then if cp<39 then c[bq[6239]]=c[bq[6368]]>c[bq[6283]];else local a=bq[6239]local f=bq[6368]local f=f local g=cl local f=g-f+1 local bp=ck[f]local bp=bw(cj,bp(t(ck,f+1,g)))cs=a+bp-1 for cq=1,bp do c[a+cq-1]=cj[cq]end for a=g,f,-1 do ck[a]=nil end cl=f-1 end else if cp<=36 then if cp<36 then do return end else c[bq[6239]]=c[bq[6368]]*c[bq[6283]];end else c[bq[6239]][c[bq[6368]]]=c[bq[6283]];end end end end else if cp<=28 then if cp>=27 then if cp<=27 then local a=cf[bq[6368]]local f=a[811]local g=#f local bp=ba(g)for cf=1,g do local f=f[cf]local g=f[2]local cj=f[3]if f[1]==1 then if cj==0 then local f=c[g]ci[g]=f bp[cf-1]=f else bp[cf-1]=c[g]end else local f=bi[g]if cj==0 and f[0]then f=f[0][f[1]]end bp[cf-1]=f end end c[bq[6239]]=by(a,bp,bo)else cr=c[bq[6239]];end else if cp<=25 then if cp<25 then local a,f,g=bq[6239],bq[6368],bq[6283]local f=ch[f]local a=c[a]local bp=true for cf=1,#f-1 do if a==nil then bp=false break end a=a[cg[f[cf]]]end if bp and a~=nil then a[cg[f[#f]]]=c[g]end else c[bq[6239]]=c[bq[6368]]<=c[bq[6283]];end else if c[bq[6239]]then cr=bq[6368];end;end end else if cp<=31 then if cp>=31 then local a=bq[6239]local f=bq[6368]local f=(f==0)and cs or(a+f-1)for g=a,f do cl=cl+1 ck[cl]=c[g]end else if cp~=30 then c[bq[6239]]=-c[bq[6368]];else local a=bq[6239]local f=ck[cl]ck[cl]=nil cl=cl-1 local g=ck[cl]ck[cl]=nil cl=cl-1 local bp=ck[cl]ck[cl]=nil cl=cl-1 c[a]=bp(g,f)end end else if cp>=34 then local a=bq[6239]local a=ck[cl]ck[cl]=nil cl=cl-1 a()else if cp~=33 then co=co+1 cn[co]=cm cm=cl else c[bq[6239]]=cr+bq[6368];end end end end end end else if cp<=9 then if cp>=9 then if bq[6283]==47 then local a=bq[6368]local a=bi[a]c[bq[6239]]=a[1]elseif bq[6283]==229 then c[bq[6239]]=bo[cg[bq[6368]]];else local a=bq[6368]local a=bi[a]c[bq[6239]]=a[1]end else if cp~=8 then c[bq[6239]]=c[bq[6368]];else c[bq[6239]]=bi[bq[6368]]end end else if cp>=12 then if cp<=13 then if cp<13 then local a=bq[6368]local a=cg[a]cl=cl+1 ck[cl]=a else local a=bq[6239]local a=ck[cl]ck[cl]=nil cl=cl-1 local f=ck[cl]ck[cl]=nil cl=cl-1 f(a)end else c[bq[6239]]=c[bq[6368]]==c[bq[6283]];end else if cp==10 then c[bq[6239]]=bo[cg[bq[6368]]];else local a,f=c[bq[6368]],bq[6239]c[f]=a[c[bq[6283]]];c[f+1]=a;end end end end else if cp<=2 then if cp>=2 then if bq[6283]==18 then c[bq[6239]]=cg[bq[6368]];elseif bq[6283]==25 then c[bq[6239]]=nil;else c[bq[6239]]=cg[bq[6368]];end else if cp~=1 then c[bq[6239]]=cg[bq[6368]];else local a=bq[6239]local a=c[a]cl=cl+1 ck[cl]=a end end else if cp>=5 then if cp<6 then local a=bq[6239]local f=bq[6368]local a=c[a]if not a then cr=f;end;else cr=bq[6368];end else if cp==3 then c[bq[6239]]=c[bq[6368]][c[bq[6283]]];else if bq[6283]==175 then c[bq[6239]]=c[bq[6368]];elseif bq[6283]==51 then bo[cg[bq[6368]]]=c[bq[6239]];else c[bq[6239]]=c[bq[6368]];end end end end end cr=cr+1;end;end;end cc[3]=(cc[3]+1)%5 ce=78180 end else if ce>=57329 then if ce<60024 then bf=function(a)local c,f,g,bi=nil,nil,nil,nil local bo={}for bp=0,255 do bo[bp]=d(bp);end;local function bp(bq)local cf=-1 local cg=256 local ch=257 local ci=258 local cj=259 local ck=260 local cl=#bq local cm=1 local cn=0 local co=0 local function cp(cq)while co<cq and cm<=cl do local bq=e(bq,cm)cm=cm+1;cn=cn+w(bq,co);co=co+8;end;end;local function bq()if co==0 then cp(1);end;local cl=y(cn,1)cn=x(cn,1);co=co-1;return cl;end;local function cl(cm)if cm<=0 then return 0;end;cp(cm);local cp=w(1,cm)-1 local cp=y(cn,cp)cn=x(cn,cm);co=co-cm;return cp;end;local function cm()local cn=0 while bq()==0 do cn=cn+1;if cn>31 then break;end;end;if cn==0 then return 1;end;local co=1 for cp=1,cn do co=co*2+bq();end;return co;end;local function cn(co)local cp=0 while bq()==0 do cp=cp+1;end;if co==0 then return cp;end;local cq=cl(co)return cp*(2^co)+cq;end;local function co(cp)local cq={}local function cr(cs,ct,cu)local cv=cq for cw=ct-1,0,-1 do local cs=y(x(cs,cw),1)if not cv[cs]then cv[cs]={};end;cv=cv[cs];end;cv[cf]=cu;end;local cs=cm()-1 if cs<=0 then return cq;end;local ct=0 local cu={}local cv=-1 local cw=0 for cx=1,cs do local cs if cp then if cx==1 then cs=cl(8);else local cp=cm()cs=cv+cp;end;else local cp=cm()if cx==1 then cs=cp-1;else cs=cv+cp;end;end;local cp if cx==1 then cp=cm();else local cx=bq()if cx==1 then cp=cw;else cp=cm();end;end;if cp>ct then ct=cp;end;local cm=cu[cp]if cm==nil then cm={};cu[cp]=cm;end;cm[#cm+1]=cs;cv=cs;cw=cp;end;local cm=0 local cp=0 for cs=1,ct do local ct=cu[cs]if ct~=nil then n(ct);if cs>cp then cm=w(cm,cs-cp);cp=cs;end;for n=1,#ct do cr(cm,cs,ct[n]);cm=cm+1;end;end;end;return cq;end;local function n(cm)local cm=cm while true do local cp=bq()cm=cm[cp];if not cm then return;end;local cf=cm[cf]if cf~=nil then return cf;end;end;end;local cf=co(false)local cm=co(false)local cp=co(false)local cq=co(true)local co=co(true)local cr=cl(2)local cs,ct,cu,cv if cr==0 then cs=c or 0;ct=f or 0;cu=g or 0;cv=bi or 0;elseif cr==1 then local cr={[-1]=0,[0]=1,[1]=2,[2]=3}local cr={[0]=-1,[1]=0,[2]=1,[3]=2}local cw=cr[cl(2)]local cx=cr[cl(2)]local cy=cr[cl(2)]local cr=cr[cl(2)]cs=(c or 0)+cw;ct=(f or 0)+cx;cu=(g or 0)+cy;cv=(bi or 0)+cr;c,f,g,bi=cs,ct,cu,cv;else cs=cl(4);ct=cl(4);cu=cl(4);cv=cl(4);c,f,g,bi=cs,ct,cu,cv;end;local c={}local f=0 local g=false local bi=false while true do local cf=bi and cp or(g and cm or cf)local cf=n(cf)if cf==nil then break;end;if cf==ck then break;end;if cf==cg then local cg=g and co or cq local cg=n(cg)if cg==nil then break;end;local ck=bq()local ck=cn(ck==0 and cu or cv)+1 local cm=bo[cg]f=f+1;c[f]=h(cm,ck);g=(cg==0);bi=true;elseif cf==ch then local bq=bq()local bq=cn(bq==0 and cs or ct)+1 local cg=bo[0]f=f+1;c[f]=h(cg,bq);g=true;bi=true;elseif cf==ci then local bq=2+cl(5)local cg=bo[0]f=f+1;c[f]=h(cg,bq);g=true;bi=true;elseif cf==cj then local bq=g and co or cq local n=n(bq)if n==nil then break;end;local bq=2+cl(3)local cg=bo[n]f=f+1;c[f]=h(cg,bq);g=(n==0);bi=true;else f=f+1;c[f]=bo[cf];g=(cf==0);bi=false;end;end;return i(c);end;local function c(f)local g={}local h=256 local n={}for bi=1,h do n[bi]={};for h=0,255 do n[bi][h+1]=h;end;end;local h=0 local bi=#f for bq=1,bi do local bi=h+1 local n=n[bi]local f=e(f,bq)+1 local bi=n[f]g[bq]=bo[bi];if f>1 then p(n,1,f-1,2);n[1]=bi;end;h=bi;end;return i(g);end;local function f(g,h)local n=#g if n==0 then return"";end;h=h+1;local p=ba(n)local bi={}local bq=ba(256)for cf=1,n do local cf=e(g,cf)bi[cf]=(bi[cf]or 0)+1;end;local cf=1 for cg=0,255 do local bi=bi[cg]or 0 bq[cg]=cf;cf=cf+bi;end;for bi=1,n do local cf=e(g,bi)local cg=bq[cf]p[cg]=bi;bq[cf]=cg+1;end;local bi=ba(n)local h=h for bq=1,n do h=p[h];bi[bq]=bo[e(g,h)];end;return i(bi);end;local a=be(a)local g={}local h=0 local n=1 local p=#a while n+7<=p do local be,bi,bo,bq=e(a,n,n+3)local be=be+bi*256+bo*65536+bq*16777216 n=n+4;local bi,bo,bq,cf=e(a,n,n+3)local bi=bi+bo*256+bq*65536+cf*16777216 n=n+4;if n+bi-1>p then break;end;local a=b(a,n,n+bi-1)n=n+bi;local a=bp(a)local a=c(a)local a=f(a,be)h=h+1;g[h]=a;end;return i(g);end ce=-43063 else bl=nil cd,ce=87770,87770 end else bv=function(...)return{...},k('#',...)end cd,ce=70297,70297 end end else if ce>=42636 then if ce<=42636 then bm=function(a)local b local c={}local f={}local function g(h,n)local p=u(n,n)local h=h+p f[n]=h;return h end local h={}h[1]=1 h[2]=3 h[3]=0 local h=0 local h=-48793 repeat if h>=-19511 then if h<38421 then return b;else break end else if h==-48793 then b=0 b=v(b,w(e(a,bh,bh),8))bh=bh+1 c[33]=f[u(-48793,174076)]or g(-19511,u(-48793,174076))h=-31453 else h=c[33]end end until h==38421 end cd,ce=83718,83718 else if ce==43588 then bs=nil cd,ce=-46830,-46830 else bj=function(a)local b=0 for c=0,3 do b=v(b,w(e(a,bh,bh),8*c));bh=bh+1;end;return b;end cd,ce=-43013,-43013 end end else if ce==35859 then bn=function(a)local b local c={}local f={}local function g(h,n)local p=u(n,n)local h=h+p f[n]=h;return h end local h={}h[1]=2 h[2]=3 h[3]=2 local h=0 local n=-19270 repeat if n>=-19270 then if n<69630 then b=0 b=e(a,bh)bh=bh+1 c[34]=f[u(-19270,152746)]or g(-46253,u(-19270,152746))h,n=-45610,-45610 else break end else if n~=-45610 then return b;else h,n=c[34],c[34]end end until n==69630 end cd,ce=-19362,-19362 else return ca();end end end else if ce>=81909 then if ce>=87770 then if ce<=87770 then bl=function(a)local b=0 for c=0,1 do b=v(b,w(e(a,bh,bh),8*c));bh=bh+1;end;return b;end cd=cc[2]==1 and 35859 or 25891 cc[2]=(cc[2]+1)%5 cd,ce=25891,25891 else if ce<89220 then bx=cb[113]ce=47670 else bc=rawset bd=setfenv cc[3]=(cc[3]+1)%5 ce=-19187 end end else if ce<=81909 then cb[112]={}cc[3]=(cc[3]+1)%5 ce=-39701 else if ce<83718 then y=q and q[(function(a,b)local c local f={}local g={}local function h(n,p)g[p]=n;return g[p]end local n={}n[1]=0 n[2]=3 n[3]=0 local n=41749 local p=0 repeat if n<=41749 then if n<41749 then c=f[24]for u=1,#a do local a=e(a,u)c[u]=o(d(37,99),(a-(b+u))%256)end return i(c)else f[24]={}f[25]=g[41749+20141]or h(-38513,41749+20141)p,n=63288,63288 end else if n<63288 then break else p,n=f[25],f[25]end end until n==54252 end)("\205\205\219\210",106)]or function(a,b)local c,f local g={}local h={}local function n(p,u)h[u]=p;return h[u]end local p={}p[1]=3 p[2]=4 p[3]=3 local p=0 local u=37669 repeat if u>=-18764 then if u<37669 then break else c=0 f=1 g[28]=h[37669+213307]or n(-43268,37669+213307)p,u=-31640,-31640 end else if u<=-43268 then while a>0 and b>0 do local h,n local bc={}local bd={}local function be(bf,bi)bd[bi]=bf;return bd[bi]end local bf={}bf[1]=3 bf[2]=3 bf[3]=3 local bf=0 local bi=-27893 repeat if bi<=-38858 then if bi~=-38858 then break else if h==1 and n==1 then c=c+f;end;a=j(a/2)b=j(b/2)f=f*2 bc[27]=bd[-38858+58217]or be(-39960,-38858+58217)bi=45639 end else if bi<=-27893 then h=a%2 n=b%2 bc[26]=bd[-27893+189288]or be(-38858,-27893+189288)bf,bi=-26666,-26666 else if bi~=45639 then bf,bi=bc[26],bc[26]else bi=bc[27]end end end until bi==-39960 end;return c;else p,u=g[28],g[28]end end until u==-18764 end z=q and q[(function(a,b)local c local f={}local g={}local function h(j,n)g[n]=j;return g[n]end local j={}j[1]=1 j[2]=1 j[3]=1 local j=0 local n=55177 repeat if n<=-12035 then if n<=-48572 then break else if n==-18566 then n=f[31]else c=f[29]for p=1,#a do local a=e(a,p)c[p]=o(d(37,99),(a-(b+p))%256)end f[31]=g[-12035+22353]or h(83428,-12035+22353)n=-18566 end end else if n<=34171 then j,n=f[30],f[30]else if n<83428 then f[29]={}f[30]=g[55177+153424]or h(-12035,55177+153424)j,n=34171,34171 else return i(c)end end end until n==-48572 end)("\110\123\125\131",11)]or function(a)a=a%r return(r-1)-a end ba=(table.create or function(a)return{t({},1,a)};end)bb=cb[112]cc[2]=(cc[2]+1)%5 cd,ce=89220,89220 else bn=nil cc[3]=(cc[3]+1)%5 cd,ce=35859,35859 end end end else if ce<=70297 then if ce>=64799 then if ce==64799 then w=nil x=nil cd=cc[1]~=0 and 89220 or 20152 cd,ce=20152,20152 else bw=function(a,...)local b,c local d={}local f={}local function g(h,i)f[i]=h;return f[i]end local h={}h[1]=2 h[2]=3 h[3]=4 local i=0 local j=-42524 repeat if j<=-14590 then if j==-42524 then b=k('#',...)for n=1,b do a[n]=k(n,...);end;d[110]=a[0]or 0 h[3]=(h[3]+1)%5 d[111]=f[-42524+209953]or g(88731,-42524+209953)i,j=-14590,-14590 else i,j=d[111],d[111]end else if j<88731 then break else c=d[110]if c>b then for d=b+1,c do a[d]=nil;end;end;a[0]=b return b;end end until j==47062 end cd=cc[2]==1 and 47670 or 88081 ce=88081 end else bk=function(a)local b local c={}local d={}local function f(g,h)d[h]=g;return d[h]end local g={}g[1]=0 g[2]=1 g[3]=1 local g=0 local g=77692 repeat if g<=-27057 then if g==-28955 then break else return b;end else if g==59886 then g=c[32]else b=0 for h=0,2 do b=v(b,w(e(a,bh,bh),8*h));bh=bh+1;end;c[32]=d[77692+149589]or f(-27057,77692+149589)g=59886 end end until g==-28955 end cd,ce=60024,60024 end else if ce<=75608 then bt=function(a)local b,c local d={}local e={}local function f(g,h)e[h]=g;return e[h]end local g={}g[1]=2 g[2]=4 g[3]=4 local g=52713 local h=0 repeat if g>=53896 then if g<64775 then g=d[42]else break end else if g<52713 then return c*4294967296+b;else b=br(a)c=br(a)if c==0 then return b;elseif(c>=2147483648)then c=c-4294967296;end;d[42]=e[52713+90516]or f(-21359,52713+90516)g=53896 end end until g==64775 end cd,ce=-27788,-27788 else if ce<=76103 then t=function(a,b,c)local d=c-b+1 if d>7997 then return s(a,b,c)else return m(a,b,c)end end cd,ce=-48588,-48588 else bz=bu(bg)ca=by(bz,{},l())ce=41511 end end end end end end until ce==28503 end)(error,next,string.match,tonumber,string.gsub,string.sub,table.insert,string.char,string.byte,coroutine.yield,coroutine.wrap,string.rep,table.concat,math.floor,select,(getfenv or function()return _ENV;end),setmetatable,next,(table.unpack or unpack),(table.pack or function(...)return{...};end),math.min,(function(b)if b<=1 then return false end;if b<=3 then return true end;if b%2==0 or b%3==0 then return false end;local c=5;while c*c<=b do if b%c==0 or b%(c+2)==0 then return false end;c=c+6 end;return true end),string.len,table.remove,table.sort,(string.unpack),string.gmatch,string.find,string.reverse,tostring,math.abs,rawget,string.format);
+local ChestModels = workspace:WaitForChild("ChestModels");
+local WorldOrigin = workspace:WaitForChild("_WorldOrigin");
+local Characters = workspace:WaitForChild("Characters");
+local SeaBeasts = workspace:WaitForChild("SeaBeasts");
+local Enemies = workspace:WaitForChild("Enemies");
+local Map = workspace:WaitForChild("Map");
+
+local Main_Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/zzxzsss/moulders/refs/heads/main/Module.lua/blox%20fruits/bloxfruitsv1/ts"))()
+
+-- QuestData is loaded by bridge and stored in _G.QuestData
+local QuestData = _G.QuestData or loadstring(game:HttpGet("https://raw.githubusercontent.com/zzxzsss/moulders/refs/heads/main/Module.lua/blox%20fruits/bloxfruitsv1/quest%20data"))()
+
+local QuestModules = {} do
+
+    QuestModules.GetListed = function()
+        local sea = Main_Module.GameData.Sea
+        if sea == 1 then
+            Monster_Listed = QuestData.Sea1Monsters
+            Boss_Listed = QuestData.Sea1Bosses
+            Material_Listed = QuestData.Sea1Materials
+        elseif sea == 2 then
+            Monster_Listed = QuestData.Sea2Monsters
+            Boss_Listed = QuestData.Sea2Bosses
+            Material_Listed = QuestData.Sea2Materials
+        elseif sea == 3 then
+            Monster_Listed = QuestData.Sea3Monsters
+            Boss_Listed = QuestData.Sea3Bosses
+            Material_Listed = QuestData.Sea3Materials
+        end
+    end
+
+    QuestModules.GetListed()
+
+    QuestModules.QuestLevel = function()
+        local Lv = Player.Data.Level.Value
+        local sea = Main_Module.GameData.Sea
+        local quests = QuestData.Quests[sea]
+        if not quests then return end
+        
+        local found = false
+        for _, quest in ipairs(quests) do
+            local monsterName = quest.Task .. " [Lv. " .. quest.MinLv .. "]"
+            local isSelected = (Selected_Monster == monsterName) or (Selected_Monster_Mastery == monsterName)
+            
+            if isSelected or (not found and Lv >= quest.MinLv and Lv < quest.MaxLv) then
+                TaskQuest = quest.Task
+                NameMonster = quest.Monster
+                NameQuest = quest.Quest
+                QuestLv = quest.Lv
+                CFrameQuest = CFrame.new(quest.QuestPos[1], quest.QuestPos[2], quest.QuestPos[3])
+                CFrameMonster = CFrame.new(quest.MonsterPos[1], quest.MonsterPos[2], quest.MonsterPos[3])
+                found = true
+                if isSelected then break end
+            end
+        end
+        
+        if not found then
+            local lastQuest = quests[#quests]
+            if lastQuest and Lv >= lastQuest.MinLv then
+                TaskQuest = lastQuest.Task
+                NameMonster = lastQuest.Monster
+                NameQuest = lastQuest.Quest
+                QuestLv = lastQuest.Lv
+                CFrameQuest = CFrame.new(lastQuest.QuestPos[1], lastQuest.QuestPos[2], lastQuest.QuestPos[3])
+                CFrameMonster = CFrame.new(lastQuest.MonsterPos[1], lastQuest.MonsterPos[2], lastQuest.MonsterPos[3])
+            end
+        end
+    end
+
+    QuestModules.QuestBoss = function()
+        local sea = Main_Module.GameData.Sea
+        local bosses = QuestData.Bosses[sea]
+        if not bosses then return end
+        
+        local targetBoss = Selected_Boss or Selected_Monster_Mastery
+        if not targetBoss then return end
+        
+        for _, boss in ipairs(bosses) do
+            if boss.Name == targetBoss then
+                NameBoss = boss.Name
+                NameQuest = boss.Quest
+                QuestLv = boss.Lv
+                
+                if boss.UseRep then
+                    local repBoss = ReplicatedStorage:FindFirstChild(boss.Name)
+                    if repBoss then
+                        if repBoss:FindFirstChild("HumanoidRootPart") then
+                            CFrameBoss = repBoss.HumanoidRootPart.CFrame
+                        elseif repBoss:IsA("CFrameValue") then
+                            CFrameBoss = repBoss.Value
+                        else
+                            CFrameBoss = repBoss.CFrame
+                        end
+                    end
+                elseif boss.BossPos then
+                    CFrameBoss = CFrame.new(boss.BossPos[1], boss.BossPos[2], boss.BossPos[3])
+                end
+                
+                if boss.QuestPos then
+                    CFrameQuest = CFrame.new(boss.QuestPos[1], boss.QuestPos[2], boss.QuestPos[3])
+                end
+                
+                break
+            end
+        end
+    end
+
+    QuestModules.QuestMaterial = function()
+
+        if Main_Module.GameData.Sea == 1 then
+            
+            if (Selected_Material or Selected_Monster_Mastery) == 'Angel Wings' then
+                NameMonster = {"Royal Squad"}
+                CFrameMaterial = CFrame.new(-7654.2514648438, 5637.1079101563, -1407.7550048828)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Leather' then
+                NameMonster = {"Pirate"}
+                CFrameMaterial = CFrame.new(-1201.0881347656, 40.628940582275, 3857.5966796875)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Magma Ore' then
+                NameMonster = {"Military Soldier"}
+                CFrameMaterial = CFrame.new(-5369.0004882813, 61.24352645874, 8556.4921875)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Scrap Metal' then
+                NameMonster = {"Pirate"}
+                CFrameMaterial = CFrame.new(-1201.0881347656, 40.628940582275, 3857.5966796875)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Yeti Fur' then
+                NameMonster = {"Yeti"}
+                CFrameMaterial = CFrame.new(1218.7956542969, 138.01184082031, -1488.0262451172)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Fish Tail' then
+                NameMonster = {"Fishman Warrior"}
+                CFrameMaterial = CFrame.new(60844.10546875, 98.462875366211, 1298.3985595703)
+
+                if (CFrameMaterial.Position - Player.Character.HumanoidRootPart.Position).Magnitude > 3000 then
+                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163.8515625, 11.6796875, 1819.7841796875))
+                end
+
+            end
+
+        elseif Main_Module.GameData.Sea == 2 then
+
+            if (Selected_Material or Selected_Monster_Mastery) == 'Leather' then
+                NameMonster = {"Marine Captain"}
+                CFrameMaterial = CFrame.new(-2335.2026367188, 79.786659240723, -3245.8674316406)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Magma Ore' then
+                NameMonster = {"Magma Ninja"}
+                CFrameMaterial = CFrame.new(-5461.8388671875, 130.36347961426, -5836.4702148438)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Scrap Metal' then
+                NameMonster = {"Lab Subordinate"}
+                CFrameMaterial = CFrame.new(-5720.5576171875, 63.309471130371, -4784.6103515625)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Mystic Droplet' then
+                NameMonster = {"Sea Soldier"}
+                CFrameMaterial = CFrame.new(-3262.9301757813, 298.69036865234, -10552.529296875)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Radioactive' then
+                NameMonster = {"Factory Staff"}
+                CFrameMaterial = CFrame.new(533.22045898438, 128.46876525879, 355.62615966797)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Vampire Fang' then
+                NameMonster = {"Vampire"}
+                CFrameMaterial = CFrame.new(-5806.1098632813, 16.722528457642, -1164.4384765625)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Meteorite' then
+                NameMonster = {"Fajita"}
+                CFrameMaterial = CFrame.new(-2172.7399902344, 103.32216644287, -4015.025390625)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Dark Fragment' then
+                NameMonster = {"Darkbeard"}
+                CFrameMaterial = CFrame.new(3677.08203125, 62.751937866211, -3144.8332519531)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Ectoplasm' then
+                NameMonster = {"Ship Steward", "Ship Engineer", "Ship Deckhand", "Ship Officer"}
+                CFrameMaterial = CFrame.new(921.12365722656, 125.9839553833, 33088.328125)
+                if (CFrameMaterial.Position - Player.Character.HumanoidRootPart.Position).Magnitude > 20000 then
+                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406, 126.9760055542, 32852.83203125))
+                end
+            end
+
+        elseif Main_Module.GameData.Sea == 3 then
+
+            if (Selected_Material or Selected_Monster_Mastery) == 'Leather' then
+                NameMonster = {"Forest Pirate"}
+                CFrameMaterial = CFrame.new(-12267.103515625, 459.75262451172, -10277.200195313)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Scrap Metal' then
+                NameMonster = {"Forest Pirate"}
+                CFrameMaterial = CFrame.new(-12267.103515625, 459.75262451172, -10277.200195313)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Fish Tail' then
+                NameMonster = {"Fishman Raider"}
+                CFrameMaterial = CFrame.new(-10789.401367188, 427.18637084961, -9131.4423828125)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Gunpowder' then
+                NameMonster = {"Pistol Billionaire"}
+                CFrameMaterial = CFrame.new(-236.53652954102, 217.46676635742, 6006.0883789063)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Mini Tusk' then
+                NameMonster = {"Mythological Pirate"}
+                CFrameMaterial = CFrame.new(-13508.616210938, 582.46228027344, -6985.3037109375)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Conjured Cocoa' then
+                NameMonster = {"Cocoa Warrior"}
+                CFrameMaterial = CFrame.new(167.978516, 26.2254658, -12238.874)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Demonic Wisp' then
+                NameMonster = {"Demonic Soul"}
+                CFrameMaterial = CFrame.new(-9712.03125, 204.69589233398, 6193.322265625)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Dragon Scale' then
+                NameMonster = {"Dragon Crew Warrior"}
+                CFrameMaterial = CFrame.new(6831.1171875, 441.76708984375, 446.58615112305)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Mirror Fractal' then
+                NameMonster = {"Dough King"}
+                CFrameMaterial = CFrame.new(-2103, 70, -12165)
+
+            elseif (Selected_Material or Selected_Monster_Mastery) == 'Bones' then
+                NameMonster = {"Reborn Skeleton", "Living Zombie", "Demonic Soul", "Posessed Mummy"}
+                CFrameMaterial = CFrame.new(-9508.5673828125, 142.1398468017578, 5737.3603515625)
+
+            end
+        end
+    end
+
+    QuestModules.QuestElite = function()
+        if game:GetService("ReplicatedStorage"):FindFirstChild("Diablo") then
+            NameElite = "Diablo"
+            CFrameElite = game:GetService("ReplicatedStorage"):FindFirstChild("Diablo").HumanoidRootPart.CFrame
+
+        elseif game:GetService("ReplicatedStorage"):FindFirstChild("Deandre") then
+            NameElite = "Deandre"
+            CFrameElite = game:GetService("ReplicatedStorage"):FindFirstChild("Deandre").HumanoidRootPart.CFrame
+
+        elseif game:GetService("ReplicatedStorage"):FindFirstChild("Urban") then
+            NameElite = "Urban"
+            CFrameElite = game:GetService("ReplicatedStorage"):FindFirstChild("Urban").HumanoidRootPart.CFrame
+
+        end
+    end
+
+    QuestModules.HeartFarm = function()
+        if Main_Module.GameData.Sea == 1 then
+            MonsterTable = {"Galley Captain", "Galley Pirate"}
+            MonsterPosition = CFrame.new(5258.2788085938, 38.526931762695, 4050.044921875)
+            MaxLevelMonster = 650
+
+        elseif Main_Module.GameData.Sea == 2 then
+            MonsterTable = {"Sea Soldier", "Water Fighter"}
+            MonsterPosition = CFrame.new(-3054.5827636719, 236.87213134766, -10147.790039063)
+            MaxLevelMonster = 1450
+
+        elseif Main_Module.GameData.Sea == 3 then
+            MonsterTable = {"Skull Slayer", "Serpent Hunter", "Isle Champion", "Sun-kissed Warrior"}
+            MonsterPosition = CFrame.new(-16541.0215, 54.770813, 1051.46118)
+            MaxLevelMonster = 2575
+
+        end
+
+    end
+
+    QuestModules.ObservationFarm = function()
+        if Main_Module.GameData.Sea == 1 then
+            ObservationMonsterName = "Galley Captain"
+            ObservationPos = CFrame.new(5533.29785, 88.1079102, 4852.3916)
+
+        elseif Main_Module.GameData.Sea == 2 then
+            ObservationMonsterName = "Water Fighter"
+            ObservationPos = CFrame.new(-3262.9301757813, 298.69036865234, -10552.529296875)
+
+        elseif Main_Module.GameData.Sea == 3 then
+            ObservationMonsterName = "Skull Slayer"
+            ObservationPos = CFrame.new(-16654.7754, 105.286232, 1579.67444)
+
+        end
+    end
+
+end
+
+--// Auto Farm Quest
+spawn(function()
+    while task.wait() do
+        if Level_Quest_Func then
+            -- Check if level 2600+ needs submarine travel to underwater area
+            if QuestModules.NeedsSubmarineTravel() then
+                QuestModules.TravelToSubmergedIsland()
+                task.wait(1)
+            end
+            
+            Selected_Monster = nil
+            Selected_Monster_Mastery = nil
+            QuestModules.QuestLevel()
+
+            if not string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, TaskQuest) then
+                Main_Module.InvokeRemote("AbandonQuest")
+            end
+            wait(.1)
+            if Player.PlayerGui.Main.Quest.Visible == false then
+                Main_Module.Tween(CFrameQuest)
+                if (CFrameQuest.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 5 then
+                    wait(.1)
+                    Main_Module.InvokeRemote("StartQuest", NameQuest, QuestLv)
+                end
+            elseif Player.PlayerGui.Main.Quest.Visible == true then
+                if Enemies:FindFirstChild(NameMonster) then
+
+                    for i,v in Enemies:GetChildren() do
+                        if v.Name == NameMonster then
+                            if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                                repeat task.wait()
+                                    v.HumanoidRootPart.CanCollide = false
+                                    v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    v.HumanoidRootPart.Transparency = 1
+                                    v.Humanoid:ChangeState(11)
+                                    v.Humanoid:ChangeState(14)
+            
+                                    Main_Module.SetWeapon(Selected_Weapon)
+                                    Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                    Main_Module:BringEnemies(v, true)
+                                until not Level_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                            end
+                        end
+                    end
+
+                else
+                    Main_Module.WaitMobs(CFrameMonster)
+                end
+            end
+        end
+    end
+end)
+
+--// Auto Farm No Quest
+spawn(function()
+    while task.wait() do
+        if Level_No_Quest_Func then
+            -- Check if level 2600+ needs submarine travel to underwater area
+            if QuestModules.NeedsSubmarineTravel() then
+                QuestModules.TravelToSubmergedIsland()
+                task.wait(1)
+            end
+            
+            Selected_Monster = nil
+            Selected_Monster_Mastery = nil
+            QuestModules.QuestLevel()
+            if Enemies:FindFirstChild(NameMonster) then
+
+                for i,v in Enemies:GetChildren() do
+                    if v.Name == NameMonster then
+                        if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                            repeat task.wait()
+                                v.HumanoidRootPart.CanCollide = false
+                                v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                v.HumanoidRootPart.Transparency = 1
+                                v.Humanoid:ChangeState(11)
+                                v.Humanoid:ChangeState(14)
+        
+                                Main_Module.SetWeapon(Selected_Weapon)
+                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                Main_Module:BringEnemies(v, true)
+                            until not Level_No_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                        end
+                    end
+                end
+                
+            else
+                Main_Module.WaitMobs(CFrameMonster)
+            end
+        end
+    end
+end)
+
+--// Auto Farm Hearts
+spawn(function()
+    while task.wait() do
+        if Hearts_Farm_Func then
+            QuestModules.HeartFarm()
+
+            local Level = Player.Data.Level.Value
+
+            if Level <= MaxLevelMonster then
+                Selected_Monster = nil
+                Selected_Monster_Mastery = nil
+                QuestModules.QuestLevel()
+
+                if not string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, TaskQuest) then
+                    Main_Module.InvokeRemote("AbandonQuest")
+                end
+                wait(.1)
+
+                if Player.PlayerGui.Main.Quest.Visible == false then
+                    Main_Module.Tween(CFrameQuest)
+                    if (CFrameQuest.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 5 then
+                        wait(.1)
+                        Main_Module.InvokeRemote("StartQuest", NameQuest, QuestLv)
+                    end
+                elseif Player.PlayerGui.Main.Quest.Visible == true then
+                    if Enemies:FindFirstChild(NameMonster) then
+    
+                        for i,v in Enemies:GetChildren() do
+                            if v.Name == NameMonster then
+                                if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                                    repeat task.wait()
+                                        v.HumanoidRootPart.CanCollide = false
+                                        v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        v.HumanoidRootPart.Transparency = 1
+                                        v.Humanoid:ChangeState(11)
+                                        v.Humanoid:ChangeState(14)
+                
+                                        Main_Module.SetWeapon(Selected_Weapon)
+                                        Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                        Main_Module:BringEnemies(v, true)
+                                    until not Hearts_Farm_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or Level.Value >= MaxLevelMonster
+                                end
+                            end
+                        end
+    
+                    else
+                        Main_Module.WaitMobs(CFrameMonster)
+                    end
+                end
+
+            elseif Level >= MaxLevelMonster then
+
+                if Enemies:FindFirstChild(MonsterTable[1]) or Enemies:FindFirstChild(MonsterTable[2]) or Enemies:FindFirstChild(MonsterTable[3]) or Enemies:FindFirstChild(MonsterTable[4]) then
+
+                    for i,v in Enemies:GetChildren() do
+                        if table.find(MonsterTable, v.Name) then
+                            if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                                repeat task.wait()
+                                    v.HumanoidRootPart.CanCollide = false
+                                    v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    v.HumanoidRootPart.Transparency = 1
+                                    v.Humanoid:ChangeState(11)
+                                    v.Humanoid:ChangeState(14)
+            
+                                    Main_Module.SetWeapon(Selected_Weapon)
+                                    Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                    Main_Module:BringEnemies(v, true)
+                                until not Hearts_Farm_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+end)
+
+--// Auto Farm Nearest
+spawn(function()
+    while task.wait() do
+        if Nearest_Farm_Func then
+
+            for z,x in pairs(Enemies:GetChildren()) do
+                if x:FindFirstChild("Humanoid") and x:FindFirstChild("HumanoidRootPart") and x.Humanoid.Health > 0 then
+                    if x.Name then
+                        repeat task.wait()
+                            Main_Module.SetWeapon(Selected_Weapon)
+                            Main_Module.Tween(x.HumanoidRootPart.CFrame * Farm_Mode)
+                            x.HumanoidRootPart.CanCollide = false
+                            x.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                            x.HumanoidRootPart.Transparency = 1
+                            x.Humanoid:ChangeState(11)
+                            x.Humanoid:ChangeState(14)
+                            Main_Module:BringEnemies(x, true)
+                        until not Nearest_Farm_Func or not x.Parent or x.Humanoid.Health <= 0 or not Enemies:FindFirstChild(x.Name)
+                    end
+                end
+            end
+        end
+    end
+end)
+
+--// Auto Farm Select Monster Quest
+spawn(function()
+    while task.wait() do
+        if Select_Monster_Quest_Func then
+            Selected_Monster_Mastery = nil
+            QuestModules.QuestLevel()
+
+            if not string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, TaskQuest) then
+                Main_Module.InvokeRemote("AbandonQuest")
+            end
+            wait(.1)
+            if Player.PlayerGui.Main.Quest.Visible == false then
+                Main_Module.Tween(CFrameQuest)
+                if (CFrameQuest.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 5 then
+                    wait(.1)
+                    Main_Module.InvokeRemote("StartQuest", NameQuest, QuestLv)
+                end
+            elseif Player.PlayerGui.Main.Quest.Visible == true then
+                if Enemies:FindFirstChild(NameMonster) then
+
+                    for i,v in Enemies:GetChildren() do
+                        if v.Name == NameMonster then
+                            if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                                repeat task.wait()
+                                    v.HumanoidRootPart.CanCollide = false
+                                    v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    v.HumanoidRootPart.Transparency = 1
+                                    v.Humanoid:ChangeState(11)
+                                    v.Humanoid:ChangeState(14)
+            
+                                    Main_Module.SetWeapon(Selected_Weapon)
+                                    Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                    Main_Module:BringEnemies(v, true)
+                                until not Select_Monster_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                            end
+                        end
+                    end
+
+                else
+                    Main_Module.WaitMobs(CFrameMonster)
+                end
+            end
+        end
+    end
+end)
+
+--// Auto Farm Select Monster No Quest
+spawn(function()
+    while task.wait() do
+        if Select_Monster_No_Quest_Func then
+            Selected_Monster_Mastery = nil
+            QuestModules.QuestLevel()
+            if Enemies:FindFirstChild(NameMonster) then
+
+                for i,v in Enemies:GetChildren() do
+                    if v.Name == NameMonster then
+                        if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                            repeat task.wait()
+                                v.HumanoidRootPart.CanCollide = false
+                                v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                v.HumanoidRootPart.Transparency = 1
+                                v.Humanoid:ChangeState(11)
+                                v.Humanoid:ChangeState(14)
+        
+                                Main_Module.SetWeapon(Selected_Weapon)
+                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                Main_Module:BringEnemies(v, true)
+                            until not Select_Monster_No_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                        end
+                    end
+                end
+
+            else
+                Main_Module.WaitMobs(CFrameMonster)
+            end
+        end
+    end
+end)
+
+--// Auto Farm Material
+spawn(function()
+    while task.wait() do
+        if Select_Materials_Func then
+            Selected_Monster_Mastery = nil
+            QuestModules.QuestMaterial()
+
+            if Enemies:FindFirstChild(NameMonster[1]) or Enemies:FindFirstChild(NameMonster[2]) or Enemies:FindFirstChild(NameMonster[3]) or Enemies:FindFirstChild(NameMonster[4]) then
+
+                for i,v in Enemies:GetChildren() do
+                    if table.find(NameMonster, v.Name) then
+                        if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                            repeat task.wait()
+                                v.HumanoidRootPart.CanCollide = false
+                                v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                v.HumanoidRootPart.Transparency = 1
+                                v.Humanoid:ChangeState(11)
+                                v.Humanoid:ChangeState(14)
+        
+                                Main_Module.SetWeapon(Selected_Weapon)
+                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                Main_Module:BringEnemies(v, true)
+                            until not Select_Materials_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                        end
+                    end
+                end
+
+            else
+                Main_Module.Tween(CFrameMaterial)
+            end
+        end
+    end
+end)
+
+--// Auto Farm Mastery
+spawn(function()
+    while task.wait() do
+        if Mastery_Farming_Func then
+            if Selected_Type_Mastery == "Blox Fruits" then
+                if Selected_Mode_Mastery == "Quest" then
+                    Selected_Monster = nil
+                    Selected_Monster_Mastery = nil
+                    QuestModules.QuestLevel()
+
+                    if not string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, TaskQuest) then
+                        Main_Module.InvokeRemote("AbandonQuest")
+                    end
+                    wait(.1)
+                    if Player.PlayerGui.Main.Quest.Visible == false then
+                        Main_Module.Tween(CFrameQuest)
+                        if (CFrameQuest.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 5 then
+                            wait(.1)
+                            Main_Module.InvokeRemote("StartQuest", NameQuest, QuestLv)
+                        end
+                    elseif Player.PlayerGui.Main.Quest.Visible == true then
+                        if Enemies:FindFirstChild(NameMonster) then
+
+                            for i,v in Enemies:GetChildren() do
+                                if v.Name == NameMonster then
+                                    if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                                        repeat task.wait()
+                                        
+                                            v.HumanoidRootPart.CanCollide = false
+                                            v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                            v.HumanoidRootPart.Transparency = 1
+                                            v.Humanoid:ChangeState(11)
+                                            v.Humanoid:ChangeState(14)
+                                            Main_Module:BringEnemies(v, true)
+
+                                            if v.Humanoid.Health <= v.Humanoid.MaxHealth * tonumber(Mastery_Farm_Monster_Health_Set) / 100 then
+
+                                                local Equipped = Player.Character:FindFirstChildOfClass("Tool")
+                                                __UseSkill = true
+                                                Target_Locked = v.HumanoidRootPart
+                                                Equipped.MousePos.Value = Target_Locked.Position
+
+                                                Main_Module.SetWeapon("Blox Fruit")
+                                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                                Main_Module.UseSkillsMastery()
+
+                                            else
+                                                __UseSkill = false
+                                                Main_Module.SetWeapon(Selected_Weapon)
+                                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+
+                                            end
+
+                                        until not Mastery_Farming_Func or Selected_Type_Mastery ~= "Blox Fruits" or Selected_Mode_Mastery ~= "Quest" or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                                    end
+                                end
+                            end
+
+                        else
+                            Main_Module.WaitMobs(CFrameMonster)
+                        end
+                    end
+
+                elseif Selected_Mode_Mastery == "Nearest" then
+                    for z,x in pairs(Enemies:GetChildren()) do
+                        if x:FindFirstChild("Humanoid") and x:FindFirstChild("HumanoidRootPart") and x.Humanoid.Health > 0 then
+                            if x.Name then
+                                repeat task.wait()
+                                    if x.Humanoid.Health <= x.Humanoid.MaxHealth * tonumber(Mastery_Farm_Monster_Health_Set) / 100 then
+                                        local Equipped = Player.Character:FindFirstChildOfClass("Tool")
+
+                                        __UseSkill = true
+                                        Target_Locked = x.HumanoidRootPart
+                                        Main_Module.SetWeapon("Blox Fruit")
+                                        Main_Module.Tween(x.HumanoidRootPart.CFrame * Farm_Mode)
+                                        x.HumanoidRootPart.CanCollide = false
+                                        x.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        x.HumanoidRootPart.Transparency = 1
+                                        Main_Module:BringEnemies(x, true)
+                                        Equipped.MousePos.Value = Target_Locked.Position
+                                        Main_Module.UseSkillsMastery()
+
+                                    else
+                                        __UseSkill = false
+                                        Main_Module.SetWeapon(Selected_Weapon)
+                                        Main_Module.Tween(x.HumanoidRootPart.CFrame * Farm_Mode)
+                                        x.HumanoidRootPart.CanCollide = false
+                                        x.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        x.HumanoidRootPart.Transparency = 1
+                                        Main_Module:BringEnemies(x, true)
+                                    end
+                                    
+                                until not Mastery_Farming_Func or Selected_Type_Mastery ~= "Blox Fruits" or Selected_Mode_Mastery ~= "Nearest" or not x.Parent or x.Humanoid.Health <= 0 or not Enemies:FindFirstChild(x.Name)
+                            end
+                        end
+                    end
+
+                elseif Selected_Mode_Mastery == "Select Monsters" then
+                    Selected_Monster = nil
+                    QuestModules.QuestLevel()
+                    if Enemies:FindFirstChild(NameMonster) then
+
+                        for i,v in Enemies:GetChildren() do
+                            if v.Name == NameMonster then
+                                if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                                    repeat task.wait()
+                                    
+                                        v.HumanoidRootPart.CanCollide = false
+                                        v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        v.HumanoidRootPart.Transparency = 1
+                                        v.Humanoid:ChangeState(11)
+                                        v.Humanoid:ChangeState(14)
+                                        Main_Module:BringEnemies(v, true)
+
+                                        if v.Humanoid.Health <= v.Humanoid.MaxHealth * tonumber(Mastery_Farm_Monster_Health_Set) / 100 then
+
+                                            local Equipped = Player.Character:FindFirstChildOfClass("Tool")
+                                            __UseSkill = true
+                                            Target_Locked = v.HumanoidRootPart
+                                            Equipped.MousePos.Value = Target_Locked.Position
+
+                                            Main_Module.SetWeapon("Blox Fruit")
+                                            Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                            Main_Module.UseSkillsMastery()
+
+                                        else
+                                            __UseSkill = false
+                                            Main_Module.SetWeapon(Selected_Weapon)
+                                            Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+
+                                        end
+
+                                    until not Mastery_Farming_Func or Selected_Type_Mastery ~= "Blox Fruits" or Selected_Mode_Mastery ~= "Select Monsters" or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                                end
+                            end
+                        end
+
+                    else
+                        Main_Module.WaitMobs(CFrameMonster)
+                    end
+
+                elseif Selected_Mode_Mastery == "Select Boss" then
+                    Selected_Boss = nil
+                    QuestModules.QuestBoss()
+
+                    if Enemies:FindFirstChild(Selected_Monster_Mastery) then
+
+                        for i,v in Enemies:GetChildren() do
+                            if v.Name == NameBoss then
+                                if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                                    repeat task.wait()
+                                    
+                                        v.HumanoidRootPart.CanCollide = false
+                                        v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        v.HumanoidRootPart.Transparency = 1
+                                        v.Humanoid:ChangeState(11)
+                                        v.Humanoid:ChangeState(14)
+
+                                        if v.Humanoid.Health <= v.Humanoid.MaxHealth * tonumber(Mastery_Farm_Monster_Health_Set) / 100 then
+
+                                            local Equipped = Player.Character:FindFirstChildOfClass("Tool")
+                                            __UseSkill = true
+                                            Target_Locked = v.HumanoidRootPart
+                                            Equipped.MousePos.Value = Target_Locked.Position
+
+                                            Main_Module.SetWeapon("Blox Fruit")
+                                            Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                            Main_Module.UseSkillsMastery()
+
+                                        else
+                                            __UseSkill = false
+                                            Main_Module.SetWeapon(Selected_Weapon)
+                                            Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+
+                                        end
+
+                                    until not Mastery_Farming_Func or Selected_Type_Mastery ~= "Blox Fruits" or Selected_Mode_Mastery ~= "Select Boss" or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                                end
+                            end
+                        end
+
+                    else
+                        Main_Module.WaitMobs(CFrameBoss)
+                    end
+
+                elseif Selected_Mode_Mastery == "Material" then
+                    Selected_Material = nil
+                    QuestModules.QuestMaterial()
+                    Main_Module.Tween(CFrameMaterial)
+
+                    for i,v in Enemies:GetChildren() do
+                        if table.find(NameMonster, v.Name) then
+                            if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                                repeat task.wait()
+                                
+                                    v.HumanoidRootPart.CanCollide = false
+                                    v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    v.HumanoidRootPart.Transparency = 1
+                                    v.Humanoid:ChangeState(11)
+                                    v.Humanoid:ChangeState(14)
+                                    Main_Module:BringEnemies(v, true)
+
+                                    if v.Humanoid.Health <= v.Humanoid.MaxHealth * tonumber(Mastery_Farm_Monster_Health_Set) / 100 then
+
+                                        local Equipped = Player.Character:FindFirstChildOfClass("Tool")
+                                        __UseSkill = true
+                                        Target_Locked = v.HumanoidRootPart
+                                        Equipped.MousePos.Value = Target_Locked.Position
+
+                                        Main_Module.SetWeapon("Blox Fruit")
+                                        Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                        Main_Module.UseSkillsMastery()
+
+                                    else
+                                        __UseSkill = false
+                                        Main_Module.SetWeapon(Selected_Weapon)
+                                        Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+
+                                    end
+
+                                until not Mastery_Farming_Func or Selected_Type_Mastery ~= "Blox Fruits" or Selected_Mode_Mastery ~= "Material" or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                            end
+                        end
+                    end
+
+                end
+
+            elseif Selected_Type_Mastery == "Gun" then
+                if Selected_Mode_Mastery == "Quest" then
+                    Selected_Monster = nil
+                    Selected_Monster_Mastery = nil
+                    QuestModules.QuestLevel()
+
+                    if not string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, TaskQuest) then
+                        Main_Module.InvokeRemote("AbandonQuest")
+                    end
+                    wait(.1)
+                    if Player.PlayerGui.Main.Quest.Visible == false then
+                        Main_Module.Tween(CFrameQuest)
+                        if (CFrameQuest.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 5 then
+                            wait(.1)
+                            Main_Module.InvokeRemote("StartQuest", NameQuest, QuestLv)
+                        end
+                    elseif Player.PlayerGui.Main.Quest.Visible == true then
+                        if Enemies:FindFirstChild(NameMonster) then
+
+                            for i,v in Enemies:GetChildren() do
+                                if v.Name == NameMonster then
+                                    if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                                        repeat task.wait()
+                                        
+                                            v.HumanoidRootPart.CanCollide = false
+                                            v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                            v.HumanoidRootPart.Transparency = 1
+                                            v.Humanoid:ChangeState(11)
+                                            v.Humanoid:ChangeState(14)
+                                            Main_Module:BringEnemies(v, true)
+    
+                                            if v.Humanoid.Health <= v.Humanoid.MaxHealth * tonumber(Mastery_Farm_Monster_Health_Set) / 100 then
+    
+                                                local Equipped = Player.Character:FindFirstChildOfClass("Tool")
+                                                __UseSkill = true
+                                                Target_Locked = v.HumanoidRootPart
+                                                Equipped.MousePos.Value = Target_Locked.Position
+    
+                                                Main_Module.SetWeapon("Gun")
+                                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                                Main_Module.UseSkillsMastery()
+    
+                                            else
+                                                __UseSkill = false
+                                                Main_Module.SetWeapon(Selected_Weapon)
+                                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+    
+                                            end
+    
+                                        until not Mastery_Farming_Func or Selected_Type_Mastery ~= "Gun" or Selected_Mode_Mastery ~= "Quest" or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                                    end
+                                end
+                            end
+
+                        else
+                            Main_Module.WaitMobs(CFrameMonster)
+                        end
+                    end
+
+                elseif Selected_Mode_Mastery == "Nearest" then
+                    for z,x in pairs(Enemies:GetChildren()) do
+                        if x:FindFirstChild("Humanoid") and x:FindFirstChild("HumanoidRootPart") and x.Humanoid.Health > 0 then
+                            if x.Name then
+                                repeat task.wait()
+                                    if x.Humanoid.Health <= x.Humanoid.MaxHealth * tonumber(Mastery_Farm_Monster_Health_Set) / 100 then
+                                        local Equipped = Player.Character:FindFirstChildOfClass("Tool")
+
+                                        __UseSkill = true
+                                        Target_Locked = x.HumanoidRootPart
+                                        Main_Module.SetWeapon("Gun")
+                                        Main_Module.Tween(x.HumanoidRootPart.CFrame * Farm_Mode)
+                                        x.HumanoidRootPart.CanCollide = false
+                                        x.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        x.HumanoidRootPart.Transparency = 1
+                                        Main_Module:BringEnemies(x, true)
+                                        Equipped.MousePos.Value = Target_Locked.Position
+                                        Main_Module.UseSkillsMastery()
+
+                                    else
+                                        __UseSkill = false
+                                        Main_Module.SetWeapon(Selected_Weapon)
+                                        Main_Module.Tween(x.HumanoidRootPart.CFrame * Farm_Mode)
+                                        x.HumanoidRootPart.CanCollide = false
+                                        x.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        x.HumanoidRootPart.Transparency = 1
+                                        Main_Module:BringEnemies(x, true)
+                                    end
+                                    
+                                until not Mastery_Farming_Func or Selected_Type_Mastery ~= "Gun" or Selected_Mode_Mastery ~= "Nearest" or not x.Parent or x.Humanoid.Health <= 0 or not Enemies:FindFirstChild(x.Name)
+                            end
+                        end
+                    end
+
+                elseif Selected_Mode_Mastery == "Select Monsters" then
+                    Selected_Monster = nil
+                    QuestModules.QuestLevel()
+                    if Enemies:FindFirstChild(NameMonster) then
+
+                        for i,v in Enemies:GetChildren() do
+                            if v.Name == NameMonster then
+                                if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                                    repeat task.wait()
+                                    
+                                        v.HumanoidRootPart.CanCollide = false
+                                        v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        v.HumanoidRootPart.Transparency = 1
+                                        v.Humanoid:ChangeState(11)
+                                        v.Humanoid:ChangeState(14)
+                                        Main_Module:BringEnemies(v, true)
+
+                                        if v.Humanoid.Health <= v.Humanoid.MaxHealth * tonumber(Mastery_Farm_Monster_Health_Set) / 100 then
+
+                                            local Equipped = Player.Character:FindFirstChildOfClass("Tool")
+                                            __UseSkill = true
+                                            Target_Locked = v.HumanoidRootPart
+                                            Equipped.MousePos.Value = Target_Locked.Position
+
+                                            Main_Module.SetWeapon("Gun")
+                                            Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                            Main_Module.UseSkillsMastery()
+
+                                        else
+                                            __UseSkill = false
+                                            Main_Module.SetWeapon(Selected_Weapon)
+                                            Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+
+                                        end
+
+                                    until not Mastery_Farming_Func or Selected_Type_Mastery ~= "Gun" or Selected_Mode_Mastery ~= "Select Monsters" or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                                end
+                            end
+                        end
+
+                    else
+                        Main_Module.WaitMobs(CFrameMonster)
+                    end
+
+                elseif Selected_Mode_Mastery == "Select Boss" then
+                    Selected_Boss = nil
+                    QuestModules.QuestBoss()
+
+                    if Enemies:FindFirstChild(Selected_Monster_Mastery) then
+
+                        for i,v in Enemies:GetChildren() do
+                            if v.Name == NameBoss then
+                                if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                                    repeat task.wait()
+                                    
+                                        v.HumanoidRootPart.CanCollide = false
+                                        v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        v.HumanoidRootPart.Transparency = 1
+                                        v.Humanoid:ChangeState(11)
+                                        v.Humanoid:ChangeState(14)
+
+                                        if v.Humanoid.Health <= v.Humanoid.MaxHealth * tonumber(Mastery_Farm_Monster_Health_Set) / 100 then
+
+                                            local Equipped = Player.Character:FindFirstChildOfClass("Tool")
+                                            __UseSkill = true
+                                            Target_Locked = v.HumanoidRootPart
+                                            Equipped.MousePos.Value = Target_Locked.Position
+
+                                            Main_Module.SetWeapon("Gun")
+                                            Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                            Main_Module.UseSkillsMastery()
+
+                                        else
+                                            __UseSkill = false
+                                            Main_Module.SetWeapon(Selected_Weapon)
+                                            Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+
+                                        end
+
+                                    until not Mastery_Farming_Func or Selected_Type_Mastery ~= "Gun" or Selected_Mode_Mastery ~= "Select Boss" or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                                end
+                            end
+                        end
+
+                    else
+                        Main_Module.WaitMobs(CFrameBoss)
+                    end
+
+                elseif Selected_Mode_Mastery == "Material" then
+                    Selected_Material = nil
+                    QuestModules.QuestMaterial()
+                    Main_Module.Tween(CFrameMaterial)
+
+                    for i,v in Enemies:GetChildren() do
+                        if table.find(NameMonster, v.Name) then
+                            if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                                repeat task.wait()
+                                
+                                    v.HumanoidRootPart.CanCollide = false
+                                    v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    v.HumanoidRootPart.Transparency = 1
+                                    v.Humanoid:ChangeState(11)
+                                    v.Humanoid:ChangeState(14)
+                                    Main_Module:BringEnemies(v, true)
+
+                                    if v.Humanoid.Health <= v.Humanoid.MaxHealth * tonumber(Mastery_Farm_Monster_Health_Set) / 100 then
+
+                                        local Equipped = Player.Character:FindFirstChildOfClass("Tool")
+                                        __UseSkill = true
+                                        Target_Locked = v.HumanoidRootPart
+                                        Equipped.MousePos.Value = Target_Locked.Position
+
+                                        Main_Module.SetWeapon("Gun")
+                                        Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                        Main_Module.UseSkillsMastery()
+
+                                    else
+                                        __UseSkill = false
+                                        Main_Module.SetWeapon(Selected_Weapon)
+                                        Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+
+                                    end
+
+                                until not Mastery_Farming_Func or Selected_Type_Mastery ~= "Gun" or Selected_Mode_Mastery ~= "Material" or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                            end
+                        end
+                    end
+
+                end
+            end
+        end
+    end
+end)
+
+--// Auto Farm Boss Quest
+spawn(function()
+    while task.wait() do
+        if Select_Boss_Quest_Func then
+            Selected_Monster_Mastery = nil
+            QuestModules.QuestBoss()
+
+            if not string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, NameBoss) then
+                Main_Module.InvokeRemote("AbandonQuest")
+            end
+            wait(.1)
+            if Player.PlayerGui.Main.Quest.Visible == false then
+                Main_Module.Tween(CFrameQuest)
+                if (CFrameQuest.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 5 then
+                    wait(.1)
+                    Main_Module.InvokeRemote("StartQuest", NameQuest, QuestLv)
+                end
+            elseif Player.PlayerGui.Main.Quest.Visible == true then
+                if Enemies:FindFirstChild(Selected_Boss) then
+
+                    for i,v in Enemies:GetChildren() do
+                        if v.Name == NameBoss then
+                            if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                                repeat task.wait()
+                                    v.HumanoidRootPart.CanCollide = false
+                                    v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    v.HumanoidRootPart.Transparency = 1
+                                    v.Humanoid:ChangeState(11)
+                                    v.Humanoid:ChangeState(14)
+                                    Main_Module.SetWeapon(Selected_Weapon)
+                                    Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+
+                                until not Select_Boss_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                            end
+                        end
+                    end
+
+                else
+                    Main_Module.WaitMobs(CFrameBoss)
+                end
+            end
+        end
+    end
+end)
+
+--// Auto Farm Boss No Quest
+spawn(function()
+    while task.wait() do
+        if Select_Boss_No_Quest_Func then
+            Selected_Monster_Mastery = nil
+            QuestModules.QuestBoss()
+
+            if Enemies:FindFirstChild(Selected_Boss) then
+
+                for i,v in Enemies:GetChildren() do
+                    if v.Name == NameBoss then
+                        if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                            repeat task.wait()
+                                v.HumanoidRootPart.CanCollide = false
+                                v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                v.HumanoidRootPart.Transparency = 1
+                                v.Humanoid:ChangeState(11)
+                                v.Humanoid:ChangeState(14)
+                                Main_Module.SetWeapon(Selected_Weapon)
+                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+
+                            until not Select_Boss_No_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                        end
+                    end
+                end
+
+            else
+                Main_Module.WaitMobs(CFrameBoss)
+            end
+        end
+    end
+end)
+
+--// Auto Farm Elite Hunter
+spawn(function()
+    while task.wait() do
+        if Elite_Hunter_Quest_Func then
+            local Elite_Boss_List = {"Deandre", "Diablo", "Urban"}
+            QuestModules.QuestElite()
+
+            if Player.PlayerGui.Main.Quest.Visible == false then
+                Main_Module.InvokeRemote("EliteHunter")
+
+            elseif Player.PlayerGui.Main.Quest.Visible == true then
+                if Enemies:FindFirstChild(Elite_Boss_List[1]) or Enemies:FindFirstChild(Elite_Boss_List[2]) or Enemies:FindFirstChild(Elite_Boss_List[3]) then
+
+                    for i,v in Enemies:GetChildren() do
+                        if table.find(NameElite, v.Name) then
+                            if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                                repeat task.wait()
+
+                                    v.HumanoidRootPart.CanCollide = false
+                                    v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    v.HumanoidRootPart.Transparency = 1
+                                    v.Humanoid:ChangeState(11)
+                                    v.Humanoid:ChangeState(14)
+                                    Main_Module.SetWeapon(Selected_Weapon)
+                                    Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+    
+                                until not Elite_Hunter_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                            end
+                        end
+                    end
+
+                else
+
+                    if string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, NameElite) then
+                        Main_Module.Tween(CFrameElite)
+                    end
+                end
+            end
+        end
+    end
+end)
+
+--// Auto Farm Cake Prince
+local function CheckCakePrinceifSpawned()
+    local CheckCakePrinceSpawner = Main_Module.InvokeRemote("CakePrinceSpawner")
+
+    if string.len(CheckCakePrinceSpawner) == 88 or string.len(CheckCakePrinceSpawner) == 87 or string.len(CheckCakePrinceSpawner) == 86 then
+        return false
+
+    else
+        return true
+    end
+end
+
+spawn(function()
+    while task.wait() do
+        if Cake_Prince_Quest_Func then
+            local Cake_Monster = {"Cookie Crafter", "Cake Guard", "Baking Staff", "Head Baker"}
+            local Cake_Boss = {"Cake Prince"}
+            local Cake_Monster_Pos = CFrame.new(-2077, 252, -12373)
+            local Cake_Boss_Pos = CFrame.new(-2151.82153, 149.315704, -12404.9053)
+
+            if CheckCakePrinceifSpawned() == false then
+
+                if Enemies:FindFirstChild(Cake_Monster[1]) or Enemies:FindFirstChild(Cake_Monster[2]) or Enemies:FindFirstChild(Cake_Monster[3]) or Enemies:FindFirstChild(Cake_Monster[4]) then
+                    
+                    for Index_0, Value_0 in Enemies:GetChildren() do
+                        if table.find(Cake_Monster, Value_0.Name) then
+                            if Value_0:FindFirstChild('Humanoid') and Value_0:FindFirstChild('HumanoidRootPart') and Value_0:FindFirstChild('Humanoid').Health > 0 then
+                                repeat task.wait()
+                                    Value_0.HumanoidRootPart.CanCollide = false
+                                    Value_0.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    Value_0.HumanoidRootPart.Transparency = 1
+                                    Value_0.Humanoid:ChangeState(11)
+                                    Value_0.Humanoid:ChangeState(14)
+            
+                                    Main_Module.SetWeapon(Selected_Weapon)
+                                    Main_Module.Tween(Value_0.HumanoidRootPart.CFrame * Farm_Mode)
+                                    Main_Module:BringEnemies(Value_0, true)
+                                until not Cake_Prince_Quest_Func or not Value_0.Parent or Value_0.Humanoid.Health <= 0 or not Enemies:FindFirstChild(Value_0.Name)
+                            end
+                        end
+                    end
+    
+                else
+                    Main_Module.Tween(Cake_Monster_Pos)
+                end
+
+            elseif CheckCakePrinceifSpawned() == true then
+                if Enemies:FindFirstChild("Cake Prince") then
+
+                    for Index_1, Value_1 in Enemies:GetChildren() do
+                        if table.find(Cake_Boss, Value_1.Name) then
+                            if Value_1:FindFirstChild('Humanoid') and Value_1:FindFirstChild('HumanoidRootPart') and Value_1:FindFirstChild('Humanoid').Health > 0 then
+                                repeat task.wait()
+                                    Value_1.HumanoidRootPart.CanCollide = false
+                                    Value_1.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    Value_1.HumanoidRootPart.Transparency = 1
+                                    Value_1.Humanoid:ChangeState(11)
+                                    Value_1.Humanoid:ChangeState(14)
+            
+                                    Main_Module.SetWeapon(Selected_Weapon)
+                                    Main_Module.Tween(Value_1.HumanoidRootPart.CFrame * Farm_Mode)
+
+                                until not Cake_Prince_Quest_Func or not Value_1.Parent or Value_1.Humanoid.Health <= 0 or not Enemies:FindFirstChild(Value_1.Name)
+                            end
+                        end
+                    end
+
+                else
+                    if game:GetService("Workspace").Map.CakeLoaf.BigMirror.Other.Transparency == 0 then
+                        Main_Module.Tween(Cake_Boss_Pos)
+                        
+                        if (CFrame.new(-1990.672607421875, 4532.99951171875, -14973.6748046875).Position - Player.Character.HumanoidRootPart.Position).Magnitude >= 1000 then
+                            Player.Character.HumanoidRootPart.CFrame = Cake_Boss_Pos
+                        end
+                    end
+                end
+            end
+            
+        end
+    end
+end)
+
+--// Auto Farm Dough King
+spawn(function()
+    while task.wait() do
+        if Dough_King_Quest_Func then
+            local Cake_Monster = {"Cookie Crafter", "Cake Guard", "Baking Staff", "Head Baker"}
+            local Cake_Boss = {"Dough King"}
+            local Cake_Monster_Pos = CFrame.new(-2077, 252, -12373)
+            local Cake_Boss_Pos = CFrame.new(-2151.82153, 149.315704, -12404.9053)
+
+            if CheckCakePrinceifSpawned() == false then
+
+                if Enemies:FindFirstChild(Cake_Monster[1]) or Enemies:FindFirstChild(Cake_Monster[2]) or Enemies:FindFirstChild(Cake_Monster[3]) or Enemies:FindFirstChild(Cake_Monster[4]) then
+                    
+                    for Index_0, Value_0 in Enemies:GetChildren() do
+                        if table.find(Cake_Monster, Value_0.Name) then
+                            if Value_0:FindFirstChild('Humanoid') and Value_0:FindFirstChild('HumanoidRootPart') and Value_0:FindFirstChild('Humanoid').Health > 0 then
+                                repeat task.wait()
+                                    Value_0.HumanoidRootPart.CanCollide = false
+                                    Value_0.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    Value_0.HumanoidRootPart.Transparency = 1
+                                    Value_0.Humanoid:ChangeState(11)
+                                    Value_0.Humanoid:ChangeState(14)
+            
+                                    Main_Module.SetWeapon(Selected_Weapon)
+                                    Main_Module.Tween(Value_0.HumanoidRootPart.CFrame * Farm_Mode)
+                                    Main_Module:BringEnemies(Value_0, true)
+                                until not Dough_King_Quest_Func or not Value_0.Parent or Value_0.Humanoid.Health <= 0 or not Enemies:FindFirstChild(Value_0.Name)
+                            end
+                        end
+                    end
+    
+                else
+                    Main_Module.Tween(Cake_Monster_Pos)
+                end
+
+            elseif CheckCakePrinceifSpawned() == true then
+                Main_Module.InvokeRemote("DoughKingSpawner", true)
+                wait(0.3)
+                if Enemies:FindFirstChild("Dough King") then
+
+                    for Index_1, Value_1 in Enemies:GetChildren() do
+                        if table.find(Cake_Boss, Value_1.Name) then
+                            if Value_1:FindFirstChild('Humanoid') and Value_1:FindFirstChild('HumanoidRootPart') and Value_1:FindFirstChild('Humanoid').Health > 0 then
+                                repeat task.wait()
+                                    Value_1.HumanoidRootPart.CanCollide = false
+                                    Value_1.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    Value_1.HumanoidRootPart.Transparency = 1
+                                    Value_1.Humanoid:ChangeState(11)
+                                    Value_1.Humanoid:ChangeState(14)
+            
+                                    Main_Module.SetWeapon(Selected_Weapon)
+                                    Main_Module.Tween(Value_1.HumanoidRootPart.CFrame * Farm_Mode)
+
+                                until not Dough_King_Quest_Func or not Value_1.Parent or Value_1.Humanoid.Health <= 0 or not Enemies:FindFirstChild(Value_1.Name)
+                            end
+                        end
+                    end
+
+                else
+                    if game:GetService("Workspace").Map.CakeLoaf.BigMirror.Other.Transparency == 0 then
+                        Main_Module.Tween(Cake_Boss_Pos)
+                        
+                        if (CFrame.new(-1990.672607421875, 4532.99951171875, -14973.6748046875).Position - Player.Character.HumanoidRootPart.Position).Magnitude >= 1000 then
+                            Player.Character.HumanoidRootPart.CFrame = Cake_Boss_Pos
+                        end
+                    end
+                end
+            end
+
+        end
+    end
+end)
+
+--// Auto Farm Factory
+spawn(function()
+    while task.wait() do
+        if Factory_Farming_Func then
+            if Enemies:FindFirstChild("Core") then
+                for i,v in pairs(Enemies:GetChildren()) do
+                    if v.Name == "Core" then
+                        if v:FindFirstChild('Humanoid') and v.Humanoid.Health > 0 then
+                            repeat task.wait()
+                                Main_Module.SetWeapon(Selected_Weapon)
+                                Main_Module.Tween(CFrame.new(448.46756, 199.356781, -441.389252))
+                            until not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild("Core") or not Factory_Farming_Func
+                        end
+                    end
+                end
+            else
+                Main_Module.Tween(CFrame.new(448.46756, 199.356781, -441.389252))
+            end
+        end
+    end
+end)
+
+--// Auto Farm Pirate
+spawn(function()
+    while task.wait() do
+        if Pirate_Raid_Farming_Func then
+            local PiratePos = CFrame.new(-5539.3115234375, 313.800537109375, -2972.372314453125)
+
+            if (PiratePos.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 500 then
+                for i, v in Enemies:GetChildren() do
+                    if v.Name and v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                        repeat task.wait()
+                            v.HumanoidRootPart.CanCollide = false
+                            v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                            v.HumanoidRootPart.Transparency = 1
+                            v.Humanoid:ChangeState(11)
+                            v.Humanoid:ChangeState(14)
+
+                            Main_Module.SetWeapon(Selected_Weapon)
+                            Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+
+                        until not Pirate_Raid_Farming_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                    end
+                end
+            else
+                Main_Module.Tween(PiratePos)
+            end
+        end
+    end
+end)
+
+--// Auto Farm Chest
+local function GetChest()
+    local ChestTable = {}
+    local ChestList = Main_Module.ChestList
+    for i_Chest, v_Chest in workspace.ChestModels:GetChildren() do
+        if table.find(ChestList, v_Chest.Name) then
+            table.insert(ChestTable, v_Chest.RootPart.CFrame)
+        end
+    end
+    return ChestTable
+end
+spawn(function()
+    while task.wait() do
+        if Farming_Chest_Func then
+            local ChestList = Main_Module.ChestList
+            local newIslandChest = Main_Module.getListNewChest()
+            local isTargetChest = GetChest()
+            
+            if workspace.ChestModels:FindFirstChild(ChestList[1]) or workspace.ChestModels:FindFirstChild(ChestList[2]) or workspace.ChestModels:FindFirstChild(ChestList[3]) or workspace.ChestModels:FindFirstChild(ChestList[4]) or workspace.ChestModels:FindFirstChild(ChestList[5]) or workspace.ChestModels:FindFirstChild(ChestList[6]) then
+                for i=1, #isTargetChest do
+                    local isChest = isTargetChest[i]
+                    repeat task.wait()
+                        Main_Module.Tween(isChest)
+                    until not Farming_Chest_Func or (isChest.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 1
+                end
+            else
+                local ChestTarget = newIslandChest[math.random(#newIslandChest)]
+                repeat task.wait()
+                    Main_Module.Tween(ChestTarget)
+                until not Farming_Chest_Func or (ChestTarget.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 
+            end
+        end
+    end
+end)
+
+--// Auto Farm Observation
+spawn(function()
+    while task.wait() do
+        if Farming_Observation_Func then
+            QuestModules.ObservationFarm()
+
+            if not Player.Character:FindFirstChild("Highlight") then
+                VirtualInputManager:SendKeyEvent(true, "E", false, game)
+                wait(.1)
+                VirtualInputManager:SendKeyEvent(false, "E", false, game)
+            end
+            wait(.1)
+
+            if Enemies:FindFirstChild(ObservationMonsterName) then
+                if Player.PlayerGui.ScreenGui:FindFirstChild("ImageLabel") then
+                    repeat task.wait()
+                        Main_Module.Tween(Enemies:FindFirstChild(ObservationMonsterName).HumanoidRootPart.CFrame * CFrame.new(2,0,0))
+                    until not Farming_Observation_Func or not Player.PlayerGui.ScreenGui:FindFirstChild("ImageLabel")
+                else
+                    Main_Module.Tween(Enemies:FindFirstChild(ObservationMonsterName).HumanoidRootPart.CFrame * CFrame.new(0,100,0))
+                end
+            else
+                Main_Module.Tween(ObservationPos)
+            end
+        end
+    end
+end)
+
+--// Observation V2
+spawn(function()
+    while task.wait(0.5) do
+        if Get_Observation_V2_Func then
+            pcall(function()
+                local Fruit_Table = {'Banana', 'Apple', 'Pineapple'}
+                local Character = Player.Character
+                if not Character or not Character:FindFirstChild("HumanoidRootPart") then return end
+                
+                local Backpack = Player.Backpack
+                local CitizenNPC = CFrame.new(-12444.78515625, 332.40396118164, -7673.1806640625)
+                local KillaNPC = CFrame.new(-10920.125, 624.20275878906, -10266.995117188)
+                local FruitSpawnPos = CFrame.new(-10553.5625, 332.4039001465, -8745.001953125)
+                
+                local function hasFruit(name)
+                    return (Backpack and Backpack:FindFirstChild(name)) or (Character and Character:FindFirstChild(name))
+                end
+                
+                local function hasAllFruits()
+                    return hasFruit(Fruit_Table[1]) and hasFruit(Fruit_Table[2]) and hasFruit(Fruit_Table[3])
+                end
+                
+                local function hasFruitBowl()
+                    return (Backpack and Backpack:FindFirstChild("Fruit Bowl")) or (Character and Character:FindFirstChild("Fruit Bowl"))
+                end
+                
+                local questProgress = Main_Module.InvokeRemote("CitizenQuestProgress", "Citizen")
+                
+                if questProgress == 0 then
+                    local dist = (CitizenNPC.Position - Character.HumanoidRootPart.Position).Magnitude
+                    if dist <= 10 then
+                        Main_Module.InvokeRemote("CitizenQuestProgress", "Citizen")
+                        wait(0.5)
+                    else
+                        Main_Module.Tween(CitizenNPC)
+                    end
+                    
+                elseif questProgress == 1 or questProgress == 2 then
+                    if hasAllFruits() then
+                        local dist = (CitizenNPC.Position - Character.HumanoidRootPart.Position).Magnitude
+                        if dist <= 10 then
+                            Main_Module.InvokeRemote("CitizenQuestProgress", "Citizen")
+                            wait(0.5)
+                        else
+                            Main_Module.Tween(CitizenNPC)
+                        end
+                    else
+                        local foundFruit = false
+                        for i, v in pairs(workspace:GetChildren()) do
+                            if table.find(Fruit_Table, v.Name) and not hasFruit(v.Name) then
+                                if v:FindFirstChild("Handle") then
+                                    v.Handle.CFrame = Character.HumanoidRootPart.CFrame * CFrame.new(0, 1, 10)
+                                    wait(0.1)
+                                    firetouchinterest(Character.HumanoidRootPart, v.Handle, 0)
+                                    wait(0.1)
+                                    foundFruit = true
+                                end
+                            end
+                        end
+                        if not foundFruit then
+                            Main_Module.Tween(FruitSpawnPos)
+                        end
+                    end
+                    
+                elseif questProgress == 3 then
+                    if hasFruitBowl() then
+                        local dist = (KillaNPC.Position - Character.HumanoidRootPart.Position).Magnitude
+                        if dist <= 10 then
+                            Main_Module.InvokeRemote("KenTalk2", "Start")
+                            wait(1)
+                            Main_Module.InvokeRemote("KenTalk2", "Buy")
+                            Main_Module:SetNotify("Observation V2", "Observation V2 Unlocked!", 5)
+                            Get_Observation_V2_Func = false
+                        else
+                            Main_Module.Tween(KillaNPC)
+                        end
+                    else
+                        local dist = (CitizenNPC.Position - Character.HumanoidRootPart.Position).Magnitude
+                        if dist <= 10 then
+                            Main_Module.InvokeRemote("CitizenQuestProgress", "Citizen")
+                            wait(0.5)
+                        else
+                            Main_Module.Tween(CitizenNPC)
+                        end
+                    end
+                    
+                elseif questProgress == -1 or questProgress == nil then
+                    Main_Module:SetNotify("Observation V2", "Already have Observation V2!", 3)
+                    Get_Observation_V2_Func = false
+                end
+            end)
+        end
+    end
+end)
+
+--// Helper function to get weapon from backpack or character
+local function GetBP(weaponName)
+    if Player.Backpack:FindFirstChild(weaponName) then
+        return Player.Backpack:FindFirstChild(weaponName)
+    elseif Player.Character and Player.Character:FindFirstChild(weaponName) then
+        return Player.Character:FindFirstChild(weaponName)
+    end
+    return nil
+end
+
+--// Helper function to get material count
+local function GetMaterial(materialName)
+    local count = 0
+    pcall(function()
+        local materials = Main_Module.InvokeRemote("getInventory")
+        if materials and materials[materialName] then
+            count = materials[materialName]
+        end
+    end)
+    return count
+end
+
+--// Death Step
+spawn(function()
+    while task.wait() do
+        if Death_Step_Quest_Func then
+            pcall(function()
+                if not GetBP("Death Step") then
+                    if not GetBP("Black Leg") then
+                        Main_Module.InvokeRemote("BuyBlackLeg")
+                    end
+                    
+                    local blackLeg = GetBP("Black Leg")
+                    if blackLeg and blackLeg.Level.Value >= 400 then
+                        Main_Module.InvokeRemote("BuyDeathStep")
+                        
+                        if GetBP("Library Key") then
+                            repeat task.wait()
+                                Main_Module.EquipTool("Library Key")
+                                Main_Module.Tween(CFrame.new(6371.2001953125, 296.63433837891, -6841.1811523438))
+                            until not Death_Step_Quest_Func or (CFrame.new(6371.2001953125, 296.63433837891, -6841.1811523438).Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 5
+                            Main_Module.InvokeRemote("BuyDeathStep")
+                        elseif Map.IceCastle.Hall.LibraryDoor.PhoeyuDoor.Transparency == 0 then
+                            if Enemies:FindFirstChild("Awakened Ice Admiral") then
+                                for i,v in pairs(Enemies:GetChildren()) do
+                                    if v.Name == "Awakened Ice Admiral" and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                                        repeat task.wait()
+                                            v.HumanoidRootPart.CanCollide = false
+                                            v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                            v.HumanoidRootPart.Transparency = 1
+                                            v.Humanoid:ChangeState(11)
+                                            v.Humanoid:ChangeState(14)
+                                            Main_Module.SetWeapon(Selected_Weapon)
+                                            Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                            Main_Module:BringEnemies(v, true)
+                                        until not Death_Step_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or GetBP("Library Key") or GetBP("Death Step")
+                                    end
+                                end
+                            else
+                                Main_Module.Tween(CFrame.new(5668.9780273438, 28.519989013672, -6483.3520507813))
+                            end
+                        else
+                            Main_Module.InvokeRemote("BuyDeathStep")
+                        end
+                    elseif blackLeg and blackLeg.Level.Value < 400 then
+                        Level_Quest_Func = true
+                    end
+                end
+            end)
+        end
+    end
+end)
+
+--// Sharkman Karate
+spawn(function()
+    while task.wait() do
+        if Sharkman_Karate_Quest_Func then
+            pcall(function()
+                if GetBP("Sharkman Karate") then
+                    Sharkman_Karate_Quest_Func = false
+                    Main_Module:SetNotify("Sharkman Karate", "Already obtained!", 3)
+                    return
+                end
+
+                Main_Module.InvokeRemote("BuyFishmanKarate")
+                
+                local fishmanKarate = Player.Character:FindFirstChild("Fishman Karate") or Player.Backpack:FindFirstChild("Fishman Karate")
+                
+                if fishmanKarate and fishmanKarate.Level.Value >= 400 then
+                    local SharkmanNPC = CFrame.new(-2604.6958, 239.432526, -10315.1982)
+                    local TideKeeperSpawn = CFrame.new(-3711, 77, -11469)
+                    
+                    if GetBP("Water Key") then
+                        Main_Module.EquipTool("Water Key")
+                        if (SharkmanNPC.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 5 then
+                            Main_Module.InvokeRemote("SharkmanTemple", "Water Key")
+                            wait(.1)
+                            Main_Module.InvokeRemote("BuySharkmanKarate")
+                        else
+                            Main_Module.Tween(SharkmanNPC)
+                        end
+                    else
+                        if Enemies:FindFirstChild("Tide Keeper") then
+                            for i,v in pairs(Enemies:GetChildren()) do
+                                if v.Name == "Tide Keeper" and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                                    repeat task.wait()
+                                        v.HumanoidRootPart.CanCollide = false
+                                        v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        v.HumanoidRootPart.Transparency = 1
+                                        v.Humanoid:ChangeState(11)
+                                        v.Humanoid:ChangeState(14)
+                                        Main_Module.SetWeapon(Selected_Weapon)
+                                        Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                        Main_Module:BringEnemies(v, true)
+                                    until not Sharkman_Karate_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or GetBP("Water Key")
+                                end
+                            end
+                        else
+                            Main_Module.Tween(TideKeeperSpawn)
+                        end
+                    end
+                elseif fishmanKarate then
+                    Level_Quest_Func = true
+                else
+                    Main_Module:SetNotify("Sharkman Karate", "Buy Water Kung Fu first - requires 750,000 Beli", 5)
+                    wait(4)
+                end
+            end)
+        end
+    end
+end)
+
+--// Electric Claw
+spawn(function()
+    while task.wait() do
+        if Electric_Claw_Quest_Func then
+            pcall(function()
+                if GetBP("Electric Claw") then
+                    Electric_Claw_Quest_Func = false
+                    Main_Module:SetNotify("Electric Claw", "Already obtained!", 3)
+                    return
+                end
+
+                Main_Module.InvokeRemote("BuyElectro")
+                
+                local electro = Player.Character:FindFirstChild("Electro") or Player.Backpack:FindFirstChild("Electro")
+                
+                if electro and electro.Level.Value >= 400 then
+                    local PreviousNPC = CFrame.new(-10371.4717, 330.764496, -10131.4199)
+                    local FinishNPC = CFrame.new(-12548.5967, 337.198151, -7492.63623)
+                    
+                    local electricClawProgress = Main_Module.InvokeRemote("BuyElectricClaw", "Check")
+                    
+                    if electricClawProgress == nil or electricClawProgress == false then
+                        if (PreviousNPC.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                            Main_Module.InvokeRemote("BuyElectricClaw", true)
+                            wait(.5)
+                            Main_Module.InvokeRemote("BuyElectricClaw", "Start")
+                        else
+                            Main_Module.Tween(PreviousNPC)
+                        end
+                    elseif electricClawProgress == "Started" or electricClawProgress == true then
+                        if (FinishNPC.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                            Main_Module.InvokeRemote("BuyElectricClaw")
+                        else
+                            Main_Module.Tween(FinishNPC)
+                        end
+                    end
+                elseif electro then
+                    Level_Quest_Func = true
+                else
+                    Main_Module:SetNotify("Electric Claw", "Buy Electro first from Mink race area", 5)
+                    wait(4)
+                end
+            end)
+        end
+    end
+end)
+
+--// Dragon Talon
+spawn(function()
+    while task.wait() do
+        if Dragon_Talon_Quest_Func then
+            pcall(function()
+                if GetBP("Dragon Talon") then
+                    Dragon_Talon_Quest_Func = false
+                    Main_Module:SetNotify("Dragon Talon", "Already obtained!", 3)
+                    return
+                end
+
+                Main_Module.InvokeRemote("BlackbeardReward", "DragonClaw", "1")
+                Main_Module.InvokeRemote("BlackbeardReward", "DragonClaw", "2")
+                
+                local dragonClaw = Player.Character:FindFirstChild("Dragon Claw") or Player.Backpack:FindFirstChild("Dragon Claw")
+                
+                if dragonClaw and dragonClaw.Level.Value >= 400 then
+                    local DragonTalonNPC = CFrame.new(5661.89844, 1210.87708, 863.175537)
+                    local MagmaAdmiralSpawn = CFrame.new(-5230.7573242188, 34.912307739258, 8466.9248046875)
+                    
+                    if GetBP("Fire Essence") then
+                        if (DragonTalonNPC.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                            Main_Module.InvokeRemote("BuyDragonTalon", true)
+                            wait(.1)
+                            Main_Module.InvokeRemote("BuyDragonTalon")
+                        else
+                            Main_Module.Tween(DragonTalonNPC)
+                        end
+                    else
+                        if Enemies:FindFirstChild("Magma Admiral") then
+                            for i,v in pairs(Enemies:GetChildren()) do
+                                if v.Name == "Magma Admiral" and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                                    repeat task.wait()
+                                        v.HumanoidRootPart.CanCollide = false
+                                        v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        v.HumanoidRootPart.Transparency = 1
+                                        v.Humanoid:ChangeState(11)
+                                        v.Humanoid:ChangeState(14)
+                                        Main_Module.SetWeapon(Selected_Weapon)
+                                        Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                        Main_Module:BringEnemies(v, true)
+                                    until not Dragon_Talon_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or GetBP("Fire Essence")
+                                end
+                            end
+                        else
+                            Main_Module.Tween(MagmaAdmiralSpawn)
+                        end
+                    end
+                elseif dragonClaw then
+                    Level_Quest_Func = true
+                else
+                    Main_Module:SetNotify("Dragon Talon", "Buy Dragon Claw first from Blackbeard ship", 5)
+                    wait(4)
+                end
+            end)
+        end
+    end
+end)
+
+--// Godhuman
+spawn(function()
+    while task.wait() do
+        if Godhuman_Quest_Func then
+            pcall(function()
+                if GetBP("Godhuman") then
+                    Godhuman_Quest_Func = false
+                    Main_Module:SetNotify("Godhuman", "Already obtained!", 3)
+                    return
+                end
+
+                local GodhumanNPC = CFrame.new(-459.02398681641, 331.66931152344, -429.85247802734)
+                local requirements = {
+                    level = Player.Data.Level.Value >= 1500,
+                    dragonScale = GetMaterial("DragonScale", 10),
+                    fishTail = GetMaterial("FishTail", 20),
+                    mysticDroplet = GetMaterial("MysticDroplet", 10),
+                    magmaOre = GetMaterial("MagmaOre", 20),
+                }
+                
+                local superhuman = Player.Character:FindFirstChild("Superhuman") or Player.Backpack:FindFirstChild("Superhuman")
+                local deathStep = Player.Character:FindFirstChild("Death Step") or Player.Backpack:FindFirstChild("Death Step")
+                local sharkman = Player.Character:FindFirstChild("Sharkman Karate") or Player.Backpack:FindFirstChild("Sharkman Karate")
+                local electricClaw = Player.Character:FindFirstChild("Electric Claw") or Player.Backpack:FindFirstChild("Electric Claw")
+                local dragonTalon = Player.Character:FindFirstChild("Dragon Talon") or Player.Backpack:FindFirstChild("Dragon Talon")
+                
+                local allMastery400 = superhuman and superhuman.Level.Value >= 400
+                    and deathStep and deathStep.Level.Value >= 400
+                    and sharkman and sharkman.Level.Value >= 400
+                    and electricClaw and electricClaw.Level.Value >= 400
+                    and dragonTalon and dragonTalon.Level.Value >= 400
+                
+                if allMastery400 and requirements.level and requirements.dragonScale and requirements.fishTail and requirements.mysticDroplet and requirements.magmaOre then
+                    if (GodhumanNPC.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                        Main_Module.InvokeRemote("BuyGodhuman")
+                    else
+                        Main_Module.Tween(GodhumanNPC)
+                    end
+                else
+                    local missing = {}
+                    if not requirements.level then table.insert(missing, "Level 1500+") end
+                    if not allMastery400 then table.insert(missing, "All 5 fighting styles at Mastery 400+") end
+                    if not requirements.dragonScale then table.insert(missing, "10 Dragon Scale") end
+                    if not requirements.fishTail then table.insert(missing, "20 Fish Tail") end
+                    if not requirements.mysticDroplet then table.insert(missing, "10 Mystic Droplet") end
+                    if not requirements.magmaOre then table.insert(missing, "20 Magma Ore") end
+                    
+                    Main_Module:SetNotify("Godhuman Missing", table.concat(missing, "\n"), 8)
+                    wait(6)
+                end
+            end)
+        end
+    end
+end)
+
+--// Sanguine Art
+spawn(function()
+    while task.wait() do
+        if Sangui_art_Quest_Func then
+            pcall(function()
+                if GetBP("Sanguine Art") then
+                    Sangui_art_Quest_Func = false
+                    Main_Module:SetNotify("Sanguine Art", "Already obtained!", 3)
+                    return
+                end
+
+                local SanguineNPC = CFrame.new(-6508.5581054688, 337.46493530273, -314.37997436523)
+                local requirements = {
+                    leviathanHeart = GetMaterial("LeviathanHeart", 1),
+                    demonicWisps = GetMaterial("DemonicWisp", 20),
+                    vampireFangs = GetMaterial("VampireFang", 20),
+                    darkFragment = GetMaterial("DarkFragment", 2),
+                }
+                
+                if requirements.leviathanHeart and requirements.demonicWisps and requirements.vampireFangs and requirements.darkFragment then
+                    if (SanguineNPC.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                        Main_Module.InvokeRemote("BuySanguineArt")
+                    else
+                        Main_Module.Tween(SanguineNPC)
+                    end
+                else
+                    local missing = {}
+                    if not requirements.leviathanHeart then table.insert(missing, "1 Leviathan Heart (from Leviathan)") end
+                    if not requirements.demonicWisps then table.insert(missing, "20 Demonic Wisps (from Demonic Soul)") end
+                    if not requirements.vampireFangs then table.insert(missing, "20 Vampire Fangs (from Vampire)") end
+                    if not requirements.darkFragment then table.insert(missing, "2 Dark Fragments (from Dark Beard)") end
+                    
+                    Main_Module:SetNotify("Sanguine Art Missing", table.concat(missing, "\n"), 8)
+                    wait(6)
+                end
+            end)
+        end
+    end
+end)
+
+--// Saber V1
+spawn(function()
+    while task.wait() do
+        if Saber_V1_Quest_Func then
+            if Player.Data.Level.Value >= 200 then
+                if Map.Jungle.Final.Part.Transparency == 0 then
+                    if Map.Jungle.QuestPlates.Door.Transparency == 0 then
+
+                        if (CFrame.new(-1612.55884, 36.9774132, 148.719543).Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 100 then
+                            Main_Module.Tween(Player.Character.HumanoidRootPart.CFrame)
+                            wait(1)
+                            Player.Character.HumanoidRootPart.CFrame = Map.Jungle.QuestPlates.Plate1.Button.CFrame
+                            wait(1.5)
+                            Player.Character.HumanoidRootPart.CFrame = Map.Jungle.QuestPlates.Plate2.Button.CFrame
+                            wait(1.5)
+                            Player.Character.HumanoidRootPart.CFrame = Map.Jungle.QuestPlates.Plate3.Button.CFrame
+                            wait(1.5)
+                            Player.Character.HumanoidRootPart.CFrame = Map.Jungle.QuestPlates.Plate4.Button.CFrame
+                            wait(1.5)
+                            Player.Character.HumanoidRootPart.CFrame = Map.Jungle.QuestPlates.Plate5.Button.CFrame
+                            wait(1.5)
+                        else
+                            Main_Module.Tween(CFrame.new(-1612.55884, 36.9774132, 148.719543))
+                        end
+                    else
+                        if Map.Desert.Burn.Part.Transparency == 0 then
+                            if Player.Backpack:FindFirstChild("Torch") or Player.Character:FindFirstChild("Torch") then
+                                Main_Module.EquipTool("Torch")
+                                Main_Module.Tween(CFrame.new(1114.61475, 5.04679728, 4350.22803))
+                            else
+                                Main_Module.Tween(CFrame.new(-1610.00757, 11.5049858, 164.001587))
+                            end
+                        else
+                            if Main_Module.InvokeRemote("ProQuestProgress", "SickMan") ~= 0 then
+                                Main_Module.InvokeRemote("ProQuestProgress", "GetCup")
+                                wait(1)
+                                Main_Module.EquipTool("Cup")
+                                wait(1)
+                                Main_Module.InvokeRemote("ProQuestProgress", "FillCup", Player.Character.Cup)
+                                wait(1)
+                                Main_Module.InvokeRemote("ProQuestProgress", "SickMan")
+                            else
+                                if Main_Module.InvokeRemote("ProQuestProgress", "RichSon") == nil then
+                                    Main_Module.InvokeRemote("ProQuestProgress", "RichSon")
+
+                                elseif Main_Module.InvokeRemote("ProQuestProgress", "RichSon") == 0 then
+                                    if Enemies:FindFirstChild("Mob Leader") then
+                                        for i,v in pairs(Enemies:GetChildren()) do
+                                            if v.Name == "Mob Leader" then
+                                                if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                                                
+                                                    repeat task.wait()
+                                                        v.HumanoidRootPart.CanCollide = false
+                                                        v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                                        v.HumanoidRootPart.Transparency = 1
+                                                        v.Humanoid:ChangeState(11)
+                                                        v.Humanoid:ChangeState(14)
+                                                        
+                                                        Main_Module.SetWeapon(Selected_Weapon)
+                                                        Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                                    until not Saber_V1_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or Main_Module.InvokeRemote("ProQuestProgress", "RichSon") == 1
+                                                end
+                                            end
+                                        end
+                                    else
+                                        Main_Module.Tween(CFrame.new(-2815.05396, 36.3834953, 5377.89258))
+                                    end
+
+                                elseif Main_Module.InvokeRemote("ProQuestProgress", "RichSon") == 1 then
+                                    Main_Module.InvokeRemote("ProQuestProgress", "RichSon")
+                                    wait(1)
+                                    Main_Module.EquipTool("Relic")
+                                    wait(1)
+                                    Main_Module.Tween(CFrame.new(-1404.91504, 29.9773273, 3.80598116))
+                                    wait(1)
+                                    Main_Module.InvokeRemote("OpenLibrary")
+                                end
+                            end
+                        end
+                    end
+                else
+                    if Enemies:FindFirstChild("Saber Expert") then
+                        for i,v in pairs(Enemies:GetChildren()) do
+                            if v.Name == "Saber Expert" then
+                                if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                                
+                                    repeat task.wait()
+                                        v.HumanoidRootPart.CanCollide = false
+                                        v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        v.HumanoidRootPart.Transparency = 1
+                                        v.Humanoid:ChangeState(11)
+                                        v.Humanoid:ChangeState(14)
+                                        
+                                        Main_Module.SetWeapon(Selected_Weapon)
+                                        Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                    until not Saber_V1_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or Player.Backpack:FindFirstChild("Saber") or Player.Character:FindFirstChild("Saber")
+                                    if v.Humanoid.Health <= 0 then
+                                        Main_Module.InvokeRemote("ProQuestProgress", "PlaceRelic")
+                                    end
+                                end
+                            end
+                        end
+                    else
+                        Main_Module.Tween(CFrame.new(-1430.15576, 62.2188568, -7.36060524))
+                    end
+                end
+            else
+                Main_Module:SetNotify("Saber Required", "- You need to reach Lv.200.", 5)
+                wait(4)
+            end
+        end
+    end
+end)
+
+--// Legendary Sword
+spawn(function()
+    while task.wait() do
+        if Legendary_Sword_Dealer_Func then
+            Main_Module.InvokeRemote("LegendarySworldDealer", "1")
+            Main_Module.InvokeRemote("LegendarySworldDealer", "2")
+            Main_Module.InvokeRemote("LegendarySworldDealer", "3")
+        end
+    end
+end)
+
+--// Rengoku
+spawn(function()
+    while task.wait() do
+        if Rengoku_Quest_Func then
+            if Player.Backpack:FindFirstChild("Hidden Key") or Player.Character:FindFirstChild("Hidden Key") then
+                Main_Module.EquipTool("Hidden Key")
+                wait(1)
+                Main_Module.Tween(CFrame.new(6571.1201171875, 299.23028564453, -6967.841796875))
+                wait(1)
+                Main_Module.InvokeRemote("OpenLibrary")
+            else
+                if Enemies:FindFirstChild("Snow Lurker") or Enemies:FindFirstChild("Arctic Warrior") or Enemies:FindFirstChild("Awakened Ice Admiral") then
+                    for i,v in pairs(Enemies:GetChildren()) do
+                        if v.Name == "Snow Lurker" or v.Name == "Arctic Warrior" or v.Name == "Awakened Ice Admiral" then
+                            if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                            
+                                repeat task.wait()
+                                    v.HumanoidRootPart.CanCollide = false
+                                    v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    v.HumanoidRootPart.Transparency = 1
+                                    v.Humanoid:ChangeState(11)
+                                    v.Humanoid:ChangeState(14)
+            
+                                    Main_Module.SetWeapon(Selected_Weapon)
+                                    Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                    Main_Module:BringEnemies(v, true)
+                                until not Rengoku_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or Player.Backpack:FindFirstChild("Hidden Key") or Player.Character:FindFirstChild("Hidden Key")
+                            end
+                        end
+                    end
+                else
+                    Main_Module.Tween(CFrame.new(5439.716796875, 84.420944213867, -6715.1635742188))
+                end
+            end
+        end
+    end
+end)
+
+--// Buddy Sword
+spawn(function()
+    while task.wait() do
+        if Buddy_Sword_Quest_Func then
+            local Cake_Monster = {"Cookie Crafter", "Cake Guard", "Baking Staff", "Head Baker"}
+            local Cake_Boss = {"Cake Prince"}
+            local Cake_Monster_Pos = CFrame.new(-2077, 252, -12373)
+            local Cake_Boss_Pos = CFrame.new(-2151.82153, 149.315704, -12404.9053)
+
+            if CheckCakePrinceifSpawned() == false then
+
+                if Enemies:FindFirstChild(Cake_Monster[1]) or Enemies:FindFirstChild(Cake_Monster[2]) or Enemies:FindFirstChild(Cake_Monster[3]) or Enemies:FindFirstChild(Cake_Monster[4]) then
+                    
+                    for Index_0, Value_0 in Enemies:GetChildren() do
+                        if table.find(Cake_Monster, Value_0.Name) then
+                            if Value_0:FindFirstChild('Humanoid') and Value_0:FindFirstChild('HumanoidRootPart') and Value_0:FindFirstChild('Humanoid').Health > 0 then
+                                repeat task.wait()
+                                    Value_0.HumanoidRootPart.CanCollide = false
+                                    Value_0.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    Value_0.HumanoidRootPart.Transparency = 1
+                                    Value_0.Humanoid:ChangeState(11)
+                                    Value_0.Humanoid:ChangeState(14)
+            
+                                    Main_Module.SetWeapon(Selected_Weapon)
+                                    Main_Module.Tween(Value_0.HumanoidRootPart.CFrame * Farm_Mode)
+                                    Main_Module:BringEnemies(Value_0, true)
+                                until not Buddy_Sword_Quest_Func or not Value_0.Parent or Value_0.Humanoid.Health <= 0 or not Enemies:FindFirstChild(Value_0.Name)
+                            end
+                        end
+                    end
+    
+                else
+                    Main_Module.Tween(Cake_Monster_Pos)
+                end
+
+            elseif CheckCakePrinceifSpawned() == true then
+                if Enemies:FindFirstChild("Cake Prince") then
+
+                    for Index_1, Value_1 in Enemies:GetChildren() do
+                        if table.find(Cake_Boss, Value_1.Name) then
+                            if Value_1:FindFirstChild('Humanoid') and Value_1:FindFirstChild('HumanoidRootPart') and Value_1:FindFirstChild('Humanoid').Health > 0 then
+                                repeat task.wait()
+                                    Value_1.HumanoidRootPart.CanCollide = false
+                                    Value_1.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    Value_1.HumanoidRootPart.Transparency = 1
+                                    Value_1.Humanoid:ChangeState(11)
+                                    Value_1.Humanoid:ChangeState(14)
+            
+                                    Main_Module.SetWeapon(Selected_Weapon)
+                                    Main_Module.Tween(Value_1.HumanoidRootPart.CFrame * Farm_Mode)
+
+                                until not Buddy_Sword_Quest_Func or not Value_1.Parent or Value_1.Humanoid.Health <= 0 or not Enemies:FindFirstChild(Value_1.Name)
+                            end
+                        end
+                    end
+
+                else
+                    if game:GetService("Workspace").Map.CakeLoaf.BigMirror.Other.Transparency == 0 then
+                        Main_Module.Tween(Cake_Boss_Pos)
+                        
+                        if (CFrame.new(-1990.672607421875, 4532.99951171875, -14973.6748046875).Position - Player.Character.HumanoidRootPart.Position).Magnitude >= 1000 then
+                            Player.Character.HumanoidRootPart.CFrame = Cake_Boss_Pos
+                        end
+                    end
+                end
+            end
+        end
+    end
+end)
+
+--// Pole (1st Form)
+spawn(function()
+    while task.wait() do
+        if Pole_1stForm_Quest_Func then
+            if Enemies:FindFirstChild("Thunder God") then
+                for i,v in pairs(Enemies:GetChildren()) do
+                    if v.Name == "Thunder God" then
+                        if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                        
+                            repeat task.wait()
+                                v.HumanoidRootPart.CanCollide = false
+                                v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                v.HumanoidRootPart.Transparency = 1
+                                v.Humanoid:ChangeState(11)
+                                v.Humanoid:ChangeState(14)
+        
+                                Main_Module.SetWeapon(Selected_Weapon)
+                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                            until not Pole_1stForm_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                        end
+                    end
+                end
+            else
+                Main_Module.Tween(CFrame.new(-7751, 5607, -2315))
+            end
+        end
+    end
+end)
+
+--// Cavander
+spawn(function()
+    while task.wait() do
+        if Cavander_Quest_Func then
+            if Enemies:FindFirstChild("Beautiful Pirate") then
+                for i,v in pairs(Enemies:GetChildren()) do
+                    if v.Name == "Beautiful Pirate" then
+                        if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                        
+                            repeat task.wait()
+                                v.HumanoidRootPart.CanCollide = false
+                                v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                v.HumanoidRootPart.Transparency = 1
+                                v.Humanoid:ChangeState(11)
+                                v.Humanoid:ChangeState(14)
+        
+                                Main_Module.SetWeapon(Selected_Weapon)
+                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                            until not Cavander_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                        end
+                    end
+                end
+            else
+                Main_Module.Tween(CFrame.new(5370, 22, -89))
+            end
+        end
+    end
+end)
+
+--// Yama
+spawn(function()
+    while task.wait() do
+        if Yama_Quest_Func then
+            if Main_Module.InvokeRemote("EliteHunter", "Progress") >= 30 then
+                if Enemies:FindFirstChild("Ghost") then
+                    for i,v in pairs(Enemies:GetChildren()) do
+                        if v.Name == "Ghost" then
+                            if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                            
+                                repeat task.wait()
+                                    v.HumanoidRootPart.CanCollide = false
+                                    v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    v.HumanoidRootPart.Transparency = 1
+                                    v.Humanoid:ChangeState(11)
+                                    v.Humanoid:ChangeState(14)
+            
+                                    Main_Module.SetWeapon(Selected_Weapon)
+                                    Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                    Main_Module:BringEnemies(v, true)
+                                until not Yama_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or Player.Backpack:FindFirstChild("Yama") or Player.Character:FindFirstChild("Yama")
+                            end
+                        end
+                    end
+                else
+                    Main_Module.Tween(CFrame.new(5253.25635, 18.5894566, 455.359833))
+                    wait(0.1)
+                    repeat task.wait()
+                        fireclickdetector(Map.Waterfall.SealedKatana.Hitbox.ClickDetector)
+                    until Player.Backpack:FindFirstChild("Yama") or Player.Character:FindFirstChild("Yama") or not Yama_Quest_Func
+                end
+            else
+                Main_Module:SetNotify("Yama Quest", "- You need to defeat "..tostring(Main_Module.InvokeRemote("EliteHunter", "Progress")).."/30 Elite Progress", 5)
+                wait(4)
+            end
+        end
+    end
+end)
+
+--// Tushita
+spawn(function()
+    while task.wait() do
+        if Tushita_Quest_Func then
+            if not Player.Backpack:FindFirstChild("God's Chalice") and not Player.Character:FindFirstChild("God's Chalice") then
+                if ReplicatedStorage:FindFirstChild("Deandre") or ReplicatedStorage:FindFirstChild("Urban") or ReplicatedStorage:FindFirstChild("Diablo") then
+                    if Player.PlayerGui.Main.Quest.Visible == false then
+                        Main_Module.InvokeRemote("EliteHunter")
+                    elseif Player.PlayerGui.Main.Quest.Visible == true then
+                        if string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text,"Diablo") or string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text,"Deandre") or string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text,"Urban") then
+                            if Enemies:FindFirstChild("Diablo") or Enemies:FindFirstChild("Deandre") or Enemies:FindFirstChild("Urban") then
+                                for i,v in pairs(Enemies:GetChildren()) do
+                                    if v.Name == "Diablo" or v.Name == "Deandre" or v.Name == "Urban" then
+                                        if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                                        
+                                            repeat task.wait()
+                                                v.HumanoidRootPart.CanCollide = false
+                                                v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                                v.HumanoidRootPart.Transparency = 1
+                                                v.Humanoid:ChangeState(11)
+                                                v.Humanoid:ChangeState(14)
+                        
+                                                Main_Module.SetWeapon(Selected_Weapon)
+                                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                            until not Tushita_Quest_Func or v.Humanoid.Health <= 0 or not v.Parent or not Enemies:FindFirstChild(v.Name) or Player.PlayerGui.Main.Quest.Visible == false or Player.Backpack:FindFirstChild("God's Chalice") or Player.Character:FindFirstChild("God's Chalice")
+                                        end
+                                    end
+                                end
+                            else
+                                if ReplicatedStorage:FindFirstChild("Diablo") then
+                                    Main_Module.Tween(ReplicatedStorage:FindFirstChild("Diablo").HumanoidRootPart.CFrame)
+                                elseif ReplicatedStorage:FindFirstChild("Deandre") then
+                                    Main_Module.Tween(ReplicatedStorage:FindFirstChild("Deandre").HumanoidRootPart.CFrame)
+                                elseif ReplicatedStorage:FindFirstChild("Urban") then
+                                    Main_Module.Tween(ReplicatedStorage:FindFirstChild("Urban").HumanoidRootPart.CFrame)
+                                end
+                            end
+                        end
+                    end
+                else
+                    Main_Module.Tween(CFrame.new(-12554.9443, 337.194092, -7501.44727))
+                end
+            elseif Player.Backpack:FindFirstChild("God's Chalice") or Player.Character:FindFirstChild("God's Chalice") then
+                Main_Module.InvokeRemote("activateColor", "Winter Sky")
+                wait(0.5)
+                Main_Module.Tween(CFrame.new(-5420.16602, 1084.9657, -2666.8208))
+                wait(0.5)
+                Main_Module.InvokeRemote("activateColor", "Pure Red")
+                wait(0.5)
+                Main_Module.Tween(CFrame.new(-5414.41357, 309.865753, -2212.45776))
+                wait(0.5)
+                Main_Module.InvokeRemote("activateColor", "Snow White")
+                wait(0.5)
+                Main_Module.Tween(CFrame.new(-4971.47559, 331.565765, -3720.02954))
+                wait(0.5)
+                Main_Module.EquipTool("God's Chalice")
+                wait(0.5)
+                Main_Module.Tween(CFrame.new(-5560.27295, 313.915466, -2663.89795))
+                wait(0.5)
+                Main_Module.Tween(CFrame.new(-5561.37451, 313.342529, -2663.4948))
+                wait(1)
+                Main_Module.Tween(CFrame.new(5154.17676, 141.786423, 911.046326))
+                wait(0.2)
+                Main_Module.Tween(CFrame.new(5148.03613, 162.352493, 910.548218))
+                wait(1)
+                Main_Module.EquipTool("Holy Torch")
+                wait(1)
+                wait(0.4)
+                Main_Module.Tween(CFrame.new(-10752.7695, 412.229523, -9366.36328))
+                wait(0.4)
+                Main_Module.Tween(CFrame.new(-11673.4111, 331.749023, -9474.34668))
+                wait(0.4)
+                Main_Module.Tween(CFrame.new(-12133.3389, 519.47522, -10653.1904))
+                wait(0.4)
+                Main_Module.Tween(CFrame.new(-13336.5, 485.280396, -6983.35254))
+                wait(0.4)
+                Main_Module.Tween(CFrame.new(-13487.4131, 334.84845, -7926.34863))
+                wait(1)
+
+                if Enemies:FindFirstChild("Longma") then
+                    for i,v in pairs(Enemies:GetChildren()) do
+                        if v.Name == "Longma" then
+                            if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                            
+                                repeat task.wait()
+                                    v.HumanoidRootPart.CanCollide = false
+                                    v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    v.HumanoidRootPart.Transparency = 1
+                                    v.Humanoid:ChangeState(11)
+                                    v.Humanoid:ChangeState(14)
+            
+                                    Main_Module.SetWeapon(Selected_Weapon)
+                                    Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                until not Tushita_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                            end
+                        end
+                    end
+                else
+                    Main_Module.Tween(CFrame.new(-10218, 333, -9444))
+                end
+
+                if Enemies:FindFirstChild("rip_indra True Form") then
+                    
+                    for i,v in pairs(Enemies:GetChildren()) do
+                        if v.Name == "rip_indra True Form" then
+                            if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                            
+                                repeat task.wait()
+                                    v.HumanoidRootPart.CanCollide = false
+                                    v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                    v.HumanoidRootPart.Transparency = 1
+                                    v.Humanoid:ChangeState(11)
+                                    v.Humanoid:ChangeState(14)
+            
+                                    Main_Module.SetWeapon(Selected_Weapon)
+                                    Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                until not Tushita_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                            end
+                        end
+                    end
+                else
+                    Main_Module.Tween(CFrame.new(-5333, 424, -2673))
+                end
+            end
+        end
+    end
+end)
+
+--// Dark Dagger
+spawn(function()
+    while task.wait() do
+        if Dark_Dragger_Quest_Func then
+            if Enemies:FindFirstChild("rip_indra True Form") then
+                for i,v in pairs(Enemies:GetChildren()) do
+                    if v.Name == "rip_indra True Form" then
+                        if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                        
+                            repeat task.wait()
+                                v.HumanoidRootPart.CanCollide = false
+                                v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                v.HumanoidRootPart.Transparency = 1
+                                v.Humanoid:ChangeState(11)
+                                v.Humanoid:ChangeState(14)
+        
+                                Main_Module.SetWeapon(Selected_Weapon)
+                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                            until not Dark_Dragger_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                        end
+                    end
+                end
+            else
+                Main_Module.Tween(CFrame.new(-5333, 424, -2673))
+            end
+        end
+    end
+end)
+
+--// Koko
+spawn(function()
+    while task.wait() do
+        if Koko_Quest_Func then
+            if Enemies:FindFirstChild("Order") then
+                for i,v in pairs(Enemies:GetChildren()) do
+                    if v.Name == "Order" then
+                        if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                        
+                            repeat task.wait()
+                                v.HumanoidRootPart.CanCollide = false
+                                v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                v.HumanoidRootPart.Transparency = 1
+                                v.Humanoid:ChangeState(11)
+                                v.Humanoid:ChangeState(14)
+        
+                                Main_Module.SetWeapon(Selected_Weapon)
+                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                            until not Koko_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                        end
+                    end
+                end
+            else
+                Main_Module.Tween(CFrame.new(-6217.2021484375, 28.047645568848, -5053.1357421875))
+            end
+        end
+    end
+end)
+
+--// Spikey Trident
+spawn(function()
+    while task.wait() do
+        if Spikey_Trident_Quest_Func then
+            if Enemies:FindFirstChild("Cake Prince") or Enemies:FindFirstChild("Dough King") then
+
+                for Index_1, Value_1 in Enemies:GetChildren() do
+                    if Value_1.Name == "Cake Prince" or Value_1.Name == "Dough King" then
+                        if Value_1:FindFirstChild('Humanoid') and Value_1:FindFirstChild('HumanoidRootPart') and Value_1:FindFirstChild('Humanoid').Health > 0 then
+                            repeat task.wait()
+                                Value_1.HumanoidRootPart.CanCollide = false
+                                Value_1.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                Value_1.HumanoidRootPart.Transparency = 1
+                                Value_1.Humanoid:ChangeState(11)
+                                Value_1.Humanoid:ChangeState(14)
+        
+                                Main_Module.SetWeapon(Selected_Weapon)
+                                Main_Module.Tween(Value_1.HumanoidRootPart.CFrame * Farm_Mode)
+
+                            until not Spikey_Trident_Quest_Func or not Value_1.Parent or Value_1.Humanoid.Health <= 0 or not Enemies:FindFirstChild(Value_1.Name)
+                        end
+                    end
+                end
+
+            else
+                Main_Module.Tween(CFrame.new(-2103, 70, -12165))
+                    
+                if (CFrame.new(-1990.672607421875, 4532.99951171875, -14973.6748046875).Position - Player.Character.HumanoidRootPart.Position).Magnitude >= 1000 then
+                    Player.Character.HumanoidRootPart.CFrame = CFrame.new(-2103, 70, -12165)
+                end
+            end
+        end
+    end
+end)
+
+--// Hallow Scythe
+spawn(function()
+    while task.wait() do
+        if Hallow_Scythe_Quest_Func then
+            
+            if Enemies:FindFirstChild("Soul Reaper") then
+                for i,v in pairs(Enemies:GetChildren()) do
+                    if v.Name == "Soul Reaper" then
+                        if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                        
+                            repeat task.wait()
+                                v.HumanoidRootPart.CanCollide = false
+                                v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                v.HumanoidRootPart.Transparency = 1
+                                v.Humanoid:ChangeState(11)
+                                v.Humanoid:ChangeState(14)
+        
+                                Main_Module.SetWeapon(Selected_Weapon)
+                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                            until not Hallow_Scythe_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                        end
+                    end
+                end
+            else
+                Main_Module.Tween(CFrame.new(-9524.7890625, 315.80429077148, 6655.7192382813))
+            end
+        end
+    end
+end)
+
+--// Citizen
+spawn(function()
+    while task.wait() do
+        if Citizen_Quest_Func then
+            local Check_Quest = false
+
+            if Player.Backpack:FindFirstChild("Musketeer Hat") or Player.Character:FindFirstChild("Musketeer Hat") then
+                Check_Quest = true
+            end
+
+            if Check_Quest then
+                Main_Module:SetNotify("Citizen Quest", "- Musketeer Hat Successfully.", 5)
+                wait(4)
+            end
+
+            if Main_Module.InvokeRemote("CitizenQuestProgress", "Citizen") == 3 then
+                Main_Module:SetNotify("Citizen Quest", "- Citizen Quest has completed.", 5)
+                wait(4)
+            end
+
+            if Player.Data.Level.Value >= 1800 then
+                if Main_Module.InvokeRemote("CitizenQuestProgress").KilledBandits == false and Main_Module.InvokeRemote("CitizenQuestProgress").KilledBoss == false then
+
+                    if Player.PlayerGui.Main.Quest.Visible == false then
+                        Main_Module.Tween(CFrame.new(-12443.8671875, 332.40396118164, -7675.4892578125))
+                        wait(0.3)
+                        if (CFrame.new(-12443.8671875, 332.40396118164, -7675.4892578125) - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                            wait(1)
+                            Main_Module.InvokeRemote("StartQuest", "CitizenQuest", 1)
+                        end
+
+                    elseif Player.PlayerGui.Main.Quest.Visible == true then
+                        if Enemies:FindFirstChild("Forest Pirate") then
+                            for i,v in pairs(Enemies:GetChildren()) do
+                                if v.Name == "Forest Pirate" then
+                                    if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                                    
+                                        repeat task.wait()
+                                            v.HumanoidRootPart.CanCollide = false
+                                            v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                            v.HumanoidRootPart.Transparency = 1
+                                            v.Humanoid:ChangeState(11)
+                                            v.Humanoid:ChangeState(14)
+                    
+                                            Main_Module.SetWeapon(Selected_Weapon)
+                                            Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                            Main_Module:BringEnemies(v, true)
+                                        until not Citizen_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or Main_Module.InvokeRemote("CitizenQuestProgress").KilledBandits == true
+                                    end
+                                end
+                            end
+                        else
+                            Main_Module.Tween(CFrame.new(-13459.065429688, 412.68927001953, -7783.1860351563))
+                        end
+                    end
+
+                elseif Main_Module.InvokeRemote("CitizenQuestProgress").KilledBandits == true and Main_Module.InvokeRemote("CitizenQuestProgress").KilledBoss == false then
+
+                    if Player.PlayerGui.Main.Quest.Visible == false then
+                        Main_Module.Tween(CFrame.new(-12443.8671875, 332.40396118164, -7675.4892578125))
+                        wait(0.3)
+                        if (CFrame.new(-12443.8671875, 332.40396118164, -7675.4892578125) - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                            wait(1)
+                            Main_Module.InvokeRemote("CitizenQuestProgress", "Citizen")
+                        end
+
+                    elseif Player.PlayerGui.Main.Quest.Visible == true then
+                        if Enemies:FindFirstChild("Captain Elephant") then
+                            for i,v in pairs(Enemies:GetChildren()) do
+                                if v.Name == "Captain Elephant" then
+                                    if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                                    
+                                        repeat task.wait()
+                                            v.HumanoidRootPart.CanCollide = false
+                                            v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                            v.HumanoidRootPart.Transparency = 1
+                                            v.Humanoid:ChangeState(11)
+                                            v.Humanoid:ChangeState(14)
+                    
+                                            Main_Module.SetWeapon(Selected_Weapon)
+                                            Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                        until not Citizen_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or Main_Module.InvokeRemote("CitizenQuestProgress").KilledBoss == true
+                                    end
+                                end
+                            end
+                        else
+                            Main_Module.Tween(CFrame.new(-13459.065429688, 412.68927001953, -7783.1860351563))
+                        end
+                    end
+
+                elseif Main_Module.InvokeRemote("CitizenQuestProgress", "Citizen") == 2 then
+                    Main_Module.Tween(CFrame.new(-12512.138671875, 340.39279174805, -9872.8203125))
+
+                end
+            else
+                Main_Module:SetNotify("Citizen Quest", "- You need to reach Lv 1800.", 5)
+                wait(4)
+            end
+        end
+    end
+end)
+
+--// Bartilo
+spawn(function()
+    while task.wait() do
+        if Bartilo_Quest_Func then
+            local BartiloNpc = CFrame.new(-455.806122, 73.3869019, 301.771637)
+
+            if Player.Data.Level.Value >= 850 then
+                if Main_Module.InvokeRemote("BartiloQuestProgress", "Bartilo") == 0 then
+                    local MonsterName = {"Swan Pirate"}
+                    local MonsterPos = CFrame.new(1057.92761, 137.614319, 1242.08069)
+
+                    if Player.PlayerGui.Main.Quest.Visible == false then
+                        Main_Module.Tween(BartiloNpc)
+                        if (BartiloNpc.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 5 then
+                            wait(.1)
+                            Main_Module.InvokeRemote("StartQuest", "BartiloQuest", 1)
+                        end
+
+                    elseif Player.PlayerGui.Main.Quest.Visible == true then
+                        if Enemies:FindFirstChild("Swan Pirate") then
+
+                            for i,v in pairs(Enemies:GetChildren()) do
+                                if v.Name == "Forest Pirate" then
+                                    if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                                    
+                                        repeat task.wait()
+                                            v.HumanoidRootPart.CanCollide = false
+                                            v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                            v.HumanoidRootPart.Transparency = 1
+                                            v.Humanoid:ChangeState(11)
+                                            v.Humanoid:ChangeState(14)
+                    
+                                            Main_Module.SetWeapon(Selected_Weapon)
+                                            Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                            Main_Module:BringEnemies(v, true)
+                                        until not Bartilo_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or Main_Module.InvokeRemote("CitizenQuestProgress").KilledBandits == true
+                                    end
+                                end
+                            end
+
+                        else
+                            Main_Module.WaitMobs(MonsterPos)
+                        end
+
+                    end
+
+                elseif Main_Module.InvokeRemote("BartiloQuestProgress", "Bartilo") == 1 then
+                    local MonsterName = {"Jeremy"}
+                    local MonsterPos = CFrame.new(1931.5931396484, 402.67391967773, 956.52215576172)
+
+                    Main_Module.InvokeRemote("BartiloQuestProgress", "Bartilo")
+                    wait(0.1)
+
+                    if Enemies:FindFirstChild(Jeremy) then
+
+                        OtherModules.AttackMonster(MonsterName, Function)
+
+                    else
+                        Main_Module.Tween(MonsterPos)
+                    end
+
+                elseif Main_Module.InvokeRemote("BartiloQuestProgress", "Bartilo") == 2 then
+                    local PlayerPos = Player.Character.HumanoidRootPart.CFrame
+                    local Puzzle_1 = CFrame.new(-1836.1412353515625, 10.458294868469238, 1692.491943359375)
+
+                    if (Player.Character.HumanoidRootPart.Position - Puzzle_1.Position).Magnitude > 1000 then
+                        Main_Module.Tween(Puzzle_1)
+                    else
+                        wait(1)
+                        PlayerPos = CFrame.new(-1850.49329, 13.1789551, 1750.89685)
+                        wait(1)
+                        PlayerPos = CFrame.new(-1858.87305, 19.3777466, 1712.01807)
+                        wait(1)
+                        PlayerPos = CFrame.new(-1803.94324, 16.5789185, 1750.89685)
+                        wait(1)
+                        PlayerPos = CFrame.new(-1858.55835, 16.8604317, 1724.79541)
+                        wait(1)
+                        PlayerPos = CFrame.new(-1869.54224, 15.987854, 1681.00659)
+                        wait(1)
+                        PlayerPos = CFrame.new(-1800.0979, 16.4978027, 1684.52368)
+                        wait(1)
+                        PlayerPos = CFrame.new(-1819.26343, 14.795166, 1717.90625)
+                        wait(1)
+                        PlayerPos = CFrame.new(-1813.51843, 14.8604736, 1724.79541)
+                    end
+
+                end
+            else
+                Main_Module:SetNotify("Citizen Quest", "- You need to reach Lv 850.", 5)
+                wait(4)
+            end
+        end
+    end
+end)
+
+--// Don Swan
+spawn(function()
+    while task.wait() do
+        if Down_Swan_Quest_Func then
+            if Enemies:FindFirstChild("Don Swan") then
+
+                for i,v in pairs(Enemies:GetChildren()) do
+                    if v.Name == "Don Swan" then
+                        if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                        
+                            repeat task.wait()
+                                v.HumanoidRootPart.CanCollide = false
+                                v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                v.HumanoidRootPart.Transparency = 1
+                                v.Humanoid:ChangeState(11)
+                                v.Humanoid:ChangeState(14)
+        
+                                Main_Module.SetWeapon(Selected_Weapon)
+                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                            until not Down_Swan_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                        end
+                    end
+                end
+
+            else
+                Main_Module.Tween(CFrame.new(2191.1674804688, 15.177842140198, 694.69873046875))
+            end
+        end
+    end
+end)
+
+--// Rip Indra True Form
+spawn(function()
+    while task.wait() do
+        if rip_indra_True_Form_Quest_Func then
+            if Enemies:FindFirstChild("rip_indra True Form") then
+
+                for i,v in pairs(Enemies:GetChildren()) do
+                    if v.Name == "rip_indra True Form" then
+                        if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                        
+                            repeat task.wait()
+                                v.HumanoidRootPart.CanCollide = false
+                                v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                v.HumanoidRootPart.Transparency = 1
+                                v.Humanoid:ChangeState(11)
+                                v.Humanoid:ChangeState(14)
+        
+                                Main_Module.SetWeapon(Selected_Weapon)
+                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                            until not rip_indra_True_Form_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                        end
+                    end
+                end
+
+            else
+                Main_Module.Tween(CFrame.new(-5524.53271, 313.800537, -2918.07422))
+            end
+        end
+    end
+end)
+
+--// Rainbow Haki
+spawn(function()
+    while task.wait() do
+        if Rainbow_Haki_Quest_Func then
+            local HornedManNpc = CFrame.new(-11892.0703125, 930.57672119141, -8760.1591796875)
+
+            if Player.PlayerGui.Main.Quest.Visible == false then
+                --[[if (CFrame.new(-11892.0703125, 930.57672119141, -8760.1591796875) - Player.Character.HumanoidRootPart.Position).Magnitude <= 30 then
+                    wait(1)
+                    Main_Module.InvokeRemote("HornedMan", "Bet")
+                end]]
+                Main_Module.InvokeRemote("HornedMan", "Bet")
+            elseif Player.PlayerGui.Main.Quest.Visible == true then
+                if string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Stone") then
+                    if Enemies:FindFirstChild("Stone") then
+
+                        for i,v in pairs(Enemies:GetChildren()) do
+                            if v.Name == "Stone" then
+                                if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                                
+                                    repeat task.wait()
+                                        v.HumanoidRootPart.CanCollide = false
+                                        v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        v.HumanoidRootPart.Transparency = 1
+                                        v.Humanoid:ChangeState(11)
+                                        v.Humanoid:ChangeState(14)
+                
+                                        Main_Module.SetWeapon(Selected_Weapon)
+                                        Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                    until not Rainbow_Haki_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or not string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Stone")
+                                end
+                            end
+                        end
+
+                    else
+                        Main_Module.Tween(CFrame.new(-1049, 40, 6791))
+                    end
+
+                elseif string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Hydra Leader") then
+                    if Enemies:FindFirstChild("Hydra Leader") then
+
+                        for i,v in pairs(Enemies:GetChildren()) do
+                            if v.Name == "Hydra Leader" then
+                                if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                                
+                                    repeat task.wait()
+                                        v.HumanoidRootPart.CanCollide = false
+                                        v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        v.HumanoidRootPart.Transparency = 1
+                                        v.Humanoid:ChangeState(11)
+                                        v.Humanoid:ChangeState(14)
+                
+                                        Main_Module.SetWeapon(Selected_Weapon)
+                                        Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                    until not Rainbow_Haki_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or not string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Hydra Leader")
+                                end
+                            end
+                        end
+
+                    else
+                        Main_Module.Tween(CFrame.new(5836, 1019, -83))
+                    end
+
+                elseif string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Kilo Admiral") then
+                    if Enemies:FindFirstChild("Kilo Admiral") then
+
+                        for i,v in pairs(Enemies:GetChildren()) do
+                            if v.Name == "Kilo Admiral" then
+                                if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                                
+                                    repeat task.wait()
+                                        v.HumanoidRootPart.CanCollide = false
+                                        v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        v.HumanoidRootPart.Transparency = 1
+                                        v.Humanoid:ChangeState(11)
+                                        v.Humanoid:ChangeState(14)
+                
+                                        Main_Module.SetWeapon(Selected_Weapon)
+                                        Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                    until not Rainbow_Haki_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or not string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Kilo Admiral")
+                                end
+                            end
+                        end
+
+                    else
+                        Main_Module.Tween(CFrame.new(2904, 509, -7349))
+                    end
+
+                elseif string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Captain Elephant") then
+                    if Enemies:FindFirstChild("Captain Elephant") then
+
+                        for i,v in pairs(Enemies:GetChildren()) do
+                            if v.Name == "Captain Elephant" then
+                                if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                                
+                                    repeat task.wait()
+                                        v.HumanoidRootPart.CanCollide = false
+                                        v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        v.HumanoidRootPart.Transparency = 1
+                                        v.Humanoid:ChangeState(11)
+                                        v.Humanoid:ChangeState(14)
+                
+                                        Main_Module.SetWeapon(Selected_Weapon)
+                                        Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                    until not Rainbow_Haki_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or not string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Captain Elephant")
+                                end
+                            end
+                        end
+
+                    else
+                        Main_Module.Tween(CFrame.new(-13393, 319, -8423))
+                    end
+
+                elseif string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Beautiful Pirate") then
+                    if Enemies:FindFirstChild("Beautiful Pirate") then
+
+                        for i,v in pairs(Enemies:GetChildren()) do
+                            if v.Name == "Beautiful Pirate" then
+                                if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                                
+                                    repeat task.wait()
+                                        v.HumanoidRootPart.CanCollide = false
+                                        v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        v.HumanoidRootPart.Transparency = 1
+                                        v.Humanoid:ChangeState(11)
+                                        v.Humanoid:ChangeState(14)
+                
+                                        Main_Module.SetWeapon(Selected_Weapon)
+                                        Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                    until not Rainbow_Haki_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or not string.find(Player.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Beautiful Pirate")
+                                end
+                            end
+                        end
+
+                    else
+                        Main_Module.Tween(CFrame.new(5370, 22, -89))
+                    end
+                end
+            end
+        end
+    end
+end)
+
+--// Pray and Try Luck Gravestone
+spawn(function()
+    while task.wait() do
+        if Pray_and_Tryluck_Quest_Func then
+            if (CFrame.new(-8652.99707, 143.450119, 6170.50879) - Player.Character.HumanoidRootPart.Position).Magnitude <= 30 then
+                wait(1)
+                Main_Module.InvokeRemote("gravestoneEvent", 1)
+                Main_Module.InvokeRemote("gravestoneEvent", 2)
+            end
+        end
+    end
+end)
+
+--// Advance Dungeon Bird-Bird: Phoenix
+spawn(function()
+    while task.wait() do
+        if Advanced_Dungeon_Phoenix_Quest_Func then
+            if Player.Character:FindFirstChild("Bird-Bird: Phoenix") or Player.Backpack:FindFirstChild("Bird-Bird: Phoenix") then
+                if Player.Backpack:FindFirstChild(Player.Data.DevilFruit.Value) then
+                    if Player.Backpack:FindFirstChild(Player.Data.DevilFruit.Value).Level.Value >= 400 then
+                        Main_Module.Tween(CFrame.new(-2812.76708984375, 254.803466796875, -12595.560546875))
+                        
+                        if (CFrame.new(-2812.76708984375, 254.803466796875, -12595.560546875).Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                            wait(1)
+                            Main_Module.InvokeRemote("SickScientist", "Check")
+                            Main_Module.InvokeRemote("SickScientist", "Heal")
+                        end
+                    end
+                end
+            end
+        end
+    end
+end)
+
+--// Color Haki
+spawn(function()
+    while task.wait() do
+        if Color_Haki_Quest_Func then
+            Main_Module.InvokeRemote("ColorsDealer", "1")
+            Main_Module.InvokeRemote("ColorsDealer", "2")
+            Main_Module.InvokeRemote("ColorsDealer", "3")
+        end
+    end
+end)
+
+--// Venom Bow
+spawn(function()
+    while task.wait() do
+        if Venom_Bow_Quest_Func then
+            if Enemies:FindFirstChild("Hydra Leader") then
+
+                for i,v in pairs(Enemies:GetChildren()) do
+                    if v.Name == "Hydra Leader" then
+                        if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                        
+                            repeat task.wait()
+                                v.HumanoidRootPart.CanCollide = false
+                                v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                v.HumanoidRootPart.Transparency = 1
+                                v.Humanoid:ChangeState(11)
+                                v.Humanoid:ChangeState(14)
+        
+                                Main_Module.SetWeapon(Selected_Weapon)
+                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                            until not Venom_Bow_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or Player.Backpack:FindFirstChild("Venom Bow") or Player.Character:FindFirstChild("Venom Bow")
+                        end
+                    end
+                end
+
+            else
+                Main_Module.Tween(CFrame.new(5836, 1019, -83))
+            end
+        end
+    end
+end)
+
+--// Dojo Quest
+spawn(function()
+    while task.wait() do
+        if Dojo_Quest_Func then
+            Main_Module.Tween(CFrame.new(5855.19629, 1208.32178, 872.713501))
+
+            if (CFrame.new(5855.19629, 1208.32178, 872.713501).Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 5 then
+                local ohTable1 = {
+                    ["NPC"] = "Dojo Trainer",
+                    ["Command"] = "ClaimQuest"
+                }
+                Main_Module.InvokeModules("RF/InteractDragonQuest", ohTable1)
+
+                wait(1)
+
+                local ohTable2 = {
+                    ["NPC"] = "Dojo Trainer",
+                    ["Command"] = "RequestQuest"
+                }
+                Main_Module.InvokeModules("RF/InteractDragonQuest", ohTable2)
+            end
+        end
+    end
+end)
+
+--// Hydra Mobs
+spawn(function()
+    while task.wait() do
+        if Hydra_Mob_Quest_Func then
+            if Enemies:FindFirstChild('Hydra Enforcer') or Enemies:FindFirstChild('Venomous Assailant') then
+                for i,v in pairs(Enemies:GetChildren()) do
+                    if v.Name == 'Hydra Enforcer' or v.Name == 'Venomous Assailant' then
+                        if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v.Humanoid.Health > 0 then
+                            repeat task.wait()
+                                v.HumanoidRootPart.CanCollide = false
+                                v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                v.HumanoidRootPart.Transparency = 1
+                                v.Humanoid:ChangeState(11)
+                                v.Humanoid:ChangeState(14)
+        
+                                Main_Module.SetWeapon(Selected_Weapon)
+                                Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                                Main_Module:BringEnemies(v, true)
+                            until not Hydra_Mob_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name)
+                        end
+                    end
+                end
+            else
+                Main_Module.Tween(CFrame.new(5394.36475, 1082.71057, 561.993958))
+            end
+            for i,v in pairs(workspace:GetChildren()) do
+                if v.Name == 'EmberTemplate' then
+                    v.Part.CFrame = Player.Character.HumanoidRootPart.CFrame
+                end
+            end
+        end
+    end
+end)
+
+--// Destroy Tree
+spawn(function()
+    while task.wait() do
+        if Destroy_Tree_Quest_Func then
+            Main_Module.Tween(CFrame.new(5287.38867, 1005.39508, 389.256714) * CFrame.new(0,50,0))
+            Main_Module.EquipTool("Blox Fruit")
+
+            for i,v in pairs(workspace:GetChildren()) do
+                if v.Name == 'EmberTemplate' then
+                    v.Part.CFrame = Player.Character.HumanoidRootPart.CFrame
+                end
+            end
+        end
+    end
+end)
+
+--// Upgrade Dragon Talon
+spawn(function()
+    while task.wait() do
+        if Upgrade_Dragon_Talon_Quest_Func then
+            Main_Module.Tween(CFrame.new(5661.89014, 1211.31909, 864.836731))
+
+            if (CFrame.new(5661.89014, 1211.31909, 864.836731).Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 5 then
+                local ohTable1 = {
+                    ["NPC"] = "Uzoth",
+                    ["Command"] = "Upgrade"
+                }
+                
+                Main_Module.InvokeModules("RF/InteractDragonQuest", ohTable1)
+            end
+        end
+    end
+end)
+
+
+-- ================================
+-- RACE EVOLUTION V2 & V3
+-- ================================
+
+QuestModules.GetPlayerRace = function()
+    if Player and Player:FindFirstChild("Data") then
+        local raceData = Player.Data:FindFirstChild("Race")
+        if raceData then return raceData.Value end
+    end
+    return "Human"
+end
+
+QuestModules.CheckAlchemistQuest = function()
+    return ReplicatedStorage.Remotes.CommF_:InvokeServer("Alchemist", "1")
+end
+
+QuestModules.StartAlchemistQuest = function()
+    ReplicatedStorage.Remotes.CommF_:InvokeServer("Alchemist", "2")
+end
+
+QuestModules.CompleteAlchemistQuest = function()
+    ReplicatedStorage.Remotes.CommF_:InvokeServer("Alchemist", "3")
+end
+
+QuestModules.CheckWenlocktoadQuest = function()
+    return ReplicatedStorage.Remotes.CommF_:InvokeServer("Wenlocktoad", "1")
+end
+
+QuestModules.StartWenlocktoadQuest = function()
+    ReplicatedStorage.Remotes.CommF_:InvokeServer("Wenlocktoad", "2")
+end
+
+QuestModules.FlowerLocations = {
+    Flower1 = CFrame.new(-2313, 51, -10085),
+    Flower2 = CFrame.new(61708, 49, -1320),
+    Flower3Swan = CFrame.new(980, 121, 1287),
+    AlchemistNPC = CFrame.new(-11245.5, 332.5, -8656.5)
+}
+
+QuestModules.AutoRaceV2 = function()
+    local Character = Player.Character
+    if not Character or not Character:FindFirstChild("HumanoidRootPart") then return false end
+    
+    local success, questStatus = pcall(function()
+        return QuestModules.CheckAlchemistQuest()
+    end)
+    
+    if not success then return false end
+    
+    local raceData = Player:FindFirstChild("Data") and Player.Data:FindFirstChild("Race")
+    local hasRaceV2 = raceData and raceData:FindFirstChild("V2") and raceData.V2.Value == true
+    
+    if hasRaceV2 or questStatus == -2 or questStatus == true then 
+        Main_Module:SetNotify("Race V2", "Already completed!", 3)
+        return true 
+    end
+    
+    if questStatus == nil or questStatus == 0 or questStatus == false then 
+        local AlchemistPos = QuestModules.FlowerLocations.AlchemistNPC
+        if (AlchemistPos.Position - Character.HumanoidRootPart.Position).Magnitude <= 10 then
+            QuestModules.StartAlchemistQuest()
+            wait(0.5)
+        else
+            Main_Module.Tween(AlchemistPos)
+        end
+        return false 
+    end
+    
+    if questStatus == 1 then
+        local Backpack = Player:FindFirstChild("Backpack")
+        local Character = Player.Character
+        
+        local hasFlower1 = (Backpack and Backpack:FindFirstChild("Flower 1")) or (Character and Character:FindFirstChild("Flower 1"))
+        local hasFlower2 = (Backpack and Backpack:FindFirstChild("Flower 2")) or (Character and Character:FindFirstChild("Flower 2"))
+        local hasFlower3 = (Backpack and Backpack:FindFirstChild("Flower 3")) or (Character and Character:FindFirstChild("Flower 3"))
+        
+        if not hasFlower1 then
+            local flowerPos = workspace:FindFirstChild("Flower1") and workspace.Flower1.CFrame or QuestModules.FlowerLocations.Flower1
+            if (flowerPos.Position - Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                for _, obj in pairs(workspace:GetDescendants()) do
+                    if obj.Name == "Flower1" and obj:IsA("BasePart") then
+                        firetouchinterest(Character.HumanoidRootPart, obj, 0)
+                        wait(0.1)
+                        firetouchinterest(Character.HumanoidRootPart, obj, 1)
+                    end
+                end
+            else
+                Main_Module.Tween(flowerPos)
+            end
+        elseif not hasFlower2 then
+            local flowerPos = workspace:FindFirstChild("Flower2") and workspace.Flower2.CFrame or QuestModules.FlowerLocations.Flower2
+            if (flowerPos.Position - Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                for _, obj in pairs(workspace:GetDescendants()) do
+                    if obj.Name == "Flower2" and obj:IsA("BasePart") then
+                        firetouchinterest(Character.HumanoidRootPart, obj, 0)
+                        wait(0.1)
+                        firetouchinterest(Character.HumanoidRootPart, obj, 1)
+                    end
+                end
+            else
+                Main_Module.Tween(flowerPos)
+            end
+        elseif not hasFlower3 then
+            local foundEnemy = false
+            for _, Enemy in pairs(Enemies:GetChildren()) do
+                if Enemy.Name == "Swan Pirate" then
+                    local EnemyHRP = Enemy:FindFirstChild("HumanoidRootPart")
+                    local Humanoid = Enemy:FindFirstChild("Humanoid")
+                    if EnemyHRP and Humanoid and Humanoid.Health > 0 then
+                        EnemyHRP.CanCollide = false
+                        EnemyHRP.Size = Vector3.new(60,60,60)
+                        EnemyHRP.Transparency = 1
+                        Humanoid:ChangeState(11)
+                        Humanoid:ChangeState(14)
+                        Main_Module.SetWeapon(Selected_Weapon)
+                        Main_Module.Tween(EnemyHRP.CFrame * Farm_Mode)
+                        Main_Module:BringEnemies(Enemy, true)
+                        foundEnemy = true
+                        break
+                    end
+                end
+            end
+            if not foundEnemy then
+                Main_Module.Tween(QuestModules.FlowerLocations.Flower3Swan)
+            end
+        else
+            local AlchemistPos = QuestModules.FlowerLocations.AlchemistNPC
+            Main_Module.Tween(AlchemistPos)
+        end
+        return false
+    end
+    
+    if questStatus == 2 then 
+        local AlchemistPos = QuestModules.FlowerLocations.AlchemistNPC
+        if (AlchemistPos.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+            QuestModules.CompleteAlchemistQuest()
+            Main_Module:SetNotify("Race V2", "Quest completed! Race V2 unlocked!", 5)
+        else
+            Main_Module.Tween(AlchemistPos)
+        end
+    end
+    return false
+end
+
+QuestModules.V3Locations = {
+    WenlocktoadNPC = CFrame.new(-10579.5, 332.5, -9322.5),
+    MinkChestArea = CFrame.new(-12500, 50, -7500),
+    SkypieaCloudArea = CFrame.new(-4900, 750, -2900),
+    HumanBossArea = CFrame.new(-2850, 50, 5350),
+    FishmanSeaArea = CFrame.new(-3000, 10, -10000),
+    GhoulGraveyardArea = CFrame.new(-5500, 100, -800),
+    CyborgFactoryArea = CFrame.new(383, 75, -530)
+}
+
+QuestModules.V3KilledBosses = {
+    Orbitus = false,
+    Jeremy = false,
+    Diamond = false
+}
+
+QuestModules.AutoRaceV3 = function()
+    local Character = Player.Character
+    if not Character or not Character:FindFirstChild("HumanoidRootPart") then return false end
+    
+    local questStatus = nil
+    pcall(function()
+        questStatus = ReplicatedStorage.Remotes.CommF_:InvokeServer("Wenlocktoad", "1")
+    end)
+    
+    if questStatus == -2 then
+        Main_Module:SetNotify("Race V3", "Already completed!", 3)
+        return true
+    end
+    
+    if questStatus == 0 then 
+        local WenlocktoadPos = QuestModules.V3Locations.WenlocktoadNPC
+        if (WenlocktoadPos.Position - Character.HumanoidRootPart.Position).Magnitude <= 10 then
+            ReplicatedStorage.Remotes.CommF_:InvokeServer("Wenlocktoad", "2")
+            wait(0.5)
+        else
+            Main_Module.Tween(WenlocktoadPos)
+        end
+        return false 
+    end
+    
+    if questStatus == 2 then
+        local WenlocktoadPos = QuestModules.V3Locations.WenlocktoadNPC
+        if (WenlocktoadPos.Position - Character.HumanoidRootPart.Position).Magnitude <= 10 then
+            ReplicatedStorage.Remotes.CommF_:InvokeServer("Wenlocktoad", "3")
+            Main_Module:SetNotify("Race V3", "Quest completed! Race V3 unlocked!", 5)
+            QuestModules.V3KilledBosses = {Orbitus = false, Jeremy = false, Diamond = false}
+        else
+            Main_Module.Tween(WenlocktoadPos)
+        end
+        return false
+    end
+    
+    if questStatus == 1 then
+        local raceData = Player:FindFirstChild("Data") and Player.Data:FindFirstChild("Race")
+        local race = raceData and raceData.Value or "Human"
+        
+        if race == "Mink" then
+            Farming_Chest_Func = true
+            Main_Module.Tween(QuestModules.V3Locations.MinkChestArea)
+            
+        elseif race == "Skypiea" then
+            local foundPlayer = false
+            for _, otherPlayer in pairs(Players:GetPlayers()) do
+                if otherPlayer.Name ~= Player.Name then
+                    local otherData = otherPlayer:FindFirstChild("Data")
+                    if otherData and otherData:FindFirstChild("Race") and tostring(otherData.Race.Value) == "Skypiea" then
+                        local otherChar = otherPlayer.Character
+                        if otherChar and otherChar:FindFirstChild("HumanoidRootPart") and otherChar:FindFirstChild("Humanoid") then
+                            if otherChar.Humanoid.Health > 0 then
+                                Main_Module.Tween(otherChar.HumanoidRootPart.CFrame * CFrame.new(0, 8, 0) * CFrame.Angles(math.rad(-45), 0, 0))
+                                foundPlayer = true
+                                break
+                            end
+                        end
+                    end
+                end
+            end
+            if not foundPlayer then
+                Main_Module.Tween(QuestModules.V3Locations.SkypieaCloudArea)
+                Main_Module:SetNotify("Race V3 - Skypiea", "Need another Skypiea player nearby", 5)
+            end
+            
+        elseif race == "Human" then
+            local targetBosses = {"Orbitus", "Jeremy", "Diamond"}
+            local foundEnemy = false
+            
+            for _, bossName in ipairs(targetBosses) do
+                if not QuestModules.V3KilledBosses[bossName] then
+                    local boss = Enemies:FindFirstChild(bossName) or workspace:FindFirstChild(bossName)
+                    if boss and boss:FindFirstChild("Humanoid") and boss.Humanoid.Health > 0 then
+                        local bossHRP = boss:FindFirstChild("HumanoidRootPart")
+                        if bossHRP then
+                            bossHRP.CanCollide = false
+                            bossHRP.Size = Vector3.new(60, 60, 60)
+                            bossHRP.Transparency = 1
+                            boss.Humanoid:ChangeState(11)
+                            boss.Humanoid:ChangeState(14)
+                            Main_Module.SetWeapon(Selected_Weapon)
+                            Main_Module.Tween(bossHRP.CFrame * CFrame.new(0, 30, 0))
+                            Main_Module:BringEnemies(boss, true)
+                            foundEnemy = true
+                            break
+                        end
+                    else
+                        if not Enemies:FindFirstChild(bossName) and not workspace:FindFirstChild(bossName) then
+                            QuestModules.V3KilledBosses[bossName] = true
+                        end
+                    end
+                end
+            end
+            
+            if not foundEnemy then
+                local allKilled = true
+                for _, killed in pairs(QuestModules.V3KilledBosses) do
+                    if not killed then allKilled = false break end
+                end
+                
+                if not allKilled then
+                    Main_Module:SetNotify("Race V3 - Human", "Bosses not found, server hop recommended", 5)
+                else
+                    local WenlocktoadPos = QuestModules.V3Locations.WenlocktoadNPC
+                    Main_Module.Tween(WenlocktoadPos)
+                end
+            end
+            
+        elseif race == "Fishman" then
+            Main_Module.Tween(QuestModules.V3Locations.FishmanSeaArea)
+            Main_Module:SetNotify("Race V3 - Fishman", "Kill Sea Beast to complete", 5)
+            
+        elseif race == "Ghoul" then
+            local targetEnemies = {"Reborn Skeleton", "Living Zombie", "Demonic Soul"}
+            local foundEnemy = false
+            
+            for _, Enemy in pairs(Enemies:GetChildren()) do
+                if table.find(targetEnemies, Enemy.Name) then
+                    local EnemyHRP = Enemy:FindFirstChild("HumanoidRootPart")
+                    local Humanoid = Enemy:FindFirstChild("Humanoid")
+                    if EnemyHRP and Humanoid and Humanoid.Health > 0 then
+                        EnemyHRP.CanCollide = false
+                        EnemyHRP.Size = Vector3.new(60,60,60)
+                        EnemyHRP.Transparency = 1
+                        Humanoid:ChangeState(11)
+                        Humanoid:ChangeState(14)
+                        Main_Module.SetWeapon(Selected_Weapon)
+                        Main_Module.Tween(EnemyHRP.CFrame * Farm_Mode)
+                        Main_Module:BringEnemies(Enemy, true)
+                        foundEnemy = true
+                        break
+                    end
+                end
+            end
+            if not foundEnemy then
+                Main_Module.Tween(QuestModules.V3Locations.GhoulGraveyardArea)
+            end
+            
+        elseif race == "Cyborg" then
+            Main_Module.Tween(QuestModules.V3Locations.CyborgFactoryArea)
+        end
+        return false
+    end
+    
+    return false
+end
+
+QuestModules.RaceTrialPositions = {
+    Human = CFrame.new(29221.822265625, 14890.9755859375, -205.99114990234375),
+    Skypiea = CFrame.new(28960.158203125, 14919.6240234375, 235.03948974609375),
+    Fishman = CFrame.new(28231.17578125, 14890.9755859375, -211.64173889160156),
+    Cyborg = CFrame.new(28502.681640625, 14895.9755859375, -423.7279357910156),
+    Ghoul = CFrame.new(28674.244140625, 14890.6767578125, 445.4310607910156),
+    Mink = CFrame.new(29012.341796875, 14890.9755859375, -380.1492614746094)
+}
+
+QuestModules.RaceV4Trial = function()
+    pcall(function()
+        local race = Player.Data.Race.Value
+        
+        Main_Module.InvokeRemote("requestEntrance", Vector3.new(28286.35546875, 14895.3017578125, 102.62469482421875))
+        wait(0.5)
+        
+        local trialPos = QuestModules.RaceTrialPositions[race]
+        if trialPos then
+            Main_Module.Tween(trialPos)
+        end
+        wait(0.5)
+        
+        if race == "Mink" then 
+            ReplicatedStorage.Remotes.CommF_:InvokeServer("ZoroTrial", "Start")
+        elseif race == "Fishman" then 
+            ReplicatedStorage.Remotes.CommF_:InvokeServer("FishmanTrial", "Start")
+        elseif race == "Ghoul" then 
+            ReplicatedStorage.Remotes.CommF_:InvokeServer("GhoulTrial", "Start")
+        elseif race == "Cyborg" then 
+            ReplicatedStorage.Remotes.CommF_:InvokeServer("CyborgTrial", "Start")
+        elseif race == "Skypiea" then 
+            ReplicatedStorage.Remotes.CommF_:InvokeServer("SkyTrial", "Start")
+        elseif race == "Human" then
+            ReplicatedStorage.Remotes.CommF_:InvokeServer("HumanTrial", "Start")
+        end
+    end)
+end
+
+QuestModules.RaceV4Training = function()
+    pcall(function()
+        VirtualInputManager:SendKeyEvent(true, "Y", false, game)
+        wait(0.1)
+        VirtualInputManager:SendKeyEvent(false, "Y", false, game)
+        ReplicatedStorage.Remotes.CommE:FireServer("ActivateAbility")
+    end)
+end
+
+QuestModules.LookMoonActivate = function()
+    local Lighting = game:GetService("Lighting")
+    local moonDir = Lighting:GetMoonDirection()
+    local Character = Player.Character
+    if Character and Character:FindFirstChild("HumanoidRootPart") then
+        workspace.CurrentCamera.CFrame = CFrame.new(workspace.CurrentCamera.CFrame.Position, workspace.CurrentCamera.CFrame.Position + moonDir)
+        Character.HumanoidRootPart.CFrame = CFrame.new(Character.HumanoidRootPart.Position, Character.HumanoidRootPart.Position + moonDir)
+        ReplicatedStorage.Remotes.CommE:FireServer("ActivateAbility")
+    end
+end
+
+-- ================================
+-- UNDERWATER / SUBMERGED AREA (Level 2600+)
+-- ================================
+
+QuestModules.SubmarineDockPosition = CFrame.new(-16269.7041, 25.2288494, 1373.65955)
+QuestModules.IsSubmergedTraveling = false
+QuestModules.IsInSubmergedArea = false
+
+QuestModules.CheckIfInSubmerged = function()
+    local Character = Player.Character
+    if Character and Character:FindFirstChild("HumanoidRootPart") then
+        local pos = Character.HumanoidRootPart.Position
+        if pos.Y < -1500 then
+            return true
+        end
+        if pos.X > 9000 and pos.X < 12000 and pos.Z > 8500 and pos.Z < 11000 then
+            return true
+        end
+    end
+    return false
+end
+
+QuestModules.TravelToSubmergedIsland = function()
+    if QuestModules.IsSubmergedTraveling then return false end
+    
+    local Character = Player.Character
+    if not Character or not Character:FindFirstChild("HumanoidRootPart") then return false end
+    
+    local hrp = Character.HumanoidRootPart
+    
+    if QuestModules.CheckIfInSubmerged() then
+        QuestModules.IsInSubmergedArea = true
+        return true
+    end
+    
+    QuestModules.IsSubmergedTraveling = true
+    
+    local attempts = 0
+    repeat
+        task.wait(0.5)
+        Main_Module.Tween(QuestModules.SubmarineDockPosition)
+        attempts = attempts + 1
+    until (hrp.Position - QuestModules.SubmarineDockPosition.Position).Magnitude <= 10 or attempts > 30
+    
+    if (hrp.Position - QuestModules.SubmarineDockPosition.Position).Magnitude <= 10 then
+        task.wait(1)
+        pcall(function()
+            local submarineRemote = ReplicatedStorage.Modules.Net:FindFirstChild("RF/SubmarineWorkerSpeak")
+            if submarineRemote then
+                submarineRemote:InvokeServer("TravelToSubmergedIsland")
+            end
+        end)
+        
+        local startTime = tick()
+        repeat
+            task.wait(0.5)
+            if QuestModules.CheckIfInSubmerged() then
+                QuestModules.IsInSubmergedArea = true
+                break
+            end
+            local movedAway = (hrp.Position - QuestModules.SubmarineDockPosition.Position).Magnitude > 100
+            if movedAway then break end
+        until tick() - startTime > 15
+        
+        task.wait(2)
+    end
+    
+    QuestModules.IsSubmergedTraveling = false
+    return QuestModules.CheckIfInSubmerged()
+end
+
+QuestModules.NeedsSubmarineTravel = function()
+    local Lv = Player.Data and Player.Data.Level and Player.Data.Level.Value or 0
+    if Lv >= 2600 and not QuestModules.CheckIfInSubmerged() then
+        return true
+    end
+    return false
+end
+
+return QuestModules
