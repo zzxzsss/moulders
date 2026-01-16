@@ -1,8 +1,3 @@
---[[
-    SeraphinUI - Modern Roblox UI Library
-    Inspired by executor-style dark theme design
-    Compatible with most Roblox executors
-]]
 
 local SeraphinUI = {}
 SeraphinUI.__index = SeraphinUI
