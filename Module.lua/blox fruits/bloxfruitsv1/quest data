@@ -1,3 +1,4 @@
+-- fixed
 local QuestData = {}
 
 QuestData.Sea1Monsters = {
@@ -107,8 +108,8 @@ QuestData.Quests = {
         {MinLv=1325, MaxLv=1350, Task="Ship Officer", Monster="Ship Officer", Quest="ShipQuest2", Lv=2, QuestPos={920.87,191.37,33246.47}, MonsterPos={876.37,212.70,33422.28}},
         {MinLv=1350, MaxLv=1375, Task="Arctic Warrior", Monster="Arctic Warrior", Quest="FrostQuest", Lv=1, QuestPos={5667.08,26.43,-6486.27}, MonsterPos={5580.44,42.00,-6290.12}},
         {MinLv=1375, MaxLv=1425, Task="Snow Lurker", Monster="Snow Lurker", Quest="FrostQuest", Lv=2, QuestPos={5667.08,26.43,-6486.27}, MonsterPos={5749.58,79.00,-6707.88}},
-        {MinLv=1425, MaxLv=1450, Task="Sea Soldier", Monster="Sea Soldier", Quest="ForgottenQuest2", Lv=1, QuestPos={-3295.57,12.70,-10084.75}, MonsterPos={-3403.93,18.00,-10007.85}},
-        {MinLv=1450, MaxLv=1500, Task="Water Fighter", Monster="Water Fighter", Quest="ForgottenQuest2", Lv=2, QuestPos={-3295.57,12.70,-10084.75}, MonsterPos={-3144.25,18.00,-9902.34}}
+        {MinLv=1425, MaxLv=1450, Task="Sea Soldier", Monster="Sea Soldier", Quest="ForgottenQuest2", Lv=1, QuestPos={-3049.51,236.58,-10490.58}, MonsterPos={-3403.93,122.00,-10007.85}},
+        {MinLv=1450, MaxLv=1500, Task="Water Fighter", Monster="Water Fighter", Quest="ForgottenQuest2", Lv=2, QuestPos={-3049.51,236.58,-10490.58}, MonsterPos={-3144.25,122.00,-9902.34}}
     },
     [3] = {
         {MinLv=1500, MaxLv=1525, Task="Pirate Millionaire", Monster="Pirate Millionaire", Quest="PiratePortQuest", Lv=1, QuestPos={-289.77,43.82,5579.94}, MonsterPos={-155.85,72.82,5431.45}},
