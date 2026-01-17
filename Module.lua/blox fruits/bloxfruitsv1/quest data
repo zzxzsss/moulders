@@ -1,4 +1,4 @@
--- fixed
+-- fixed final
 local QuestData = {}
 
 QuestData.Sea1Monsters = {
@@ -130,14 +130,14 @@ QuestData.Quests = {
         {MinLv=2000, MaxLv=2025, Task="Living Zombie", Monster="Living Zombie", Quest="HauntedQuest", Lv=2, QuestPos={-9516.89,144.77,5765.30}, MonsterPos={-9699.27,189.00,5929.95}},
         {MinLv=2025, MaxLv=2050, Task="Demonic Soul", Monster="Demonic Soul", Quest="HauntedQuest2", Lv=1, QuestPos={-9470.41,183.77,5518.74}, MonsterPos={-9352.07,231.00,5444.69}},
         {MinLv=2050, MaxLv=2075, Task="Poseidon Crew", Monster="Poseidon Crew", Quest="HauntedQuest2", Lv=2, QuestPos={-9470.41,183.77,5518.74}, MonsterPos={-9578.71,269.00,5361.81}},
-        {MinLv=2075, MaxLv=2100, Task="Cake Guard", Monster="Cake Guard", Quest="CakeQuest", Lv=1, QuestPos={-1867.08,20.51,-11058.21}, MonsterPos={-2005.71,26.05,-11026.99}},
-        {MinLv=2100, MaxLv=2125, Task="Baking Staff", Monster="Baking Staff", Quest="CakeQuest", Lv=2, QuestPos={-1867.08,20.51,-11058.21}, MonsterPos={-1740.00,78.00,-10895.00}},
+        {MinLv=2075, MaxLv=2100, Task="Cake Guard", Monster="Cake Guard", Quest="CakeQuest", Lv=1, QuestPos={-1867.08,72.51,-11058.21}, MonsterPos={-2005.71,72.05,-11026.99}},
+        {MinLv=2100, MaxLv=2125, Task="Baking Staff", Monster="Baking Staff", Quest="CakeQuest", Lv=2, QuestPos={-1867.08,72.51,-11058.21}, MonsterPos={-1740.00,78.00,-10895.00}},
         {MinLv=2125, MaxLv=2150, Task="Cookie Crafter", Monster="Cookie Crafter", Quest="CakeQuest2", Lv=1, QuestPos={-2169.35,59.13,-11113.93}, MonsterPos={-2305.26,93.00,-11155.00}},
         {MinLv=2150, MaxLv=2200, Task="Cake Scientist", Monster="Cake Scientist", Quest="CakeQuest2", Lv=2, QuestPos={-2169.35,59.13,-11113.93}, MonsterPos={-2095.00,123.00,-11340.00}},
-        {MinLv=2200, MaxLv=2225, Task="Cocoa Warrior", Monster="Cocoa Warrior", Quest="ChocolateQuest", Lv=1, QuestPos={-1077.64,14.70,-11589.44}, MonsterPos={-1185.21,14.70,-11468.50}},
-        {MinLv=2225, MaxLv=2250, Task="Chocolate Bar Battler", Monster="Chocolate Bar Battler", Quest="ChocolateQuest", Lv=2, QuestPos={-1077.64,14.70,-11589.44}, MonsterPos={-967.00,14.70,-11750.00}},
-        {MinLv=2250, MaxLv=2275, Task="Sweet Thief", Monster="Sweet Thief", Quest="ChocolateQuest2", Lv=1, QuestPos={-950.93,26.52,-11389.26}, MonsterPos={-867.00,26.52,-11268.00}},
-        {MinLv=2275, MaxLv=2300, Task="Candy Rebel", Monster="Candy Rebel", Quest="ChocolateQuest2", Lv=2, QuestPos={-950.93,26.52,-11389.26}, MonsterPos={-803.00,26.52,-11500.00}},
+        {MinLv=2200, MaxLv=2225, Task="Cocoa Warrior", Monster="Cocoa Warrior", Quest="ChocolateQuest", Lv=1, QuestPos={-1077.64,68.70,-11589.44}, MonsterPos={-1185.21,68.70,-11468.50}},
+        {MinLv=2225, MaxLv=2250, Task="Chocolate Bar Battler", Monster="Chocolate Bar Battler", Quest="ChocolateQuest", Lv=2, QuestPos={-1077.64,68.70,-11589.44}, MonsterPos={-967.00,68.70,-11750.00}},
+        {MinLv=2250, MaxLv=2275, Task="Sweet Thief", Monster="Sweet Thief", Quest="ChocolateQuest2", Lv=1, QuestPos={-950.93,72.52,-11389.26}, MonsterPos={-867.00,72.52,-11268.00}},
+        {MinLv=2275, MaxLv=2300, Task="Candy Rebel", Monster="Candy Rebel", Quest="ChocolateQuest2", Lv=2, QuestPos={-950.93,72.52,-11389.26}, MonsterPos={-803.00,72.52,-11500.00}},
         {MinLv=2300, MaxLv=2325, Task="Candy Pirate", Monster="Candy Pirate", Quest="IceCreamIslandQuest", Lv=1, QuestPos={-819.38,64.93,-10967.28}, MonsterPos={-694.80,69.00,-10823.77}},
         {MinLv=2325, MaxLv=2350, Task="Snow Demon", Monster="Snow Demon", Quest="IceCreamIslandQuest", Lv=2, QuestPos={-819.38,64.93,-10967.28}, MonsterPos={-935.00,116.00,-10720.00}},
         {MinLv=2350, MaxLv=2375, Task="Frozen Pirate", Monster="Frozen Pirate", Quest="IceCreamBarQuest", Lv=1, QuestPos={-819.38,64.93,-10967.28}, MonsterPos={-600.00,58.00,-11100.00}},
