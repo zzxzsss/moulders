@@ -3391,6 +3391,217 @@ QuestModules.LookMoonActivate = function()
 end
 
 -- ================================
+-- AUTO TTK (True Triple Katana) QUEST
+-- ================================
+
+Auto_TTK_Quest_Func = Auto_TTK_Quest_Func or false
+
+QuestModules.TTK_SwordData = {
+    {Name = "Saddi", MasteryRequired = 300, Price = 2000000},
+    {Name = "Shisui", MasteryRequired = 300, Price = 2000000},
+    {Name = "Wando", MasteryRequired = 300, Price = 2000000}
+}
+
+QuestModules.LegendarySwordDealerLocations = {
+    CFrame.new(-1540.95, 72.69, 422.11),
+    CFrame.new(-5067.54, 30.85, 4324.09),
+    CFrame.new(-5348.69, 487.91, -2676.16),
+    CFrame.new(5591.53, 17.08, -753.22)
+}
+
+QuestModules.MysteriousManPosition = CFrame.new(-5067.54, 386.85, 4324.09)
+
+QuestModules.GetSwordMastery = function(swordName)
+    local Inventory = Player:FindFirstChild("Inventory")
+    if Inventory then
+        for _, item in pairs(Inventory:GetChildren()) do
+            if item.Name == swordName then
+                local mastery = item:FindFirstChild("Mastery")
+                if mastery then
+                    return mastery.Value
+                end
+            end
+        end
+    end
+    
+    local Backpack = Player:FindFirstChild("Backpack")
+    if Backpack then
+        for _, item in pairs(Backpack:GetChildren()) do
+            if item.Name == swordName then
+                local mastery = item:FindFirstChild("Mastery")
+                if mastery then
+                    return mastery.Value
+                end
+            end
+        end
+    end
+    
+    local Character = Player.Character
+    if Character then
+        for _, item in pairs(Character:GetChildren()) do
+            if item.Name == swordName then
+                local mastery = item:FindFirstChild("Mastery")
+                if mastery then
+                    return mastery.Value
+                end
+            end
+        end
+    end
+    
+    return 0
+end
+
+QuestModules.HasSword = function(swordName)
+    local Backpack = Player:FindFirstChild("Backpack")
+    local Character = Player.Character
+    
+    if Backpack then
+        for _, item in pairs(Backpack:GetChildren()) do
+            if item.Name == swordName then return true end
+        end
+    end
+    
+    if Character then
+        for _, item in pairs(Character:GetChildren()) do
+            if item.Name == swordName then return true end
+        end
+    end
+    
+    return false
+end
+
+QuestModules.HasTTK = function()
+    return QuestModules.HasSword("True Triple Katana")
+end
+
+QuestModules.BuyFromLegendarySwordDealer = function(swordName)
+    for _, dealerPos in ipairs(QuestModules.LegendarySwordDealerLocations) do
+        local attempts = 0
+        repeat
+            task.wait(0.5)
+            Main_Module.Tween(dealerPos)
+            attempts = attempts + 1
+        until (Player.Character.HumanoidRootPart.Position - dealerPos.Position).Magnitude <= 10 or attempts > 20
+        
+        if (Player.Character.HumanoidRootPart.Position - dealerPos.Position).Magnitude <= 10 then
+            task.wait(1)
+            pcall(function()
+                Main_Module.InvokeRemote("BuyItem", swordName)
+            end)
+            task.wait(0.5)
+            if QuestModules.HasSword(swordName) then
+                return true
+            end
+        end
+    end
+    return false
+end
+
+QuestModules.BuyTTKFromMysteriousMan = function()
+    local attempts = 0
+    repeat
+        task.wait(0.5)
+        Main_Module.Tween(QuestModules.MysteriousManPosition)
+        attempts = attempts + 1
+    until (Player.Character.HumanoidRootPart.Position - QuestModules.MysteriousManPosition.Position).Magnitude <= 10 or attempts > 30
+    
+    if (Player.Character.HumanoidRootPart.Position - QuestModules.MysteriousManPosition.Position).Magnitude <= 10 then
+        task.wait(1)
+        pcall(function()
+            Main_Module.InvokeRemote("BuyItem", "True Triple Katana")
+        end)
+        task.wait(0.5)
+        return QuestModules.HasTTK()
+    end
+    return false
+end
+
+QuestModules.FarmSwordMastery = function(swordName)
+    if not QuestModules.HasSword(swordName) then return false end
+    
+    local currentMastery = QuestModules.GetSwordMastery(swordName)
+    if currentMastery >= 300 then return true end
+    
+    Main_Module.SetWeapon(swordName)
+    local Lv = Player.Data and Player.Data.Level and Player.Data.Level.Value or 0
+    QuestModules.QuestLevel()
+    
+    if Enemies:FindFirstChild(NameMonster) then
+        for i,v in Enemies:GetChildren() do
+            if v.Name == NameMonster then
+                if v:FindFirstChild('Humanoid') and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid').Health > 0 then
+                    repeat task.wait()
+                        v.HumanoidRootPart.CanCollide = false
+                        v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                        v.HumanoidRootPart.Transparency = 1
+                        v.Humanoid:ChangeState(11)
+                        v.Humanoid:ChangeState(14)
+                        
+                        Main_Module.Tween(v.HumanoidRootPart.CFrame * Farm_Mode)
+                        Main_Module:BringEnemies(v, true)
+                    until not Auto_TTK_Quest_Func or not v.Parent or v.Humanoid.Health <= 0 or not Enemies:FindFirstChild(v.Name) or QuestModules.GetSwordMastery(swordName) >= 300
+                end
+            end
+        end
+    else
+        Main_Module.WaitMobs(CFrameMonster)
+    end
+    
+    return QuestModules.GetSwordMastery(swordName) >= 300
+end
+
+QuestModules.AutoTTKQuest = function()
+    if not Auto_TTK_Quest_Func then return end
+    
+    if QuestModules.HasTTK() then
+        Main_Module.SetNotify("Auto TTK", "You already have True Triple Katana!", 5)
+        return
+    end
+    
+    for _, swordData in ipairs(QuestModules.TTK_SwordData) do
+        if not QuestModules.HasSword(swordData.Name) then
+            Main_Module.SetNotify("Auto TTK", "Buying " .. swordData.Name .. "...", 3)
+            QuestModules.BuyFromLegendarySwordDealer(swordData.Name)
+            task.wait(1)
+        end
+    end
+    
+    local allMaxMastery = true
+    for _, swordData in ipairs(QuestModules.TTK_SwordData) do
+        if QuestModules.HasSword(swordData.Name) and QuestModules.GetSwordMastery(swordData.Name) < 300 then
+            allMaxMastery = false
+            Main_Module.SetNotify("Auto TTK", "Farming mastery for " .. swordData.Name .. " (" .. QuestModules.GetSwordMastery(swordData.Name) .. "/300)", 3)
+            QuestModules.FarmSwordMastery(swordData.Name)
+            break
+        end
+    end
+    
+    if allMaxMastery then
+        local saddiMastery = QuestModules.GetSwordMastery("Saddi")
+        local shisuiMastery = QuestModules.GetSwordMastery("Shisui")
+        local wandoMastery = QuestModules.GetSwordMastery("Wando")
+        
+        if saddiMastery >= 300 and shisuiMastery >= 300 and wandoMastery >= 300 then
+            Main_Module.SetNotify("Auto TTK", "All swords at 300 mastery! Buying TTK...", 5)
+            if QuestModules.BuyTTKFromMysteriousMan() then
+                Main_Module.SetNotify("Auto TTK", "True Triple Katana obtained!", 5)
+                Auto_TTK_Quest_Func = false
+            end
+        end
+    end
+end
+
+spawn(function()
+    while task.wait(1) do
+        if Auto_TTK_Quest_Func then
+            pcall(function()
+                QuestModules.AutoTTKQuest()
+            end)
+        end
+    end
+end)
+
+-- ================================
 -- UNDERWATER / SUBMERGED AREA (Level 2600+)
 -- ================================
 
@@ -3412,6 +3623,54 @@ QuestModules.CheckIfInSubmerged = function()
     return false
 end
 
+QuestModules.FindSubmarineRemote = function()
+    local remotePaths = {
+        function() return ReplicatedStorage.Modules.Net:FindFirstChild("RF/SubmarineWorkerSpeak") end,
+        function() return ReplicatedStorage:FindFirstChild("Modules") and ReplicatedStorage.Modules:FindFirstChild("Net") and ReplicatedStorage.Modules.Net:FindFirstChild("SubmarineWorkerSpeak") end,
+        function() return ReplicatedStorage.Remotes:FindFirstChild("SubmarineTravel") end,
+        function() return ReplicatedStorage.Remotes:FindFirstChild("CommF_") end
+    }
+    
+    for _, pathFunc in ipairs(remotePaths) do
+        local success, remote = pcall(pathFunc)
+        if success and remote then
+            return remote
+        end
+    end
+    return nil
+end
+
+QuestModules.InvokeSubmarineTravel = function()
+    local success = false
+    
+    pcall(function()
+        local submarineRemote = QuestModules.FindSubmarineRemote()
+        if submarineRemote then
+            if submarineRemote:IsA("RemoteFunction") then
+                submarineRemote:InvokeServer("TravelToSubmergedIsland")
+                success = true
+            elseif submarineRemote:IsA("RemoteEvent") then
+                submarineRemote:FireServer("TravelToSubmergedIsland")
+                success = true
+            end
+        end
+    end)
+    
+    if not success then
+        pcall(function()
+            Main_Module.InvokeRemote("SubmarineTravel", "TravelToSubmergedIsland")
+        end)
+    end
+    
+    if not success then
+        pcall(function()
+            ReplicatedStorage.Remotes.CommF_:InvokeServer("TravelSubmerged")
+        end)
+    end
+    
+    return success
+end
+
 QuestModules.TravelToSubmergedIsland = function()
     if QuestModules.IsSubmergedTraveling then return false end
     
@@ -3426,35 +3685,36 @@ QuestModules.TravelToSubmergedIsland = function()
     end
     
     QuestModules.IsSubmergedTraveling = true
+    Main_Module.SetNotify("Submarine Travel", "Traveling to submarine dock...", 3)
     
     local attempts = 0
     repeat
-        task.wait(0.5)
+        task.wait(0.3)
         Main_Module.Tween(QuestModules.SubmarineDockPosition)
         attempts = attempts + 1
-    until (hrp.Position - QuestModules.SubmarineDockPosition.Position).Magnitude <= 10 or attempts > 30
+    until (hrp.Position - QuestModules.SubmarineDockPosition.Position).Magnitude <= 15 or attempts > 40
     
-    if (hrp.Position - QuestModules.SubmarineDockPosition.Position).Magnitude <= 10 then
-        task.wait(1)
-        pcall(function()
-            local submarineRemote = ReplicatedStorage.Modules.Net:FindFirstChild("RF/SubmarineWorkerSpeak")
-            if submarineRemote then
-                submarineRemote:InvokeServer("TravelToSubmergedIsland")
-            end
-        end)
+    if (hrp.Position - QuestModules.SubmarineDockPosition.Position).Magnitude <= 15 then
+        task.wait(0.5)
+        Main_Module.SetNotify("Submarine Travel", "At submarine dock, initiating travel...", 3)
+        
+        QuestModules.InvokeSubmarineTravel()
         
         local startTime = tick()
         repeat
             task.wait(0.5)
             if QuestModules.CheckIfInSubmerged() then
                 QuestModules.IsInSubmergedArea = true
+                Main_Module.SetNotify("Submarine Travel", "Arrived at submerged area!", 3)
                 break
             end
             local movedAway = (hrp.Position - QuestModules.SubmarineDockPosition.Position).Magnitude > 100
             if movedAway then break end
-        until tick() - startTime > 15
+        until tick() - startTime > 20
         
-        task.wait(2)
+        task.wait(1)
+    else
+        Main_Module.SetNotify("Submarine Travel", "Failed to reach submarine dock, retrying...", 3)
     end
     
     QuestModules.IsSubmergedTraveling = false
