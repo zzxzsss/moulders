@@ -1443,23 +1443,141 @@
      end
 
      function OtherModules.BringFruits()
-         for i,v in workspace:GetChildren() do
-             if (v:IsA('Model') or v:IsA('Tool')) and string.find(v.Name, 'Fruit') then
-                 if v:FindFirstChild("Handle") then
-                     v.Handle.CFrame = Player.Character.HumanoidRootPart.CFrame
-                     v.RootPart.CFrame = Player.Character.HumanoidRootPart.CFrame
+         local HRP = Player.Character and Player.Character:FindFirstChild("HumanoidRootPart")
+         if not HRP then return end
+         
+         local targetCFrame = HRP.CFrame
+         local fruitNames = {"Fruit", "Rocket", "Spin", "Blade", "Spring", "Bomb", "Smoke", "Spike", "Flame", "Ice", "Sand", "Dark", "Eagle", "Diamond", "Light", "Rubber", "Ghost", "Magma", "Quake", "Buddha", "Love", "Creation", "Spider", "Sound", "Phoenix", "Portal", "Lightning", "Pain", "Blizzard", "Gravity", "Mammoth", "T-Rex", "Dough", "Shadow", "Venom", "Control", "Gas", "Spirit", "Tiger", "Yeti", "Kitsune", "Dragon"}
+         
+         local function isFruit(name)
+             if not name then return false end
+             local lower = name:lower()
+             if lower:find("cylinder") or lower:find("bloxfruits_") then return false end
+             for _, f in ipairs(fruitNames) do
+                 if lower:find(f:lower()) then return true end
+             end
+             return false
+         end
+         
+         local function bringObject(obj)
+             if not obj then return end
+             local handle = obj:FindFirstChild("Handle")
+             local root = obj:FindFirstChild("RootPart") or obj.PrimaryPart
+             
+             if handle and handle:IsA("BasePart") then
+                 handle.CFrame = targetCFrame
+                 handle.Velocity = Vector3.zero
+                 handle.RotVelocity = Vector3.zero
+                 handle.Anchored = false
+                 handle.CanCollide = false
+                 -- Fire touch for instant pickup
+                 pcall(function()
+                     if firetouchinterest then
+                         firetouchinterest(handle, HRP, 0)
+                         task.wait()
+                         firetouchinterest(handle, HRP, 1)
+                     end
+                 end)
+             end
+             if root and root:IsA("BasePart") then
+                 root.CFrame = targetCFrame
+                 root.Velocity = Vector3.zero
+                 root.RotVelocity = Vector3.zero
+             end
+         end
+         
+         -- Search workspace root
+         for _, obj in pairs(workspace:GetChildren()) do
+             if (obj:IsA("Model") or obj:IsA("Tool")) and isFruit(obj.Name) then
+                 bringObject(obj)
+             end
+         end
+         
+         -- Search common fruit containers
+         local containers = {"GroundItems", "Fruits", "DroppedItems", "Items", "DroppedFruits"}
+         for _, containerName in ipairs(containers) do
+             local container = workspace:FindFirstChild(containerName)
+             if container then
+                 for _, obj in pairs(container:GetChildren()) do
+                     if isFruit(obj.Name) then bringObject(obj) end
                  end
+             end
+         end
+         
+         -- Search Map descendants
+         local map = workspace:FindFirstChild("Map")
+         if map then
+             for _, obj in pairs(map:GetDescendants()) do
+                 if (obj:IsA("Model") or obj:IsA("Tool")) and isFruit(obj.Name) then
+                     bringObject(obj)
+                 end
+             end
+         end
+         
+         -- Search entire workspace for any missed fruits (deeper search)
+         for _, obj in pairs(workspace:GetDescendants()) do
+             if (obj:IsA("Model") or obj:IsA("Tool")) and isFruit(obj.Name) then
+                 bringObject(obj)
              end
          end
      end
 
      function OtherModules.TweenFruits()
-         for i,v in workspace:GetChildren() do
-             if (v:IsA('Model') or v:IsA('Tool')) and string.find(v.Name, 'Fruit') then
-                 if v:FindFirstChild("Handle") then
-                     Main_Module.Tween(v.Handle.CFrame)
+         local fruitNames = {"Fruit", "Rocket", "Spin", "Blade", "Spring", "Bomb", "Smoke", "Spike", "Flame", "Ice", "Sand", "Dark", "Eagle", "Diamond", "Light", "Rubber", "Ghost", "Magma", "Quake", "Buddha", "Love", "Creation", "Spider", "Sound", "Phoenix", "Portal", "Lightning", "Pain", "Blizzard", "Gravity", "Mammoth", "T-Rex", "Dough", "Shadow", "Venom", "Control", "Gas", "Spirit", "Tiger", "Yeti", "Kitsune", "Dragon"}
+         
+         local function isFruit(name)
+             if not name then return false end
+             local lower = name:lower()
+             if lower:find("cylinder") or lower:find("bloxfruits_") then return false end
+             for _, f in ipairs(fruitNames) do
+                 if lower:find(f:lower()) then return true end
+             end
+             return false
+         end
+         
+         local function findClosestFruit()
+             local HRP = Player.Character and Player.Character:FindFirstChild("HumanoidRootPart")
+             if not HRP then return nil end
+             
+             local closest = nil
+             local closestDist = math.huge
+             
+             local function checkObj(obj)
+                 if (obj:IsA("Model") or obj:IsA("Tool")) and isFruit(obj.Name) then
+                     local handle = obj:FindFirstChild("Handle")
+                     if handle then
+                         local dist = (handle.Position - HRP.Position).Magnitude
+                         if dist < closestDist then
+                             closestDist = dist
+                             closest = handle
+                         end
+                     end
                  end
              end
+             
+             -- Search workspace
+             for _, obj in pairs(workspace:GetChildren()) do checkObj(obj) end
+             
+             -- Search containers
+             for _, containerName in ipairs({"GroundItems", "Fruits", "DroppedItems", "Items"}) do
+                 local container = workspace:FindFirstChild(containerName)
+                 if container then
+                     for _, obj in pairs(container:GetChildren()) do checkObj(obj) end
+                 end
+             end
+             
+             -- Search Map
+             local map = workspace:FindFirstChild("Map")
+             if map then
+                 for _, obj in pairs(map:GetDescendants()) do checkObj(obj) end
+             end
+             
+             return closest
+         end
+         
+         local closestFruit = findClosestFruit()
+         if closestFruit then
+             Main_Module.Tween(closestFruit.CFrame)
          end
      end
 
