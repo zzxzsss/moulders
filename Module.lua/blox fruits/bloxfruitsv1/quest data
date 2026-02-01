@@ -1,4 +1,3 @@
--- fixed v2
 local QuestData = {}
 
 QuestData.Sea1Monsters = {
