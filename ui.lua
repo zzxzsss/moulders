@@ -41,17 +41,17 @@ getgenv().Loaded = true
     -- Mobile Support: Detect if device has touch
     local IsMobile = InputService.TouchEnabled and not InputService.KeyboardEnabled
     local CurrentTouchPosition = vec2(0, 0)
-    
+
     -- Helper function to check if input is click/tap
     local function IsClickInput(inputType)
         return inputType == Enum.UserInputType.MouseButton1 or inputType == Enum.UserInputType.Touch
     end
-    
+
     -- Helper function to check if input is movement
     local function IsMovementInput(inputType)
         return inputType == Enum.UserInputType.MouseMovement or inputType == Enum.UserInputType.Touch
     end
-    
+
     -- Track touch position for mobile
     if IsMobile then
         InputService.TouchMoved:Connect(function(touch, gameProcessed)
@@ -1087,7 +1087,7 @@ getgenv().Loaded = true
                     ZIndexBehavior = Enum.ZIndexBehavior.Global;
                     IgnoreGuiInset = true;
                 })
-                
+
                 local toggleBtn = Library:Create("ImageButton", {
                     Parent = Library.MobileToggle;
                     Name = "ToggleBtn";
@@ -1098,12 +1098,12 @@ getgenv().Loaded = true
                     Image = "";
                     AutoButtonColor = false;
                 })
-                
+
                 Library:Create("UICorner", {
                     Parent = toggleBtn;
                     CornerRadius = dim(0, 12);
                 })
-                
+
                 local toggleIcon = Library:Create("TextLabel", {
                     Parent = toggleBtn;
                     Size = dim2(1, 0, 1, 0);
@@ -1113,11 +1113,11 @@ getgenv().Loaded = true
                     TextSize = 24;
                     Font = Enum.Font.GothamBold;
                 })
-                
+
                 -- Make toggle button draggable
                 local toggleDragging = false
                 local toggleInitialPos, toggleStartPos
-                
+
                 toggleBtn.InputBegan:Connect(function(input)
                     if IsClickInput(input.UserInputType) then
                         toggleDragging = true
@@ -1125,7 +1125,7 @@ getgenv().Loaded = true
                         toggleStartPos = toggleBtn.Position
                     end
                 end)
-                
+
                 toggleBtn.InputEnded:Connect(function(input)
                     if IsClickInput(input.UserInputType) then
                         if toggleDragging then
@@ -1139,7 +1139,7 @@ getgenv().Loaded = true
                         toggleDragging = false
                     end
                 end)
-                
+
                 Library:Connection(InputService.InputChanged, function(input)
                     if toggleDragging and IsMovementInput(input.UserInputType) then
                         local newPos = dim2(
@@ -1151,7 +1151,7 @@ getgenv().Loaded = true
                         toggleBtn.Position = newPos
                     end
                 end)
-                
+
                 Library:Themify(toggleBtn, "accent", "BackgroundColor3")
             end
 
@@ -2743,10 +2743,38 @@ getgenv().Loaded = true
                 });     Library:Themify(Items.Title, "text_color", "BackgroundColor3")                                          
             end 
 
+            local hoverInfo = TweenInfo.new(0.15, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+            local pressInfo = TweenInfo.new(0.08, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+            local releaseInfo = TweenInfo.new(0.12, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+            local clickInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+            
+            -- Smooth hover effect
+            Items.Outline.MouseEnter:Connect(function()
+                Library:Tween(Items.Inline, {BackgroundColor3 = rgb(45, 45, 45)}, hoverInfo)
+                Library:Tween(Items.Title, {TextColor3 = rgb(255, 255, 255)}, hoverInfo)
+            end)
+            
+            Items.Outline.MouseLeave:Connect(function()
+                Library:Tween(Items.Inline, {BackgroundColor3 = rgb(31, 31, 31)}, hoverInfo)
+                Library:Tween(Items.Title, {TextColor3 = themes.preset.text_color}, hoverInfo)
+            end)
+            
+            -- Smooth press effect with scale
+            Items.Outline.MouseButton1Down:Connect(function()
+                Library:Tween(Items.Inline, {BackgroundColor3 = rgb(20, 20, 20)}, pressInfo)
+                Library:Tween(Items.Outline, {Size = dim2(0.98, 0, 0, 18)}, pressInfo)
+            end)
+            
+            Items.Outline.MouseButton1Up:Connect(function()
+                Library:Tween(Items.Inline, {BackgroundColor3 = rgb(45, 45, 45)}, releaseInfo)
+                Library:Tween(Items.Outline, {Size = dim2(1, 0, 0, 20)}, releaseInfo)
+            end)
+            
             Items.Outline.MouseButton1Click:Connect(function()
-                Items.Title.TextColor3 = rgb(255, 255, 255)
-                Library:Tween(Items.Title, {TextColor3 = themes.preset.text_color})
-
+                -- Flash accent color on click
+                Items.Title.TextColor3 = themes.preset.accent
+                Library:Tween(Items.Title, {TextColor3 = themes.preset.text_color}, clickInfo)
+                
                 Cfg.Callback()
             end)
 
