@@ -1,9 +1,3 @@
---[[
-
-    XEZIOS
-    -> Made by @finobe 
-    -> Kind of got bored idk what to do with life
-]]
 
 if getgenv().Loaded then 
     getgenv().Library:Unload()
@@ -1091,7 +1085,7 @@ getgenv().Loaded = true
                 local toggleBtn = Library:Create("ImageButton", {
                     Parent = Library.MobileToggle;
                     Name = "ToggleBtn";
-                    Position = dim2(0, 10, 0, 10);
+                    Position = dim2(0, 10, 0, 100);
                     Size = dim2(0, 50, 0, 50);
                     BackgroundColor3 = themes.preset.accent;
                     BorderSizePixel = 0;
@@ -1280,6 +1274,56 @@ getgenv().Loaded = true
                     PaddingRight = dim(0, 8);
                     PaddingLeft = dim(0, 13)
                 });
+
+                -- Close Button for PC (top-right)
+                if not IsMobile then
+                    Items.CloseButton = Library:Create("TextButton", {
+                        Parent = Items.TitleHolder;
+                        Name = "CloseButton";
+                        Position = dim2(1, -30, 0.5, -10);
+                        Size = dim2(0, 20, 0, 20);
+                        BackgroundColor3 = rgb(60, 60, 60);
+                        BorderSizePixel = 0;
+                        Text = "X";
+                        TextColor3 = rgb(200, 200, 200);
+                        TextSize = 14;
+                        Font = Enum.Font.GothamBold;
+                        AutoButtonColor = false;
+                        ZIndex = 3;
+                    })
+                    
+                    Library:Create("UICorner", {
+                        Parent = Items.CloseButton;
+                        CornerRadius = dim(0, 4);
+                    })
+                    
+                    -- Hover effect
+                    Items.CloseButton.MouseEnter:Connect(function()
+                        TweenService:Create(Items.CloseButton, TweenInfo.new(0.15, Enum.EasingStyle.Quint), {
+                            BackgroundColor3 = rgb(180, 60, 60);
+                            TextColor3 = rgb(255, 255, 255);
+                        }):Play()
+                    end)
+                    
+                    Items.CloseButton.MouseLeave:Connect(function()
+                        TweenService:Create(Items.CloseButton, TweenInfo.new(0.15, Enum.EasingStyle.Quint), {
+                            BackgroundColor3 = rgb(60, 60, 60);
+                            TextColor3 = rgb(200, 200, 200);
+                        }):Play()
+                    end)
+                    
+                    Items.CloseButton.MouseButton1Click:Connect(function()
+                        Library.Items.Enabled = false
+                    end)
+                    
+                    -- PC Keybind to toggle UI (Right Shift)
+                    Library:Connection(InputService.InputBegan, function(input, gameProcessed)
+                        if gameProcessed then return end
+                        if input.KeyCode == Enum.KeyCode.RightShift then
+                            Library.Items.Enabled = not Library.Items.Enabled
+                        end
+                    end)
+                end
 
                 Items.Pages = Library:Create( "Frame" , {
                     Parent = Items.PageHolder;
